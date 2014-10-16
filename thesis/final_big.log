@@ -1,0 +1,1162 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2011.9.14)  1 MAY 2012 10:47
+entering extended mode
+**final_big
+(./final_big.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 125.
+
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+)
+\pmbraise@=\dimen106
+)
+(/usr/share/texmf/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2000/05/01 v2.0 Martin Vogel's Symbols font definitions
+)
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip46
+\plpartopsep=\skip47
+\plitemsep=\skip48
+\plparsep=\skip49
+\pl@lab=\toks20
+)
+(/usr/share/texmf/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 2003/06/06 7.1 (PWD)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 518.
+\c@NAT@ctr=\count99
+) (./algorithmic.sty
+Package: algorithmic 
+
+Document Style `algorithmic' - environment
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count102
+)
+\c@ALC@line=\count103
+\c@ALC@rem=\count104
+\ALC@tlm=\skip54
+) (./algorithm.sty
+Package: algorithm 
+
+Document Style `algorithm' - floating environment
+(/usr/share/texmf/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks21
+\float@box=\box28
+\@float@everytoks=\toks22
+\@floatcapt=\box29
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count106
+)
+(/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip55
+\subfigcapskip=\skip56
+\subfigcaptopadj=\dimen116
+\subfigbottomskip=\skip57
+\subfigcapmargin=\dimen117
+\subfiglabelskip=\skip58
+\c@subfigure=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@lotdepth=\count110
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip59
+\subfig@bottom=\skip60
+)
+(/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2003/03/28 v1.618 publication quality tables
+\heavyrulewidth=\dimen118
+\lightrulewidth=\dimen119
+\cmidrulewidth=\dimen120
+\belowrulesep=\dimen121
+\belowbottomsep=\dimen122
+\aboverulesep=\dimen123
+\abovetopsep=\dimen124
+\cmidrulesep=\dimen125
+\cmidrulekern=\dimen126
+\defaultaddspace=\dimen127
+\@cmidla=\count111
+\@cmidlb=\count112
+\@aboverulesep=\dimen128
+\@belowrulesep=\dimen129
+\@thisruleclass=\count113
+\@lastruleclass=\count114
+\@thisrulewidth=\dimen130
+)
+(/usr/share/texmf/tex/latex/glossary/glossary.sty
+Package: glossary 2007/04/27 2.44 (NLCT)
+\gls@cols=\count115
+
+No configuration file glossary.cfg found
+(/usr/share/texmf/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count116
+\LTcapwidth=\dimen131
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count117
+\LT@rows=\count118
+\c@LT@tables=\count119
+\c@LT@chunks=\count120
+\LT@p@ftn=\toks24
+)
+\descriptionwidth=\skip65
+\istfile=\write3
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip66
+\f@ncyO@elh=\skip67
+\f@ncyO@erh=\skip68
+\f@ncyO@olh=\skip69
+\f@ncyO@orh=\skip70
+\f@ncyO@elf=\skip71
+\f@ncyO@erf=\skip72
+\f@ncyO@olf=\skip73
+\f@ncyO@orf=\skip74
+)
+(/usr/share/texmf/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2003/03/13 v1.5g extra ToC listings
+
+
+Package tocbibind Note: The document has section divisions.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+) (/usr/share/texmf/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+)
+\@glossaryfile=\write4
+\openout4 = `final_big.glo'.
+
+
+Writing glossary file final_big.glo 
+\@notationfile=\write5
+\openout5 = `final_big.not'.
+
+Writing notation file final_big.not 
+(./final_big.aux (./abstract.aux) (./f_introduction.aux) (./f_review.aux)
+(./f_metrics.aux) (./f_character.aux) (./f_architecture.aux)
+(./f_experiments.aux) (./fx_mam.aux) (./fx_scoring.aux) (./fx_complexity2.aux)
+(./fx_stability.aux) (./fx_disruption.aux) (./fx_volatility.aux)
+(./fx_reliability.aux) (./f_conclusions.aux) (./appendix_p2gen.aux)
+(./appendix_stats.aux) (./appendix_stats_includes.aux))
+\openout1 = `final_big.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 65.
+
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) [1
+
+\openout3 = `final_big.ist'.
+
+]
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [1
+
+]) [2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
+
+(./final_big.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 7.
+ (/usr/share/texmf/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+) [3
+
+] [4] [5]
+[6] [7] [8] [9] [10])
+\tf@toc=\write6
+\openout6 = `final_big.toc'.
+
+ [11] (./final_big.lof [12] [13] [14] [15])
+\tf@lof=\write7
+\openout7 = `final_big.lof'.
+
+ [16]
+(./final_big.lot [17] [18])
+\tf@lot=\write8
+\openout8 = `final_big.lot'.
+
+ [19] (./final_big.gls [20]
+Underfull \hbox (badness 1466) in paragraph at lines 167--168
+[]|\OT1/ptm/m/n/12 Time Sig-nal Gen-er-a-tor - a SCA com-po-nent
+ []
+
+[21] [22]) [23] (./final_big.ntn [24] [25]) [26]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
+ [27]
+\openout2 = `f_introduction.aux'.
+
+ (./f_introduction.tex
+Overfull \hbox (4.87509pt too wide) in paragraph at lines 18--20
+\OT1/ptm/m/n/12 al-lo-cated time by one of sev-eral Tele-scope Al-lo-ca-tion Co
+m-mit-tees/Groups (TAC/TAG)[].
+ []
+
+File: figures/group_structure.eps Graphic file (type eps)
+<figures/group_structure.eps> [28
+
+] [29] [30]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 81.
+
+(/usr/share/texmf/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+ [31]
+Overfull \hbox (7.41655pt too wide) in paragraph at lines 99--100
+\OT1/ptm/m/n/12 sure-ment of ODB char-ac-ter-is-tics. These in-di-cate how \OT1
+/ptm/m/it/12 dif-fi-cult \OT1/ptm/m/n/12 a par-tic-u-lar schedul-
+ []
+
+[32] [33]) [34]
+\openout2 = `f_review.aux'.
+
+ (./f_review.tex
+Overfull \hbox (5.46983pt too wide) in paragraph at lines 24--25
+[]\OT1/ptm/m/n/12 The con-struc-tive and it-er-a-tive sched-ule build-ing parad
+igms are in-tro-duced in Sect. 2.1[]
+ []
+
+[35
+
+
+] [36] [37]
+Overfull \hbox (5.05508pt too wide) in paragraph at lines 58--59
+[]\OT1/ptm/m/it/12 Incomplete Back-jump-ing Heuris-tic \OT1/ptm/m/n/12 (IBH) us
+es tex-ture based mea-sures (Beck
+ []
+
+[38]
+Overfull \hbox (4.63028pt too wide) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/12 Typically this pro-ceeds by mak-ing small moves around the \O
+T1/ptm/m/it/12 cur-rent \OT1/ptm/m/n/12 neigh-
+ []
+
+[39] [40] [41] [42] [43] [44] [45]
+Overfull \hbox (5.57674pt too wide) in paragraph at lines 158--159
+[]\OT1/ptm/m/n/12 To re-solve re-source con-straints, tasks are se-lected for r
+e-pair us-ing 3 heuris-tic criteria:-
+ []
+
+[46]
+Overfull \hbox (49.04015pt too wide) in paragraph at lines 180--181
+\OML/cmm/m/it/12 Eval[]$ \OT1/ptm/m/n/12 has im-ple-men-ta-tions $\OML/cmm/m/it
+/12 Eval[]$ $Eval[]$ \OT1/ptm/m/n/12 and $\OML/cmm/m/it/12 Eval[]$\OT1/ptm/m/n/
+12 ,
+ []
+
+[47] [48] [49] [50] [51]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+ [52] [53] [54] [55] [56] [57] [58] [59]
+Overfull \hbox (1.0106pt too wide) in paragraph at lines 400--401
+\OT1/ptm/m/n/12 mum graph-spanning prob-lems and brood sort-ing as a dis-tribut
+ed sort-ing method. 
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+[60] [61] [62] [63] [64] [65] [66] [67]) [68]
+\openout2 = `f_metrics.aux'.
+
+ (./f_metrics.tex [69
+
+
+] [70]
+File: figures/contention_2011-05-17.eps Graphic file (type eps)
+
+<figures/contention_2011-05-17.eps> [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81]
+Underfull \hbox (badness 3815) in paragraph at lines 263--264
+[]\OT1/ptm/m/n/12 TD (tar-get de-mand), RN (re-main-ing
+ []
+
+) [82]
+\openout2 = `f_character.aux'.
+
+ (./f_character.tex [83
+
+
+]
+Overfull \hbox (1.33368pt too wide) in paragraph at lines 27--28
+[]\OT1/ptm/b/n/12 Phase 2 pop-u-la-tion\OT1/ptm/m/n/12 . The ac-tual con-tent o
+f the Phase 2 ODB af-fects how schedul-
+ []
+
+[84]
+Overfull \hbox (2.74629pt too wide) in paragraph at lines 48--49
+[]\OT1/ptm/m/n/12 These are prob-lems which sud-denly man-i-fest them-selves on
+e night
+ []
+
+[85] [86]
+File: figures/ecs/met_nightly_stats_tech2005.eps Graphic file (type eps)
+ <figures/ecs/met_nightly_stats_tech2005.eps>
+File: figures/ecs/met_nightly_stats_tech2006.eps Graphic file (type eps)
+
+<figures/ecs/met_nightly_stats_tech2006.eps>
+File: figures/ecs/met_nightly_stats_tech2007.eps Graphic file (type eps)
+
+<figures/ecs/met_nightly_stats_tech2007.eps>
+File: figures/ecs/tech_loss_frac.eps Graphic file (type eps)
+ <figures/ecs/tech_loss_frac.eps>
+File: figures/ecs/monthly_tech_stats.eps Graphic file (type eps)
+
+<figures/ecs/monthly_tech_stats.eps> [87] [88] [89] [90] [91]
+File: figures/ecs/hum.eps Graphic file (type eps)
+
+<figures/ecs/hum.eps>
+File: figures/ecs/moist.eps Graphic file (type eps)
+ <figures/ecs/moist.eps>
+File: figures/ecs/wind.eps Graphic file (type eps)
+ <figures/ecs/wind.eps>
+File: figures/ecs/temp.eps Graphic file (type eps)
+
+<figures/ecs/temp.eps> [92] [93] [94]
+File: figures/ecs/hum_1_2007_01_29.eps Graphic file (type eps)
+ <figures/ecs/hum_1_2007_01_29.eps>
+File: figures/ecs/hum_1_2007_02_20.eps Graphic file (type eps)
+
+<figures/ecs/hum_1_2007_02_20.eps>
+File: figures/ecs/hum_1_2007_03_26.eps Graphic file (type eps)
+ <figures/ecs/hum_1_2007_03_26.eps>
+File: figures/ecs/hum_1_2007_03_28.eps Graphic file (type eps)
+
+<figures/ecs/hum_1_2007_03_28.eps>
+File: figures/ecs/hum_1_2007_04_15.eps Graphic file (type eps)
+ <figures/ecs/hum_1_2007_04_15.eps>
+File: figures/ecs/hum_1_2007_04_16.eps Graphic file (type eps)
+
+<figures/ecs/hum_1_2007_04_16.eps>
+File: figures/ecs/hum_frac_time.eps Graphic file (type eps)
+ <figures/ecs/hum_frac_time.eps>
+File: figures/ecs/good_bad_hum_bin.eps Graphic file (type eps)
+
+<figures/ecs/good_bad_hum_bin.eps>
+File: figures/ecs/good_bad_cumhum_bin.eps Graphic file (type eps)
+ <figures/ecs/good_bad_cumhum_bin.eps>
+[95] [96] [97]
+File: figures/ecs/gbc_period.eps Graphic file (type eps)
+ <figures/ecs/gbc_period.eps> [98]
+File: figures/ecs/gbc_predict.eps Graphic file (type eps)
+ <figures/ecs/gbc_predict.eps>
+File: figures/ecs/m_crossover.eps Graphic file (type eps)
+
+<figures/ecs/m_crossover.eps> [99] [100]
+File: figures/ecs/monthly_weather_stats.eps Graphic file (type eps)
+
+<figures/ecs/monthly_weather_stats.eps>
+File: figures/ecs/met_nightly_stats_weather2005.eps Graphic file (type eps)
+
+<figures/ecs/met_nightly_stats_weather2005.eps>
+File: figures/ecs/met_nightly_stats_weather2006.eps Graphic file (type eps)
+
+<figures/ecs/met_nightly_stats_weather2006.eps>
+File: figures/ecs/met_nightly_stats_weather2007.eps Graphic file (type eps)
+
+<figures/ecs/met_nightly_stats_weather2007.eps> [101] [102]
+File: figures/ecs/run_len_thresh.eps Graphic file (type eps)
+
+<figures/ecs/run_len_thresh.eps> [103] [104] [105]
+File: figures/ecs/corr_monthly_bins.eps Graphic file (type eps)
+
+<figures/ecs/corr_monthly_bins.eps>
+File: figures/ecs/seeing_dist.eps Graphic file (type eps)
+ <figures/ecs/seeing_dist.eps>
+File: figures/ecs/cum_seeing_dist.eps Graphic file (type eps)
+
+<figures/ecs/cum_seeing_dist.eps> [106] [107]
+File: figures/ecs/corr_see_ut.eps Graphic file (type eps)
+ <figures/ecs/corr_see_ut.eps>
+File: figures/ecs/ut_bin_counts.eps Graphic file (type eps)
+
+<figures/ecs/ut_bin_counts.eps>
+File: figures/ecs/see_profile_2006_12_15.eps Graphic file (type eps)
+ <figures/ecs/see_profile_2006_12_15.eps>
+File: figures/ecs/see_profile_2006_03_22.eps Graphic file (type eps)
+
+<figures/ecs/see_profile_2006_03_22.eps>
+File: figures/ecs/see_profile_2006_03_07.eps Graphic file (type eps)
+
+<figures/ecs/see_profile_2006_03_07.eps>
+File: figures/ecs/see_profile_2005_08_14.eps Graphic file (type eps)
+
+<figures/ecs/see_profile_2005_08_14.eps>
+File: figures/ecs/see_profile_2007_01_22.eps Graphic file (type eps)
+
+<figures/ecs/see_profile_2007_01_22.eps>
+File: figures/ecs/see_profile_2007_07_02.eps Graphic file (type eps)
+
+<figures/ecs/see_profile_2007_07_02.eps>
+File: figures/ecs/corr_see_monthly.eps Graphic file (type eps)
+ <figures/ecs/corr_see_monthly.eps>
+[108] [109] [110] [111]
+File: figures/ecs/corr_see_dist_jan.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_jan.eps>
+File: figures/ecs/corr_see_dist_feb.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_feb.eps>
+File: figures/ecs/corr_see_dist_mar.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_mar.eps>
+File: figures/ecs/corr_see_dist_apr.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_apr.eps>
+File: figures/ecs/corr_see_dist_may.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_may.eps>
+File: figures/ecs/corr_see_dist_jun.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_jun.eps> [112
+
+]
+File: figures/ecs/corr_see_dist_jul.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_jul.eps>
+File: figures/ecs/corr_see_dist_aug.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_aug.eps>
+File: figures/ecs/corr_see_dist_sep.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_sep.eps>
+File: figures/ecs/corr_see_dist_oct.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_oct.eps>
+File: figures/ecs/corr_see_dist_nov.eps Graphic file (type eps)
+ <figures/ecs/corr_see_dist_nov.eps>
+File: figures/ecs/corr_see_dist_dec.eps Graphic file (type eps)
+
+<figures/ecs/corr_see_dist_dec.eps> [113
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+[][]\OT1/ptm/m/n/10 A reg-u-larly up-dated on-line ver-sion of this pa-per is a
+vail-able at:
+ []
+
+[114]
+Overfull \hbox (1.54588pt too wide) in paragraph at lines 718--719
+[]\OT1/ptm/m/n/12 Sky bright-ness is not cur-rently used by the sched-uler (oth
+er than via a lunar-elevation
+ []
+
+[115]
+File: figures/per.eps Graphic file (type eps)
+ <figures/per.eps>
+File: figures/ext.eps Graphic file (type eps)
+ <figures/ext.eps> [116] [117]
+File: figures/rankplot.eps Graphic file (type eps)
+ <figures/rankplot.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/winscore.eps Graphic file (type eps)
+<figures/winscore.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[118]) [119] [120]
+\openout2 = `f_architecture.aux'.
+
+ (./f_architecture.tex [121
+
+
+] [122]
+File: figures/sca.eps Graphic file (type eps)
+ <figures/sca.eps>
+
+LaTeX Warning: Float too large for page by 25.87152pt on input line 44.
+
+[123] [124
+
+
+] [125]
+Overfull \hbox (2.77736pt too wide) in paragraph at lines 119--120
+\OT1/ptm/m/n/12 Generally de-noted by the sym-bol $\OT1/cmr/m/n/12 ^^H(\OML/cmm
+/m/it/12 g; t; e; a; h\OT1/cmr/m/n/12 )$ \OT1/ptm/m/n/12 this model is used to 
+de-ter-mine whether
+ []
+
+[126] [127] [128] [129] [130] [131] [132]
+File: figures/simf_exec_plot.eps Graphic file (type eps)
+ <figures/simf_exec_plot.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[133] [134] [135] [136] [137] [138] [139]
+
+LaTeX Warning: Command \texttrademark invalid in math mode on input line 295.
+
+
+LaTeX Warning: Command \textregistered invalid in math mode on input line 295.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 295.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 295.
+
+[140]) [141] [142
+
+]
+\openout2 = `f_experiments.aux'.
+
+ (./f_experiments.tex
+File: figures/sim_framework_arch.eps Graphic file (type eps)
+ <figures/sim_framework_arch.eps>
+[143
+
+] [144] [145]
+File: figures/ss_algorithm.eps Graphic file (type eps)
+ <figures/ss_algorithm.eps> [146] [147] [148] [149] [150]
+[151] [152] [153]) [154]
+\openout2 = `fx_mam.aux'.
+
+ (./fx_mam.tex [155
+
+
+]
+File: figures/mam/cont.eps Graphic file (type eps)
+ <figures/mam/cont.eps>
+File: figures/mam/dmd.eps Graphic file (type eps)
+
+<figures/mam/dmd.eps> [156] [157]
+Overfull \hbox (14.86613pt too wide) in paragraph at lines 97--118
+ [] 
+ []
+
+[158] [159] [160] [161
+
+
+] [162] [163
+
+]
+File: figures/cmp_el.eps Graphic file (type eps)
+ <figures/cmp_el.eps>
+File: figures/cmp_pr.eps Graphic file (type eps)
+ <figures/cmp_pr.eps>
+Underfull \hbox (badness 1603) in paragraph at lines 261--261
+[]\OT1/ptm/m/n/10 (b) Re-sults of LAS sim-u-la-tions and Hu-man sched-uler
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 276--276
+[]\OT1/ptm/m/n/10 (c) Re-sults of LAS sim-u-la-tions and Hu-man sched-uler
+ []
+
+) [164] [165] [166]
+\openout2 = `fx_scoring.aux'.
+
+ (./fx_scoring.tex [167
+
+
+]
+File: figures/dwsfix6b_ensemble.eps Graphic file (type eps)
+ <figures/dwsfix6b_ensemble.eps>
+File: figures/dwsfix4b_ensemble.eps Graphic file (type eps)
+
+<figures/dwsfix4b_ensemble.eps> [168] [169] [170
+
+] [171] [172]
+File: figures/cs1_dw1_px.eps Graphic file (type eps)
+
+<figures/cs1_dw1_px.eps>
+File: figures/cs1_dw2_px.eps Graphic file (type eps)
+ <figures/cs1_dw2_px.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_oa.eps Graphic file (type eps)
+<figures/cs1_dw1_oa.eps>
+File: figures/cs1_dw2_oa.eps Graphic file (type eps)
+ <figures/cs1_dw2_oa.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_foa.eps Graphic file (type eps)
+<figures/cs1_dw1_foa.eps>
+File: figures/cs1_dw2_foa.eps Graphic file (type eps)
+ <figures/cs1_dw2_foa.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_fpx.eps Graphic file (type eps)
+<figures/cs1_dw1_fpx.eps>
+File: figures/cs1_dw2_fpx.eps Graphic file (type eps)
+ <figures/cs1_dw2_fpx.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_td.eps Graphic file (type eps)
+<figures/cs1_dw1_td.eps>
+File: figures/cs1_dw2_td.eps Graphic file (type eps)
+ <figures/cs1_dw2_td.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_rn.eps Graphic file (type eps)
+<figures/cs1_dw1_rn.eps>
+File: figures/cs1_dw2_rn.eps Graphic file (type eps)
+ <figures/cs1_dw2_rn.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1a2_oa.eps Graphic file (type eps)
+<figures/cs1_dw1a2_oa.eps>
+File: figures/cs1_dw1a2_px.eps Graphic file (type eps)
+ <figures/cs1_dw1a2_px.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1a2_rn.eps Graphic file (type eps)
+<figures/cs1_dw1a2_rn.eps>
+File: figures/cs1_dw1a2_td.eps Graphic file (type eps)
+ <figures/cs1_dw1a2_td.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/cs1_dw1_oa_c.eps Graphic file (type eps)
+<figures/cs1_dw1_oa_c.eps>
+File: figures/cs1_dw1_px_c.eps Graphic file (type eps)
+ <figures/cs1_dw1_px_c.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [173
+
+] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+\openout2 = `fx_complexity2.aux'.
+
+
+(./fx_complexity2.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[183
+
+
+]
+File: figures/c60_gen_cav.eps Graphic file (type eps)
+ <figures/c60_gen_cav.eps>
+File: figures/c60_gen_ng.eps Graphic file (type eps)
+ <figures/c60_gen_ng.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/c60_odb_cav.eps Graphic file (type eps)
+<figures/c60_odb_cav.eps>
+File: figures/c60_odb_ng.eps Graphic file (type eps)
+ <figures/c60_odb_ng.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[184] [185]
+File: figures/p2_gen_qsu.eps Graphic file (type eps)
+ <figures/p2_gen_qsu.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/p2_gen_qxt.eps Graphic file (type eps)
+<figures/p2_gen_qxt.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[186]
+File: figures/qsucc_best.eps Graphic file (type eps)
+ <figures/qsucc_best.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_biasrs.eps Graphic file (type eps)
+<figures/qsucc_biasrs.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_biasfr.eps Graphic file (type eps)
+<figures/qsucc_biasfr.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_ql1.eps Graphic file (type eps)
+<figures/qsucc_ql1.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_ql2.eps Graphic file (type eps)
+<figures/qsucc_ql2.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_ql4.eps Graphic file (type eps)
+<figures/qsucc_ql4.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/qsucc_allfit2.eps Graphic file (type eps)
+<figures/qsucc_allfit2.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[187]) [188] [189] [190] [191] [192] [193] [194] [195]
+\openout2 = `fx_stability.aux'.
+
+ (./fx_stability.tex
+[196
+
+
+] [197]
+File: figures/e_18_comp.eps Graphic file (type eps)
+ <figures/e_18_comp.eps> [198]
+File: figures/best_ensemble.eps Graphic file (type eps)
+ <figures/best_ensemble.eps>
+File: figures/biasfr_ensemble.eps Graphic file (type eps)
+
+<figures/biasfr_ensemble.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/biasrs_ensemble.eps Graphic file (type eps)
+<figures/biasrs_ensemble.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[199] [200]
+File: figures/qsa3_xt.eps Graphic file (type eps)
+ <figures/qsa3_xt.eps>
+File: figures/qsa3_su.eps Graphic file (type eps)
+ <figures/qsa3_su.eps> [201] [202]
+File: figures/best_de.eps Graphic file (type eps)
+
+<figures/best_de.eps>
+File: figures/biasfr_de.eps Graphic file (type eps)
+ <figures/biasfr_de.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/biasrs_de.eps Graphic file (type eps)
+<figures/biasrs_de.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[203]
+Overfull \hbox (7.03206pt too wide) in paragraph at lines 157--157
+[]\OT1/ptm/b/n/14.4 Comparison of ef-fect of chang-ing QLAS se-quence count sea
+rch
+ []
+
+[204]
+File: figures/horiz_env_su2.eps Graphic file (type eps)
+ <figures/horiz_env_su2.eps>
+File: figures/ns_env_su.eps Graphic file (type eps)
+ <figures/ns_env_su.eps>) [205] [206] [207]
+\openout2 = `fx_disruption.aux'.
+
+
+(./fx_disruption.tex [208
+
+
+]
+File: figures/disruption.eps Graphic file (type eps)
+ <figures/disruption.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [209] [210]
+\openout2 = `fx_volatility.aux'.
+
+ (./fx_volatility.tex [211
+
+
+] [212] [213]
+Overfull \hbox (16.9719pt too wide) in paragraph at lines 62--63
+\OT1/ptm/m/n/12 2010. The first ex-cerpt shows the log for this pe-riod, we see
+ that a to-tal of 4 \OT1/ptm/m/sc/12 ADD[]GROUP
+ []
+
+[214]
+Overfull \hbox (2.8993pt too wide) in paragraph at lines 98--108
+ [] 
+ []
+
+[215]
+File: figures/vol_pi.eps Graphic file (type eps)
+ <figures/vol_pi.eps>
+File: figures/vol_span.eps Graphic file (type eps)
+ <figures/vol_span.eps> [216] [217]
+File: figures/volrate.eps Graphic file (type eps)
+
+<figures/volrate.eps>
+File: figures/volexec.eps Graphic file (type eps)
+ <figures/volexec.eps> [218] [219]
+Overfull \hbox (8.29767pt too wide) in paragraph at lines 190--191
+[]\OT1/ptm/m/n/12 Simulations were then per-formed with $\OML/cmm/m/it/12 ^^Y$ 
+\OT1/ptm/m/n/12 vary-ing log-a-rith-mi-cally be-tween 1 minute
+ []
+
+[220]
+File: figures/vdv.eps Graphic file (type eps)
+ <figures/vdv.eps>
+File: figures/edv.eps Graphic file (type eps)
+ <figures/edv.eps>
+File: figures/evplot_05.eps Graphic file (type eps)
+ <figures/evplot_05.eps>
+File: figures/evplot_1.eps Graphic file (type eps)
+
+<figures/evplot_1.eps>
+File: figures/evplot_2.eps Graphic file (type eps)
+ <figures/evplot_2.eps>
+File: figures/evplot_4.eps Graphic file (type eps)
+ <figures/evplot_4.eps> [221]
+[222] [223] [224]) [225]
+\openout2 = `fx_reliability.aux'.
+
+ (./fx_reliability.tex [226
+
+
+]
+File: figures/horiz_reliability.eps Graphic file (type eps)
+
+<figures/horiz_reliability.eps>) [227] [228]
+\openout2 = `f_conclusions.aux'.
+
+ (./f_conclusions.tex [229
+
+
+]
+[230] [231] [232] [233] [234] [235] [236]
+File: figures/plan_sched.eps Graphic file (type eps)
+ <figures/plan_sched.eps> [237]
+File: figures/las_feedback.eps Graphic file (type eps)
+
+<figures/las_feedback.eps> [238] [239]
+Overfull \hbox (17.93773pt too wide) in paragraph at lines 154--155
+[]\OT1/ptm/m/n/12 There are sev-eral heuris-tic tech-niques which
+ []
+
+[240] [241]) [242] [243
+
+]
+\openout2 = `appendix_p2gen.aux'.
+
+ (./appendix_p2gen.tex [244
+
+] [245] [246]) [247]
+\openout2 = `appendix_stats.aux'.
+
+
+(./appendix_stats.tex [248
+
+
+]) [249
+
+]
+\openout2 = `appendix_stats_includes.aux'.
+
+ (./appendix_stats_includes.tex [250
+
+
+
+
+]
+[251
+
+
+
+] [252
+
+
+
+] [253
+
+
+
+] [254
+
+
+
+] [255
+
+
+
+] [256
+
+
+
+] [257
+
+
+
+] [258
+
+
+
+] [259
+
+
+
+] [260
+
+
+
+] [261
+
+
+
+] [262
+
+
+
+]
+[263
+
+
+
+] [264
+
+
+
+] [265
+
+
+
+] [266
+
+
+
+] [267
+
+
+
+] [268
+
+
+
+] [269
+
+
+
+] [270
+
+
+
+]) (./final_big.bbl
+Underfull \hbox (badness 3068) in paragraph at lines 32--36
+[]\OT1/ptm/m/n/12 ARI.  Liv-er-pool tele-scope in-stru-ment pipelines.  web-pag
+e, 2011.  URL
+ []
+
+[271
+
+
+] [272]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+ [273]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ‰ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+ [274] [275] [276] [277] [278]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+ [279]
+Underfull \hbox (badness 2073) in paragraph at lines 604--608
+[]\OT1/ptm/m/n/12 P. Sorensen.  Ing me-te-o-ro-log-i-cal and see-ing archive.  
+web, 2002.  URL
+ []
+
+[280] [281]) [282] (./final_big.aux (./abstract.aux) (./f_introduction.aux)
+(./f_review.aux) (./f_metrics.aux) (./f_character.aux) (./f_architecture.aux)
+(./f_experiments.aux) (./fx_mam.aux) (./fx_scoring.aux) (./fx_complexity2.aux)
+(./fx_stability.aux) (./fx_disruption.aux) (./fx_volatility.aux)
+(./fx_reliability.aux) (./f_conclusions.aux) (./appendix_p2gen.aux)
+(./appendix_stats.aux) (./appendix_stats_includes.aux)) )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 329 ({)
+### simple group (level 1) entered at line 318 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 4149 strings out of 94501
+ 55249 string characters out of 1176789
+ 127593 words of memory out of 1000000
+ 6989 multiletter control sequences out of 10000+50000
+ 21196 words of font info for 65 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 27i,12n,43p,3918b,520s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on final_big.dvi (283 pages, 679228 bytes).

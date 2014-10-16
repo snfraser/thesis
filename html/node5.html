@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Background</TITLE>
+<META NAME="description" CONTENT="Background">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html292"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html288"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html282"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html290"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html293"
+  HREF="node6.html">Scheduling in context</A>
+<B> Up:</B> <A NAME="tex2html289"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html283"
+  HREF="node4.html">Introduction</A>
+ &nbsp; <B>  <A NAME="tex2html291"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00041000000000000000">
+Background</A>
+</H2>
+The Liverpool Telescope (LT) is a fully robotic 2 meter astronomical telescope situated at the Observatorio de los Roches de los Muchacos on La Palma in the Canary Islands. It operates without supervision, controlled by an integrated suite of software systems. The Robotic Control System (RCS) is responsible for deciding on the mode of operation and for protecting the telescope, it controls the telescope and its instruments and receives environmental information via a number of lower level subsystems. The Telescope Control System (TCS) is responsible for slewing the telescope axes onto targets and for tracking them through the night. The Instrument Control Systems (ICS) are responsible for configuration of the suite of scientific instruments, taking exposures, reading out, saving to disk and control of a realtime data reduction pipeline (DPRT). The Scheduler is a component of the Observer Support System (OSS) - DEFINE. 
+
+<P>
+The RCS makes requests to the scheduler at various times for groups of observations to perform. These are then executed and results reported back to the OSS. Observations specified by astronomers who have been allocated time, are stored in the Phase2 Observing Database (ODB) maintained by the OSS. The observation requests include all the information required to perform the observations - target location, instrument selection and configuration, exposure times etc. In addition a number of constraints are specified - time constraints determine when and how often the observations should be performed, observing constraints specify under what environmental conditions the observations may be performed - e.g. only if the target is above a certain elevation or when the <I>seeing</I> is better than a specified level. User-specified QOS metrics define the acceptable levels of observation quality and regularity. 
+
+<P>
+The telescope operates in an uncertain environment <BR>
+<IMG
+ WIDTH="625" HEIGHT="204" ALIGN="TOP" BORDER="0"
+ SRC="img37.png"
+ ALT="\begin{inparaenum}\item availability is influenced by weather conditions (it doe...
+...an arrive in the database or be removed or modified at any time \end{inparaenum}">
+<BR>. These factors make it difficult to make long term scheduling commitments with any chance of success.
+
+<P>
+[<A
+ HREF="node99.html#steele97control">Steele and Carter, 1997</A>] have defined a series of ?characteristics? that can contribute to a <I>good</I> schedule. They mention fairness (of time allocations between various committees), efficiency (quality of observations, minimization of idle time) and feasibility (is the target visible).
+
+<P>
+First version of scheduler [<A
+ HREF="node99.html#fraser04scheduling">Fraser, 2004</A>] is a simple despatch scheduler which uses an objective function formed using a weighted sum of metrics.
+Describe the scheduler as candidate selection then application of metrics (leave gory details till later). A full search of the ODB is performed, enabled candidate groups are extracted and scored using a weighted sum of various metrics.
+
+<P>
+Does it work and how well, what problems - obviously needs imporvment or wouldnt be writing this..
+
+<P>
+
+<UL>
+<LI>inefficient - need to call scheduler each time a group completes/fails.
+</LI>
+<LI>obscure - dont know why decisions are being made - why g-1 and not g-2 selected.
+</LI>
+<LI>suboptimal - just select best group now - no consideration of what next = local optimization.
+</LI>
+<LI>difficult - how do we select the best relative weighting for metrics?.
+</LI>
+</UL>
+
+<P>
+How can we improve..
+look at multiobject optimization [<A
+ HREF="node99.html#silva04multiobjective">Silva et&nbsp;al., 2004</A>] - very interesting. [<A
+ HREF="node99.html#bresina95expected">Bresina et&nbsp;al., 1995</A>] deals with look-ahead and how improves qualities or metrics.
+
+<P>
+Say what these mean i.e for what will be doing - adaptive/learning, accountable (user-prefs), dispatch, predictive, lookahead, max utility,
+
+<P>
+i.e. blah blah - an adaptive scheduler will ... use of prediction to estimate likelihood of conditions for boosting future reward.. using dispatch because...the MEU theorem and decision thry....
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html292"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html288"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html282"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html290"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html293"
+  HREF="node6.html">Scheduling in context</A>
+<B> Up:</B> <A NAME="tex2html289"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html283"
+  HREF="node4.html">Introduction</A>
+ &nbsp; <B>  <A NAME="tex2html291"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

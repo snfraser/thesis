@@ -1,0 +1,1093 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Case Study 1</TITLE>
+<META NAME="description" CONTENT="Case Study 1">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node83.html">
+<LINK REL="previous" HREF="node80.html">
+<LINK REL="up" HREF="main.html">
+<LINK REL="next" HREF="node83.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1282"
+  HREF="node83.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1278"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1272"
+  HREF="node81.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1280"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1283"
+  HREF="node83.html">Man against Machine</A>
+<B> Up:</B> <A NAME="tex2html1279"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1273"
+  HREF="node81.html">Experiments</A>
+ &nbsp; <B>  <A NAME="tex2html1281"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000120000000000000000"></A>
+<A NAME="sect:cs1_study"></A>
+<BR>
+Case Study 1
+</H1>
+This investigation involves running a series of one-night simulations under different environmental assumptions to see the effect of varying the value of the SHM weights <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to the priority weight <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$ w_p$">.
+The rational behind this investigation is to provide some initial insight into the usefulness of the various SQMs and to provide a shakedown test of the simulation framework on real data. By selecting 2 seperate but similar nights it should be possible to get a preliminary idea on the range of likely values fand variation of SQMs.
+
+<P>
+The set of <I>remaining</I> objective function weights  excluding <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> and <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$ w_p$"> are kept constant at zero level throughout the range of test values to avoid any additional biasing. The SQMs used to evaluate the quality of the resulting schedules are <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> - the optimal airmass metric, <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> - the execution time weighted priority metric, <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"> - urgency metric, <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"> - demand metric, <!-- MATH
+ $Q_{PX \cdot OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.png"
+ ALT="$ Q_{PX \cdot OA}$"> - priority weighted optimal airmass and <IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img399.png"
+ ALT="$ Q_X$"> the total execution time as a fraction of available night. 
+
+<P>
+Two nights were considered. Both were similar in terms of amount of dark moon time though the actual night lengths were significantly different. Night 1, 13th-14th October 2007 has xxx hours of lunar dark time out of xxx hours night of which xxx hours are astronomicaly dark. Night 2, 7th-8th November 2007 has xxx hours of lunar dark time out of xxx hours night of which xxx hours are astronomicaly dark.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<A NAME="3298"></A>
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<CAPTION><STRONG>Table 5:</STRONG>
+Case study night characteristics</CAPTION>
+<TR><TD ALIGN="CENTER" COLSPAN=2>Case study night characteristics</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Item</TD>
+<TD ALIGN="LEFT">Night 1</TD>
+<TD ALIGN="LEFT">Night 2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Date</TD>
+<TD ALIGN="LEFT">14-15 Oct 2007</TD>
+<TD ALIGN="LEFT">7-8 Nov 2007</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Sunset</TD>
+<TD ALIGN="LEFT">18:40</TD>
+<TD ALIGN="LEFT">18:20</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Sunrise</TD>
+<TD ALIGN="LEFT">07:08</TD>
+<TD ALIGN="LEFT">07:23</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Start Astro night</TD>
+<TD ALIGN="LEFT">19:58</TD>
+<TD ALIGN="LEFT">19:40</TD>
+</TR>
+<TR><TD ALIGN="LEFT">End Astro night</TD>
+<TD ALIGN="LEFT">05:50</TD>
+<TD ALIGN="LEFT">06:03</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Moonset</TD>
+<TD ALIGN="LEFT">10:01</TD>
+<TD ALIGN="LEFT">16:47</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Moonrise</TD>
+<TD ALIGN="LEFT">20:27</TD>
+<TD ALIGN="LEFT">06:05</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Length of night</TD>
+<TD ALIGN="LEFT">12:28</TD>
+<TD ALIGN="LEFT">13:03</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Length astro night</TD>
+<TD ALIGN="LEFT">9:52</TD>
+<TD ALIGN="LEFT">10:23</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Length astro moon dark</TD>
+<TD ALIGN="LEFT">7:23</TD>
+<TD ALIGN="LEFT">10:03</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Lunar dark fraction</TD>
+<TD ALIGN="LEFT">75%</TD>
+<TD ALIGN="LEFT">96.7%</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+A series of simulations were performed to determine the range of contention statistics for the 2 study nights. Figures <A HREF="#fig:cont4_ensemble">42(a)</A> and <A HREF="#fig:cont6_ensemble">42(b)</A> show ensemble results from a large number of simulations for the 2 nights.d <A HREF="#fig:bsa1_ex">44(b)</A>.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:cont4_ensemble"></A><A NAME="fig:cont6_ensemble"></A><A NAME="3316"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 42:</STRONG>
+Contention profile ensembles for case study nights 1 and 2</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> ensemble for night 2.] 
+    <IMG
+ WIDTH="34" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img400.png"
+ ALT="\includegraphics[scale=0.25, angle=-90]{figures/cont4_ensemble.eps}">
+  
+  [Contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> ensemble for night 1.] 
+    
+  
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+A comparison for several runs using fixed execution models and various environmental models are displayed in figures <A HREF="#fig:bsa0_pr">44(a)</A> and <A HREF="#fig:bsa0_pr">44(a)</A> (Wrong labels !)
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:bsa0_pr"></A><A NAME="fig:bsa1_ex"></A><A NAME="fig:bsa2_rnd"></A><A NAME="fig:bsa2_rnd"></A><A NAME="fig:bsa2_rnd"></A><A NAME="3337"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 43:</STRONG>
+Effects of environment model on contention profile for night 1</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$"> night 1.] 
+   
+  
+ [Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"> night 1.] 
+   
+   
+</DIV>
+<P>
+<DIV ALIGN="CENTER">[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ E_{RA}$"> night 1.] 
+   
+  
+  [Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ E_{RA}$"> night 1.] 
+   
+   
+</DIV>
+<P>
+<DIV ALIGN="CENTER">[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under mixed environment for night 1.] 
+   
+  
+  
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:bsa0_pr"></A><A NAME="fig:bsa1_ex"></A><A NAME="fig:bsa2_rnd"></A><A NAME="fig:bsa2_rnd"></A><A NAME="fig:bsa2_rnd"></A><A NAME="3356"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 44:</STRONG>
+Effects of environment model on contention profile for night 2</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$"> night 2.] 
+   
+  
+ [Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"> night 2.] 
+   
+  
+</DIV>
+<P>
+<DIV ALIGN="CENTER">[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ E_{RA}$"> night 2.] 
+   
+  
+  [Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$ E_{RA}$"> night 2.] 
+   
+   
+</DIV>
+<P>
+<DIV ALIGN="CENTER">[Variation of contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"> under mixed environment for night 2.] 
+   
+  
+ 
+</DIV>
+<P>
+<DIV ALIGN="CENTER">
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+For both nights simulations were run using a basic rank scoring selection mechanism <!-- MATH
+ $\mathcal{S}_{BEST}$
+ -->
+ which selects the highest scoring group from the set of candidate metrics. In addition a second simulation was performed using a random selection model <!-- MATH
+ $\mathcal{S}_{Random}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$ \mathcal{S}_{Random}$"> in which all candidates have equal chance of selection irrespective of their relative scores. This was to provide an indication of how well the normal selection and scoring mechanisms perform against a baseline.
+
+<P>
+The following models were fixed in all cases:-
+
+<UL>
+<LI>Charge Accounting Model <!-- MATH
+ $\mathcal{C}$
+ -->
+ is described in <A HREF="#tab:cam_param">7(a)</A>.
+</LI>
+<LI>Scoring model <!-- MATH
+ $\mathcal{S}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img415.png"
+ ALT="$ \mathcal{S}$"> was setup initially with no weighting parameters as these are to be varied during the experment.
+</LI>
+<LI>Execution timing and feasibility model <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ X$"> is described in <A HREF="#tab:etm_param">7(b)</A>.
+</LI>
+<LI>Stochastic execution mode <!-- MATH
+ $\mathcal{\zeta}$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img416.png"
+ ALT="$ \mathcal{\zeta}$"> is described in <A HREF="#tab:sex_param">7(c)</A>.
+</LI>
+</UL>
+
+<P>
+
+<BR>
+<A NAME="tab:sex_param"></A><A NAME="tab:etm_param"></A><A NAME="tab:cam_param"></A><IMG
+ WIDTH="16" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img417.png"
+ ALT="\begin{landscape}
+% latex2html id marker 3371\begin{table}
+\begin{center}
+\cap...
+... &amp; 8 &amp; 13\\
+\bottomrule
+\end{tabular}
+}
+\end{center}\end{table}\end{landscape}">
+<BR>
+
+<P>
+Results of the random selection models were as follows:-
+
+<P>
+
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="3616"></A>
+<TABLE>
+<CAPTION><STRONG>Table 7:</STRONG>
+Results for Night 1 under <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=7>Results for Random slection model <!-- MATH
+ $\zeta_{random}$
+ -->
+<IMG
+ WIDTH="724" HEIGHT="730" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$ \zeta_{random}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT">Metric</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.png"
+ ALT="$ Q_{X}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $Q_{PX \cdot OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.png"
+ ALT="$ Q_{PX \cdot OA}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Average</B></TD>
+<TD ALIGN="LEFT">0.835</TD>
+<TD ALIGN="LEFT">1.332</TD>
+<TD ALIGN="LEFT">2.957</TD>
+<TD ALIGN="LEFT">0.907</TD>
+<TD ALIGN="LEFT">23.976</TD>
+<TD ALIGN="LEFT">1.086</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Minimum</B></TD>
+<TD ALIGN="LEFT">0.775</TD>
+<TD ALIGN="LEFT">0.921</TD>
+<TD ALIGN="LEFT">1.417</TD>
+<TD ALIGN="LEFT">0.881</TD>
+<TD ALIGN="LEFT">15.331</TD>
+<TD ALIGN="LEFT">0.765</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Maximum</B></TD>
+<TD ALIGN="LEFT">0.887</TD>
+<TD ALIGN="LEFT">1.698</TD>
+<TD ALIGN="LEFT">5.000</TD>
+<TD ALIGN="LEFT">0.932</TD>
+<TD ALIGN="LEFT">33.225</TD>
+<TD ALIGN="LEFT">1.417</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>SDev</B></TD>
+<TD ALIGN="LEFT">0.0225</TD>
+<TD ALIGN="LEFT">0.1357</TD>
+<TD ALIGN="LEFT">0.8021</TD>
+<TD ALIGN="LEFT">0.0081</TD>
+<TD ALIGN="LEFT">3.6253</TD>
+<TD ALIGN="LEFT">0.1258</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="3618"></A>
+<TABLE>
+<CAPTION><STRONG>Table 8:</STRONG>
+Results for Night 1 under <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=7>Results for Random slection model <!-- MATH
+ $\zeta_{random}$
+ -->
+<IMG
+ WIDTH="724" HEIGHT="730" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$ \zeta_{random}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT">Metric</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.png"
+ ALT="$ Q_{X}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $Q_{PX \cdot OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.png"
+ ALT="$ Q_{PX \cdot OA}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Average</B></TD>
+<TD ALIGN="LEFT">0.817</TD>
+<TD ALIGN="LEFT">1.217</TD>
+<TD ALIGN="LEFT">2.851</TD>
+<TD ALIGN="LEFT">0.929</TD>
+<TD ALIGN="LEFT">21.339</TD>
+<TD ALIGN="LEFT">0.999</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Minimum</B></TD>
+<TD ALIGN="LEFT">0.771</TD>
+<TD ALIGN="LEFT">0.817</TD>
+<TD ALIGN="LEFT">1.096</TD>
+<TD ALIGN="LEFT">0.908</TD>
+<TD ALIGN="LEFT">10.410</TD>
+<TD ALIGN="LEFT">0.643</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Maximum</B></TD>
+<TD ALIGN="LEFT">0.875</TD>
+<TD ALIGN="LEFT">1.510</TD>
+<TD ALIGN="LEFT">4.842</TD>
+<TD ALIGN="LEFT">0.956</TD>
+<TD ALIGN="LEFT">30.924</TD>
+<TD ALIGN="LEFT">1.346</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>SDev</B></TD>
+<TD ALIGN="LEFT">0.023</TD>
+<TD ALIGN="LEFT">0.1268</TD>
+<TD ALIGN="LEFT">0.7203</TD>
+<TD ALIGN="LEFT">0.0079</TD>
+<TD ALIGN="LEFT">3.5596</TD>
+<TD ALIGN="LEFT">0.1179</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="3620"></A>
+<TABLE>
+<CAPTION><STRONG>Table 9:</STRONG>
+Results for Night 2 under <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=7>Results for Random slection model <!-- MATH
+ $\zeta_{random}$
+ -->
+<IMG
+ WIDTH="724" HEIGHT="730" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$ \zeta_{random}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT">Metric</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.png"
+ ALT="$ Q_{X}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $Q_{PX \cdot OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.png"
+ ALT="$ Q_{PX \cdot OA}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Average</B></TD>
+<TD ALIGN="LEFT">0.826</TD>
+<TD ALIGN="LEFT">0.966</TD>
+<TD ALIGN="LEFT">3.580</TD>
+<TD ALIGN="LEFT">0.860</TD>
+<TD ALIGN="LEFT">23.605</TD>
+<TD ALIGN="LEFT">0.797</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Minimum</B></TD>
+<TD ALIGN="LEFT">0.782</TD>
+<TD ALIGN="LEFT">0.644</TD>
+<TD ALIGN="LEFT">1.916</TD>
+<TD ALIGN="LEFT">0.834</TD>
+<TD ALIGN="LEFT">16.081</TD>
+<TD ALIGN="LEFT">0.548</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Maximum</B></TD>
+<TD ALIGN="LEFT">0.866</TD>
+<TD ALIGN="LEFT">1.233</TD>
+<TD ALIGN="LEFT">5.236</TD>
+<TD ALIGN="LEFT">0.875</TD>
+<TD ALIGN="LEFT">30.205</TD>
+<TD ALIGN="LEFT">1.065</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>SDev</B></TD>
+<TD ALIGN="LEFT">0.0165</TD>
+<TD ALIGN="LEFT">0.1174</TD>
+<TD ALIGN="LEFT">0.6754</TD>
+<TD ALIGN="LEFT">0.0063</TD>
+<TD ALIGN="LEFT">2.6545</TD>
+<TD ALIGN="LEFT">0.1013</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="3622"></A>
+<TABLE>
+<CAPTION><STRONG>Table 10:</STRONG>
+Results for Night 2 under <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=7>Results for Random slection model <!-- MATH
+ $\zeta_{random}$
+ -->
+<IMG
+ WIDTH="724" HEIGHT="730" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.png"
+ ALT="$ \zeta_{random}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT">Metric</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"></TD>
+<TD></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $Q_{PX \cdot OA}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.png"
+ ALT="$ Q_{PX \cdot OA}$"></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Average</B></TD>
+<TD ALIGN="LEFT">0.811</TD>
+<TD ALIGN="LEFT">0.812</TD>
+<TD ALIGN="LEFT">3.930</TD>
+<TD ALIGN="LEFT">0.900</TD>
+<TD ALIGN="LEFT">28.765</TD>
+<TD ALIGN="LEFT">0.669</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Minimum</B></TD>
+<TD ALIGN="LEFT">0.745</TD>
+<TD ALIGN="LEFT">0.575</TD>
+<TD ALIGN="LEFT">2.079</TD>
+<TD ALIGN="LEFT">0.885</TD>
+<TD ALIGN="LEFT">20.535</TD>
+<TD ALIGN="LEFT">0.439</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>Maximum</B></TD>
+<TD ALIGN="LEFT">0.864</TD>
+<TD ALIGN="LEFT">1.118</TD>
+<TD ALIGN="LEFT">6.264</TD>
+<TD ALIGN="LEFT">0.908</TD>
+<TD ALIGN="LEFT">40.172</TD>
+<TD ALIGN="LEFT">0.908</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><B>SDev</B></TD>
+<TD ALIGN="LEFT">0.0221</TD>
+<TD ALIGN="LEFT">0.1123</TD>
+<TD ALIGN="LEFT">0.8007</TD>
+<TD ALIGN="LEFT">0.0038</TD>
+<TD ALIGN="LEFT">3.746</TD>
+<TD ALIGN="LEFT">0.1020</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+First results revealed a surprisingly minor effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> especially at values of <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> from 0 to 50% where the plot is particularly flat. The plot then rises rapidly at some cut-in point - further investigation is suggested to see if the cut-in point depends on environment and load factors. In addition the non-linear domain sampling suggested the need for a different regime of domain sampling. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:cs1_dw1_px"></A><A NAME="fig:cs1_dw1_oa"></A><A NAME="fig:cs1_dw1_foa"></A><A NAME="fig:cs1_dw1_fpx"></A><A NAME="fig:cs1_dw1_td"></A><A NAME="fig:cs1_dw1_rn"></A><A NAME="3629"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 45:</STRONG>
+Results for night 2 (7-8 November 2007) for environment model <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> schedule quality metric]
+    <IMG
+ WIDTH="34" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img420.png"
+ ALT="\includegraphics[scale=0.25, angle=-90]{figures/cs1_dw1_px.eps}">
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> schedule quality metric]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> schedule quality metric for Flexible groups]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> schedule quality metric for Flexible groups]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"> schedule quality metric]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"> schedule quality metric]
+    
+  
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:cs1_dw1_px"></A><A NAME="fig:cs1_dw1_oa"></A><A NAME="fig:cs1_dw1_foa"></A><A NAME="fig:cs1_dw1_fpx"></A><A NAME="fig:cs1_dw1_td"></A><A NAME="fig:cs1_dw1_rn"></A><A NAME="3636"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 46:</STRONG>
+Results for night 2 (7-8 November 2007) for environment model <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$"></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> schedule quality metric]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> schedule quality metric]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> schedule quality metric for Flexible groups]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> schedule quality metric for Flexible groups]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"> schedule quality metric]
+    
+  
+  [Effect of varying <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> relative to <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ w_{p}$"> on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"> schedule quality metric]
+    
+  
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:cs1_dw1a2_oa"></A><A NAME="fig:cs1_dw1a2_px"></A><A NAME="fig:cs1_dw1a2_rn"></A><A NAME="fig:cs1_dw1a2_td"></A><A NAME="fig:cs1_dw1_oa_c"></A><A NAME="fig:cs1_dw1_px_c"></A><A NAME="3597"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 47:</STRONG>
+Results for night 2 (7-8 November 2007) for variable environment models.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Comparison of effect of environment model (<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">, <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$">) on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> for variable <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$">.]
+   
+  
+  [Comparison of effect of environment model (<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">, <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$">) on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> for variable <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$">.] 
+    
+  
+  [Comparison of effect of environment model (<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">, <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$">) on <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"> for variable <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$">.] 
+    
+  
+  [Comparison of effect of environment model (<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">, <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ E_{FX}$">) on <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"> for variable <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$">.] 
+    
+  
+  [Comparison of dependancy of <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$"> on <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> for all groups and flexible groups under environment model <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">.]
+    
+  
+  [Comparison of dependancy of <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> on <IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ w_{trans}$"> for all groups and flexible groups under environment model <IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$ E_{FP}$">.]
+    
+  
+ 
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1282"
+  HREF="node83.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1278"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1272"
+  HREF="node81.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1280"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1283"
+  HREF="node83.html">Man against Machine</A>
+<B> Up:</B> <A NAME="tex2html1279"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1273"
+  HREF="node81.html">Experiments</A>
+ &nbsp; <B>  <A NAME="tex2html1281"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

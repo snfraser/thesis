@@ -1,0 +1,8 @@
+#!/bin/csh
+
+./qsucc_gen best 7
+#./qsucc_gen biasrs 5
+#./qsucc_gen biasfr 10
+./qsucc_gen ql1 8 
+./qsucc_gen ql2 6
+./qsucc_gen ql4 5

@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Constructive techniques</TITLE>
+<META NAME="description" CONTENT="Constructive techniques">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html387"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html383"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html377"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html385"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html388"
+  HREF="node13.html">Iterative repair</A>
+<B> Up:</B> <A NAME="tex2html384"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html378"
+  HREF="node11.html">Review of current research</A>
+ &nbsp; <B>  <A NAME="tex2html386"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00051000000000000000">
+Constructive techniques</A>
+</H2>
+The constructive approach to generating schedules starts from an empty schedule and progressivly selects tasks to assign to time slots, gradually building up a schedule - effectively a path through the search space. As the search progresses deadend points may be reached when a task becomes unassignable - the search must then backtrack, unwinding pervious assignments and attempting to reassign tasks soas to avoid the deadend. An uninformed search can be very inefficient - if we have <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="$ n$"> tasks to assign and the domain of each task is of size <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img85.png"
+ ALT="$ d$"> then the problem typically is of complexity , performance of the search can be improved by using domain knowledge (heuristics) via some of the following techniques:-
+
+<P>
+<DL>
+<DT><STRONG>Variable ordering heuristics</STRONG></DT>
+<DD>determine the order in which variables are selected for assginment - in scheduling this corresponds to the order tasks are selected for time-slot assignment- e.g. select the task for assignment that leaves the most options left for remaining tasks. The minimum remaining value (MRV) heuristic always selects the variable with the fewest legal assigments to place next - this causes the search to fail fast and allows rapid pruning of the search tree. [<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] describes a number of variable ordering heuristics used in the MicroBOSS scheduler. These are split into <I>fixed variable order heuristics</I> where the order is predetermined at start of search and <I>dynamic variable order heuristics</I> where the order is revised each cycle. The <I>MinimumWidth</I> heuristic selects the variable with the fewest arcs i.e. constraint associations with other variables. Their <I>operation resource reliance</I> (ORR) variable order heuristic selects the task which relies most on the most contended resource or time period The <I>minconflicts</I> heuristic [<A
+ HREF="node99.html#minton92minconflicts">Minton et&nbsp;al., 1992</A>] - at each point the heuristic selects a variable that is in conflict and adjusts its value until it is no longer in conflict. Also <I>maxflex</I> (myers) and <I>mincontention</I> maybe in IR section?) 
+
+<P>
+</DD>
+<DT><STRONG>Value order heuristics</STRONG></DT>
+<DD>determine how the value is chosen to assign to a selected variable. [<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] describes a <I>filtered survivable schedules</I> (FSS) heuristic which assigns to an operation the time-slot which is likely to be compatible with the largest number of survivable schedules = chance of surviving competition with other operations for possession of a resource (time). (Note:simplify the detailed decription in section 6 of the article - concentrate on cliques (clumpings) where graph has tightest constraints = texture heuristics also [<A
+ HREF="node99.html#beck97texturebased">Beck et&nbsp;al., 1997</A>] ). (Note: A couple more examples).They also describe a mechanism to allow the scheduler to switch to a simpler (cheaper) value order heuristics when contention drops below a threshold.
+
+<P>
+</DD>
+<DT><STRONG>Constraint propagation</STRONG></DT>
+<DD>A more general improvement can be made using constraint propagation techniques - here the implications of a constraint on a variable are tested against the constraints on other connected variables. e.g. for arc-consistency there must be a consistent assignment of variables to <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ X$"> for every valid assigment of connected variable <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="$ Y$">, if not we must delete values from one or other domain. The effects are then propagated to neighboring arcs. The name stems from the way new constraints are inferred and added to the constraints set. <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.png"
+ ALT="$ k$">-consistency takes this further by insisting that for every <IMG
+ WIDTH="48" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$ k-1$"> assigned variables a consistent value can be assigned to any <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img90.png"
+ ALT="$ k^{th}$"> variable. Conflict analysis though costly (typically <IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$ O(e^n)$">) [] can reduce backtracking by pruning the search tree. There is a trade-off in the time taken to perform the consistency checking and the reduction in problem size generated. In [<A
+ HREF="node99.html#johnston94spike">Johnston and Miller, 1994</A>] the use of node (<IMG
+ WIDTH="50" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img92.png"
+ ALT="$ k=1$">), arc (<IMG
+ WIDTH="50" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img93.png"
+ ALT="$ k=2$">)and path (<IMG
+ WIDTH="50" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img94.png"
+ ALT="$ k=3$">) consistency is used to prune the search space for scheduling observations with the Hubble Space Telescope (HST). An example of arc-consistency between binary-constrained variables is given where two observations <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ A$"> and <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img95.png"
+ ALT="$ B$"> with a precedence constraint <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img95.png"
+ ALT="$ B$"> <I>after</I> <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ A$"> by at least <IMG
+ WIDTH="27" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.png"
+ ALT="$ \Delta t$"> with each observation having unit duration (for simplicity) and restricted to the interval <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img97.png"
+ ALT="$ [t_A,t_B]$"> then the sub-interval <!-- MATH
+ $[t_A,t_A+ \Delta t+1]$
+ -->
+<IMG
+ WIDTH="137" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.png"
+ ALT="$ [t_A,t_A+ \Delta t+1]$"> is excluded from the domain for <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img95.png"
+ ALT="$ B$"> and the subinterval <!-- MATH
+ $[t_B-\Delta t-1,t_B]$
+ -->
+<IMG
+ WIDTH="139" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$ [t_B-\Delta t-1,t_B]$"> is excluded from the domain for <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ A$">. The trade-off in time spent consistency checking against problem reduction is handled in SPIKE by enforcing a strict time-limit for this procedure.
+
+<P>
+</DD>
+<DT><STRONG>Deadend recovery heuristics</STRONG></DT>
+<DD>The occurance of deadends resulting in the need to perform backtracking indicates that the chosen variable and value ordering heuristics and consistency enforcing technique are insufficent to cope with the problem in hand, a consequence of re-application of these same heuristics on backtracking is that the same deadends may be encountered repeatedly - a thrashing effect similar to that which occurs in disc access. Recovery heuristics are designed to allow for more intelligent choice on how to backtrack. [<A
+ HREF="node99.html#sadeh94backtracking">Sadeh et&nbsp;al., 1994</A>] describes several general techniques for improving backtracking search using the <I>partial conflict set</I> of the deadend (i.e. the set of activities which have blocked progress of the search at that point and which may have been involved in previous deadends):- <BR>
+<IMG
+ WIDTH="555" HEIGHT="273" ALIGN="TOP" BORDER="0"
+ SRC="img100.png"
+ ALT="\begin{inparaenum}\item \emph{Dynamic Consistency Enforcement} (DCE) keeps a his...
+...lternatives - e.g. use second best assignment rather than best. \end{inparaenum}">
+<BR>
+
+<P>
+</DD>
+</DL>
+
+<P>
+A disadvantage of the constructive approach is its <I>offline</I> nature - during execution any break casues the whole schedule from that point onwards to have to be regenerated.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html387"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html383"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html377"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html385"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html388"
+  HREF="node13.html">Iterative repair</A>
+<B> Up:</B> <A NAME="tex2html384"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html378"
+  HREF="node11.html">Review of current research</A>
+ &nbsp; <B>  <A NAME="tex2html386"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

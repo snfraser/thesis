@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Demand profile </TITLE>
+<META NAME="description" CONTENT="Demand profile ">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node31.html">
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node28.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html616"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html612"
+  HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html606"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html614"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html617"
+  HREF="node31.html">Load</A>
+<B> Up:</B> <A NAME="tex2html613"
+  HREF="node28.html">Problem complexity metrics (PCM)</A>
+<B> Previous:</B> <A NAME="tex2html607"
+  HREF="node29.html">Contention profile</A>
+ &nbsp; <B>  <A NAME="tex2html615"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00072200000000000000">
+Demand profile <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$ C_d$"></A>
+</H3>
+A given group will potentially have multiple observing windows when it should be attempted. During any given window the group can be considered to have a demand D on the time within that window. E.g. if the group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> has an (estimated) execution time <IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$ X(g)$"> and its window of opportunity is <IMG
+ WIDTH="40" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="$ \phi(g)$"> <A NAME="tex2html5"
+  HREF="footnode.html#foot1282"><SUP>1</SUP></A> then the group's demand over that window is <!-- MATH
+ $D=X/(X+\phi)$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$ D=X/(X+\phi)$">. If we add up the demand contributions of all the groups which are enabled at any given time we should have a measure of how much demand is placed on that instant. If this aggregate demand exceeds unity then it is likely that some of the groups will not be observed i.e. the requirement for time is greater than the time available. 
+There are several refinements that can be made on this estimate. Firstly we can work out the numerator fairly easily - it can usually be considered constant and known. The denominator is more of a problem. Firstly working out the window of opportunity from the group's time constraint window <I>W</I> is straightforward, however this window may extend from just a few minutes upto several days or even weeks. In the later case the group's target(s) may rise and set several times and the various implicit timing constraints may be broken on several occasions e.g. the lunar distance constraint will impose a varying overlap with the target visibility windows. If we consider each of the calculable constraints then we can work out the actual amount of time (within the window) that the group can
+actually be observed - this gives us a revised (increased) estimate for the group's individual demand for those times within the new sub-windows. 
+Going on another stage we might consider those constraints which cannot be worked out in advance. A group may have a minimum seeing constraint - we cannot tell what the seeing will be like at any future time though we may be able to estimate the likeliness of attaining the group's minimum level. Likewise we can obtain estimates of extinction (perhaps including seasonal variation). We should in addition consider the probability that the selected time is even available for observing - weather and technical downtime mean that a certain fraction of time is lost - a crude climatological estimate might just give the average probability of bad weather (averaged over long periods), we might also have more accurate seasonal-adjusted climatological information, better still if we can predict for some time ahead based on current and recently collected weather data then we shall have a better demand estimate i.e. we are calculating the likely time available rather than the certain time available for the group.
+
+<P>
+Formally:- Let <IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$ X(g)$"> represent the <I>estimated</I> execution time of a group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> and <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.png"
+ ALT="$ U(g,t)$"> the remaining useful time left for that group at time <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$">, then the partial demand of <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at time <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> is defined as:
+
+<P>
+<!-- MATH
+ $d(g,t) = X(g)/(X(g) + U(g,t))$
+ -->
+<IMG
+ WIDTH="262" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$ d(g,t) = X(g)/(X(g) + U(g,t))$"> where <!-- MATH
+ $U(g,t) = \tau(w^*_i) \cap [t,\infty] \cap N(t) \cap M(g) \cap V(g))$
+ -->
+<IMG
+ WIDTH="389" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.png"
+ ALT="$ U(g,t) = \tau(w^*_i) \cap [t,\infty] \cap N(t) \cap M(g) \cap V(g))$"> and others, where <IMG
+ WIDTH="44" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.png"
+ ALT="$ V(g)$"> is the set of visibility windows for <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$">'s targets from <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> onwards, <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$ M(g)$"> is the set of windows satisfying observing constraints, <IMG
+ WIDTH="43" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="$ N(t)$"> the set of nights from <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> onwards.
+
+<P>
+Some stuff on seeing/extinction stats. More on weather/technical downtime.
+
+<P>
+If a group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> is to execute at some future time <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> we need to know that the weather will be good at that time and that it will remain good for at least <IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$ X(g)$">. From the weather stats:- 
+
+<P>
+<!-- MATH
+ $P_{exec}=P_{good}(t) \dot \int_{t=X(g)}^{t=\infty}{\rho(t)dt}$
+ -->
+<IMG
+ WIDTH="236" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.png"
+ ALT="$ P_{exec}=P_{good}(t) \dot \int_{t=X(g)}^{t=\infty}{\rho(t)dt}$"> where <IMG
+ WIDTH="36" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.png"
+ ALT="$ \rho(t)$"> represents the distribution of lengths of continuous <I>good</I> weather runs.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html616"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html612"
+  HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html606"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html614"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html617"
+  HREF="node31.html">Load</A>
+<B> Up:</B> <A NAME="tex2html613"
+  HREF="node28.html">Problem complexity metrics (PCM)</A>
+<B> Previous:</B> <A NAME="tex2html607"
+  HREF="node29.html">Contention profile</A>
+ &nbsp; <B>  <A NAME="tex2html615"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

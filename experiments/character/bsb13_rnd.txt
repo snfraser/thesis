@@ -1,0 +1,583 @@
+Add /occ/common/ngat/dev_lt.jar
+Add /occ/common/ngat/ngat_astrometry.jar
+Add /occ/common/ngat/ngat_fits.jar
+Add /occ/common/ngat/ngat_instrument.jar
+Add /occ/common/ngat/ngat_math.jar
+Add /occ/common/ngat/ngat_message_base.jar
+Add /occ/common/ngat/ngat_message_gui_rcs.jar
+Add /occ/common/ngat/ngat_message_iss_inst.jar
+Add /occ/common/ngat/ngat_message_oss.jar
+Add /occ/common/ngat/ngat_message_pos_rcs.jar
+Add /occ/common/ngat/ngat_message_rcs_tcs.jar
+Add /occ/common/ngat/ngat_net_camp.jar
+Add /occ/common/ngat/ngat_net_datalogger.jar
+Add /occ/common/ngat/ngat_net.jar
+Add /occ/common/ngat/ngat_net_transaction.jar
+Add /occ/common/ngat/ngat_phase2.jar
+Add /occ/common/ngat/ngat_phase2_nonpersist.jar
+Add /occ/common/ngat/ngat_rcs_export.jar
+Add /occ/common/ngat/ngat_swing.jar
+Add /occ/common/ngat/ngat_util_charting.jar
+Add /occ/common/ngat/ngat_util.jar
+Add /occ/common/ngat/ngat_util_logging.jar
+Add /occ/common/ngat/ngat_util_logging_test.jar
+Add /occ/common/shared/jcommon-1.0.5.jar
+Add /occ/common/shared/jdom.jar
+Add /occ/common/shared/jfits-0.92.jar
+Add /occ/common/shared/jfreechart-1.0.2.jar
+Add /occ/common/shared/jibx-run.jar
+Add /occ/common/shared/jydodb.jar
+Add /occ/common/shared/log4j-1.2.13.jar
+Add /occ/common/shared/mysql-connector-java-3.1.12-bin.jar
+Add /occ/common/shared/odmg.jar
+Add /occ/common/shared/xerces.jar
+Add /occ/common/shared/xercesSamples.jar
+Add /occ/common/shared/xml4j.jar
+Add /occ/common/experimental/ngat_ems.jar
+Add /occ/common/experimental/ngat_icm.jar
+Add /occ/common/experimental/ngat_net_cil.jar
+Add /occ/common/experimental/ngat_new_phase2.jar
+Add /occ/common/experimental/ngat_new_rcs.jar
+Add /occ/common/experimental/ngat_sms.jar
+Add /occ/common/experimental/ngat_tcm.jar
+Add /occ/common/experimental/rcsgui.jar
+
+
+2007-12-06 T 11:57:25.795 UTCSIM 1  [1] [] - : -.-():: Start sim run...
+2007-12-06 T 11:57:25.956 UTCSIM 2  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:25:00]
+2007-12-06 T 11:57:25.956 UTCSIM 3  [1] [] SIMF : .runsim()():: ** Awaiting Sunset at LT at 2007-11-07 18:25:00
+2007-12-06 T 11:57:25.957 UTCSIM 4  [1] [] SIMF : .runsim()():: ** It is now Sunset at LT
+2007-12-06 T 11:57:26.131 UTCSIM 5  [1] [] SIMF : .runsim()():: 2007-11-07 18:25:00 Contention= 0
+2007-12-06 T 11:57:26.131 UTCSIM 6  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:25:00 C = 0
+2007-12-06 T 11:57:26.132 UTCSIM 7  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:30:00]
+2007-12-06 T 11:57:26.132 UTCSIM 8  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 18:30:00
+2007-12-06 T 11:57:26.221 UTCSIM 9  [1] [] SIMF : .runsim()():: 2007-11-07 18:30:00 Contention= 0
+2007-12-06 T 11:57:26.222 UTCSIM 10  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:30:00 C = 0
+2007-12-06 T 11:57:26.222 UTCSIM 11  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:35:00]
+2007-12-06 T 11:57:26.222 UTCSIM 12  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 18:35:00
+2007-12-06 T 11:57:26.296 UTCSIM 13  [1] [] SIMF : .runsim()():: 2007-11-07 18:35:00 Contention= 0
+2007-12-06 T 11:57:26.297 UTCSIM 14  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:35:00 C = 0
+2007-12-06 T 11:57:26.298 UTCSIM 15  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:40:00]
+2007-12-06 T 11:57:26.299 UTCSIM 16  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 18:40:00
+2007-12-06 T 11:57:26.418 UTCSIM 17  [1] [] SIMF : .runsim()():: 2007-11-07 18:40:00 Contention= 0
+2007-12-06 T 11:57:26.419 UTCSIM 18  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:40:00 C = 0
+2007-12-06 T 11:57:26.419 UTCSIM 19  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:45:00]
+2007-12-06 T 11:57:26.419 UTCSIM 20  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 18:45:00
+2007-12-06 T 11:57:26.546 UTCSIM 21  [1] [] SIMF : .runsim()():: 2007-11-07 18:45:00 Contention= 9
+2007-12-06 T 11:57:26.547 UTCSIM 22  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:45:00 C = 9
+2007-12-06 T 11:57:26.547 UTCSIM 23  [1] [] SIMF : .runsim()()::  Picking group [LT0] ngat.phase2.MonitorGroup/uranusMon1 P=1 at: 2007-11-07 18:45:00 Duration 1M Current Sun elev = -6.235
+2007-12-06 T 11:57:26.548 UTCSIM 24  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 18:46:13
+2007-12-06 T 11:57:27.001 UTCSIM 25  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 18:45:00 Utility: [OH]: Infinity Utility: [P}: 73000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/teaching1/TL07B02/uranusMon1 Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:27.001 UTCSIM 26  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 125s, completing at: 2007-11-07 18:47:05
+2007-12-06 T 11:57:27.001 UTCSIM 27  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.020277777777777777
+2007-12-06 T 11:57:27.001 UTCSIM 28  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:47:05]
+2007-12-06 T 11:57:27.115 UTCSIM 29  [1] [] SIMF : .runsim()():: 2007-11-07 18:47:05 Contention= 8
+2007-12-06 T 11:57:27.117 UTCSIM 30  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:47:05 C = 8
+2007-12-06 T 11:57:27.117 UTCSIM 31  [1] [] SIMF : .runsim()()::  Picking group [LT1] ngat.phase2.RepeatableGroup/Focus01_Har P=1 at: 2007-11-07 18:47:05 Duration 10M Current Sun elev = -6.681
+2007-12-06 T 11:57:27.117 UTCSIM 32  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 18:57:43
+2007-12-06 T 11:57:27.549 UTCSIM 33  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 18:47:05 Utility: [OH]: Infinity Utility: [P}: 638000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATFilterThick/Focus01_Har Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:27.549 UTCSIM 34  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 570s, completing at: 2007-11-07 18:56:36
+2007-12-06 T 11:57:27.549 UTCSIM 35  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.17694444444444443
+2007-12-06 T 11:57:27.551 UTCSIM 36  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 18:56:36]
+2007-12-06 T 11:57:27.663 UTCSIM 37  [1] [] SIMF : .runsim()():: 2007-11-07 18:56:36 Contention= 7
+2007-12-06 T 11:57:27.663 UTCSIM 38  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 18:56:36 C = 7
+2007-12-06 T 11:57:27.663 UTCSIM 39  [1] [] SIMF : .runsim()()::  Picking group [LT2] ngat.phase2.RepeatableGroup/Focus01_ir P=1 at: 2007-11-07 18:56:36 Duration 8M Current Sun elev = -8.716
+2007-12-06 T 11:57:27.663 UTCSIM 40  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:05:02
+2007-12-06 T 11:57:28.151 UTCSIM 41  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 18:56:36 Utility: [OH]: Infinity Utility: [P}: 506000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATFilterThick/Focus01_ir Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:28.151 UTCSIM 42  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 453s, completing at: 2007-11-07 19:04:10
+2007-12-06 T 11:57:28.152 UTCSIM 43  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14027777777777778
+2007-12-06 T 11:57:28.152 UTCSIM 44  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:04:10]
+2007-12-06 T 11:57:28.300 UTCSIM 45  [1] [] SIMF : .runsim()():: 2007-11-07 19:04:10 Contention= 6
+2007-12-06 T 11:57:28.300 UTCSIM 46  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:04:10 C = 6
+2007-12-06 T 11:57:28.301 UTCSIM 47  [1] [] SIMF : .runsim()()::  Picking group [LT3] ngat.phase2.RepeatableGroup/Focus19_Br P=1 at: 2007-11-07 19:04:10 Duration 9M Current Sun elev = -10.341
+2007-12-06 T 11:57:28.301 UTCSIM 48  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:13:53
+2007-12-06 T 11:57:28.841 UTCSIM 49  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:04:10 Utility: [OH]: 0.9376249050137847 Utility: [P}: 583000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATFilterThick/Focus19_Br Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:28.842 UTCSIM 50  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 467s, completing at: 2007-11-07 19:11:57
+2007-12-06 T 11:57:28.842 UTCSIM 51  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.16166666666666665
+2007-12-06 T 11:57:28.842 UTCSIM 52  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:11:57]
+2007-12-06 T 11:57:28.966 UTCSIM 53  [1] [] SIMF : .runsim()():: 2007-11-07 19:11:57 Contention= 5
+2007-12-06 T 11:57:28.967 UTCSIM 54  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:11:57 C = 5
+2007-12-06 T 11:57:28.967 UTCSIM 55  [1] [] SIMF : .runsim()()::  Picking group [LT4] ngat.phase2.RepeatableGroup/Photom_2331+055A P=STD at: 2007-11-07 19:11:57 Duration 8M Current Sun elev = -12.018
+2007-12-06 T 11:57:28.967 UTCSIM 56  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:20:39
+2007-12-06 T 11:57:29.308 UTCSIM 57  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:11:57 Utility: [OH]: 0.7288719464289358 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_2331+055A Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:29.309 UTCSIM 58  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 623s, completing at: 2007-11-07 19:22:21
+2007-12-06 T 11:57:29.309 UTCSIM 59  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:29.309 UTCSIM 60  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:22:21]
+2007-12-06 T 11:57:29.434 UTCSIM 61  [1] [] SIMF : .runsim()():: 2007-11-07 19:22:21 Contention= 9
+2007-12-06 T 11:57:29.434 UTCSIM 62  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:22:21 C = 9
+2007-12-06 T 11:57:29.434 UTCSIM 63  [1] [] SIMF : .runsim()()::  Picking group [LT5] ngat.phase2.RepeatableGroup/Photom_M-A P=STD at: 2007-11-07 19:22:21 Duration 8M Current Sun elev = -14.265
+2007-12-06 T 11:57:29.435 UTCSIM 64  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:31:03
+2007-12-06 T 11:57:29.693 UTCSIM 65  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:22:21 Utility: [OH]: 0.9910389271382537 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_M-A Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:29.693 UTCSIM 66  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 551s, completing at: 2007-11-07 19:31:32
+2007-12-06 T 11:57:29.693 UTCSIM 67  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:29.693 UTCSIM 68  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:31:32]
+2007-12-06 T 11:57:29.817 UTCSIM 69  [1] [] SIMF : .runsim()():: 2007-11-07 19:31:32 Contention= 8
+2007-12-06 T 11:57:29.817 UTCSIM 70  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:31:32 C = 8
+2007-12-06 T 11:57:29.818 UTCSIM 71  [1] [] SIMF : .runsim()()::  Picking group [LT6] ngat.phase2.RepeatableGroup/SN2007le_IRmonitor P=3 at: 2007-11-07 19:31:32 Duration 10M Current Sun elev = -16.261
+2007-12-06 T 11:57:29.818 UTCSIM 72  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:42:14
+2007-12-06 T 11:57:30.104 UTCSIM 73  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:31:32 Utility: [OH]: 0.7850299502487761 Utility: [P}: 1926000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/Gerardy.Chris/JL07B02/SN2007le_IRmonitor Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:30.105 UTCSIM 74  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 641s, completing at: 2007-11-07 19:42:13
+2007-12-06 T 11:57:30.105 UTCSIM 75  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.17805555555555555
+2007-12-06 T 11:57:30.105 UTCSIM 76  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:42:13]
+2007-12-06 T 11:57:30.256 UTCSIM 77  [1] [] SIMF : .runsim()():: 2007-11-07 19:42:13 Contention= 44
+2007-12-06 T 11:57:30.256 UTCSIM 78  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:42:13 C = 44
+2007-12-06 T 11:57:30.256 UTCSIM 79  [1] [] SIMF : .runsim()()::  Picking group [LT7] ngat.phase2.MonitorGroup/SN2007gr P=3 at: 2007-11-07 19:42:13 Duration 9M Current Sun elev = -18.587
+2007-12-06 T 11:57:30.256 UTCSIM 80  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 19:51:57
+2007-12-06 T 11:57:30.552 UTCSIM 81  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:42:13 Utility: [OH]: 0.338282911210157 Utility: [P}: 1752000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/smartt/PL07B04/SN2007gr Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:30.552 UTCSIM 82  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 609s, completing at: 2007-11-07 19:52:23
+2007-12-06 T 11:57:30.552 UTCSIM 83  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.16111111111111112
+2007-12-06 T 11:57:30.552 UTCSIM 84  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 19:52:23]
+2007-12-06 T 11:57:30.702 UTCSIM 85  [1] [] SIMF : .runsim()():: 2007-11-07 19:52:23 Contention= 27
+2007-12-06 T 11:57:30.702 UTCSIM 86  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 19:52:23 C = 27
+2007-12-06 T 11:57:30.702 UTCSIM 87  [1] [] SIMF : .runsim()()::  Picking group [LT8] ngat.phase2.RepeatableGroup/SN2007le_OptMonitor P=3 at: 2007-11-07 19:52:23 Duration 10M Current Sun elev = -20.805
+2007-12-06 T 11:57:30.703 UTCSIM 88  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 20:03:17
+2007-12-06 T 11:57:30.914 UTCSIM 89  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 19:52:23 Utility: [OH]: 0.8428579144727503 Utility: [P}: 1962000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/Gerardy.Chris/JL07B02/SN2007le_OptMonitor Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:30.915 UTCSIM 90  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 698s, completing at: 2007-11-07 20:04:01
+2007-12-06 T 11:57:30.915 UTCSIM 91  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.18083333333333335
+2007-12-06 T 11:57:30.915 UTCSIM 92  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 20:04:01]
+2007-12-06 T 11:57:31.085 UTCSIM 93  [1] [] SIMF : .runsim()():: 2007-11-07 20:04:01 Contention= 47
+2007-12-06 T 11:57:31.086 UTCSIM 94  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 20:04:01 C = 47
+2007-12-06 T 11:57:31.086 UTCSIM 95  [1] [] SIMF : .runsim()()::  Picking group [LT9] ngat.phase2.MonitorGroup/SN07kk_Optmonitor P=5 at: 2007-11-07 20:04:01 Duration 10M Current Sun elev = -23.353
+2007-12-06 T 11:57:31.086 UTCSIM 96  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 20:14:55
+2007-12-06 T 11:57:31.395 UTCSIM 97  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 20:04:01 Utility: [OH]: 0.26572044282856494 Utility: [P}: 3270000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/Gerardy.Chris/JL07B02/SN07kk_Optmonitor Score: [0.5], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:31.395 UTCSIM 98  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 642s, completing at: 2007-11-07 20:14:44
+2007-12-06 T 11:57:31.395 UTCSIM 99  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.18083333333333335
+2007-12-06 T 11:57:31.395 UTCSIM 100  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 20:14:44]
+2007-12-06 T 11:57:31.543 UTCSIM 101  [1] [] SIMF : .runsim()():: 2007-11-07 20:14:44 Contention= 46
+2007-12-06 T 11:57:31.543 UTCSIM 102  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 20:14:44 C = 46
+2007-12-06 T 11:57:31.543 UTCSIM 103  [1] [] SIMF : .runsim()()::  Picking group [LT10] ngat.phase2.MonitorGroup/SN07kk_IRmonitor P=5 at: 2007-11-07 20:14:44 Duration 25M Current Sun elev = -25.705
+2007-12-06 T 11:57:31.544 UTCSIM 104  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 20:39:44
+2007-12-06 T 11:57:31.898 UTCSIM 105  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 20:14:44 Utility: [OH]: 0.2906991607112667 Utility: [P}: 7500000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/Gerardy.Chris/JL07B02/SN07kk_IRmonitor Score: [0.5], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:31.898 UTCSIM 106  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1301s, completing at: 2007-11-07 20:36:25
+2007-12-06 T 11:57:31.898 UTCSIM 107  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.4166666666666667
+2007-12-06 T 11:57:31.898 UTCSIM 108  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 20:36:25]
+2007-12-06 T 11:57:32.050 UTCSIM 109  [1] [] SIMF : .runsim()():: 2007-11-07 20:36:25 Contention= 43
+2007-12-06 T 11:57:32.051 UTCSIM 110  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 20:36:25 C = 43
+2007-12-06 T 11:57:32.051 UTCSIM 111  [1] [] SIMF : .runsim()()::  Picking group [LT11] ngat.phase2.RepeatableGroup/PG0231+051 P=STD at: 2007-11-07 20:36:25 Duration 8M Current Sun elev = -30.481
+2007-12-06 T 11:57:32.051 UTCSIM 112  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 20:45:07
+2007-12-06 T 11:57:32.403 UTCSIM 113  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 20:36:25 Utility: [OH]: 0.43370064989636953 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/PG0231+051 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:32.403 UTCSIM 114  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 487s, completing at: 2007-11-07 20:44:33
+2007-12-06 T 11:57:32.404 UTCSIM 115  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:32.404 UTCSIM 116  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 20:44:33]
+2007-12-06 T 11:57:32.551 UTCSIM 117  [1] [] SIMF : .runsim()():: 2007-11-07 20:44:33 Contention= 42
+2007-12-06 T 11:57:32.551 UTCSIM 118  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 20:44:33 C = 42
+2007-12-06 T 11:57:32.551 UTCSIM 119  [1] [] SIMF : .runsim()()::  Picking group [LT12] ngat.phase2.MonitorGroup/FS109 P=STD at: 2007-11-07 20:44:33 Duration 3M Current Sun elev = -32.273
+2007-12-06 T 11:57:32.551 UTCSIM 120  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 20:48:29
+2007-12-06 T 11:57:32.904 UTCSIM 121  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 20:44:33 Utility: [OH]: 0.7371102113259627 Utility: [P}: 708000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS109 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:32.905 UTCSIM 122  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 218s, completing at: 2007-11-07 20:48:11
+2007-12-06 T 11:57:32.905 UTCSIM 123  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.06527777777777778
+2007-12-06 T 11:57:32.905 UTCSIM 124  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 20:48:11]
+2007-12-06 T 11:57:33.064 UTCSIM 125  [1] [] SIMF : .runsim()():: 2007-11-07 20:48:11 Contention= 41
+2007-12-06 T 11:57:33.065 UTCSIM 126  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 20:48:11 C = 41
+2007-12-06 T 11:57:33.065 UTCSIM 127  [1] [] SIMF : .runsim()()::  Picking group [LT13] ngat.phase2.RepeatableGroup/HS2209 P=3 at: 2007-11-07 20:48:11 Duration 27M Current Sun elev = -33.075
+2007-12-06 T 11:57:33.065 UTCSIM 128  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 21:15:11
+2007-12-06 T 11:57:33.217 UTCSIM 129  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 20:48:11 Utility: [OH]: 0.9604358205410574 Utility: [P}: 4860000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/Dye.Simon/PL07B03/HS2209 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:33.218 UTCSIM 130  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1571s, completing at: 2007-11-07 21:14:22
+2007-12-06 T 11:57:33.218 UTCSIM 131  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.45
+2007-12-06 T 11:57:33.218 UTCSIM 132  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:14:22]
+2007-12-06 T 11:57:33.367 UTCSIM 133  [1] [] SIMF : .runsim()():: 2007-11-07 21:14:22 Contention= 40
+2007-12-06 T 11:57:33.367 UTCSIM 134  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:14:22 C = 40
+2007-12-06 T 11:57:33.368 UTCSIM 135  [1] [] SIMF : .runsim()()::  Picking group [LT14] ngat.phase2.MonitorGroup/pol_BD59_389 P=STD at: 2007-11-07 21:14:22 Duration 3M Current Sun elev = -38.858
+2007-12-06 T 11:57:33.368 UTCSIM 136  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 21:17:34
+2007-12-06 T 11:57:33.660 UTCSIM 137  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 21:14:22 Utility: [OH]: 0.8893906190302354 Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/pol_BD59_389 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:33.660 UTCSIM 138  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 169s, completing at: 2007-11-07 21:17:12
+2007-12-06 T 11:57:33.660 UTCSIM 139  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:33.660 UTCSIM 140  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:17:12]
+2007-12-06 T 11:57:33.802 UTCSIM 141  [1] [] SIMF : .runsim()():: 2007-11-07 21:17:12 Contention= 0
+2007-12-06 T 11:57:33.802 UTCSIM 142  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:17:12 C = 0
+2007-12-06 T 11:57:33.802 UTCSIM 143  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:22:12]
+2007-12-06 T 11:57:33.802 UTCSIM 144  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 21:22:12
+2007-12-06 T 11:57:33.951 UTCSIM 145  [1] [] SIMF : .runsim()():: 2007-11-07 21:22:12 Contention= 39
+2007-12-06 T 11:57:33.953 UTCSIM 146  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:22:12 C = 39
+2007-12-06 T 11:57:33.953 UTCSIM 147  [1] [] SIMF : .runsim()()::  Picking group [LT15] ngat.phase2.MonitorGroup/m15weekly P=2 at: 2007-11-07 21:22:12 Duration 3M Current Sun elev = -40.585
+2007-12-06 T 11:57:33.953 UTCSIM 148  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 21:25:43
+2007-12-06 T 11:57:34.150 UTCSIM 149  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 21:22:12 Utility: [OH]: 0.8058159481546869 Utility: [P}: 422000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/McDonald.Iain/PL07A06/m15weekly Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:34.150 UTCSIM 150  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 216s, completing at: 2007-11-07 21:25:48
+2007-12-06 T 11:57:34.150 UTCSIM 151  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.057777777777777775
+2007-12-06 T 11:57:34.151 UTCSIM 152  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:25:48]
+2007-12-06 T 11:57:34.339 UTCSIM 153  [1] [] SIMF : .runsim()():: 2007-11-07 21:25:48 Contention= 38
+2007-12-06 T 11:57:34.339 UTCSIM 154  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:25:48 C = 38
+2007-12-06 T 11:57:34.339 UTCSIM 155  [1] [] SIMF : .runsim()()::  Picking group [LT16] ngat.phase2.MonitorGroup/M31b P=2 at: 2007-11-07 21:25:48 Duration 12M Current Sun elev = -41.38
+2007-12-06 T 11:57:34.340 UTCSIM 156  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 21:37:48
+2007-12-06 T 11:57:34.596 UTCSIM 157  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 21:25:48 Utility: [OH]: 0.9009897479598512 Utility: [P}: 1440000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/Darnley.Matt/PL07B07/M31b Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:34.596 UTCSIM 158  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 679s, completing at: 2007-11-07 21:37:08
+2007-12-06 T 11:57:34.596 UTCSIM 159  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.19944444444444445
+2007-12-06 T 11:57:34.597 UTCSIM 160  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:37:08]
+2007-12-06 T 11:57:34.740 UTCSIM 161  [1] [] SIMF : .runsim()():: 2007-11-07 21:37:08 Contention= 21
+2007-12-06 T 11:57:34.741 UTCSIM 162  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:37:08 C = 21
+2007-12-06 T 11:57:34.741 UTCSIM 163  [1] [] SIMF : .runsim()()::  Picking group [LT17] ngat.phase2.MonitorGroup/M31 P=2 at: 2007-11-07 21:37:08 Duration 12M Current Sun elev = -43.876
+2007-12-06 T 11:57:34.742 UTCSIM 164  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 21:49:08
+2007-12-06 T 11:57:35.006 UTCSIM 165  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 21:37:08 Utility: [OH]: 0.9236806088859476 Utility: [P}: 1440000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/Darnley.Matt/PL07B07/M31 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:35.006 UTCSIM 166  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 670s, completing at: 2007-11-07 21:48:18
+2007-12-06 T 11:57:35.006 UTCSIM 167  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.19944444444444445
+2007-12-06 T 11:57:35.006 UTCSIM 168  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 21:48:18]
+2007-12-06 T 11:57:35.150 UTCSIM 169  [1] [] SIMF : .runsim()():: 2007-11-07 21:48:18 Contention= 20
+2007-12-06 T 11:57:35.150 UTCSIM 170  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 21:48:18 C = 20
+2007-12-06 T 11:57:35.150 UTCSIM 171  [1] [] SIMF : .runsim()()::  Picking group [LT18] ngat.phase2.MonitorGroup/ANGM31 P=2 at: 2007-11-07 21:48:18 Duration 32M Current Sun elev = -46.336
+2007-12-06 T 11:57:35.150 UTCSIM 172  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:21:06
+2007-12-06 T 11:57:35.442 UTCSIM 173  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 21:48:18 Utility: [OH]: 0.9788187899316007 Utility: [P}: 3936000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/eamonn.kerins/JL07B04/ANGM31 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:35.443 UTCSIM 174  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1936s, completing at: 2007-11-07 22:20:34
+2007-12-06 T 11:57:35.443 UTCSIM 175  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.5466666666666666
+2007-12-06 T 11:57:35.443 UTCSIM 176  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:20:34]
+2007-12-06 T 11:57:35.581 UTCSIM 177  [1] [] SIMF : .runsim()():: 2007-11-07 22:20:34 Contention= 10
+2007-12-06 T 11:57:35.581 UTCSIM 178  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:20:34 C = 10
+2007-12-06 T 11:57:35.582 UTCSIM 179  [1] [] SIMF : .runsim()()::  Picking group [LT19] ngat.phase2.Group/NGC7721 P=1 at: 2007-11-07 22:20:34 Duration 8M Current Sun elev = -53.392
+2007-12-06 T 11:57:35.582 UTCSIM 180  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:28:44
+2007-12-06 T 11:57:35.755 UTCSIM 181  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:20:34 Utility: [OH]: 0.9752680210851141 Utility: [P}: 490000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/phil.james/JL05A02/NGC7721 Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:35.755 UTCSIM 182  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 531s, completing at: 2007-11-07 22:29:25
+2007-12-06 T 11:57:35.755 UTCSIM 183  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.13583333333333333
+2007-12-06 T 11:57:35.755 UTCSIM 184  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:29:25]
+2007-12-06 T 11:57:35.901 UTCSIM 185  [1] [] SIMF : .runsim()():: 2007-11-07 22:29:25 Contention= 33
+2007-12-06 T 11:57:35.901 UTCSIM 186  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:29:25 C = 33
+2007-12-06 T 11:57:35.901 UTCSIM 187  [1] [] SIMF : .runsim()()::  Picking group [LT20] ngat.phase2.RepeatableGroup/Photom_2331+055A P=STD at: 2007-11-07 22:29:25 Duration 8M Current Sun elev = -55.309
+2007-12-06 T 11:57:35.901 UTCSIM 188  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:38:07
+2007-12-06 T 11:57:36.557 UTCSIM 189  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:29:25 Utility: [OH]: 0.9876243876355434 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_2331+055A Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:36.557 UTCSIM 190  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 573s, completing at: 2007-11-07 22:38:59
+2007-12-06 T 11:57:36.557 UTCSIM 191  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:36.557 UTCSIM 192  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:38:59]
+2007-12-06 T 11:57:36.701 UTCSIM 193  [1] [] SIMF : .runsim()():: 2007-11-07 22:38:59 Contention= 36
+2007-12-06 T 11:57:36.701 UTCSIM 194  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:38:59 C = 36
+2007-12-06 T 11:57:36.701 UTCSIM 195  [1] [] SIMF : .runsim()()::  Picking group [LT21] ngat.phase2.MonitorGroup/zero_hd212311 P=STD at: 2007-11-07 22:38:59 Duration 3M Current Sun elev = -57.367
+2007-12-06 T 11:57:36.701 UTCSIM 196  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:42:49
+2007-12-06 T 11:57:36.979 UTCSIM 197  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:38:59 Utility: [OH]: 0.9814749940022127 Utility: [P}: 690000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/zero_hd212311 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:36.979 UTCSIM 198  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 288s, completing at: 2007-11-07 22:43:48
+2007-12-06 T 11:57:36.979 UTCSIM 199  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.06388888888888888
+2007-12-06 T 11:57:36.979 UTCSIM 200  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:43:48]
+2007-12-06 T 11:57:37.126 UTCSIM 201  [1] [] SIMF : .runsim()():: 2007-11-07 22:43:48 Contention= 36
+2007-12-06 T 11:57:37.126 UTCSIM 202  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:43:48 C = 36
+2007-12-06 T 11:57:37.126 UTCSIM 203  [1] [] SIMF : .runsim()()::  Picking group [LT22] ngat.phase2.MonitorGroup/zero_G191B2 P=STD at: 2007-11-07 22:43:48 Duration 3M Current Sun elev = -58.397
+2007-12-06 T 11:57:37.126 UTCSIM 204  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:47:12
+2007-12-06 T 11:57:37.418 UTCSIM 205  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:43:48 Utility: [OH]: 0.6125718099112512 Utility: [P}: 612000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/zero_G191B2 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:37.419 UTCSIM 206  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 209s, completing at: 2007-11-07 22:47:18
+2007-12-06 T 11:57:37.419 UTCSIM 207  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.056666666666666664
+2007-12-06 T 11:57:37.420 UTCSIM 208  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:47:18]
+2007-12-06 T 11:57:37.557 UTCSIM 209  [1] [] SIMF : .runsim()():: 2007-11-07 22:47:18 Contention= 13
+2007-12-06 T 11:57:37.557 UTCSIM 210  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:47:18 C = 13
+2007-12-06 T 11:57:37.558 UTCSIM 211  [1] [] SIMF : .runsim()()::  Picking group [LT23] ngat.phase2.MonitorGroup/pol_BD59_389 P=STD at: 2007-11-07 22:47:18 Duration 3M Current Sun elev = -59.141
+2007-12-06 T 11:57:37.558 UTCSIM 212  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:50:30
+2007-12-06 T 11:57:37.778 UTCSIM 213  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:47:18 Utility: [OH]: Infinity Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/pol_BD59_389 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:37.779 UTCSIM 214  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 241s, completing at: 2007-11-07 22:51:19
+2007-12-06 T 11:57:37.779 UTCSIM 215  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:37.779 UTCSIM 216  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:51:19]
+2007-12-06 T 11:57:37.920 UTCSIM 217  [1] [] SIMF : .runsim()():: 2007-11-07 22:51:19 Contention= 19
+2007-12-06 T 11:57:37.921 UTCSIM 218  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:51:19 C = 19
+2007-12-06 T 11:57:37.921 UTCSIM 219  [1] [] SIMF : .runsim()()::  Picking group [LT24] ngat.phase2.MonitorGroup/zero_HD12021 P=STD at: 2007-11-07 22:51:19 Duration 3M Current Sun elev = -59.996
+2007-12-06 T 11:57:37.921 UTCSIM 220  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 22:54:31
+2007-12-06 T 11:57:38.209 UTCSIM 221  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:51:19 Utility: [OH]: 0.931537095697239 Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/zero_HD12021 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:38.209 UTCSIM 222  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 191s, completing at: 2007-11-07 22:54:31
+2007-12-06 T 11:57:38.209 UTCSIM 223  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:38.209 UTCSIM 224  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 22:54:31]
+2007-12-06 T 11:57:38.349 UTCSIM 225  [1] [] SIMF : .runsim()():: 2007-11-07 22:54:31 Contention= 11
+2007-12-06 T 11:57:38.349 UTCSIM 226  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 22:54:31 C = 11
+2007-12-06 T 11:57:38.349 UTCSIM 227  [1] [] SIMF : .runsim()()::  Picking group [LT25] ngat.phase2.MonitorGroup/lens_2403 P=2 at: 2007-11-07 22:54:31 Duration 14M Current Sun elev = -60.67
+2007-12-06 T 11:57:38.349 UTCSIM 228  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 23:09:19
+2007-12-06 T 11:57:38.536 UTCSIM 229  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 22:54:31 Utility: [OH]: 0.4015879310029752 Utility: [P}: 1776000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/mike.bode/JL07B05/lens_2403 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:38.537 UTCSIM 230  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 939s, completing at: 2007-11-07 23:10:10
+2007-12-06 T 11:57:38.537 UTCSIM 231  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.24666666666666667
+2007-12-06 T 11:57:38.537 UTCSIM 232  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 23:10:10]
+2007-12-06 T 11:57:38.683 UTCSIM 233  [1] [] SIMF : .runsim()():: 2007-11-07 23:10:10 Contention= 34
+2007-12-06 T 11:57:38.683 UTCSIM 234  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 23:10:10 C = 34
+2007-12-06 T 11:57:38.684 UTCSIM 235  [1] [] SIMF : .runsim()()::  Picking group [LT26] ngat.phase2.MonitorGroup/ANGM31 P=2 at: 2007-11-07 23:10:10 Duration 32M Current Sun elev = -63.935
+2007-12-06 T 11:57:38.684 UTCSIM 236  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 23:42:58
+2007-12-06 T 11:57:38.954 UTCSIM 237  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 23:10:10 Utility: [OH]: 0.9861947944877917 Utility: [P}: 3936000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/eamonn.kerins/JL07B04/ANGM31 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:38.955 UTCSIM 238  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1925s, completing at: 2007-11-07 23:42:15
+2007-12-06 T 11:57:38.955 UTCSIM 239  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.5466666666666666
+2007-12-06 T 11:57:38.955 UTCSIM 240  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 23:42:15]
+2007-12-06 T 11:57:39.108 UTCSIM 241  [1] [] SIMF : .runsim()():: 2007-11-07 23:42:15 Contention= 34
+2007-12-06 T 11:57:39.109 UTCSIM 242  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 23:42:15 C = 34
+2007-12-06 T 11:57:39.109 UTCSIM 243  [1] [] SIMF : .runsim()()::  Picking group [LT27] ngat.phase2.MonitorGroup/FS109 P=STD at: 2007-11-07 23:42:15 Duration 3M Current Sun elev = -70.271
+2007-12-06 T 11:57:39.109 UTCSIM 244  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 23:46:11
+2007-12-06 T 11:57:39.464 UTCSIM 245  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 23:42:15 Utility: [OH]: 0.878027645615247 Utility: [P}: 708000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS109 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:39.464 UTCSIM 246  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 220s, completing at: 2007-11-07 23:45:56
+2007-12-06 T 11:57:39.465 UTCSIM 247  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.06527777777777778
+2007-12-06 T 11:57:39.465 UTCSIM 248  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 23:45:56]
+2007-12-06 T 11:57:39.601 UTCSIM 249  [1] [] SIMF : .runsim()():: 2007-11-07 23:45:56 Contention= 0
+2007-12-06 T 11:57:39.601 UTCSIM 250  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 23:45:56 C = 0
+2007-12-06 T 11:57:39.601 UTCSIM 251  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-07 23:50:56]
+2007-12-06 T 11:57:39.601 UTCSIM 252  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-07 23:50:56
+2007-12-06 T 11:57:39.747 UTCSIM 253  [1] [] SIMF : .runsim()():: 2007-11-07 23:50:56 Contention= 34
+2007-12-06 T 11:57:39.747 UTCSIM 254  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-07 23:50:56 C = 34
+2007-12-06 T 11:57:39.747 UTCSIM 255  [1] [] SIMF : .runsim()()::  Picking group [LT28] ngat.phase2.RepeatableGroup/PG0231+051 P=STD at: 2007-11-07 23:50:56 Duration 8M Current Sun elev = -71.849
+2007-12-06 T 11:57:39.747 UTCSIM 256  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-07 23:59:38
+2007-12-06 T 11:57:40.448 UTCSIM 257  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-07 23:50:56 Utility: [OH]: 0.9666480200881157 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/PG0231+051 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:40.448 UTCSIM 258  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 631s, completing at: 2007-11-08 00:01:27
+2007-12-06 T 11:57:40.448 UTCSIM 259  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:40.448 UTCSIM 260  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 00:01:27]
+2007-12-06 T 11:57:40.591 UTCSIM 261  [1] [] SIMF : .runsim()():: 2007-11-08 00:01:27 Contention= 34
+2007-12-06 T 11:57:40.592 UTCSIM 262  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 00:01:27 C = 34
+2007-12-06 T 11:57:40.592 UTCSIM 263  [1] [] SIMF : .runsim()()::  Picking group [LT29] ngat.phase2.RepeatableGroup/Focus01_Har P=1 at: 2007-11-08 00:01:27 Duration 10M Current Sun elev = -73.64
+2007-12-06 T 11:57:40.592 UTCSIM 264  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 00:12:05
+2007-12-06 T 11:57:42.203 UTCSIM 265  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 00:01:27 Utility: [OH]: 0.8770876008087222 Utility: [P}: 638000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATFilterThick/Focus01_Har Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:42.203 UTCSIM 266  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 583s, completing at: 2007-11-08 00:11:10
+2007-12-06 T 11:57:42.204 UTCSIM 267  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.17694444444444443
+2007-12-06 T 11:57:42.204 UTCSIM 268  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 00:11:10]
+2007-12-06 T 11:57:42.343 UTCSIM 269  [1] [] SIMF : .runsim()():: 2007-11-08 00:11:10 Contention= 10
+2007-12-06 T 11:57:42.343 UTCSIM 270  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 00:11:10 C = 10
+2007-12-06 T 11:57:42.343 UTCSIM 271  [1] [] SIMF : .runsim()()::  Picking group [LT30] ngat.phase2.MonitorGroup/i1_1_H00 P=1 at: 2007-11-08 00:11:10 Duration 49M Current Sun elev = -75.132
+2007-12-06 T 11:57:42.343 UTCSIM 272  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 01:00:18
+2007-12-06 T 11:57:42.497 UTCSIM 273  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 00:11:10 Utility: [OH]: 0.7398878202655212 Utility: [P}: 2948000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATFringe/i1_1_H00 Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:42.497 UTCSIM 274  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 2848s, completing at: 2007-11-08 00:58:39
+2007-12-06 T 11:57:42.497 UTCSIM 275  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.8188888888888889
+2007-12-06 T 11:57:42.498 UTCSIM 276  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 00:58:39]
+2007-12-06 T 11:57:42.642 UTCSIM 277  [1] [] SIMF : .runsim()():: 2007-11-08 00:58:39 Contention= 36
+2007-12-06 T 11:57:42.642 UTCSIM 278  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 00:58:39 C = 36
+2007-12-06 T 11:57:42.643 UTCSIM 279  [1] [] SIMF : .runsim()()::  Picking group [LT31] ngat.phase2.RepeatableGroup/Photom_G1_RU149 P=STD at: 2007-11-08 00:58:39 Duration 8M Current Sun elev = -78.248
+2007-12-06 T 11:57:42.644 UTCSIM 280  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 01:07:35
+2007-12-06 T 11:57:42.850 UTCSIM 281  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 00:58:39 Utility: [OH]: Infinity Utility: [P}: 1608000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_G1_RU149 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:42.851 UTCSIM 282  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 564s, completing at: 2007-11-08 01:08:03
+2007-12-06 T 11:57:42.851 UTCSIM 283  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14722222222222223
+2007-12-06 T 11:57:42.851 UTCSIM 284  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 01:08:03]
+2007-12-06 T 11:57:43.006 UTCSIM 285  [1] [] SIMF : .runsim()():: 2007-11-08 01:08:03 Contention= 36
+2007-12-06 T 11:57:43.007 UTCSIM 286  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 01:08:03 C = 36
+2007-12-06 T 11:57:43.007 UTCSIM 287  [1] [] SIMF : .runsim()()::  Picking group [LT32] ngat.phase2.RepeatableGroup/J0806 P=3 at: 2007-11-08 01:08:03 Duration 27M Current Sun elev = -77.745
+2007-12-06 T 11:57:43.007 UTCSIM 288  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 01:35:03
+2007-12-06 T 11:57:43.162 UTCSIM 289  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 01:08:03 Utility: [OH]: 0.2720092394850337 Utility: [P}: 4860000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/Dye.Simon/PL07B03/J0806 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:43.163 UTCSIM 290  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1661s, completing at: 2007-11-08 01:35:45
+2007-12-06 T 11:57:43.163 UTCSIM 291  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.45
+2007-12-06 T 11:57:43.163 UTCSIM 292  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 01:35:45]
+2007-12-06 T 11:57:43.305 UTCSIM 293  [1] [] SIMF : .runsim()():: 2007-11-08 01:35:45 Contention= 25
+2007-12-06 T 11:57:43.305 UTCSIM 294  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 01:35:45 C = 25
+2007-12-06 T 11:57:43.305 UTCSIM 295  [1] [] SIMF : .runsim()()::  Picking group [LT33] ngat.phase2.RepeatableGroup/mho_monitor P=2 at: 2007-11-08 01:35:45 Duration 63M Current Sun elev = -74.494
+2007-12-06 T 11:57:43.305 UTCSIM 296  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 02:39:39
+2007-12-06 T 11:57:43.481 UTCSIM 297  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 01:35:45 Utility: [OH]: Infinity Utility: [P}: 7668000.0 GroupMetrics = [Group: /LT_Phase2_001/CAT/Obispo.Maria/CL07B06/mho_monitor Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:43.482 UTCSIM 298  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 4153s, completing at: 2007-11-08 02:44:58
+2007-12-06 T 11:57:43.482 UTCSIM 299  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 1.0502777777777779
+2007-12-06 T 11:57:43.482 UTCSIM 300  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 02:44:58]
+2007-12-06 T 11:57:43.624 UTCSIM 301  [1] [] SIMF : .runsim()():: 2007-11-08 02:44:58 Contention= 17
+2007-12-06 T 11:57:43.624 UTCSIM 302  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 02:44:58 C = 17
+2007-12-06 T 11:57:43.625 UTCSIM 303  [1] [] SIMF : .runsim()()::  Picking group [LT34] ngat.phase2.MonitorGroup/FS14 P=STD at: 2007-11-08 02:44:58 Duration 4M Current Sun elev = -61.335
+2007-12-06 T 11:57:43.625 UTCSIM 304  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 02:49:44
+2007-12-06 T 11:57:43.869 UTCSIM 305  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 02:44:58 Utility: [OH]: Infinity Utility: [P}: 858000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS14 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:43.869 UTCSIM 306  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 315s, completing at: 2007-11-08 02:50:13
+2007-12-06 T 11:57:43.869 UTCSIM 307  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.07916666666666666
+2007-12-06 T 11:57:43.869 UTCSIM 308  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 02:50:13]
+2007-12-06 T 11:57:44.020 UTCSIM 309  [1] [] SIMF : .runsim()():: 2007-11-08 02:50:13 Contention= 17
+2007-12-06 T 11:57:44.020 UTCSIM 310  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 02:50:13 C = 17
+2007-12-06 T 11:57:44.020 UTCSIM 311  [1] [] SIMF : .runsim()()::  Picking group [LT35] ngat.phase2.MonitorGroup/FS109 P=STD at: 2007-11-08 02:50:13 Duration 3M Current Sun elev = -60.228
+2007-12-06 T 11:57:44.020 UTCSIM 312  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 02:54:09
+2007-12-06 T 11:57:44.352 UTCSIM 313  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 02:50:13 Utility: [OH]: 0.9402919347074942 Utility: [P}: 708000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS109 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:44.353 UTCSIM 314  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 264s, completing at: 2007-11-08 02:54:37
+2007-12-06 T 11:57:44.353 UTCSIM 315  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.06527777777777778
+2007-12-06 T 11:57:44.353 UTCSIM 316  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 02:54:37]
+2007-12-06 T 11:57:44.493 UTCSIM 317  [1] [] SIMF : .runsim()():: 2007-11-08 02:54:37 Contention= 16
+2007-12-06 T 11:57:44.494 UTCSIM 318  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 02:54:37 C = 16
+2007-12-06 T 11:57:44.494 UTCSIM 319  [1] [] SIMF : .runsim()()::  Picking group [LT36] ngat.phase2.MonitorGroup/pol_BD59_389 P=STD at: 2007-11-08 02:54:37 Duration 3M Current Sun elev = -59.295
+2007-12-06 T 11:57:44.494 UTCSIM 320  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 02:57:49
+2007-12-06 T 11:57:44.764 UTCSIM 321  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 02:54:37 Utility: [OH]: 0.8757569932946624 Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/pol_BD59_389 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:44.765 UTCSIM 322  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 193s, completing at: 2007-11-08 02:57:51
+2007-12-06 T 11:57:44.765 UTCSIM 323  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:44.765 UTCSIM 324  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 02:57:51]
+2007-12-06 T 11:57:44.901 UTCSIM 325  [1] [] SIMF : .runsim()():: 2007-11-08 02:57:51 Contention= 0
+2007-12-06 T 11:57:44.901 UTCSIM 326  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 02:57:51 C = 0
+2007-12-06 T 11:57:44.901 UTCSIM 327  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:02:51]
+2007-12-06 T 11:57:44.901 UTCSIM 328  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 03:02:51
+2007-12-06 T 11:57:45.043 UTCSIM 329  [1] [] SIMF : .runsim()():: 2007-11-08 03:02:51 Contention= 0
+2007-12-06 T 11:57:45.044 UTCSIM 330  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:02:51 C = 0
+2007-12-06 T 11:57:45.044 UTCSIM 331  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:07:51]
+2007-12-06 T 11:57:45.044 UTCSIM 332  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 03:07:51
+2007-12-06 T 11:57:45.181 UTCSIM 333  [1] [] SIMF : .runsim()():: 2007-11-08 03:07:51 Contention= 6
+2007-12-06 T 11:57:45.182 UTCSIM 334  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:07:51 C = 6
+2007-12-06 T 11:57:45.182 UTCSIM 335  [1] [] SIMF : .runsim()()::  Picking group [LT37] ngat.phase2.RepeatableGroup/PG0231+051 P=STD at: 2007-11-08 03:07:51 Duration 8M Current Sun elev = -56.466
+2007-12-06 T 11:57:45.182 UTCSIM 336  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 03:16:33
+2007-12-06 T 11:57:45.667 UTCSIM 337  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 03:07:51 Utility: [OH]: 0.9735172248005838 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/PG0231+051 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:45.667 UTCSIM 338  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 577s, completing at: 2007-11-08 03:17:29
+2007-12-06 T 11:57:45.667 UTCSIM 339  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:45.667 UTCSIM 340  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:17:29]
+2007-12-06 T 11:57:45.808 UTCSIM 341  [1] [] SIMF : .runsim()():: 2007-11-08 03:17:29 Contention= 15
+2007-12-06 T 11:57:45.808 UTCSIM 342  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:17:29 C = 15
+2007-12-06 T 11:57:45.809 UTCSIM 343  [1] [] SIMF : .runsim()()::  Picking group [LT38] ngat.phase2.MonitorGroup/lens_M81 P=2 at: 2007-11-08 03:17:29 Duration 14M Current Sun elev = -54.387
+2007-12-06 T 11:57:45.809 UTCSIM 344  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 03:32:17
+2007-12-06 T 11:57:45.976 UTCSIM 345  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 03:17:29 Utility: [OH]: 0.7291131988407863 Utility: [P}: 1776000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/mike.bode/JL07B05/lens_M81 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:45.976 UTCSIM 346  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 875s, completing at: 2007-11-08 03:32:04
+2007-12-06 T 11:57:45.977 UTCSIM 347  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.24666666666666667
+2007-12-06 T 11:57:45.977 UTCSIM 348  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:32:04]
+2007-12-06 T 11:57:46.124 UTCSIM 349  [1] [] SIMF : .runsim()():: 2007-11-08 03:32:04 Contention= 20
+2007-12-06 T 11:57:46.124 UTCSIM 350  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:32:04 C = 20
+2007-12-06 T 11:57:46.124 UTCSIM 351  [1] [] SIMF : .runsim()()::  Picking group [LT39] ngat.phase2.MonitorGroup/zero_G191B2 P=STD at: 2007-11-08 03:32:04 Duration 3M Current Sun elev = -51.216
+2007-12-06 T 11:57:46.124 UTCSIM 352  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 03:35:28
+2007-12-06 T 11:57:46.416 UTCSIM 353  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 03:32:04 Utility: [OH]: 0.9988909100918217 Utility: [P}: 612000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/zero_G191B2 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:46.416 UTCSIM 354  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 265s, completing at: 2007-11-08 03:36:29
+2007-12-06 T 11:57:46.416 UTCSIM 355  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.056666666666666664
+2007-12-06 T 11:57:46.416 UTCSIM 356  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:36:29]
+2007-12-06 T 11:57:46.556 UTCSIM 357  [1] [] SIMF : .runsim()():: 2007-11-08 03:36:29 Contention= 19
+2007-12-06 T 11:57:46.556 UTCSIM 358  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:36:29 C = 19
+2007-12-06 T 11:57:46.557 UTCSIM 359  [1] [] SIMF : .runsim()()::  Picking group [LT40] ngat.phase2.MonitorGroup/zero_HD12021 P=STD at: 2007-11-08 03:36:29 Duration 3M Current Sun elev = -50.252
+2007-12-06 T 11:57:46.557 UTCSIM 360  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 03:39:41
+2007-12-06 T 11:57:46.768 UTCSIM 361  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 03:36:29 Utility: [OH]: 0.9566175780303766 Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/zero_HD12021 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:46.768 UTCSIM 362  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 180s, completing at: 2007-11-08 03:39:30
+2007-12-06 T 11:57:46.769 UTCSIM 363  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:46.769 UTCSIM 364  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 03:39:30]
+2007-12-06 T 11:57:46.905 UTCSIM 365  [1] [] SIMF : .runsim()():: 2007-11-08 03:39:30 Contention= 9
+2007-12-06 T 11:57:46.905 UTCSIM 366  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 03:39:30 C = 9
+2007-12-06 T 11:57:46.905 UTCSIM 367  [1] [] SIMF : .runsim()()::  Picking group [LT41] ngat.phase2.MonitorGroup/ANGM31 P=2 at: 2007-11-08 03:39:30 Duration 32M Current Sun elev = -49.593
+2007-12-06 T 11:57:46.906 UTCSIM 368  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:12:18
+2007-12-06 T 11:57:47.130 UTCSIM 369  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 03:39:30 Utility: [OH]: 0.9494100623504577 Utility: [P}: 3936000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/eamonn.kerins/JL07B04/ANGM31 Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:47.132 UTCSIM 370  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1931s, completing at: 2007-11-08 04:11:42
+2007-12-06 T 11:57:47.132 UTCSIM 371  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.5466666666666666
+2007-12-06 T 11:57:47.132 UTCSIM 372  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:11:42]
+2007-12-06 T 11:57:47.268 UTCSIM 373  [1] [] SIMF : .runsim()():: 2007-11-08 04:11:42 Contention= 16
+2007-12-06 T 11:57:47.269 UTCSIM 374  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:11:42 C = 16
+2007-12-06 T 11:57:47.270 UTCSIM 375  [1] [] SIMF : .runsim()()::  Picking group [LT42] ngat.phase2.RepeatableGroup/Photom_G1_RU149 P=STD at: 2007-11-08 04:11:42 Duration 8M Current Sun elev = -42.52
+2007-12-06 T 11:57:47.271 UTCSIM 376  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:20:38
+2007-12-06 T 11:57:47.600 UTCSIM 377  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:11:42 Utility: [OH]: Infinity Utility: [P}: 1608000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_G1_RU149 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:47.600 UTCSIM 378  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 550s, completing at: 2007-11-08 04:20:52
+2007-12-06 T 11:57:47.600 UTCSIM 379  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14722222222222223
+2007-12-06 T 11:57:47.600 UTCSIM 380  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:20:52]
+2007-12-06 T 11:57:47.735 UTCSIM 381  [1] [] SIMF : .runsim()():: 2007-11-08 04:20:52 Contention= 15
+2007-12-06 T 11:57:47.735 UTCSIM 382  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:20:52 C = 15
+2007-12-06 T 11:57:47.735 UTCSIM 383  [1] [] SIMF : .runsim()()::  Picking group [LT43] ngat.phase2.MonitorGroup/3227_opt P=2 at: 2007-11-08 04:20:52 Duration 3M Current Sun elev = -40.498
+2007-12-06 T 11:57:47.735 UTCSIM 384  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:23:52
+2007-12-06 T 11:57:47.906 UTCSIM 385  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:20:52 Utility: [OH]: 0.5487865256506282 Utility: [P}: 360000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/mchardy/PL00B21/3227_opt Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:47.907 UTCSIM 386  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 203s, completing at: 2007-11-08 04:24:16
+2007-12-06 T 11:57:47.907 UTCSIM 387  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.04972222222222222
+2007-12-06 T 11:57:47.907 UTCSIM 388  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:24:16]
+2007-12-06 T 11:57:48.049 UTCSIM 389  [1] [] SIMF : .runsim()():: 2007-11-08 04:24:16 Contention= 10
+2007-12-06 T 11:57:48.049 UTCSIM 390  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:24:16 C = 10
+2007-12-06 T 11:57:48.049 UTCSIM 391  [1] [] SIMF : .runsim()()::  Picking group [LT44] ngat.phase2.RepeatableGroup/Photom_G1_1047+003 P=STD at: 2007-11-08 04:24:16 Duration 8M Current Sun elev = -39.75
+2007-12-06 T 11:57:48.049 UTCSIM 392  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:32:58
+2007-12-06 T 11:57:48.267 UTCSIM 393  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:24:16 Utility: [OH]: 0.4437052201935389 Utility: [P}: 1566000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RATStand/Photom_G1_1047+003 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:48.267 UTCSIM 394  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 501s, completing at: 2007-11-08 04:32:38
+2007-12-06 T 11:57:48.267 UTCSIM 395  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.14333333333333334
+2007-12-06 T 11:57:48.267 UTCSIM 396  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:32:38]
+2007-12-06 T 11:57:48.403 UTCSIM 397  [1] [] SIMF : .runsim()():: 2007-11-08 04:32:38 Contention= 14
+2007-12-06 T 11:57:48.403 UTCSIM 398  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:32:38 C = 14
+2007-12-06 T 11:57:48.404 UTCSIM 399  [1] [] SIMF : .runsim()()::  Picking group [LT45] ngat.phase2.Group/NGC4088 P=1 at: 2007-11-08 04:32:38 Duration 21M Current Sun elev = -37.906
+2007-12-06 T 11:57:48.404 UTCSIM 400  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:54:32
+2007-12-06 T 11:57:48.595 UTCSIM 401  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:32:38 Utility: [OH]: 0.6503305460908166 Utility: [P}: 1314000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/phil.james/JL05A02/NGC4088 Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:48.595 UTCSIM 402  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1346s, completing at: 2007-11-08 04:55:04
+2007-12-06 T 11:57:48.595 UTCSIM 403  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.3647222222222222
+2007-12-06 T 11:57:48.596 UTCSIM 404  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:55:04]
+2007-12-06 T 11:57:48.727 UTCSIM 405  [1] [] SIMF : .runsim()():: 2007-11-08 04:55:04 Contention= 15
+2007-12-06 T 11:57:48.727 UTCSIM 406  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:55:04 C = 15
+2007-12-06 T 11:57:48.727 UTCSIM 407  [1] [] SIMF : .runsim()()::  Picking group [LT46] ngat.phase2.MonitorGroup/pol_BD59_389 P=STD at: 2007-11-08 04:55:04 Duration 3M Current Sun elev = -32.956
+2007-12-06 T 11:57:48.727 UTCSIM 408  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 04:58:16
+2007-12-06 T 11:57:48.936 UTCSIM 409  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:55:04 Utility: [OH]: 0.9645037716459043 Utility: [P}: 576000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGOStand/pol_BD59_389 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:48.936 UTCSIM 410  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 186s, completing at: 2007-11-08 04:58:10
+2007-12-06 T 11:57:48.936 UTCSIM 411  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.05333333333333334
+2007-12-06 T 11:57:48.936 UTCSIM 412  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 04:58:10]
+2007-12-06 T 11:57:49.071 UTCSIM 413  [1] [] SIMF : .runsim()():: 2007-11-08 04:58:10 Contention= 15
+2007-12-06 T 11:57:49.071 UTCSIM 414  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 04:58:10 C = 15
+2007-12-06 T 11:57:49.072 UTCSIM 415  [1] [] SIMF : .runsim()()::  Picking group [LT47] ngat.phase2.MonitorGroup/dark_12h P=2 at: 2007-11-08 04:58:10 Duration 2M Current Sun elev = -32.27
+2007-12-06 T 11:57:49.072 UTCSIM 416  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 05:00:22
+2007-12-06 T 11:57:49.216 UTCSIM 417  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 04:58:10 Utility: [OH]: 0.6166860696699508 Utility: [P}: 264000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/RINGODark/dark_12h Score: [0.2], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:49.217 UTCSIM 418  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 136s, completing at: 2007-11-08 05:00:27
+2007-12-06 T 11:57:49.217 UTCSIM 419  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.03666666666666667
+2007-12-06 T 11:57:49.217 UTCSIM 420  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:00:27]
+2007-12-06 T 11:57:49.345 UTCSIM 421  [1] [] SIMF : .runsim()():: 2007-11-08 05:00:27 Contention= 0
+2007-12-06 T 11:57:49.346 UTCSIM 422  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:00:27 C = 0
+2007-12-06 T 11:57:49.347 UTCSIM 423  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:05:27]
+2007-12-06 T 11:57:49.347 UTCSIM 424  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 05:05:27
+2007-12-06 T 11:57:49.473 UTCSIM 425  [1] [] SIMF : .runsim()():: 2007-11-08 05:05:27 Contention= 0
+2007-12-06 T 11:57:49.473 UTCSIM 426  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:05:27 C = 0
+2007-12-06 T 11:57:49.473 UTCSIM 427  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:10:27]
+2007-12-06 T 11:57:49.473 UTCSIM 428  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 05:10:27
+2007-12-06 T 11:57:49.601 UTCSIM 429  [1] [] SIMF : .runsim()():: 2007-11-08 05:10:27 Contention= 0
+2007-12-06 T 11:57:49.602 UTCSIM 430  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:10:27 C = 0
+2007-12-06 T 11:57:49.602 UTCSIM 431  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:15:27]
+2007-12-06 T 11:57:49.602 UTCSIM 432  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 05:15:27
+2007-12-06 T 11:57:49.728 UTCSIM 433  [1] [] SIMF : .runsim()():: 2007-11-08 05:15:27 Contention= 9
+2007-12-06 T 11:57:49.729 UTCSIM 434  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:15:27 C = 9
+2007-12-06 T 11:57:49.729 UTCSIM 435  [1] [] SIMF : .runsim()()::  Picking group [LT48] ngat.phase2.Group/UGC6517 P=1 at: 2007-11-08 05:15:27 Duration 21M Current Sun elev = -28.465
+2007-12-06 T 11:57:49.729 UTCSIM 436  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 05:37:21
+2007-12-06 T 11:57:49.875 UTCSIM 437  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 05:15:27 Utility: [OH]: 0.8076764342851736 Utility: [P}: 1314000.0 GroupMetrics = [Group: /LT_Phase2_001/JMU/phil.james/JL05A02/UGC6517 Score: [0.1], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:49.876 UTCSIM 438  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1313s, completing at: 2007-11-08 05:37:20
+2007-12-06 T 11:57:49.876 UTCSIM 439  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.3647222222222222
+2007-12-06 T 11:57:49.876 UTCSIM 440  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:37:20]
+2007-12-06 T 11:57:50.010 UTCSIM 441  [1] [] SIMF : .runsim()():: 2007-11-08 05:37:20 Contention= 14
+2007-12-06 T 11:57:50.010 UTCSIM 442  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:37:20 C = 14
+2007-12-06 T 11:57:50.010 UTCSIM 443  [1] [] SIMF : .runsim()()::  Picking group [LT49] ngat.phase2.MonitorGroup/FS14 P=STD at: 2007-11-08 05:37:20 Duration 4M Current Sun elev = -23.658
+2007-12-06 T 11:57:50.010 UTCSIM 444  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 05:42:06
+2007-12-06 T 11:57:50.333 UTCSIM 445  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 05:37:20 Utility: [OH]: 0.997696752121762 Utility: [P}: 858000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS14 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:50.334 UTCSIM 446  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 314s, completing at: 2007-11-08 05:42:34
+2007-12-06 T 11:57:50.334 UTCSIM 447  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.07916666666666666
+2007-12-06 T 11:57:50.334 UTCSIM 448  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:42:34]
+2007-12-06 T 11:57:50.457 UTCSIM 449  [1] [] SIMF : .runsim()():: 2007-11-08 05:42:34 Contention= 26
+2007-12-06 T 11:57:50.457 UTCSIM 450  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:42:34 C = 26
+2007-12-06 T 11:57:50.457 UTCSIM 451  [1] [] SIMF : .runsim()()::  Picking group [LT50] ngat.phase2.MonitorGroup/FS21 P=STD at: 2007-11-08 05:42:34 Duration 4M Current Sun elev = -22.512
+2007-12-06 T 11:57:50.457 UTCSIM 452  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 05:47:20
+2007-12-06 T 11:57:50.807 UTCSIM 453  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 05:42:34 Utility: [OH]: 0.7951459391555664 Utility: [P}: 858000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS21 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:50.807 UTCSIM 454  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 242s, completing at: 2007-11-08 05:46:37
+2007-12-06 T 11:57:50.807 UTCSIM 455  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.07916666666666666
+2007-12-06 T 11:57:50.807 UTCSIM 456  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:46:37]
+2007-12-06 T 11:57:50.932 UTCSIM 457  [1] [] SIMF : .runsim()():: 2007-11-08 05:46:37 Contention= 26
+2007-12-06 T 11:57:50.932 UTCSIM 458  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:46:37 C = 26
+2007-12-06 T 11:57:50.933 UTCSIM 459  [1] [] SIMF : .runsim()()::  Picking group [LT51] ngat.phase2.MonitorGroup/FS109 P=STD at: 2007-11-08 05:46:37 Duration 3M Current Sun elev = -21.629
+2007-12-06 T 11:57:50.933 UTCSIM 460  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 05:50:33
+2007-12-06 T 11:57:51.223 UTCSIM 461  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 05:46:37 Utility: [OH]: 0.8823474901417142 Utility: [P}: 708000.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/SupIRStand/FS109 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:51.224 UTCSIM 462  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 175s, completing at: 2007-11-08 05:49:33
+2007-12-06 T 11:57:51.224 UTCSIM 463  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.06527777777777778
+2007-12-06 T 11:57:51.224 UTCSIM 464  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 05:49:33]
+2007-12-06 T 11:57:51.347 UTCSIM 465  [1] [] SIMF : .runsim()():: 2007-11-08 05:49:33 Contention= 25
+2007-12-06 T 11:57:51.347 UTCSIM 466  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 05:49:33 C = 25
+2007-12-06 T 11:57:51.348 UTCSIM 467  [1] [] SIMF : .runsim()()::  Picking group [LT52] ngat.phase2.RepeatableGroup/J1406 P=3 at: 2007-11-08 05:49:33 Duration 27M Current Sun elev = -20.988
+2007-12-06 T 11:57:51.348 UTCSIM 468  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 06:16:33
+2007-12-06 T 11:57:51.486 UTCSIM 469  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 05:49:33 Utility: [OH]: 0.9442984836160977 Utility: [P}: 4860000.0 GroupMetrics = [Group: /LT_Phase2_001/PATT/Dye.Simon/PL07B03/J1406 Score: [0.30000000000000004], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:51.486 UTCSIM 470  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 1601s, completing at: 2007-11-08 06:16:14
+2007-12-06 T 11:57:51.486 UTCSIM 471  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.45
+2007-12-06 T 11:57:51.486 UTCSIM 472  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:16:14]
+2007-12-06 T 11:57:51.593 UTCSIM 473  [1] [] SIMF : .runsim()():: 2007-11-08 06:16:14 Contention= 2
+2007-12-06 T 11:57:51.594 UTCSIM 474  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:16:14 C = 2
+2007-12-06 T 11:57:51.594 UTCSIM 475  [1] [] SIMF : .runsim()()::  Picking group [LT53] ngat.phase2.MonitorGroup/FocusShort_07 P=BGR at: 2007-11-08 06:16:14 Duration 6M Current Sun elev = -15.18
+2007-12-06 T 11:57:51.594 UTCSIM 476  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 06:22:18
+2007-12-06 T 11:57:51.979 UTCSIM 477  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 06:16:14 Utility: [OH]: 0.8707603640151119 Utility: [P}: 0.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/LTFocus/FocusShort_07 Score: [-10.0], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:51.980 UTCSIM 478  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 352s, completing at: 2007-11-08 06:22:06
+2007-12-06 T 11:57:51.980 UTCSIM 479  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.10111111111111111
+2007-12-06 T 11:57:51.981 UTCSIM 480  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:22:06]
+2007-12-06 T 11:57:52.094 UTCSIM 481  [1] [] SIMF : .runsim()():: 2007-11-08 06:22:06 Contention= 1
+2007-12-06 T 11:57:52.094 UTCSIM 482  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:22:06 C = 1
+2007-12-06 T 11:57:52.095 UTCSIM 483  [1] [] SIMF : .runsim()()::  Picking group [LT54] ngat.phase2.MonitorGroup/Star_H13 P=BGR at: 2007-11-08 06:22:06 Duration 2M Current Sun elev = -13.909
+2007-12-06 T 11:57:52.096 UTCSIM 484  [1] [] SIMF : .runsim()():: Selected Group estimated completion at 2007-11-08 06:24:30
+2007-12-06 T 11:57:52.241 UTCSIM 485  [1] [] BST : .groupSelected(Metric, t)():: Received notification of group selection: Time= 2007-11-08 06:22:06 Utility: [OH]: 0.93877740254203 Utility: [P}: 0.0 GroupMetrics = [Group: /LT_Phase2_001/LTOps/LTCalib/LTCollim/Star_H13 Score: [-10.0], Gen: BSM, Ttx=0.0s] Updating history...
+2007-12-06 T 11:57:52.241 UTCSIM 486  [1] [] BST : .groupSelected(Metric, t)():: Updating group history for using sexec 119s, completing at: 2007-11-08 06:24:06
+2007-12-06 T 11:57:52.241 UTCSIM 487  [1] [] BST : .groupSelected(Metric, t)():: Updating proposal accounts with costing: 0.04
+2007-12-06 T 11:57:52.241 UTCSIM 488  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:24:06]
+2007-12-06 T 11:57:52.383 UTCSIM 489  [1] [] SIMF : .runsim()():: 2007-11-08 06:24:06 Contention= 0
+2007-12-06 T 11:57:52.383 UTCSIM 490  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:24:06 C = 0
+2007-12-06 T 11:57:52.383 UTCSIM 491  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:29:06]
+2007-12-06 T 11:57:52.383 UTCSIM 492  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:29:06
+2007-12-06 T 11:57:52.490 UTCSIM 493  [1] [] SIMF : .runsim()():: 2007-11-08 06:29:06 Contention= 0
+2007-12-06 T 11:57:52.490 UTCSIM 494  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:29:06 C = 0
+2007-12-06 T 11:57:52.490 UTCSIM 495  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:34:06]
+2007-12-06 T 11:57:52.490 UTCSIM 496  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:34:06
+2007-12-06 T 11:57:52.578 UTCSIM 497  [1] [] SIMF : .runsim()():: 2007-11-08 06:34:06 Contention= 0
+2007-12-06 T 11:57:52.578 UTCSIM 498  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:34:06 C = 0
+2007-12-06 T 11:57:52.578 UTCSIM 499  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:39:06]
+2007-12-06 T 11:57:52.578 UTCSIM 500  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:39:06
+2007-12-06 T 11:57:52.698 UTCSIM 501  [1] [] SIMF : .runsim()():: 2007-11-08 06:39:06 Contention= 0
+2007-12-06 T 11:57:52.698 UTCSIM 502  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:39:06 C = 0
+2007-12-06 T 11:57:52.698 UTCSIM 503  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:44:06]
+2007-12-06 T 11:57:52.698 UTCSIM 504  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:44:06
+2007-12-06 T 11:57:52.780 UTCSIM 505  [1] [] SIMF : .runsim()():: 2007-11-08 06:44:06 Contention= 0
+2007-12-06 T 11:57:52.780 UTCSIM 506  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:44:06 C = 0
+2007-12-06 T 11:57:52.780 UTCSIM 507  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:49:06]
+2007-12-06 T 11:57:52.780 UTCSIM 508  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:49:06
+2007-12-06 T 11:57:52.862 UTCSIM 509  [1] [] SIMF : .runsim()():: 2007-11-08 06:49:06 Contention= 0
+2007-12-06 T 11:57:52.864 UTCSIM 510  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:49:06 C = 0
+2007-12-06 T 11:57:52.864 UTCSIM 511  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:54:06]
+2007-12-06 T 11:57:52.864 UTCSIM 512  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:54:06
+2007-12-06 T 11:57:52.941 UTCSIM 513  [1] [] SIMF : .runsim()():: 2007-11-08 06:54:06 Contention= 0
+2007-12-06 T 11:57:52.941 UTCSIM 514  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:54:06 C = 0
+2007-12-06 T 11:57:52.941 UTCSIM 515  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 06:59:06]
+2007-12-06 T 11:57:52.942 UTCSIM 516  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 06:59:06
+2007-12-06 T 11:57:53.010 UTCSIM 517  [1] [] SIMF : .runsim()():: 2007-11-08 06:59:06 Contention= 0
+2007-12-06 T 11:57:53.011 UTCSIM 518  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 06:59:06 C = 0
+2007-12-06 T 11:57:53.011 UTCSIM 519  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 07:04:06]
+2007-12-06 T 11:57:53.011 UTCSIM 520  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 07:04:06
+2007-12-06 T 11:57:53.072 UTCSIM 521  [1] [] SIMF : .runsim()():: 2007-11-08 07:04:06 Contention= 0
+2007-12-06 T 11:57:53.072 UTCSIM 522  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 07:04:06 C = 0
+2007-12-06 T 11:57:53.072 UTCSIM 523  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 07:09:06]
+2007-12-06 T 11:57:53.072 UTCSIM 524  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 07:09:06
+2007-12-06 T 11:57:53.133 UTCSIM 525  [1] [] SIMF : .runsim()():: 2007-11-08 07:09:06 Contention= 0
+2007-12-06 T 11:57:53.133 UTCSIM 526  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 07:09:06 C = 0
+2007-12-06 T 11:57:53.133 UTCSIM 527  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 07:14:06]
+2007-12-06 T 11:57:53.133 UTCSIM 528  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 07:14:06
+2007-12-06 T 11:57:53.195 UTCSIM 529  [1] [] SIMF : .runsim()():: 2007-11-08 07:14:06 Contention= 0
+2007-12-06 T 11:57:53.195 UTCSIM 530  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 07:14:06 C = 0
+2007-12-06 T 11:57:53.195 UTCSIM 531  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 07:19:06]
+2007-12-06 T 11:57:53.196 UTCSIM 532  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 07:19:06
+2007-12-06 T 11:57:53.257 UTCSIM 533  [1] [] SIMF : .runsim()():: 2007-11-08 07:19:06 Contention= 0
+2007-12-06 T 11:57:53.258 UTCSIM 534  [1] [] BST : .contentionResults(t,con)():: Received contention results: Time= 2007-11-08 07:19:06 C = 0
+2007-12-06 T 11:57:53.258 UTCSIM 535  [1] [] SIMF : .tsr()():: Timing signal received [2007-11-08 07:24:06]
+2007-12-06 T 11:57:53.258 UTCSIM 536  [1] [] SIMF : .runsim()():: ScheduleSimulator::LT ** No groups available at 2007-11-08 07:24:06
+2007-12-06 T 11:57:53.268 UTCSIM 537  [1] [] BST : .simCompleted()():: Received notification that simulation has completed
+2007-12-06 T 11:57:53.268 UTCSIM 538  [1] [] BST : .simCompleted()():: SQM results: [OH]: Infinity out of a total possible of: 55 Eff=Infinity% [P]: 9.1402E7

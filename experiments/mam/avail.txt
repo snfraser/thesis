@@ -1,0 +1,13 @@
+Total available XT = 50.34168H from 131 groups, Critical XT = 12.308652777777779H of which NonBG =12.224208333333333H, from 35 groups
+
+Total available XT = 50.568888333333334H from 130 groups, Critical XT = 11.812527777777778H of which NonBG =11.812527777777778H, from 31 groups
+
+Total available XT = 51.750013333333335H from 133 groups, Critical XT = 16.024763888888888H of which NonBG =16.024763888888888H, from 44 groups
+
+Total available XT = 50.730555H from 131 groups, Critical XT = 19.288916666666665H of which NonBG =14.315583333333333H, from 40 groups
+
+Total available XT = 44.71918H from 123 groups, Critical XT = 15.094763888888888H of which NonBG =13.43698611111111H, from 39 groups
+
+Total available XT = 42.21666611111111H from 118 groups, Critical XT = 12.578083333333334H of which NonBG =11.749194444444445H, from 30 groups
+
+Total available XT = 41.72418H from 121 groups, Critical XT = 15.47976388888889H of which NonBG =12.876430555555556H, from 41 groups

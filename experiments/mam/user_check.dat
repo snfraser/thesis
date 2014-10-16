@@ -1,0 +1,197 @@
+Loaded:: G_279  Star_H01  P  T  B  INT(168.0)  -10
+Loaded:: G_361  Focus01_rr  A  T  B  INT(168.0)  -10
+Loaded:: G_362  Focus01_Har  A  T  B  INT(12.0)  -10
+Loaded:: G_363  Focus01_gr  A  T  B  INT(1.0)  -10
+Loaded:: G_364  Focus01_ir  A  T  B  INT(12.0)  -10
+Loaded:: G_368  Focus01_Vr  A  T  B  INT(12.0)  -10
+Loaded:: G_375  Angstrom  P  N  B  INT(24.0)  3
+Loaded:: G_399  887gt  P  N  D  FLEX  2
+Loaded:: G_423  M31b  P  N  B  INT(24.0)  2
+Loaded:: G_446  gals_to_calib_3  A  N  D  FLEX  1
+Loaded:: G_461  UCM_galaxies_5  A  N  D  FLEX  1
+Loaded:: G_476  ANGM31  P  N  B  INT(2.5)  2
+Loaded:: G_059  925at  P  N  D  FLEX  1
+Loaded:: G_101  923gt  P  N  D  FLEX  1
+Loaded:: G_159  923jt  P  N  D  FLEX  3
+Loaded:: G_319  M33_cal_chip31  P  N  B  FLEX  2
+Loaded:: G_323  M33_cal_chip22  P  N  B  FLEX  2
+Loaded:: G_324  M33_cal_chip33  P  N  B  FLEX  2
+Loaded:: G_334  M33_cal_chip28  P  N  B  FLEX  2
+Loaded:: G_336  M33_cal_chip23  P  N  B  FLEX  2
+Loaded:: G_337  M33_cal_chip36  P  N  B  FLEX  2
+Loaded:: G_338  M33_cal_chip1  P  N  B  FLEX  2
+Loaded:: G_343  M33_cal_chip9  P  N  B  FLEX  2
+Loaded:: G_347  M33_cal_chip13  P  N  B  FLEX  2
+Loaded:: G_348  M33_cal_chip32  P  N  B  FLEX  2
+Loaded:: G_349  M33_cal_chip21  P  N  B  FLEX  2
+Loaded:: G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+Loaded:: G_398  888et  P  N  D  FLEX  2
+Loaded:: G_003  PG0231+051  P  T  B  INT(3.0)  -1
+Loaded:: G_007  SN2007gr  P  N  B  INT(48.0)  3
+Loaded:: G_072  927gt  P  N  D  FLEX  1
+Loaded:: G_098  895it  P  N  D  FLEX  1
+Loaded:: G_112  927ft  P  N  D  FLEX  1
+Loaded:: G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+Loaded:: G_402  891gt  P  N  D  FLEX  2
+Loaded:: G_470  0235  A  N  D  INT(168.0)  1
+Loaded:: G_022  889it  P  N  D  FLEX  1
+Loaded:: G_068  893dt  P  N  D  FLEX  1
+Loaded:: G_077  891jt  P  N  D  FLEX  1
+Loaded:: G_110  889et  P  N  D  FLEX  1
+Loaded:: G_114  889bt  P  N  D  FLEX  1
+Loaded:: G_156  926gt  P  N  D  FLEX  3
+Loaded:: G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+Loaded:: G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+Loaded:: G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+Loaded:: G_355  FS109  P  T  B  INT(3.0)  -1
+Loaded:: G_369  17P-mosaic  A  T  B  FLEX  3
+Loaded:: G_370  17P-monitor  A  T  B  INT(3.0)  2
+Loaded:: G_025  932at  P  N  D  FLEX  1
+Loaded:: G_028  927et  P  N  D  FLEX  1
+Loaded:: G_093  927ht  P  N  D  FLEX  1
+Loaded:: G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+Loaded:: G_048  725dt  P  T  B  FLEX  1
+Loaded:: G_408  927ct  P  T  B  FLEX  2
+Loaded:: G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+Loaded:: G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Loaded:: G_284  mho_monitor  P  N  B  INT(22.5)  1
+Loaded:: G_352  FS14  P  T  B  INT(3.0)  -1
+Loaded:: G_371  lens_2403  P  N  B  INT(48.0)  2
+Loaded:: G_259  ESO494-G26  P  N  D  FLEX  1
+Loaded:: G_358  J0806  P  N  D  INT(96.0)  3
+Loaded:: G_472  0851  A  N  D  INT(168.0)  1
+Loaded:: G_237  UGC4904  P  N  D  FLEX  1
+Loaded:: G_260  NGC2906  P  N  D  FLEX  1
+Loaded:: G_263  NGC2993  P  N  D  FLEX  1
+Loaded:: G_266  NGC3054  P  N  D  FLEX  1
+Loaded:: G_280  group07b01c  A  N  D  FLEX  1
+Loaded:: G_281  group07b01b  A  N  D  FLEX  1
+Loaded:: G_373  lens_M81  P  N  B  INT(48.0)  2
+Loaded:: G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+Loaded:: G_265  NGC3430  P  N  D  FLEX  1
+Loaded:: G_282  group07b01d  A  N  D  FLEX  1
+Loaded:: G_407  926jt  P  T  B  FLEX  2
+Loaded:: G_213  UGC6517  P  N  D  FLEX  1
+Loaded:: G_244  NGC3672  P  N  D  FLEX  1
+Loaded:: G_353  FS21  P  T  B  INT(3.0)  -1
+Loaded:: G_204  MCG-01-33-34  P  N  D  FLEX  3
+Loaded:: G_210  NGC4088  P  N  D  FLEX  1
+Loaded:: G_218  NGC4041  P  N  D  FLEX  1
+Loaded:: G_245  NGC4691  P  N  D  FLEX  1
+Loaded:: G_270  NGC4030  P  N  D  FLEX  1
+Loaded:: G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+Loaded:: G_278  Star_H13  P  T  B  INT(168.0)  -10
+Loaded:: G_372  lens_M64  P  N  B  INT(48.0)  2
+Loaded:: G_426  dark_12h  P  N  B  INT(24.0)  2
+Loaded:: G_471  1226  A  N  B  INT(168.0)  1
+Loaded:: G_239  NGC4981  P  N  D  FLEX  1
+Loaded:: G_428  i2_1_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_429  z2_2_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_430  z1_2_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_431  i1_2_H13  P  N  D  INT(168.0)  1
+Loaded:: G_436  i2_2_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_437  i1_1_H13  P  N  D  INT(168.0)  1
+Loaded:: G_439  z2_1_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_440  z1_1_H13  P  N  D  INT(672.0)  -10
+Loaded:: G_360  J1406  P  N  B  INT(72.0)  3
+Loaded:: G_481  5548_opt  P  T  B  INT(168.0)  2
+Loaded:: G_427  darkbias_16h  P  T  B  INT(24.0)  2
+Loaded:: G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+Loaded:: G_365  Focus19_zr  A  T  B  INT(12.0)  -10
+Loaded:: G_366  Focus19_rr  A  T  B  INT(168.0)  -10
+Loaded:: G_367  Focus19_Br  A  T  B  INT(12.0)  -10
+Loaded:: G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+Loaded:: G_287  m15weekly  A  N  B  INT(132.0)  2
+Loaded:: G_359  HS2209  P  N  D  INT(72.0)  3
+Loaded:: G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+Loaded:: G_448  UCM_galaxies_6  A  N  D  FLEX  1
+Loaded:: G_452  UCM_galaxies_7  A  N  D  FLEX  1
+Loaded:: G_466  2251  A  N  D  INT(168.0)  1
+Loaded:: G_469  2200  A  N  B  INT(168.0)  1
+Loaded:: G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+Loaded:: G_264  NGC7721  P  N  D  FLEX  1
+Loaded:: G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+Loaded:: G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+Loaded:: G_294  uranusMon1  P  T  B  INT(24.0)  1
+Loaded:: G_432  i1_1_H00  P  N  D  INT(168.0)  1
+Loaded:: G_433  i2_1_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_434  z2_2_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_435  i1_2_H00  P  N  D  INT(168.0)  1
+Loaded:: G_438  z1_1_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_441  z1_2_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_442  i2_2_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_443  z2_1_H00  P  N  D  INT(672.0)  -10
+Loaded:: G_449  UCM_galaxies_18  A  N  D  FLEX  1
+Loaded:: G_450  UCM_galaxies_14  A  N  D  FLEX  1
+Loaded:: G_453  UCM_galaxies_17  A  N  D  FLEX  1
+Loaded:: G_455  UCM_galaxies_4  A  N  D  FLEX  1
+Loaded:: G_456  UCM_galaxies_13  A  N  D  FLEX  1
+Loaded:: G_458  UCM_galaxies_16  A  N  D  FLEX  1
+Loaded:: G_462  UCM_galaxies_10  A  N  D  FLEX  1
+Loaded:: G_463  UCM_galaxies_11  A  N  D  FLEX  1
+006 2007-11-13 19:20 -> 2007-11-13 19:29
+005 2007-11-13 19:30 -> 2007-11-13 19:39
+004 2007-11-13 19:40 -> 2007-11-13 19:49
+361 2007-11-13 19:50 -> 2007-11-13 19:59
+427 2007-11-13 19:55 -> 2007-11-13 19:59
+375 2007-11-13 20:00 -> 2007-11-13 20:08
+423 2007-11-13 20:09 -> 2007-11-13 20:21
+476 2007-11-13 20:22 -> 2007-11-13 20:55
+007 2007-11-13 20:55 -> 2007-11-13 21:05
+271 2007-11-13 21:05 -> 2007-11-13 21:16
+272 2007-11-13 21:13 -> 2007-11-13 21:24
+355 2007-11-13 21:25 -> 2007-11-13 21:29
+370 2007-11-13 21:30 -> 2007-11-13 21:33
+276 2007-11-13 21:35 -> 2007-11-13 21:37
+369 2007-11-13 21:38 -> 2007-11-13 21:51
+399 2007-11-13 21:50 -> 2007-11-13 21:53
+446 2007-11-13 21:54 -> 2007-11-13 22:30
+005 2007-11-13 22:30 -> 2007-11-13 22:39
+002 2007-11-13 22:40 -> 2007-11-13 22:49
+159 2007-11-13 22:50 -> 2007-11-13 22:53
+319 2007-11-13 22:53 -> 2007-11-13 23:10
+323 2007-11-13 23:10 -> 2007-11-13 23:27
+324 2007-11-13 23:27 -> 2007-11-13 23:44
+273 2007-11-13 23:43 -> 2007-11-13 23:54
+274 2007-11-13 23:55 -> 2007-11-14 00:23
+355 2007-11-14 00:13 -> 2007-11-14 00:17
+476 2007-11-14 00:18 -> 2007-11-14 00:51
+402 2007-11-14 00:50 -> 2007-11-14 00:53
+112 2007-11-14 00:55 -> 2007-11-14 00:58
+098 2007-11-14 01:00 -> 2007-11-14 01:03
+002 2007-11-14 01:05 -> 2007-11-14 01:14
+022 2007-11-14 01:15 -> 2007-11-14 01:18
+068 2007-11-14 01:18 -> 2007-11-14 01:21
+077 2007-11-14 01:22 -> 2007-11-14 01:25
+110 2007-11-14 01:25 -> 2007-11-14 01:28
+114 2007-11-14 01:28 -> 2007-11-14 01:31
+156 2007-11-14 01:32 -> 2007-11-14 01:35
+382 2007-11-14 01:35 -> 2007-11-14 01:38
+476 2007-11-14 01:40 -> 2007-11-14 02:13
+025 2007-11-14 02:03 -> 2007-11-14 02:06
+028 2007-11-14 02:07 -> 2007-11-14 02:10
+093 2007-11-14 02:10 -> 2007-11-14 02:13
+048 2007-11-14 02:12 -> 2007-11-14 02:13
+408 2007-11-14 02:13 -> 2007-11-14 02:14
+371 2007-11-14 02:15 -> 2007-11-14 02:30
+373 2007-11-14 02:30 -> 2007-11-14 02:45
+284 2007-11-14 02:45 -> 2007-11-14 03:56
+002 2007-11-14 03:51 -> 2007-11-14 04:00
+004 2007-11-14 04:01 -> 2007-11-14 04:10
+353 2007-11-14 04:11 -> 2007-11-14 04:16
+352 2007-11-14 04:16 -> 2007-11-14 04:21
+358 2007-11-14 04:21 -> 2007-11-14 04:48
+472 2007-11-14 04:48 -> 2007-11-14 04:55
+426 2007-11-14 04:56 -> 2007-11-14 04:58
+244 2007-11-14 04:58 -> 2007-11-14 05:20
+204 2007-11-14 05:22 -> 2007-11-14 05:45
+002 2007-11-14 05:45 -> 2007-11-14 05:54
+004 2007-11-14 05:55 -> 2007-11-14 06:04
+481 2007-11-14 06:06 -> 2007-11-14 06:09
+278 2007-11-14 06:09 -> 2007-11-14 06:11
+407 2007-11-14 06:12 -> 2007-11-14 06:13
+126 2007-11-14 06:17 -> 2007-11-14 06:24
+353 2007-11-14 06:24 -> 2007-11-14 06:29
+352 2007-11-14 06:30 -> 2007-11-14 06:35
+004 2007-11-14 06:35 -> 2007-11-14 06:44
+002 2007-11-14 06:45 -> 2007-11-14 06:54

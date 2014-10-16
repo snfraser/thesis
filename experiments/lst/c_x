@@ -1,0 +1,5 @@
+#!/bin/csh
+
+set TRK = $1
+
+cat cont2c_1.log | grep "Utility: \[RN\]" | grep $1 | awk '{print $18,$19,$22,$25,$29}' > conts2_trk.dat

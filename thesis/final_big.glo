@@ -1,0 +1,45 @@
+\glossaryentry{LT@{\glosslabel{glo:LT}{LT}}The Liverpool Telescope\relax|glsnumformat}{28}
+\glossaryentry{ORM@{\glosslabel{glo:ORM}{ORM}}Observatorio del Roche do los Muchachos\relax|glsnumformat}{28}
+\glossaryentry{RCS@{\glosslabel{glo:RCS}{RCS}}Robotic Control System\relax|glsnumformat}{28}
+\glossaryentry{OSS@{\glosslabel{glo:OSS}{OSS}}Observation Scheduling System\relax|glsnumformat}{28}
+\glossaryentry{ODB@{\glosslabel{glo:ODB}{ODB}}Phase 2 Observation Database\relax|glsnumformat}{28}
+\glossaryentry{SA@{\glosslabel{glo:SA}{SA}}Simulated Annealing\relax|glsnumformat}{40}
+\glossaryentry{QA@{\glosslabel{glo:QA}{QA}}Quantum Annealing\relax|glsnumformat}{41}
+\glossaryentry{GA@{\glosslabel{glo:GA}{GA}}Genetic Algorithm\relax|glsnumformat}{42}
+\glossaryentry{AIS@{\glosslabel{glo:AIS}{AIS}}Artificial Immune System\relax|glsnumformat}{57}
+\glossaryentry{ACO@{\glosslabel{glo:ACO}{ACO}}Ant Colony Optimization\relax|glsnumformat}{57}
+\glossaryentry{TSP@{\glosslabel{glo:TSP}{TSP}}Travelling Salesman Problem\relax|glsnumformat}{60}
+\glossaryentry{PSO@{\glosslabel{glo:PSO}{PSO}}Particle Swarm Optimization\relax|glsnumformat}{62}
+\glossaryentry{RL@{\glosslabel{glo:RL}{RL}}Reinforcement Learning\relax|glsnumformat}{62}
+\glossaryentry{MDP@{\glosslabel{glo:MDP}{MDP}}Markov Decision Process\relax|glsnumformat}{63}
+\glossaryentry{MLP@{\glosslabel{glo:MLP}{MLP}}Multi Layer Perceptron - a simple type of neural network\relax|glsnumformat}{63}
+\glossaryentry{CBR@{\glosslabel{glo:CBR}{CBR}}Case Based Reasoning - an AI technique\relax|glsnumformat}{65}
+\glossaryentry{PCM@{\glosslabel{glo:PCM}{PCM}}Problem Complexity Metric, $C$ metrics are used to measure the complexity of a given scheduling problem in terms of Phase 2 structure\relax|glsnumformat}{69}
+\glossaryentry{SQM@{\glosslabel{glo:SQM}{SQM}}Schedule Quality Metric, $Q$ metrics provide a measure of scheduler performance\relax|glsnumformat}{69}
+\glossaryentry{M@{\glosslabel{glo:M}{MUF}}Minimum Use Fraction - a TAG assigned target for program completion\relax|glsnumformat}{81}
+\glossaryentry{SNR@{\glosslabel{glo:SNR}{SNR}}Signal to Noise ratio\relax|glsnumformat}{84}
+\glossaryentry{WMS@{\glosslabel{glo:WMS}{WMS}}Weather Monitoring System\relax|glsnumformat}{90}
+\glossaryentry{GTC@{\glosslabel{glo:GTC}{GTC}}Grand Telescopio Canarias - a telescope at the ORM\relax|glsnumformat}{104}
+\glossaryentry{N@{\glosslabel{glo:N}{NOT}}Nordic Optical Telescope - a telescope at the ORM\relax|glsnumformat}{104}
+\glossaryentry{FITS@{\glosslabel{glo:FITS}{FITS}}Flexible Image Transport System - an astronomical data file specification\relax|glsnumformat}{105}
+\glossaryentry{CAMC@{\glosslabel{glo:CAMC}{CAMC}}Carlsberg Meridian Circle - a specialized telescope at the ORM\relax|glsnumformat}{113}
+\glossaryentry{BCS@{\glosslabel{glo:BCS}{BCS}}Boltwood Cloud Sensor - a component attached to the WMS for measuring cloud temperture\relax|glsnumformat}{114}
+\glossaryentry{JKT@{\glosslabel{glo:JKT}{JKT}}Jacobus Kaptyn Telescope - a telescope at the ORM\relax|glsnumformat}{114}
+\glossaryentry{SCA@{\glosslabel{glo:SCA}{SCA}}Scheduler Component Architecture\relax|glsnumformat}{123}
+\glossaryentry{FCL@{\glosslabel{glo:FCL}{FCL}}Fundamental Components Layer - part of the SCA, contains models for accessing the ODB\relax|glsnumformat}{124}
+\glossaryentry{ACL@{\glosslabel{glo:ACL}{ACL}}Aggregate Components Layer - part of the SCA, contains summaries of base models\relax|glsnumformat}{125}
+\glossaryentry{CTL@{\glosslabel{glo:CTL}{CTL}}Compuational Tools Layer - part of SCA, provides processing capabilities\relax|glsnumformat}{126}
+\glossaryentry{PCL@{\glosslabel{glo:PCL}{PCL}}Prediction Components Layer - part of SCA, provides predictive models\relax|glsnumformat}{129}
+\glossaryentry{ISM@{\glosslabel{glo:ISM}{ISM}}Instrument Synopsis Model\relax|glsnumformat}{131}
+\glossaryentry{TSM@{\glosslabel{glo:TSM}{TSM}}Telescope Synopsis Model\relax|glsnumformat}{131}
+\glossaryentry{SFL@{\glosslabel{glo:SFL}{SFL}}Simulation Framework Components Layer - part of the SCA, provides models used by simulators\relax|glsnumformat}{132}
+\glossaryentry{TSG@{\glosslabel{glo:TSG}{TSG}}Time Signal Generator - a SCA component which synchronizes the scheduler with its simulation controller\relax|glsnumformat}{132}
+\glossaryentry{SECL@{\glosslabel{glo:SECL}{SECL}}Scheduling Engine Components Layer - part of the SCA\relax|glsnumformat}{134}
+\glossaryentry{CP@{\glosslabel{glo:CP}{CP}}Cardinal Pointing - a restricted operating regime for the rotator axis\relax|glsnumformat}{136}
+\glossaryentry{ICL@{\glosslabel{glo:ICL}{ICL}}Interface Components Layer - part of the SCA, contains interfaces used by the executive components\relax|glsnumformat}{138}
+\glossaryentry{ECL@{\glosslabel{glo:ECL}{ECL}}Executive Components Layer - part of the SCA, contains the external applications which invoke the scheduler\relax|glsnumformat}{140}
+\glossaryentry{SEC@{\glosslabel{glo:SEC}{SEC}}Simulation Experiment Controller - a control application specific to a simulation experiment\relax|glsnumformat}{143}
+\glossaryentry{BDS@{\glosslabel{glo:BDS}{BDS}}Basic despatch Scheduler - a simple scheduler\relax|glsnumformat}{149}
+\glossaryentry{EFR@{\glosslabel{glo:EFR}{EFR}}Expected Future Reward - a method for discounting the value of potentially uncertain future rewards\relax|glsnumformat}{150}
+\glossaryentry{QLAS@{\glosslabel{glo:QLAS}{QLAS}}Quantum Look-ahead Scheduler - a simple look-ahead scheduler using a random sequence generator\relax|glsnumformat}{151}
+\glossaryentry{ELAS@{\glosslabel{glo:ELAS}{ELAS}}Enhanced Look-ahead Scheduler - a simple look-ahead scheduler based on QLAS but with a Sequestration Policy\relax|glsnumformat}{151}

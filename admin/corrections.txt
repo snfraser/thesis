@@ -1,0 +1,366 @@
+Major Points
+------------
+
+The abstract should be re-written such that it conforms with the
+University's requirement for length.  It should also present the main
+results of the thesis, rather than record the work which was done.  In
+the view of the examiners it should emphasise the following results.
+1) The scheduler look-ahead horizon is best placed at a timescale just
+short of that for the stability of the observing environment.  2) The
+naivety of assuming that there is a single metric whose optimisation
+will always lead to the best schedule.  3) Once a metric has been
+chosen, the proof that it can be weighted in the scheduler to give
+optimal results.
+
+The results sections of Chapters 6 to 13 need strengthening to draw
+quantitative conclusions.  First the box and whisker plots need
+explaining.  The for each experiment how much better a given metric is
+than the baseline, averaged over many nights needs to be quoted, but
+then also a statistic such as the number of nights the improved
+technique delivers a metric which exceeds the baseline.  The baseline
+may be the dispatch scheduler, or a random scheduler as appropriate.
+If a statement is made indicating the presence or absence of a
+correlation, this needs to be backed up by a statistical test; if the
+same test and same minimum level of significance are used throughout
+then this needs only to be stated the first time.
+
+On more than one occasion, the data in a figure are inconsistent with
+the description of the analysis undertaken to produce those data. For
+example, p200 states that horizon lengths from 0.5-4 hours were used
+to produce Fig. 10.10, but there are data points here for a 6-hour
+horizon length. Table 12.2 and Fig. 12.5 is another example. And
+Fig. 13.1 could not have been produced from the description in Section
+13.2 that only \tau_E=1 hour was used.
+
+Minor points
+------------
+
+Page 71, paragraph four is not well justified.  An example or estimate
+of how long it takes would be good.
+
+The notation which begins in Equation 7 on page 74 is confusing.  First
+I assume "*" means multiply by.  It could be taken as "convolve with"
+so is probably best dropped entirely since adjacent terms implies
+multiplication. I'm confused about what the index j may refer to.  I
+think its simplest if it is a unique identifier for each group, at
+which point the sum should run over all js which were observed.  I'm
+not clear what the rule given under the sigma sign means.  The first
+time this appears it should be explained in words.
+
+There is some notational inconsistency. For example, the execution
+time of a group is given by x_j, X_g, and X(g) at various points in
+Chapter 7, while the stability time-scale is given the notation
+\tau_E, \Delta_E and \DeltaE in Chapter 10.
+
+Page 87. The caption claims that 11.94 hours were lost per month on
+average, but the horizontal line in the plot is at a completely
+different value.
+
+Page 90 (and others). In many cases, multiple sentences appear
+identically in the text and in a table/figure caption. A caption
+should describe the content of a table, while conclusions drawn should
+appear in the text. In the case of Table 4.1, the caption is the
+correct place for this information and it should be deleted from the
+text on page 89.
+
+Page 93. The last sentence of the third paragraph should be
+deleted. There is simply not enough data to draw this
+conclusion. 
+
+Page 94. The claim that 80.35% of weather is "good" is made twice,
+once (p94) on the basis of Fig. 4.11, while on p96 it is claimed that
+this result is due to Fig. 4.12. A different figure of 80.03% appears
+in the Fig. 4.13 caption.
+
+Page 106.  The commonly held belief is that the seeing takes some time
+to settle after dusk (which is believed to be due to the time taken
+for the telescope and air in the enclosure to reach the equilibrium
+temperature outside, so might be less pronounced for the LT's
+enclosure), whereas the plot you show only shows there is not a
+systematic trend as a function of UT.  To disprove the commonly held
+belief you need to plot the seeing as a function of time since sunset.
+You must either do this or weaken your statement.  I'd be surprised if
+the effect was not there, as the solar astronomers get up early
+specifically to get the good seeing in the first half of the day.  So
+if there is one part of the day when the seeing degrades, there must
+me some time when it improves.  (Unless of course the solar
+astronomers are also suffering a mis-apprehension.)
+
+Section 5.4.2: How is the "Solar elevation" constraint different from
+the "Daytime" constraint?
+
+Chapter 7 perhaps sets the expectations of the reader in an unhelpful
+way.  I was expecting this chapter to show what a poor scheduler HS1
+was compared to a machine.  Of course to do that you would need a
+single metric, which we now understand is naive. So, instead you
+define HS1's schedule as a good one, and see how the weights have to
+be set to achieve that.  Now, if you began the Chapter by saying that
+more explicitly, then this would help.
+
+The "Availability" in Table 7.3 is not defined until page 212 and,
+even then, the meaning of "*" is not given.
+
+On page 200 you claim that from Fig. 10.10 that "some of the time BDS
+beats all QLAS examples". The BDS results do not appear in this
+figure so how is this conclusion drawn? In Fig. 10.11 the BDS average
+is given as 74, in which case this claim is wrong. It also appears as
+a conclusion for this chapter.
+
+On page 209 is the sentence "After investigation it was concluded that
+the following types of event were of most significance". What sort of
+investigation and how was this conclusion reached?
+
+In Fig. 13.1, the y-axis is Q_SU/Q_0 (so not Q_SU as is written in the
+figure) with Q_0 being Q_SU when q_E=1 (it does not have units of
+minutes as stated in the figure). So why are the points at q_E=1 not
+all *exactly* 1?
+
+On page 233 you say that the look ahead scheduler is slow, it needs
+some indication of how slow (needs only be to factor of five).
+
+Typos: general
+-----
+
+There are times when you use "program" (which should only be used to
+refer to a computer program) when you mean "programme".
+
+There are times when references in brackets then have brackets around
+the date (e.g. the first sentence of the first bullet point on page
+29), when the correct thing to do is separate the date and authors by
+a comma (as you do in the first bullet point on page 30).
+
+There should not be a space between the last word of a sentence and a
+question mark.
+
+There are several instances of "upto" which should be replaced with
+"up to".
+
+Lists in the text are most commonly presented as lower-case Roman
+numerals -- (i), (ii), etc. -- but sometimes as (a), (b) (e.g., p.43).
+There should be consistency.
+
+When stating explicitly what questions are asked (e.g. page 129
+Section 5.3.3.) you need to close up spaces between question marks and
+their preceding words.  There is an argument that quotation marks
+would be better than italics for the questions.
+
+The figure numbering sometimes seems to miss out the Chapter
+(e.g. page 167).
+
+Typos: specific
+---------------
+
+p 19. "progrmy" - > programme
+
+p 19/26: "de los Roches" -> "del Roque"
+
+p 27.  The first line below the figure caption has a real brackets
+disaster.  I suggest "(OSS-A; Fraser, 2004)".
+
+p 38.  First sentence of simulated annealing.  "statictical" -> "statistical"
+
+p 45 later -> latter
+
+p 46 satisfycing -> satisfying
+
+p 46, third paragraph.  There is another referencing brackets problem,
+and a double full-stop after the first (rather long) sentence.
+
+p 51, Eqn 1. The first summation should presumably be i=1 to n (n is
+missing above the Sigma). The numerator is also incorrect in that the
+two terms are identical.
+
+p 54 additonal -> additional
+
+p 55 loose -> lose
+
+p 58.  Last paragraph.  "likelyhood" -> "likelihood". This sentence is
+not a sentence.
+
+p 59 end of second paragraph.  ") (" -> "; ".
+
+p 60 The first full stop should be a comma.
+
+p 62, para 3.  "ID3 (" -> "(ID3; "
+
+p 64 enforcment -> enforcement
+
+p 65 CABINs -> CABINS (last paragraph)
+
+p 67 quantative -> quantitative
+
+p 69.  Full stop required at end of paragraph 2.  Figure caption "asnew" -> "as new".
+
+p 70 later -> latter (line 11)
+
+p 70 "minimum seeing constraint" -> maximum (presumably!), and end of
+this sentence needs to be rewritten accordingly
+
+p 70 likeliness -> likelihood
+
+p 70.  The footnote needs a full stop.
+
+p 71 Eqn 6, extra right parenthesis
+
+p 73, third sentence of bullet point.  "cant" -> "cannot".
+
+p 74.  Full stop required at the end of the page.
+
+The bullet points beginning on page 75 all need the definite article as the first word.
+
+p 75, next to the last paragraph end with a double full stop.
+
+p 76 line 5.  Move "correction" to after the reference.  In the last line proposals should not be capitalised.
+
+p 77.  Equation 13 is missing a ")" in the numerator.
+
+p 78.  Last bullet point "metrics" -> "metric".
+
+p 79, second bullet point.  "Thse" -> "These".
+
+p 82 perfom -> perform
+
+p 82.  The sentence introducing the forms of technical faults must be
+a sentence, and hence end in a full stop, but will also need changing,
+then, to be grammatical.
+
+p 83 catastrophy -> catastrophe
+
+p 85 "Figs 1(a), 1(b) and 1(c)" -> "Fig. 4.1"
+
+p 89 The last paragraph of Section 4.3.1 effectively repeats the first
+bullet point of this section, except 20 months has now become 30 months.
+
+p 90 excede -> exceed
+
+Figs 4.1-4.4 The cumulative distribution on the right-hand axis needs
+numerical labels.
+
+p 97, Equations 14.  "tau" -> \tau (LaTeX command).  A definition of
+T_G is required.
+
+p 101, first line.  "wherethe" -> "where the".
+
+p 104, \lambda should be divided by \lambda_R
+
+p 111, rayleigh -> Rayleigh
+
+p 111, vapor -> vapour
+
+p 112, you need to define CAMC (it's not in the Glossary)
+
+p 112.  Presumably the 0.11 mags/airmass is during Calima.  Can you
+make this clear (either way)?  There is an extra full stop at the end
+of Section 4.4.4, and the space between all your Roman numerals and
+the following ")" needs removing in all cases.
+
+p 119 principle -> principal
+
+p 121.  There are inconsistencies between the text and Figure 5.1 with
+some objects absent, and others with slightly different names.
+
+p 124 "x ?." -> "x?"
+
+p 127, The "SFL" (end of page) is called the "SCL" in Fig.5.1 and the
+"SFCL" in Section 5.6. Use consistent notation!
+
+p 128 first line.  "scheduler need" -> "the scheduler needs".
+
+p 129 "t ?." -> "t?"
+
+p 130 measurments -> measurements
+
+p 132 infeasible -> unfeasible
+
+p 133.  Introduction to Section 5.5.1.   The time differential dot is displaced on the Q.  Just below this "include" is mis-spelt.
+
+p 133 differtial -> derivative; equivelant -> equivalent
+
+p 141 nights -> night's
+
+p 144 Stochastic execution model: the first sentence here is not a
+sentence.
+
+p 146 Sections 6.5 and 6.6 should be 6.4.1 and 6.4.2 since they are
+individual schedulers and hence daughters of Section 6.4, "Scheduler
+implementations"
+
+p 150 Eqn 19: Since g is a function of q, qbar, t, and H, what do g(0)
+and g(1) mean?
+
+p 152 "group ?." -> "group?"
+
+p 154 Table 7.2 Sentences 4 and 5 of the caption are effectively
+identical to sentences 2 and 3.
+
+p 160 guage -> gauge
+
+Fig 7.3 subscript w_el on x-axis of plot
+
+Chapter 8: Figure numbers wrong in text (and in later chapters)
+
+p 164 astronimicaly -> astronomically
+
+p 167 line 2.  "opresented" -> presented, represnting -> representing
+
+p 167 unnaffected -> unaffected
+
+p 180 servral -> several
+
+p 181 infact -> in fact
+
+p 181 Table 9.1, replace "more detail required" with this detail
+
+p 184 "the main features": only one feature is described and this is
+not backed up with a statstical analysis, nor is it obvious.
+
+p 187, the figures state Sep 15 and Oct 25 but Table 9.1 has Sep 25
+and Oct 15.
+
+p 189, the y-axis of Fig. 9.5 should extend to 85 as with all the
+other plots.
+
+p 195, no parentheses required in last 2 lines
+
+p 202, appearsd -> appears (Fig. 10.9 caption)
+
+p 205, bottom line.  "distincty" -> "distinctly"
+
+p 207 effected -> affected (fig caption)
+
+p 208 Phase II -> Phase 2
+
+p 208 principle -> principal
+
+p 209 end of first paragraph, there is a double full stop
+
+p 210 effect -> affect (twice)
+
+p 210 diffence -> difference
+
+p 211 "for [a] groups"
+
+p 211, middle of the page. "effect" -> "affect".
+
+p 211 "4 ADD_GROUP end 4 UPDATE_SEQ": end -> and
+
+p 215 line 7.  "accasions" -> occasions.
+
+p 216 The last sentence of Section 12.4 is surely wrong. The number of
+events to be injected is the largest number k such that r>Sum(i=0-k){P(i)}.
+
+p 217 needs a full stop at the end of the page.
+
+p 222 middle of the paragraph.  There seems to be something missing.
+
+p 227 assignements -> assignments
+
+p 230, second paragraph.  "investigation" -> "investigations".
+
+p 231, line 4.  "increases" -> "increase".
+
+p 232 principle -> principal
+
+p 236 Infact -> In fact
+
+p 238 likelyhood -> likelihood

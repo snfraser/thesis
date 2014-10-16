@@ -1,0 +1,987 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[dvips]{graphicx}
+\usepackage[dvips]{color}
+\usepackage{amsbsy, marvosym}
+\usepackage{amsmath}
+\usepackage{paralist}
+%\usepackage{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{subfigure}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{natbib}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\pagestyle{plain}
+\textwidth 16cm
+\textheight 23cm
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\topmargin 0cm
+
+\usepackage{float}
+\floatstyle{ruled}
+
+\newfloat{program}{thp}{lop}[section]
+\floatname{program}{Program}
+
+\newfloat{note}{thp}{lon}[section]
+\floatname{note}{Note}
+
+\begin{document}
+\pagenumbering{arabic}
+\setlength{\parindent}{5mm}
+\setlength{\parskip}{10pt plus2mm minus2mm}
+\thispagestyle{empty}
+
+
+
+% TITLE
+
+\begin{titlepage}
+ \begin{center}
+ \textsc{\LARGE Liverpool John Moores University}\\[1.5cm]
+ \textsc{\Large Ph.D Transfer Report}\\[0.5cm]
+ % Title
+ \HRule \\[0.4cm]
+ { \Large \bfseries Adaptive Optimal Telescope Scheduling}\\[0.4cm]
+ \HRule \\[1.5cm]
+ % Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Stephen \textsc{Fraser}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Prof. Iain \textsc{Steele}
+\end{flushright}
+\end{minipage}
+ \vfill
+ {\large November 19, 2009} 
+\end{center}
+\end{titlepage}
+
+\newpage
+\listoffigures
+
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/all_de.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/baz_plot.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/best_de.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/best_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/biasfr_de.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/biasfr_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/biasrs_de.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/biasrs_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bs1_pr.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa01_prex.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa0_pr.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa1_ex.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_combine_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_ex_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_pr_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_rnd1_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_rnd2_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsa_rnd_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_combine_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_ex_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_pr_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_rnd1_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_rnd2_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/bsb_rnd_cont.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/c60_gen_cav.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/c60_gen_ng.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/c60_odb_cav.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/c60_odb_ng.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cdmax.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cdtrend.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cl_load.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cl_ngs.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cl_puload.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cmp_el.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cmp_elpr.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cmp_pr.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cmp_xt.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cont_1.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cont4_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cont6_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1a2_oa.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1a2_px.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1a2_rn.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1a2_td.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_foa.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_fpx.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_oa_c.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_oa.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_px_c.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_px.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_rn.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw1_td.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_foa.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_fpx.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_oa.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_px.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_rn.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/cs1_dw2_td.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/dwsfix4b_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/dwsfix6b_ensemble.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/e_18_comp.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/e_18_prof.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/e_cumstats.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/edv.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/env_snapshot_2007-11-15_72.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/e_relstats.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/evplot_05.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/evplot_1.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/evplot_2.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/evplot_4.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/gantt.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/group_linking.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/group_structure.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_g2005.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_g2006.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_g2007.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_obs2005.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_obs2006.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_obs2007.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_tech2005.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_tech2006.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_tech2007.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_weather2005.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_weather2006.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/met_nightly_stats_weather2007.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/oh1.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/oh2.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/overview_architecture.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/p2db.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/p2_gen_qsu.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/p2_gen_qxt.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/phase2_architecture.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/placeholder.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsa3_su.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_allfit.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_best.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_biasrs.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_ql1.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_ql2.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsucc_ql4.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/qsu_hte.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/sca.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/simf_exec_plot.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/sim_framework_arch.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/sim_framework.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/ss_algorithm.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/vdv.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/volexec.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/vol_pi.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/volpi_hi.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/volrate.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/vol_span.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+\clearpage
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[scale=1.0, angle=0]{figures/vol_ut.eps}
+ \end{center}
+  \caption[Figure.]
+{Figure.}
+\end{figure}
+
+\end{document}

@@ -1,0 +1,30 @@
+I need some way to characterize the content of the ODB - dont want large number of metrics, 
+and also dont want metrics which require massive computing/time to calculate 
+- i.e. they should be few and simple.
+
+What sort of things characterize an ODB ?
+
+daily and longer period contention/demand profiles 
+- these are in fact quite hard to derive but not excessively so.
+- can some features be extracted from these profiles 
+ - the whole profile is too much information to use as a variable ?
+ - this will involve studying daily profiles 
+ - i.e. these need generating on new and old collected ODBs 
+ - is this even possible for old ?
+
+statistics of groups/observations.
+- average execution time of groups in ODB 
+ - maybe just looking at groups which are active today or this week/month ?
+ - also want to see extremes - i.e. do we have a load of short exec groups
+ and a couple of mega exec groups with high priority !
+ 
+target elevations - distribution statistics on sky (alt/az).
+- some of these might need weighting by exec times
+
+scientific priorities
+
+accounting info
+
+My guess is that all this information could be collected and munged together somehow !
+to produce a general ODB character figure - just how, I have no idea.
+

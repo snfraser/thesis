@@ -1,0 +1,35 @@
+#!/bin/csh
+
+# INTRO
+latex fchap_intro
+latex fchap_intro
+dvips -o fchap_intro.ps fchap_intro.dvi
+
+# ARCH
+latex fchap_architecture
+dvips -o fchap_architecture.ps fchap_architecture.dvi
+
+# CHAR
+latex fchap_character
+latex fchap_character
+dvips -o fchap_character.ps fchap_character.dvi
+
+# REVIEW
+latex fchap_review
+/usr/bin/bibtex fchap_review
+latex fchap_review
+latex fchap_review
+dvips -o fchap_review.ps fchap_review.dvi
+
+# METRICS
+latex fchap_metrics
+dvips -o fchap_metrics.ps fchap_metrics.dvi
+
+# EXPERIMENTS
+latex fchap_experiments
+latex fchap_experiments
+dvips -o fchap_experiments.ps fchap_experiments.dvi
+
+# CONC
+latex fchap_conc
+dvips -o fchap_conc.ps fchap_conc.dvi

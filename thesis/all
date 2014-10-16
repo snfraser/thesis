@@ -1,0 +1,50 @@
+#!/bin/csh
+
+# ARCH
+latex chap_arch
+dvips -o chap_arch.ps chap_arch.dvi
+
+# BODY
+latex chap_body
+dvips -o chap_body.ps chap_body.dvi
+
+# CASE
+latex chap_case
+dvips -o chap_case.ps chap_case.dvi
+
+# DBCHAR
+latex chap_dbchar
+dvips -o chap_dbchar.ps chap_dbchar.dvi
+\include{review}
+
+# REVIEW
+latex chap_review
+dvips -o chap_review.ps chap_review.dvi
+
+# INTRO
+latex chap_intro
+dvips -o chap_intro.ps chap_intro.dvi
+
+# LONG
+latex chap_long
+dvips -o chap_long.ps chap_long.dvi
+
+# MAM
+latex chap_mam
+dvips -o chap_mam.ps chap_mam.dvi
+
+# METRICS
+latex chap_metrics
+dvips -o chap_metrics.ps chap_metrics.dvi
+
+# PLAN
+latex chap_plan
+dvips -o chap_plan.ps chap_plan.dvi
+
+# PREDICT
+latex chap_predict
+dvips -o chap_predict.ps chap_predict.dvi
+
+# VOLATILITY
+latex chap_vol
+dvips -o chap_vol.ps chap_vol.dvi

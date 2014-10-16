@@ -1,0 +1,18 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+
+set title "Rate of arrival of volatile updates"
+set xlabel "Date [2010]"
+set ylabel "Arrivals per day"
+
+unset key
+set xdata time
+set timefmt "%Y-%m-%d"
+set format x "%b"
+
+set output "volrate.eps"
+set term postscript eps enhanced color
+plot "vol_plot.dat" using 1:2 with lines 
+
+EOF

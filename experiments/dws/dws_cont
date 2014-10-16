@@ -1,0 +1,16 @@
+#!/bin/csh
+
+# Extract contention info from a sim log
+
+set file = $1
+set out = ${file}_cont.dat
+set env = $2
+set night = "$3"
+
+echo "#ENV E_{$env} " > $out
+echo "#NIGHT $night " >> $out
+cat ${file}.txt | grep Contention | awk '{print $11,$12,$14}' >> $out
+
+echo "Generated contention ensemble file $out "
+
+

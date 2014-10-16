@@ -1,0 +1,17 @@
+#!/bin/csh
+
+cat qlas.dat | grep "STAT" | grep " 900" > qlas_025.dat
+cat qlas.dat | grep "STAT" | grep " 1800" > qlas_05.dat
+cat qlas.dat | grep "STAT" | grep " 3600" > qlas_1.dat
+cat qlas.dat | grep "STAT" | grep " 7200" > qlas_2.dat
+cat qlas.dat | grep "STAT" | grep " 14400" > qlas_4.dat
+
+/usr/bin/gnuplot -persist << EOF
+
+plot "qlas_025.dat" using 3:7 wi li ti "h=0.25",\
+     "qlas_05.dat" using 3:7 wi li ti "h=0.5",\
+     "qlas_1.dat" using 3:7 wi li ti "h=1",\
+     "qlas_2.dat" using 3:7 wi li ti "h=2",\
+     "qlas_4.dat" using 3:7 wi li ti "h=4"
+
+EOF

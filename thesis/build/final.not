@@ -1,0 +1,50 @@
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_C$}}Contention profile\relax|glsnumformat}{37}
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_A$}}Actual contention as measured during a scheduler run\relax|glsnumformat}{38}
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_D$}}Demand profile\relax|glsnumformat}{38}
+\glossaryentry{X@{\glosslabel{ntn:X}{$X(g)$}}Execution time of a group\relax|glsnumformat}{38}
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_L$}}Schedule load\relax|glsnumformat}{40}
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_{UL}$}}Urgency weighted load\relax|glsnumformat}{40}
+\glossaryentry{C@{\glosslabel{ntn:C}{$C_{CL}$}}Critical load\relax|glsnumformat}{40}
+\glossaryentry{V@{\glosslabel{ntn:V}{$V_e(g,t)$}}Enterprise utility for executing group $g$ at time $t$\relax|glsnumformat}{41}
+\glossaryentry{V@{\glosslabel{ntn:V}{$V_u(g,t)$}}User preference utility for executing group $g$ at time $t$\relax|glsnumformat}{41}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{OH}$}}Optimal height quality metric\relax|glsnumformat}{43}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{OA}$}}Optimal airmass quality metric\relax|glsnumformat}{43}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{BA}$}}Airmass benifit quality metric\relax|glsnumformat}{43}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{MW}$}}Monitor Window quality metric\relax|glsnumformat}{43}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{PX}$}}Execution Priority quality metric\relax|glsnumformat}{44}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{TD}$}}Target Demand quality metric\relax|glsnumformat}{44}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{XT}$}}Execution Time quality metric\relax|glsnumformat}{44}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{RN}$}}Remaining Nights quality metric\relax|glsnumformat}{44}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{PC}$}}Project Completion quality metric\relax|glsnumformat}{45}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{SM}$}}Seeing condition Matching quality metric\relax|glsnumformat}{45}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{LM}$}}Lunar condition Matching quality metric\relax|glsnumformat}{45}
+\glossaryentry{Q@{\glosslabel{ntn:Q}{$Q_{YT}$}}Yield Tracking quality metric\relax|glsnumformat}{45}
+\glossaryentry{w@{\glosslabel{ntn:w}{$w_{x}$}}weighting factor for metric $x$\relax|glsnumformat}{46}
+\glossaryentry{T@{\glosslabel{ntn:T}{$\tau _G$}}Length of time conditions remain \emph {good}\relax|glsnumformat}{58}
+\glossaryentry{T@{\glosslabel{ntn:T}{$\tau _B$}}Length of time conditions remain \emph {bad}\relax|glsnumformat}{58}
+\glossaryentry{W@{\glosslabel{ntn:W}{$\Delta _W$}}Fraction of night during which weather conditions are {\bf not} acceptable for observing\relax|glsnumformat}{59}
+\glossaryentry{g@{\glosslabel{ntn:g}{$g$}}A composite group (the group currently under consideration)\relax|glsnumformat}{70}
+\glossaryentry{t@{\glosslabel{ntn:t}{$t$}}The current (real or simulation) time\relax|glsnumformat}{70}
+\glossaryentry{a@{\glosslabel{ntn:a}{$a$}}The set of account synopses apertaining to the current group\relax|glsnumformat}{70}
+\glossaryentry{h@{\glosslabel{ntn:h}{$h$}}Synopsis of the execution history of the current group\relax|glsnumformat}{70}
+\glossaryentry{e@{\glosslabel{ntn:e}{$e(t)$}}The current (at time t) environmental conditions\relax|glsnumformat}{70}
+\glossaryentry{F@{\glosslabel{ntn:F}{$\Phi (g,t,e,a,h)$}}Feasibility model, determines whether a particular group is feasible subject to its constraints and under specified conditions\relax|glsnumformat}{74}
+\glossaryentry{E@{\glosslabel{ntn:E}{$E_{FP}$}}Fixed environment model with poor ($>1.3$'') seeing\relax|glsnumformat}{76}
+\glossaryentry{E@{\glosslabel{ntn:E}{$E_{FA}$}}Fixed environment model with average ($0.8''< s <1.3''$) seeing\relax|glsnumformat}{76}
+\glossaryentry{E@{\glosslabel{ntn:E}{$E_{FX}$}}Fixed environment model with excellent ($<0.8$'') seeing\relax|glsnumformat}{76}
+\glossaryentry{S@{\glosslabel{ntn:S}{$S(g,t,e,a,h)$}}Score for a group $g$ at time $t$ under specified account balance, history and environment conditions\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_x$}}Scoring metric derived from $Q_x$\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{h}$}}Scoring metric based on target elevation\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{h}$}}Scoring metric based on target airmass\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{trans}$}}Scoring metric derived from $Q_{OH}$\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{oh}$}}Scoring metric derived from $Q_{OH}$\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{oa}$}}Scoring metric derived from $Q_{OA}$\relax|glsnumformat}{80}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{slew}$}}Scoring metric based on reducing slewing overheads\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{see}$}}Scoring metric based on matching requested and actual seeing\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{phot}$}}Scoring metric based on matching requested and actual extinction\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{moon}$}}Scoring metric based on matching requested and actual sky brightness\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{p}$}}Scoring metric derived from $Q_{PX}$\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{td}$}}Scoring metric derived from $Q_{TD}$\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{rn}$}}Scoring metric derived from $Q_{RN}$\relax|glsnumformat}{81}
+\glossaryentry{f@{\glosslabel{ntn:f}{$f_{yt}$}}Scoring metric derived from $Q_{YT}$\relax|glsnumformat}{81}
+\glossaryentry{z@{\glosslabel{ntn:z}{$\zeta $}}Scheduler candidate selection model\relax|glsnumformat}{81}

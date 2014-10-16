@@ -1,0 +1,30 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+set style line 5 lt 1 lw 3 
+
+set xdata time
+set timefmt "%Y-%m-%d %H:%M"
+set format x "%d-%b"
+plot "qsa_best_1.dat" using 2:5 with lines notitle, \
+ "qsa_best_2.dat" using  2:5 with lines notitle, \
+ "qsa_best_3.dat" using  2:5 with lines notitle, \
+ "qsa_best_4.dat" using 2:5 with lines notitle, \
+ "qsa_best_5.dat" using 2:5 with lines notitle, \
+ "qsa_best_6.dat" using 2:5 with lines notitle, \
+ "qsa_best_7.dat" using 2:5 with lines notitle, \
+ "qsa_best_8.dat" using 2:5 with lines notitle, \
+ "qsa_best_9.dat" using 2:5 with lines notitle, \
+ "qsa_best_10.dat" using 2:5 with lines notitle, \
+ "qsa_best_11.dat" using 2:5 with lines notitle, \
+ "qsa_best_12.dat" using 2:5 with lines notitle, \
+ "qsa_best_13.dat" using  2:5 with lines notitle, \
+ "qsa_best_14.dat" using  2:5 with lines notitle, \
+ "qsa_best_15.dat" using 2:5 with lines notitle, \
+ "qsa_best_16.dat" using 2:5 with lines notitle, \
+ "qsa_best_17.dat" using 2:5 with lines notitle, \
+ "qsa_best_18.dat" using 2:5 with lines notitle, \
+ "qsa_best_19.dat" using 2:5 with lines notitle, \
+ "qsa_best_20.dat" using 2:5 with lines notitle
+
+EOF

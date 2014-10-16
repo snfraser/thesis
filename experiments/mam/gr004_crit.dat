@@ -1,0 +1,50 @@
+Start night: 4 from 2007-11-17 12:00:00 to 2007-11-18 12:00:00
+Sunset:     2007-11-17 18:15 Moon 44.94
+StartNight: 2007-11-17 19:40 Moon 46.16
+Moonset:    2007-11-18 00:45
+EndNight:   2007-11-18 06:05 Moon -65.48
+Sunrise:    2007-11-18 07:40 Moon -73.71
+Length of dark night:         10.42H
+Length of night inc twilight: 13.42H
+
+Total available XT = 44.71918H from 123 groups, Critical XT = 15.094763888888888H of which NonBG =13.43698611111111H, from 39 groups
+
+004 GROUP G_362     0:51:21.75   20:55:56.10  Focus01_Har         INTVAL 12H                          AVER CIVT  P= BGR XT= 12.1M    RN= ICRT *********2____
+004 GROUP G_363     0:51:21.75   20:55:56.10  Focus01_gr          INTVAL 1H                           AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********2____
+004 GROUP G_364     0:51:21.75   20:55:56.10  Focus01_ir          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********2____
+004 GROUP G_368     0:51:21.75   20:55:56.10  Focus01_Vr          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********2____
+004 GROUP G_375     0:42:49.64   41:15:26.50  Angstrom            MONITR 24H [18]                     POOR       P= 3   XT= 8.7M     RN= CRIT *********7____
+004 GROUP G_476     0:42:49.64   41:15:26.50  ANGM31              MONITR 2.5H [2]                     POOR       P= 2   XT= 33.4M    RN= CRIT *********7____
+004 GROUP G_385     1:57:56.10  -2:5:58.00    zero_HD12021        MONITR 5H [3]                       POOR       P= STD XT= 3.6M     RN= CRIT 3********5____
+004 GROUP G_003     2:33:40.00   5:18:40.00   PG0231+051          INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT _9********4___
+004 GROUP G_007     2:43:27.98   37:20:44.70  SN2007gr            MONITR 48H [24]                     POOR       P= 3   XT= 10.07M   RN= CRIT 8**********6__
+004 GROUP G_384     2:2:42.06    60:15:26.50  pol_BD59_389        MONITR 3H [2.48]                    POOR       P= STD XT= 3.6M     RN= CRIT ***********8__
+004 GROUP G_273     3:42:23.30   39:14:30.00  SN07kk_Optmonitor   MONITR 24H [18]                     POOR       P= 5   XT= 11.43M   RN= CRIT _9**********6_
+004 GROUP G_274     3:42:23.30   39:14:30.00  SN07kk_IRmonitor    MONITR 24H [18]                     POOR ASTR  P= 5   XT= 28M      RN= CRIT _9**********6_
+004 GROUP G_276     3:24:43.908  50:11:21.02  com17Pmon-071030    MONITR 48H [36]                     POOR ASTR  P= 1   XT= 2.25M    RN= CRIT 5***********7_
+004 GROUP G_355     3:13:24.16   18:49:38.40  FS109               MONITR 3H [1]                       POOR ASTR  P= STD XT= 4.6M     RN= CRIT _7*********5__
+004 GROUP G_370     3:24:7.844   50:9:32.83   17P-monitor         MONITR 3H [2]                       AVER NAUT  P= 2   XT= 3.63M    RN= CRIT 6***********7_
+004 GROUP G_382     5:5:30.60    52:49:54.00  zero_G191B2         MONITR 5H [3]                       POOR       P= STD XT= 3.53M    RN= CRIT __************
+004 GROUP G_002     7:24:18.00  -0:32:17.00   Photom_G1_RU149     INTVAL 3H                           POOR ASTR  P= STD XT= 9.87M    RN= ICRT ______9*******
+004 GROUP G_284     7:23:44.00   20:25:6.00   mho_monitor         INTVAL 22.5H                        POOR       P= 1   XT= 71.1M    RN= ICRT _____6********
+004 GROUP G_352     7:24:14.40  -0:33:4.10    FS14                MONITR 3H [1]                       POOR ASTR  P= STD XT= 5.43M    RN= CRIT ______9*******
+004 GROUP G_371     7:36:51.00   65:36:7.00   lens_2403           MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= CRIT ___1**********
+004 GROUP G_373     9:55:33.20   69:3:55.00   lens_M81            MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= CRIT _____1********
+004 GROUP G_004     10:50:5.70  -0:1:12.00    Photom_G1_1047+003  INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT _________5****
+004 GROUP G_353     11:37:5.15   29:47:58.40  FS21                MONITR 3H [1]                       POOR ASTR  P= STD XT= 5.43M    RN= CRIT _________7****
+004 GROUP G_277     12:45:12.49 -2:58:17.56   venus-mon-070919    MONITR 48H [33.58]                  UUUU CIVT  P= 3   XT= 1.27M    RN= CRIT ___________5**
+004 GROUP G_372     12:56:43.00  21:40:56.00  lens_M64            MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= CRIT __________1***
+004 GROUP G_426     12:21:31.69  28:13:58.50  dark_12h            MONITR 24H [22.98]                  POOR       P= 2   XT= 2.27M    RN= CRIT __________9***
+004 GROUP G_239     13:8:48.70  -6:46:39.00   NGC4981             FLEXBL                         DARK POOR       P= 1   XT= 8.3M     RN= CRIT ____________9*
+004 GROUP G_439     13:6:56.00   29:34:48.00  z2_1_H13            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= CRIT __________2***
+004 GROUP G_440     13:6:56.00   29:34:48.00  z1_1_H13            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= CRIT __________2***
+004 GROUP G_357     14:28:43.37  33:10:41.50  FS134               MONITR 3H [1]                       POOR ASTR  P= STD XT= 4.6M     RN= CRIT ____________9*
+004 GROUP G_427     16:35:15.49  38:8:4.50    darkbias_16h        MONITR 24H [22.97]                  POOR ASTR  P= 2   XT= 4.34M    RN= CRIT *5____________
+004 GROUP G_365     19:0:34.78   22:34:54.10  Focus19_zr          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT ***4__________
+004 GROUP G_367     19:0:34.78   22:34:54.10  Focus19_Br          INTVAL 12H                          AVER CIVT  P= BGR XT= 11.18M   RN= ICRT ***4__________
+004 GROUP G_006     20:43:58.25 -10:46:10.00  Photom_M-A          INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT ***9__________
+004 GROUP G_287     21:29:58.40  12:10:0.60   m15weekly           MONITR 132H [96]                    AVER       P= 2   XT= 4.05M    RN= CRIT *****6________
+004 GROUP G_381     22:21:58.50  56:31:52.00  zero_hd212311       MONITR 5H [3]                       POOR       P= STD XT= 4.5M     RN= CRIT *******9______
+004 GROUP G_466     22:53:57.74  16:8:53.56   2251                MONITR 168H [167]              DARK AVER       P= 1   XT= 7.8M     RN= CRIT *******1______
+004 GROUP G_005     23:33:48.00  5:46:10.70   Photom_2331+055A    INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT *******4______
+004 GROUP G_294     23:5:9.603  -6:43:5.28    uranusMon1          MONITR 24H [19.43]                  POOR NAUT  P= 1   XT= 1.28M    RN= CRIT ******4_______

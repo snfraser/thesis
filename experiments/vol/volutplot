@@ -1,0 +1,19 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+
+set title "Scatter plot of time of arrival against date for VEs"
+set xlabel "Date"
+set ylabel "Time [UT]"
+
+set xdata time
+set ydata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+
+set format x "%b"
+set format y "%H"
+
+unset key
+plot "vphase2_upd.dat" using 1:3 ps 0.25 pt 4
+
+EOF

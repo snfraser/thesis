@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Environmental Prediction Model - ()</TITLE>
+<META NAME="description" CONTENT="Environmental Prediction Model - ()">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node61.html">
+<LINK REL="previous" HREF="node59.html">
+<LINK REL="up" HREF="node59.html">
+<LINK REL="next" HREF="node61.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1013"
+  HREF="node61.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1009"
+  HREF="node59.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1003"
+  HREF="node59.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1011"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1014"
+  HREF="node61.html">Weather prediction model -()</A>
+<B> Up:</B> <A NAME="tex2html1010"
+  HREF="node59.html">SCA Components</A>
+<B> Previous:</B> <A NAME="tex2html1004"
+  HREF="node59.html">SCA Components</A>
+ &nbsp; <B>  <A NAME="tex2html1012"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00092100000000000000">
+Environmental Prediction Model - (<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$ E$">)</A>
+</H3>
+Models the environment the scope exists in. Uncertain, should provide current and possibly predictive estimates of the variables. Predictive useful to fold in to likeliness indicator of 'availability and utility' of future observing periods. Scheduler would like to be able to look ahead and decide if its best to do X now or wait for half an hour when seeing is likely to be better
+Some Variables:-
+seeing - photometricity/extinction [<A
+ HREF="node99.html#lapalma31">King, 1985</A>,<A
+ HREF="node99.html#lapalma115">Benn and Ellison, 1998</A>] - sky brightness [<A
+ HREF="node99.html#krisciunas91brightness">Krisciunas and Schaefer, 1991</A>,<A
+ HREF="node99.html#krisciunas97optical">Krisciunas, 1997</A>] - cloud/dust - temperature - bad weather, rain,wind,humidity = scope out-of-action.
+
+<P>
+How do we get this stuff into the EM and how do we do prediction - is it worth it? what lookahead horizon? - there are a number of papers on this  [<A
+ HREF="node99.html#aussem94dynamical">Aussem et&nbsp;al., 1994a</A>,<A
+ HREF="node99.html#aussem94fuzzy">Aussem et&nbsp;al., 1994b</A>,<A
+ HREF="node99.html#sarazin97automated">Sarazin, 1997</A>,<A
+ HREF="node99.html#aussem02online">Aussem and Tran, 2002</A>,<A
+ HREF="node99.html#racine96temporal">Racine, 1996</A>] also some useful stuff on VLT weather station), used neural nets with various time averaged meteo indicators - results uninspiring not much better than climatological stats. 
+
+<P>
+ING weather stuff and LT data. Dont need technical details of how this is processed by RCS or how it is measured. 
+
+<P>
+A number of standard models have been set up for use in the simulations.
+
+<P>
+<DL>
+<DT><STRONG> </STRONG></DT>
+<DD>Seeing is kept constant in the <I>poor</I> state.
+</DD>
+<DT><STRONG> <IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img351.png"
+ ALT="$ E_{Fa}$"></STRONG></DT>
+<DD>Seeing is kept constant in the <I>average</I> state.
+</DD>
+<DT><STRONG> <IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img352.png"
+ ALT="$ E_{Fx}$"></STRONG></DT>
+<DD>Seeing is kept constant in the <I>excellent</I> state.
+</DD>
+<DT><STRONG> <IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img353.png"
+ ALT="$ E_{Ra}$"></STRONG></DT>
+<DD>Random using annual (climatological) distribution. 
+</DD>
+<DT><STRONG> <IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img354.png"
+ ALT="$ E_{Rs}$"></STRONG></DT>
+<DD>Random using seasonal distribution.
+</DD>
+<DT><STRONG> <!-- MATH
+ $E_{N(<date>)}$
+ -->
+<IMG
+ WIDTH="36" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="$ E_{N(&lt;date&gt;)}$"></STRONG></DT>
+<DD>Actual seeing history recorded from a given night. 
+</DD>
+<DT><STRONG> <!-- MATH
+ $E_{R_{uvw}}$
+ -->
+</STRONG></DT>
+<DD>Random using supplied values for probability distribution between Poor (u), Average (v) and Excellent (w) seeing.
+</DD>
+<DT><STRONG> <!-- MATH
+ $E_{S_{<ID>}}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.png"
+ ALT="$ E_{S_{&lt;ID&gt;}}$"></STRONG></DT>
+<DD>Scenario-based with specified scenario ID.
+</DD>
+</DL>
+
+<P>
+Additional (simulation) models proposed which use actual environmental scenario from simulation with varying degrees of accuracy over specified look-ahead periods.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1013"
+  HREF="node61.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1009"
+  HREF="node59.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1003"
+  HREF="node59.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1011"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1014"
+  HREF="node61.html">Weather prediction model -()</A>
+<B> Up:</B> <A NAME="tex2html1010"
+  HREF="node59.html">SCA Components</A>
+<B> Previous:</B> <A NAME="tex2html1004"
+  HREF="node59.html">SCA Components</A>
+ &nbsp; <B>  <A NAME="tex2html1012"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

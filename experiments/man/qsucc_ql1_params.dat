@@ -1,0 +1,103 @@
+
+
+Iteration 0
+WSSR        : 587591            delta(WSSR)/WSSR   : 0
+delta(WSSR) : 0                 limit for stopping : 1e-05
+lambda	  : 2.71117
+
+initial set of free parameter values
+
+a               = 20
+b               = 1
+c               = 45
+m               = 15
+/
+
+Iteration 1
+WSSR        : 3330.96           delta(WSSR)/WSSR   : -175.403
+delta(WSSR) : -584260           limit for stopping : 1e-05
+lambda	  : 0.271117
+
+resultant parameter values
+
+a               = 6.53955
+b               = -1.14725
+c               = 41.012
+m               = 9.82837
+/
+
+Iteration 2
+WSSR        : 1705.71           delta(WSSR)/WSSR   : -0.952833
+delta(WSSR) : -1625.26          limit for stopping : 1e-05
+lambda	  : 0.0271117
+
+resultant parameter values
+
+a               = 7.79897
+b               = -0.470701
+c               = 33.7125
+m               = 5.05255
+/
+
+Iteration 3
+WSSR        : 1347.2            delta(WSSR)/WSSR   : -0.266118
+delta(WSSR) : -358.513          limit for stopping : 1e-05
+lambda	  : 0.00271117
+
+resultant parameter values
+
+a               = 8.13221
+b               = 0.404825
+c               = 33.8266
+m               = 5.29004
+/
+
+Iteration 4
+WSSR        : 1347.17           delta(WSSR)/WSSR   : -2.15546e-05
+delta(WSSR) : -0.0290376        limit for stopping : 1e-05
+lambda	  : 0.000271117
+
+resultant parameter values
+
+a               = 8.05911
+b               = 0.174714
+c               = 34.3472
+m               = 5.17082
+*/
+
+Iteration 5
+WSSR        : 1347.16           delta(WSSR)/WSSR   : -2.37367e-06
+delta(WSSR) : -0.00319772       limit for stopping : 1e-05
+lambda	  : 0.000271117
+
+resultant parameter values
+
+a               = 8.08047
+b               = 0.25473
+c               = 34.4109
+m               = 5.0649
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1347.16
+rel. change during last iteration : -2.37367e-06
+
+degrees of freedom (ndf) : 86
+rms of residuals      (stdfit) = sqrt(WSSR/ndf)      : 3.95786
+variance of residuals (reduced chisquare) = WSSR/ndf : 15.6647
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 8.08047          +/- 2.73         (33.79%)
+b               = 0.25473          +/- 2.625e+05    (1.031e+08%)
+c               = 34.4109          +/- 8.331e+06    (2.421e+07%)
+m               = 5.0649           +/- 5.224e+06    (1.032e+08%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      m      
+a               1.000 
+b               0.855  1.000 
+c              -0.855 -1.000  1.000 
+m               0.855  1.000 -1.000  1.000 

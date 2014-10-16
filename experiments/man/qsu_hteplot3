@@ -1,0 +1,21 @@
+#!/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "horiz_env_su4.eps"
+set term postscript enhanced color
+
+set title "Variation of Q_{SU} with environmental stability for QLAS with variable horizon length"
+set xlabel "Environment stability to horizon ratio {/Symbol t}_E/H [mins]"
+set ylabel "Schedule Quality Q_{SU} improvement"
+set key right top
+set xrange [-1:13]
+plot "qsuhteD30.dat" using 1:2:3 wi errorli  ti "H = 0.5 h",\
+     "qsuhteD1.dat"  using 1:2:3 wi errorli  ti "H = 1.0 h",\
+     "qsuhteD2.dat"  using 1:2:3 wi errorli  ti "H = 2.0 h",\
+     "qsuhteD4.dat"  using 1:2:3 wi errorli  ti "H = 4.0 h",\
+     "qsuhteD6.dat"  using 1:2:3 wi errorli  ti "H = 6.0 h", \
+     0.957 wi li lt 7 ti "BDS range",\
+     1.043 wi li lt 7  notitle
+EOF

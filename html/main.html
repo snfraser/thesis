@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Adaptive Optimal Telescope Scheduling</TITLE>
+<META NAME="description" CONTENT="Adaptive Optimal Telescope Scheduling">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html64"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev_g.png"> 
+<A NAME="tex2html62"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html65"
+  HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A NAME="tex2html63"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+
+<H1 ALIGN=CENTER>Adaptive Optimal Telescope Scheduling</H1>
+<P ALIGN=CENTER><STRONG>S.N. Fraser</STRONG></P>
+<BR><P ALIGN=CENTER><I>Date:</I> 31 January 2008</P>
+<P ALIGN=LEFT></P>
+
+<P>
+
+<H3>Abstract:</H3>
+<DIV>
+Astronomical telescopes operate in a dynamic and uncertain operational environment. Time is often oversubscribed with programs competing for available slots and best observing conditions. In order to achieve a high scientific return a scheduler must be able to create a globally optimal observing schedule. In dynamic environments any offline or static schedule will become repidly out-of-date, thus iterative repair based or dynamic despatch scheduling is the preferred option being able to respond to these changes. Dynamic despatch suffers from myopism, long term, global aims are usurped in favor of local optimization - what is best to do right now. We hope to show that by incorporating a predictive element into our scheduler by using look-ahead planning to generate medium term objectives to be followed and short term environmental prediction to attempt to keep our local decisions close to the projected plan. We investigate and characterize the operating environment and investigate techniques for short term prediction. We investigate methods for characterizing the value of schedules (metrics) both locally (at the decision point) and over longer horizons. The scientific objectives and conditions for optimal execution of individual observing programs resides naturally with the program - ways of trading time slots and conditions may be peculiar to a given program, this suggests we look at ways of distributing the decision-making between delegates (agents) representing the value judgements of the observations' owners (PIs). The task of scheduling, distributed between these agents then emerges from their interaction under the control of a supervisor to ensure global aims are retained. 
+</DIV>
+<P>
+
+<P>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html66"
+  HREF="node1.html">Contents</A>
+<LI><A NAME="tex2html67"
+  HREF="node2.html">List of Figures</A>
+<LI><A NAME="tex2html68"
+  HREF="node3.html">List of Tables</A>
+<LI><A NAME="tex2html69"
+  HREF="node4.html">Introduction</A>
+<UL>
+<LI><A NAME="tex2html70"
+  HREF="node5.html">Background</A>
+<LI><A NAME="tex2html71"
+  HREF="node6.html">Scheduling in context</A>
+<LI><A NAME="tex2html72"
+  HREF="node7.html">Classification of scheduling problems</A>
+<LI><A NAME="tex2html73"
+  HREF="node8.html">Constraint Satisfaction Techniques</A>
+<LI><A NAME="tex2html74"
+  HREF="node9.html">Problem definition</A>
+<LI><A NAME="tex2html75"
+  HREF="node10.html">Research goals</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html76"
+  HREF="node11.html">Review of current research</A>
+<UL>
+<LI><A NAME="tex2html77"
+  HREF="node12.html">Constructive techniques</A>
+<LI><A NAME="tex2html78"
+  HREF="node13.html">Iterative repair</A>
+<LI><A NAME="tex2html79"
+  HREF="node14.html">Search techniques</A>
+<LI><A NAME="tex2html80"
+  HREF="node15.html">Case studies</A>
+<LI><A NAME="tex2html81"
+  HREF="node16.html">Contingency and flexibility methods</A>
+<LI><A NAME="tex2html82"
+  HREF="node17.html">Integrated Planning and scheduling</A>
+<LI><A NAME="tex2html83"
+  HREF="node18.html">Reactive scheduling</A>
+<LI><A NAME="tex2html84"
+  HREF="node19.html">Dynamic Despatch scheduling</A>
+<LI><A NAME="tex2html85"
+  HREF="node20.html">Agent based scheduling</A>
+<LI><A NAME="tex2html86"
+  HREF="node21.html">Evolutionary and biologically inspired techniques</A>
+<LI><A NAME="tex2html87"
+  HREF="node22.html">Adaptive Learning techniques applied to scheduling</A>
+<LI><A NAME="tex2html88"
+  HREF="node23.html">Economics and market based techniques</A>
+<LI><A NAME="tex2html89"
+  HREF="node24.html">Telescope domain</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html90"
+  HREF="node25.html">Plan</A>
+<LI><A NAME="tex2html91"
+  HREF="node26.html">Investigation of Metrics</A>
+<UL>
+<LI><A NAME="tex2html92"
+  HREF="node27.html">Introduction and rationale</A>
+<LI><A NAME="tex2html93"
+  HREF="node28.html">Problem complexity metrics (PCM)</A>
+<UL>
+<LI><A NAME="tex2html94"
+  HREF="node29.html">Contention profile <IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ C_c$"></A>
+<LI><A NAME="tex2html95"
+  HREF="node30.html">Demand profile <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$ C_d$"></A>
+<LI><A NAME="tex2html96"
+  HREF="node31.html">Load <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$ C_l$"></A>
+</UL>
+<LI><A NAME="tex2html97"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<UL>
+<LI><A NAME="tex2html98"
+  HREF="node33.html">Potential utility measure</A>
+<LI><A NAME="tex2html99"
+  HREF="node34.html">Primitive utility measures</A>
+<LI><A NAME="tex2html100"
+  HREF="node35.html">Project completion</A>
+<LI><A NAME="tex2html101"
+  HREF="node36.html">Discussion on metrics/quality/reward</A>
+<LI><A NAME="tex2html102"
+  HREF="node37.html">Efficiency measure - <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$ E$"></A>
+<LI><A NAME="tex2html103"
+  HREF="node38.html">More about contention to squeeze into discussion above</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html104"
+  HREF="node39.html">Environment Characterization Study</A>
+<UL>
+<LI><A NAME="tex2html105"
+  HREF="node40.html">What - Operating Environment</A>
+<LI><A NAME="tex2html106"
+  HREF="node41.html">why</A>
+<LI><A NAME="tex2html107"
+  HREF="node42.html">Background/review of previous work on site character (not prediction)</A>
+<LI><A NAME="tex2html108"
+  HREF="node43.html">Technical downtime</A>
+<UL>
+<LI><A NAME="tex2html109"
+  HREF="node44.html">Source of data</A>
+<LI><A NAME="tex2html110"
+  HREF="node45.html">Analysis and Results</A>
+<LI><A NAME="tex2html111"
+  HREF="node46.html">Conclusions</A>
+</UL>
+<LI><A NAME="tex2html112"
+  HREF="node47.html">Weather</A>
+<UL>
+<LI><A NAME="tex2html113"
+  HREF="node48.html">Telescope Weather Monitoring System</A>
+<LI><A NAME="tex2html114"
+  HREF="node49.html">Analysis of results</A>
+<LI><A NAME="tex2html115"
+  HREF="node50.html">Conclusions/prediction</A>
+<LI><A NAME="tex2html116"
+  HREF="node51.html">Observer reports</A>
+<LI><A NAME="tex2html117"
+  HREF="node52.html">Analysis of results</A>
+<LI><A NAME="tex2html118"
+  HREF="node53.html">Conclusions</A>
+</UL>
+<LI><A NAME="tex2html119"
+  HREF="node54.html">Sky conditions</A>
+<UL>
+<LI><A NAME="tex2html120"
+  HREF="node55.html">Collected seeing data from archived images</A>
+</UL>
+<LI><A NAME="tex2html121"
+  HREF="node56.html">Prediction </A>
+</UL>
+<BR>
+<LI><A NAME="tex2html122"
+  HREF="node57.html">Scheduler Component Architecture (SCA)</A>
+<UL>
+<LI><A NAME="tex2html123"
+  HREF="node58.html">Intro and rational</A>
+<LI><A NAME="tex2html124"
+  HREF="node59.html">SCA Components</A>
+<UL>
+<LI><A NAME="tex2html125"
+  HREF="node60.html">Environmental Prediction Model - (<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$ E$">)</A>
+<LI><A NAME="tex2html126"
+  HREF="node61.html">Weather prediction model -(<IMG
+ WIDTH="25" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$ W$">)</A>
+<LI><A NAME="tex2html127"
+  HREF="node62.html">Execution timing (<IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ X$">) and feasibility (<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \Phi $">) models</A>
+</UL>
+<LI><A NAME="tex2html128"
+  HREF="node63.html">(External) Timing constraint calculator </A>
+<UL>
+<LI><A NAME="tex2html129"
+  HREF="node64.html">Spatial constraints model</A>
+<LI><A NAME="tex2html130"
+  HREF="node65.html">Phase2 model - (<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="$ P$">)</A>
+<LI><A NAME="tex2html131"
+  HREF="node66.html">History model - (<IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$ H$">)</A>
+<LI><A NAME="tex2html132"
+  HREF="node67.html">Accounting model - (<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$ A$">)</A>
+<LI><A NAME="tex2html133"
+  HREF="node68.html">Cost accounting model - (<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ C$">)</A>
+</UL>
+<LI><A NAME="tex2html134"
+  HREF="node69.html">Scheduling engine</A>
+<UL>
+<LI><A NAME="tex2html135"
+  HREF="node70.html">Selection Heuristic - (<IMG
+ WIDTH="14" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$ \zeta $">)</A>
+<LI><A NAME="tex2html136"
+  HREF="node71.html">Scoring model - (<IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.png"
+ ALT="$ S$">)</A>
+</UL>
+<LI><A NAME="tex2html137"
+  HREF="node72.html">Heuristic Scoring metrics (HSM)</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html138"
+  HREF="node73.html">Simulation framework</A>
+<UL>
+<LI><A NAME="tex2html139"
+  HREF="node74.html">Additional simulator components</A>
+<UL>
+<LI><A NAME="tex2html140"
+  HREF="node75.html">Stochastic Execution Timing Model - <IMG
+ WIDTH="14" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \xi $"></A>
+<LI><A NAME="tex2html141"
+  HREF="node76.html">Environmental Scenario ()</A>
+<LI><A NAME="tex2html142"
+  HREF="node77.html">Weather scenario (<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \Omega $">)</A>
+<LI><A NAME="tex2html143"
+  HREF="node78.html">Quality/Complexity metric plugins</A>
+<LI><A NAME="tex2html144"
+  HREF="node79.html">Time signal generator</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html145"
+  HREF="node80.html">Database character study</A>
+<UL>
+<LI><A NAME="tex2html146"
+  HREF="node81.html">Experiments</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html147"
+  HREF="node82.html">Case Study 1</A>
+<LI><A NAME="tex2html148"
+  HREF="node83.html">Man against Machine</A>
+<UL>
+<LI><A NAME="tex2html149"
+  HREF="node84.html">Rational and introduction</A>
+<LI><A NAME="tex2html150"
+  HREF="node85.html">Method</A>
+<LI><A NAME="tex2html151"
+  HREF="node86.html">Results</A>
+<LI><A NAME="tex2html152"
+  HREF="node87.html">Conclusions</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html153"
+  HREF="node88.html">Long period comparison</A>
+<LI><A NAME="tex2html154"
+  HREF="node89.html">Conclusions</A>
+<LI><A NAME="tex2html155"
+  HREF="node90.html">Further work</A>
+<LI><A NAME="tex2html156"
+  HREF="node91.html">Summary Conclusions</A>
+<LI><A NAME="tex2html157"
+  HREF="node92.html">Phase2 Database</A>
+<UL>
+<LI><A NAME="tex2html158"
+  HREF="node93.html">Proposal</A>
+<LI><A NAME="tex2html159"
+  HREF="node94.html">Groups</A>
+<LI><A NAME="tex2html160"
+  HREF="node95.html">Observations</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html161"
+  HREF="node96.html">Phase2 model generator and its configuration</A>
+<LI><A NAME="tex2html162"
+  HREF="node97.html">Calculation of <IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$ Q_Y$"></A>
+<UL>
+<LI><A NAME="tex2html163"
+  HREF="node98.html">Minimum interval timing constraint</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html164"
+  HREF="node99.html">Bibliography</A>
+<LI><A NAME="tex2html165"
+  HREF="node100.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html64"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev_g.png"> 
+<A NAME="tex2html62"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html65"
+  HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A NAME="tex2html63"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

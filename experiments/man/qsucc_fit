@@ -1,0 +1,57 @@
+#!/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "qsucc.eps"
+set term postscript enhanced color
+
+set title "Comparison of effect of scheduler model on variation of Q_{SU} with ODB contention characteristic"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+
+set key right bottom
+
+plot "qsucc_best.dat"   using 2:3 with point ps 1  notitle, -0.0227*x*x+1.223*x+52.0226 wi li, -0.04329*x*x+1.887*x+51.16 wi li, -0.04416*x*x+1.924*x+54.0287 wi li, -0.057*x*x+2.4128*x+54.587 wi li
+     
+
+set output "qsucc_best.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: BDS with {/Symbol z}_{Best}"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+
+set nokey 
+plot "qsucc_best.dat"   using 2:3 with point ps 1  notitle
+   
+
+set output "qsucc_ql1.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=1h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+
+set nokey 
+plot "qsucc_ql1.dat"   using 2:3 with point ps 1  notitle
+   
+
+
+set output "qsucc_ql2.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=2h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+
+set nokey 
+plot "qsucc_ql2.dat"   using 2:3 with point ps 1  notitle
+   
+
+set output "qsucc_ql4.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=4h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+
+set nokey 
+plot "qsucc_ql4.dat"   using 2:3 with point ps 1  notitle
+   
+
+
+
+EOF

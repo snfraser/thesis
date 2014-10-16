@@ -1,0 +1,17 @@
+#!/bin/csh
+
+set output = figlist.tex 
+
+foreach file (figures/*.eps)
+    cat $file | grep cdplot
+    if ($status != 0) then
+	echo "\clearpage" >>& $output
+	echo "\begin{figure}[htbp]" >>& $output
+ 	echo " \begin{center}" >>& $output
+  	echo "  \includegraphics[scale=1.0, angle=0]{"${file}"}" >>& $output
+ 	echo " \end{center}" >>& $output
+	echo "  \caption[Figure.]" >>& $output
+	echo "{Figure.}" >>& $output
+	echo "\end{figure}" >>& $output
+    endif
+end

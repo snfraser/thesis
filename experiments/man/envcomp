@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set out1 = e_18_comp.eps
+
+#/usr/bin/gnuplot -persist << EOF
+
+/usr/bin/gnuplot << EOF
+
+# Relative plot
+set term postscript enhanced color
+set output "$out1"
+set title "Comparison of time under variable lengths of stable conditions for Environment models E_{1800}"
+set xlabel "Time [minutes]
+set ylabel "Amount of time [hours]"
+plot "e_18_a.dat"  using 1:(\$4/60) with lines ti "Run A", \
+     "e_18_b.dat"  using 1:(\$4/60) with lines ti "Run B", \
+     "e_18_c.dat"  using 1:(\$4/60) with lines ti "Run C", \
+     "e_18_d.dat"  using 1:(\$4/60) with lines ti "Run D"
+
+EOF

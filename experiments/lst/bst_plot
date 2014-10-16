@@ -1,0 +1,71 @@
+#!/bin/csh
+
+# setup simulation name
+if (${#argv} < 1) then
+    echo "No bleeding name supplied"
+    exit 1
+endif
+
+set SIM = $1
+set simlog = qst_${SIM}.log
+
+cat $simlog | grep CDAT_NG | awk '{print $12,$13,$14}' > qst_${SIM}_ng.dat
+cat $simlog | grep CDAT_PX | awk '{print $12,$13,$14}' > qst_${SIM}_px.dat
+cat $simlog | grep CDAT_OA | awk '{print $12,$13,$14}' > qst_${SIM}_oa.dat
+cat $simlog | grep CDAT_RN | awk '{print $12,$13,$14}' > qst_${SIM}_rn.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qst_${SIM}_xt.dat
+
+# NG
+gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Number of groups executed per night"
+set xlabel "Time"
+set ylabel "Number of Groups"
+set yrange [0:120]
+plot "qst_${SIM}_ng.dat" using 1:3 with line
+EOF
+
+# XT
+gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Fraction of available night used per night"
+set xlabel "Time"
+set ylabel "Fraction of night used"
+set yrange [0:1.1]
+plot "qst_${SIM}_xt.dat" using 1:3 with line
+EOF
+
+# RN
+gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Quality metric Q_{RN}"
+set xlabel "Time"
+set ylabel "Q_{RN}"
+set yrange [0:1.1]
+plot "qst_${SIM}_rn.dat" using 1:3 with line
+EOF
+
+# OA
+gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Quality metric Q_{OA}"
+set xlabel "Time"
+set ylabel "Q_{OA}"
+set yrange [0:1.1]
+plot "qst_${SIM}_oa.dat" using 1:3 with line
+EOF
+
+# PX
+gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Quality metric Q_{PX}"
+set xlabel "Time"
+set ylabel "Q_{PX}"
+set yrange [0:4]
+plot "qst_${SIM}_px.dat" using 1:3 with line
+EOF

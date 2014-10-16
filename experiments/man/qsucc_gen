@@ -1,0 +1,9 @@
+#!/bin/csh
+
+set model = $1
+
+# qsucc_gen <model> <sy>
+# in:  qsucc_model_gen.dat
+# out: qsucc_model.dat
+
+java  Generator --base qsucc_${model}_gen.dat --nd 6 --np 100 --sx 5 --sy $2 --h 0.1  --ceiling 90 >& qsucc_${model}.dat

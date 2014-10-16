@@ -1,0 +1,47 @@
+\contentsline {table}{\numberline {3.1}{\ignorespaces Assignment of $Q$ metrics to hierarchic planning levels.}}{82}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Definitions of alert and clear threshold levels for triggering good/bad weather conditions.}}{92}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Fraction of recorded weather variable statistics over \emph {alert} level.}}{95}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Quartiles of raw and corrected seeing distributions}}{107}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Scores of top ranked candidate groups for single scheduler sweep.}}{117}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Factors involved in calculation of execution time for groups.}}{127}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Characteristics of test night for HS1 experiment}}{156}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Distribution of number of groups between priority levels for HS1 experiment}}{157}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Description of the columns in the table provided to the human scheduler}}{159}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Sample section of table available to HS. Description of these columns are found in Table.\nobreakspace {}7.3\hbox {}}}{161}
+\contentsline {subtable}{\numberline {(a)}{\ignorespaces {Results of BDS simulations and Human scheduler}}}{165}
+\contentsline {subtable}{\numberline {(b)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=100)}}}{165}
+\contentsline {subtable}{\numberline {(c)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=500)}}}{165}
+\contentsline {subtable}{\numberline {(d)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=2500)}}}{165}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Case study night characteristics for scoring experiments}}{168}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Results for Night 1 under $E_{FP}$}}{171}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Results for Night 1 under $E_{FX}$}}{171}
+\contentsline {table}{\numberline {8.4}{\ignorespaces Results for Night 2 under $E_{FP}$}}{171}
+\contentsline {table}{\numberline {8.5}{\ignorespaces Results for Night 2 under $E_{FX}$}}{171}
+\contentsline {table}{\numberline {9.1}{\ignorespaces Details of Phase 2 models for complexity experiments}}{184}
+\contentsline {table}{\numberline {12.1}{\ignorespaces Short extract of a section of the reduced volatility event table.}}{215}
+\contentsline {table}{\numberline {12.2}{\ignorespaces Mean values of $Q_{SU}$ measured using baseline simulations.}}{221}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Statistics of the variation of $Q_{SU}$ with $C_{DC}$.}}{248}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Statistics of the variation of $Q_{XT}$ with $C_{DC}$}}{248}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Fraction of nights on which scheduler with given selection model beats other models.}}{249}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Amount $\Delta _{Q_{SU}}$ by which scheduler with given selection model beats other models.}}{249}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Comparison of $Q_{el}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{250}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Comparison of $Q_{el}$ versus $w_{el}$ for H1 relative to BDS.}}{251}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Comparison of $Q_{px}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{252}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Comparison of $Q_{px}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{253}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Comparison of $Q_{oa}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{254}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Comparison of $Q_{oa}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{255}
+\contentsline {table}{\numberline {B.11}{\ignorespaces Comparison of $Q_{oa}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{256}
+\contentsline {table}{\numberline {B.12}{\ignorespaces Comparison of $Q_{oa}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{257}
+\contentsline {table}{\numberline {B.13}{\ignorespaces Comparison of $Q_{px}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{258}
+\contentsline {table}{\numberline {B.14}{\ignorespaces Comparison of $Q_{px}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{259}
+\contentsline {table}{\numberline {B.15}{\ignorespaces Comparison of $Q_{td}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{260}
+\contentsline {table}{\numberline {B.16}{\ignorespaces Comparison of $Q_{td}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{261}
+\contentsline {table}{\numberline {B.17}{\ignorespaces Comparison of $Q_{rn}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{262}
+\contentsline {table}{\numberline {B.18}{\ignorespaces Comparison of $Q_{rn}$ versus $w_{el}$ for $BDS_{best}$ relative to $BDS_{random}$.}}{263}
+\contentsline {table}{\numberline {B.19}{\ignorespaces Comparison of $Q_{SU}$ versus $C_c$ for $\zeta _{RS}$,$Q_1$,$Q_2$,$Q_4$ relative to $\zeta _{Best}$.}}{264}
+\contentsline {table}{\numberline {B.20}{\ignorespaces Comparison of $Q_{SU}$ versus $\tau _E$ for $\zeta _{FR}$,$\zeta _{RS}$ relative to $\zeta _{Best}$.}}{265}
+\contentsline {table}{\numberline {B.21}{\ignorespaces Comparison of $Q_{SU}$ versus $n_e$ for $Q_{0.5}$,$Q_2$,$Q_4$ relative to BDS.}}{266}
+\contentsline {table}{\numberline {B.22}{\ignorespaces Comparison of $Q_{SU}$ versus proximity for $ELAS_{0.5}$ relative to $QLAS_{0.5}$.}}{267}
+\contentsline {table}{\numberline {B.23}{\ignorespaces Comparison of $Q_{SU}$ versus proximity for $ELAS_1$ relative to $QLAS_1$.}}{268}
+\contentsline {table}{\numberline {B.24}{\ignorespaces Comparison of $Q_{SU}$ versus proximity for $ELAS_2$ relative to $QLAS_2$.}}{269}
+\contentsline {table}{\numberline {B.25}{\ignorespaces Comparison of $Q_{SU}$ versus proximity for $ELAS_4$ relative to $QLAS_4$.}}{270}

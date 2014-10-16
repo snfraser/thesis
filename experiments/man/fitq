@@ -1,0 +1,10 @@
+/usr/bin/gnuplot << EOF >& qsucc_${in}_params.dat
+
+f(x) = a - b*x - c*exp(-d*x)
+a=20
+b=1
+c=45
+m=15
+fit f(x) "qsucc_$in.dat" using 2:3 via a,b,c,m
+
+EOF

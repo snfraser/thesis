@@ -1,0 +1,610 @@
+Load new slalib
+Run    0, SEQ_FRAG for 19:00:00 2007-11-13 +(  30)m : [darkbias_16h, 17P-monitor, SN2007le_IRmonitor, Photom_M-A, uranusMon1, ] RT =   30m 
+Run    0, SEQ_FRAG for 19:30:39 2007-11-13 +(  30)m : [FS109, 17P-mosaic, SN2007gr, zero_hd212311, ] RT =   32m 
+Run    0, SEQ_FRAG for 20:03:36 2007-11-13 +(  30)m : [Angstrom, M31b, zero_G191B2, com17Pmon-071030, m15weekly, ] RT =   31m 
+Run    0, SEQ_FRAG for 20:35:12 2007-11-13 +(  30)m : [SN07kk_Optmonitor, lens_M81, 889it, TST-BarnStar-071105, ] RT =   32m 
+Run    0, SEQ_FRAG for 21:08:09 2007-11-13 +(  30)m : [J1406, 923jt, ] RT =   30m 
+Run    0, SEQ_FRAG for 21:37:52 2007-11-13 +(  30)m : [zero_HD12021, NGC4041, 932at, 889et, ] RT =   32m 
+Run    0, SEQ_FRAG for 22:10:23 2007-11-13 +(  30)m : [NGC7721, 0235, 927ht, Photom_2331+055A, 889bt, ] RT =   32m 
+Run    0, SEQ_FRAG for 22:42:52 2007-11-13 +(  30)m : [M33_cal_chip13, PG0231+051, 891jt, ] RT =   30m 
+Run    0, SEQ_FRAG for 23:14:00 2007-11-13 +(  30)m : [UGC4904, 888et, 923gt, 887gt, ] RT =   31m 
+Run    0, SEQ_FRAG for 23:46:13 2007-11-13 +(  30)m : [M33_cal_chip32, 2200, 925at, 893dt, ] RT =   31m 
+Run    0, SEQ_FRAG for 00:17:58 2007-11-14 +(  30)m : [M33_cal_chip31, 927et, SN2007le_OptMonitor, ] RT =   32m 
+Run    0, SEQ_FRAG for 00:49:31 2007-11-14 +(  30)m : [lens_2403, Photom_G1_RU149, 891gt, pol_BD59_389, ] RT =   31m 
+Run    0, SEQ_FRAG for 01:21:37 2007-11-14 +(  30)m : [NGC3430, 895it, 725dt, 927gt, ] RT =   31m 
+Run    0, SEQ_FRAG for 01:52:26 2007-11-14 +(  30)m : [FS14, ESO494-G26, 927ct, 927ft, ] RT =   32m 
+Run    0, SEQ_FRAG for 02:24:16 2007-11-14 +(  30)m : [group07b01b, 926jt, ] RT =   30m 
+Run    0, SEQ_FRAG for 02:55:39 2007-11-14 +(  30)m : [group07b01d, dark_12h, ] RT =   31m 
+Run    0, SEQ_FRAG for 03:26:00 2007-11-14 +(  30)m : [M33_cal_chip1, 926gt, 0851, Star_H13, ] RT =   31m 
+Run    0, SEQ_FRAG for 03:56:46 2007-11-14 +(  30)m : [SN07kk_IRmonitor, ] RT =   28m 
+Run    0, SEQ_FRAG for 04:25:56 2007-11-14 +(  30)m : [NGC2993, FS21, venus-mon-070919, ] RT =   28m 
+Run    0, SEQ_FRAG for 04:55:24 2007-11-14 +(  30)m : [NGC4088, NGC4981, ] RT =   30m 
+Run    0, SEQ_FRAG for 05:26:07 2007-11-14 +(  30)m : [M33_cal_chip36, NGC4030, 5548_opt, ] RT =   28m 
+Run    0, SEQ_FRAG for 05:55:49 2007-11-14 +(  30)m : [J0806, ] RT =   27m 
+Run    0, SEQ_FRAG for 06:24:25 2007-11-14 +(  30)m : [Photom_G1_1047+003, ] RT =    9m 
+Run    0, NO_SEQ_FRAG at 06:33:45 2007-11-14 until EON 
+Run:    0, SCORES  0.5036 1.9402 0.2749 0.7744 0.3444 0.0000 0.9582
+Run    0, LIST 
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_022  889it  P  N  D  FLEX  1
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_159  923jt  P  N  D  FLEX  3
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_025  932at  P  N  D  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_114  889bt  P  N  D  FLEX  1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_077  891jt  P  N  D  FLEX  1
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_399  887gt  P  N  D  FLEX  2
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_059  925at  P  N  D  FLEX  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_028  927et  P  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_402  891gt  P  N  D  FLEX  2
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+Run    1, SEQ_FRAG for 19:00:00 2007-11-13 +(  30)m : [17P-mosaic, com17Pmon-071030, FS109, Photom_2331+055A, ] RT =   30m 
+Run    1, SEQ_FRAG for 19:30:49 2007-11-13 +(  30)m : [darkbias_16h, uranusMon1, SN07kk_IRmonitor, ] RT =   33m 
+Run    1, SEQ_FRAG for 20:03:07 2007-11-13 +(  30)m : [lens_2403, SN2007le_OptMonitor, pol_BD59_389, ] RT =   30m 
+Run    1, SEQ_FRAG for 20:33:01 2007-11-13 +(  30)m : [M33_cal_chip22, SN07kk_Optmonitor, 895it, ] RT =   32m 
+Run    1, SEQ_FRAG for 21:05:01 2007-11-13 +(  30)m : [TST-BarnStar-071105, 926gt, M33_cal_chip23, zero_hd212311, m15weekly, ] RT =   32m 
+Run    1, SEQ_FRAG for 21:36:49 2007-11-13 +(  30)m : [891gt, 725dt, HS2209, ] RT =   31m 
+Run    1, SEQ_FRAG for 22:09:40 2007-11-13 +(  30)m : [927gt, Photom_M-A, M33_cal_chip9, ] RT =   30m 
+Run    1, SEQ_FRAG for 22:40:02 2007-11-13 +(  30)m : [SN2007gr, 887gt, 932at, 17P-monitor, 925at, 0235, ] RT =   31m 
+Run    1, SEQ_FRAG for 23:10:55 2007-11-13 +(  30)m : [891jt, M33_cal_chip28, Angstrom, 923jt, ] RT =   32m 
+Run    1, SEQ_FRAG for 23:42:44 2007-11-13 +(  30)m : [ANGM31, ] RT =   33m 
+Run    1, SEQ_FRAG for 00:17:28 2007-11-14 +(  30)m : [M33_cal_chip31, lens_M81, ] RT =   32m 
+Run    1, SEQ_FRAG for 00:49:19 2007-11-14 +(  30)m : [893dt, Photom_G1_RU149, 927et, 2251, 2200, ] RT =   32m 
+Run    1, SEQ_FRAG for 01:21:23 2007-11-14 +(  30)m : [NGC4088, zero_G191B2, 927ft, 889bt, ] RT =   32m 
+Run    1, SEQ_FRAG for 01:53:59 2007-11-14 +(  30)m : [NGC4041, 888et, zero_HD12021, 889it, ] RT =   32m 
+Run    1, SEQ_FRAG for 02:27:14 2007-11-14 +(  30)m : [J0806, 927ht, ] RT =   30m 
+Run    1, SEQ_FRAG for 02:56:57 2007-11-14 +(  30)m : [M33_cal_chip32, FS21, 926jt, 923gt, 927ct, dark_12h, ] RT =   31m 
+Run    1, SEQ_FRAG for 03:27:58 2007-11-14 +(  30)m : [M33_cal_chip21, M31b, ] RT =   30m 
+Run    1, SEQ_FRAG for 03:57:49 2007-11-14 +(  30)m : [J1406, 889et, ] RT =   30m 
+Run    1, SEQ_FRAG for 04:29:26 2007-11-14 +(  30)m : [group07b01b, venus-mon-070919, ] RT =   30m 
+Run    1, SEQ_FRAG for 04:59:53 2007-11-14 +(  30)m : [group07b01c, 5548_opt, ] RT =   31m 
+Run    1, SEQ_FRAG for 05:31:30 2007-11-14 +(  30)m : [NGC4691, 1226, ] RT =   31m 
+Run    1, SEQ_FRAG for 06:03:44 2007-11-14 +(  30)m : [UGC6517, Photom_G1_1047+003, ] RT =   31m 
+Run    1, SEQ_FRAG for 06:36:15 2007-11-14 +(  30)m : [FS14, ] RT =    5m 
+Run    1, NO_SEQ_FRAG at 06:41:53 2007-11-14 until EON 
+Run:    1, SCORES  0.5703 2.0689 0.2811 0.7559 0.3669 0.0000 0.9724
+Run    1, LIST 
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_098  895it  P  N  D  FLEX  1
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_156  926gt  P  N  D  FLEX  3
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_402  891gt  P  N  D  FLEX  2
+:G_048  725dt  P  T  B  FLEX  1
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_072  927gt  P  N  D  FLEX  1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_399  887gt  P  N  D  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_059  925at  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_159  923jt  P  N  D  FLEX  3
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_068  893dt  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_028  927et  P  N  D  FLEX  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_112  927ft  P  N  D  FLEX  1
+:G_114  889bt  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_022  889it  P  N  D  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_093  927ht  P  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_110  889et  P  N  D  FLEX  1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_245  NGC4691  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_213  UGC6517  P  N  D  FLEX  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+Run    2, SEQ_FRAG for 19:00:00 2007-11-13 +(  30)m : [Photom_M-A, darkbias_16h, 17P-monitor, 17P-mosaic, ] RT =   31m 
+Run    2, SEQ_FRAG for 19:30:26 2007-11-13 +(  30)m : [SN07kk_IRmonitor, zero_HD12021, ] RT =   31m 
+Run    2, SEQ_FRAG for 20:02:11 2007-11-13 +(  30)m : [SN2007gr, M33_cal_chip33, uranusMon1, m15weekly, ] RT =   32m 
+Run    2, SEQ_FRAG for 20:35:30 2007-11-13 +(  30)m : [M33_cal_chip9, 887gt, 926gt, 923gt, zero_G191B2, ] RT =   30m 
+Run    2, SEQ_FRAG for 21:06:45 2007-11-13 +(  30)m : [888et, M33_cal_chip1, TST-BarnStar-071105, 895it, 891jt, ] RT =   30m 
+Run    2, SEQ_FRAG for 21:36:23 2007-11-13 +(  30)m : [SN2007le_OptMonitor, 927ht, M33_cal_chip31, ] RT =   32m 
+Run    2, SEQ_FRAG for 22:07:53 2007-11-13 +(  30)m : [ANGM31, ] RT =   33m 
+Run    2, SEQ_FRAG for 22:42:25 2007-11-13 +(  30)m : [889bt, M33_cal_chip23, 923jt, NGC7721, ] RT =   32m 
+Run    2, SEQ_FRAG for 23:14:30 2007-11-13 +(  30)m : [gals_to_calib_3, ] RT =   36m 
+Run    2, SEQ_FRAG for 23:49:45 2007-11-13 +(  30)m : [zero_hd212311, 925at, NGC4041, com17Pmon-071030, ] RT =   32m 
+Run    2, SEQ_FRAG for 00:23:00 2007-11-14 +(  30)m : [893dt, Photom_G1_RU149, M33_cal_chip28, ] RT =   30m 
+Run    2, SEQ_FRAG for 00:53:35 2007-11-14 +(  30)m : [889it, FS109, UGC4904, ] RT =   30m 
+Run    2, SEQ_FRAG for 01:22:54 2007-11-14 +(  30)m : [J0806, FS14, ] RT =   32m 
+Run    2, SEQ_FRAG for 01:54:46 2007-11-14 +(  30)m : [M33_cal_chip13, 932at, 0851, 891gt, ] RT =   31m 
+Run    2, SEQ_FRAG for 02:26:11 2007-11-14 +(  30)m : [M33_cal_chip21, SN07kk_Optmonitor, 927ft, ] RT =   32m 
+Run    2, SEQ_FRAG for 02:59:24 2007-11-14 +(  30)m : [group07b01d, 725dt, ] RT =   30m 
+Run    2, SEQ_FRAG for 03:29:32 2007-11-14 +(  30)m : [lens_2403, dark_12h, lens_M64, ] RT =   32m 
+Run    2, SEQ_FRAG for 04:01:53 2007-11-14 +(  30)m : [ESO494-G26, 1226, 926jt, ] RT =   31m 
+Run    2, SEQ_FRAG for 04:33:58 2007-11-14 +(  30)m : [NGC4030, M31b, 0235, 889et, ] RT =   31m 
+Run    2, SEQ_FRAG for 05:06:45 2007-11-14 +(  30)m : [M33_cal_chip22, venus-mon-070919, Angstrom, 927ct, 927et, ] RT =   31m 
+Run    2, SEQ_FRAG for 05:39:48 2007-11-14 +(  30)m : [M33_cal_chip32, 927gt, 5548_opt, NGC4981, ] RT =   32m 
+Run    2, SEQ_FRAG for 06:10:36 2007-11-14 +(  30)m : [Photom_G1_1047+003, PG0231+051, FS21, ] RT =   24m 
+Run    2, SEQ_FRAG for 06:34:32 2007-11-14 +(  30)m : [Star_H13, ] RT =    2m 
+Run    2, SEQ_FRAG for 06:36:59 2007-11-14 +(  30)m : [FocusShort_07, ] RT =    7m 
+Run    2, NO_SEQ_FRAG at 06:43:46 2007-11-14 until EON 
+Run:    2, SCORES  0.5490 1.9725 0.2824 0.7470 0.3686 0.0000 0.9782
+Run    2, LIST 
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_101  923gt  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_398  888et  P  N  D  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_098  895it  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_093  927ht  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_059  925at  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_022  889it  P  N  D  FLEX  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_112  927ft  P  N  D  FLEX  1
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_110  889et  P  N  D  FLEX  1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_408  927ct  P  T  B  FLEX  2
+:G_028  927et  P  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_072  927gt  P  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    3, SEQ_FRAG for 19:00:00 2007-11-13 +(  30)m : [SN07kk_IRmonitor, darkbias_16h, ] RT =   32m 
+Run    3, SEQ_FRAG for 19:32:40 2007-11-13 +(  30)m : [SN2007le_IRmonitor, pol_BD59_389, M33_cal_chip22, ] RT =   32m 
+Run    3, SEQ_FRAG for 20:06:20 2007-11-13 +(  30)m : [Photom_M-A, SN2007gr, m15weekly, zero_hd212311, 17P-monitor, ] RT =   31m 
+Run    3, SEQ_FRAG for 20:38:04 2007-11-13 +(  30)m : [M33_cal_chip33, 927ht, 923gt, zero_G191B2, 889it, ] RT =   30m 
+Run    3, SEQ_FRAG for 21:09:00 2007-11-13 +(  30)m : [J1406, 725dt, 893dt, ] RT =   31m 
+Run    3, SEQ_FRAG for 21:40:20 2007-11-13 +(  30)m : [HS2209, 891jt, ] RT =   30m 
+Run    3, SEQ_FRAG for 22:11:19 2007-11-13 +(  30)m : [927et, M33_cal_chip13, SN07kk_Optmonitor, ] RT =   32m 
+Run    3, SEQ_FRAG for 22:44:22 2007-11-13 +(  30)m : [927ct, com17Pmon-071030, M33_cal_chip28, 888et, 927ft, 889et, ] RT =   30m 
+Run    3, SEQ_FRAG for 23:15:04 2007-11-13 +(  30)m : [M31b, 927gt, Photom_G1_RU149, 887gt, zero_HD12021, ] RT =   32m 
+Run    3, SEQ_FRAG for 23:46:57 2007-11-13 +(  30)m : [PG0231+051, M33_cal_chip36, 889bt, ] RT =   30m 
+Run    3, SEQ_FRAG for 00:17:24 2007-11-14 +(  30)m : [932at, 925at, 2251, 0851, 895it, 923jt, 891gt, ] RT =   31m 
+Run    3, SEQ_FRAG for 00:49:19 2007-11-14 +(  30)m : [J0806, FS109, ] RT =   31m 
+Run    3, SEQ_FRAG for 01:22:39 2007-11-14 +(  30)m : [0235, 926gt, Photom_2331+055A, SN2007le_OptMonitor, ] RT =   32m 
+Run    3, SEQ_FRAG for 01:54:12 2007-11-14 +(  30)m : [17P-mosaic, M33_cal_chip31, ] RT =   31m 
+Run    3, SEQ_FRAG for 02:24:39 2007-11-14 +(  30)m : [NGC4088, FS21, 926jt, dark_12h, ] RT =   31m 
+Run    3, SEQ_FRAG for 02:55:53 2007-11-14 +(  30)m : [M33_cal_chip21, Angstrom, FS14, ] RT =   31m 
+Run    3, SEQ_FRAG for 03:28:06 2007-11-14 +(  30)m : [NGC2993, Photom_G1_1047+003, ] RT =   31m 
+Run    3, SEQ_FRAG for 03:59:54 2007-11-14 +(  30)m : [M33_cal_chip9, NGC4030, ] RT =   25m 
+Run    3, SEQ_FRAG for 04:25:49 2007-11-14 +(  30)m : [1226, NGC3672, venus-mon-070919, ] RT =   31m 
+Run    3, SEQ_FRAG for 04:56:01 2007-11-14 +(  30)m : [M33_cal_chip32, lens_M64, ] RT =   32m 
+Run    3, SEQ_FRAG for 05:29:05 2007-11-14 +(  30)m : [ESO494-G26, NGC4981, ] RT =   30m 
+Run    3, SEQ_FRAG for 06:00:17 2007-11-14 +(  30)m : [lens_2403, 5548_opt, ] RT =   18m 
+Run    3, SEQ_FRAG for 06:18:34 2007-11-14 +(  30)m : [FocusShort_07, Star_H13, ] RT =    9m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 
+Run    3, SEQ_FRAG for 06:28:06 2007-11-14 +(  30)m : [] RT =    0m 

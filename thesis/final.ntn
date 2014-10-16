@@ -1,0 +1,210 @@
+\begin{theglossary}\glogroupA
+
+\gloitem {\glosslabel{ntn:a}{$a$}}The set of account synopses apertaining to the current group\relax
+\glodelim 
+		\glsnumformat{98}\delimT \gloskip \glogroupC
+
+\gloitem {\glosslabel{ntn:C}{$C_A$}}Actual contention as measured during one or more runs of the scheduler\relax
+\glodelim 
+		\glsnumformat{53}\delimT 
+
+\gloitem {\glosslabel{ntn:C}{$C_C$}}Contention profile\relax
+\glodelim 
+		\glsnumformat{52}\delimT 
+
+\gloitem {\glosslabel{ntn:C}{$C_D$}}Demand profile\relax
+\glodelim 
+		\glsnumformat{53}\delimT 
+
+\gloitem {\glosslabel{ntn:C}{$C_L$}}Schedule load\relax
+\glodelim 
+		\glsnumformat{55}\delimT 
+
+\gloitem {\glosslabel{ntn:C}{$C_{CL}$}}Critical load\relax
+\glodelim 
+		\glsnumformat{55}\delimT 
+
+\gloitem {\glosslabel{ntn:C}{$C_{UL}$}}Urgency weighted load\relax
+\glodelim 
+		\glsnumformat{55}\delimT \gloskip \glogroupE
+
+\gloitem {\glosslabel{ntn:E}{$E_{FA}$}}Fixed environment model with average seeing ($0.8''< s <1.3''$)\relax
+\glodelim 
+		\glsnumformat{104}\delimT 
+
+\gloitem {\glosslabel{ntn:E}{$E_{FP}$}}Fixed environment model with poor seeing ($s > 1.3$'')\relax
+\glodelim 
+		\glsnumformat{104}\delimT 
+
+\gloitem {\glosslabel{ntn:E}{$E_{FX}$}}Fixed environment model with excellent seeing ($s < 0.8$'')\relax
+\glodelim 
+		\glsnumformat{104}\delimT 
+
+\gloitem {\glosslabel{ntn:e}{$e(t)$}}The current (at time t) environmental conditions\relax
+\glodelim 
+		\glsnumformat{98}\delimT \gloskip \glogroupF
+
+\gloitem {\glosslabel{ntn:F}{$\Phi (g,t,e,a,h)$}}Feasibility model, determines whether a particular group is feasible subject to its constraints and under specified conditions\relax
+\glodelim 
+		\glsnumformat{102}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{h}$}}Scoring metric based on target airmass\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{h}$}}Scoring metric based on target elevation\relax
+\glodelim 
+		\glsnumformat{108}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{moon}$}}Scoring metric based on matching requested and actual sky brightness\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{oa}$}}Scoring metric derived from $Q_{OA}$\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{oh}$}}Scoring metric derived from $Q_{OH}$\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{phot}$}}Scoring metric based on matching requested and actual extinction\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{p}$}}Scoring metric derived from $Q_{PX}$\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{rn}$}}Scoring metric derived from $Q_{RN}$\relax
+\glodelim 
+		\glsnumformat{110}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{see}$}}Scoring metric based on matching requested and actual seeing\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{slew}$}}Scoring metric based on reducing slewing overheads\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{td}$}}Scoring metric derived from $Q_{TD}$\relax
+\glodelim 
+		\glsnumformat{110}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{trans}$}}Scoring metric derived from $Q_{OH}$\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{ntn:f}{$f_{yt}$}}Scoring metric derived from $Q_{YT}$\relax
+\glodelim 
+		\glsnumformat{110}\delimT \gloskip \glogroupG
+
+\gloitem {\glosslabel{ntn:g}{$g$}}A composite group (the group currently under consideration)\relax
+\glodelim 
+		\glsnumformat{98}\delimT \gloskip \glogroupH
+
+\gloitem {\glosslabel{ntn:h}{$h$}}Synopsis of the execution history of the current group\relax
+\glodelim 
+		\glsnumformat{98}\delimT \gloskip \glogroupQ
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{BA}$}}Airmass benefit quality metric\relax
+\glodelim 
+		\glsnumformat{59}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{LM}$}}Lunar condition matching quality metric\relax
+\glodelim 
+		\glsnumformat{61}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{MW}$}}Monitor Window quality metric\relax
+\glodelim 
+		\glsnumformat{59}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{OA}$}}Optimal airmass quality metric\relax
+\glodelim 
+		\glsnumformat{58}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{OH}$}}Optimal height quality metric\relax
+\glodelim 
+		\glsnumformat{58}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{PC}$}}Project Completion quality metric\relax
+\glodelim 
+		\glsnumformat{60}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{PX}$}}Execution Priority quality metric\relax
+\glodelim 
+		\glsnumformat{59}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{RN}$}}Remaining Nights quality metric\relax
+\glodelim 
+		\glsnumformat{60}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{SM}$}}Seeing condition matching quality metric\relax
+\glodelim 
+		\glsnumformat{61}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{SU}$}}Score Utility quality metric\relax
+\glodelim 
+		\glsnumformat{61}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{TD}$}}Target Demand quality metric\relax
+\glodelim 
+		\glsnumformat{60}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{XT}$}}Execution Time quality metric\relax
+\glodelim 
+		\glsnumformat{60}\delimT 
+
+\gloitem {\glosslabel{ntn:Q}{$Q_{YT}$}}Yield Tracking quality metric\relax
+\glodelim 
+		\glsnumformat{61}\delimT \gloskip \glogroupS
+
+\gloitem {\glosslabel{ntn:S}{$S(g,t,e,a,h)$}}Score for a group $g$ at time $t$ under specified account balance, history and environment conditions\relax
+\glodelim 
+		\glsnumformat{108}\delimT \gloskip \glogroupT
+
+\gloitem {\glosslabel{ntn:T}{$\tau _B$}}Length of time conditions remain \emph {bad}\relax
+\glodelim 
+		\glsnumformat{76}\delimT 
+
+\gloitem {\glosslabel{ntn:T}{$\tau _G$}}Length of time conditions remain \emph {good}\relax
+\glodelim 
+		\glsnumformat{76}\delimT 
+
+\gloitem {\glosslabel{ntn:t}{$t$}}The current (real or simulation) time\relax
+\glodelim 
+		\glsnumformat{98}\delimT \gloskip \glogroupV
+
+\gloitem {\glosslabel{ntn:V}{$V_e(g,t)$}}Enterprise utility for executing group $g$ at time $t$\relax
+\glodelim 
+		\glsnumformat{56}\delimT 
+
+\gloitem {\glosslabel{ntn:V}{$V_u(g,t)$}}User preference utility for executing group $g$ at time $t$\relax
+\glodelim 
+		\glsnumformat{57}\delimT \gloskip \glogroupW
+
+\gloitem {\glosslabel{ntn:W}{$\Delta _W$}}Fraction of night during which weather conditions are {\bf not} acceptable for observing\relax
+\glodelim 
+		\glsnumformat{77}\delimT \gloskip \glogroupX
+
+\gloitem {\glosslabel{ntn:X}{$X(g)$}}Execution time of a group\relax
+\glodelim 
+		\glsnumformat{53}\delimT \gloskip \glogroupZ
+
+\gloitem {\glosslabel{ntn:z}{$\zeta $}}Scheduler candidate selection model\relax
+\glodelim 
+		\glsnumformat{110}\delimT 
+
+\gloitem {\glosslabel{ntn:z}{$\zeta _{Best}$}}Best score selection model\relax
+\glodelim 
+		\glsnumformat{154}\delimT 
+
+\gloitem {\glosslabel{ntn:z}{$\zeta _{FR}$}}Fixed rank selection model\relax
+\glodelim 
+		\glsnumformat{154}\delimT 
+
+\gloitem {\glosslabel{ntn:z}{$\zeta _{RS}$}}Rank scaled selection model\relax
+\glodelim 
+		\glsnumformat{154}\delimT 
+\end{theglossary}

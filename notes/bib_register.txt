@@ -1,0 +1,18 @@
+@inproceedings{ bresina00:expec_utilit_contin_execut,
+  author = 	 {J. L. Bresina and R. Washington},
+  title = 	 {Expected Utility Distributions for Flexible, Contingent
+                  Execution},
+  booktitle = 	 {Proceedings of the AAAI-2000 Workshop: Representation
+                  Issues for Real-World Planning Systems},
+  year =	 2000,
+  address =	 {Austin, Texas},
+  url = {citeseer.ist.psu.edu/bresina00expected.html} }
+
+@misc{ bresina01robustness,
+  author = "J. Bresina and R. Washington",
+  title = "Robustness via run-time adaptation of contingent plans",
+  text = "J.L. Bresina and R. Washington. Robustness via run-time adaptation of contingent
+    plans. AAAI Spring Symposium on Robust Autonomy, 2001.",
+  year = "2001",
+  url = "citeseer.ist.psu.edu/bresina01robustness.html" }
+

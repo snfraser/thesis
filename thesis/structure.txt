@@ -1,0 +1,51 @@
+CSPs
+
+- General procedures
+ -a     
+   - how implemented by various schedulers
+ -b
+   - how implemented by various schedulers
+ -c
+   - how implemented by various schedulers
+
+- Constructive techniques
+ - Description and algorithm
+ - advantages/disadvantages
+ - procedures
+   -a
+     - how implemented by various schedulers
+   -b
+     - how implemented by various schedulers
+   -c
+     - how implemented by various schedulers
+   -d
+     - how implemented by various schedulers
+
+- Iterative repair techniques
+ - Description and algorithm
+ - advantages/disadvantages
+ - procedures
+   -a
+     - how implemented by various schedulers
+   -b
+     - how implemented by various schedulers
+   -c
+     - how implemented by various schedulers
+   -d
+     - how implemented by various schedulers
+
+- Specific scheduler implementations which use the above techniques
+ - 1
+  - How it works 
+  - New procedures introduced
+  - Why its so good / see paper intro and conclusions
+
+ - 2
+  - How it works 
+  - New procedures introduced
+  - Why its so good / see paper intro and conclusions
+
+ - 3
+  - How it works 
+  - New procedures introduced
+  - Why its so good / see paper intro and conclusions

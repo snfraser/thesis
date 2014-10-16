@@ -1,0 +1,33 @@
+\appendix
+
+\newpage
+\section{Phase2 Database}
+\label{sect:app_phase2db}
+Here describe the P2DB and the objects in it and how they fit into the architecture. Define what they are and how they are used/modified by scheduler.
+
+\subsection{Proposal}
+A Proposal contains a number of groups, a list of targets for the observations in the groups to observe and some linking information which specifies temporal or other links between groups.
+
+\subsection{Groups}
+A group is a set of observations which is performed as a single scheduling entity - atomic. A group contains a list of observations, timing/enablement constraints, observing condition constraints/preferences, sequencing information for the observations and a quality-of-service metric (i.e. a class which can examine the execution results and yield a QOS measurement). 
+Note: The QosMetric may just be represented by a set of user-specified preferences which are fed into a default QosMetric class to get some sort of QOS measure.
+
+NOtes about constraints:-
+Some are deterministic others are variable and uncertain - un-predictable or poorly predictable as horizon increases.
+\begin{description}
+\item[Timing constraints]
+Always predictable. Various categories - flexible (one-off), monitoring (cyclic/repeating), fixed/ephem (need special treatment)  
+\item[Observing constraints]
+Deterministic - (moon distance, airmass limit).
+Variable - (seeing limit, photom limit).
+\end{description}
+
+Group made up of observations.
+
+Utility functions - aggregation scores or averaging for target parameters.
+list of scoring metrics. 
+
+\subsection{Observations}
+What is involved - slew, rotator alignment, instrument config then series of exposures and offsets.
+Executed by RCS - it decomposes into tasks and handles error recovery if possible.
+

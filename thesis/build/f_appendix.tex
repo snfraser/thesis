@@ -1,0 +1,87 @@
+\appendix
+
+\section{Phase2 model generator and its configuration}
+\label{sect:app_p2gen}
+
+The Phase2Model generator can be used to create ODB snapshots according to various distributiions. It can be called up programatically and configured to create snapshots with varying complexity. The phase2 model is generated with the following parameters:-
+
+\begin{description}
+\item [Root] Specifies the root name for this phase2 model. This is the name by which the model is accessed via a Phase2ModelProvider.
+\item [Name] The name of the site.
+\item [$\Phi$] Latitude of the site.
+\item [$L$] Longitude of the site.
+\item [$T$]  specifies the \emph{current} point in the semester. Typically this time coincides with the start time of a simulation run.
+\item [$\Delta{T_B}$] represents the time difference from $T$ to the start of the current semester.
+\item [$\Delta{T_F}$] represents the time difference from $T$ to the end of the current semester.
+\item [$N_P$] controls the total number of proposals generated. These will have activation times distributed according to $U[\Delta{T_B}, T]$ and expiry dated distributed according to  $U[T, \Delta{T_F}]$.
+\item [$N_G$] controls the number of groups per proposal, distributed as $U[1, N_G]$.
+\item [$N_O$] controls the number of observations per group, distributed as $U[1, N_O]$.
+\end{description}
+
+Groups are generated using various timing constraint classes according to the following fractions:-
+\begin{description}
+\item [$g_{flex}$] Fraction of groups to be generated with Flexible timing constraints.
+\item [$g_{mon}$]  Fraction of groups to be generated with monitor timing constraints.
+\item [$g_{int}$]  Fraction of groups to be generated with minimum interval timing constraints.
+\end{description}
+
+All groups are constructed with start and expiry dates selected from the range $U[\Delta{T_B}, T]$ and $U[T, \Delta{T_F}]$ respectively. 
+
+For monitor groups, the periods are selected with probability determined by variable $f_{m_i}$ from one of a set of 3 normal distributions $G(\mu_{m_i}, \sigma_{m_i})$ defined by variables:-
+
+\begin{description}
+\item [$\mu_{m_i}$]     mean value for monitor period distribution $i$.
+\item [$\sigma_{m_i}$]  standard-deviation for monitor period distribution $i$
+\end{description}
+The window fraction is taken from the distribution $U[0.25, 1.0]$.
+
+
+For MinimumInterval groups, the minimum window is selected with probability $f_{i_i}$ from one of 3 normal distributions $G(\mu_{i_i}, \sigma_{i_i})$ defined by variables:-
+
+\begin{description}
+\item [$\mu_{i_i}$]     mean value for minimum interval length distribution $i$.
+\item [$\sigma_{i_i}$]  standard-deviation for minimum interval lengthdistribution $i$
+\end{description}
+
+
+Observation exposure times are selected with probability $e_i$ from one of 2 exposure length distributions $E(\mu_{e_i}, \sigma_{e_i})$ defined by variables:-
+\begin{description}
+\item [$\mu_{e_i}$]    mean value for exposure length distribution $i$.
+\item [$\sigma_{e_i}$] standard-deviation for exposure length distribution $i$.
+\end{description}
+$N_n$ exposure-max-count specifies the maximum number of multruns per observation, the number of multruns is taken from $U[1,N_m]$. 
+
+
+The budget available to each proposal is taken from $U[B_{min}, B_{max}]$ with used fraction distributed as $U[U_{min}, U_{max}]$.
+
+Proposals have a scientific priority rating taken from the range 0 (HIGH) to 3 (LOW). The allocation is specified accroding to the fractions:-
+\begin{description}
+\item [$P_0$] Fraction of proposals with scientific priority 0 (HIGH).
+\item [$P_1$] Fraction of proposals with scientific priority 0 (MED).
+\item [$P_2$] Fraction of proposals with scientific priority 0 (LOW).
+\end{description}
+
+Groups have internal priorities selected from the following set.
+\begin{description}
+\item [$G_1$] Fraction of groups with priority level 1 (normal)
+\item [$G_2$] Fraction of groups with priority level 2 (raised)
+\item [$G_3$] Fraction of groups with priority level 3 (medium)
+\item [$G_4$] Fraction of groups with priority level 4 (high)
+\item [$G_5$] Fraction of groups with priority level 5 (urgent)
+\item [$G_{BGR}$] Fraction of groups with Background priority level
+\item [$G_{STD}$] Fraction of groups which represent photometric standards (nominal priority 3).
+\end{description}
+
+Various observing constraints are represented by the following parameters:-
+\begin{description}
+\item [$f_{Dark}$] Fraction of groups which require Dark lunar conditions.
+\item [$f_{Photom}$] Fraction of groups which require photometric extinction conditions.
+\item [$f_{Poor}$] Fraction of groups which require minimum seeing of \emph{poor} ($ seeing > 1.3^{\prime\prime}$).
+\item [$f_{Av}$] Fraction of groups which require minimum seeing of \emph{average} ($ 0.8^{\prime\prime} < seeing < 1.3^{\prime\prime} $).
+\item [$f_{Ex}$] Fraction of groups which require minimum seeing of \emph{excellent} ($ seeing < 0.8^{\prime\prime}$).
+\end{description}
+
+
+ 
+ 
+

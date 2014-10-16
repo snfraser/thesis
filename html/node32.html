@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Schedule quality metrics (SQM)</TITLE>
+<META NAME="description" CONTENT="Schedule quality metrics (SQM)">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node28.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node33.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html636"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html632"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html628"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html634"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html637"
+  HREF="node33.html">Potential utility measure</A>
+<B> Up:</B> <A NAME="tex2html633"
+  HREF="node26.html">Investigation of Metrics</A>
+<B> Previous:</B> <A NAME="tex2html629"
+  HREF="node31.html">Load</A>
+ &nbsp; <B>  <A NAME="tex2html635"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00073000000000000000">
+Schedule quality metrics (SQM)</A>
+</H2>
+
+<P>
+These are the metrics used to compare the results of using different schedulers or scheduling policies on a given scheduling problem. These are needed to determine which scheduler performs best. Needless to say this is the most difficult problem for several reasons.
+
+<UL>
+<LI>The metric used in the selection heuristic cannot be used for the simple reason that these may be what distinguishes one scheduler from another - clearly if we use a metric <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$ m_1$"> for scheduler <I>S_1</I> and metric <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$ m_2$"> for scheduler <I>S_2</I> then measuring the performance of both schedulers using <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$ m_1$"> would naturally find that <I>S_1</I> was the better scheduler. Likewise using <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$ m_2$"> to compare the results would reveal <I>S_2</I> as the better scheduler. We therefore need a more generic metric which is ideally <B>NOT</B> involved in the selection process.
+</LI>
+<LI>What was that other one ?
+</LI>
+</UL>
+
+<P>
+This turns out to be particularly difficult. In the common scheduling literature there are many generic metrics used, however these all suffer from the problem that they are tuned for the generic job-shop scheduling problem in which a number of identical jobs with specified due dates have to be processed. Typical metrics include:-
+
+<P>
+
+<UL>
+<LI>Slack - the amount of time where no job is in progress.
+</LI>
+<LI>Tardiness - total lateness for jobs executed.
+</LI>
+<LI>Throughput - total no of jobs through the system.
+</LI>
+<LI>other
+</LI>
+</UL>
+
+<P>
+Can we use any of these ? The problem is that the OGs generally have a due dates which cannot be exceded - if they are late the data is of less or no use. We are not neccessarily bothered about throughput so much as the quality of the results. 
+
+<P>
+we might be able to use some of this however with suitable weighting e.g. a late high priority job is worse than a late low priority job (but by how much?). 
+
+<P>
+We can seperate out various forms of utility measure (NOTE these are discussed elsewhere but not in correct place)
+
+<P>
+User based (needs simple Phase2 specification or QOS metrics)
+Enterprise based - includes scientific priorities, distribution of time between proposals.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html638"
+  HREF="node33.html">Potential utility measure</A>
+<LI><A NAME="tex2html639"
+  HREF="node34.html">Primitive utility measures</A>
+<LI><A NAME="tex2html640"
+  HREF="node35.html">Project completion</A>
+<LI><A NAME="tex2html641"
+  HREF="node36.html">Discussion on metrics/quality/reward</A>
+<LI><A NAME="tex2html642"
+  HREF="node37.html">Efficiency measure - <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$ E$"></A>
+<LI><A NAME="tex2html643"
+  HREF="node38.html">More about contention to squeeze into discussion above</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html636"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html632"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html628"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html634"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html637"
+  HREF="node33.html">Potential utility measure</A>
+<B> Up:</B> <A NAME="tex2html633"
+  HREF="node26.html">Investigation of Metrics</A>
+<B> Previous:</B> <A NAME="tex2html629"
+  HREF="node31.html">Load</A>
+ &nbsp; <B>  <A NAME="tex2html635"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

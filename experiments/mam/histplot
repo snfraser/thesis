@@ -1,0 +1,28 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+
+set output "prior_ng.eps"
+set term postscript eps enhanced color
+unset key
+set title "Distribution of group priority"
+set xlabel "Priority"
+set ylabel "Number of groups"
+set xtics ("" -1, "0" 0, "1" 1, "2" 2, "3" 3, "4" 4, "5" 5, "BGR" 6, "STD" 7, "" 8)
+set xrange [-1:8]
+set boxwidth 0.5
+plot "prior.dat" using 2:6 wi boxes fill solid 0.6 lt 3
+
+set output "prior_exec.eps"
+set term postscript eps enhanced color
+unset key
+set title "Distribution of executable time by group priority"
+set xlabel "Priority"
+set ylabel "Executable time [h]"
+set xtics ("" -1, "0" 0, "1" 1, "2" 2, "3" 3, "4" 4, "5" 5, "BGR" 6, "STD" 7, "" 8)
+set xrange [-1:8]
+set boxwidth 0.5
+plot "prior.dat" using 2:(\$4/60) wi boxes fill solid 0.6 lt 3 
+
+
+EOF

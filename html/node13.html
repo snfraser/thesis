@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Iterative repair</TITLE>
+<META NAME="description" CONTENT="Iterative repair">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html399"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html395"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html389"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html397"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html400"
+  HREF="node14.html">Search techniques</A>
+<B> Up:</B> <A NAME="tex2html396"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html390"
+  HREF="node12.html">Constructive techniques</A>
+ &nbsp; <B>  <A NAME="tex2html398"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00052000000000000000">
+Iterative repair</A>
+</H2>
+Repair based techniques have been a major area in scheduling research over the last xxx years. 
+
+<P>
+Excellent definition from dejavu scheduler website http://www.dbai.tuwien.ac.at/ proj/DejaVu/document/intro.htm
+<BLOCKQUOTE>
+An iterative improvement method is a search method which starts with an initial solution and tries to find better solutions by "local" modifications. The initial schedule can be constructed randomly, by some constructive method, or by a heuristic method. It can also be created by a human or another computer process. To modify given schedules, repair operations are used to transform a schedule into a new and similar schedule. A scheduling operation can be, for example, the exchange of two adjacent jobs, the move of an operation from one resource to another having the same capabilities. If several operations are applicable, a procedure must choose the operation to be applied. This selection can be made randomly or with some look-ahead, allowing to perform the operation leading to the best "neighbor". To determine whether an improvement can be achieved by a operation, the comparison of schedules by an evaluation function must be possible. The most efficient look-ahead is achieved when the schedule evaluation can be determined locally.
+A simple hill-climbing algorithm would accept only schedules which evaluate better. Unfortunately, scheduling problems usually have many solutions that differ in their quality, and good solutions are not direct neighbors. Therefore, a search method based on local improvements can be easily trapped in a local optimum. An important feature of all iterative improvement methods is therefore the capability to escape from local optima. However, with this ability, it becomes more likely to search in cycles and some kind of control to avoid repetitions is needed. 
+
+</BLOCKQUOTE>
+
+<P>
+Typically operations include <I>retraction heuristics</I> used to remove conflicting or oversubscribed tasks or resources and a <I>repair</I> or <I>replacement heuristics</I> are used to re-insert task(s) at appropriate places. 
+
+<P>
+<DL>
+<DT><STRONG>Retraction heuristics</STRONG></DT>
+<DD>Describe
+</DD>
+<DT><STRONG>Repair heiristics</STRONG></DT>
+<DD>Describe e.g.VarOH and ValuOH
+</DD>
+</DL>
+
+<P>
+Repair may occur as part of a search process to find an optimal schedule from a preliminary first guess, or may be used in a reactive context to fix an already executing schedule disrupted by unexpected changes to the environment or goals or used opportunistically to take advantage of such changes to increase the global value - e.g. if a task finishes earlier than expected this could provide an opportunity to bring another task forward.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html399"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html395"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html389"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html397"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html400"
+  HREF="node14.html">Search techniques</A>
+<B> Up:</B> <A NAME="tex2html396"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html390"
+  HREF="node12.html">Constructive techniques</A>
+ &nbsp; <B>  <A NAME="tex2html398"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

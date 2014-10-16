@@ -1,0 +1,11 @@
+#!/bin/csh
+
+gnuplot -persist <<EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+
+plot "env_frac.dat" using 1:3 with boxes ti "UU", \
+     "env_frac.dat" using 1:4 with boxes ti "PO", \
+     "env_frac.dat" using 1:5 with boxes ti "AV", \
+     "env_frac.dat" using 1:6 with boxes ti "EX"
+EOF

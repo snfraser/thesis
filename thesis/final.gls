@@ -1,0 +1,182 @@
+\begin{theglossary}\glogroupA
+
+\gloitem {\glosslabel{glo:ACL}{ACL}}Aggregate Components Layer - part of the SCA, contains summaries of base models\relax
+\glodelim 
+		\glsnumformat{100}\delimT 
+
+\gloitem {\glosslabel{glo:ACO}{ACO}}Ant Colony Optimization\relax
+\glodelim 
+		\glsnumformat{42}\delimT 
+
+\gloitem {\glosslabel{glo:AIS}{AIS}}Artificial Immune System\relax
+\glodelim 
+		\glsnumformat{42}\delimT \gloskip \glogroupB
+
+\gloitem {\glosslabel{glo:BCS}{BCS}}Boltwood Cloud Sensor - a component attached to the WMS for measuring cloud temperture\relax
+\glodelim 
+		\glsnumformat{91}\delimT 
+
+\gloitem {\glosslabel{glo:BDS}{BDS}}Basic despatch Scheduler - a simple scheduler\relax
+\glodelim 
+		\glsnumformat{120}\delimT \gloskip \glogroupC
+
+\gloitem {\glosslabel{glo:CAMC}{CAMC}}Carlsberg Meridian Circle - a specialized telescope at the ORM\relax
+\glodelim 
+		\glsnumformat{90}\delimT 
+
+\gloitem {\glosslabel{glo:CBR}{CBR}}Case Based Reasoning - an AI technique\relax
+\glodelim 
+		\glsnumformat{48}\delimT 
+
+\gloitem {\glosslabel{glo:CP}{CP}}Cardinal Pointing - a restricted operating regime for the rotator axis\relax
+\glodelim 
+		\glsnumformat{109}\delimT 
+
+\gloitem {\glosslabel{glo:CTL}{CTL}}Compuational Tools Layer - part of SCA, provides processing capabilities\relax
+\glodelim 
+		\glsnumformat{101}\delimT \gloskip \glogroupE
+
+\gloitem {\glosslabel{glo:ECL}{ECL}}Executive Components Layer - part of the SCA, contains the external applications which invoke the scheduler\relax
+\glodelim 
+		\glsnumformat{112}\delimT 
+
+\gloitem {\glosslabel{glo:EFR}{EFR}}Expected Future Reward - a method for discounting the value of potentially uncertain future rewards\relax
+\glodelim 
+		\glsnumformat{121}\delimT 
+
+\gloitem {\glosslabel{glo:ELAS}{ELAS}}Enhanced Look-ahead Scheduler - a simple look-ahead scheduler based on QLAS but with a Sequestration Policy\relax
+\glodelim 
+		\glsnumformat{122}\delimT \gloskip \glogroupF
+
+\gloitem {\glosslabel{glo:FCL}{FCL}}Fundamental Components Layer - part of the SCA, contains models for accessing the ODB\relax
+\glodelim 
+		\glsnumformat{100}\delimT 
+
+\gloitem {\glosslabel{glo:FITS}{FITS}}Flexible Image Transport System - an astronomical data file specification\relax
+\glodelim 
+		\glsnumformat{82}\delimT \gloskip \glogroupG
+
+\gloitem {\glosslabel{glo:GA}{GA}}Genetic Algorithm\relax
+\glodelim 
+		\glsnumformat{31}\delimT 
+
+\gloitem {\glosslabel{glo:GTC}{GTC}}Grand Telescopio Canarias - a telescope at the ORM\relax
+\glodelim 
+		\glsnumformat{81}\delimT \gloskip \glogroupI
+
+\gloitem {\glosslabel{glo:ICL}{ICL}}Interface Components Layer - part of the SCA, contains interfaces used by the executive components\relax
+\glodelim 
+		\glsnumformat{111}\delimT 
+
+\gloitem {\glosslabel{glo:ISM}{ISM}}Instrument Synopsis Model\relax
+\glodelim 
+		\glsnumformat{105}\delimT \gloskip \glogroupJ
+
+\gloitem {\glosslabel{glo:JKT}{JKT}}Jacobus Kaptyn Telescope - a telescope at the ORM\relax
+\glodelim 
+		\glsnumformat{91}\delimT \gloskip \glogroupL
+
+\gloitem {\glosslabel{glo:LT}{LT}}The Liverpool Telescope\relax
+\glodelim 
+		\glsnumformat{20}\delimT \gloskip \glogroupM
+
+\gloitem {\glosslabel{glo:M}{MUF}}Minimum Use Fraction - a TAG assigned target for program completion\relax
+\glodelim 
+		\glsnumformat{61}\delimT 
+
+\gloitem {\glosslabel{glo:MDP}{MDP}}Markov Decision Process\relax
+\glodelim 
+		\glsnumformat{46}\delimT 
+
+\gloitem {\glosslabel{glo:MLP}{MLP}}Multi Layer Perceptron - a simple type of neural network\relax
+\glodelim 
+		\glsnumformat{46}\delimT \gloskip \glogroupN
+
+\gloitem {\glosslabel{glo:N}{NOT}}Nordic Optical Telescope - a telescope at the ORM\relax
+\glodelim 
+		\glsnumformat{81}\delimT \gloskip \glogroupO
+
+\gloitem {\glosslabel{glo:ODB}{ODB}}Phase 2 Observation Database\relax
+\glodelim 
+		\glsnumformat{20}\delimT 
+
+\gloitem {\glosslabel{glo:ORM}{ORM}}Observatorio del Roche do los Muchachos\relax
+\glodelim 
+		\glsnumformat{20}\delimT 
+
+\gloitem {\glosslabel{glo:OSS}{OSS}}Observation Scheduling System\relax
+\glodelim 
+		\glsnumformat{20}\delimT \gloskip \glogroupP
+
+\gloitem {\glosslabel{glo:PCL}{PCL}}Prediction Components Layer - part of SCA, provides predictive models\relax
+\glodelim 
+		\glsnumformat{104}\delimT 
+
+\gloitem {\glosslabel{glo:PCM}{PCM}}Problem Complexity Metric, $C$ metrics are used to measure the complexity of a given scheduling problem in terms of Phase 2 structure\relax
+\glodelim 
+		\glsnumformat{52}\delimT 
+
+\gloitem {\glosslabel{glo:PSO}{PSO}}Particle Swarm Optimization\relax
+\glodelim 
+		\glsnumformat{45}\delimT \gloskip \glogroupQ
+
+\gloitem {\glosslabel{glo:QA}{QA}}Quantum Annealing\relax
+\glodelim 
+		\glsnumformat{30}\delimT 
+
+\gloitem {\glosslabel{glo:QLAS}{QLAS}}Quantum Look-ahead Scheduler - a simple look-ahead scheduler using a random sequence generator\relax
+\glodelim 
+		\glsnumformat{121}\delimT \gloskip \glogroupR
+
+\gloitem {\glosslabel{glo:RCS}{RCS}}Robotic Control System\relax
+\glodelim 
+		\glsnumformat{20}\delimT 
+
+\gloitem {\glosslabel{glo:RL}{RL}}Reinforcement Learning\relax
+\glodelim 
+		\glsnumformat{46}\delimT \gloskip \glogroupS
+
+\gloitem {\glosslabel{glo:SA}{SA}}Simulated Annealing\relax
+\glodelim 
+		\glsnumformat{30}\delimT 
+
+\gloitem {\glosslabel{glo:SCA}{SCA}}Scheduler Component Architecture\relax
+\glodelim 
+		\glsnumformat{99}\delimT 
+
+\gloitem {\glosslabel{glo:SEC}{SEC}}Simulation Experiment Controller - a control application specific to a simulation experiment\relax
+\glodelim 
+		\glsnumformat{115}\delimT 
+
+\gloitem {\glosslabel{glo:SECL}{SECL}}Scheduling Engine Components Layer - part of the SCA\relax
+\glodelim 
+		\glsnumformat{107}\delimT 
+
+\gloitem {\glosslabel{glo:SFL}{SFL}}Simulation Framework Components Layer - part of the SCA, provides models used by simulators\relax
+\glodelim 
+		\glsnumformat{106}\delimT 
+
+\gloitem {\glosslabel{glo:SNR}{SNR}}Signal to Noise ratio\relax
+\glodelim 
+		\glsnumformat{63}\delimT 
+
+\gloitem {\glosslabel{glo:SQM}{SQM}}Schedule Quality Metric, $Q$ metrics provide a measure of scheduler performance\relax
+\glodelim 
+		\glsnumformat{52}\delimT \gloskip \glogroupT
+
+\gloitem {\glosslabel{glo:TSG}{TSG}}Time Signal Generator - a SCA component which synchronizes the scheduler with its simulation controller\relax
+\glodelim 
+		\glsnumformat{106}\delimT 
+
+\gloitem {\glosslabel{glo:TSM}{TSM}}Telescope Synopsis Model\relax
+\glodelim 
+		\glsnumformat{105}\delimT 
+
+\gloitem {\glosslabel{glo:TSP}{TSP}}Travelling Salesman Problem\relax
+\glodelim 
+		\glsnumformat{45}\delimT \gloskip \glogroupW
+
+\gloitem {\glosslabel{glo:WMS}{WMS}}Weather Monitoring System\relax
+\glodelim 
+		\glsnumformat{66}\delimT 
+\end{theglossary}

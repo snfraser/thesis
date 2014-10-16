@@ -1,0 +1,54 @@
+#!/bin/csh
+
+
+# 0.5
+/usr/bin/gnuplot -persist << EOF
+set output "evplot_05.eps"
+set term postscript eps enhanced color
+set title "Comparison of variation of increase in reward with proximity for QLAS and ELAS with H = 30 mins"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right top
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "vdv05.dat" using 1:2:3:4 wi errorli ti "QLAS (0.5h)", "edv05.dat" using 1:2:3:4 wi errorli ti "ELAS (0.5h)"
+EOF
+
+# 1.0
+/usr/bin/gnuplot -persist << EOF
+set output "evplot_1.eps"
+set term postscript eps enhanced color
+set title "Comparison of variation of increase in reward with proximity for QLAS and ELAS with H = 1 hour"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right top
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "vdv1.dat" using 1:2:3:4 wi errorli ti "QLAS (1h)", "edv1.dat" using 1:2:3:4 wi errorli ti "ELAS (1h)"
+EOF
+
+# 2.0
+/usr/bin/gnuplot -persist << EOF
+set output "evplot_2.eps"
+set term postscript eps enhanced color
+set title "Comparison of variation of increase in reward with proximity for QLAS and ELAS with H = 2 hours"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right top
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "vdv2.dat" using 1:2:3:4 wi errorli ti "QLAS (2h)", "edv2.dat" using 1:2:3:4 wi errorli ti "ELAS (2h)"
+EOF
+
+# 4.0
+/usr/bin/gnuplot -persist << EOF
+set output "evplot_4.eps"
+set term postscript eps enhanced color
+set title "Comparison of variation of increase in reward with proximity for QLAS and ELAS with H = 4 hours"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right top
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "vdv4.dat" using 1:2:3:4 wi errorli ti "QLAS (4h)", "edv4.dat" using 1:2:3:4 wi errorli ti "ELAS (4h)"
+EOF

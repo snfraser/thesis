@@ -1,0 +1,20 @@
+what plots do I want?
+
+for the night need:
+ - contention plots (under UPAX conditions) real contention is somewhere inside the envelope.
+ - load plots
+ - demand plots
+
+for the user solution:
+ - plot v time of each metric (ie for each selected group)
+ - plot v time of score generated for groups - several scoring weights (a.fx+b.fht+c.fp) etc
+ - mis-selections - where do these occur ?
+
+for the sim solutions:
+
+what sims do I do ?
+
+ - BDS using several scoring metrics - will give a tally score for each run (get av,std,max,min)
+
+what metrics do I want to measure ?
+

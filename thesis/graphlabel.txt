@@ -1,0 +1,7 @@
+
+1. Comparison of effect of <weather disruption length w> on <quality Qpx>. 
+
+2. Comparison of effect of <Phase 2 mean exposure length x> on <quality Qoa> for variable <weather disruptor frequency f>.
+
+3. Comparison of effect of <EnvConditions> for <E1,E2,E3> and <ExecModel> for <m1,m2> with varying 
+<Mean obs exposure length e> on <Priority weighting metric Qx>.

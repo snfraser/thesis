@@ -1,0 +1,18 @@
+#!/bin/csh
+
+#
+# Process result dataset.
+#
+
+set dat = $1
+
+foreach nn (000 001 002 003 004 005 006)
+    echo "Night $nn "
+
+    cat $dat | grep "$nn GROUP" > gr${nn}.dat
+
+    sort -n -k 4 gr${nn}.dat > gr${nn}_sorted.dat
+    cat gr${nn}_sorted.dat | grep "CR"    > gr${nn}_crit.dat
+    cat gr${nn}_sorted.dat | grep -v "CR" > gr${nn}_noncrit.dat
+
+end

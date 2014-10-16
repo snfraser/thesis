@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>More about contention to squeeze into discussion above</TITLE>
+<META NAME="description" CONTENT="More about contention to squeeze into discussion above">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node37.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node39.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html712"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html708"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html704"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html710"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html713"
+  HREF="node39.html">Environment Characterization Study</A>
+<B> Up:</B> <A NAME="tex2html709"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html705"
+  HREF="node37.html">Efficiency measure -</A>
+ &nbsp; <B>  <A NAME="tex2html711"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00073600000000000000">
+More about contention to squeeze into discussion above</A>
+</H3>
+There is a need to measure the contention for time among the groups enabled on a nightly basis, it would be useful to be able to do this on a fine granularity - e.g. minute by minute. First we must decide what we mean by contention. My definition is the degree of demand by all enabled groups for a given slice of time - put simply, if a group needs 10 minutes to execute and there is a 30 minute window of opportunity in which it can start, then its demand for the whole of this window is 10/30. If there are other groups which also have some demand for all or part of the window then they will contribute appropriate amounts to the total demand for the window to those fractions of the window during which they are enabled, the total (aggregate) demand at a given time then is the sum of all the partial demands from each group whose enablement interval includes that time. Put more formally:
+
+<P>
+<!-- MATH
+ $T(t) = \sum_{g : w \cap t} { \frac{t_x(g)}{w_e(g)} }$
+ -->
+<IMG
+ WIDTH="161" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.png"
+ ALT="$ T(t) = \sum_{g : w \cap t} { \frac{t_x(g)}{w_e(g)} }$"> 
+
+<P>
+TODO this needs writing properly 
+TODO also need some formal definitions for w/W/tx etc and where they are got from.
+
+<P>
+How then do we calculate this ? The numerator is the easiest - define the components of this along with any uncertainty terms and consideration of parallelism - this is obtained from the ExecModel. First we must decide what we mean by enablement window. Each group has by reason of its TimingConstraint a set of one or more windows in which it is intended to observe (execute) the group (also called a visit in some systems - need a distinct word), in the case of a Flex group this is a single window [ts,te]. For a periodic monitoring group there will be a series of windows <!-- MATH
+ $w_i = [ts+i*p-w/2, ts+i*p+w/2]$
+ -->
+<IMG
+ WIDTH="324" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.png"
+ ALT="$ w_i = [ts+i*p-w/2, ts+i*p+w/2]$"> such that the last window stops around <IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$ t_e$">. As a first approximation then the denominator can just be considered to be the size of any window which includes t - (Note no group should by definition of the various timing constraint classes have more than one window corresponding to any given time). Because we have an optical telescope and observe only at night, we can restrict the actual time available to a group for the execution of its observing window to the intersection of the window with the night which includes t. So <!-- MATH
+ $t_avail = W \cap N(t)$
+ -->
+<IMG
+ WIDTH="156" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$ t_avail = W \cap N(t)$">, thus incresasing the contention contribution. A number of additional approximations will continue to pare this denominator down so we can expect the first approximation to be significantly low. We should note some points here. I have so far assumed implicitly that the group's window of opportunity W is less than the duration of a single night, this will often not be the case, i.e. many group windows extend over serveral days (and nights) and in some case, especially long activation flexible groups may run for weeks or months, so the actual <IMG
+ WIDTH="51" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$ t_avail$"> in these cases should really be represented by W intersect N where N is the set of all the future nights for which the group is available. We cannot stop here, just because it is night does not mean we can make the observation, the target will not neccessarily be visible, either above the geographical horizon or any operational horizon of the telescope, so we can further reduce the available time by considering only the part of the night(s) where the target(s) are visible <!-- MATH
+ $t_avail = W \cap N \cap V$
+ -->
+<IMG
+ WIDTH="171" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.png"
+ ALT="$ t_avail = W \cap N \cap V$">. Each group has associated with it a number of observing constraints - some of these represent implicit additional time constraints, namely those which can be calculated in advance. An example would be the lunar distance constraint - the observations in the group cannot be made if the moon is less than some given distance from the observation's target. If we add these into the mix we get an extra reduction in the available time for the group to execute - bearing in mind that these calculations must be performed for all future nights which intersect the group's window containing t. We have done all that is possible with the certain knowledge of the observing environment, there remain however a number of uncertainties - we have not considered either those observing constraints which refer to environmental conditions which cannot be predicted in advance with any certainty, e.g. the group's available window will most likely be reduced further if the seeing is worse than the maximum specified in the seeing constraint, similar things may be said concerning other unpredictable elements. (which). We can further reduce the available window if we can predict when the telescope will be unable to observe due to poor weather, mechanical or technical faults, engineering and other downtime. If we can at least obtain some statistical values for these, which may contain seasonal or other variations (e.g. weather downtime, or seeing distribution dependant on time of year) or we can predict sky and weather conditions for the night ahead with some accuracy (this will help for short period monitors) then we can get produce weighted contention profiles.
+
+<P>
+<BR>
+
+<BR>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html712"
+  HREF="node39.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html708"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html704"
+  HREF="node37.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html710"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html713"
+  HREF="node39.html">Environment Characterization Study</A>
+<B> Up:</B> <A NAME="tex2html709"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html705"
+  HREF="node37.html">Efficiency measure -</A>
+ &nbsp; <B>  <A NAME="tex2html711"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+Start night: 0 from 2007-11-13 12:00:00 to 2007-11-14 12:00:00
+Sunset:     2007-11-13 18:15 Moon 23.44
+StartNight: 2007-11-13 19:40 Moon 11.23
+Moonset:    2007-11-13 20:50
+EndNight:   2007-11-14 06:05 Moon -66.04
+Sunrise:    2007-11-14 07:35 Moon -47.3
+Length of dark night:         10.42H
+Length of night inc twilight: 13.33H
+
+
+Start night: 1 from 2007-11-14 12:00:00 to 2007-11-15 12:00:00
+Sunset:     2007-11-14 18:15 Moon 30.31
+StartNight: 2007-11-14 19:40 Moon 20.31
+Moonset:    2007-11-14 21:45
+EndNight:   2007-11-15 06:05 Moon -76.53
+Sunrise:    2007-11-15 07:40 Moon -56.57
+Length of dark night:         10.42H
+Length of night inc twilight: 13.42H
+
+Start night: 2 from 2007-11-15 12:00:00 to 2007-11-16 12:00:00
+Sunset:     2007-11-15 18:15 Moon 36.52
+StartNight: 2007-11-15 19:40 Moon 29.34
+Moonset:    2007-11-15 22:45
+EndNight:   2007-11-16 06:05 Moon -83.41
+Sunrise:    2007-11-16 07:40 Moon -66.17
+Length of dark night:         10.42H
+Length of night inc twilight: 13.42H
+
+
+Start night: 3 from 2007-11-16 12:00:00 to 2007-11-17 12:00:00
+Sunset:     2007-11-16 18:15 Moon 41.61
+StartNight: 2007-11-16 19:40 Moon 38.11
+Moonset:    2007-11-16 23:45
+EndNight:   2007-11-17 06:05 Moon -76.75
+Sunrise:    2007-11-17 07:40 Moon -73.34
+Length of dark night:         10.42H
+Length of night inc twilight: 13.42H
+
+
+Start night: 4 from 2007-11-17 12:00:00 to 2007-11-18 12:00:00
+Sunset:     2007-11-17 18:15 Moon 44.94
+StartNight: 2007-11-17 19:40 Moon 46.16
+Moonset:    2007-11-18 00:45
+EndNight:   2007-11-18 06:05 Moon -65.48
+Sunrise:    2007-11-18 07:40 Moon -73.71
+Length of dark night:         10.42H
+Length of night inc twilight: 13.42H
+
+Start night: 5 from 2007-11-18 12:00:00 to 2007-11-19 12:00:00
+Sunset:     2007-11-18 18:10 Moon 45.17
+StartNight: 2007-11-18 19:40 Moon 52.65
+Moonset:    2007-11-19 01:45
+EndNight:   2007-11-19 06:10 Moon -54.16
+Sunrise:    2007-11-19 07:40 Moon -66.42
+Length of dark night:         10.5H
+Length of night inc twilight: 13.5H
+
+Start night: 6 from 2007-11-19 12:00:00 to 2007-11-20 12:00:00
+Sunset:     2007-11-19 18:10 Moon 42.89
+StartNight: 2007-11-19 19:40 Moon 56.16
+Moonset:    2007-11-20 02:50
+EndNight:   2007-11-20 06:10 Moon -41.39
+Sunrise:    2007-11-20 07:40 Moon -55.64
+Length of dark night:         10.5H
+Length of night inc twilight: 13.5H

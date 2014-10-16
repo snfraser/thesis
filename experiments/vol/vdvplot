@@ -1,0 +1,28 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+set output "vdv.eps"
+set term postscript eps enhanced color
+set title "Variation of increase in reward with proximity for QLAS"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right bottom
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "vdv05.dat" using 1:2:3:4 wi errorli ti "H=0.5", "vdv1.dat" using 1:2:3:4 wi errorli ti "H=1.0", "vdv2.dat" using 1:2:3:4 wi errorli ti "H=2.0", "vdv4.dat" using 1:2:3:4 wi errorli ti "H=4.0"
+
+EOF
+
+#plot "vdv05.dat" using 1:2:3:4 wi errorli ti "H=0.5", "vdv1.dat" using 1:2:3:4 wi errorli ti "H=1.0", "vdv2.dat" using 1:2:3:4 wi errorli ti "H=2.0", "vdv4.dat" using 1:2:3:4 wi errorli ti "H=4.0"
+#plot "vdv05.dat" using 1:2 ti "H=0.5", "vdv1.dat" using 1:2  ti "H=1.0", "vdv2.dat" using 1:2  ti "H=2.0", "vdv4.dat" using 1:2  ti "H=4.0"
+
+/usr/bin/gnuplot -persist << EOF
+set term x11
+set title "Variation of increase in reward with proximity for QLAS"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right bottom
+set xrange[0:400]
+set yrange [0:1.1]
+f(x) = (x < 90 ? 0.8*(30+x)/120: 0.8)
+plot "vdv2.dat" using 1:2:3:4 wi errorli ti "H=1", f(x) wi li ti "Theory"

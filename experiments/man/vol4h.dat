@@ -1,0 +1,7 @@
+java.io.FileNotFoundException: vol4h_gen.dat (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.io.FileInputStream.<init>(FileInputStream.java:66)
+	at java.io.FileReader.<init>(FileReader.java:41)
+	at Generator.main(Generator.java:17)
+Usage: Generator --nd <n in base> --base <basefile> --np <n results> --sx <sdev> --sy <sdev> --h <var> --ceiling <c>

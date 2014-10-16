@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: transfer.aux
+The style file: apalike.bst
+Database file #1: biblio.bib
+A bad cross reference---entry "hart99immune"
+refers to entry "DBLP:conf/gecco/1999", which doesn't exist
+Warning--I didn't find a database entry for "ing00annual"
+Warning--I didn't find a database entry for "DBLP:conf/gecco/1999"
+You've used 44 entries,
+            1935 wiz_defined-function locations,
+            727 strings with 12427 characters,
+and the built_in function-call counts, 19243 in all, are:
+= -- 1894
+> -- 848
+< -- 46
++ -- 291
+- -- 283
+* -- 1501
+:= -- 3270
+add.period$ -- 144
+call.type$ -- 44
+change.case$ -- 356
+chr.to.int$ -- 44
+cite$ -- 44
+duplicate$ -- 812
+empty$ -- 1334
+format.name$ -- 353
+if$ -- 3918
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 33
+newline$ -- 222
+num.names$ -- 148
+pop$ -- 379
+preamble$ -- 1
+purify$ -- 355
+quote$ -- 0
+skip$ -- 595
+stack$ -- 0
+substring$ -- 1133
+swap$ -- 175
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 264
+warning$ -- 0
+while$ -- 146
+width$ -- 0
+write$ -- 587
+(There was 1 error message)

@@ -1,0 +1,62 @@
+#!/bin/csh
+
+set in = $1
+set sched = "$2"
+
+/usr/bin/gnuplot << EOF >& qsucc_${in}_params.dat
+
+f(x) = a*log(m*x+b)+c
+a=20
+b=1
+c=45
+m=15
+fit f(x) "qsucc_$in.dat" using 2:3 via a,b,c,m
+
+EOF
+
+set nit = `cat qsucc_${in}_params.dat | grep "After.*iterat" | awk '{print $2}'`
+set alab = `cat qsucc_${in}_params.dat | grep "a.*=" | tail -1 | awk '{print $3,$4,$5,$6}'`
+set blab = `cat qsucc_${in}_params.dat | grep "b.*=" | tail -1 | awk '{print $3,$4,$5,$6}'`
+set clab = `cat qsucc_${in}_params.dat | grep "c.*=" | tail -1 | awk '{print $3,$4,$5,$6}'`
+set mlab = `cat qsucc_${in}_params.dat | grep "m.*=" | tail -1 | awk '{print $3,$4,$5,$6}'`
+
+set a = `cat qsucc_${in}_params.dat | grep "a.*=" | tail -1 | awk '{print $3}'`
+set b = `cat qsucc_${in}_params.dat | grep "b.*=" | tail -1 | awk '{print $3}'`
+set c = `cat qsucc_${in}_params.dat | grep "c.*=" | tail -1 | awk '{print $3}'`
+set m = `cat qsucc_${in}_params.dat | grep "m.*=" | tail -1 | awk '{print $3}'`
+
+
+cat qsucc_${in}_params.dat
+set fit = qsucc_${in}_fit.params
+if (-e $fit) then
+ /bin/rm $fit
+endif
+
+echo "a = $a" >>&! $fit 
+echo "b = $b" >>&  $fit 
+echo "c = $c" >>&  $fit 
+echo "m = $m" >>&  $fit 
+
+#/usr/bin/gnuplot -persist << EOF 
+/usr/bin/gnuplot  << EOF 
+
+set output "qsucc_${in}.eps"
+set term postscript enhanced color
+
+set yrange [45:85]
+
+set label "Fit: y=a*log(mx+b)+c after $nit iterations" at 12,54
+set label "a=$alab" at 12,46
+set label "b=$blab" at 12,48
+set label "c=$clab" at 12,50
+set label "m=$mlab" at 12,52
+
+set title "Variation of Q_{SU} with ODB contention C_C: $sched "
+set xlabel "Contention C_C"
+set ylabel "Quality metric Q_{SU}"
+
+set key left top
+
+plot "qsucc_${in}.dat" using 2:3 ti "Data", $a*log($m*x+$b)+$c ti "Fit"
+
+EOF

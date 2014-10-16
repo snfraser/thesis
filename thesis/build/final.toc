@@ -1,0 +1,146 @@
+\contentsline {section}{List of Figures}{3}
+\contentsline {section}{List of Tables}{4}
+\contentsline {part}{I\hspace {1em}Background}{6}
+\contentsline {section}{\numberline {1}Introduction}{7}
+\contentsline {subsection}{\numberline {1.1}Background}{7}
+\contentsline {subsection}{\numberline {1.2}Planning and scheduling}{8}
+\contentsline {subsection}{\numberline {1.3}Motivation}{9}
+\contentsline {subsection}{\numberline {1.4}Plan}{10}
+\contentsline {section}{\numberline {2}Review of current research}{12}
+\contentsline {subsection}{\numberline {2.1}Constructive techniques}{12}
+\contentsline {subsection}{\numberline {2.2}Iterative repair}{14}
+\contentsline {subsection}{\numberline {2.3}Search techniques}{15}
+\contentsline {subsection}{\numberline {2.4}Case studies}{18}
+\contentsline {subsubsection}{\numberline {2.4.1}SPIKE}{18}
+\contentsline {subsubsection}{\numberline {2.4.2}Partially Ordered Schedules (POS)}{18}
+\contentsline {subsubsection}{\numberline {2.4.3}MicroBOSS}{19}
+\contentsline {subsubsection}{\numberline {2.4.4}Gerry}{19}
+\contentsline {subsubsection}{\numberline {2.4.5}OPIS/OZONE}{20}
+\contentsline {subsubsection}{\numberline {2.4.6}ASPEN/CASPER}{22}
+\contentsline {subsection}{\numberline {2.5}Contingency, flexibility and reactive scheduling}{24}
+\contentsline {subsection}{\numberline {2.6}Agent based scheduling}{27}
+\contentsline {subsection}{\numberline {2.7}Evolutionary and biologically inspired techniques}{28}
+\contentsline {subsection}{\numberline {2.8}Adaptive Learning techniques applied to scheduling}{32}
+\contentsline {section}{\numberline {3}Investigation of Metrics}{37}
+\contentsline {subsection}{\numberline {3.1}Introduction and rationale}{37}
+\contentsline {subsection}{\numberline {3.2}Problem complexity metrics (PCM)}{37}
+\contentsline {subsubsection}{\numberline {3.2.1}Contention profile $C_c$}{38}
+\contentsline {subsubsection}{\numberline {3.2.2}Demand profile $C_d$}{39}
+\contentsline {subsubsection}{\numberline {3.2.3}Load $C_l$}{40}
+\contentsline {subsection}{\numberline {3.3}Schedule quality metrics (SQM)}{40}
+\contentsline {subsection}{\numberline {3.4}Primitive utility measures}{42}
+\contentsline {subsection}{\numberline {3.5}Matching metrics to scheduling and planning horizons}{46}
+\contentsline {subsection}{\numberline {3.6}Conclusions}{47}
+\contentsline {section}{\numberline {4}Characterization of operating environment}{48}
+\contentsline {subsection}{\numberline {4.1}Environment Components}{48}
+\contentsline {subsection}{\numberline {4.2}Technical faults}{49}
+\contentsline {subsubsection}{\numberline {4.2.1}Source of data}{50}
+\contentsline {subsubsection}{\numberline {4.2.2}Analysis}{51}
+\contentsline {subsubsection}{\numberline {4.2.3}Conclusions}{52}
+\contentsline {subsection}{\numberline {4.3}Weather}{52}
+\contentsline {subsubsection}{\numberline {4.3.1}Telescope Weather Monitoring System}{53}
+\contentsline {subsubsection}{\numberline {4.3.2}Analysis of results}{54}
+\contentsline {subsubsection}{\numberline {4.3.3}Conclusions}{58}
+\contentsline {subsubsection}{\numberline {4.3.4}Observer reports}{59}
+\contentsline {subsubsection}{\numberline {4.3.5}Analysis}{59}
+\contentsline {subsubsection}{\numberline {4.3.6}Conclusions}{61}
+\contentsline {subsection}{\numberline {4.4}Atmospheric Seeing and Extinction}{61}
+\contentsline {subsubsection}{\numberline {4.4.1}Collected seeing data from archived images}{62}
+\contentsline {subsubsection}{\numberline {4.4.2}Variation of seeing during the night.}{63}
+\contentsline {subsubsection}{\numberline {4.4.3}Monthly variation of seeing.}{63}
+\contentsline {subsubsection}{\numberline {4.4.4}Extinction}{66}
+\contentsline {subsubsection}{\numberline {4.4.5}Sky brightness}{66}
+\contentsline {subsection}{\numberline {4.5}Phase2 population}{67}
+\contentsline {section}{\numberline {5}Architecture}{70}
+\contentsline {subsection}{\numberline {5.1}Introduction}{70}
+\contentsline {subsection}{\numberline {5.2}Fundamental Components Layer (FCL)}{72}
+\contentsline {subsubsection}{\numberline {5.2.1}Phase2 model}{72}
+\contentsline {subsubsection}{\numberline {5.2.2}History model}{72}
+\contentsline {subsubsection}{\numberline {5.2.3}Accounting model}{72}
+\contentsline {subsection}{\numberline {5.3}Aggregate Components Layer (ACL)}{73}
+\contentsline {subsubsection}{\numberline {5.3.1}Phase 2 Composite Model}{73}
+\contentsline {subsubsection}{\numberline {5.3.2}Account Synopsis Model}{73}
+\contentsline {subsubsection}{\numberline {5.3.3}History Synopsis Model}{73}
+\contentsline {subsection}{\numberline {5.4}Computational Tools Layer (CTL)}{73}
+\contentsline {subsubsection}{\numberline {5.4.1}Execution timing model}{74}
+\contentsline {subsubsection}{\numberline {5.4.2}Execution feasibility model}{74}
+\contentsline {subsubsection}{\numberline {5.4.3}Astrometry}{76}
+\contentsline {subsection}{\numberline {5.5}Prediction Components Layer (PCL)}{76}
+\contentsline {subsubsection}{\numberline {5.5.1}Environmental Prediction Model}{76}
+\contentsline {subsubsection}{\numberline {5.5.2}Weather Prediction Model and Disruptor Model}{77}
+\contentsline {subsubsection}{\numberline {5.5.3}Instrument Synopsis Model (ISM)}{77}
+\contentsline {subsubsection}{\numberline {5.5.4}Telescope Synopsis Model (TSM)}{77}
+\contentsline {subsubsection}{\numberline {5.5.5}Time Model}{78}
+\contentsline {subsection}{\numberline {5.6}Simulation Framework Components Layer (SFCL)}{78}
+\contentsline {subsubsection}{\numberline {5.6.1}Environmental Scenario Generator}{78}
+\contentsline {subsubsection}{\numberline {5.6.2}Weather Scenario Generator and Disruptor Scenario Generator}{78}
+\contentsline {subsubsection}{\numberline {5.6.3}Time Signal Generator (TSG)}{79}
+\contentsline {subsubsection}{\numberline {5.6.4}Stochastic Timing Model}{79}
+\contentsline {subsubsection}{\numberline {5.6.5}Instrument Scenario Generator}{79}
+\contentsline {subsubsection}{\numberline {5.6.6}Telescope Scenario Generator}{80}
+\contentsline {subsection}{\numberline {5.7}Scheduling Engine Component Layer (SECL)}{80}
+\contentsline {subsubsection}{\numberline {5.7.1}Scoring Model}{80}
+\contentsline {subsubsection}{\numberline {5.7.2}Selection Model}{82}
+\contentsline {subsubsection}{\numberline {5.7.3}Metric Generator}{82}
+\contentsline {subsubsection}{\numberline {5.7.4}Charge Accounting Model}{82}
+\contentsline {subsection}{\numberline {5.8}Interface Components Layer (ICL)}{82}
+\contentsline {subsubsection}{\numberline {5.8.1}Despatcher}{83}
+\contentsline {subsubsection}{\numberline {5.8.2}Updater}{83}
+\contentsline {subsection}{\numberline {5.9}Executive Components Layer (ECL)}{83}
+\contentsline {subsubsection}{\numberline {5.9.1}Executor}{83}
+\contentsline {subsubsection}{\numberline {5.9.2}Simulation Controller}{84}
+\contentsline {part}{II\hspace {1em}Experiments}{85}
+\contentsline {section}{\numberline {6}Experiments}{86}
+\contentsline {subsection}{\numberline {6.1}Introduction}{86}
+\contentsline {subsection}{\numberline {6.2}Simulator Operation}{87}
+\contentsline {subsection}{\numberline {6.3}Sources of uncertainty}{88}
+\contentsline {subsection}{\numberline {6.4}Scheduler implementations}{89}
+\contentsline {subsection}{\numberline {6.5}Despatch Scheduler}{89}
+\contentsline {subsection}{\numberline {6.6}Look Ahead Scheduler}{90}
+\contentsline {section}{\numberline {7}Man against machine}{93}
+\contentsline {subsection}{\numberline {7.1}Introduction}{93}
+\contentsline {subsection}{\numberline {7.2}Characterization of problem}{93}
+\contentsline {subsection}{\numberline {7.3}Human scheduling trial (HS1)}{95}
+\contentsline {subsection}{\numberline {7.4}Results of HS1 trial}{99}
+\contentsline {subsection}{\numberline {7.5}Simulation trials}{99}
+\contentsline {section}{\numberline {8}Investigation of effects of varying scoring weights}{102}
+\contentsline {subsection}{\numberline {8.1}Introduction}{102}
+\contentsline {subsection}{\numberline {8.2}Method}{102}
+\contentsline {subsection}{\numberline {8.3}Results}{103}
+\contentsline {subsection}{\numberline {8.4}Conclusions}{107}
+\contentsline {section}{\numberline {9}Investigation into effects of ODB complexity (V-2)}{117}
+\contentsline {subsection}{\numberline {9.1}Introduction}{117}
+\contentsline {subsection}{\numberline {9.2}Choice of PCM to characterise a Phase 2 model}{117}
+\contentsline {subsection}{\numberline {9.3}Comparison of real and generated Phase 2 models}{117}
+\contentsline {subsection}{\numberline {9.4}Characterisation of generated models}{118}
+\contentsline {subsection}{\numberline {9.5}Comparison of schedulers against variable loading characteristics}{120}
+\contentsline {subsection}{\numberline {9.6}Summary and conclusions}{121}
+\contentsline {section}{\numberline {10}Investigation into effects of environmental stability}{124}
+\contentsline {subsection}{\numberline {10.1}Introduction}{124}
+\contentsline {subsection}{\numberline {10.2}Modelling the environment}{124}
+\contentsline {subsection}{\numberline {10.3}Experimental setup}{125}
+\contentsline {subsection}{\numberline {10.4}Shakedown experiments}{126}
+\contentsline {subsection}{\numberline {10.5}Detailed experiments}{127}
+\contentsline {subsection}{\numberline {10.6}Comparison of effect of varying horizon $H$}{128}
+\contentsline {subsection}{\numberline {10.7}Comparison of effect of changing sequence count $N_s$}{129}
+\contentsline {section}{\numberline {11}Investigation into effects of disruptive events.}{130}
+\contentsline {subsection}{\numberline {11.1}Methodology}{130}
+\contentsline {subsection}{\numberline {11.2}Results}{131}
+\contentsline {section}{\numberline {12}Investigation into effects ODB volatility}{132}
+\contentsline {subsection}{\numberline {12.1}Embedded instrumentation}{132}
+\contentsline {subsection}{\numberline {12.2}Characterization of events}{133}
+\contentsline {subsection}{\numberline {12.3}Analysis of events}{134}
+\contentsline {subsection}{\numberline {12.4}Simulation}{137}
+\contentsline {subsection}{\numberline {12.5}Investigation into the effect of $\pi $ on schedule quality}{137}
+\contentsline {subsection}{\numberline {12.6}Results}{138}
+\contentsline {section}{\numberline {13}Investigation into effect of reliability of stability prediction}{141}
+\contentsline {subsection}{\numberline {13.1}Introduction}{141}
+\contentsline {subsection}{\numberline {13.2}Experimental setup}{141}
+\contentsline {subsection}{\numberline {13.3}Results}{141}
+\contentsline {section}{\numberline {14}Conclusions}{143}
+\contentsline {subsection}{\numberline {14.1}Metrics}{143}
+\contentsline {subsection}{\numberline {14.2}Characterization of operating environment}{143}
+\contentsline {subsection}{\numberline {14.3}Architecture}{144}
+\contentsline {subsection}{\numberline {14.4}Experiments}{145}
+\contentsline {subsection}{\numberline {14.5}Summary}{147}
+\contentsline {section}{\numberline {15}Further work}{148}

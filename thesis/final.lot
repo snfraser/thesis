@@ -1,0 +1,26 @@
+\contentsline {table}{\numberline {3.1}{\ignorespaces Assignment of $Q$ metrics to hierarchic planning levels.}}{62}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Definitions of alert and clear threshold levels for triggering good/bad weather conditions.}}{70}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Fraction of recorded weather variable statistics over \emph {alert} level.}}{73}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Quartiles of raw and corrected seeing distributions}}{85}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Scores of top ranked candidate groups for single scheduler sweep.}}{94}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Factors involved in calculation of execution time for groups.}}{102}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Characteristics of test night for HS1 experiment}}{125}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Distribution of number of groups between priority levels for HS1 experiment}}{125}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Description of the columns in the table provided to the human scheduler}}{128}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Sample section of table available to HS. Description of these columns are found in Table.\nobreakspace {}7.3\hbox {}}}{130}
+\contentsline {subtable}{\numberline {(a)}{\ignorespaces {Results of BDS simulations and Human scheduler}}}{133}
+\contentsline {subtable}{\numberline {(b)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=100)}}}{133}
+\contentsline {subtable}{\numberline {(c)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=500)}}}{133}
+\contentsline {subtable}{\numberline {(d)}{\ignorespaces {Results of LAS simulations and Human scheduler (n=2500)}}}{133}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Case study night characteristics for scoring experiments}}{137}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Results for Night 1 under $E_{FP}$}}{139}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Results for Night 1 under $E_{FX}$}}{139}
+\contentsline {table}{\numberline {8.4}{\ignorespaces Results for Night 2 under $E_{FP}$}}{139}
+\contentsline {table}{\numberline {8.5}{\ignorespaces Results for Night 2 under $E_{FX}$}}{139}
+\contentsline {table}{\numberline {9.1}{\ignorespaces Details of Phase 2 models for complexity experiments}}{152}
+\contentsline {table}{\numberline {12.1}{\ignorespaces Short extract of a section of the reduced volatility event table.}}{180}
+\contentsline {table}{\numberline {12.2}{\ignorespaces Mean values of $Q_{SU}$ measured using baseline simulations.}}{186}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Statistics of the variation of $Q_{SU}$ with $C_{DC}$.}}{207}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Statistics of the variation of $Q_{XT}$ with $C_{DC}$}}{207}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Fraction of nights on which scheduler with given selection model beats other models.}}{208}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Amount $\Delta _{Q_{SU}}$ by which scheduler with given selection model beats other models.}}{208}

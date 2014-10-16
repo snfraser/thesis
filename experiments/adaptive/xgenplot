@@ -1,0 +1,41 @@
+#!/bin/csh
+
+cat xgen.dat | grep "SCORE 0.5" > xgen_05.dat
+cat xgen.dat | grep "SCORE 1.0" > xgen_1.dat
+cat xgen.dat | grep "SCORE 2.0" > xgen_2.dat
+cat xgen.dat | grep "SCORE 4.0" > xgen_4.dat
+cat xgen.dat | grep "SCORE 6.0" > xgen_6.dat
+
+/usr/bin/gnuplot -persist << EOF
+
+set xrange [0: 360]
+#set yrange [70:120]
+
+plot "xgen_05.dat" using 3:4:5 wi errorlines ti "H=0.5h", \
+      "xgen_1.dat" using 3:4:5 wi errorlines ti "H=1.0h", \
+      "xgen_2.dat" using 3:4:5 wi errorlines ti "H=2.0h", \
+      "xgen_4.dat" using 3:4:5 wi errorlines ti "H=4.0h", \
+      "xgen_6.dat" using 3:4:5 wi errorlines ti "H=6.0h"
+
+EOF
+
+cat xgen.dat | grep "OVER 0" > xrel_05.dat
+cat xgen.dat | grep "OVER 1" > xrel_1.dat
+cat xgen.dat | grep "OVER 2" > xrel_2.dat
+cat xgen.dat | grep "OVER 3" > xrel_4.dat
+cat xgen.dat | grep "OVER 4" > xrel_6.dat
+
+
+/usr/bin/gnuplot -persist << EOF
+
+#set xrange [0: 360]
+#set yrange [70:120]
+
+plot "xrel_05.dat" using 3:4 wi li ti "H=0.5h", \
+      "xrel_1.dat" using 3:4 wi li ti "H=1.0h", \
+      "xrel_2.dat" using 3:4 wi li ti "H=2.0h", \
+      "xrel_4.dat" using 3:4 wi li ti "H=4.0h", \
+      "xrel_6.dat" using 3:4 wi li ti "H=6.0h"
+
+EOF
+

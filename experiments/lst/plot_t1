@@ -1,0 +1,17 @@
+#!/bin/csh
+
+cat cont2c_1.log | grep NGS | awk '{print $12,$13,$14}' > cont2c_ng.dat
+cat cont2c_1.log | grep AUT | awk '{print $12,$13,10*$14}' > cont2c_aut.dat
+cat cont2c_1.log | grep CC_T | awk '{print $12,$13,$14}' > cont2c_ax.dat
+
+gnuplot << EOF
+set output "test_p1.eps"
+set terminal postscript enhanced color
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set format x "%d-%b"
+set title "Test plot for P2 Model: medium_dark"
+set xlabel "Date"
+set ylabel "Value"
+plot "cont2c_ax.dat" using 1:3 with line ti "CC", "cont2c_aut.dat" using 1:3 with line ti "AUT", "cont2c_ng.dat" using 1:3 with line ti "NGS"
+EOF

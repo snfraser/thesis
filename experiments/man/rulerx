@@ -1,0 +1,5 @@
+#!/bin/csh
+
+echo "Processing $1 "
+
+cat $1 | awk '{print $2, 40.0*$3/74+70, 20.0*$4/74}'

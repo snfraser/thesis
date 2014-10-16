@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Experiments</TITLE>
+<META NAME="description" CONTENT="Experiments">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node80.html">
+<LINK REL="up" HREF="node80.html">
+<LINK REL="next" HREF="node82.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1270"
+  HREF="node82.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1266"
+  HREF="node80.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1262"
+  HREF="node80.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1268"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1271"
+  HREF="node82.html">Case Study 1</A>
+<B> Up:</B> <A NAME="tex2html1267"
+  HREF="node80.html">Database character study</A>
+<B> Previous:</B> <A NAME="tex2html1263"
+  HREF="node80.html">Database character study</A>
+ &nbsp; <B>  <A NAME="tex2html1269"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000111000000000000000">
+Experiments</A>
+</H2>
+Notes about some experiments to do (these dont belong here)
+
+<P>
+
+<OL>
+<LI>Calculate total schedulable time in a night and advance demand profiles.
+
+<P>
+Search p2db for any groups which are enabled that night and sum up total exec times. If they are monitors we need to add n times exec (for n windows). If flexible we should count seperately or maybe add in a fractional contribution for 1/(length (nights) of flex span). Similar for ephem groups. Do this for a year or semester - note the flex stuff becomes a bit weird as some would have been done do we want to deplete them as if actually done (P(done before tonight) = (t-flexstart)/span or the likes). want to normalize results by length of night (sus-sur or twi-twi). As weel as semesterly would be good to get this information as a profile for individual nights and showing subscription(t), priority(t) etc.
+
+<P>
+This is an indicator of over/under subscription. If we are undersubscribed any night we should be able to accomodate everything with a bit of negotiation /sliding. If oversubscribed then need to prioritize - e.g. auction prices set by demand ! The oversubscription rate is a useful piece of info to give PDAs - lets them know how bad competition is without divulging sensitive information from other PDAs. Also could allow view of profiles over the night of PDA requests by priority level. 
+
+<P>
+Scenario: start of night, SE asks PDAs to make reservations (not really just what i would like to get and what priority or <I>score</I> is assigned  - by PDA or normallized? - no commitment but expect truthful!). SE makes profiles available to all PDAs. This sort of thing would let a PDA see if there were quiet or low priority slots available again without divulging too much information - any sort of statistical info like this is potentialy useful in decision making for bidding. 
+
+<P>
+</LI>
+<LI>Monte-carlo simulation to find range of scores using simple scheduling algorithm(s).
+
+<P>
+Step thro night, pick a group from feasibles (random selection), if none timestep a minute or so else time step exec time, repeat.
+Count up total used time. count sum priorities, count cumulative score via various metrics.
+
+<P>
+Repeat this umpteen times to get ranges, mean and stds for these parameters and measuring score metrics using various parameterisations.
+
+<P>
+Want to see the range of schedules we could get to set some bounds on these. We would expect a real scheduler to do better than the worst case and hopefully as good as best case. We wont see the best case unless we do zillions of runs but may get some idea how far into the tail it is..
+
+<P>
+</LI>
+<LI>Various contention measures
+
+<P>
+
+<UL>
+<LI>True contention over night as profile
+</LI>
+<LI>Daily groups enabled in night at some point count over period of weeks/months
+</LI>
+<LI>Daily groups enabled over night as profile
+</LI>
+<LI>weighted contention profile
+</LI>
+<LI>Probabilistic true contention as profile over night with different seeing assumptions -i.e. different curves and then various probabilty assumption curves plus a combined probabilty curve, maybe some envelopes.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>Some notes about the simulation framework.
+
+<P>
+</LI>
+</OL>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1270"
+  HREF="node82.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1266"
+  HREF="node80.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1262"
+  HREF="node80.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1268"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1271"
+  HREF="node82.html">Case Study 1</A>
+<B> Up:</B> <A NAME="tex2html1267"
+  HREF="node80.html">Database character study</A>
+<B> Previous:</B> <A NAME="tex2html1263"
+  HREF="node80.html">Database character study</A>
+ &nbsp; <B>  <A NAME="tex2html1269"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

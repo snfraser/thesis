@@ -1,0 +1,100 @@
+#!/bin/csh
+
+# run 3 sims for qlas1 and qlas 2 with 3600 and 7200 horizons 
+
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+set simlog = bst_b2.log
+
+java $POL $ASTRO BasicDespatcherTest \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+	--cost accounting1.cfg \
+	--env env2.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" >& $simlog 
+
+cat $simlog | grep CDAT_SU | awk '{print $12,$13,$14}' > qsa2_bsu.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qsa2_bxt.dat
+
+set simlog = qsa2_q1.log
+
+java $POL $ASTRO QuantumSchedulerTest \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+	--cost accounting1.cfg \
+	--env env2.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" \
+	--horizon 3600 --dtq 60 --nseq 10 >& $simlog 
+
+cat $simlog | grep CDAT_SU | awk '{print $12,$13,$14}' > qsa2_su1.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qsa2_xt1.dat
+
+set simlog = qsa2_q2.log
+java $POL $ASTRO QuantumSchedulerTest \
+        --site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+        --cost accounting1.cfg \
+        --env env2.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" \
+        --horizon 3600 --dtq 60 --nseq 100 >& $simlog 
+
+cat $simlog | grep CDAT_SU | awk '{print $12,$13,$14}' > qsa2_su2.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qsa2_xt2.dat
+
+set simlog = qsa2_q3.log
+java $POL $ASTRO QuantumSchedulerTest \
+        --site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+        --cost accounting1.cfg \
+        --env env2.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" \
+        --horizon 3600 --dtq 60 --nseq 1000 >& $simlog
+
+cat $simlog | grep CDAT_SU | awk '{print $12,$13,$14}' > qsa2_su3.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qsa2_xt3.dat
+
+set simlog = qsa2_q4.log
+java $POL $ASTRO QuantumSchedulerTest \
+        --site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+        --cost accounting1.cfg \
+        --env env2.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" \
+        --horizon 3600 --dtq 60 --nseq 5000 >& $simlog
+
+cat $simlog | grep CDAT_SU | awk '{print $12,$13,$14}' > qsa2_su4.dat
+cat $simlog | grep CDAT_XT | awk '{print $12,$13,$14}' > qsa2_xt4.dat
+

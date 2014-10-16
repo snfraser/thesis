@@ -1,0 +1,73 @@
+This file contains snippets of text pulled from webpages(W) or my own notes(*).
+
+
+(W) Using a Portfolio of Algorithms for Planning and Scheduling
+
+The Automated Scheduling and Planning Environment (ASPEN) software system, aspects of which have been reported in several previous NASA Tech Briefs articles, includes a subsystem that utilizes a portfolio of heuristic algorithms that work synergistically to solve problems. The nature of the synergy of the specific algorithms is that their likelihoods of success are negatively correlated: that is, when a combination of them is used to solve a problem, the probability that at least one of them will succeed is greater than the sum of probabilities of success of the individual algorithms operating independently of each other. In ASPEN, the portfolio of algorithms is used in a planning process of the iterative repair type, in which conflicts are detected and addressed one at a time until either no conflicts exist or a user-defined time limit has been exceeded. At each choice point (e.g., selection of conflict; selection of method of resolution of conflict; or choice of move, addition, or deletion) ASPEN makes a stochastic choice of a combination of algorithms from the portfolio. This approach makes it possible for the search to escape from looping and from solutions that are locally but not globally optimum.
+
+
+ 	 	
+(W)Application domains from ILOG website (www.ilog.com)
+
+Communications
+
+
+      Network management
+          o Equipment configuration
+          o Network online configuration
+
+      Network operations
+          o Engineer workload scheduling
+          o Equipment allocation
+
+      Network engineering
+          o Network planning and design
+          o Configuration
+
+      Customer service
+          o Customer service scheduling
+          o Staff rostering
+
+	Manufacturing
+
+
+      Production optimization
+          o Production planning and scheduling
+          o Manpower planning
+
+      Supply chain logistics
+          o Transportation planning
+          o Inventory deployment
+          o Vehicle routing
+
+      Configuration
+          o Equipment configuration
+          o Product configuration
+
+Transportation
+
+
+      Infrastructure management
+          o Airport and port resource allocation
+          o Staff scheduling
+          o Maintenance scheduling
+          o Traffic planning
+
+      Fleet management
+          o Crew scheduling
+          o Fleet scheduling
+          o Timetabling
+          o Maintenance scheduling
+
+	Others
+
+
+      Defense
+          o Manpower planning
+          o Resource allocation
+          o Satellite scheduling
+
+      Finance
+          o Portfolio management
+          o Workload scheduling
+          o Call-center staff planning

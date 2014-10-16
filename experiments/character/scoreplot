@@ -1,0 +1,14 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+unset key
+set title "Trend of group score upto selection point: Group [2494J000t000]"
+set xlabel "Time"
+set ylabel "Score: f_{SU}"
+set format x "%H:%M"
+set output "scoretrend.eps"
+set term postscript eps enhanced color
+plot "bb3.txt" using 1:3 wi li

@@ -1,0 +1,26 @@
+scenario.name   = L2MONTH
+
+start           = 2008-01-01 12:00
+end             = 2008-12-25 12:00
+
+# Distribution of EX seeing windows (Hours)
+mean.ex         = 1.4
+sigma.ex        = 0.5
+min.ex          = 0.05
+
+# Distribution of AV seeing windows
+mean.av         = 1.6
+sigma.av        = 0.5
+min.av          = 0.05
+
+# Distribution of POOR seeing windows
+mean.poor       = 3.2
+sigma.poor      = 1.25
+min.poor        = 0.1
+
+# Distribution of CRAP seeing windows
+mean.crap       = 0.8
+sigma.crap      = 0.125
+min.crap        = 0.05
+
+photom.fraction = 0.7

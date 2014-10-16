@@ -1,0 +1,206 @@
+\section{Investigation into effects of ODB complexity}
+\label{sect:exp_complexity}
+
+\subsection{Introduction}
+Phase 2 models, whether real ODB snapshots or generated are likely to vary somewhat in the range of characteristics measured by the various complexity metrics (PCMs). 
+
+The main aims of this investigation are to determine the similarities and differences between real and generated models, the range of variation between generated models created using the same parameters sets and to determine if different schedulers perform better than others when faced with Phase 2 models with different \emph{weight} or \emph{loading} characteristics. It is hoped to be able to answer questions such as whether one scheduler is better at handling \emph{light} loading and perhaps a different scheduler is better at handling \emph{heavy} loading.
+
+\subsection{Choice of complexity metric to characterise a Phase 2 model} 
+We have seen from Sect.~\ref{sect:metrics} that there are several complexity metrics (PCMs) available. None of these are able to fully characterize the loading as this varies through the night and from day to day and is dependant on what has (or might have) occurred previously. Of the several contenders, the average contention $C_C$ was chosen. This is a metric which is easy to calculate and readily visualized.
+ 
+\subsection{Comparison of real and generated Phase 2 models} 
+A Phase 2 model generator (P2GEN) was designed to create Phase 2 models with varying characteristics. This generator, described in Appendix \ref{sect:app_p2gen} has a large number of configurable parameters. The main parameters in terms of the current study however are the number of proposals, groups per proposal, observations per group and mean exposure time. The latter determine the length of each group, the others how many groups are in the \emph{pool}. Table.~\ref{tab:ltc_p2models} summarizes the model and snapshot parameters.
+
+\begin{table}[h]
+ \begin{center}
+  \begin{tabular}{lllll}
+   \toprule
+   \multicolumn{5}{c}{Characteristics of Phase2 models.} \\
+   \midrule
+   DBID & ODB Date & $N_p$ & $N_g$ & Description\\
+   \midrule
+   $P_s$ & 22/11/07 midpoint & 10 & 10 & P2GEN small model \\
+   $P_l$ & 22/11/07 midpoint & 15 & 20 & P2GEN light model \\
+   $P_m$ & 22/11/07 midpoint & 30 & 30 & P2GEN medium model\\
+   $P_h$ & 22/11/07 midpoint & 50 & 50 & P2GEN heavy model \\
+   \midrule
+   $O_1$ & 25/10/07 snapshot & - & - & ODB snapshot Day 0\\
+   $O_2$ & 15/09/07 snapshot & - & - & ODB snapshot Day -20\\
+   \bottomrule
+  \end{tabular}
+ \end{center}
+\caption[Details of Phase 2 models for complexity experiments]{Details of Phase 2 models used in complexity experiments. Generated models $P_s$ through $P_h$ have increasingly higher loading. Models $O_1$ and $O_2$ are snapshots taken on first day of the simulations and 20 days prior to the start. Number of proposals ($N_p$) and number of groups per proposal ($N_g$) are 2 of the numerous model parameters.}
+\label{tab:ltc_p2models}
+\end{table}
+
+
+A set of simulations were performed over a period of 60 days for each of the 4 generated models $P_l$ - $P_h$ to guage the level of contention these would yield and to compare with sample ODB snapshots for the same period. The results of a single simulation run for each model are shown in figures \ref{fig:c60_gen_av} and \ref{fig:c60_gen_ng}. Similar figures for the ODB snapshots are shown in \ref{fig:c60_odb_av} and \ref{fig:c60_odb_ng}.
+
+\begin{figure}[h]
+\begin{center}
+ \subfigure[Variation of average contention $\bar{C_c}$ for generated phase2 models.] {
+   \includegraphics[scale=0.5, angle=-90]{figures/c60_gen_cav.eps}  
+   \label{fig:c60_gen_av}
+  }
+ \subfigure[Variation of number of executed groups for generated phase2 models.] {
+   \includegraphics[scale=0.5, angle=-90]{figures/c60_gen_ng.eps}  
+   \label{fig:c60_gen_ng}
+  }
+  \caption[Comparison of average contention measure and number of groups executed per night for generated Phase 2 models]
+{Comparison of average contention measure and number of groups executed per night for generated Phase 2 models.}
+ \end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+ \subfigure[Variation of average contention $\bar{C_c}$ for ODB snapshots.] {
+   \includegraphics[scale=0.5, angle=-90]{figures/c60_odb_cav.eps} 
+   \label{fig:c60_odb_av}
+  }
+ \subfigure[Variation of number of executed groups for ODB snapshots.] {
+   \includegraphics[scale=0.5, angle=-90]{figures/c60_odb_ng.eps}  
+   \label{fig:c60_odb_ng}
+  }
+  \caption[Comparison of average contention measure and number of groups executed per night for ODB snapshots]
+{Comparison of average contention measure and number of groups executed per night for ODB snapshots.}
+ \end{center}
+\end{figure}
+
+%% Analysis
+In addition to variation in characteristics, the real Phase 2 models suffer from a population evolution problem. From  Fig.~\ref{fig:c60_odb_av} which shows the variation of average nightly contention $C_C$ for ODB snapshots taken on the first night of the 60 day period ($O_1$) and on a night 20 days before the start of the same period ($O_2$), we see the overall contention seems to decline over the period. We also note in particular that the contention figures for $O_2$ are generally lower than for snapshot $O_1$. 
+
+These effects are in fact due to the pattern in which observations are entered into the system. A sizeable number of observations are \emph{short-term} and only entered into the ODB a day or so before they are required. In some cases, particularly where automated agents are involved, the observations may be entered minutes before they become activated. This information cannot be captured by a snapshot of the ODB at a given time and so the observed quality and characterisation measures drift away from what would be observed if the ODB model were being regularly replenished.
+
+With a generated model however, groups can all be entered at the start but with their activations spread out over a specified period (say several months) so new groups are appearing in the schedule every day. The day to day loading as shown in Fig.~\ref{fig:c60_gen_av} appears to remain more constant like that of a real ODB if we were to take daily snapshots. 
+
+
+\subsection{Characterisation of generated models}
+\label{sect:chargen}
+ From a given generator model (e.g. $P_l$) we can generate any number of actual instances. Ideally these would all have the same measurable characteristics (e.g. $\bar{C_c}$) but this is not guaranteed. Further, it is not possible with P2GEN to easily generate a specific Phase 2 model instance with a specific set of PCM characteristics.
+
+Consequently in order to explore the range of these characteristics it is neccessary to generate a number of different models from the same generator parameters and then measure the characteristic of these models either by simulation to obtain dynamic measures or by a straightforward measurement of the static characteristics.
+
+A set of 4 model generators were chosen and are described in more detail in Table.~\ref{tab:ltc_p2models}. These generators are selected to represent a range of characteristics from \emph{small}, designed to create low-load Phase 2 models up to \emph{heavy}, designed to generate high load models. Tests were performed on 25-30 models generated by each generator to allow these to be characterised in terms of the chosen PCM, average contention ($C_C$). A series of simulations were then performed on each model to generate a set of SQMs, specifically $Q_{SU}$ - a score based metric and $Q_{XT}$ - the fraction of night observed. 
+
+The measurable characteristic chosen was $\bar{C_{dc}}$ - the average dynamic contention over the measurement period. A simple scheduler was chosen using best-score selection and a single $f_{OH}$ metric - i.e. the target which was highest relative to maximum attainable elevation was chosen at each sweep. In these simulations we are not particularly interested in the scheduler here, only in the variability of the generated  Phase 2 characteristics. Simulations were run for the middle 30 days of the generated models and the values of $\bar{Q_{SU}}$ and $\bar{Q_{XT}}$ are plotted against $\bar{C_c}$ for each model. The results are shown in Fig.~\ref{fig:p2_gen_su} and  Fig.~\ref{fig:p2_gen_xt} with accompanying statistics in Tables~\ref{b:f93} and \ref{b:f94}.
+
+
+
+\begin{figure}[h]
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/p2_gen_qsu.eps}
+ \caption[Variation of $Q_{SU}$ with $C_{DC}$ for variable phase2 generator models.] 
+   {Variation of $Q_{SU}$ with $C_{DC}$. Each point represents a single phase 2 model generated by one of 4 initial sets of generators.}
+\label{fig:p2_gen_su}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/p2_gen_qxt.eps}
+ \caption[Variation of $Q_{XT}$ with $C_{DC}$ for variable phase2 generator models.] 
+   {Variation of used fraction of night $Q_{XT}$ with $C_{DC}$. Each point represents a single Phase 2 model generated by one of 4 initial sets of generators.}
+\label{fig:p2_gen_xt}
+\end{center} 
+\end{figure}
+
+From these results it is clear there is significant variation in the measurable characteristics for any model though there is a progression between models as might be expected i.e. most of the $P_l$ contention values are lower than most of the $P_h$ values. $C_C$ varies from 2.69$\pm 1.02$ for $P_S$ upto 18.8$\pm 3.5 $ for $P_H$. There is significant overlap between \emph{adjacent} models. The heavy model generally uses up all or very nearly all of the available night(95\% $\pm 3.8$\%) whilst the light model fills only 85\% $\pm 5$\% of the night. This is not too surprising, there are more groups to chose from in the heavy model so there are likely to be few if any slack periods. There is most variation in $Q_{SU}$ for the small and light models (46 $\pm$ 7.4) for $P_S$ while the heavy model achieves a typical score of 66 $\pm$ 3.6. With low contention there will be periods when no groups are actually schedulable hence the frequent depression of this metric and in the overall use of time. The data from Fig.~\ref{fig:p2_gen_su} were fitted with a least squares fit of the form $Q_{SU} = a + b C_C$ which after 5 iterations gave a fit with $a=44.2 \pm 2$\% and $b=1.124 \pm 6$\% and $\chi^2 = 23.32$.
+
+\subsection{Comparison of schedulers against variable loading characteristics}
+\label{sect:compsched}
+In order to establish the effectiveness of different schedulers against ODB loading a number of simulations were performed.  In order to test a suggestion from \cite{cicirello02amplification} that introduction of a degree of randomization into the selection process could increase overall reward, the BDS scheduler was setup using 3 different selection models:- 
+ 
+\begin{itemize}
+\item \emph{Best} selection $\zeta_{Best}$ is the selection model normally employed in which the highest scoring group is selected.
+\notation{name={$\zeta_{Best}$},description={Best score selection model},sort={z}}
+
+\item \emph{Fixed rank} selection $\zeta_{FR}$ allows the second, third etc ranked group to be selected with a fixed probability. In the current experiment these probabilities were set to: rank 1 (80\%), rank 2 (15\%), rank 3 (5\%). \notation{name={$\zeta_{FR}$},description={Fixed rank selection model},sort={z}}
+
+\item \emph{Rank scaled} selection $\zeta_{RS}$ assigns a probability to each of the top ranked groups in proportion to the groups actual score. This is based on the observation that the top ranked groups often score very similar values implying that that they are more or less equally deserving of execution. 
+\notation{name={$\zeta_{RS}$},description={Rank scaled selection model},sort={z}}
+\end{itemize}
+
+The look-ahead scheduler QLAS was tested using horizons of 1,2 and 4 hours.
+
+\begin{figure}[h]
+ 
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_best.eps}
+ \caption[Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{Best}$.] 
+   {Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{Best}$. There is significant variation between runs.}
+\label{fig:qsucc_best}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_biasrs.eps}
+ \caption[Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{RS}$.] 
+   {Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{RS}$.} 
+\label{fig:qsucc_biasrs}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_biasfr.eps}
+ \caption[Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{FR}$.] 
+   {Effect of selection model on variation of $Q_{SU}$ with $C_c$ for BDS using $\zeta_{FR}$.} 
+\label{fig:qsucc_biasfr}
+\end{center}
+\end{figure}
+
+Results for the BDS simulations are shown in Figs.~\ref{fig:qsucc_best}, \ref{fig:qsucc_biasrs} and \ref{fig:qsucc_biasfr}. There is clearly a significant degree of variation between individual runs at the different Phase 2 loads though this is expected from the earlier results in Sect.~\ref{sect:chargen}. The only noteable feature appears to be that \emph{fixed rank biased} selection model tends to have a greater degree of variation than \emph{best} and \emph{rank score biased} selection. 
+
+\begin{figure}[h]
+ 
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_ql1.eps}
+ \caption[Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=1$h.] 
+   {Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=1$h.}
+\label{fig:qsucc_ql1}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_ql2.eps}
+ \caption[Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=2$h.] 
+   {Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=2$h.} 
+\label{fig:qsucc_ql2}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_ql4.eps}
+ \caption[Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=4$h.] 
+   {Effect of horizon on variation of $Q_{SU}$ with $C_c$ for QLAS with $H=4$h.} 
+\label{fig:qsucc_ql4}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+
+\begin{center}
+ \includegraphics[scale=0.5, angle=-90]{figures/qsucc_allfit2.eps}
+ \caption[Effect of choice of scheduler on variation of $Q_{SU}$ with $C_c$.] 
+   {Effect of choice of scheduler on variation of $Q_{SU}$ with $C_c$.  The curves are polynomial least squares fits to the data from Figs.~\ref{fig:qsucc_ql1} through \ref{fig:qsucc_ql4} for BDS and QLAS.}
+ \label{fig:qsucc_allfit}
+\end{center}
+\end{figure}
+
+Statistics for these results are shown in Table~\ref{b:f95}. For QLAS, Figs.~\ref{fig:qsucc_ql1}, \ref{fig:qsucc_ql2} and \ref{fig:qsucc_ql4} show that there is again significant variation from run to run at the different loads. However the general trend is for an improvement in scoring as the horizon is increased. Fig.~\ref{fig:qsucc_allfit} shows a comparison in which \emph{best-fit} polynomial curves were constructed using least squares methods for the results from the BDS and QLAS schedulers. These show a clear but small improvement in average quality with increasing horizon (from 6.3\% $\pm 10$ for QLAS with H=1 to 19\% $\pm 8$ for QLAS with H=4) and that BDS performs as well or better in low load situations. We also see a modest average improvement in quality at higher loads over the normal BDS $\zeta_{best}$ selection by BDS with $\zeta_{RS}$ selection.
+
+
+\subsection{Summary and conclusions}
+
+I have established that it is possible to simulate Phase 2 characteristics by using suitable generator models but that it is not feasible to create a Phase 2 model with specific characteristics. If such a model were required it would be neccessary to create multiple instances and test these until a suitable candidate were found. There is significant variation in the characteristics of generated  Phase 2 models but these do roughly scale with the generator model's \emph{weight}. When using real Phase 2 models (ODB snapshots) it is important to realise that a significant fraction of the observations are entered with short lead times and so are not visible in the snapshot a few days in advance. The charcateristics of the snapshot will depart from a snapshot taken a few days later by a significant amount. With generated models this effect can be mitigated against by ensuring that observations are entered with longer lead times. The experiments showed that at low levels of complexity there is considerable variation in the fullness ($Q_{XT}$) of schedules generated by all scheduling paradigms. As the level of complexity increases the degree of variation decreases. There is some evidence that longer look-ahead horizons are suitable for higher density ODBs and can produce better overall schedules. There is also slight evidence that biased selection can improve BDS scores at higher loads.
+

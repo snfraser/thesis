@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Potential utility measure</TITLE>
+<META NAME="description" CONTENT="Potential utility measure">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node34.html">
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node34.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html654"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html650"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html644"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html652"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html655"
+  HREF="node34.html">Primitive utility measures</A>
+<B> Up:</B> <A NAME="tex2html651"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html645"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+ &nbsp; <B>  <A NAME="tex2html653"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00073100000000000000">
+Potential utility measure</A>
+</H3> Work out the best utility that can be achieved during the night (PU) (i.e. assume we can do all the groups that could be done and do them at the best possible times) - this is after all the ultimate aim of the scheduler ! Work out the actual utility scored by the scheduler that night - the Efficiency (E) is then the ratio. May need to scale - after all if oversubscribed we could never do it all anyway try load scaling 1/L (load defined as aggregate (average) demand) or maybe better as <I>sum of execution times of all groups that can and <B>should</B> be executed tonight</I>. Could also try rank-scaling top(n) such that <!-- MATH
+ $\sum{x_i} < \tau(n)$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$ \sum{x_i} &lt; \tau(n)$"> - I cant quite recall what I meant by that at the moment.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

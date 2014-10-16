@@ -1,0 +1,19 @@
+#!/bin/csh
+
+gnuplot << EOF
+set output "bsa_pr_cont.eps"
+set terminal postscript enhanced color
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set xlabel "Time [UT]"
+set ylabel "Contention C_C"
+set title "Contention profile C_C during night of 14-15 Oct 2007 under conditions E_{FP}"
+set yrange [0:30]
+set format x "%H"
+plot "bsa1_pr_cont.dat" using 1:3 with line ti "Run 1", \
+     "bsa2_pr_cont.dat" using 1:3 with line ti "Run 2", \
+     "bsa3_pr_cont.dat" using 1:3 with line ti "Run 3", \
+     "bsa4_pr_cont.dat" using 1:3 with line ti "Run 4", \
+     "bsa5_pr_cont.dat" using 1:3 with line ti "Run 5", \
+     "bsa6_pr_cont.dat" using 1:3 with line ti "Run 6"
+EOF

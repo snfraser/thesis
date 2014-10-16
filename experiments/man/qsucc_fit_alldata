@@ -1,0 +1,64 @@
+#!/bin/csh
+
+# run  qsucc_fit_data for all data
+
+./qsucc_fit_data best "BDS with {/Symbol z}_{Best}"
+./qsucc_fit_data biasrs "BDS with {/Symbol z}_{RS}"
+./qsucc_fit_data ql1 "QLAS H = 1h"
+./qsucc_fit_data ql2 "QLAS H = 2h"
+./qsucc_fit_data ql4 "QLAS H = 4h"
+
+# now extract the fits
+
+set a1 = `cat qsucc_best_fit.params | grep "a" | cut -d"=" -f2`
+set b1 = `cat qsucc_best_fit.params | grep "b" | cut -d"=" -f2`
+set c1 = `cat qsucc_best_fit.params | grep "c" | cut -d"=" -f2`
+set m1 = `cat qsucc_best_fit.params | grep "m" | cut -d"=" -f2`
+
+set a2 = `cat qsucc_ql1_fit.params | grep "a" | cut -d"=" -f2`
+set b2 = `cat qsucc_ql1_fit.params | grep "b" | cut -d"=" -f2`
+set c2 = `cat qsucc_ql1_fit.params | grep "c" | cut -d"=" -f2`
+set m2 = `cat qsucc_ql1_fit.params | grep "m" | cut -d"=" -f2`
+
+set a3 = `cat qsucc_ql2_fit.params | grep "a" | cut -d"=" -f2`
+set b3 = `cat qsucc_ql2_fit.params | grep "b" | cut -d"=" -f2`
+set c3 = `cat qsucc_ql2_fit.params | grep "c" | cut -d"=" -f2`
+set m3 = `cat qsucc_ql2_fit.params | grep "m" | cut -d"=" -f2`
+
+set a4 = `cat qsucc_ql4_fit.params | grep "a" | cut -d"=" -f2`
+set b4 = `cat qsucc_ql4_fit.params | grep "b" | cut -d"=" -f2`
+set c4 = `cat qsucc_ql4_fit.params | grep "c" | cut -d"=" -f2`
+set m4 = `cat qsucc_ql4_fit.params | grep "m" | cut -d"=" -f2`
+
+set a5 = `cat qsucc_biasrs_fit.params | grep "a" | cut -d"=" -f2`
+set b5 = `cat qsucc_biasrs_fit.params | grep "b" | cut -d"=" -f2`
+set c5 = `cat qsucc_biasrs_fit.params | grep "c" | cut -d"=" -f2`
+set m5 = `cat qsucc_biasrs_fit.params | grep "m" | cut -d"=" -f2`
+
+set a6 = `cat qsucc_biasfr_fit.params | grep "a" | cut -d"=" -f2`
+set b6 = `cat qsucc_biasfr_fit.params | grep "b" | cut -d"=" -f2`
+set c6 = `cat qsucc_biasfr_fit.params | grep "c" | cut -d"=" -f2`
+set m6 = `cat qsucc_biasfr_fit.params | grep "m" | cut -d"=" -f2`
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "qsucc_allfit2.eps"
+set term postscript enhanced color
+
+set xrange [1:25]
+set yrange [45:85]
+
+set title "Comparison of schedulers on variation of Q_{SU} with ODB contention C_C"
+set xlabel "Contention C_C"
+set ylabel "Quality metric Q_{SU}
+
+set key left top
+
+plot $a1*log($m1*x+$b1)+$c1 ti "BDS {/Symbol z}_{Best}", \
+     $a5*log($m5*x+$b5)+$c5 ti "BDS {/Symbol z}_{RS}", \
+     $a2*log($m2*x+$b2)+$c2 ti "H=1", \
+     $a3*log($m3*x+$b3)+$c3 ti "H=2", \
+     $a4*log($m4*x+$b4)+$c4 ti "H=4"
+
+EOF

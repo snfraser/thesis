@@ -1,0 +1,30 @@
+#!/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+
+ ./rulerx qsuhte30.dat >& qsuhteB30.dat
+ ./rulerx qsuhte1.dat >& qsuhteB1.dat
+ ./rulerx qsuhte2.dat >& qsuhteB2.dat
+ ./rulerx qsuhte4.dat >& qsuhteB4.dat
+ ./rulerx qsuhte6.dat >& qsuhteB6.dat
+
+/usr/bin/gnuplot << EOF
+
+set output "horiz_env_su2.eps"
+set term postscript enhanced color
+
+set title "Variation of Q_{SU} with environmental stability for QLAS with variable horizon length"
+set xlabel "Environment stability {/Symbol t}_E [mins]"
+set ylabel "Schedule Quality Q_{SU}"
+set key left top
+set xrange [-15:375]
+set yrange [70:110]
+plot "qsuhteB30.dat" using 1:2:3 wi errorli  ti "H = 0.5 h",\
+     "qsuhteB1.dat"  using 1:2:3 wi errorli  ti "H = 1.0 h",\
+     "qsuhteB2.dat"  using 1:2:3 wi errorli  ti "H = 2.0 h",\
+     "qsuhteB4.dat"  using 1:2:3 wi errorli  ti "H = 4.0 h",\
+     "qsuhteB6.dat"  using 1:2:3 wi errorli  ti "H = 6.0 h",\
+     79.35 wi lines lt 7 ti "BDS range", \
+     86.55 wi lines lt 7 notitle
+
+EOF

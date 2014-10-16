@@ -1,0 +1,23 @@
+A discusion on the merits of various metrics.
+
+What are the metrics a human scheduler might use to determine a night's worth of scheduling?
+
+Table (xx) shows the set of all potentially executable groups for a specific night. The nth column shows how \emph{critical} this group is in terms of the specific window (or windows) enabled on the night - specifically it shows the number of \emph{remaining nights} on which the group's window(s) may be preformed (assuming conditions remain stable and that the group is thus actually feasible on those nights). In the case of short monitors there could be several windows enabled on the night so each is in effect critical. For longer period monitors (window of several nights) the window is critical if this is the last available night that particular window can be \emph{caught}. For a flexible group, if this is the last possible night for the group to be executed then it is critical. The question then is:- ``Which of these is \emph{most} critical ?''
+
+As a first shot we might then divide the available groups into 2 sets - the first set (criticals) would comprise all those groups for which one or more windows should be attempted tonight if possible. The second set (non-criticals) comprises all those groups for which tonight is not critical, though infact, depending on stability of conditions some of these may potentially turn out to have been so after all. We could then attempt to fill the night by assigning times to the criticals, then if space remains try to fill it with the most urgent non-criticals. Some potential problems can occur. What do we do if two groups one with low priority $G_L$, the other $G_H$ with high priority but both highly time critical require the same time slot ? - The answer seems obvious - $G_H$ wins out and $G_L$ may or may not then be scheduled. Bear in mind however that $G_H$ may have had each of its last $n$ windows executed, $G_L$ may have only a few windows but has so far failed to have any executed - should we sacrifice one of many windows from $G_H$ so hat $G_L$ can have at least one or two done before it expires?.
+ 
+We may need to take into account not just priority but also some measure of ``how well have the group's requirements so far been satisfied'' i.e. of the $N$ window that could have been executed so far out of a total of $M$ expected over its entire lifetime, how many $r$ have actually been done ? 
+
+I have alluded to this previously in terms of the \emph{data tracking} concept, in which we work out how much data (I will quantify this later) has been taken on this program relative to what would (ideally) have been taken by now. How for example does this work out for a monitoring group $G_{mon}$ with period $P$ and lifetime $L = [t_1$, $t_2 ]$ at time t. If the data rate is $r = n/P$  where $n$ is \emph{the amount of data per execution} then we would expect to have received by time $t \in L$ a quantity $E(t) = r(t-t_1)/(t_2-t_1)$. If the actual data received upto $t$ is $D(t)$ then the metric gives us a value $f_{track} = D(t)/E(t)$. 
+
+As to what to use for quantification - there are several options:-
+\begin{itemize}
+\item The product of execution time of the group with number of executions so far represents the total amount of telescope time consumed then for $N_x$ executions of length $\tau_x$, $E(t) = N_x*\tau_x$. Not all of the execution time is necessarily useful time. Overheads like slewing,  re-configuring and multiple target acquisition can all be considered wasted time, the same might also be said for reading out of CCDs. This measure can favor groups which effectively \emph{waste} telescope time.
+\item Use of the total exposure time might be more useful - efficient groups which minimize slewing/offsetting/re-configuration would then be treated more favorably.
+\item Yet another simple option is to record the number of images generated.
+\end{itemize}
+
+Note that in the above nothing is mentioned regarding either the quality of the results so far obtained or the importance of obtaining those results. Is a 100\% record of poor quality images of a low priority target better than a 50\% record of very high quality images of a high priority target ?
+
+An argument that might be used is that we should not worry too much about the efficiency of the groups. The user is allocated time to take their observations, it is up to them to make efficient use of that time. So the best measure is simply the first option - to take the total amount of time used by the group to date.
+

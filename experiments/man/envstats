@@ -1,0 +1,30 @@
+#!/bin/csh
+
+set out1 = e_relstats.eps
+set out2 = e_cumstats.eps
+
+#/usr/bin/gnuplot -persist << EOF
+
+/usr/bin/gnuplot << EOF
+
+# Relative plot
+set term postscript enhanced color
+set output "$out1"
+set title "Relative distribution of lengths of stable periods"
+set xlabel "Time [hours]
+set ylabel "Number of periods"
+plot "e_18_stats.dat"  using (\$1/3600):2 with points pt 5 ti "{/Symbol T}_e = 0.5h", \
+     "e_36_stats.dat"  using (\$1/3600):2 with points pt 5 ti "{/Symbol T}_e = 1h  "
+      
+set output "$out2"
+set title "Cumulative distribution of lengths of stable periods weighted by period length"
+set xlabel "Time [hours]
+set ylabel "Cumulative time"
+set key right bottom
+plot "e_18_stats.dat"  using (\$1/3600):5 with lines ti "{/Symbol T}_e = 0.5h", \
+     "e_36_stats.dat"  using (\$1/3600):5 with lines ti "{/Symbol T}_e = 1h  ", \
+     "e_72_stats.dat"  using (\$1/3600):5 with lines ti "{/Symbol T}_e = 2h  ", \
+     "e_144_stats.dat" using (\$1/3600):5 with lines ti "{/Symbol T}_e = 4h  "
+      
+
+EOF

@@ -1,0 +1,19 @@
+#!/bin/csh
+
+gnuplot << EOF
+set output "bsb_ex_cont.eps"
+set terminal postscript enhanced color
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set xlabel "Time [UT]"
+set ylabel "Contention C_C"
+set title "Contention profile C_C during night of 7-8 Nov 2007 under conditions E_{FX}"
+set yrange [0:60]
+set format x "%H"
+plot "bsb7_ex_cont.dat"  using 1:3 with line ti "Run 1", \
+     "bsb8_ex_cont.dat"  using 1:3 with line ti "Run 2", \
+     "bsb9_ex_cont.dat"  using 1:3 with line ti "Run 3", \
+     "bsb10_ex_cont.dat" using 1:3 with line ti "Run 4", \
+     "bsb11_ex_cont.dat" using 1:3 with line ti "Run 5", \
+     "bsb12_ex_cont.dat" using 1:3 with line ti "Run 6"
+EOF

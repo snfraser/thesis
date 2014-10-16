@@ -1,0 +1,31 @@
+#!/bin/csh
+
+/usr/local/bin/gnuplot << EOF
+
+set title "Distribution of monitor period lengths"
+set xlabel "Period length [h]"
+set ylabel "Number of groups"
+set logscale x
+unset key
+set label "day"  at first  24,  first 230
+set label "wk"   at first  168, first 230
+set label "mth"  at first  720, first 230
+set arrow 1 from 24,250 to 24, 240
+set arrow 2 from 168,250 to 168, 240
+set arrow 3 from 720,250 to 720, 240
+set output "per.eps"
+set term postscript eps enhanced color
+plot "per.dat" using 1:2 wi imp lw 10
+EOF
+
+/usr/local/bin/gnuplot << EOF
+set title "Distribution of exposure lengths"
+set xlabel "Exposure length [s]"
+set ylabel "Number of exposures"
+set logscale x
+unset key
+set output "ext.eps"
+set term postscript eps enhanced color
+plot "ext.dat" using 1:2 wi imp lw 10
+EOF
+

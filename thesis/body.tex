@@ -1,0 +1,52 @@
+
+
+
+% ----------------------------------------------------------------------------------
+% ANALYSIS, DESIGN, IMPLEMENTATION AND RESULTS OF PROJECT
+% ----------------------------------------------------------------------------------
+
+\section{Plan}
+In this bit describe what the whole project is about and how things will be done
+-experimental methods 
+\begin{enumerate}
+\item Investigate metrics with which to compare the efficiency and quality of generated schedules.
+\item Design software instrumentation to embed within the current robotic control system to collect data with which to characterize the operating environment.
+\item Using data collected by the embedded software, I will design a simulation framework incorporating knowledge of the operating environment characteristics with which to test any schedulers developed.
+\item Develop a despatch scheduler as a baseline with which to test more advanced schedulers, this will be capable of configuration to use different scheduling policies.
+\item Tune the baseline scheduler using various controllable parameters, typically objective weighting functions and biad function, to investigate the limits of this scheduling paradigm in the telescope scheduling context.
+\item As the basis for the final system, I will develop a look-ahead scheduler incorporating short-term prediction of environmental statistics to allow advanced planning of observations and using feedback of performance to adjust the plan objectives.
+\item Investigate variation of scheduling control parameters and horizon length on quality of schedules generated under varying environmental models to determine how to adapt to these - teh quality of schedules generated will be compared to those geenrated by the baseline system working at its maximum efficiency.
+\item Knowledge gained from this investigation will be incorporated into a final adaptive, look-ahead scheduler.
+\end{enumerate}
+
+Some more details on plan...
+\begin{enumerate}
+\item Develop metrics. Global quality to compare policies and architecure, local within arch to guide search.
+\item Data gathering - statistics of environment, P2DB characterization and rate of change.
+\item Develop scheduler.
+\item Prediction of environment and other models - test.
+\item Forward planning i.e. lookahead and predicted reward of future actions.
+\item Compare local despatch to expected future rewards model.  (m/c sims). \cite{bresina95expected} has excellent discussion on this topic wrt ATIS.
+\item Variation of weights and (search) metrics.
+\item Compare effects of various stochastic bias fns.
+\item Distributed scheduling architecture - take into account user/group preferences (DMs).
+\item Global optimization of DSA/DM.
+
+\end{enumerate}
+
+How does this manifest itself wrt actual studies/experiments ?
+\begin{enumerate}
+\item Metrics investigation study (Sect. \ref{sect:metrics_study}).
+\item Database characterization study (Sect. \ref{sect:db_character_study}).
+\item Data collection and prediction study (Sect. \ref{sect:prediction}).
+\item Scheduler architecture and simulation framework study (Sect. \ref{sect:sched_comp_study}).
+\item Case study 1. 1 or 2 night shakedown, effects of $w_p$ and $w_t$ (Sect. \ref{sect:cs1_study}).
+\item Man against machine study (Sect. \ref{sect:mam_study}).
+\item Long term case study. Many scoring and selection options, tracers (sect. \ref{sect:lts_study}).
+\item Advanced architecture and framework enhancements.
+\item Long term case study 2. Advanced LAS/BAS extract SQM under varing conditions.
+\item Long term case study 3. LAS/BAS adaptation to predicted conditions.
+\end{enumerate}
+
+Note: Data collection: If running a simulation over an extended period, the DB content would naturally change, need to be able to gather P2DB arrival and modification statistics - i.e. want to know how the DB changes in time not just a snapshot at T - this cant be very detailed just how many groups added/removed - maybe some statistical data could be extracted on a daily basis from P2DB e.g. average exposure length, spread of group lengths - needs more thought - this is a means of characterizing the DB - can then generate simulated datasets in addition to snapshots of real data. 
+

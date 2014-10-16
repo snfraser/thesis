@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set file1 = $1
+set file2 = $2
+set q = $3
+set env1 = $4
+set env2 = $5
+gnuplot -persist << EOF
+set xlabel "w_{trans}, (1-w_p)"
+set ylabel "Q_{$q}"
+set title "Comparison of effect of Environment Model (E_{$env1}, E_{$env2}) on Q_{$q} with varying w_{trans}"
+set xrange [-0.05: 1.05]
+set key graph 0.1,0.6
+plot "${file1}" using 1:2:(\$2-\$5):(\$2+\$5) with yerror ti "E_{$env1}", \
+     "${file2}" using 1:2:(\$2-\$5):(\$2+\$5) with yerror ti "E_{$env2}", \
+     "${file1}" using 1:2 with line ti "", \
+     "${file2}" using 1:2 with line ti ""
+
+
+EOF

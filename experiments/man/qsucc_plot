@@ -1,0 +1,79 @@
+#!/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "qsucc.eps"
+set term postscript enhanced color
+
+set title "Comparison of effect of scheduler model on variation of Q_{SU} with ODB contention characteristic"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set key right bottom
+
+plot "qsucc_best.dat"   using 2:3 with point ps 1  ti "BDS, {/Symbol z}_{Best}", \
+     "qsucc_biasrs.dat" using 2:3 with point ps 1  ti "BDS, {/Symbol z}_{RS}", \
+     "qsucc_biasfr.dat" using 2:3 with point ps 1  ti "BDS, {/Symbol z}_{FR}", \
+     "qsucc_ql1.dat"    using 2:3 with point ps 1  ti "QLAS, H=1h", \
+     "qsucc_ql2.dat"    using 2:3 with point ps 1  ti "QLAS, H=2h", \
+     "qsucc_ql4.dat"    using 2:3 with point pt 7 ps 1  ti "QLAS, H=4h"
+     
+
+set output "qsucc_best.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: BDS with {/Symbol z}_{Best}"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_best.dat"   using 2:3 with point ps 1  notitle
+   
+
+set output "qsucc_biasrs.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: BDS with {/Symbol z}_{RS}"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_biasrs.dat"   using 2:3 with point ps 1  notitle
+   
+set output "qsucc_biasfr.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: BDS with {/Symbol z}_{FR}"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_biasfr.dat"   using 2:3 with point ps 1  notitle
+   
+
+set output "qsucc_ql1.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=1h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_ql1.dat"   using 2:3 with point ps 1  notitle
+   
+
+
+set output "qsucc_ql2.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=2h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_ql2.dat"   using 2:3 with point ps 1  notitle
+   
+
+set output "qsucc_ql4.eps"
+set title "Variation of Q_{SU} with ODB contention characteristic: QLAS, H=4h"
+set xlabel "C_C"
+set ylabel "Q_{SU}"
+set yrange [45:85]
+set nokey 
+plot "qsucc_ql4.dat"   using 2:3 with point ps 1  notitle
+   
+
+
+
+EOF

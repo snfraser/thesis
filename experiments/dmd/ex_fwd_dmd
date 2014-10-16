@@ -1,0 +1,44 @@
+#!/bin/csh
+
+# dat is e.g. 20071016_32day
+# dd is the number of days
+
+set dat = $1
+set dd = $2
+
+set rfile = fwd_dmd_${dat}.dat
+
+# contention data
+set cfile = ../data/fwd_dmd_${dat}_cont.dat
+
+cat ../raw_data/$rfile | grep "Contention" | awk '{print $11,$12,$14}' > $cfile
+
+# average and peak values
+set avfile = ../data/fwd_dmd_${dat}_av.dat
+set pkfile =  ../data/fwd_dmd_${dat}_pk.dat
+
+cat ../raw_data/$rfile | grep "Average" | awk '{print $2,$5}' > $avfile
+cat ../raw_data/$rfile | grep "Peak" | awk '{print $2,$5}' > $pkfile
+
+# extract the daily profiles
+set xfile = ../data/fwd_dmd_${dat}_ex.dat
+
+cat ../raw_data/$rfile | grep "Lookahead" | grep "2007" | awk '{print $2,$3,$4,$5}'> $xfile
+# la date time dmd
+
+# get individual profiles.
+set yfile = ../data/fwd_dmd_${dat}_ex2.dat
+cat $xfile | awk '{print "C"$0}' > $yfile
+
+set cc = 1
+while ($cc < $dd)
+    set pxfile = ../data/fwd_dmd_${dat}_p${cc}.dat
+    echo "Generate file" $pxfile 
+    cat $yfile | grep "C${cc} " | awk '{print $2,$3,$4}' > $pxfile
+
+    @ cc++
+end
+
+
+    
+	

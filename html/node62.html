@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Execution timing () and feasibility () models</TITLE>
+<META NAME="description" CONTENT="Execution timing () and feasibility () models">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node61.html">
+<LINK REL="up" HREF="node59.html">
+<LINK REL="next" HREF="node63.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1035"
+  HREF="node63.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1031"
+  HREF="node59.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1027"
+  HREF="node61.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1033"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1036"
+  HREF="node63.html">(External) Timing constraint calculator</A>
+<B> Up:</B> <A NAME="tex2html1032"
+  HREF="node59.html">SCA Components</A>
+<B> Previous:</B> <A NAME="tex2html1028"
+  HREF="node61.html">Weather prediction model -()</A>
+ &nbsp; <B>  <A NAME="tex2html1034"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00092300000000000000">
+Execution timing (<IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="$ X$">) and feasibility (<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \Phi $">) models</A>
+</H3>
+These are the scheduler's models of the function of the executor (RCS or simulator or whatever). They provide information about the feasibility and resource consumption of groups of observations. Specifically we need to know 'can group x be done at t ?' and 'how long will it take to do group x ?' Scheduler may want this information broken down e.g. 'how much of that time is just slewing or acquiring ?' Execution is a stochastic process - the effects of parallel execution of the decomposed tasks and various heuristics used by the executor along with genuine uncertainty in individual execution times of sub tasks (e.g. time to acquire with A/G, time for filter change going one way or other, mysterious internal calibration within instruments). Important this estimate is good - over-estimate could lead to a potential candidate being rejected for no good reason, under-estimate could lead to selection of an unsuitable candidate.
+
+<P>
+Describe the various events that feed into this model - rcs/tcs/ics info is needed plus when feasible external timing constraints
+Describe the various items to take into account (number of slews/rotator shifts, offsets (mosaic or requested by instrument), reconfiguration (including focus offsets etc)). also acquisition autoguiding, backoffs and retries - how frequent)? Complexity of executor's task decomposition.
+
+<P>
+
+<UL>
+<LI>slew rate in each axis, when target changes, rot mode or angle changes, rot CP solution changes
+</LI>
+<LI>instrument filter defocus
+</LI>
+<LI>fold mirror move/deploy when inst changes
+</LI>
+<LI>instrument config change (filter wheel, grating etc)
+</LI>
+<LI>instrument calibration before/after image, lamp calibs
+</LI>
+<LI>configuration of acquisition inst when required
+</LI>
+<LI>acquisition by acquisition instrument onto spectrograph slit
+</LI>
+<LI>autoguider acquisition
+</LI>
+<LI>aperture offsets
+</LI>
+<LI>readout time (per instrument) also depends on binning and windowing
+</LI>
+<LI>data write-to-disc time (per instrument)
+</LI>
+<LI>recovery and retry time delays
+</LI>
+</UL>
+
+<P>
+There is a need to distinguish between the model used by the scheduler to work out the likely execution times and the stochastic model used by the executor (simulation control application) to decide how long the group will actually take. 
+
+<P>
+Some notes about combining uniform random distributions (assume each variable param is uniform random) - use poisson or binomial distibution - some simulations with an example group.
+
+<P>
+some examples of xms - can we get some real data ? needs extra embedded instrumentation and a way to store e.g. mysql on occ.can we just pull from stored history data. TBD check hist items for some frequent group. NO just the nominal time is stored though RCS knows it anyway.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1035"
+  HREF="node63.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1031"
+  HREF="node59.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1027"
+  HREF="node61.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1033"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1036"
+  HREF="node63.html">(External) Timing constraint calculator</A>
+<B> Up:</B> <A NAME="tex2html1032"
+  HREF="node59.html">SCA Components</A>
+<B> Previous:</B> <A NAME="tex2html1028"
+  HREF="node61.html">Weather prediction model -()</A>
+ &nbsp; <B>  <A NAME="tex2html1034"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

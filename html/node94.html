@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Groups</TITLE>
+<META NAME="description" CONTENT="Groups">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node95.html">
+<LINK REL="previous" HREF="node93.html">
+<LINK REL="up" HREF="node92.html">
+<LINK REL="next" HREF="node95.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1431"
+  HREF="node95.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1427"
+  HREF="node92.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1421"
+  HREF="node93.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1429"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1432"
+  HREF="node95.html">Observations</A>
+<B> Up:</B> <A NAME="tex2html1428"
+  HREF="node92.html">Phase2 Database</A>
+<B> Previous:</B> <A NAME="tex2html1422"
+  HREF="node93.html">Proposal</A>
+ &nbsp; <B>  <A NAME="tex2html1430"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000182000000000000000">
+Groups</A>
+</H2>
+A group is a set of observations which is performed as a single scheduling entity - atomic. A group contains a list of observations, timing/enablement constraints, observing condition constraints/preferences, sequencing information for the observations and a quality-of-service metric (i.e. a class which can examine the execution results and yield a QOS measurement). 
+Note: The QosMetric may just be represented by a set of user-specified preferences which are fed into a default QosMetric class to get some sort of QOS measure.
+
+<P>
+NOtes about constraints:-
+Some are deterministic others are variable and uncertain - un-predictable or poorly predictable as horizon increases.
+<DL>
+<DT><STRONG>Timing constraints</STRONG></DT>
+<DD>Always predictable. Various categories - flexible (one-off), monitoring (cyclic/repeating), fixed/ephem (need special treatment)  
+</DD>
+<DT><STRONG>Observing constraints</STRONG></DT>
+<DD>Deterministic - (moon distance, airmass limit).
+Variable - (seeing limit, photom limit).
+</DD>
+</DL>
+
+<P>
+Group made up of observations.
+
+<P>
+Utility functions - aggregation scores or averaging for target parameters.
+list of scoring metrics. 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

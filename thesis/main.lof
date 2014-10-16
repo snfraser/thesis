@@ -1,0 +1,151 @@
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Scheduling as a CSP.}}{19}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Phase2 Architecture.}}{19}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Group Linking.}}{20}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Overview of Architecture.}}{22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Various metric models}}{51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison of models for determining airmass image quality advantage ($b(z)$)}}}{51}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Nightly hours plots for technical downtime for years 2005,2006,2007(part). Large blocks are empty due to operations policy preference for reporting bad weather downtime rather than technical when both occur simulataneously.}}{65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Technical downtime per night 2005.}}}{65}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Technical downtime per night 2006.}}}{65}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Technical downtime per night 2007.}}}{65}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribution of fraction of night lost to technical problems.}}{66}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Monthly averaged technical downtime hours.}}{66}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Distribution of intersample gaps.}}{69}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Relative distribution of humidity at telescope site.}}{70}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Cumulative distribution of humidity at telescope site.}}{71}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Relative distribution of moisture fraction at telescope site.}}{72}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Cumulative distribution of moisture fraction at telescope site.}}{72}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Relative distribution of wind speed at telescope site.}}{73}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Cumulative distribution of wind speed at telescope site.}}{73}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Relative distribution of temperature at telescope site.}}{74}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Cumulative distribution of temperature at telescope site.}}{74}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Monthly averaged good weather fraction ($1-\Delta _W$) based on humidity level.}}{75}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Example humidity profiles.}}{77}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Humidity profile 2007-01-29.}}}{77}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Humidity profile 2007-02-20.}}}{77}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Humidity profile 2007-03-26.}}}{77}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Humidity profile 2007-03-28.}}}{77}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Humidity profile 2007-04-15.}}}{77}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Humidity profile 2007-04-16.}}}{77}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Cumulative probability of lengths of good/bad weather runs.}}{78}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Cumulative probability of lengths of good/bad weather runs.}}{79}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Time variation of lengths of good/bad periods based on humidity level.}}{80}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Accuracy of look-ahead weather prediction using time decay model against look-ahead time}}{80}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Variation of cross-over point for look-ahead weather prediction using time decay model with scale factor.}}{81}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Monthly averaged weather downtime fraction.}}{81}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Nightly hours plots for bad weather for years 2005, 2006, 2007(part)}}{82}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Weather downtime per night 2005.}}}{82}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Weather downtime per night 2006.}}}{82}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Weather downtime per night 2007.}}}{82}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Nightly hours plots for observing time for years 2005, 2006, 2007(part)}}{84}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Observing hours per night 2005.}}}{84}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Observing hours per night 2006.}}}{84}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Observing hours per night 2007.}}}{84}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Cumulative probability of lengths of bad weather runs.}}{85}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Monthly count of images used for deriving seeing statistics.}}{86}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Relative distribution of seeing data.}}{87}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Cumulative distribution of seeing data.}}{87}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Fractional seeing change (FSC) after \cite {racine96temporal}.}}{88}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Seeing averaged by UT binning of time over all available nights.}}{89}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Counts of samples per bin for UT averaged seeing data.}}{89}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Corrected seeing avergared per month over available images.}}{90}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Comparison of seeing distribution by month over available images.}}{90}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Relative seeing distributions by month January - June}}{91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{91}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Relative seeing distributions by month July - December}}{92}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{92}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{92}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Scheduling simulation framework.}}{102}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Distribution of execution times for stochastic execution model}}{103}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Trends of demand statistics over available ODB snapshots}}{106}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trend of average value of demand profile $C_D$ for available ODB dataset}}}{106}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trend of peak value of demand profile $C_D$ for available ODB dataset}}}{106}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Trends of load statistics over available ODB snapshots}}{107}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trend of nightly number of groups executed for available ODB dataset}}}{107}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trend of nightly load $C_L$ and $C_{CL}$ for available ODB dataset}}}{107}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Trend of nightly weighted load $C_{PL}$ and $C_{UL}$ for available ODB dataset}}}{107}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Contention profile ensembles for case study nights 1 and 2}}{110}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Contention profile $C_c$ ensemble for night 2.}}}{110}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Contention profile $C_c$ ensemble for night 1.}}}{110}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Effects of environment model on contention profile for night 1}}{111}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{FP}$ night 1.}}}{111}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{FX}$ night 1.}}}{111}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{RA}$ night 1.}}}{111}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{RA}$ night 1.}}}{111}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Variation of contention profile $C_c$ under mixed environment for night 1.}}}{111}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Effects of environment model on contention profile for night 2}}{112}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{FP}$ night 2.}}}{112}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{FX}$ night 2.}}}{112}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{RA}$ night 2.}}}{112}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Variation of contention profile $C_c$ under $E_{RA}$ night 2.}}}{112}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Variation of contention profile $C_c$ under mixed environment for night 2.}}}{112}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Results for night 2 (7-8 November 2007) for environment model $E_{FP}$}}{117}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{PX}$ schedule quality metric}}}{117}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{OA}$ schedule quality metric}}}{117}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{OA}$ schedule quality metric for Flexible groups}}}{117}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{PX}$ schedule quality metric for Flexible groups}}}{117}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{TD}$ schedule quality metric}}}{117}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{RN}$ schedule quality metric}}}{117}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Results for night 2 (7-8 November 2007) for environment model $E_{FX}$}}{118}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{PX}$ schedule quality metric}}}{118}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{OA}$ schedule quality metric}}}{118}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{OA}$ schedule quality metric for Flexible groups}}}{118}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{PX}$ schedule quality metric for Flexible groups}}}{118}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{TD}$ schedule quality metric}}}{118}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Effect of varying $w_{trans}$ relative to $w_{p}$ on $Q_{RN}$ schedule quality metric}}}{118}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Results for night 2 (7-8 November 2007) for variable environment models.}}{119}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison of effect of environment model ($E_{FP}$, $E_{FX}$) on $Q_{OA}$ for variable $w_{trans}$.}}}{119}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparison of effect of environment model ($E_{FP}$, $E_{FX}$) on $Q_{PX}$ for variable $w_{trans}$.}}}{119}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Comparison of effect of environment model ($E_{FP}$, $E_{FX}$) on $Q_{RN}$ for variable $w_{trans}$.}}}{119}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Comparison of effect of environment model ($E_{FP}$, $E_{FX}$) on $Q_{TD}$ for variable $w_{trans}$.}}}{119}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Comparison of dependancy of $Q_{OA}$ on $w_{trans}$ for all groups and flexible groups under environment model $E_{FP}$.}}}{119}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Comparison of dependancy of $Q_{PX}$ on $w_{trans}$ for all groups and flexible groups under environment model $E_{FP}$.}}}{119}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Contention for night 13-14 November 2007.}}{121}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Demand for night 13-14 November 2007.}}{121}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Environmental scenario (7 day snapshot).}}{126}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Environmental scenario - comparison between runs of $E_{1800}$}}{127}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Environmental scenario - relative distribution of stable period lengths.}}{128}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Environmental scenario - cumulative distribution of stable period lengths.}}{129}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces Environmental scenario 2007-11-15 (72 hour snapshot).}}{130}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Comparison of average contention measure and number of groups executed per night for generated phase2 models and ODB snapshots.}}{132}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Variation of average contention $\mathaccentV {bar}016{C_c}$ for generated phase2 models.}}}{132}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Variation of number of executed groups for generated phase2 models.}}}{132}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Variation of average contention $\mathaccentV {bar}016{C_c}$ for ODB snapshots.}}}{132}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Variation of number of executed groups for ODB snapshots.}}}{132}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Variation of $Q_{SU}$ with $C_C$ for variable phase2 generator models.}}{133}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Variation of $Q_{XT}$ with $C_C$ for variable phase2 generator models.}}{133}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{Best}$.}}{134}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{FR}$.}}{134}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{RS}$.}}{135}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{Best}$.}}{135}
+\contentsline {figure}{\numberline {10.13}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{FR}$.}}{136}
+\contentsline {figure}{\numberline {10.14}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{RS}$.}}{136}
+\contentsline {figure}{\numberline {10.15}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{137}
+\contentsline {figure}{\numberline {10.16}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{137}
+\contentsline {figure}{\numberline {10.17}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{138}
+\contentsline {figure}{\numberline {10.18}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{138}
+\contentsline {figure}{\numberline {10.19}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{139}
+\contentsline {figure}{\numberline {10.20}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{139}
+\contentsline {figure}{\numberline {10.21}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $C_c$.}}{140}
+\contentsline {figure}{\numberline {10.22}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{140}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Distribution of proximity measure $\pi $ for volatile updates received.}}{144}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Distribution of span measure $\rho $ for volatile updates received.}}{144}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Distribution of UT arrival times of volatile updates received.}}{145}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Rate of arrival of volatile updates.}}{146}
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Rate of increase of executable observations.}}{146}
+\contentsline {figure}{\numberline {11.6}{\ignorespaces Flowchart for simulation algorithm adapted to include volatility generator.}}{147}
+\contentsline {figure}{\numberline {11.7}{\ignorespaces Effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for QLAS.}}{150}
+\contentsline {figure}{\numberline {11.8}{\ignorespaces Effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for ELAS.}}{151}
+\contentsline {figure}{\numberline {11.9}{\ignorespaces Comparison of effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for QLAS and ELAS ($H = 0.5h$).}}{151}
+\contentsline {figure}{\numberline {11.10}{\ignorespaces Comparison of effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for QLAS and ELAS ($H = 1h$).}}{152}
+\contentsline {figure}{\numberline {11.11}{\ignorespaces Comparison of effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for QLAS and ELAS ($H = 2h$).}}{152}
+\contentsline {figure}{\numberline {11.12}{\ignorespaces Comparison of effect of proximity ($\pi $) of volatile events on schedule quality ($Q_{SU}$) for QLAS and ELAS ($H = 4h$).}}{153}

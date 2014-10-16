@@ -1,0 +1,112 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: final_big.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: f_introduction.aux
+A level-1 auxiliary file: f_review.aux
+A level-1 auxiliary file: f_metrics.aux
+A level-1 auxiliary file: f_character.aux
+A level-1 auxiliary file: f_architecture.aux
+A level-1 auxiliary file: f_experiments.aux
+A level-1 auxiliary file: fx_mam.aux
+A level-1 auxiliary file: fx_scoring.aux
+A level-1 auxiliary file: fx_complexity2.aux
+A level-1 auxiliary file: fx_stability.aux
+A level-1 auxiliary file: fx_disruption.aux
+A level-1 auxiliary file: fx_volatility.aux
+A level-1 auxiliary file: fx_reliability.aux
+A level-1 auxiliary file: f_conclusions.aux
+A level-1 auxiliary file: appendix_p2gen.aux
+A level-1 auxiliary file: appendix_stats.aux
+A level-1 auxiliary file: appendix_stats_includes.aux
+The style file: plainnat.bst
+Database file #1: biblio.bib
+Warning--string name "oct." is undefined
+--line 334 of file biblio.bib
+I was expecting a `,' or a `}'---line 402 of file biblio.bib
+ : 
+ : @inproceedings{drummond94jic,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field part---line 521 of file biblio.bib
+ :   month= 
+ :          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 533 of file biblio.bib
+ : 
+ : @Article{gan05entropy,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--string name "july" is undefined
+--line 615 of file biblio.bib
+Warning--string name "july" is undefined
+--line 1291 of file biblio.bib
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1343 of file plainnat.bst
+Warning--empty institution in haxhierarchic73
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1425 of file plainnat.bst
+Warning--can't use both volume and number fields in marchant08calib
+Warning--there's a number but no volume in parunak97ant
+Warning--can't use both volume and number fields in sozou98hyperbolic
+You've used 105 entries,
+            2774 wiz_defined-function locations,
+            1199 strings with 23904 characters,
+and the built_in function-call counts, 52381 in all, are:
+= -- 4775
+> -- 3015
+< -- 109
++ -- 1017
+- -- 911
+* -- 3938
+:= -- 7916
+add.period$ -- 338
+call.type$ -- 105
+change.case$ -- 509
+chr.to.int$ -- 104
+cite$ -- 214
+duplicate$ -- 2432
+empty$ -- 4276
+format.name$ -- 1078
+if$ -- 11387
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 87
+newline$ -- 538
+num.names$ -- 442
+pop$ -- 1301
+preamble$ -- 1
+purify$ -- 402
+quote$ -- 0
+skip$ -- 1897
+stack$ -- 0
+substring$ -- 2001
+swap$ -- 522
+text.length$ -- 53
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1145
+warning$ -- 4
+while$ -- 461
+width$ -- 0
+write$ -- 1400
+(There were 15 error messages)

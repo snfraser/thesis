@@ -1,0 +1,18 @@
+#!/bin/csh
+
+# Plot exec timing distributions for a nominated group
+
+set file1 = $1
+set lab1 = $2
+set file2 = $3
+set lab2 = $4
+
+gnuplot <<EOF
+set output "simf_exec_plot.eps"
+set terminal postscript enhanced color
+set xlabel "Execution time [sec]"
+set ylabel "Number of tests"
+set title "Distribution of execution times for stochastic execution timing model"
+set xrange [500:1000]
+plot "${file1}" using 1:2 with point pt 5 ti "${lab1}", "${file2}" using 1:2 with point pt 5 ti "${lab2}"
+EOF

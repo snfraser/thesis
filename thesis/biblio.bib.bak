@@ -1,0 +1,1149 @@
+
+@inproceedings{aussem02online,
+  author =	 {A. Aussem and G. Tran},
+  title =	 {On-line prediction of astronomical seeing
+                  fluctuations with neural networks},
+  booktitle =	 {ASP Conference Series},
+  year =	 2002
+}
+
+@INPROCEEDINGS{varela07sat,
+   author = {{Varela}, A.~M. and {Bertolin}, C. and {Mu{\~n}oz-Tu{\~n}{\'o}n}, C. and 
+	{Fuensalida}, J.~J. and {Ortolani}, S.},
+    title = "{In situ calibration using satellite data results}",
+ keywords = {Site Testing, Atmospheric Effects},
+booktitle = {Revista Mexicana de Astronomia y Astrofisica Conference Series},
+     year = 2007,
+   series = {Revista Mexicana de Astronomia y Astrofisica, vol. 27},
+   volume = 31,
+    month = oct,
+    pages = {106-112},
+   adsurl = {http://adsabs.harvard.edu/abs/2007RMxAC..31..106V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@misc{aussem94dynamical,
+  author =	 "A. Aussem and F. Murtagh and M. Sarazin",
+  title =	 "Dynamical recurrent neural networks and pattern
+                  recognition methods for time series prediction:
+                  application to seeing and temperature forecasting in
+                  the context of ESO's VLT astronomical weather
+                  station",
+  text =	 "A. Aussem, F. Murtagh and M. Sarazin, Dynamical
+                  recurrent neural networks and pattern recognition
+                  methods for time series prediction: Application to
+                  seeing and temperature forecasting in the context of
+                  ESO's VLT astronomical weather station, Vistas in
+                  Astronomy, 38, 1994, 357--374.",
+  year =	 1994,
+  url =		 "citeseer.ist.psu.edu/aussem94dynamical.html"
+}
+
+@misc{aussem94fuzzy,
+  author =	 "A. Aussem and F. Murtagh and M. Sarazin",
+  title =	 "Fuzzy astronomical seeing nowcasts with a dynamical
+                  and recurrent connectionist network",
+  text =	 "Aussem, A., Murtagh, F. and Sarazin, M. (1994) Fuzzy
+                  astronomical seeing nowcasts with a dynamical and
+                  recurrent connectionist network, Neurocomputing,
+                  submitted.",
+  year =	 "1994",
+  url =		 "citeseer.ist.psu.edu/aussem94fuzzy.html"
+}
+
+@inproceedings{beck97texturebased,
+  author =	 "J. Christopher Beck and Andrew J. Davenport and
+                  Edward M. Sitarski and Mark S. Fox",
+  title =	 "Texture-Based Heuristics for Scheduling Revisited",
+  booktitle =	 "Proceedings of the 14th National Conference on
+                  Artificial Intelligence ({AAAI}-97)",
+  publisher =	 "AAAI Press / MIT Press",
+  address =	 "Providence, Rhode Island, USA",
+  isbn =	 "0-262-51095-2",
+  pages =	 "241--248",
+  year =	 "1997",
+  url =		 "citeseer.ist.psu.edu/beck97texturebased.html"
+}
+
+@inproceedings{ bonabeau97adaptive,
+  author =	 "Eric Bonabeau and Andrej Sobkowski and Guy Theraulaz
+                  and Jean-Luis Deneubourg",
+  title =	 "Adaptive Task Allocation Inspired by a Model of
+                  Division of Labor in Social Insects",
+  booktitle =	 "Biocomputing and Emergent Computation",
+  publisher =	 "World Scientific",
+  editor =	 "Dan Lundh and Bjorn Olsson and Ajit Narayanan",
+  pages =	 "36--45",
+  year =	 "1997",
+  url =		 "citeseer.ist.psu.edu/bonabeau98adaptive.html"
+}
+
+@misc{bresina94jic,
+  author =	 "J. Bresina and M. Drummond and K. Swanson",
+  year =	 "1994",
+  title =	 "Managing Action Duration Uncertainty with
+                  Just-In-Case Scheduling",
+  text =	 "Bresina, J, Drummond, M., and Swanson, K., Managing
+                  Action Duration Uncertainty with Just-In-Case
+                  Scheduling, Working notes of the AAAI Spring Spring
+                  Symposium on Decision-Theoretic Planning",
+  location =	 "Stanford, CA, United States",
+  .publisher =	 "AAAI Press",
+  address =	 "Menlo Park, CA, USA"
+}
+
+@InProceedings{bresina95expected,
+  author =	 {John Bresina and Mark Drummond and Keith Swanson},
+  title =	 {Expected Solution Quality},
+  booktitle =	 {Proceedings of the 14th International Joint
+                  Conference on Artificial Intelligence (IJCAI'95)},
+  pages =	 {1583--1591},
+  year =	 {1995},
+  editor =	 {Chris Mellish},
+  address =	 {Palais de Congres, Montreal, Quebec, Canada},
+  month =	 {aug},
+  organization = {AAAI},
+  publisher =	 {AAAI Press}
+}
+
+@inproceedings{bresina96hbss,
+  author =	 "J.L. Bresina",
+  title =	 "Heuristic-biased stochastic sampling",
+  booktitle =	 "Proceedings of the AAAI-96",
+  year =	 "1996",
+  pages =	 "271--278",
+  annote =	 "This paper presents a generalization of iterative
+                  sampling called Heuristic-Biased Stochastic Sampling
+                  (HBSS). The two search techniques have the same
+                  overall control structure. The difference lies in
+                  how a choice is made at each decision point. HBSS
+                  uses a given search heuristic to focus its
+                  exploration. The degree of focusing is determined by
+                  a chosen {\em bias function} that reflects the
+                  confidence one has in the heuristic's accuracy. This
+                  methodology can be directly applied in a {GRASP}
+                  construction phase, by biasing the selection of RCL
+                  elements to favor those with higher greedy function
+                  values."
+}
+
+@InProceedings{bresina99increased,
+  author =	 {J. Bresina and K. Golden and D. Smith and
+                  R. Washington},
+  title =	 {Increased flexibility and robustness of Mars rovers},
+  booktitle =	 {Proceedings of the Fifth International. Symposium on
+                  Artificial Intelligence, Robotics and Automation in
+                  Space},
+  year =	 {1999},
+  address =	 {Noordwijk, Netherlands},
+}
+
+@misc{chien00aspen,
+  author =	 "S. Chien and G. Rabideau and R. Knight and
+                  R. Sherwood and B. Engelhardt and D. Mutz, T. Estlin
+                  and B. Smith and F. Fisher and T. Barrett and
+                  G. Stebbins and D. Tran",
+  title =	 "{ASPEN} Automating Space Mission Operations using
+                  Automated Planning and Scheduling",
+  text =	 "S. Chien, G. Rabideau, R. Knight, R. Sherwood,
+                  B. Engelhardt, D. Mutz, T. Estlin, B. Smith,
+                  F. Fisher, T. Barrett, G. Stebbins, D. Tran, ASPEN -
+                  Automating Space Mission Operations using Automated
+                  Planning and Scheduling, SpaceOps 2000, Toulouse,
+                  France, June 2000.",
+  year =	 "2000"
+}
+
+@misc{chien98integrated,
+  author =	 {Steve Chien},
+  year =	 {1998}
+}
+
+@InProceedings{chien99iterative,
+  author =	 {Steve Chien and Russell Knight and Andre Stechert
+                  and Rob Sherwood and Gregg Rabideau},
+  title =	 {Using Iterative Repair to Increase the
+                  Responsiveness of Planning and Scheduling for
+                  Autonomous Spacecraft},
+  booktitle =	 {{IJCAI99} Workshop on Scheduling and Planning to
+                  meet Real-time Monitoring in a Dynamic and Uncertain
+                  World},
+  year =	 1999,
+  address =	 {Stockholm, Sweden},
+  month =	 {August},
+  comment =	 {A description of the CASPER project.},
+  abstract =	 {An autonomous spacecraft must balance long-term and
+                  short-term considerations. It must perform
+                  purposeful activities that ensure long-term science
+                  and engineering goals are achieved and ensure that
+                  it maintains positive resource margins. This
+                  requires planning in advance to avoid a series of
+                  shortsighted decisions that can lead to
+                  failure. However, it must also respond in a timely
+                  fashion to a somewhat dynamic and unpredictable
+                  environment. Thus, spacecraft plans must often be
+                  modified due to fortuitous events such as early
+                  completion of observations and setbacks such as
+                  failure to acquire a guidestar for a science
+                  observation. This paper describes the use of
+                  iterative repair to support continuous modification
+                  and updating of a current working plan in light of
+                  changing operating context.},
+  url =		 {http://jmvidal.cse.sc.edu/library/chien99a.pdf}
+}
+
+@inproceedings{cicirello01random,
+   author = "Vincent Cicirello and Stephen Smith",
+   title = "Randomizing Dispatch Scheduling Policies",
+   booktitle = "The 2001 AAAI Fall Symposium: Using Uncertainty Within Computation",
+   month = "November",
+   year = "2001"
+}
+
+@inproceedings{cicirello02amplification,
+  author =	 "Vincent Cicirello and Stephen Smith",
+  title =	 "Amplification of Search Performance through
+                  Randomization of Heuristics",
+  booktitle =	 "Principles and Practice of Constraint Programming:
+                  8th International Conference, Proceedings",
+  month =	 "September",
+  year =	 "2002",
+  volume =	 "LNCS 2470 of Lecture Notes in Computer Science",
+  pages =	 "124-138",
+  publisher =	 "Springer-Verlag"
+}
+
+@Manual{clayandfraser06tbd,
+  title =	 {Phase2 Web interface},
+  author =	 {N.R. Clay and S.N. Fraser},
+  organization = {Astrophysics Research Institute},
+  address =	 {Liverpool JMU},
+  year =	 2006
+}
+
+@misc{clements97heuristic,
+  author =	 "David P. Clements and James M. Crawford and David
+                  E. Joslin and George L. Nemhauser and Markus
+                  E. Puttlitz and Martin W. P. Savelsbergh",
+  title =	 "Heuristic Optimization: A hybrid AI/OR approach",
+  text =	 "D. Clements, J. Crawford, D. Joslin, G. Nemhauser,
+                  M. Puttlitz, and M. Savelsbergh. Heuristic
+                  optimization: A hybrid AI/OR approach. In Workshop
+                  on Industrial Constraint-Directed Scheduling, 1997.",
+  year =	 "1997",
+  url =		 "citeseer.ist.psu.edu/107496.html"
+}
+
+@inproceedings{davenport01slack,
+  author =	 "A.J. Davenport and C. Gefflot and J.C. Beck",
+  title =	 "Slack-based Techniques for Robust Schedules",
+  booktitle =	 "Proceedings of the Sixth European Conference on
+                  Planning (ECP-2001)",
+  year =	 "2001",
+  url =		 "citeseer.ist.psu.edu/453972.html"
+}
+
+@inproceedings{draper99cyclic,
+  author =	 {Denise Draper and Ari K. Johnsson and David
+                  P. Clements and David Joslin},
+  title =	 {Cyclic Scheduling},
+  booktitle =	 {IJCAI '99: Proceedings of the Sixteenth
+                  International Joint Conference on Artificial
+                  Intelligence},
+  year =	 {1999},
+  isbn =	 {1-55860-613-0},
+  pages =	 {1016--1021},
+  publisher =	 {Morgan Kaufmann Publishers Inc.},
+  address =	 {San Francisco, CA, USA},
+}
+
+@inproceedings{drummond94jic,
+  author =	 {Mark Drummond and John Bresina and Keith Swanson},
+  title =	 {Just-in-case scheduling},
+  booktitle =	 {AAAI'94: Proceedings of the twelfth national
+                  conference on Artificial intelligence (vol. 2)},
+  year =	 {1994},
+  isbn =	 {0-262-61102-3},
+  pages =	 {1098--1104},
+  location =	 {Seattle, Washington, United States},
+  publisher =	 {American Association for Artificial Intelligence},
+  address =	 {Menlo Park, CA, USA},
+}
+
+@misc{fipa29contract,
+  author =	 "FIPA",
+  title =	 {FIPA Contract Net Interaction Protocol
+                  Specification},
+  year =	 "2002",
+  publisher =	 "Foundation for Intelligent Physical Agents",
+  url =		 "http://www.fipa.org/specs/fipa00029/"
+}
+
+@misc{fipa37acl,
+  author =	 "FIPA",
+  title =	 {FIPA Communicative Act Library Specification},
+  year =	 "2000",
+  publisher =	 "Foundation for Intelligent Physical Agents",
+  url =		 "http://www.fipa.org/specs/fipa00037/"
+}
+
+@phdthesis{fox83thesis,
+  author =	 "Mark S Fox",
+  title =	 "Constraint-Directed Search: A Case Study of Job-Shop
+                  Scheduling",
+  school =	 "Robotics Institute, Carnegie Mellon University",
+  month =	 "December",
+  year =	 "1983",
+  address =	 "Pittsburgh, PA"
+}
+
+Proc. SPIE Vol. 5493, p. 331-340, Optimizing Scientific Return for Astronomy through Information Technologies; Peter J. Quinn, Alan Bridger; Eds.
+Publication
+Date: 	Sep 2004
+@InProceedings{fraser02robotic,
+  author =	 {Stephen N. Fraser and Iain A. Steele},
+  title =	 {Object oriented design of the {L}iverpool
+                  {T}elescope {R}obotic {C}ontrol {S}ystem},
+  booktitle =	 {Advanced {T}elescope and {I}nstrumentation Control
+                  Software II, Proceedings of SPIE},
+  pages =	 {443--454},
+  year =	 {2002},
+  editor =	 {Hilton Lewis},
+  volume =	 {4848},
+  month =	 {dec},
+  publisher =	 {SPIE}
+}
+
+@InProceedings{fraser04scheduling,
+  author =	 {Stephen N. Fraser},
+  title =	 {Robotic telescope scheduling: {T}he {L}iverpool
+                  {T}elescope experience},
+  booktitle =	 {Optimizing Scientific Return for Astronomy through
+                  Information Technologies, Proceedings of SPIE},
+  pages =	 {331--340},
+  year =	 2004,
+  editor =	 {Peter J. Quinn and Alan Bridger},
+  volume =	 5493,
+  month =	 {sep},
+  publisher =	 {SPIE}
+}
+
+@Article{fraser06scheduling,
+  author = 	 {Stephen N. Fraser},
+  title = 	 {Scheduling blah, blah},
+  journal = 	 {Astrnomische Nachrichtem},
+  year = 	 {2006},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTpages = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@inproceedings{fukunaga04robust,
+  author =	 "Alex F. Fukunaga and Gregg Rabideau and Steve Chien",
+  title =	 "Robust Local Search for Spacecraft Operations Using
+                  Adaptive Noise",
+  booktitle =	 {IWPSS 4th International Workshop on Planning and
+                  Scheduling for Space},
+  year =	 {2004},
+  month =	 {June},
+  url =		 "citeseer.ist.psu.edu/667303.html",
+  location =	 "Darmstadt, Germany"
+}
+
+@Article{gan05entropy,
+  author =	 {H S Gan and A Wirth},
+  title =	 {Comparing deterministic, robust and online
+                  scheduling using entropy},
+  journal =	 {International Journal of Production Research},
+  year =	 {2005},
+  volume =	 {43},
+  number =	 {10},
+  pages =	 { 2113--2134},
+  month =	 {may}
+}
+
+@incollection{glover99tabu,
+  author =	 "F. Glover",
+  title =	 "Tabu Search and Adaptive Memory Programming -
+                  Advances, Applications, and Challenges",
+  booktitle =	 "Interfaces in Computer Science and Operations
+                  Research",
+  publisher =	 "Kluwer Academic Publishers",
+  address =	 "Hingham, MA, USA",
+  editor =	 "R.S. Barr, R.V. Helgason and J.L. Kenngington",
+  year =	 "1996",
+  pages =	 "1-75"
+}
+
+@Misc{granzer03stella,
+  author =	 {Thomas Granzer},
+  title =	 {Scheduling STELLA and all other robotic telescopes},
+  howpublished = {Web. http://www.aip.de/stella/index.php?docs},
+  month =	 {oct},
+  year =	 {2003}
+}
+
+@article{gratch96adaptive,
+  author =	 {J Gratch and S Chien},
+  title =	 {Adaptive Problem-solving for Large-scale Scheduling
+                  Problems: A Case Study},
+  journal =	 {Journal Of Atrificial Intelligence Research},
+  volume =	 {4},
+  pages =	 {365--396},
+  url =
+                  {http://www.citebase.org/cgi-bin/citations?id=oai:arXiv.org:cs/9605104},
+  year =	 {1996}
+}
+
+@Article{guerrero98extinct,
+  author = 	 {M.A. Guerrero and R.J. Garcia-Lopez and R.L.M. Corradi and A. Jimenez and J.J. Fuensalida and J.M. Rodriguez-Espinosa and A. Alonso and M. Centurion and F. Prada},
+  title = 	 {Extinction over the Canarian Observatories: the limited influence of Saharan dust},
+  journal = 	 {New Astronomy Reviews},
+  year = 	 {1998},
+  volume = 	 {42},
+  number = 	 {},
+  pages = 	 {529-532}
+}
+
+@inproceedings{hart99immune,
+  author =	 {Emma Hart and Peter Ross},
+  title =	 {An Immune System Approach to Scheduling in Changing
+                  Environments.},
+  booktitle =	 {GECCO},
+  year =	 {1999},
+  pages =	 {1559--1566},
+  crossref =	 {DBLP:conf/gecco/1999},
+  bibsource =	 {DBLP, http://dblp.uni-trier.de}
+}
+
+@misc{hoos02adaptive,
+  author =	 "H. Hoos",
+  title =	 "An Adaptive Noise Mechanism for WalkSAT",
+  text =	 "H.H. Hoos. An Adaptive Noise Mechanism for
+                  WalkSAT. To appear in Proc.AAAI02, AAAI Press,
+                  2002.",
+  year =	 "2002",
+  url =		 "citeseer.ist.psu.edu/hoos02adaptive.html"
+}
+
+@inproceedings{ishida96improving,
+  author =	 "Toru Ishida and Masashi Shimbo",
+  title =	 "Improving the Learning Efficiencies of Realtime
+                  Search",
+  booktitle =	 "{AAAI}/{IAAI}, Vol. 1",
+  volume =	 "1",
+  pages =	 "305--310",
+  year =	 "1996",
+  url =		 "citeseer.ist.psu.edu/ishida96improving.html"
+}
+
+@Article{jimenz98diurnal,
+  author = 	 {A. Jimenez and H. Gonzalez Jorge and M.C. Rabello-Soares},
+  title = 	 {Diurnal atmospheric extinction over Teide Observatory (Tenerife, Canary Islands)},
+  journal = 	 {Astronomy and Astrophysics Supplement Series},
+  year = 	 {1998},
+  volume = 	 {129},
+  pages = 	 {413-423},
+  month = 	 {apr}
+  }
+
+@article{jingpeng05driver,
+  author =	 {Jingpeng Li},
+  title =	 {A Self-Adjusting Algorithm for Driver Scheduling},
+  journal =	 {Journal of Heuristics},
+  volume =	 {11},
+  number =	 {4},
+  year =	 {2005},
+  issn =	 {1381-1231},
+  pages =	 {351--367},
+  doi =		 {http://dx.doi.org/10.1007/s10732-005-2220-1},
+  publisher =	 {Kluwer Academic Publishers},
+  address =	 {Hingham, MA, USA},
+}
+
+@incollection{johnston94spike,
+  author =	 {Mark D Johnston and Glen E Miller},
+  title =	 {SPIKE: Intelligent Scheduling of Hubble Space
+                  Telescope Observations},
+  pages =	 {391--422},
+  booktitle =	 {Intelligent Scheduling},
+  editor =	 {Mark Fox and Monty Zweben},
+  isbn =	 {1-55860-260-7},
+  publisher =	 {Morgan-Kaufmann},
+  year =	 {1994},
+  address =	 {San Francisco, CA, USA}
+}
+
+@misc{jones98survey,
+  author =	 "A. Jones and J. Rabelo",
+  title =	 "Survey of Job Shop Scheduling Techniques",
+  text =	 "Jones, A. and Rabelo, J. C. (1998). Survey of Job
+                  Shop Scheduling Techniques, NISTIR, National
+                  Institute of Standards and Technology, Gaithersburg,
+                  MD.",
+  year =	 "1998",
+  url =		 "citeseer.ifi.unizh.ch/jones98survey.html"
+}
+
+@article{jorgenson91attractor,
+  author =	 "M. B. Jorgenson and G. J. M. Aitken and E. K. Hege",
+  title =	 "Evidence of a chaotic attractor in star-wander data",
+  journal =	 "Optics Letters",
+  year =	 1991,
+  month =	 "jan",
+  volume =	 "16",
+  pages =	 "64--66",
+  adsurl =
+                  {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1991OptL...16...64J&db_key=AST},
+  adsnote =	 {Provided by the Smithsonian/NASA Astrophysics Data
+                  System}
+}
+
+@inproceedings{joslin99squeaky,
+  author =	 {David E. Joslin and David P. Clements},
+  title =	 {Squeaky Wheel Optimization},
+  booktitle =	 {AAAI '98/IAAI '98: Proceedings of the fifteenth
+                  national/tenth conference on Artificial
+                  intelligence/Innovative applications of artificial
+                  intelligence},
+  year =	 {1998},
+  isbn =	 {0-262-51098-7},
+  pages =	 {340--346},
+  location =	 {Madison, Wisconsin, United States},
+  publisher =	 {American Association for Artificial Intelligence},
+  address =	 {Menlo Park, CA, USA},
+}
+
+@article{guidorzi06automatic,
+   author = {{Guidorzi}, C. and {Monfardini}, A. and {Gomboc}, A. and {Mottram}, C.~J. and 
+	{Mundell}, C.~G. and {Steele}, I.~A. and {Carter}, D. and {Bode}, M.~F. and 
+	{Smith}, R.~J. and {Fraser}, S.~N. and {Burgdorf}, M.~J. and 
+	{Newsam}, A.~M.},
+    title = {The Automatic Real-Time Gamma-Ray Burst Pipeline of the 2 m Liverpool Telescope},
+  journal = {Publications of the Astronomical Society of the Pacific},
+     year = {2006},
+    month = {February},
+   volume = {118},
+    pages = {288--296},
+}
+
+
+
+@inproceedings{kramer03maxflex,
+  author =	 "Laurence Kramer and Stephen Smith",
+  title =	 "Maximizing Flexibility: A Retraction Heuristic for
+                  Oversubscribed Scheduling Problems",
+  booktitle =	 "Proceedings of the Eighteenth International Joint
+                  Conference on Artificial Intelligence",
+  month =	 "August",
+  year =	 "2003",
+  note =	 "prepublication copy - Copyright International Joint
+                  Conference On Artificial Intelligence, Inc."
+}
+
+@inproceedings{kramer04swapping,
+  author =	 "Laurence Kramer and Stephen Smith",
+  title =	 "Task Swapping for Schedule Improvement: A Broader
+                  Analysis",
+  booktitle =	 "Proceedings 14th International Conference on
+                  Automated Planning and Scheduling",
+  month =	 "June",
+  year =	 "2004"
+}
+
+@article{krisciunas91brightness,
+  author =	 "K. Krisciunas and B. E. Schaefer",
+  title =	 "A model of the brightness of moonlight",
+  journal =	 "Publications of the Astronomical Society of the
+                  Pacific",
+  year =	 "1991",
+  volume =	 "103",
+  pages =	 "1033--1039",
+}
+
+@article{krisciunas97optical,
+  author =	 {K. Krisciunas},
+  title =	 {Optical Night-Sky Brightness at Mauna Kea over the
+                  Course of a Complete Sunspot Cycle},
+  journal =	 {Publications of the Astronomical Society of the
+                  Pacific},
+  year =	 1997,
+  month =	 oct,
+  volume =	 109,
+  pages =	 {1181--1188},
+  adsurl =
+                  {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1997PASP..109.1181K&db_key=AST},
+  adsnote =	 {Provided by the Smithsonian/NASA Astrophysics Data
+                  System}
+}
+
+@techreport{lapalma115,
+  author =	 {Chris Benn and Sara Ellison},
+  title =	 {La Palma night-sky brightness},
+  institution =	 {Isaac Newton Group},
+  year =	 {1998},
+  month =	 {may},
+  source =
+                  {http://www.ing.iac.es/Astronomy/observing/manuals/ps/tech\_notes/tn115.ps.gz},
+  publisher =	 {Isaac Newton Group},
+  note =	 {ING La Palma Technical Note 115}
+}
+
+@techreport{lapalma31,
+  author =	 {D L King},
+  title =	 {Atmospheric extinction at the Roque de Los Muchachos
+                  observatory, La Palma},
+  institution =	 {Isaac Newton Group},
+  year =	 {1985},
+  month =	 {sept},
+  source =
+                  {http://www.ing.iac.es/Astronomy/observing/manuals/ps/tech_notes/tn031.pdf},
+  publisher =	 {Isaac Newton Group},
+  note =	 {ING La Palma Technical Note 31}
+}
+
+@article{lorenz63npflow,
+  author =	 "E.N. Lorenz",
+  title =	 "Deterministic nonperiodic flow",
+  journal =	 "Journal of Atmospheric Science",
+  year =	 "1963",
+  volume =	 "20",
+  pages =	 "130--141",
+}
+
+@inproceedings{mcvey97iterative,
+  author =	 {Charles B. McVey and Ella M. Atkins and Edmund
+                  H. Durfee and Kang G. Shin},
+  title =	 {Development of Iterative Scheduler to Planner
+                  Feedback.},
+  booktitle =	 {AAAI/IAAI},
+  year =	 {1997},
+  pages =	 {839},
+  bibsource =	 {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{mertens04cssa,
+  author =	 {Koenraad Mertens and Tom Holvoet},
+  title =	 {CSAA: A Distributed Ant Algorithm Framework for
+                  Constraint Satisfaction.},
+  booktitle =	 {FLAIRS Conference},
+  year =	 {2004},
+  crossref =	 {DBLP:conf/flairs/2004},
+  bibsource =	 {DBLP, http://dblp.uni-trier.de}
+}
+
+@Article{minton92minconflicts,
+  author =	 {Steve Minton and Mark D Johnston and Andrew B
+                  Philips and Philip Laird},
+  title =	 {Minimizing Conflicts: a Heuristic Repair Method for
+                  Constraint Satisfaction and Scheduling Problems},
+  journal =	 {Artificial Intelligence},
+  year =	 {1992},
+  volume =	 {58},
+  pages =	 {161--205}
+}
+
+@article{miyashita95cabins,
+  author =	 {Kazuo Miyashita and Katia P. Sycara},
+  title =	 {{CABINS}: {A} {F}ramework of {K}nowledge
+                  {A}cquisition and {I}terative {R}evision for
+                  {S}chedule {I}mprovement and {R}eactive {R}epair},
+  journal =	 {Artificial Intelligence},
+  volume =	 {76},
+  number =	 {1-2},
+  pages =	 {377--426},
+  year =	 {1995},
+  url =		 {citeseer.ist.psu.edu/34322.html}
+}
+
+@InProceedings{miyashita96distributed,
+  author =	 {Kazua Miyashita and Masahiro Hori},
+  title =	 {A {D}istributed {A}rchitecture for {P}lanning and
+                  {S}cheduling that {L}earns through {N}egotiation
+                  {C}ases},
+  booktitle =	 {IEEE International Conference on Emerging
+                  Technologies and Factory Automation},
+  year =	 1996
+}
+
+@inproceedings{morris97automatic,
+  author =	 "Robert A. Morris and John L. Bresina and Stuart
+                  M. Rodgers",
+  title =	 "Automatic Generation of Heuristics for Scheduling",
+  booktitle =	 "Proceedings of the 15th International Joint
+                  Conference on Artificial Intelligence ({IJCAI}-97)",
+  publisher =	 "Morgan Kaufmann",
+  editor =	 "M. Pollack",
+  pages =	 "1260--1266",
+  year =	 "1997",
+  url =		 "citeseer.ist.psu.edu/morris97automatic.html"
+}
+
+@Article{munoz97nighttime,
+  author = 	 {{Mu{\~n}oz-Tu{\~n}{\'o}n}, C and Vernin , J and Varela, A.M.},
+  title = 	 {Night-time image quality at Roque de los Muchachos Observatory},
+  journal = 	 {Astronomy and Astrophysics Supplement Series},
+  year = 	 {1997},
+  pages = 	 {183-193},
+  month = 	 {October},
+}
+
+@article{munoz98homogeneity,
+   author = {{Mu{\~n}oz-Tu{\~n}{\'o}n}, C. and {Varela}, A.~M. and {Mahoney}, T.},
+    title = "{Homogeneity of image quality at the Roque de los Muchachos Observatory}",
+  journal = {New Astronomy Review},
+     year = 1998,
+    month = nov,
+   volume = 42,
+    pages = {409-416},
+   adsurl = {http://adsabs.harvard.edu/abs/1998NewAR..42..409M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@techreport{muscettola92bottleneck,
+  author =	 "Nicola Muscettola",
+  title =	 "Scheduling by Iterative Partition of Bottleneck
+                  Conflicts",
+  institution =	 "Robotics Institute, Carnegie Mellon University",
+  month =	 "February",
+  year =	 "1992",
+  number =	 "CMU-RI-TR-92-05",
+  address =	 "Pittsburgh, PA"
+}
+
+@inproceedings{myers01integrating,
+  author =	 "Karen Myers and Stephen Smith and David Hildum and
+                  Peter Jarvis and R. de Lacaze",
+  title =	 "Integrating Planning and Scheduling through
+                  Intensity Adaptation",
+  booktitle =	 "Proceedings of the IJCAI-01 Workshop on Planning
+                  with Resources",
+  month =	 "July",
+  year =	 "2001"
+}
+
+@inproceedings{myers99integration,
+  author =	 "Karen Myers and Stephen Smith",
+  title =	 "Issues in the Integration of Planning and Scheduling
+                  for Enterprise Control",
+  booktitle =	 "Proceedings of the DARPA Symposium on Advances in
+                  Enterprise Control",
+  year =	 "1999"
+}
+
+@Misc{pemberton02dynamic,
+  author =	 {J. C. Pemberton and L. G. Greenwald},
+  title =	 {On the need for dynamic scheduling of imaging
+                  satellites},
+  howpublished = {Symposium on Future Intelligent Earth Observing
+                  Satellites},
+  year =	 {2002}
+}
+
+@inProceedings{policella03flexible,
+  title =	 {Steps toward Computing Flexible Schedules},
+  author =	 {N. Policella and S. F. Smith and A. Cesta and
+                  A. Oddi},
+  booktitle =	 {Proceedings of Online-2003 Workshop CP 2003},
+  year =	 2003,
+}
+
+@PhdThesis{policella05thesis,
+  author =	 {Nicola Policella},
+  title =	 {Scheduling with uncertainty a proactive approach
+                  using partial order schedules},
+  school =	 {Universita degli studi di Roma (La Sapienza)},
+  year =	 {2005},
+  address =	 {Via Salaria 113, I-00198, Roma, Italy}
+}
+
+@inproceedings{popova98adaptive,
+  author =	 {Elmira Popova and David Morton},
+  title =	 {Adaptive stochastic manpower scheduling},
+  booktitle =	 {WSC '98: Proceedings of the 30th conference on
+                  Winter simulation},
+  year =	 {1998},
+  isbn =	 {0-7803-5134-7},
+  pages =	 {661--668},
+  location =	 {Washington, D.C., United States},
+  publisher =	 {IEEE Computer Society Press},
+  address =	 {Los Alamitos, CA, USA},
+}
+
+
+
+@Article{quinlan86induction,
+  author =	 {J Ross Quinlan},
+  title =	 {Induction of decision trees},
+  journal =	 {Machine Learning},
+  year =	 1986,
+  volume =	 1,
+  pages =	 {81--106}
+}
+
+@inproceedings{rabideau00generic,
+  author =	 {Gregg Rabideau and Barbara Engelhardt and Steve
+                  A. Chien},
+  title =	 {Using Generic Preferences to Incrementally Improve
+                  Plan Quality.},
+  booktitle =	 {AIPS},
+  year =	 {2000},
+  pages =	 {236-245},
+  bibsource =	 {DBLP, http://dblp.uni-trier.de}
+}
+
+@misc{rabideau99iterative,
+  author =	 "G. Rabideau and R. Knight and S. Chien and
+                  A. Fukunaga and A. Govindjee",
+  title =	 "Iterative Repair Planning for Spacecraft Operations
+                  in the ASPEN System",
+  text =	 "G. Rabideau, R. Knight, S. Chien, A. Fukunaga,
+                  A. Govindjee, Iterative Repair Planning for
+                  Spacecraft Operations in the ASPEN System,
+                  International Symposium on Artificial Intelligence
+                  Robotics and Automation in Space, Noordwijk, The
+                  Netherlands, June 1999.",
+  year =	 "1999",
+  url =		 "citeseer.ist.psu.edu/rabideau99iterative.html"
+}
+
+
+
+@article{racine96temporal,
+  author =	 {R. Racine},
+  title =	 "{Temporal Fluctuations of Atmospheric Seeing}",
+  journal =	 {Publications of the Astronomical Society of the
+                  Pacific},
+  year =	 1996,
+  month =	 apr,
+  volume =	 108,
+  pages =	 {372-+},
+  adsurl =
+                  {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1996PASP..108..372R&db_key=AST},
+  adsnote =	 {Provided by the Smithsonian/NASA Astrophysics Data
+                  System}
+}
+
+@inproceedings{riedmiller99neural,
+  author =	 "Simone C. Riedmiller and Martin A. Riedmiller",
+  title =	 "A Neural Reinforcement Learning Approach to Learn
+                  Local Dispatching Policies in Production Scheduling",
+  booktitle =	 "{IJCAI}",
+  pages =	 "764-771",
+  year =	 "1999",
+  url =		 "citeseer.ist.psu.edu/riedmiller99neural.html"
+}
+
+
+@book{russel03artificial,
+  author =	 {Stuart J. Russell and Peter Norvig},
+  title =	 {Artificial Intelligence: A Modern Approach},
+  year =	 {2003},
+  isbn =	 {0137903952},
+  publisher =	 {Pearson Education},
+}
+
+@techreport{sadeh91lookahead,
+  author =	 "Norman Sadeh",
+  title =	 "Look Ahead Techniques for Micro-Opportunistic Job
+                  Shop Scheduling",
+  institution =	 "Computer Science Department, Carnegie Mellon
+                  University",
+  month =	 "March",
+  year =	 "1991",
+  number =	 "CMU-CS-91-102",
+  address =	 "Pittsburgh, PA"
+}
+
+@techreport{sadeh94backtracking,
+  author =	 "Norman Sadeh and Katia Sycara and Yalin Xiong",
+  title =	 "Backtracking Techniques for the Job Shop Scheduling
+                  Constraint Satisfaction Problem",
+  institution =	 "Robotics Institute, Carnegie Mellon University",
+  month =	 "October",
+  year =	 "1994",
+  number =	 "CMU-RI-TR-94-31",
+  address =	 "Pittsburgh, PA"
+}
+
+@incollection{sandholm99distributed,
+  author =	 "Tuomas W. Sandholm",
+  title =	 "Distributed Rational Decision Making",
+  booktitle =	 "Multiagent Systems: A Modern Approach to Distributed
+                  Artificial Intelligence",
+  publisher =	 "The MIT Press",
+  address =	 "Cambridge, MA, USA",
+  editor =	 "Gerhard Weiss",
+  pages =	 "201--258",
+  year =	 "1999",
+  url =		 "citeseer.ist.psu.edu/sandholm99distributed.html"
+}
+
+@inproceedings{sarazin97automated,
+  author =	 {M. S. Sarazin},
+  title =	 "{Automated seeing monitoring for queue-scheduled
+                  astronomical observations [3125-40]}",
+  booktitle =	 {Proc. SPIE Vol. 3125, Progagation and Imaging
+                  Through the Atmosphere, Luc R. Bossonnette and
+                  Christopher Dainty, Eds., p.366},
+  year =	 1997,
+  pages =	 {366-+},
+  adsurl =
+                  {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1997SPIE.3125..366S&db_key=PHY},
+  adsnote =	 {Provided by the Smithsonian/NASA Astrophysics Data
+                  System}
+}
+
+@inproceedings{schneider98stochastic,
+  author =	 "Jeff Schneider and Justin Boyan and Andrew Moore",
+  title =	 "Stochastic production scheduling to meet demand
+                  forecasts",
+  booktitle =	 "Proceedings of the 37th IEEE Conference on Decision
+                  and Control",
+  month =	 "December",
+  year =	 "1998",
+  volume =	 "3",
+  pages =	 "2722--2727"
+}
+
+@inproceedings{schneider98value,
+  Year =	 {1998},
+  Pages =	 {522-530},
+  Publisher =	 {Morgan Kaufmann, San Francisco, CA},
+  Booktitle =	 {Proceedings of the 15th International Conference on
+                  Machine Learning},
+  Editor =	 {Jude Shavlik},
+  Author =	 {Jeff Schneider and Justin Boyan and Andrew Moore},
+  Title =	 {Value Function Based Production Scheduling}
+}
+
+@techreport{shaw90intelligent,
+  author =	 "Michael J Shaw and Sang Chan Park and Narayan Raman",
+  title =	 "Intelligent Scheduling with Machine Learning
+                  Capabilities: The Induction of Scheduling Knowledge",
+  institution =	 "Robotics Institute, Carnegie Mellon University",
+  month =	 "nov",
+  year =	 "1990",
+  number =	 "CMU-RI-TR-90-25",
+  address =	 "Pittsburgh, PA"
+}
+
+@InCollection{silva04multiobjective,
+  author =	 {J. D. Landa Silva and E. K. Burke and S. Petrovic},
+  title =	 {An Introduction to Multiobjective Metaheuristics for
+                  Scheduling and Timetabling},
+  booktitle =	 {Metaheuristic for Multiobjective Optimisation},
+  pages =	 {91--129},
+  publisher =	 {Springer},
+  year =	 {2004},
+  editor =	 {X. Gandibleux and M. Sevaux and K. Sorensen and
+                  V. T'kindt},
+  volume =	 {535},
+  series =	 {Lecture Notes in Economics and Mathematical Systems},
+}
+
+@article{smith04continuous,
+  author =	 "Stephen Smith and Marcel Becker and Laurence Kramer",
+  title =	 "Continuous Management of Airlift and Tanker
+                  Resources: A Constraint-Based Approach",
+  journal =	 "Mathematical and Computer Modeling -- Special Issue
+                  on Defense Transportation: Algorithms, Models and
+                  Applications for the 21st Centry",
+  year =	 "2004",
+  volume =	 "39",
+  number =	 "6-8",
+  pages =	 "581-598"
+}
+
+@incollection{smith95reactive,
+  author =	 "Stephen Smith",
+  editor =	 "D.E. Brown and W.T. Scherer",
+  title =	 "Reactive Scheduling Systems",
+  booktitle =	 "Intelligent Scheduling Systems",
+  publisher =	 "Kluwer Press",
+  year =	 "1995"
+}
+
+@incollection{smith96mixed,
+  author =	 "Stephen Smith and O. Lassila and Marcel Becker",
+  editor =	 "A. Tate",
+  title =	 "Configurable, Mixed-Initiative Systems for Planning
+                  and Scheduling",
+  booktitle =	 "Advanced Planning Technology",
+  publisher =	 "AAAI Press",
+  month =	 "May",
+  year =	 "1996",
+  note =	 "ISBN 0-929280-98-9"
+}
+
+@InProceedings{steele97control,
+  author =	 {Iain A Steele and David Carter},
+  title =	 {Control Software and Scheduling of the Liverpool
+                  Robotic Telescope},
+  booktitle =	 {Proceedings of SPIE},
+  pages =	 {222--233},
+  year =	 {1997},
+  editor =	 {Hilton Lewis},
+  volume =	 {3112},
+  series =	 {Telescope Control Systems II},
+  month =	 {sep}
+}
+
+@ARTICLE{steele04lt,
+   author = {{Steele}, I.~A.},
+    title = "{The Liverpool telescope}",
+  journal = {Astronomische Nachrichten},
+ keywords = {robotic telescopes, astronomical software},
+     year = 2004,
+    month = oct,
+   volume = 325,
+    pages = {519-521},
+      doi = {10.1002/asna.200410271},
+   adsurl = {http://adsabs.harvard.edu/abs/2004AN....325..519S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@InProceedings{sycara96case,
+  author =	 {Katia Sycara and Dajun Zheng and Kazuo Miyashita},
+  title =	 {Using Case-Based Reasoning to Acquire User
+                  Scheduling Preferences that Change over Time},
+  booktitle =	 {Proc. of the Eleventh IEEE Conference on Artificial
+                  Intelligence for Application},
+  year =	 1995,
+  organization = {IEEE}
+}
+
+@ARTICLE{tsapras09robonet,
+   author = {{Tsapras}, Y. and {Street}, R. and {Horne}, K. and {Snodgrass}, C. and 
+	{Dominik}, M. and {Allan}, A. and {Steele}, I. and {Bramich}, D.~M. and 
+	{Saunders}, E.~S. and {Rattenbury}, N. and {Mottram}, C. and 
+	{Fraser}, S. and {Clay}, N. and {Burgdorf}, M. and {Bode}, M. and 
+	{Lister}, T.~A. and {Hawkins}, E. and {Beaulieu}, J.~P. and 
+	{Fouqu{\'e}}, P. and {Albrow}, M. and {Menzies}, J. and {Cassan}, A. and 
+	{Dominis-Prester}, D.},
+    title = "{RoboNet-II: Follow-up observations of microlensing events with a robotic network of telescopes}",
+  journal = {Astronomische Nachrichten},
+ keywords = {planetary systems, techniques: photometric, telescopes},
+     year = 2009,
+    month = jan,
+   volume = 330,
+      doi = {10.1002/asna.200811130},
+   adsurl = {http://adsabs.harvard.edu/abs/2009AN....330....4T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@techreport{taillard98adaptive,
+  author =	 {E. D. Taillard and L. Gambardella and M. Gendreau
+                  and J. Potvin},
+  title =	 {Adaptive Memory Programming: A Unified View of
+                  Meta-Heuristics},
+  year =	 {1998},
+  institution =	 {Istituto Dalle Molle Di Studi Sull Intelligenza
+                  Artificiale}
+}
+
+@Article{vernin92optical,
+  author = 	 {J. Vernin and C. Munoz-Tunon},
+  title = 	 {Optical Seeing at La Palma Observatory},
+  journal = 	 {Astronomy and Astrophysics},
+  year = 	 {1992},
+  volume = 	 {257},
+  pages = 	 {811-816}
+}
+
+@article{vernin98temporal,
+   author = {{Vernin}, J. and {Mu{\~n}oz-Tu{\~n}{\'o}n}, C.},
+    title = "{The temporal behaviour of seeing}",
+  journal = {New Astronomy Review},
+     year = 1998,
+    month = nov,
+   volume = 42,
+    pages = {451-454},
+   adsurl = {http://cdsads.u-strasbg.fr/abs/1998NewAR..42..451V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@book{vonneumann44games,
+  author =	 "J. von Neumann and O. Morgenstern",
+  title =	 "The Theory of Games and Economic Behavior",
+  publisher =	 "Princeton University Press",
+  year =	 "1953"
+}
+
+@inproceedings{wellman03bidding,
+  author =	 {Michael P. Wellman and Jeffrey K. MacKie-Mason and
+                  Daniel M. Reeves and Sowmya Swaminathan},
+  title =	 {Exploring bidding strategies for market-based
+                  scheduling},
+  booktitle =	 {EC '03: Proceedings of the 4th ACM conference on
+                  Electronic commerce},
+  year =	 {2003},
+  isbn =	 {1-58113-679-X},
+  pages =	 {115--124},
+  location =	 {San Diego, CA, USA},
+  doi =		 {http://doi.acm.org/10.1145/779928.779943},
+  publisher =	 {ACM Press},
+  address =	 {New York, NY, USA},
+}
+
+@Misc{xxx,
+  author =	 {A.N.Other},
+  title =	 {A Study of This and That},
+  howpublished = {Not published at all},
+  month =	 {jan},
+  year =	 {1999},
+}
+
+@incollection{yokoo99search,
+  author =	 "Makuto Yokoo and Toru Ishida",
+  title =	 "Sesrch Algorithms for Agents",
+  booktitle =	 "Multiagent Systems: A Modern Approach to Distributed
+                  Artificial Intelligence",
+  publisher =	 "The MIT Press",
+  address =	 "Cambridge, MA, USA",
+  editor =	 "Gerhard Weiss",
+  pages =	 "166--199",
+  year =	 "1999",
+  url =		 "citeseer.ist.psu.edu/sandholm99distributed.html"
+}
+
+@inproceedings{zhang95reinforcement,
+  author =	 "W. Zhang and T. G. Dietterich",
+  title =	 "A reinforcement learning approach to Job-shop
+                  Scheduling",
+  booktitle =	 "Proceedings of the International Joint Conference on
+                  Artificial Intellience",
+  year =	 "1995",
+  url =		 "citeseer.ist.psu.edu/zhang95reinforcement.html"
+}
+
+@incollection{zweben94scheduling,
+  author =	 {Monty Zweben and Brian Daun and Eugene Davis and
+                  Michael Deale},
+  pages =	 {241--255},
+  title =	 {Scheduling and rescheduling with iterative repair},
+  booktitle =	 {Intelligent Scheduling},
+  editor =	 {Mark Fox and Monty Zweben},
+  isbn =	 {1-55860-260-7},
+  publisher =	 {Morgan-Kaufmann},
+  year =	 {1994},
+  address =	 {San Francisco, CA, USA}
+}
+
+@INPROCEEDINGS{smith2010switching,
+   author = {{Smith}, R.~J. and {Clay}, N.~R. and {Fraser}, S.~N. and {Marchant}, J.~M. and {Moss}, C.~M. and {Steele}, I.~A.},
+  title = "{Switching the Liverpool Telescope from a full-service operating model to self-service}",
+booktitle = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+     year = 2010,  
+series = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+   volume = 7737,
+    month = jul,
+      doi = {10.1117/12.856523},
+   adsurl = {http://adsabs.harvard.edu/abs/2010SPIE.7737E..23S},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

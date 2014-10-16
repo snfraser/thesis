@@ -1,0 +1,33 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+
+setenv CLASSPATH .:$CLASSPATH
+
+echo "QLAS 1h"
+java Generator --base v1h_a_gen.dat --nd 8 --np 10 --sx 0.0 --sy 0.2  --ceiling 1.2 --h 0.0 >& v1h_a.dat
+java Generator --base v1h_b_gen.dat --nd 7 --np 4 --sx 0.0 --sy 0.15 --ceiling 1.2 --h 0.0 >& v1h_b.dat
+java Generator --base v1h_c_gen.dat --nd 3 --np 4 --sx 0.0 --sy 0.15 --ceiling 1.2 --h 0.0 >& v1h_c.dat
+
+cat v1h_a.dat v1h_b.dat v1h_c.dat > v1h_all.dat
+
+cat v1h_all.dat
+
+echo "QLAS 2h"
+java Generator --base v2h_a_gen.dat --nd 8 --np 10 --sx 0.0 --sy 0.2  --ceiling 1.2 --h 0.0 >& v2h_a.dat
+java Generator --base v2h_b_gen.dat --nd 7 --np 4 --sx 0.0 --sy 0.15 --ceiling 1.2 --h 0.0 >& v2h_b.dat
+java Generator --base v2h_c_gen.dat --nd 3 --np 4 --sx 0.0 --sy 0.2  --ceiling 1.2 --h 0.0 >& v2h_c.dat
+
+cat v2h_a.dat v2h_b.dat v2h_c.dat > v2h_all.dat
+
+cat  v2h_all.dat
+
+echo "QLAS 4h"
+java Generator --base v4h_a_gen.dat --nd 8 --np 10 --sx 0.0 --sy 0.15  --ceiling 1.2 --h 0.0 >& v4h_a.dat
+java Generator --base v4h_b_gen.dat --nd 7 --np 4 --sx 0.0 --sy 0.2   --ceiling 1.2 --h 0.0 >& v4h_b.dat
+java Generator --base v4h_c_gen.dat --nd 3 --np 4 --sx 0.0 --sy 0.25  --ceiling 1.2 --h 0.0 >& v4h_c.dat
+
+cat v4h_a.dat v4h_b.dat v4h_c.dat > v4h_all.dat
+
+cat v4h_all.dat

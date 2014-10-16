@@ -1,0 +1,14 @@
+#!/bin/csh
+
+set bdav = `cat man_bds_su.dat | awk '{sum+=$2}END{print (sum/NR)}'`
+echo "Baseline $bdav "
+
+gnuplot << EOF
+set output "ns_env_su.eps"
+set term postscript enhanced monochrome
+set title "Comparison of effect of length of sequence count N_s on Q_{SU}"
+set xlabel "Sample sequence count"
+set ylabel "{/Symbol S} Q_{SU}
+set key top left
+set logscale x
+plot "ns_de1.dat" using 1:2 with linespoint  ps 2 ti "{/Symbol D} E = 1h", "ns_de2.dat" using 1:2 with linespoint ps 2 ti "{/Symbol D} E = 2h", "ns_de4.dat" using 1:2 with linespoint  ps 2 ti "{/Symbol D} E = 4h", ${bdav} ti "BDS Average"

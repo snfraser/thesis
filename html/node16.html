@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Contingency and flexibility methods</TITLE>
+<META NAME="description" CONTENT="Contingency and flexibility methods">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html435"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html431"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html425"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html433"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html436"
+  HREF="node17.html">Integrated Planning and scheduling</A>
+<B> Up:</B> <A NAME="tex2html432"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html426"
+  HREF="node15.html">Case studies</A>
+ &nbsp; <B>  <A NAME="tex2html434"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00055000000000000000">
+Contingency and flexibility methods</A>
+</H2>
+
+<P>
+What can go wrong - new tasks arrive, resources fail (e.g. instruments offline),
+
+<P>
+Motivation - localize changes, make them small, continuity of <I>global plan</I>, reactive repair must be fast. 
+
+<P>
+Approaches - contingency - build multiple futures, execution branches to cope with what might happen. 
+
+<P>
+Different approaches [<A
+ HREF="node99.html#policella03flexible">Policella et&nbsp;al., 2003</A>] classifies these as:-
+
+<P>
+<DL>
+<DT><STRONG>Robust solution</STRONG></DT>
+<DD>create a robust schedule with built in flexibility (time slop).
+</DD>
+<DT><STRONG>Partially defined schedules</STRONG></DT>
+<DD>Define partial order of activities.
+</DD>
+<DT><STRONG>Rescheduling</STRONG></DT>
+<DD>as already discussed.
+</DD>
+<DT><STRONG>Dynamic</STRONG></DT>
+<DD>Despatch scheduling.
+</DD>
+</DL>
+
+<P>
+Examples (Muscettola+Smith /HSTS, Sadeh/MICROBOSS), (Bresina et al/JIC), SPIKE others.
+
+<P>
+[<A
+ HREF="node99.html#davenport01slack">Davenport et&nbsp;al., 2001</A>] compare 3 pro-active techniques for building extra time into a schedule to cope with uncertain duration. <I>Temporal protection</I> adds a slack time into each activity duration prior to the search, <I>time slack window</I> uses reasoning during the search to attach minimum slack into each activity, <I>focused time window slack</I> (FTWS) assigns slack based on the distance along the planning horizon. Normal distributions  are used to model the likelihood (MTBF) <!-- MATH
+ $N(\mu_{tbf}, \sigma_{tbf})$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.png"
+ ALT="$ N(\mu_{tbf}, \sigma_{tbf})$"> and length (downtime) <!-- MATH
+ $N(\mu_{dt}, \sigma_{dt})$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.png"
+ ALT="$ N(\mu_{dt}, \sigma_{dt})$"> of breakdowns:-
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray}
+slack_A(t) & >= & \sum_{n=1}^M P(N(\mu(n),\sigma(n)) <= t)  \mu_{dt} \\
+\mu(n) & = & (n \mu_{tbf}) + ((n-1) \mu_{dt}) \\
+\sigma(n) & = & \sqrt{((n \sigma_{tbf}^2) + ((n-1) \sigma_{dt}^2)}
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="79" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$\displaystyle slack_A(t)$"></TD>
+<TD></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="249" HEIGHT="78" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.png"
+ ALT="$\displaystyle \sum_{n=1}^M P(N(\mu(n),\sigma(n)) &lt;= t) \mu_{dt}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.png"
+ ALT="$\displaystyle \mu(n)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="181" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.png"
+ ALT="$\displaystyle (n \mu_{tbf}) + ((n-1) \mu_{dt})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$\displaystyle \sigma(n)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="206" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$\displaystyle \sqrt{((n \sigma_{tbf}^2) + ((n-1) \sigma_{dt}^2)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+where <IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$ \mu(n)$"> is the mean value of the probability of  breakdowns of the executor and <IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.png"
+ ALT="$ \sigma(n)$"> is its standard deviation. When tested on simulated problems with varying degrees of uncertainty (breakdowns) all methods help improve tardiness with increasing degrees of uncertainty. They do not however give account of the tradeoff due to uneccessary slack time introduced by the technique relative to the gains of continuity and reduced need for rescheduling.
+
+<P>
+Two different approaches are compared by [<A
+ HREF="node99.html#policella03flexible">Policella et&nbsp;al., 2003</A>] (WHAT CONTEXT) and described in more detail [<A
+ HREF="node99.html#policella05thesis">Policella, 2005</A>] 
+They define 3 measures of robustness - <BR>
+<IMG
+ WIDTH="555" HEIGHT="66" ALIGN="TOP" BORDER="0"
+ SRC="img149.png"
+ ALT="\begin{inparaenum}[(\itshape a\upshape )]\item reactiveness - speed of response,...
+...n (or enhancement) of performance relative to baseline schedule.\end{inparaenum}">
+<BR>. Two metrics are defined for evaluating schedule quality:-
+<!-- MATH
+ $fldt = \sum_{i=1} \sum_{j \neq i} \frac { |d(e_i,s_j) - d(s_j, e_i)|}{ H \times N \times (N-1)}$
+ -->
+<IMG
+ WIDTH="267" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.png"
+ ALT="$ fldt = \sum_{i=1} \sum_{j \neq i} \frac { \vert d(e_i,s_j) - d(s_j, e_i)\vert}{ H \times N \times (N-1)}$">
+where <IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img151.png"
+ ALT="$ d(x,y)$"> is the distance between <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ x$"> and <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.png"
+ ALT="$ y$"> and <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.png"
+ ALT="$ e_i$"> is the finish time for activity <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$"> and <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.png"
+ ALT="$ s_i$"> is its start time. This metric is designed to evaluate the fluidity of the schedule i.e. its ability to absorb time variations. Small values of <IMG
+ WIDTH="38" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.png"
+ ALT="$ fldt$"> imply that effects will be localized rather than ripple through the schedule. The second metric:-
+
+<P>
+<!-- MATH
+ $dsrp = \frac{1}{n}\sum_{i=1}^{n} P_{dis}(a_i) \frac{slack_i}{num_{changes}(a_i, \Delta a_i)}$
+ -->
+where <IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.png"
+ ALT="$ slack_i$"> is the slack available to activity <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$"> and <!-- MATH
+ $num_{changes}(x,y)$
+ -->
+<IMG
+ WIDTH="135" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.png"
+ ALT="$ num_{changes}(x,y)$"> is the number of activities moved from their start times when activity <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ x$"> is delayed by <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.png"
+ ALT="$ y$"> with <!-- MATH
+ $P_{dis}(a_i)$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img160.png"
+ ALT="$ P_{dis}(a_i)$"> estimated as <!-- MATH
+ $\frac {duration_i}{makespan}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.png"
+ ALT="$ \frac {duration_i}{makespan}$"> discribes disruptibility of the schedule and they claim it measures <I>the price to pay for the flexibility of the schedule</I>
+
+<P>
+The first technique <I>resource envelope based</I> employs a 2 step process. 
+In the first step, from an initial partially ordered schedule with constraints they compute the resource-envelope (a time varying measure of resource requirements), using this they then detect conflicts (where more activities require a resource than its capacity allows), a selection heuristic is used to rank and then select a pair of competing activities, a sequencing heuristic then specifies (posts) new precedence constraints to remove this conflict. The resulting modified schedule with new constraints is fed back into the first step until a solution is found.
+The second technique <I>earliest start time</I> starts with a pre-selected fixed-time schedule, then selecting activities based on ranked order of start times and using a cheaper resource analysis posts new precedence constraints which can be used to determine the bounds for eachactivity to prodcuce a flexible schedule. They find that the second approach perfoms best against all quality measures and is fastest.  
+
+<P>
+In [<A
+ HREF="node99.html#muscettola92bottleneck">Muscettola, 1992</A>] Conflict Partition Scheduling (CPS) in context of HSTS - partitioning of bottlenecks 
+uses constraint posting and stochastic simulation to locate areas of search space where solutions are unlikely to be found. MOVEBACK
+
+<P>
+In [<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] the /MICROBOSS scheduler - lookahead techniques, aggregate demand profile, ORR and FSS (already mentioned) - ONLY IN INTRO
+
+<P>
+[<A
+ HREF="node99.html#bresina94jic">Bresina et&nbsp;al., 1994</A>] take a different approach (JIC) to a scheduling problem involving selection of observations for the XXX telescope in which the main source of uncertainty relates to the lengths of observations (action duration uncertainty). Uncertainty is due to star-centring which depends on sky conditions, wind, pointing etc. Uncertainty grows with time. Online scheduling is slow (whole night's observations to allocate to enablement intervals). 
+
+<P>
+They run multiple simulations over the night looking for the most likely break points then look for alternative branches to execute... details also [<A
+ HREF="node99.html#drummond94jic">Drummond et&nbsp;al., 1994</A>].
+
+<P>
+
+<OL>
+<LI>Estimate temporal uncertainty at each activity point.
+</LI>
+<LI>Find most probably breakpoint.
+</LI>
+<LI>Create branch (do X or nodo X).
+</LI>
+<LI>Reschedule subproblem (doall before X, nodo X)
+</LI>
+<LI>Integrate with prior schedule.
+</LI>
+<LI>repeat goto 1 while time left.
+</LI>
+</OL>
+
+<P>
+Hard to explain without diagram..worth reproducing their FIG 1 and adding some notes.
+
+<P>
+Problem is to create a multiply contingent schedule from a fixed schedule in a reasonable time soas to increase robustness. Large search space if any action can break - need to reduce number of branch points to manageable size. 
+
+<P>
+Improved for Mars rover [<A
+ HREF="node99.html#bresina99increased">Bresina et&nbsp;al., 1999</A>] additional resource uncertainty not just time, expected utility to select branch not just p(fail), allow setup steps prior to branch point.
+
+<P>
+and note use of HBSS [<A
+ HREF="node99.html#bresina96hbss">Bresina, 1996</A>].
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html435"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html431"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html425"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html433"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html436"
+  HREF="node17.html">Integrated Planning and scheduling</A>
+<B> Up:</B> <A NAME="tex2html432"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html426"
+  HREF="node15.html">Case studies</A>
+ &nbsp; <B>  <A NAME="tex2html434"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

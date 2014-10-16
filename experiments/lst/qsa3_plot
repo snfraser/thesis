@@ -1,0 +1,27 @@
+#!/bin/csh
+
+gnuplot << EOF
+set output "qsa3_su.eps"
+set term postscript enhanced monochrome
+set title "Comparison of effect of scheduling horizion on Q_{SU} with time"
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set xlabel "Time"
+set ylabel "Q_{SU}"
+set format x "%d-%b"
+set key right bottom
+plot "qsa3_su1.dat" using 1:3 with line ti "QLAS H=0.5", "qsa3_su2.dat" using 1:3 with line ti "QLAS H=1.0", "qsa3_su3.dat" using 1:3 with line ti "QLAS H=2.0", "qsa3_bsu.dat" using 1:3 with line ti "BDS (H=0) " 
+EOF
+
+gnuplot << EOF
+set output "qsa3_xt.eps"
+set term postscript enhanced monochrome
+set title "Comparison of effect of scheduling horizion on Q_{XT} with time"
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set xlabel "Time"
+set ylabel "Q_{XT}"
+set format x "%d-%b"
+set key right bottom
+plot "qsa3_xt1.dat" using 1:3 with line ti "QLAS H=0.5", "qsa3_xt2.dat" using 1:3 with line ti "QLAS H=1.0", "qsa3_xt3.dat" using 1:3 with line ti "QLAS H=2.0", "qsa3_bxt.dat" using 1:3 with line ti "BDS (H=0) " 
+EOF

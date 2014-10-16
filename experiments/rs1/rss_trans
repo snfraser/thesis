@@ -1,0 +1,29 @@
+#!/bin/csh
+
+#
+# Run a despatcher weighting simulation using variation of transit weight.
+# Determines effect on SQM metric [OH].
+
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+java $POL $ASTRO RandomSelectionSim \
+	    --site LT \
+	    --lat 28.0 --long -17.0 \
+	    --exec exec1.cfg \
+	    --sexm sex1.cfg \
+	    --score score1.cfg \
+	    --cost accounting1.cfg \
+	    --root LT_Phase2_001 \
+	    --log-level 1 \
+	    --start "2007-10-14 19:00:00" \
+	    --end "2007-10-15 07:30:00" \
+	    --seeing ex >& rs7_ex.txt &
+

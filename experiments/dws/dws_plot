@@ -1,0 +1,13 @@
+#!/bin/csh
+
+set file = $1
+set q = $2
+set env = $3
+gnuplot -persist << EOF
+set xlabel "w_{trans}, (1-w_p)"
+set ylabel "Q_{$q}"
+set title "Effect of varying w_{trans} relative to w_p on Q_{$q} under E_{$env} "
+unset key
+set xrange [-0.05:1.05]
+plot "${file}" using 1:3:(\$2-\$5):(\$2+\$5):4 with candlesticks     
+EOF

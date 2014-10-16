@@ -1,0 +1,11 @@
+#!/bin/csh
+
+gnuplot -persist << EOF
+
+set title "Variation of candidate score with rank"
+set xlabel "Rank"
+set ylabel "Score  f_{SU}"
+unset key
+set output "rankplot.eps"
+set term postscript eps enhanced color
+plot "a4.txt" using 1:5 wi linespoints ps 1 pt 4

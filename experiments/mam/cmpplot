@@ -1,0 +1,57 @@
+#!/bin/csh
+
+#cat bds_comp_elpr.dat | grep EL | awk '{print $1,$6-$12, $10, $8, $6+$12}' > tmp_el.dat
+#cat bds_comp_elpr.dat | grep PR | awk '{print $1,$6-$12, $10, $8, $6+$12}' > tmp_pr.dat
+#cat bds_comp_elpr.dat | grep XT | awk '{print $1,$6-$12, $10, $8, $6+$12}' > tmp_xt.dat
+
+/usr/bin/gnuplot << EOF
+
+set xlabel "w_{el}"
+set ylabel "Q_{el}"
+set title "Variation of Q_{el} with w_{el}"
+set xrange [-0.05:1.05]
+set key top left
+
+set output "cmp_el.eps"
+set term postscript eps enhanced color
+set style fill empty
+plot "tmp_el.dat" using 1:2:3:4:5 wi candlesticks ti "BDS", 0.566 ti "Random", 0.7336 ti "H1"
+
+
+set xlabel "w_{el}"
+set ylabel "Q_{pr}"
+set title "Variation of Q_{pr} with w_{el}"
+set xrange [-0.05:1.05]
+set key 0,2.1
+
+set output "cmp_pr.eps"
+set term postscript eps enhanced color
+
+plot "tmp_pr.dat" using 1:2:3:4:5 wi candlesticks ti "BDS", 1.433 ti "Random", 2.228 ti "H1"
+
+
+set xlabel "w_{el}"
+set ylabel "Q_{pr}/Q_{el}"
+set title "Variation of Q_{pr} and Q_{el} with w_{el}"
+set xrange [-0.05:1.05]
+set key 0,2.1
+
+set output "cmp_elpr.eps"
+set term postscript eps enhanced color
+
+plot "tmp_el.dat" using 1:2:3:4:5 wi candlesticks ti "Q_{el}", "tmp_pr.dat" using 1:2:3:4:5 wi candlesticks ti "Q_{pr}", 0.566 ti "Rnd_{el}", 0.7336 ti "H_{el}", 1.433 ti "Rnd_{pr}", 2.228 ti "H_{pr}"
+
+
+set xlabel "w_{el}"
+set ylabel "Q_{xt}"
+set title "Variation of Q_{xt} with w_{el}"
+set xrange [-0.05:1.05]
+
+set output "cmp_xt.eps"
+set term postscript eps enhanced color
+
+plot "tmp_xt.dat" using 1:2:3:4:5 wi candlesticks 
+
+
+
+EOF

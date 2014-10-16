@@ -1,0 +1,8 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+
+java ngat.sms.test.VolatilityTimePlot /home/eng/volatility/vol_ex.dat "2010-03-01 12:00:00" "2010-10-08 12:00:00" >& volplot.dat
+

@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: review.aux
+A level-1 auxiliary file: plan.aux
+A level-1 auxiliary file: body.aux
+A level-1 auxiliary file: metrics_study.aux
+White space in argument---line 11 of file metrics_study.aux
+ : \citation{standard
+ :                    airmass/wavelength correction paper}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: prediction_study.aux
+A level-1 auxiliary file: schedcomparch_study.aux
+A level-1 auxiliary file: dbcharacter_study.aux
+A level-1 auxiliary file: case_study.aux
+A level-1 auxiliary file: mam1.aux
+A level-1 auxiliary file: longterm_study.aux
+A level-1 auxiliary file: volatility.aux
+A level-1 auxiliary file: conclusions.aux
+A level-1 auxiliary file: appendix.aux
+A level-1 auxiliary file: appendix_p2gen.aux
+A level-1 auxiliary file: appendix_qy.aux
+The style file: apalike.bst
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "muscORpoliORsadeh"
+Warning--I didn't find a database entry for "varelo07sat"
+Warning--I didn't find a database entry for "guerrero98diurnal"
+You've used 67 entries,
+            1935 wiz_defined-function locations,
+            850 strings with 15691 characters,
+and the built_in function-call counts, 27073 in all, are:
+= -- 2682
+> -- 1081
+< -- 66
++ -- 365
+- -- 348
+* -- 2072
+:= -- 4632
+add.period$ -- 210
+call.type$ -- 67
+change.case$ -- 496
+chr.to.int$ -- 66
+cite$ -- 67
+duplicate$ -- 1168
+empty$ -- 1938
+format.name$ -- 457
+if$ -- 5490
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 49
+newline$ -- 333
+num.names$ -- 225
+pop$ -- 528
+preamble$ -- 1
+purify$ -- 499
+quote$ -- 0
+skip$ -- 844
+stack$ -- 0
+substring$ -- 1653
+swap$ -- 224
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 398
+warning$ -- 0
+while$ -- 214
+width$ -- 0
+write$ -- 871
+(There was 1 error message)

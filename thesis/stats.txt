@@ -1,0 +1,227 @@
+Fig. 7.3 
+f73a
+Comparison of BDS with best selection and BDS with random selection. 
+xvar: $w_{el}$
+yvar: $Q_{el}$
+nc: 2
+np: 3 0.1 0.5 1.0
+compname0: $BDS_{random}$  0.566 0.04 0.566 0.04 0.566 0.04
+compname1: $BDS_{best}$  0.567 0.019 0.568 0.18 0.89 0.023 
+
+Fig. 7.3 
+f73b
+Comparison of H1 and BDS with best selection. 
+xvar: $w_{el}$
+yvar: $Q_{el}$
+nc: 2
+np: 3 0.1 0.5 1.0
+compname0: BDS     0.567 0.019 0.568 0.18 0.89 0.023 
+compname1: H1      0.734 0.0  0.734 0.0  0.734 0.0
+
+
+Fig. 8.2a 
+f82a
+Comparison of BDS with best selection and random selection. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{px}$
+nc: 2
+np: 3 0.0 0.5 0.9
+compname0: $BDS_{random}$ 1.29 0.13  1.29 0.13 1.29 0.13
+compname1: $BDS_{best}$ 1.7 0.019 1.779 0.021 1.669 0.016
+
+Fig. 8.2b
+f82b
+Comparison of BDS with best selection and random selection. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{px}$
+nc: 2
+np: 3 0.0 0.5 0.9
+compname0: $BDS_{random}$ 1.195 0.115 1.195 0.115 1.195 0.115 
+compname1: $BDS_{best}$ 1.76 0.029 1.81 0.0126 1.69 0.013
+
+
+Fig. 8.3a 
+f83a
+Comparison of BDS with best selection and random selection. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{oa}$
+nc: 2
+np: 3  0.1 0.55 0.95
+compname0: $BDS_{random}$ 0.8345 0.019 0.8345 0.019 0.8345 0.019 
+compname1: $BDS_{best}$  0.86 0.004 0.854 0.004 0.923 0.003
+
+Fig. 8.3b 
+f83b
+Comparison of BDS with best selection and random selection. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{oa}$
+nc: 2
+np: 3 0.1 0.55 0.95
+compname0: $BDS_{random}$  0.818 0.018 0.818 0.018 0.818 0.018
+compname1: $BDS_{best}$ 0.844 0.0044 0.844 0.0057 0.938 0.004
+
+
+
+Fig. 8.4a 
+f84a
+Comparison of BDS with best selection and random selection for flexibly timed groups. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{oa}$
+nc: 2
+np: 4 0.0 0.1 0.6 0.95
+compname0: $BDS_{random}$ 0.785 0.02 0.785 0.02 0.785 0.02 0.785 0.02
+compname1: $BDS_{best}$ 0.76 0.014 0.928 0.019 0.924 0.018 0.919 0.004
+
+Fig. 8.4b 
+f84b
+Comparison of BDS with best selection and random selection for flexibly timed groups. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{oa}$
+nc: 2
+np: 4 0.0 0.1 0.6 0.95
+compname0: $BDS_{random}$ 0.81 0.02 0.81 0.02 0.81 0.02 0.81 0.02
+compname1: $BDS_{best}$ 0.761 0.018 0.904 0.01 0.922 0.02 0.956 0.008
+
+
+Fig. 8.5a 
+f85a
+Comparison of BDS with best selection and random selection for flexibly timed groups. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{px}$ 
+nc: 2
+np: 3 0.1 0.65 0.9
+compname0: $BDS_{random}$ 0.167 0.016 0.167 0.016 0.167 0.016
+compname1: $BDS_{best}$ 0.09 0.019 0.107 0.017 0.18 0.015
+
+Fig. 8.5b
+f85b
+Comparison of BDS + $\zeta_{best}$ and $\zeta_{random}$ selection for flexibly timed groups. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{px}$  
+nc: 2
+np: 3 0.1 0.65 0.9
+compname0: $BDS_{random}$ 0.413 0.018 0.413 0.018 0.413 0.018
+compname1: $BDS_{best}$ 0.116 0.025 0.137 0.007 0.229 0.015
+
+
+
+Fig. 8.6a 
+f86a
+Comparison of BDS with best selection and random selection. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{td}$
+nc: 2
+np: 3 0.0 0.55 0.95
+compname0: $BDS_{random}$ 3.3 0.65  3.3 0.65  3.3 0.65 
+compname1: $BDS_{best}$ 4.48 0.41 5.07 0.53 3.59 0.353
+
+Fig. 8.6b
+f86b
+Comparison of BDS with best selection and random selection. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{td}$
+nc: 2
+np: 3 0.0 0.55 0.95
+compname0: $BDS_{random}$ 3.29 0.7 3.29 0.7 3.29 0.7
+compname1: $BDS_{best}$ 5.37 0.466 4.91 0.37 3.99 0.45
+
+
+Fig. 8.7a
+f87a
+Comparison of BDS with best selection and random selection. $E_{FP}$
+xvar: $w_{el}$
+yvar: $Q_{rn}$
+nc: 2
+np: 3 0.1 0.6 0.95
+compname0: $BDS_{random}$ 29.6 3.6 29.6 3.6 29.6 3.6
+compname1: $BDS_{best}$ 47.04 1.38 47.67 1.24 39.45 1.28
+
+Fig. 8.7b 
+f87b
+Comparison of BDS with best selection and random selection. $E_{FX}$
+xvar: $w_{el}$
+yvar: $Q_{rn}$
+nc: 2
+np: 3 0.1 0.6 0.95 
+compname0: $BDS_{random}$ 27.8 3.5 27.8 3.5 27.8 3.5
+compname1: $BDS_{best}$ 50.85 1.07 49.93 1.21 39.49 1.13
+
+Figs. 9.5, 9.6, 9.7, 9.8, 9.9, 9.10
+f95
+Comparison of effects of selection models and look-ahead horizon
+xvar: $C_c$
+yvar: $Q_{SU}$
+nc: 5
+np: 3  1.0  15.0  25.0
+compname0: $\zeta_{Best}$  52.6426 3.74  64.9957 3.74  69.1688 3.74 
+compname1: $\zeta_{RS}$    46.619 2.47  66.5051 2.47 71.7743 2.47
+compname2: $Q_1$          47.9166 3.957 69.4295  3.957 73.5464 3.957
+compname3: $Q_2$          53.2979 2.93 72.3104 2.93 76.8024 2.93
+compname4: $Q_4$          53.1043 2.39 76.9914 2.39 82.3721 2.39
+
+Figs. 10.7, 10.8, 10.9 
+f107
+Comparison of BDS with different biasing
+xvar: $tau_E$
+yvar: $Q_{SU}$
+nc: 3
+np: 3 15 180 480
+compname0: $\zeta_{Best}$ 72.5 7.5 77.5 11 77.5 13.5
+compname1: $\zeta_{FR}$   76.2 9.0 75.2 9.0 76.2 9.0
+compname2: $\zeta_{RS}$   81.7 6.5 73.4 4.5 74.7 5.5
+
+Fig. 11.1 
+f111
+Comparison of QLAS horizons for selected number of disruptive events ($n_e$).
+xvar: $n_e$
+yvar: $Q_{SU}$
+nc: 4
+np: 3 0.0 6.0 12.0
+compname0: BDS   118 4.0 118 4.0 118 4.0
+compname1: $Q_{0.5}$ 134.1 0.1 108.31 3.75 104.4 4.8  
+compname2: $Q_2$   128.2 0.1 109.2  4.2  108.1 3.2  
+compname3: $Q_4$   136.2 0.1 111.5  4.1  110.7 1.76
+
+Fig. 12.7 
+f127
+Comparison of QLAS and ELAS against proximity of VEs for H=0.5h.
+xvar: proximity $\pi$
+yvar: $Q_{SU}$
+nc: 2
+np: 5 0.0 30.0 90.0 210.0 360.0
+compname1: $QLAS_{0.5}$ 1.001 0.072 0.907 0.079 0.827 0.085 0.619 0.094 0.415 0.077
+compname5: $ELAS_{0.5}$ 1.018 0.065 0.919 0.085 0.856 0.094 0.669 0.075 0.366 0.078
+
+
+Fig. 12.8 
+f128
+Comparison of QLAS and ELAS against proximity of VEs for H=1h.
+xvar: proximity $\pi$
+yvar: $Q_{SU}$
+nc: 2
+np: 5 0.0 30.0 90.0 210.0 360.0
+compname2: $QLAS_1$     0.736 0.089 0.984 0.084 0.818 0.086 0.606 0.099 0.362 0.079
+compname6: $ELAS_1$     0.848 0.083 0.957 0.083 0.842 0.075 0.586 0.094 0.382 0.083
+
+Fig. 12.9 
+f129
+Comparison of QLAS and ELAS against proximity of VEs for H=2h.
+xvar: proximity $\pi$
+yvar: $Q_{SU}$
+nc: 2
+np: 5 0.0 30.0 90.0 210.0 360.0
+compname3: $QLAS_2$     0.376 0.075 0.544 0.086 0.81  0.089 0.675 0.081 0.436 0.086
+compname7: $ELAS_2$     0.526 0.085 0.694 0.099 0.787 0.09  0.627 0.091 0.438 0.088
+
+
+Fig. 12.10 
+f1210
+Comparison of QLAS and ELAS against proximity of VEs for H=4h.
+xvar: proximity $\pi$
+yvar: $Q_{SU}$
+nc: 2
+np: 5 0.0 30.0 90.0 210.0 360.0
+compname4: $QLAS_4$     0.167 0.063 0.197 0.073 0.413 0.087 0.697 0.085 0.35  0.09
+compname8: $ELAS_4$     0.393 0.094 0.387 0.079 0.566 0.098 0.599 0.08  0.388 0.078
+
+END

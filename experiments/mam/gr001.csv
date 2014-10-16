@@ -1,0 +1,130 @@
+G_002     7:24:18.00  -0:32:17.00   Photom_G1_RU149     INTVAL 3H                           POOR ASTR  P= STD XT= 9.87M    RN= ICRT ______7*******
+G_003     2:33:40.00   5:18:40.00   PG0231+051          INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT _7********6___
+G_004     10:50:5.70  -0:1:12.00    Photom_G1_1047+003  INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT _________3****
+G_005     23:33:48.00  5:46:10.70   Photom_2331+055A    INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT *******6______
+G_006     20:43:58.25 -10:46:10.00  Photom_M-A          INTVAL 3H                           POOR ASTR  P= STD XT= 9.63M    RN= ICRT ****1_________
+G_022     3:1:15.00    44:53:51.00  889i000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   5***********3_
+G_025     4:9:17.00    30:46:33.00  932a000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   __***********_
+G_028     4:30:14.00   35:16:10.00  927e000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   __8**********5
+G_048     6:54:18.117  24:40:7.42   725d000t000         FLEXBL                              POOR ASTR  P= 1   XT= 1.27M    RN= 18   _____*********
+G_059     1:42:20.00   51:34:32.00  925a000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 14   ***********2__
+G_068     3:1:15.00    44:53:51.00  893d000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 14   5***********3_
+G_072     2:27:0.00    62:13:13.00  927g000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   ************5_
+G_077     3:1:15.00    44:53:51.00  891j000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   5***********3_
+G_093     5:34:32.00   22:0:52.00   927h000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 15   ___3**********
+G_098     2:43:40.00   1:22:36.00   895i000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 15   _4********6___
+G_101     1:24:48.00   9:32:21.00   923g000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 10   *********6____
+G_110     3:1:15.00    44:53:51.00  889e000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   5***********3_
+G_112     2:39:24.00   1:5:36.00    927f000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 15   _5********5___
+G_114     3:1:15.00    44:53:51.00  889b000t000         FLEXBL                         DARK POOR       P= 1   XT= 3.27M    RN= 16   5***********3_
+G_126     7:8:0.77     22:31:14.50  FocusShort_07       MONITR 168H [167]                   POOR ASTR  P= BGR XT= 7M       RN= 6    _____7********
+G_156     3:1:15.00    44:53:51.00  926g000t000         FLEXBL                         DARK POOR       P= 3   XT= 3.27M    RN= 16   5***********3_
+G_159     1:50:42.00   21:45:35.00  923j000t000         FLEXBL                         DARK POOR       P= 3   XT= 3.27M    RN= 12   **********4___
+G_204     12:52:34.70 -9:46:36.00   MCG-01-33-34        FLEXBL                         DARK POOR       P= 3   XT= 23.83M   RN= 4    ____________9*
+G_210     12:5:34.20   50:32:21.00  NGC4088             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 9    _________7****
+G_213     11:32:2.40   36:41:53.00  UGC6517             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 9    _________8****
+G_218     12:2:12.20   62:8:14.00   NGC4041             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 10   ________3*****
+G_237     9:17:21.90   41:54:38.00  UGC4904             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 12   ______2*******
+G_239     13:8:48.70  -6:46:39.00   NGC4981             FLEXBL                         DARK POOR       P= 1   XT= 8.3M     RN= CRIT ____________7*
+G_244     11:25:2.50  -9:47:43.00   NGC3672             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 8    __________3***
+G_245     12:48:13.60 -3:19:58.00   NGC4691             FLEXBL                         DARK POOR       P= 1   XT= 23.83M   RN= 8    ___________2**
+G_259     8:6:11.10   -27:31:42.00  ESO494-G26          FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 10   ________5*****
+G_260     9:32:6.20    8:26:31.00   NGC 2906            FLEXBL                         DARK POOR       P= 1   XT= 23.83M   RN= 11   ________9*****
+G_263     9:45:48.30  -14:22:6.00   NGC2993             FLEXBL                         DARK POOR       P= 1   XT= 22.17M   RN= 9    _________7****
+G_264     23:38:48.60 -6:31:4.00    NGC7721             FLEXBL                         DARK POOR       P= 1   XT= 8.3M     RN= 12   *******2______
+G_265     10:52:11.40  32:57:2.00   NGC 3430            FLEXBL                         DARK POOR       P= 1   XT= 23.83M   RN= 10   ________3*****
+G_266     9:54:28.60  -25:42:12.00  NGC3054             FLEXBL                         DARK POOR       P= 1   XT= 23.83M   RN= 8    __________9***
+G_270     12:0:23.60  -1:6:0.00     NGC4030             FLEXBL                         DARK POOR       P= 1   XT= 8.3M     RN= 8    __________1***
+G_271     23:38:49.00 -6:31:59.00   SN2007le_OptMonitor INTVAL 24H                          POOR       P= 3   XT= 11.43M   RN= 17   *******2______
+G_272     23:38:49.00 -6:31:59.00   SN2007le_IRmonitor  INTVAL 24H                          POOR ASTR  P= 3   XT= 11.9M    RN= 17   *******2______
+G_273     3:42:23.30   39:14:30.00  SN07kk_Optmonitor   MONITR 24H [18]                     POOR       P= 5   XT= 11.43M   RN= CRIT _7**********8_
+G_274     3:42:23.30   39:14:30.00  SN07kk_IRmonitor    MONITR 24H [18]                     POOR ASTR  P= 5   XT= 28M      RN= CRIT _7**********8_
+G_275     17:57:48.00  4:42:48.50   TST-BarnStar-071105 FLEXBL                              POOR       P= 0   XT= 2.8M     RN= 9    **____________
+G_276     3:24:44.015  50:11:21.46  com17Pmon-071030    MONITR 48H [36]                     POOR ASTR  P= 1   XT= 2.25M    RN= 2    3***********9_
+G_278     12:56:54.72  23:4:25.40   Star_H13            MONITR 168H [167]                   POOR ASTR  P= BGR XT= 2.53M    RN= 7    ___________***
+G_279     0:51:21.75   20:55:56.10  Star_H01            MONITR 168H [167]                   POOR ASTR  P= BGR XT= 2.53M    RN= 7    *********4____
+G_280     9:50:31.97  -2:49:47.20   group07b01c         FLEXBL                         DARK AVER       P= 1   XT= 28.8M    RN= 10   ________2*****
+G_281     9:47:51.21  -2:24:18.80   group07b01b         FLEXBL                         DARK AVER       P= 1   XT= 28.8M    RN= 10   ________2*****
+G_282     10:11:42.74 -2:58:16.90   group07b01d         FLEXBL                         DARK AVER       P= 1   XT= 28.8M    RN= 9    _________8****
+G_284     7:23:44.00   20:25:6.00   mho_monitor         INTVAL 22.5H                        POOR       P= 1   XT= 71.1M    RN= ICRT _____4********
+G_287     21:29:58.40  12:10:0.60   m15weekly           MONITR 132H [96]                    AVER       P= 2   XT= 4.05M    RN= CRIT *****8________
+G_294     23:5:9.605  -6:43:5.28    uranusMon1          MONITR 24H [19.43]                  POOR NAUT  P= 1   XT= 1.28M    RN= CRIT ******6_______
+G_319     1:34:25.49   30:21:47.30  M33_cal_chip31      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_323     1:34:16.08   30:31:9.90   M33_cal_chip22      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_324     1:33:22.75   30:18:26.80  M33_cal_chip33      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_334     1:35:55.52   30:18:1.90   M33_cal_chip28      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_336     1:33:53.30   30:27:9.60   M33_cal_chip23      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_337     1:31:49.49   30:11:57.70  M33_cal_chip36      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********3___
+G_338     1:35:54.35   30:58:51.80  M33_cal_chip1       FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_343     1:31:46.25   30:58:43.00  M33_cal_chip9       FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_347     1:34:26.10   30:42:31.50  M33_cal_chip13      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_348     1:33:50.85   30:18:9.80   M33_cal_chip32      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_349     1:34:50.28   30:34:36.40  M33_cal_chip21      FLEXBL                              POOR       P= 2   XT= 17.47M   RN= 17   **********4___
+G_352     7:24:14.40  -0:33:4.10    FS14                MONITR 3H [1]                       POOR ASTR  P= STD XT= 5.43M    RN= CRIT ______7*******
+G_353     11:37:5.15   29:47:58.40  FS21                MONITR 3H [1]                       POOR ASTR  P= STD XT= 5.43M    RN= CRIT _________5****
+G_355     3:13:24.16   18:49:38.40  FS109               MONITR 3H [1]                       POOR ASTR  P= STD XT= 4.6M     RN= CRIT _5*********7__
+G_357     14:28:43.37  33:10:41.50  FS134               MONITR 3H [1]                       POOR ASTR  P= STD XT= 4.6M     RN= CRIT ____________7*
+G_358     8:6:23.70    20:6:31.90   J0806               INTVAL 96H                          POOR       P= 3   XT= 27.33M   RN= 16   ______7*******
+G_359     22:11:30.30  19:29:12.00  HS2209              INTVAL 72H                     DARK POOR       P= 3   XT= 27.33M   RN= 11   ******7_______
+G_360     14:6:24.82   61:26:40.90  J1406               INTVAL 72H                          POOR       P= 3   XT= 27.33M   RN= 20   1_________2***
+G_361     0:51:21.75   20:55:56.10  Focus01_rr          INTVAL 168H                         AVER CIVT  P= BGR XT= 9.8M     RN= 17   *********4____
+G_362     0:51:21.75   20:55:56.10  Focus01_Har         INTVAL 12H                          AVER CIVT  P= BGR XT= 12.1M    RN= ICRT *********4____
+G_363     0:51:21.75   20:55:56.10  Focus01_gr          INTVAL 1H                           AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********4____
+G_364     0:51:21.75   20:55:56.10  Focus01_ir          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********4____
+G_365     19:0:34.78   22:34:54.10  Focus19_zr          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT ***6__________
+G_366     19:0:34.78   22:34:54.10  Focus19_rr          INTVAL 168H                         AVER CIVT  P= BGR XT= 9.8M     RN= 20   ***6__________
+G_367     19:0:34.78   22:34:54.10  Focus19_Br          INTVAL 12H                          AVER CIVT  P= BGR XT= 11.18M   RN= ICRT ***6__________
+G_368     0:51:21.75   20:55:56.10  Focus01_Vr          INTVAL 12H                          AVER CIVT  P= BGR XT= 9.9M     RN= ICRT *********4____
+G_369     3:24:7.953   50:9:33.24   17P-mosaic          FLEXBL                              AVER ASTR  P= 3   XT= 13.73M   RN= 20   4***********9_
+G_370     3:24:7.953   50:9:33.24   17P-monitor         MONITR 3H [2]                       AVER NAUT  P= 2   XT= 3.63M    RN= CRIT 4***********9_
+G_371     7:36:51.00   65:36:7.00   lens_2403           MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= 2    ____9*********
+G_372     12:56:43.00  21:40:56.00  lens_M64            MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= 2    ___________9**
+G_373     9:55:33.20   69:3:55.00   lens_M81            MONITR 48H [36]                     POOR       P= 2   XT= 15.07M   RN= 2    ______9*******
+G_375     0:42:49.64   41:15:26.50  Angstrom            MONITR 24H [18]                     POOR       P= 3   XT= 8.7M     RN= CRIT *********9____
+G_381     22:21:58.50  56:31:52.00  zero_hd212311       MONITR 5H [3]                       POOR       P= STD XT= 4.5M     RN= CRIT ********1_____
+G_382     5:5:30.60    52:49:54.00  zero_G191B2         MONITR 5H [3]                       POOR       P= STD XT= 3.53M    RN= CRIT __8***********
+G_384     2:2:42.06    60:15:26.50  pol_BD59_389        MONITR 3H [2.48]                    POOR       P= STD XT= 3.6M     RN= CRIT ************__
+G_385     1:57:56.10  -2:5:58.00    zero_HD12021        MONITR 5H [3]                       POOR       P= STD XT= 3.6M     RN= CRIT 1********7____
+G_398     1:50:42.00   21:45:35.00  888e000t000         FLEXBL                         DARK POOR       P= 2   XT= 3.27M    RN= 15   **********4___
+G_399     0:49:48.00   32:16:43.00  887g000t000         FLEXBL                         DARK POOR       P= 2   XT= 3.27M    RN= 14   *********7____
+G_402     2:39:24.00   1:5:36.00    891g000t000         FLEXBL                         DARK POOR       P= 2   XT= 3.27M    RN= 15   _5********5___
+G_407     10:39:57.46  10:4:0.44    926j000t000         FLEXBL                              POOR ASTR  P= 2   XT= 1.31M    RN= 18   _________8****
+G_408     6:54:18.112  24:40:7.48   927c000t000         FLEXBL                              POOR ASTR  P= 2   XT= 1.27M    RN= 18   _____*********
+G_423     0:43:29.48   41:17:13.50  M31b                MONITR 24H [18]                     POOR       P= 2   XT= 12.6M    RN= CRIT *********9____
+G_426     12:21:31.69  28:13:58.50  dark_12h            MONITR 24H [22.98]                  POOR       P= 2   XT= 2.27M    RN= CRIT __________7***
+G_427     16:35:15.49  38:8:4.50    darkbias_16h        MONITR 24H [22.97]                  POOR ASTR  P= 2   XT= 4.34M    RN= CRIT *7____________
+G_428     13:6:56.00   29:34:48.00  i2_1_H13            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 6    ___________***
+G_429     13:6:56.00   29:34:48.00  z2_2_H13            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 6    ___________***
+G_430     13:6:56.00   29:34:48.00  z1_2_H13            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 6    ___________***
+G_431     13:6:56.00   29:34:48.00  i1_2_H13            MONITR 168H [167.95]           DARK POOR       P= 1   XT= 49.73M   RN= 2    ___________***
+G_432     23:48:20.00  0:57:21.00   i1_1_H00            MONITR 168H [167.95]           DARK POOR       P= 1   XT= 49.73M   RN= 2    *******7______
+G_433     23:48:20.00  0:57:21.00   i2_1_H00            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_434     23:48:20.00  0:57:21.00   z2_2_H00            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_435     23:48:20.00  0:57:21.00   i1_2_H00            MONITR 168H [167.95]           DARK POOR       P= 1   XT= 49.73M   RN= 3    *******7______
+G_436     13:6:56.00   29:34:48.00  i2_2_H13            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 5    ___________***
+G_437     13:6:56.00   29:34:48.00  i1_1_H13            MONITR 168H [167.95]           DARK POOR       P= 1   XT= 49.73M   RN= 3    ___________***
+G_438     23:48:20.00  0:57:21.00   z1_1_H00            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_439     13:6:56.00   29:34:48.00  z2_1_H13            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= 4    ___________***
+G_440     13:6:56.00   29:34:48.00  z1_1_H13            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= 4    ___________***
+G_441     23:48:20.00  0:57:21.00   z1_2_H00            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_442     23:48:20.00  0:57:21.00   i2_2_H00            MONITR 672H [599.98]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_443     23:48:20.00  0:57:21.00   z2_1_H00            MONITR 672H [599.97]           DARK POOR       P= BGR XT= 49.73M   RN= 3    *******7______
+G_446     0:58:59.80   1:0:10.00    gals_to_calib_3     FLEXBL                         DARK AVER       P= 1   XT= 36.07M   RN= 13   ********8_____
+G_448     22:41:55.90  20:15:42.00  UCM_galaxies_6      FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 11   *******2______
+G_449     23:51:25.70  24:24:12.00  UCM_galaxies_18     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   ********5_____
+G_450     23:22:20.90  23:0:42.00   UCM_galaxies_14     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   ********______
+G_452     22:58:50.00  20:17:54.00  UCM_galaxies_7      FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 11   *******5______
+G_453     23:31:48.50  24:44:6.00   UCM_galaxies_17     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   ********2_____
+G_455     23:5:25.50   21:9:42.00   UCM_galaxies_4      FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   *******6______
+G_456     23:20:5.80   24:13:16.00  UCM_galaxies_13     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   ********______
+G_458     23:28:27.90  22:25:17.00  UCM_galaxies_16     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   ********1_____
+G_461     0:50:19.00   24:30:32.00  UCM_galaxies_5      FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 13   *********5____
+G_462     23:7:29.10   16:37:39.00  UCM_galaxies_10     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 11   *******5______
+G_463     23:15:39.00  18:58:17.00  UCM_galaxies_11     FLEXBL                         DARK AVER       P= 1   XT= 39.63M   RN= 12   *******7______
+G_466     22:53:57.74  16:8:53.56   2251                MONITR 168H [167]              DARK AVER       P= 1   XT= 7.8M     RN= 2    *******3______
+G_469     22:2:43.291  42:16:39.98  2200                MONITR 168H [167]                   AVER       P= 1   XT= 7.8M     RN= 2    *******2______
+G_470     2:38:38.93   16:36:59.28  0235                MONITR 168H [167]              DARK AVER       P= 1   XT= 7.8M     RN= 2    _**********___
+G_471     12:29:6.70   2:3:8.60     1226                MONITR 168H [167]                   AVER       P= 1   XT= 7.8M     RN= 2    ___________7**
+G_472     8:54:48.90   20:6:30.64   0851                MONITR 168H [167]              DARK AVER       P= 1   XT= 7.8M     RN= 2    _______9******
+G_476     0:42:49.64   41:15:26.50  ANGM31              MONITR 2.5H [2]                     POOR       P= 2   XT= 33.4M    RN= CRIT *********9____
+G_481     14:17:59.60  25:6:53.00   5548_opt            MONITR 168H [120]                   POOR ASTR  P= 2   XT= 3.13M    RN= 3    ____________7*

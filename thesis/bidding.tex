@@ -1,0 +1,30 @@
+short discussion on bidding models.
+
+Use bidding to make the dispatcher selection. something like:
+
+timeslot available (dispatching point)
+ know environment
+ know weather
+ maybe predict
+
+ask each feasible group to bid (probably ask proposal delegates to bid for group)
+winner takes slot
+
+how do we allocate funds for PDAs ?
+ make something up using allocation in each of these cats
+ - total hours
+ - hours in bd/pax (different alloc for each e.g BP = 100u/hr, DX = 300u/hr etc
+
+bidding fund made up by adding these with some science priority factor (proposal priority)
+
+PDA uses something like - I will bid:
+
+w1*airmass/optimal + w2*(env.seeing-group.seeing) + w3*(lunar - group.lunar) + w4*group.priority etc
+need some sort of cutoff (max bid or max bids per night/week etc or for each group)
+
+eventually let users define $w_i$ values as preferences - i.e. bidding agent configuration.
+
+Advantage - user has some control over bidding so feels they control scheduling - if it fails its because 
+they haven't set their preferences (weights, cutoffs etc) high enough.
+
+Later might want to do ``look-ahead'' by allowing to bid for future slots on assumed env/weather at the time.

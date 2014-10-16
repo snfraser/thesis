@@ -1,0 +1,27 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source $DEPLOY_BIN/class_setup
+source $DEPLOY_BIN/osx_setup
+
+# p2dump <p2-cfg-file>
+
+#Usage: Phase2GenDump
+# params: --site <site-name> --lat <lat-deg> --long <e-long-deg) 
+#         --eot <yyyy-MM-dd HH:mm:ss> 
+#         --model <model-defn-file> 
+#         --exec <exec-cfg-file> 
+#         --dump <file.odb>
+
+set SITE = LTSIM
+set MODEL = $1
+set EXEC  = $2
+set EOT   = "2009-01-01 00:00:00"
+set DUMP  = ${1:r}.odb
+	
+set AST = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+
+java $AST ngat.oss.simulation.test.Phase2GenDump  --site $SITE --lat 28.0 --long -17.0 --model $MODEL --exec $EXEC \
+                                                  --eot "${EOT}"  --dump $DUMP 
+
+

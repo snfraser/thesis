@@ -1,0 +1,18 @@
+#!/bin/csh
+
+/usr/bin/gnuplot << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M"
+
+set key left top
+set title "Demand C_D for night 13-14 Nov 2007"
+set xlabel "Time"
+set ylabel "C_D"
+set format x "%H:%M"
+
+set output "dmd.eps"
+set term postscript eps enhanced color
+
+plot "dmd.dat" using 1:3 ps 0.5 pt 7 ti "C_D", "dmd.dat" using 1:4  ps 0.5 pt 7 ti "C_{UD}"
+
+EOF

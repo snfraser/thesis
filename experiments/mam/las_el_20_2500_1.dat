@@ -1,0 +1,1491 @@
+Load new slalib
+Run    0, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_M-A, SN2007le_IRmonitor, 17P-monitor, darkbias_16h, com17Pmon-071030, PG0231+051, m15weekly, M33_cal_chip31, ] RT =   62m 
+Run    0, SEQ_FRAG for 20:02:32 2007-11-13 +(  60)m : [TST-BarnStar-071105, uranusMon1, SN07kk_Optmonitor, M33_cal_chip28, zero_HD12021, SN07kk_IRmonitor, ] RT =   64m 
+Run    0, SEQ_FRAG for 21:06:10 2007-11-13 +(  60)m : [UCM_galaxies_16, 889bt, 932at, M33_cal_chip32, ] RT =   63m 
+Run    0, SEQ_FRAG for 22:11:50 2007-11-13 +(  60)m : [923gt, 927ht, FS109, UCM_galaxies_14, M31b, ] RT =   63m 
+Run    0, SEQ_FRAG for 23:13:56 2007-11-13 +(  60)m : [UCM_galaxies_10, 889et, M33_cal_chip9, ] RT =   60m 
+Run    0, SEQ_FRAG for 00:15:23 2007-11-14 +(  60)m : [M33_cal_chip21, 725dt, J0806, 891gt, 895it, zero_G191B2, 887gt, 927gt, ] RT =   62m 
+Run    0, SEQ_FRAG for 01:16:54 2007-11-14 +(  60)m : [SN2007gr, M33_cal_chip36, 891jt, M33_cal_chip23, M33_cal_chip1, ] RT =   65m 
+Run    0, SEQ_FRAG for 02:22:50 2007-11-14 +(  60)m : [NGC4088, UCM_galaxies_4, ] RT =   61m 
+Run    0, SEQ_FRAG for 03:22:47 2007-11-14 +(  60)m : [NGC3430, 889it, NGC2906, NGC4030, 926gt, ] RT =   62m 
+Run    0, SEQ_FRAG for 04:25:53 2007-11-14 +(  60)m : [group07b01d, M33_cal_chip13, lens_M81, ] RT =   61m 
+Run    0, SEQ_FRAG for 05:26:20 2007-11-14 +(  60)m : [927ft, i1_2_H13, FS21, 5548_opt, ] RT =   61m 
+Run    0, SEQ_FRAG for 06:26:52 2007-11-14 +(  60)m : [17P-mosaic, FS14, Photom_G1_1047+003, 927ct, Photom_G1_RU149, venus-mon-070919, 926jt, FocusShort_07, ] RT =   49m 
+Run:    0, SCORES  0.6132 1.8818 0.3292 0.8698 0.2908 0.0000 1.0278
+Run    0, LIST 
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_114  889bt  P  N  D  FLEX  1
+:G_025  932at  P  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_048  725dt  P  T  B  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_402  891gt  P  N  D  FLEX  2
+:G_098  895it  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_399  887gt  P  N  D  FLEX  2
+:G_072  927gt  P  N  D  FLEX  1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_077  891jt  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_260  NGC2906  P  N  D  FLEX  1
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_431  i1_2_H13  P  N  D  INT(168.0)  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_408  927ct  P  T  B  FLEX  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_407  926jt  P  T  B  FLEX  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    1, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [17P-monitor, SN2007le_IRmonitor, 17P-mosaic, darkbias_16h, FS109, com17Pmon-071030, Angstrom, zero_HD12021, zero_G191B2, uranusMon1, 2200, ] RT =   65m 
+Run    1, SEQ_FRAG for 20:06:43 2007-11-13 +(  60)m : [pol_BD59_389, lens_M81, SN2007le_OptMonitor, SN07kk_Optmonitor, Photom_M-A, 927ht, 891jt, 887gt, ] RT =   60m 
+Run    1, SEQ_FRAG for 21:08:36 2007-11-13 +(  60)m : [UCM_galaxies_4, 0235, zero_hd212311, 2251, 889it, ] RT =   63m 
+Run    1, SEQ_FRAG for 22:10:32 2007-11-13 +(  60)m : [UCM_galaxies_7, M31b, SN2007gr, ] RT =   62m 
+Run    1, SEQ_FRAG for 23:13:00 2007-11-13 +(  60)m : [PG0231+051, M33_cal_chip31, M33_cal_chip23, 0851, 893dt, 927ft, 932at, ] RT =   62m 
+Run    1, SEQ_FRAG for 00:16:05 2007-11-14 +(  60)m : [UCM_galaxies_17, M33_cal_chip13, 927ct, 888et, ] RT =   61m 
+Run    1, SEQ_FRAG for 01:17:01 2007-11-14 +(  60)m : [m15weekly, UCM_galaxies_13, NGC4041, ] RT =   65m 
+Run    1, SEQ_FRAG for 02:24:32 2007-11-14 +(  60)m : [Photom_2331+055A, M33_cal_chip33, 925at, UGC4904, 725dt, 926jt, FS14, ] RT =   60m 
+Run    1, SEQ_FRAG for 03:24:13 2007-11-14 +(  60)m : [M33_cal_chip1, dark_12h, 927et, gals_to_calib_3, 923jt, ] RT =   62m 
+Run    1, SEQ_FRAG for 04:28:11 2007-11-14 +(  60)m : [NGC2906, J1406, 926gt, 891gt, 1226, ] RT =   65m 
+Run    1, SEQ_FRAG for 05:35:18 2007-11-14 +(  60)m : [NGC4691, group07b01d, venus-mon-070919, Photom_G1_RU149, ] RT =   63m 
+Run    1, SEQ_FRAG for 06:39:07 2007-11-14 +(  60)m : [FS21, SN07kk_IRmonitor, 5548_opt, Photom_G1_1047+003, FocusShort_07, ] RT =   53m 
+Run:    1, SCORES  0.6218 1.9199 0.3575 0.8575 0.3254 0.0000 1.0370
+Run    1, LIST 
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_093  927ht  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_399  887gt  P  N  D  FLEX  2
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_022  889it  P  N  D  FLEX  1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_025  932at  P  N  D  FLEX  1
+:G_453  UCM_galaxies_17  A  N  D  FLEX  1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_408  927ct  P  T  B  FLEX  2
+:G_398  888et  P  N  D  FLEX  2
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_456  UCM_galaxies_13  A  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_059  925at  P  N  D  FLEX  1
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_028  927et  P  N  D  FLEX  1
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_159  923jt  P  N  D  FLEX  3
+:G_260  NGC2906  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_156  926gt  P  N  D  FLEX  3
+:G_402  891gt  P  N  D  FLEX  2
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_245  NGC4691  P  N  D  FLEX  1
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    2, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_M-A, SN2007le_IRmonitor, Photom_2331+055A, PG0231+051, M33_cal_chip13, zero_hd212311, ] RT =   62m 
+Run    2, SEQ_FRAG for 20:03:53 2007-11-13 +(  60)m : [M33_cal_chip22, M33_cal_chip36, pol_BD59_389, zero_HD12021, M33_cal_chip21, 891jt, ] RT =   62m 
+Run    2, SEQ_FRAG for 21:07:07 2007-11-13 +(  60)m : [923gt, M33_cal_chip31, zero_G191B2, lens_2403, SN2007gr, 725dt, m15weekly, 923jt, 889et, ] RT =   61m 
+Run    2, SEQ_FRAG for 22:09:56 2007-11-13 +(  60)m : [J1406, 927gt, 888et, SN07kk_Optmonitor, uranusMon1, 926gt, 927ct, 893dt, SN2007le_OptMonitor, ] RT =   65m 
+Run    2, SEQ_FRAG for 23:16:28 2007-11-13 +(  60)m : [M33_cal_chip33, NGC4041, M33_cal_chip1, 925at, ] RT =   60m 
+Run    2, SEQ_FRAG for 00:15:34 2007-11-14 +(  60)m : [J0806, HS2209, FS14, ] RT =   60m 
+Run    2, SEQ_FRAG for 01:15:01 2007-11-14 +(  60)m : [M33_cal_chip9, 927ht, NGC7721, 17P-monitor, ESO494-G26, 927et, FS21, ] RT =   63m 
+Run    2, SEQ_FRAG for 02:17:59 2007-11-14 +(  60)m : [UCM_galaxies_5, com17Pmon-071030, 932at, 0851, FS109, 2200, ] RT =   65m 
+Run    2, SEQ_FRAG for 03:21:42 2007-11-14 +(  60)m : [lens_M81, i1_1_H13, ] RT =   64m 
+Run    2, SEQ_FRAG for 04:28:19 2007-11-14 +(  60)m : [M33_cal_chip28, UGC6517, Angstrom, 17P-mosaic, ] RT =   62m 
+Run    2, SEQ_FRAG for 05:32:42 2007-11-14 +(  60)m : [5548_opt, 889bt, NGC4030, NGC2906, venus-mon-070919, Photom_G1_RU149, 926jt, Photom_G1_1047+003, ] RT =   60m 
+Run    2, SEQ_FRAG for 06:34:30 2007-11-14 +(  60)m : [darkbias_16h, SN07kk_IRmonitor, Star_H13, FocusShort_07, ] RT =   41m 
+Run:    2, SCORES  0.5062 2.1353 0.2803 0.7900 0.3246 0.0000 1.0159
+Run    2, LIST 
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_077  891jt  P  N  D  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_048  725dt  P  T  B  FLEX  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_110  889et  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_072  927gt  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_408  927ct  P  T  B  FLEX  2
+:G_068  893dt  P  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_059  925at  P  N  D  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_025  932at  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_437  i1_1_H13  P  N  D  INT(168.0)  1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_213  UGC6517  P  N  D  FLEX  1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_260  NGC2906  P  N  D  FLEX  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    3, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [FS109, Photom_M-A, 17P-mosaic, PG0231+051, M33_cal_chip28, pol_BD59_389, 17P-monitor, ] RT =   62m 
+Run    3, SEQ_FRAG for 20:02:17 2007-11-13 +(  60)m : [M33_cal_chip22, M31b, SN07kk_IRmonitor, zero_HD12021, ] RT =   61m 
+Run    3, SEQ_FRAG for 21:03:42 2007-11-13 +(  60)m : [927ht, gals_to_calib_3, 927ct, 889it, M33_cal_chip13, ] RT =   61m 
+Run    3, SEQ_FRAG for 22:06:26 2007-11-13 +(  60)m : [SN2007le_OptMonitor, M33_cal_chip1, NGC4041, 927ft, com17Pmon-071030, 888et, 926gt, ] RT =   63m 
+Run    3, SEQ_FRAG for 23:10:01 2007-11-13 +(  60)m : [2200, 891gt, M33_cal_chip32, Photom_G1_RU149, 927gt, M33_cal_chip23, 923jt, ] RT =   62m 
+Run    3, SEQ_FRAG for 00:12:53 2007-11-14 +(  60)m : [UCM_galaxies_16, 0851, lens_M81, ] RT =   62m 
+Run    3, SEQ_FRAG for 01:17:48 2007-11-14 +(  60)m : [932at, J1406, ANGM31, ] RT =   64m 
+Run    3, SEQ_FRAG for 02:23:14 2007-11-14 +(  60)m : [887gt, 927et, 926jt, UCM_galaxies_17, SN07kk_Optmonitor, FS14, ] RT =   64m 
+Run    3, SEQ_FRAG for 03:29:27 2007-11-14 +(  60)m : [M33_cal_chip31, 0235, NGC2906, dark_12h, SN2007gr, ] RT =   61m 
+Run    3, SEQ_FRAG for 04:32:01 2007-11-14 +(  60)m : [zero_G191B2, i1_1_H13, FS21, 725dt, 889et, ] RT =   63m 
+Run    3, SEQ_FRAG for 05:36:54 2007-11-14 +(  60)m : [lens_M64, NGC2993, 5548_opt, Photom_G1_1047+003, venus-mon-070919, Star_H13, darkbias_16h, ] RT =   58m 
+Run    3, SEQ_FRAG for 06:35:25 2007-11-14 +(  60)m : [FocusShort_07, ] RT =    7m 
+Run    3, NO_SEQ_FRAG at 06:42:22 2007-11-14 until EON 
+Run:    3, SCORES  0.5239 1.8535 0.2940 0.7638 0.3526 0.0000 0.9604
+Run    3, LIST 
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_093  927ht  P  N  D  FLEX  1
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_022  889it  P  N  D  FLEX  1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_398  888et  P  N  D  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_072  927gt  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_025  932at  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_028  927et  P  N  D  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_453  UCM_galaxies_17  A  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_260  NGC2906  P  N  D  FLEX  1
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_437  i1_1_H13  P  N  D  INT(168.0)  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_048  725dt  P  T  B  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    4, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [com17Pmon-071030, darkbias_16h, SN2007le_IRmonitor, 17P-mosaic, SN07kk_IRmonitor, ] RT =   60m 
+Run    4, SEQ_FRAG for 19:59:06 2007-11-13 +(  60)m : [M31b, Angstrom, FS109, Photom_2331+055A, M33_cal_chip13, 923gt, 927ht, 925at, ] RT =   62m 
+Run    4, SEQ_FRAG for 21:01:10 2007-11-13 +(  60)m : [927ft, 889et, 0235, M33_cal_chip21, NGC4041, zero_hd212311, 17P-monitor, ] RT =   62m 
+Run    4, SEQ_FRAG for 22:04:48 2007-11-13 +(  60)m : [891gt, M33_cal_chip32, M33_cal_chip9, HS2209, ] RT =   65m 
+Run    4, SEQ_FRAG for 23:11:46 2007-11-13 +(  60)m : [pol_BD59_389, UCM_galaxies_18, M33_cal_chip36, ] RT =   60m 
+Run    4, SEQ_FRAG for 00:13:28 2007-11-14 +(  60)m : [923jt, 887gt, M33_cal_chip1, ANGM31, m15weekly, ] RT =   61m 
+Run    4, SEQ_FRAG for 01:14:31 2007-11-14 +(  60)m : [NGC7721, NGC3430, 889it, 927ct, FS14, M33_cal_chip33, zero_G191B2, ] RT =   63m 
+Run    4, SEQ_FRAG for 02:16:19 2007-11-14 +(  60)m : [UCM_galaxies_7, lens_2403, zero_HD12021, 926jt, 725dt, ] RT =   60m 
+Run    4, SEQ_FRAG for 03:17:29 2007-11-14 +(  60)m : [932at, 891jt, M33_cal_chip23, dark_12h, SN07kk_Optmonitor, M33_cal_chip22, 889bt, 927et, ] RT =   61m 
+Run    4, SEQ_FRAG for 04:19:07 2007-11-14 +(  60)m : [NGC3672, group07b01c, 927gt, 5548_opt, NGC4030, ] RT =   65m 
+Run    4, SEQ_FRAG for 05:22:59 2007-11-14 +(  60)m : [0851, 893dt, Photom_G1_RU149, J1406, FS21, Photom_G1_1047+003, ] RT =   63m 
+Run    4, SEQ_FRAG for 06:26:42 2007-11-14 +(  60)m : [venus-mon-070919, FocusShort_07, ] RT =    8m 
+Run    4, SEQ_FRAG for 06:35:16 2007-11-14 +(  60)m : [Star_H13, ] RT =    2m 
+Run    4, NO_SEQ_FRAG at 06:37:50 2007-11-14 until EON 
+Run:    4, SCORES  0.5689 1.9418 0.2926 0.7614 0.3147 0.0000 0.9699
+Run    4, LIST 
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_402  891gt  P  N  D  FLEX  2
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_399  887gt  P  N  D  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_048  725dt  P  T  B  FLEX  1
+:G_025  932at  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_244  NGC3672  P  N  D  FLEX  1
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run    5, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [17P-monitor, SN2007le_IRmonitor, Photom_2331+055A, FS109, com17Pmon-071030, Photom_M-A, pol_BD59_389, SN07kk_Optmonitor, zero_hd212311, ] RT =   61m 
+Run    5, SEQ_FRAG for 20:01:12 2007-11-13 +(  60)m : [17P-mosaic, TST-BarnStar-071105, M33_cal_chip13, zero_HD12021, lens_M81, 927ft, 927gt, 923gt, ] RT =   62m 
+Run    5, SEQ_FRAG for 21:03:48 2007-11-13 +(  60)m : [zero_G191B2, 889bt, M33_cal_chip9, 932at, 891gt, 887gt, 0235, uranusMon1, darkbias_16h, 889et, 888et, 923jt, 2251, ] RT =   65m 
+Run    5, SEQ_FRAG for 22:08:12 2007-11-13 +(  60)m : [PG0231+051, M33_cal_chip21, HS2209, 895it, 893dt, ] RT =   60m 
+Run    5, SEQ_FRAG for 23:08:41 2007-11-13 +(  60)m : [M33_cal_chip28, UCM_galaxies_4, 889it, ] RT =   60m 
+Run    5, SEQ_FRAG for 00:11:08 2007-11-14 +(  60)m : [M33_cal_chip31, M33_cal_chip1, M33_cal_chip23, 2200, ] RT =   60m 
+Run    5, SEQ_FRAG for 01:11:29 2007-11-14 +(  60)m : [NGC7721, ANGM31, UGC4904, ] RT =   63m 
+Run    5, SEQ_FRAG for 02:17:10 2007-11-14 +(  60)m : [NGC4088, NGC3430, lens_2403, ] RT =   61m 
+Run    5, SEQ_FRAG for 03:18:42 2007-11-14 +(  60)m : [NGC2993, NGC4041, Photom_G1_1047+003, FS14, 725dt, ] RT =   60m 
+Run    5, SEQ_FRAG for 04:18:37 2007-11-14 +(  60)m : [NGC4030, i1_2_H13, 891jt, ] RT =   61m 
+Run    5, SEQ_FRAG for 05:21:53 2007-11-14 +(  60)m : [FS21, 926gt, M33_cal_chip32, 1226, 926jt, SN2007gr, 5548_opt, Photom_G1_RU149, venus-mon-070919, 927ct, ] RT =   60m 
+Run    5, SEQ_FRAG for 06:22:28 2007-11-14 +(  60)m : [SN07kk_IRmonitor, FocusShort_07, Star_H13, ] RT =   37m 
+Run    5, NO_SEQ_FRAG at 06:59:15 2007-11-14 until EON 
+Run:    5, SCORES  0.5447 1.9273 0.2788 0.7916 0.3669 0.0000 0.9939
+Run    5, LIST 
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_114  889bt  P  N  D  FLEX  1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_110  889et  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_098  895it  P  N  D  FLEX  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_048  725dt  P  T  B  FLEX  1
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_431  i1_2_H13  P  N  D  INT(168.0)  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_156  926gt  P  N  D  FLEX  3
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_408  927ct  P  T  B  FLEX  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run    6, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [uranusMon1, com17Pmon-071030, Photom_M-A, SN07kk_IRmonitor, Angstrom, SN2007le_OptMonitor, ] RT =   61m 
+Run    6, SEQ_FRAG for 20:01:40 2007-11-13 +(  60)m : [FS109, M33_cal_chip1, SN2007gr, darkbias_16h, PG0231+051, SN2007le_IRmonitor, 887gt, ] RT =   61m 
+Run    6, SEQ_FRAG for 21:01:40 2007-11-13 +(  60)m : [UCM_galaxies_7, SN07kk_Optmonitor, 932at, 927ht, 725dt, 891jt, ] RT =   62m 
+Run    6, SEQ_FRAG for 22:05:15 2007-11-13 +(  60)m : [pol_BD59_389, M33_cal_chip32, 889bt, 926gt, M33_cal_chip31, M33_cal_chip36, ] RT =   62m 
+Run    6, SEQ_FRAG for 23:06:18 2007-11-13 +(  60)m : [M33_cal_chip21, 0235, 893dt, NGC4041, Photom_G1_RU149, ] RT =   60m 
+Run    6, SEQ_FRAG for 00:05:49 2007-11-14 +(  60)m : [2200, lens_2403, M33_cal_chip22, M33_cal_chip28, 923gt, ] RT =   61m 
+Run    6, SEQ_FRAG for 01:08:33 2007-11-14 +(  60)m : [i1_2_H00, 927et, 927ft, 888et, 923jt, ] RT =   62m 
+Run    6, SEQ_FRAG for 02:09:09 2007-11-14 +(  60)m : [gals_to_calib_3, M33_cal_chip33, 0851, ] RT =   61m 
+Run    6, SEQ_FRAG for 03:10:26 2007-11-14 +(  60)m : [NGC3430, FS14, M33_cal_chip23, 927ct, lens_M81, ] RT =   63m 
+Run    6, SEQ_FRAG for 04:11:50 2007-11-14 +(  60)m : [FS21, NGC3054, J1406, zero_G191B2, ] RT =   60m 
+Run    6, SEQ_FRAG for 05:11:54 2007-11-14 +(  60)m : [MCG-01-33-34, NGC4691, 926jt, 889et, 1226, ] RT =   60m 
+Run    6, SEQ_FRAG for 06:10:44 2007-11-14 +(  60)m : [17P-monitor, venus-mon-070919, Photom_G1_1047+003, 17P-mosaic, 5548_opt, ] RT =   31m 
+Run    6, NO_SEQ_FRAG at 06:41:20 2007-11-14 until EON 
+Run:    6, SCORES  0.5765 1.9796 0.2886 0.7751 0.3092 0.0000 0.9829
+Run    6, LIST 
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_399  887gt  P  N  D  FLEX  2
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_025  932at  P  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_435  i1_2_H00  P  N  D  INT(168.0)  1
+:G_028  927et  P  N  D  FLEX  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_159  923jt  P  N  D  FLEX  3
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_408  927ct  P  T  B  FLEX  2
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_266  NGC3054  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_204  MCG-01-33-34  P  N  D  FLEX  3
+:G_245  NGC4691  P  N  D  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_110  889et  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+Run    7, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [17P-monitor, SN07kk_IRmonitor, PG0231+051, zero_hd212311, M31b, zero_HD12021, ] RT =   61m 
+Run    7, SEQ_FRAG for 20:02:18 2007-11-13 +(  60)m : [lens_2403, Photom_M-A, 2200, FS109, SN2007gr, 932at, 927gt, uranusMon1, zero_G191B2, 891jt, ] RT =   61m 
+Run    7, SEQ_FRAG for 21:05:10 2007-11-13 +(  60)m : [0235, 2251, 893dt, UCM_galaxies_13, 889it, ] RT =   61m 
+Run    7, SEQ_FRAG for 22:05:09 2007-11-13 +(  60)m : [895it, M33_cal_chip32, ANGM31, 927ht, 927ct, 889et, ] RT =   61m 
+Run    7, SEQ_FRAG for 23:06:04 2007-11-13 +(  60)m : [UCM_galaxies_11, Photom_2331+055A, 925at, Photom_G1_RU149, ] RT =   62m 
+Run    7, SEQ_FRAG for 00:08:33 2007-11-14 +(  60)m : [M33_cal_chip33, com17Pmon-071030, FS14, 17P-mosaic, 927ft, lens_M81, 889bt, ] RT =   60m 
+Run    7, SEQ_FRAG for 01:09:14 2007-11-14 +(  60)m : [M33_cal_chip22, NGC4041, 923gt, UGC6517, ] RT =   65m 
+Run    7, SEQ_FRAG for 02:12:22 2007-11-14 +(  60)m : [887gt, M33_cal_chip36, UCM_galaxies_5, ] RT =   60m 
+Run    7, SEQ_FRAG for 03:11:32 2007-11-14 +(  60)m : [ESO494-G26, J1406, 725dt, 891gt, Photom_G1_1047+003, ] RT =   63m 
+Run    7, SEQ_FRAG for 04:16:08 2007-11-14 +(  60)m : [mho_monitor, ] RT =   71m 
+Run    7, SEQ_FRAG for 05:30:23 2007-11-14 +(  60)m : [venus-mon-070919, 1226, group07b01d, 926jt, 5548_opt, FS21, ] RT =   47m 
+Run    7, SEQ_FRAG for 06:18:50 2007-11-14 +(  60)m : [Star_H13, darkbias_16h, FocusShort_07, ] RT =   13m 
+Run    7, NO_SEQ_FRAG at 06:33:03 2007-11-14 until EON 
+Run:    7, SCORES  0.6100 1.6898 0.3082 0.7478 0.4353 0.0000 0.9614
+Run    7, LIST 
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_025  932at  P  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_077  891jt  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_456  UCM_galaxies_13  A  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_110  889et  P  N  D  FLEX  1
+:G_463  UCM_galaxies_11  A  N  D  FLEX  1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_059  925at  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_112  927ft  P  N  D  FLEX  1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_213  UGC6517  P  N  D  FLEX  1
+:G_399  887gt  P  N  D  FLEX  2
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_048  725dt  P  T  B  FLEX  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_284  mho_monitor  P  N  B  INT(22.5)  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    8, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_2331+055A, darkbias_16h, uranusMon1, FS109, PG0231+051, com17Pmon-071030, SN2007le_IRmonitor, Photom_M-A, SN2007le_OptMonitor, ] RT =   64m 
+Run    8, SEQ_FRAG for 20:05:22 2007-11-13 +(  60)m : [M33_cal_chip22, SN07kk_IRmonitor, 889et, SN07kk_Optmonitor, ] RT =   60m 
+Run    8, SEQ_FRAG for 21:05:19 2007-11-13 +(  60)m : [UCM_galaxies_10, M31b, zero_HD12021, 893dt, 17P-monitor, ] RT =   62m 
+Run    8, SEQ_FRAG for 22:08:50 2007-11-13 +(  60)m : [17P-mosaic, 923jt, M33_cal_chip21, 927gt, 925at, 889it, m15weekly, 887gt, 2251, 927et, ] RT =   62m 
+Run    8, SEQ_FRAG for 23:11:24 2007-11-13 +(  60)m : [UCM_galaxies_4, 725dt, 895it, FS14, 891gt, 927ht, 0851, ] RT =   63m 
+Run    8, SEQ_FRAG for 00:14:42 2007-11-14 +(  60)m : [0235, UCM_galaxies_14, M33_cal_chip23, ] RT =   64m 
+Run    8, SEQ_FRAG for 01:20:14 2007-11-14 +(  60)m : [889bt, J1406, M33_cal_chip31, NGC7721, pol_BD59_389, zero_G191B2, ] RT =   63m 
+Run    8, SEQ_FRAG for 02:23:26 2007-11-14 +(  60)m : [lens_M81, i1_1_H00, ] RT =   64m 
+Run    8, SEQ_FRAG for 03:29:33 2007-11-14 +(  60)m : [UCM_galaxies_16, Photom_G1_1047+003, 926jt, 926gt, Photom_G1_RU149, ] RT =   63m 
+Run    8, SEQ_FRAG for 04:32:34 2007-11-14 +(  60)m : [NGC2993, ANGM31, FS21, ] RT =   61m 
+Run    8, SEQ_FRAG for 05:35:31 2007-11-14 +(  60)m : [i1_2_H13, 5548_opt, venus-mon-070919, 927ct, ] RT =   55m 
+Run    8, SEQ_FRAG for 06:29:46 2007-11-14 +(  60)m : [Star_H13, FocusShort_07, ] RT =    9m 
+Run    8, NO_SEQ_FRAG at 06:39:17 2007-11-14 until EON 
+Run:    8, SCORES  0.5258 1.7972 0.3124 0.8066 0.3591 0.0000 0.9681
+Run    8, LIST 
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_110  889et  P  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_068  893dt  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_159  923jt  P  N  D  FLEX  3
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_072  927gt  P  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_028  927et  P  N  D  FLEX  1
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_402  891gt  P  N  D  FLEX  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_431  i1_2_H13  P  N  D  INT(168.0)  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_408  927ct  P  T  B  FLEX  2
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run    9, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_2331+055A, darkbias_16h, SN2007le_IRmonitor, uranusMon1, 17P-monitor, com17Pmon-071030, PG0231+051, M33_cal_chip13, ] RT =   60m 
+Run    9, SEQ_FRAG for 19:59:50 2007-11-13 +(  60)m : [M33_cal_chip1, J1406, 17P-mosaic, 927et, ] RT =   61m 
+Run    9, SEQ_FRAG for 21:02:17 2007-11-13 +(  60)m : [UCM_galaxies_18, M33_cal_chip21, 887gt, ] RT =   60m 
+Run    9, SEQ_FRAG for 22:04:52 2007-11-13 +(  60)m : [927ft, M33_cal_chip23, M33_cal_chip9, 725dt, 925at, 2251, zero_G191B2, Angstrom, ] RT =   62m 
+Run    9, SEQ_FRAG for 23:08:23 2007-11-13 +(  60)m : [FS14, 927ct, 932at, J0806, UGC4904, 889it, ] RT =   62m 
+Run    9, SEQ_FRAG for 00:11:28 2007-11-14 +(  60)m : [UCM_galaxies_17, SN2007le_OptMonitor, 893dt, 889et, 891gt, ] RT =   60m 
+Run    9, SEQ_FRAG for 01:10:07 2007-11-14 +(  60)m : [889bt, 0851, lens_M81, 927ht, SN2007gr, FS109, 888et, M33_cal_chip32, ] RT =   64m 
+Run    9, SEQ_FRAG for 02:14:59 2007-11-14 +(  60)m : [927gt, NGC4088, group07b01b, 923gt, 891jt, ] RT =   60m 
+Run    9, SEQ_FRAG for 03:15:27 2007-11-14 +(  60)m : [UCM_galaxies_10, FS21, 923jt, 926jt, Photom_G1_RU149, 926gt, ] RT =   62m 
+Run    9, SEQ_FRAG for 04:16:37 2007-11-14 +(  60)m : [NGC3430, zero_HD12021, NGC2993, lens_M64, ] RT =   64m 
+Run    9, SEQ_FRAG for 05:21:11 2007-11-14 +(  60)m : [group07b01c, NGC4691, Photom_G1_1047+003, ] RT =   62m 
+Run    9, SEQ_FRAG for 06:21:31 2007-11-14 +(  60)m : [venus-mon-070919, 5548_opt, SN07kk_IRmonitor, Star_H13, FocusShort_07, ] RT =   41m 
+Run:    9, SCORES  0.5316 1.8697 0.3245 0.8568 0.2759 0.0000 1.0082
+Run    9, LIST 
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_028  927et  P  N  D  FLEX  1
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_048  725dt  P  T  B  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_408  927ct  P  T  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_453  UCM_galaxies_17  A  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_068  893dt  P  N  D  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_114  889bt  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_398  888et  P  N  D  FLEX  2
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_072  927gt  P  N  D  FLEX  1
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_159  923jt  P  N  D  FLEX  3
+:G_407  926jt  P  T  B  FLEX  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_156  926gt  P  N  D  FLEX  3
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_245  NGC4691  P  N  D  FLEX  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run   10, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [SN07kk_IRmonitor, com17Pmon-071030, SN2007le_IRmonitor, M31b, TST-BarnStar-071105, pol_BD59_389, ] RT =   61m 
+Run   10, SEQ_FRAG for 20:00:33 2007-11-13 +(  60)m : [J1406, M33_cal_chip28, SN07kk_Optmonitor, 925at, zero_HD12021, ] RT =   63m 
+Run   10, SEQ_FRAG for 21:03:11 2007-11-13 +(  60)m : [888et, 2200, 17P-mosaic, HS2209, zero_G191B2, Photom_2331+055A, ] RT =   65m 
+Run   10, SEQ_FRAG for 22:07:56 2007-11-13 +(  60)m : [UCM_galaxies_18, SN2007gr, lens_M81, ] RT =   64m 
+Run   10, SEQ_FRAG for 23:11:45 2007-11-13 +(  60)m : [889et, 17P-monitor, UCM_galaxies_6, m15weekly, 923gt, uranusMon1, 926gt, 927ft, ] RT =   61m 
+Run   10, SEQ_FRAG for 00:14:36 2007-11-14 +(  60)m : [i1_1_H00, 725dt, FS14, 891gt, 932at, ] RT =   62m 
+Run   10, SEQ_FRAG for 01:17:54 2007-11-14 +(  60)m : [UCM_galaxies_14, M33_cal_chip1, 0851, ] RT =   64m 
+Run   10, SEQ_FRAG for 02:21:53 2007-11-14 +(  60)m : [UGC6517, NGC4041, M33_cal_chip31, ] RT =   61m 
+Run   10, SEQ_FRAG for 03:22:29 2007-11-14 +(  60)m : [UCM_galaxies_13, 893dt, 895it, 927gt, lens_2403, ] RT =   64m 
+Run   10, SEQ_FRAG for 04:27:15 2007-11-14 +(  60)m : [M33_cal_chip21, M33_cal_chip22, NGC2993, 5548_opt, ] RT =   60m 
+Run   10, SEQ_FRAG for 05:27:01 2007-11-14 +(  60)m : [MCG-01-33-34, Angstrom, NGC4981, venus-mon-070919, PG0231+051, Photom_G1_RU149, ] RT =   61m 
+Run   10, SEQ_FRAG for 06:27:16 2007-11-14 +(  60)m : [Photom_G1_1047+003, 927ct, 926jt, FS109, FS21, darkbias_16h, Star_H13, ] RT =   29m 
+Run   10, NO_SEQ_FRAG at 06:56:17 2007-11-14 until EON 
+Run:   10, SCORES  0.5192 1.9620 0.3180 0.8448 0.3466 0.0000 1.0016
+Run   10, LIST 
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_059  925at  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_398  888et  P  N  D  FLEX  2
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_110  889et  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_448  UCM_galaxies_6  A  N  D  FLEX  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_112  927ft  P  N  D  FLEX  1
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_402  891gt  P  N  D  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_213  UGC6517  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_456  UCM_galaxies_13  A  N  D  FLEX  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_263  NGC2993  P  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_204  MCG-01-33-34  P  N  D  FLEX  3
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_408  927ct  P  T  B  FLEX  2
+:G_407  926jt  P  T  B  FLEX  2
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   11, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [SN2007le_IRmonitor, uranusMon1, com17Pmon-071030, SN07kk_IRmonitor, M33_cal_chip36, ] RT =   60m 
+Run   11, SEQ_FRAG for 20:00:34 2007-11-13 +(  60)m : [M33_cal_chip31, lens_2403, pol_BD59_389, M33_cal_chip1, 893dt, 927et, ] RT =   60m 
+Run   11, SEQ_FRAG for 20:59:59 2007-11-13 +(  60)m : [0235, i1_1_H00, 2251, ] RT =   65m 
+Run   11, SEQ_FRAG for 22:03:39 2007-11-13 +(  60)m : [923jt, M33_cal_chip32, M33_cal_chip28, zero_hd212311, m15weekly, 891gt, 932at, 895it, zero_HD12021, ] RT =   60m 
+Run   11, SEQ_FRAG for 23:04:43 2007-11-13 +(  60)m : [NGC7721, UCM_galaxies_16, 927gt, 888et, PG0231+051, ] RT =   64m 
+Run   11, SEQ_FRAG for 00:10:27 2007-11-14 +(  60)m : [0851, 927ht, M33_cal_chip33, Photom_2331+055A, 725dt, 889bt, FS14, Photom_G1_RU149, 889et, ] RT =   61m 
+Run   11, SEQ_FRAG for 01:11:36 2007-11-14 +(  60)m : [UCM_galaxies_4, SN07kk_Optmonitor, 887gt, Angstrom, ] RT =   63m 
+Run   11, SEQ_FRAG for 02:14:10 2007-11-14 +(  60)m : [M33_cal_chip22, 891jt, group07b01c, 925at, 17P-monitor, zero_G191B2, 889it, ] RT =   63m 
+Run   11, SEQ_FRAG for 03:18:23 2007-11-14 +(  60)m : [923gt, UCM_galaxies_5, NGC4030, FS109, 927ft, 927ct, ] RT =   60m 
+Run   11, SEQ_FRAG for 04:19:32 2007-11-14 +(  60)m : [M33_cal_chip9, lens_M81, ESO494-G26, 926gt, venus-mon-070919, FS21, ] RT =   64m 
+Run   11, SEQ_FRAG for 05:23:50 2007-11-14 +(  60)m : [lens_M64, M33_cal_chip21, 5548_opt, 1226, Photom_G1_1047+003, 926jt, Star_H13, ] RT =   56m 
+Run   11, SEQ_FRAG for 06:20:10 2007-11-14 +(  60)m : [17P-mosaic, darkbias_16h, FocusShort_07, ] RT =   25m 
+Run   11, NO_SEQ_FRAG at 06:44:45 2007-11-14 until EON 
+Run:   11, SCORES  0.5734 1.8147 0.3142 0.7904 0.3279 0.0000 0.9795
+Run   11, LIST 
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_068  893dt  P  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_159  923jt  P  N  D  FLEX  3
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_402  891gt  P  N  D  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_048  725dt  P  T  B  FLEX  1
+:G_114  889bt  P  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_110  889et  P  N  D  FLEX  1
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_399  887gt  P  N  D  FLEX  2
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_077  891jt  P  N  D  FLEX  1
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_022  889it  P  N  D  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_112  927ft  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run   12, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [darkbias_16h, SN2007le_IRmonitor, PG0231+051, com17Pmon-071030, FS109, 17P-mosaic, M33_cal_chip36, ] RT =   63m 
+Run   12, SEQ_FRAG for 20:03:45 2007-11-13 +(  60)m : [M33_cal_chip31, m15weekly, zero_HD12021, SN07kk_Optmonitor, TST-BarnStar-071105, M33_cal_chip21, NGC7721, ] RT =   65m 
+Run   12, SEQ_FRAG for 21:09:54 2007-11-13 +(  60)m : [SN2007le_OptMonitor, Photom_M-A, UCM_galaxies_10, ] RT =   60m 
+Run   12, SEQ_FRAG for 22:09:09 2007-11-13 +(  60)m : [926gt, J1406, 891jt, 889bt, 2200, 725dt, 923gt, 2251, 923jt, ] RT =   60m 
+Run   12, SEQ_FRAG for 23:09:52 2007-11-13 +(  60)m : [UCM_galaxies_17, 889it, M33_cal_chip28, ] RT =   60m 
+Run   12, SEQ_FRAG for 00:09:11 2007-11-14 +(  60)m : [zero_hd212311, 895it, UCM_galaxies_14, M33_cal_chip23, ] RT =   64m 
+Run   12, SEQ_FRAG for 01:12:44 2007-11-14 +(  60)m : [SN2007gr, 891gt, 889et, SN07kk_IRmonitor, Photom_G1_RU149, 926jt, uranusMon1, 927ct, 927gt, ] RT =   61m 
+Run   12, SEQ_FRAG for 02:14:27 2007-11-14 +(  60)m : [zero_G191B2, FS21, UCM_galaxies_7, Angstrom, 888et, ] RT =   60m 
+Run   12, SEQ_FRAG for 03:14:46 2007-11-14 +(  60)m : [ANGM31, M33_cal_chip33, 932at, 0235, ] RT =   61m 
+Run   12, SEQ_FRAG for 04:16:53 2007-11-14 +(  60)m : [M31b, gals_to_calib_3, FS14, 5548_opt, 887gt, ] RT =   60m 
+Run   12, SEQ_FRAG for 05:15:35 2007-11-14 +(  60)m : [Photom_G1_1047+003, venus-mon-070919, UGC4904, 927et, J0806, ] RT =   63m 
+Run   12, SEQ_FRAG for 06:17:09 2007-11-14 +(  60)m : [17P-monitor, FocusShort_07, ] RT =   10m 
+Run   12, SEQ_FRAG for 06:28:08 2007-11-14 +(  60)m : [Star_H13, ] RT =    2m 
+Run   12, NO_SEQ_FRAG at 06:30:32 2007-11-14 until EON 
+Run:   12, SCORES  0.5667 1.9292 0.3249 0.7857 0.3149 0.0000 0.9680
+Run   12, LIST 
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_077  891jt  P  N  D  FLEX  1
+:G_114  889bt  P  N  D  FLEX  1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_101  923gt  P  N  D  FLEX  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_159  923jt  P  N  D  FLEX  3
+:G_453  UCM_galaxies_17  A  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_098  895it  P  N  D  FLEX  1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_402  891gt  P  N  D  FLEX  2
+:G_110  889et  P  N  D  FLEX  1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_072  927gt  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_398  888et  P  N  D  FLEX  2
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_399  887gt  P  N  D  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   13, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [SN07kk_IRmonitor, 17P-monitor, 17P-mosaic, M33_cal_chip32, ] RT =   62m 
+Run   13, SEQ_FRAG for 20:02:06 2007-11-13 +(  60)m : [darkbias_16h, J1406, zero_hd212311, M33_cal_chip9, TST-BarnStar-071105, 923jt, pol_BD59_389, ] RT =   63m 
+Run   13, SEQ_FRAG for 21:03:29 2007-11-13 +(  60)m : [927gt, lens_2403, uranusMon1, UCM_galaxies_14, 927ht, ] RT =   62m 
+Run   13, SEQ_FRAG for 22:05:23 2007-11-13 +(  60)m : [M33_cal_chip1, i1_1_H00, ] RT =   67m 
+Run   13, SEQ_FRAG for 23:11:55 2007-11-13 +(  60)m : [UCM_galaxies_5, 893dt, SN07kk_Optmonitor, 889it, zero_HD12021, ] RT =   61m 
+Run   13, SEQ_FRAG for 00:13:39 2007-11-14 +(  60)m : [889et, UCM_galaxies_18, Photom_G1_RU149, zero_G191B2, 932at, 895it, ] RT =   62m 
+Run   13, SEQ_FRAG for 01:15:19 2007-11-14 +(  60)m : [2251, 925at, M33_cal_chip31, J0806, 888et, FS109, ] RT =   63m 
+Run   13, SEQ_FRAG for 02:19:57 2007-11-14 +(  60)m : [927et, UCM_galaxies_7, 0235, lens_M81, ] RT =   65m 
+Run   13, SEQ_FRAG for 03:24:48 2007-11-14 +(  60)m : [891jt, PG0231+051, 923gt, FS21, M33_cal_chip28, NGC3054, ] RT =   62m 
+Run   13, SEQ_FRAG for 04:27:59 2007-11-14 +(  60)m : [group07b01d, 926gt, Photom_G1_1047+003, M31b, 927ct, NGC4030, ] RT =   63m 
+Run   13, SEQ_FRAG for 05:32:04 2007-11-14 +(  60)m : [group07b01c, lens_M64, FS14, 5548_opt, com17Pmon-071030, venus-mon-070919, 725dt, 926jt, ] RT =   58m 
+Run   13, SEQ_FRAG for 06:31:50 2007-11-14 +(  60)m : [FocusShort_07, Star_H13, ] RT =    9m 
+Run   13, NO_SEQ_FRAG at 06:41:33 2007-11-14 until EON 
+Run:   13, SCORES  0.5900 1.7830 0.3307 0.8385 0.3155 0.0000 0.9781
+Run   13, LIST 
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_275  TST-BarnStar-071105  P  N  B  FLEX  0
+:G_159  923jt  P  N  D  FLEX  3
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_072  927gt  P  N  D  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_022  889it  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_110  889et  P  N  D  FLEX  1
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_025  932at  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_059  925at  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_358  J0806  P  N  D  INT(96.0)  3
+:G_398  888et  P  N  D  FLEX  2
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_028  927et  P  N  D  FLEX  1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_077  891jt  P  N  D  FLEX  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_101  923gt  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_266  NGC3054  P  N  D  FLEX  1
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_408  927ct  P  T  B  FLEX  2
+:G_270  NGC4030  P  N  D  FLEX  1
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_048  725dt  P  T  B  FLEX  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   14, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [uranusMon1, SN2007le_IRmonitor, SN07kk_IRmonitor, 2200, darkbias_16h, pol_BD59_389, com17Pmon-071030, 17P-monitor, ] RT =   62m 
+Run   14, SEQ_FRAG for 20:01:29 2007-11-13 +(  60)m : [Angstrom, M33_cal_chip21, Photom_2331+055A, M33_cal_chip28, 927ft, 891gt, zero_G191B2, ] RT =   63m 
+Run   14, SEQ_FRAG for 21:04:43 2007-11-13 +(  60)m : [M33_cal_chip33, SN2007le_OptMonitor, M33_cal_chip9, 923gt, 891jt, 889it, 2251, ] RT =   63m 
+Run   14, SEQ_FRAG for 22:07:50 2007-11-13 +(  60)m : [NGC7721, HS2209, M33_cal_chip23, 895it, PG0231+051, ] RT =   65m 
+Run   14, SEQ_FRAG for 23:15:23 2007-11-13 +(  60)m : [UCM_galaxies_7, zero_hd212311, zero_HD12021, 927ct, 932at, 887gt, 888et, 889et, ] RT =   62m 
+Run   14, SEQ_FRAG for 00:17:05 2007-11-14 +(  60)m : [725dt, UCM_galaxies_5, M33_cal_chip32, 926gt, ] RT =   61m 
+Run   14, SEQ_FRAG for 01:20:09 2007-11-14 +(  60)m : [J1406, group07b01b, FS109, ] RT =   60m 
+Run   14, SEQ_FRAG for 02:20:31 2007-11-14 +(  60)m : [M33_cal_chip31, M33_cal_chip1, M33_cal_chip13, M31b, ] RT =   65m 
+Run   14, SEQ_FRAG for 03:25:57 2007-11-14 +(  60)m : [NGC3054, UCM_galaxies_16, ] RT =   63m 
+Run   14, SEQ_FRAG for 04:29:33 2007-11-14 +(  60)m : [venus-mon-070919, 893dt, NGC3672, 925at, FS21, 927gt, 927ht, 1226, 5548_opt, NGC4981, ] RT =   61m 
+Run   14, SEQ_FRAG for 05:29:52 2007-11-14 +(  60)m : [UGC6517, lens_2403, FS14, Photom_G1_1047+003, 926jt, Photom_G1_RU149, ] RT =   63m 
+Run   14, SEQ_FRAG for 06:32:41 2007-11-14 +(  60)m : [17P-mosaic, ] RT =   13m 
+Run   14, SEQ_FRAG for 06:45:58 2007-11-14 +(  60)m : [Star_H13, FocusShort_07, ] RT =    9m 
+Run   14, NO_SEQ_FRAG at 06:55:12 2007-11-14 until EON 
+Run:   14, SCORES  0.5604 1.9120 0.3141 0.7984 0.2812 0.0000 0.9958
+Run   14, LIST 
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_402  891gt  P  N  D  FLEX  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_022  889it  P  N  D  FLEX  1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_098  895it  P  N  D  FLEX  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_408  927ct  P  T  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_399  887gt  P  N  D  FLEX  2
+:G_398  888et  P  N  D  FLEX  2
+:G_110  889et  P  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_266  NGC3054  P  N  D  FLEX  1
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_068  893dt  P  N  D  FLEX  1
+:G_244  NGC3672  P  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_072  927gt  P  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_213  UGC6517  P  N  D  FLEX  1
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+Run   15, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_M-A, darkbias_16h, SN2007le_IRmonitor, Photom_2331+055A, SN07kk_IRmonitor, ] RT =   63m 
+Run   15, SEQ_FRAG for 20:02:31 2007-11-13 +(  60)m : [SN2007le_OptMonitor, M33_cal_chip33, M33_cal_chip28, 17P-mosaic, ] RT =   60m 
+Run   15, SEQ_FRAG for 21:02:09 2007-11-13 +(  60)m : [UCM_galaxies_18, M33_cal_chip23, 888et, ] RT =   60m 
+Run   15, SEQ_FRAG for 22:04:41 2007-11-13 +(  60)m : [J1406, 895it, M33_cal_chip9, PG0231+051, FS109, ] RT =   62m 
+Run   15, SEQ_FRAG for 23:06:43 2007-11-13 +(  60)m : [Angstrom, UCM_galaxies_10, 925at, 0851, 725dt, ] RT =   60m 
+Run   15, SEQ_FRAG for 00:07:07 2007-11-14 +(  60)m : [zero_HD12021, 887gt, zero_hd212311, UGC4904, 927ht, 0235, NGC7721, SN07kk_Optmonitor, ] RT =   64m 
+Run   15, SEQ_FRAG for 01:11:47 2007-11-14 +(  60)m : [NGC4088, group07b01c, 927gt, zero_G191B2, 889bt, ] RT =   61m 
+Run   15, SEQ_FRAG for 02:13:35 2007-11-14 +(  60)m : [FS14, M33_cal_chip13, 891gt, 927ct, UCM_galaxies_4, ] RT =   67m 
+Run   15, SEQ_FRAG for 03:19:16 2007-11-14 +(  60)m : [pol_BD59_389, dark_12h, ANGM31, 891jt, NGC4041, ] RT =   64m 
+Run   15, SEQ_FRAG for 04:25:56 2007-11-14 +(  60)m : [group07b01b, 927et, SN2007gr, MCG-01-33-34, ] RT =   65m 
+Run   15, SEQ_FRAG for 05:32:49 2007-11-14 +(  60)m : [i1_2_H13, venus-mon-070919, 5548_opt, Photom_G1_1047+003, ] RT =   63m 
+Run   15, SEQ_FRAG for 06:35:52 2007-11-14 +(  60)m : [com17Pmon-071030, Photom_G1_RU149, 926jt, 17P-monitor, FS21, Star_H13, ] RT =   25m 
+Run:   15, SCORES  0.5307 1.9378 0.3221 0.8346 0.3404 0.0000 0.9984
+Run   15, LIST 
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_334  M33_cal_chip28  P  N  B  FLEX  2
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_398  888et  P  N  D  FLEX  2
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_098  895it  P  N  D  FLEX  1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_399  887gt  P  N  D  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_264  NGC7721  P  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_210  NGC4088  P  N  D  FLEX  1
+:G_280  group07b01c  A  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_114  889bt  P  N  D  FLEX  1
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_402  891gt  P  N  D  FLEX  2
+:G_408  927ct  P  T  B  FLEX  2
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_426  dark_12h  P  N  B  INT(24.0)  2
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_077  891jt  P  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_204  MCG-01-33-34  P  N  D  FLEX  3
+:G_431  i1_2_H13  P  N  D  INT(168.0)  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   16, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [SN2007le_IRmonitor, 17P-monitor, FS109, uranusMon1, Photom_M-A, darkbias_16h, PG0231+051, M33_cal_chip13, ] RT =   62m 
+Run   16, SEQ_FRAG for 20:01:12 2007-11-13 +(  60)m : [SN07kk_IRmonitor, M33_cal_chip31, lens_2403, ] RT =   60m 
+Run   16, SEQ_FRAG for 21:01:28 2007-11-13 +(  60)m : [0235, UCM_galaxies_13, 927ft, zero_HD12021, 923gt, 891jt, ] RT =   60m 
+Run   16, SEQ_FRAG for 22:02:53 2007-11-13 +(  60)m : [com17Pmon-071030, m15weekly, SN07kk_Optmonitor, 17P-mosaic, 926gt, 2200, 927gt, M33_cal_chip21, ] RT =   63m 
+Run   16, SEQ_FRAG for 23:05:17 2007-11-13 +(  60)m : [UCM_galaxies_18, 927et, SN2007le_OptMonitor, 2251, ] RT =   62m 
+Run   16, SEQ_FRAG for 00:08:32 2007-11-14 +(  60)m : [M33_cal_chip22, UCM_galaxies_5, 927ht, ] RT =   60m 
+Run   16, SEQ_FRAG for 01:10:51 2007-11-14 +(  60)m : [889bt, UCM_galaxies_14, 923jt, M33_cal_chip36, ] RT =   63m 
+Run   16, SEQ_FRAG for 02:14:32 2007-11-14 +(  60)m : [UCM_galaxies_10, NGC3430, ] RT =   63m 
+Run   16, SEQ_FRAG for 03:18:22 2007-11-14 +(  60)m : [ESO494-G26, 893dt, Photom_G1_RU149, 887gt, Photom_G1_1047+003, zero_G191B2, Angstrom, ] RT =   60m 
+Run   16, SEQ_FRAG for 04:18:41 2007-11-14 +(  60)m : [i1_1_H13, 926jt, 932at, 925at, 1226, ] RT =   65m 
+Run   16, SEQ_FRAG for 05:23:48 2007-11-14 +(  60)m : [venus-mon-070919, M33_cal_chip9, NGC3672, 895it, FS21, 725dt, 5548_opt, 927ct, FS14, ] RT =   60m 
+Run   16, SEQ_FRAG for 06:22:26 2007-11-14 +(  60)m : [Star_H13, ] RT =    2m 
+Run   16, NO_SEQ_FRAG at 06:24:59 2007-11-14 until EON 
+Run:   16, SCORES  0.5318 1.6829 0.3249 0.8133 0.2728 0.0000 0.9525
+Run   16, LIST 
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_456  UCM_galaxies_13  A  N  D  FLEX  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_101  923gt  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_156  926gt  P  N  D  FLEX  3
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_449  UCM_galaxies_18  A  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_271  SN2007le_OptMonitor  P  N  B  INT(24.0)  3
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_461  UCM_galaxies_5  A  N  D  FLEX  1
+:G_093  927ht  P  N  D  FLEX  1
+:G_114  889bt  P  N  D  FLEX  1
+:G_450  UCM_galaxies_14  A  N  D  FLEX  1
+:G_159  923jt  P  N  D  FLEX  3
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_265  NGC3430  P  N  D  FLEX  1
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_399  887gt  P  N  D  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_437  i1_1_H13  P  N  D  INT(168.0)  1
+:G_407  926jt  P  T  B  FLEX  2
+:G_025  932at  P  N  D  FLEX  1
+:G_059  925at  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_244  NGC3672  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_048  725dt  P  T  B  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_408  927ct  P  T  B  FLEX  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   17, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [Photom_2331+055A, SN2007le_IRmonitor, com17Pmon-071030, Photom_M-A, FS109, M33_cal_chip32, 17P-monitor, zero_hd212311, ] RT =   63m 
+Run   17, SEQ_FRAG for 20:03:04 2007-11-13 +(  60)m : [J1406, M33_cal_chip1, lens_2403, 932at, ] RT =   63m 
+Run   17, SEQ_FRAG for 21:06:01 2007-11-13 +(  60)m : [888et, zero_G191B2, 925at, 895it, UCM_galaxies_7, 923jt, 927et, 891jt, ] RT =   62m 
+Run   17, SEQ_FRAG for 22:10:45 2007-11-13 +(  60)m : [zero_HD12021, UCM_galaxies_10, 889et, 927gt, 0235, 887gt, ] RT =   60m 
+Run   17, SEQ_FRAG for 23:11:54 2007-11-13 +(  60)m : [HS2209, 889bt, M33_cal_chip23, m15weekly, 927ht, 926gt, 927ct, 889it, ] RT =   63m 
+Run   17, SEQ_FRAG for 00:13:23 2007-11-14 +(  60)m : [M33_cal_chip22, i1_1_H00, ] RT =   67m 
+Run   17, SEQ_FRAG for 01:20:34 2007-11-14 +(  60)m : [M33_cal_chip9, UCM_galaxies_13, uranusMon1, 893dt, ] RT =   61m 
+Run   17, SEQ_FRAG for 02:21:09 2007-11-14 +(  60)m : [ANGM31, 725dt, group07b01b, ] RT =   63m 
+Run   17, SEQ_FRAG for 03:24:48 2007-11-14 +(  60)m : [17P-mosaic, NGC4041, UGC4904, 1226, ] RT =   65m 
+Run   17, SEQ_FRAG for 04:31:51 2007-11-14 +(  60)m : [NGC3672, 0851, M33_cal_chip13, 927ft, FS21, venus-mon-070919, NGC4981, ] RT =   65m 
+Run   17, SEQ_FRAG for 05:36:49 2007-11-14 +(  60)m : [SN07kk_Optmonitor, lens_M81, group07b01d, 5548_opt, FS14, ] RT =   63m 
+Run   17, SEQ_FRAG for 06:40:40 2007-11-14 +(  60)m : [darkbias_16h, Photom_G1_RU149, SN07kk_IRmonitor, 926jt, Photom_G1_1047+003, ] RT =   53m 
+Run:   17, SCORES  0.6293 1.9621 0.3385 0.8744 0.3512 0.0000 1.0479
+Run   17, LIST 
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_272  SN2007le_IRmonitor  P  T  B  INT(24.0)  3
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_006  Photom_M-A  P  T  B  INT(3.0)  -1
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_360  J1406  P  N  B  INT(72.0)  3
+:G_338  M33_cal_chip1  P  N  B  FLEX  2
+:G_371  lens_2403  P  N  B  INT(48.0)  2
+:G_025  932at  P  N  D  FLEX  1
+:G_398  888et  P  N  D  FLEX  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_059  925at  P  N  D  FLEX  1
+:G_098  895it  P  N  D  FLEX  1
+:G_452  UCM_galaxies_7  A  N  D  FLEX  1
+:G_159  923jt  P  N  D  FLEX  3
+:G_028  927et  P  N  D  FLEX  1
+:G_077  891jt  P  N  D  FLEX  1
+:G_385  zero_HD12021  P  N  B  INT(5.0)  -1
+:G_462  UCM_galaxies_10  A  N  D  FLEX  1
+:G_110  889et  P  N  D  FLEX  1
+:G_072  927gt  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_399  887gt  P  N  D  FLEX  2
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_114  889bt  P  N  D  FLEX  1
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_287  m15weekly  A  N  B  INT(132.0)  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_156  926gt  P  N  D  FLEX  3
+:G_408  927ct  P  T  B  FLEX  2
+:G_022  889it  P  N  D  FLEX  1
+:G_323  M33_cal_chip22  P  N  B  FLEX  2
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_343  M33_cal_chip9  P  N  B  FLEX  2
+:G_456  UCM_galaxies_13  A  N  D  FLEX  1
+:G_294  uranusMon1  P  T  B  INT(24.0)  1
+:G_068  893dt  P  N  D  FLEX  1
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_048  725dt  P  T  B  FLEX  1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_244  NGC3672  P  N  D  FLEX  1
+:G_472  0851  A  N  D  INT(168.0)  1
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_112  927ft  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_273  SN07kk_Optmonitor  P  N  B  INT(24.0)  5
+:G_373  lens_M81  P  N  B  INT(48.0)  2
+:G_282  group07b01d  A  N  D  FLEX  1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_407  926jt  P  T  B  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+Run   18, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [17P-mosaic, com17Pmon-071030, darkbias_16h, SN07kk_IRmonitor, M33_cal_chip13, ] RT =   65m 
+Run   18, SEQ_FRAG for 20:04:24 2007-11-13 +(  60)m : [zero_G191B2, M31b, SN2007gr, ANGM31, FS109, ] RT =   64m 
+Run   18, SEQ_FRAG for 21:08:02 2007-11-13 +(  60)m : [887gt, 888et, 927ht, Angstrom, 925at, 17P-monitor, UCM_galaxies_4, ] RT =   65m 
+Run   18, SEQ_FRAG for 22:14:04 2007-11-13 +(  60)m : [pol_BD59_389, M33_cal_chip36, UCM_galaxies_16, ] RT =   60m 
+Run   18, SEQ_FRAG for 23:16:21 2007-11-13 +(  60)m : [932at, 2200, HS2209, M33_cal_chip21, 923gt, 927ct, ] RT =   60m 
+Run   18, SEQ_FRAG for 00:16:54 2007-11-14 +(  60)m : [UGC4904, PG0231+051, M33_cal_chip33, 926gt, 927gt, 0235, ] RT =   63m 
+Run   18, SEQ_FRAG for 01:19:59 2007-11-14 +(  60)m : [ESO494-G26, 927et, M33_cal_chip32, Photom_G1_RU149, 2251, ] RT =   60m 
+Run   18, SEQ_FRAG for 02:19:25 2007-11-14 +(  60)m : [Photom_2331+055A, 926jt, i1_1_H00, ] RT =   60m 
+Run   18, SEQ_FRAG for 03:22:52 2007-11-14 +(  60)m : [927ft, FS21, group07b01b, NGC4041, 725dt, ] RT =   60m 
+Run   18, SEQ_FRAG for 04:24:38 2007-11-14 +(  60)m : [gals_to_calib_3, NGC4981, M33_cal_chip31, ] RT =   61m 
+Run   18, SEQ_FRAG for 05:27:50 2007-11-14 +(  60)m : [zero_hd212311, 1226, venus-mon-070919, 889et, lens_M64, M33_cal_chip23, Photom_G1_1047+003, 5548_opt, ] RT =   62m 
+Run   18, SEQ_FRAG for 06:30:14 2007-11-14 +(  60)m : [FS14, ] RT =    5m 
+Run   18, SEQ_FRAG for 06:35:43 2007-11-14 +(  60)m : [FocusShort_07, ] RT =    7m 
+Run   18, SEQ_FRAG for 06:42:58 2007-11-14 +(  60)m : [Star_H13, ] RT =    2m 
+Run   18, NO_SEQ_FRAG at 06:45:36 2007-11-14 until EON 
+Run:   18, SCORES  0.5031 1.7602 0.3100 0.8152 0.3502 0.0000 0.9734
+Run   18, LIST 
+:G_369  17P-mosaic  A  T  B  FLEX  3
+:G_276  com17Pmon-071030  P  T  B  INT(48.0)  1
+:G_427  darkbias_16h  P  T  B  INT(24.0)  2
+:G_274  SN07kk_IRmonitor  P  T  B  INT(24.0)  5
+:G_347  M33_cal_chip13  P  N  B  FLEX  2
+:G_382  zero_G191B2  P  N  B  INT(5.0)  -1
+:G_423  M31b  P  N  B  INT(24.0)  2
+:G_007  SN2007gr  P  N  B  INT(48.0)  3
+:G_476  ANGM31  P  N  B  INT(2.5)  2
+:G_355  FS109  P  T  B  INT(3.0)  -1
+:G_399  887gt  P  N  D  FLEX  2
+:G_398  888et  P  N  D  FLEX  2
+:G_093  927ht  P  N  D  FLEX  1
+:G_375  Angstrom  P  N  B  INT(24.0)  3
+:G_059  925at  P  N  D  FLEX  1
+:G_370  17P-monitor  A  T  B  INT(3.0)  2
+:G_455  UCM_galaxies_4  A  N  D  FLEX  1
+:G_384  pol_BD59_389  P  N  B  INT(3.0)  -1
+:G_337  M33_cal_chip36  P  N  B  FLEX  2
+:G_458  UCM_galaxies_16  A  N  D  FLEX  1
+:G_025  932at  P  N  D  FLEX  1
+:G_469  2200  A  N  B  INT(168.0)  1
+:G_359  HS2209  P  N  D  INT(72.0)  3
+:G_349  M33_cal_chip21  P  N  B  FLEX  2
+:G_101  923gt  P  N  D  FLEX  1
+:G_408  927ct  P  T  B  FLEX  2
+:G_237  UGC4904  P  N  D  FLEX  1
+:G_003  PG0231+051  P  T  B  INT(3.0)  -1
+:G_324  M33_cal_chip33  P  N  B  FLEX  2
+:G_156  926gt  P  N  D  FLEX  3
+:G_072  927gt  P  N  D  FLEX  1
+:G_470  0235  A  N  D  INT(168.0)  1
+:G_259  ESO494-G26  P  N  D  FLEX  1
+:G_028  927et  P  N  D  FLEX  1
+:G_348  M33_cal_chip32  P  N  B  FLEX  2
+:G_002  Photom_G1_RU149  P  T  B  INT(3.0)  -1
+:G_466  2251  A  N  D  INT(168.0)  1
+:G_005  Photom_2331+055A  P  T  B  INT(3.0)  -1
+:G_407  926jt  P  T  B  FLEX  2
+:G_432  i1_1_H00  P  N  D  INT(168.0)  1
+:G_112  927ft  P  N  D  FLEX  1
+:G_353  FS21  P  T  B  INT(3.0)  -1
+:G_281  group07b01b  A  N  D  FLEX  1
+:G_218  NGC4041  P  N  D  FLEX  1
+:G_048  725dt  P  T  B  FLEX  1
+:G_446  gals_to_calib_3  A  N  D  FLEX  1
+:G_239  NGC4981  P  N  D  FLEX  1
+:G_319  M33_cal_chip31  P  N  B  FLEX  2
+:G_381  zero_hd212311  P  N  B  INT(5.0)  -1
+:G_471  1226  A  N  B  INT(168.0)  1
+:G_277  venus-mon-070919  USAB  T  B  INT(48.0)  3
+:G_110  889et  P  N  D  FLEX  1
+:G_372  lens_M64  P  N  B  INT(48.0)  2
+:G_336  M33_cal_chip23  P  N  B  FLEX  2
+:G_004  Photom_G1_1047+003  P  T  B  INT(3.0)  -1
+:G_481  5548_opt  P  T  B  INT(168.0)  2
+:G_352  FS14  P  T  B  INT(3.0)  -1
+:G_126  FocusShort_07  P  T  B  INT(168.0)  -10
+:G_278  Star_H13  P  T  B  INT(168.0)  -10
+Run   19, SEQ_FRAG for 19:00:00 2007-11-13 +(  60)m : [FS109, 17P-mosaic, SN2007le_IRmonitor, 17P-monitor, com17Pmon-071030, Photom_2331+055A, pol_BD59_389, lens_M81, ] RT =   64m 
+Run   19, SEQ_FRAG for 20:03:36 2007-11-13 +(  60)m : [SN07kk_IRmonitor, J1406, m15weekly, zero_G191B2, ] RT =   62m 
+Run   19, SEQ_FRAG for 21:05:08 2007-11-13 +(  60)m : [M33_cal_chip28, SN2007gr, M31b, zero_HD12021, 927gt, 891jt, 927ct, 893dt, 891gt, 895it, ] RT =   61m 

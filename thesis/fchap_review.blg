@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99c (Web2C 7.4.5)
+The top-level auxiliary file: fchap_review.aux
+A level-1 auxiliary file: f_review.aux
+The style file: apalike.bst
+Database file #1: biblio.bib
+I was expecting a `,' or a `}'---line 241 of file biblio.bib
+ : 
+ : @misc{bresina94jic,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field part---line 409 of file biblio.bib
+ :   month= 
+ :          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 425 of file biblio.bib
+ : 
+ : @INPROCEEDINGS{darmoul06scheduling,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "hart99immune"
+refers to entry "DBLP:conf/gecco/1999", which doesn't exist
+Warning--I didn't find a database entry for "mori94XXX"
+Warning--I didn't find a database entry for "DBLP:conf/gecco/1999"
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1019 of file apalike.bst
+Warning--empty year in kennedy95particle
+Warning--empty booktitle in kennedy95particle
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1094 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1094 of file apalike.bst
+Too many commas in name 1 of "MacKie-Mason, Jeffrey K., Osepayshvili, Anna, Reeves, Daniel M. and Wellman, Michael P" for entry mackie04price
+while executing---line 1094 of file apalike.bst
+Warning--there's a number but no volume in parunak97ant
+You've used 69 entries,
+            1935 wiz_defined-function locations,
+            860 strings with 15966 characters,
+and the built_in function-call counts, 29417 in all, are:
+= -- 2924
+> -- 1154
+< -- 64
++ -- 393
+- -- 377
+* -- 2301
+:= -- 4930
+add.period$ -- 217
+call.type$ -- 69
+change.case$ -- 524
+chr.to.int$ -- 69
+cite$ -- 72
+duplicate$ -- 1256
+empty$ -- 2136
+format.name$ -- 484
+if$ -- 6025
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 56
+newline$ -- 343
+num.names$ -- 221
+pop$ -- 569
+preamble$ -- 1
+purify$ -- 526
+quote$ -- 0
+skip$ -- 914
+stack$ -- 0
+substring$ -- 1957
+swap$ -- 261
+text.length$ -- 30
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 410
+warning$ -- 3
+while$ -- 230
+width$ -- 0
+write$ -- 900
+(There were 13 error messages)

@@ -1,0 +1,38 @@
+#!/bin/csh
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+if (${#argv} < 1) then
+    echo "No bleeding name supplied"
+    exit 1
+endif
+
+
+set SIM = $1
+
+set simlog = sim_${SIM}.log
+
+java $POL $ASTRO LongTermSimulationTest \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+	--sexm sex1.cfg \
+	--scoring alternative --score alt_score1.cfg \
+	--cost accounting1.cfg \
+	--env env1.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-01-15 13:00:00" \
+        --end   "2008-11-15 08:00:00" >& $simlog
+
+# alternative stuff	
+#|& grep "CDAT_" 
+#  --scoring basic --score bscore1.cfg \
+#  --scoring alternative --score alt_score1.cfg

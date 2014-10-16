@@ -1,0 +1,19 @@
+#!/bin/csh
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+java $POL $ASTRO ngat.oss.simulation.test.LoadTest \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" >& load.dat &

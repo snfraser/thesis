@@ -1,0 +1,24 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+
+setenv CLASSPATH .:$CLASSPATH
+
+
+
+/usr/bin/gnuplot -persist <<EOF
+set output "volpi_hi.eps"
+set term postscript eps enhanced color
+set yrange [0:1.1]
+set title "Variation of increased reward with proximity"
+set xlabel "Proximity ({/Symbol p}) [mins]"
+set ylabel "Increase in reward"
+set key right bottom
+f1(x)= (x < 30)  ? (30+x)/60:1.0
+f2(x)= (x < 90)  ? (30+x)/120:1.0
+f3(x)= (x < 210) ? (30+x)/240:1.0
+plot f1(x) lt 2 ti "Fit 1h", "v1h_all.dat" using 2:3 pt 5 ps 1.0 ti "Data 1h", f2(x) lt 4 ti "Fit 2h", "v2h_all.dat" using 2:3 pt 3 ps 1.0 ti "Data 2h", f3(x) lt 1 ti "Fit 4h", "v4h_all.dat" using 2:3 pt 2 ps 1.0 ti "Data 4h"
+EOF
+
+#ALT:  wi point pt 5 ps 0.5

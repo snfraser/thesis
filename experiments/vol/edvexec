@@ -1,0 +1,12 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+
+/usr/java/jdk1.5.0_21/bin/java EdvSim > & edv.dat
+
+cat edv.dat | grep "H0.5" | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > edv05.dat
+cat edv.dat | grep "H1"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > edv1.dat
+cat edv.dat | grep "H2"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > edv2.dat
+cat edv.dat | grep "H4"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > edv4.dat
+

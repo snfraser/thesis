@@ -1,0 +1,28 @@
+This simulation performs a very basic test of the simulation paradigm using the following models:-
+
+EXM - basic 
+SXM - basic
+ENV - basic fixed (per sim run)
+SCO - variable from config
+
+SEL - basic rank #1
+
+SQM- optimal height metric / window centring metric/ etc from config
+
+Aim is to test the effect of varying scoring weights on the various SQMs. 
+
+The basic variable is the scoring model weights, 
+these are to be varied by the sim controller in a configurable way. 
+
+May need to do some wort of normalization of weights ? - e.g. sum weights = 1
+
+The simulation to be run many times for statistical results. 
+
+Environment to be varied between different blocks of runs to give range of values,
+maybe classify results by env state. 
+
+The SQM is the optimal height and optimal time in monitor window metric. Maybe others as required. 
+Load/demand PCMs to be worked out in advance of run to add to graphs.
+
+
+

@@ -1,0 +1,702 @@
+\begin{thebibliography}{105}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Allan} et~al.(2004){Allan}, {Naylor}, {Steele}, {Jenness},
+  {Cavanagh}, {Economou}, {Saunders}, {Adamson}, {Etherton}, and
+  {Mottram}]{allan04estar}
+A.~{Allan}, T.~{Naylor}, I.~A. {Steele}, T.~{Jenness}, B.~{Cavanagh},
+  F.~{Economou}, E.~{Saunders}, A.~{Adamson}, J.~{Etherton}, and C.~{Mottram}.
+\newblock {eSTAR: intelligent observing and rapid responses}.
+\newblock In {H.~Lewis \& G.~Raffi}, editor, \emph{Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series}, volume 5496, pages
+  313--322, September 2004.
+
+\bibitem[{Allan} et~al.(2006){Allan}, {Naylor}, and {Saunders}]{allan06estar}
+A.~{Allan}, T.~{Naylor}, and E.~S. {Saunders}.
+\newblock {The eSTAR network - agent architectures for astronomy}.
+\newblock \emph{Astronomische Nachrichten}, 327:\penalty0 767--+, September
+  2006.
+
+\bibitem[Apolloni et~al.(1989)Apolloni, Carvalho, and
+  de~Falco]{apolloni89quantum}
+B.~Apolloni, C.~Carvalho, and D.~de~Falco.
+\newblock Quantum stochastic optimization.
+\newblock \emph{Stochastic Processes and their Applications}, 33\penalty0
+  (2):\penalty0 233 -- 244, 1989.
+
+\bibitem[ARI(2011)]{lt11pipelines}
+ARI.
+\newblock Liverpool telescope instrument pipelines.
+\newblock webpage, 2011.
+\newblock URL \url{http://telescope.livjm.ac.uk/Info/TelInst/Pipelines/}.
+
+\bibitem[Beck et~al.(1997)Beck, Davenport, Sitarski, and
+  Fox]{beck97texturebased}
+J.~Christopher Beck, Andrew~J. Davenport, Edward~M. Sitarski, and Mark~S. Fox.
+\newblock Texture-based heuristics for scheduling revisited.
+\newblock In \emph{Proceedings of the 14th National Conference on Artificial
+  Intelligence ({AAAI}-97)}, pages 241--248, Providence, Rhode Island, USA,
+  1997. AAAI Press / MIT Press.
+\newblock ISBN 0-262-51095-2.
+
+\bibitem[Bell and McMullen(2004)]{bell04ant}
+John~E. Bell and Patrick~R. McMullen.
+\newblock Ant colony optimization techniques for the vehicle routing problem.
+\newblock \emph{Advanced Engineering Informatics}, 18\penalty0 (1):\penalty0
+  41--48, 2004.
+
+\bibitem[Benn and Ellison(1998)]{lapalma115}
+Chris Benn and Sara Ellison.
+\newblock La palma night-sky brightness.
+\newblock Technical report, Isaac Newton Group, may 1998.
+\newblock ING La Palma Technical Note 115.
+
+\bibitem[Bitner and Reingold(1975)]{bitner75backtrack}
+James~R. Bitner and Edward~M. Reingold.
+\newblock Backtrack programming techniques.
+\newblock \emph{Commun. ACM}, 18\penalty0 (11):\penalty0 651--656, 1975.
+
+\bibitem[Bresina et~al.(1994)Bresina, Drummond, and Swanson]{bresina94jic}
+J.~Bresina, M.~Drummond, and K.~Swanson.
+\newblock Managing action duration uncertainty with just-in-case scheduling,
+  1994.
+
+\bibitem[Bresina et~al.(1999)Bresina, Golden, Smith, and
+  Washington]{bresina99increased}
+J.~Bresina, K.~Golden, D.~Smith, and R.~Washington.
+\newblock Increased flexibility and robustness of mars rovers.
+\newblock In \emph{Proceedings of the Fifth International. Symposium on
+  Artificial Intelligence, Robotics and Automation in Space}, Noordwijk,
+  Netherlands, 1999.
+
+\bibitem[Bresina(1996)]{bresina96hbss}
+J.L. Bresina.
+\newblock Heuristic-biased stochastic sampling.
+\newblock In \emph{Proceedings of the AAAI-96}, pages 271--278, 1996.
+
+\bibitem[Chien et~al.(1999{\natexlab{a}})Chien, Knight, Stechert, Sherwood, and
+  Rabideau]{chien98integrated}
+S.~Chien, R.~Knight, A.~Stechert, R.~Sherwood, and G.~Rabideau.
+\newblock Integrated planning and execution for autonomous spacecraft.
+\newblock In \emph{Aerospace Conference, 1999. Proceedings. 1999 IEEE},
+  volume~1, pages 263--271, 1999{\natexlab{a}}.
+
+\bibitem[Chien et~al.(2000)Chien, Rabideau, Knight, Sherwood, Engelhardt,
+  D.~Mutz, Smith, Fisher, Barrett, Stebbins, and Tran]{chien00aspen}
+S.~Chien, G.~Rabideau, R.~Knight, R.~Sherwood, B.~Engelhardt, T.~Estlin
+  D.~Mutz, B.~Smith, F.~Fisher, T.~Barrett, G.~Stebbins, and D.~Tran.
+\newblock {ASPEN} automating space mission operations using automated planning
+  and scheduling, 2000.
+
+\bibitem[Chien et~al.(1999{\natexlab{b}})Chien, Knight, Stechert, Sherwood, and
+  Rabideau]{chien99iterative}
+Steve Chien, Russell Knight, Andre Stechert, Rob Sherwood, and Gregg Rabideau.
+\newblock Using iterative repair to increase the responsiveness of planning and
+  scheduling for autonomous spacecraft.
+\newblock In \emph{{IJCAI99} Workshop on Scheduling and Planning to meet
+  Real-time Monitoring in a Dynamic and Uncertain World}, Stockholm, Sweden,
+  August 1999{\natexlab{b}}.
+
+\bibitem[Chun and Wong(2003)]{chun03nstar}
+Hon~Wai Chun and Rebecca Y.~M. Wong.
+\newblock N*--an agent-based negotiation algorithm for dynamic scheduling and
+  rescheduling.
+\newblock \emph{Advanced Engineering Informatics}, 17\penalty0 (1):\penalty0 1
+  -- 22, 2003.
+
+\bibitem[Cicirello and Smith(2001)]{cicirello01random}
+Vincent Cicirello and Stephen Smith.
+\newblock Randomizing dispatch scheduling policies.
+\newblock In \emph{The 2001 AAAI Fall Symposium: Using Uncertainty Within
+  Computation}, November 2001.
+
+\bibitem[Cicirello and Smith(2002)]{cicirello02amplification}
+Vincent Cicirello and Stephen Smith.
+\newblock Amplification of search performance through randomization of
+  heuristics.
+\newblock In \emph{Principles and Practice of Constraint Programming: 8th
+  International Conference, Proceedings}, volume LNCS 2470 of Lecture Notes in
+  Computer Science, pages 124--138. Springer-Verlag, September 2002.
+
+\bibitem[Darmoul et~al.(2006)Darmoul, Pierreval, and
+  Gabouj]{darmoul06scheduling}
+S.~Darmoul, H.~Pierreval, and S.H. Gabouj.
+\newblock Scheduling using artificial immune system metaphors: A review.
+\newblock In \emph{Service Systems and Service Management, 2006 International
+  Conference on}, volume~2, pages 1150 --1155, 2006.
+
+\bibitem[Davenport et~al.(2001)Davenport, Gefflot, and Beck]{davenport01slack}
+A.J. Davenport, C.~Gefflot, and J.C. Beck.
+\newblock Slack-based techniques for robust schedules.
+\newblock In \emph{Proceedings of the Sixth European Conference on Planning
+  (ECP-2001)}, 2001.
+
+\bibitem[Dorigo(1992)]{dorigo92optimization}
+M.~Dorigo.
+\newblock \emph{Optimization, Learning and Natural Algorithms}.
+\newblock PhD thesis, Politecnico di Milano, 1992.
+
+\bibitem[Dorigo and Gambardella(1995)]{dorigo95ant}
+M.~Dorigo and L.M. Gambardella.
+\newblock Ant colony system: A cooperative learning approach to the travelling
+  salesman problem.
+\newblock Technical report, IRIDIA, Universite Libre de Bruxelles, 1995.
+
+\bibitem[Dorn et~al.(1995)Dorn, Kerr, and Thalhammer]{dorn95reactive}
+Jürgen Dorn, Roger Kerr, and Gabi Thalhammer.
+\newblock Reactive scheduling: improving the robustness of schedules and
+  restricting the effects of shop floor disturbances by fuzzy reasoning.
+\newblock \emph{International Journal of Human-Computer Studies}, 42\penalty0
+  (6):\penalty0 687 -- 704, 1995.
+
+\bibitem[Drummond et~al.(1994)Drummond, Bresina, and Swanson]{drummond94jic}
+Mark Drummond, John Bresina, and Keith Swanson.
+\newblock Just-in-case scheduling.
+\newblock In \emph{AAAI'94: Proceedings of the twelfth national conference on
+  Artificial intelligence (vol. 2)}, pages 1098--1104, Menlo Park, CA, USA,
+  1994. American Association for Artificial Intelligence.
+\newblock ISBN 0-262-61102-3.
+
+\bibitem[Fox et~al.(1989)Fox, Sadeh, and Baykan]{fox89constrained}
+M.S. Fox, N.~Sadeh, and C.~Baykan.
+\newblock Constrained heuristic search.
+\newblock In \emph{Proc.IJCAI}, pages 309--316. International Joint Conference
+  on Artificial Intelligence, August 1989.
+
+\bibitem[Fraser(1957)]{fraser57simulation}
+A.~S. Fraser.
+\newblock Simulation of genetic systems by automatic digital computers. i.
+  introduction.
+\newblock \emph{Aust. J. Biol. Sci}, 10:\penalty0 484--491, 1957.
+
+\bibitem[{Fraser} and {Steele}(2008)]{fraser08observation}
+S.~N. {Fraser} and I.~A. {Steele}.
+\newblock {Observation scheduling simulation framework: design and first
+  results}.
+\newblock In \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series}, volume 7019 of \emph{Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series}, August 2008.
+
+\bibitem[Fraser(2004)]{fraser04scheduling}
+Stephen~N. Fraser.
+\newblock Robotic telescope scheduling: {T}he {L}iverpool {T}elescope
+  experience.
+\newblock In Peter~J. Quinn and Alan Bridger, editors, \emph{Optimizing
+  Scientific Return for Astronomy through Information Technologies, Proceedings
+  of SPIE}, volume 5493, pages 331--340. SPIE, sep 2004.
+
+\bibitem[Fraser and Steele(2002)]{fraser02robotic}
+Stephen~N. Fraser and Iain~A. Steele.
+\newblock Object oriented design of the {L}iverpool {T}elescope {R}obotic
+  {C}ontrol {S}ystem.
+\newblock In Hilton Lewis, editor, \emph{Advanced {T}elescope and
+  {I}nstrumentation Control Software II, Proceedings of SPIE}, volume 4848,
+  pages 443--454. SPIE, dec 2002.
+
+\bibitem[Fried(1966)]{fried66optical}
+D.~L Fried.
+\newblock Optical resolution through a randomly inhomogeneous medium for very
+  long and very short exposures.
+\newblock \emph{Journal of the Optical Society of America}, 56\penalty0
+  (10):\penalty0 1372--1379, Oct 1966.
+
+\bibitem[Fukunaga et~al.(2004)Fukunaga, Rabideau, and Chien]{fukunaga04robust}
+Alex~F. Fukunaga, Gregg Rabideau, and Steve Chien.
+\newblock Robust local search for spacecraft operations using adaptive noise.
+\newblock In \emph{IWPSS 4th International Workshop on Planning and Scheduling
+  for Space}, June 2004.
+
+\bibitem[Gambardella et~al.(1999)Gambardella, Éric Taillard, and
+  Agazzi]{gambardella99multiple}
+Luca~Maria Gambardella, Éric Taillard, and Giovanni Agazzi.
+\newblock Macs-vrptw: A multiple colony system for vehicle routing problems
+  with time windows.
+\newblock In \emph{New Ideas in Optimization}, pages 63--76. McGraw-Hill, 1999.
+
+\bibitem[Glover(1996)]{glover99tabu}
+F.~Glover.
+\newblock Tabu search and adaptive memory programming - advances, applications,
+  and challenges.
+\newblock In R.V.~Helgason R.S.~Barr and J.L. Kenngington, editors,
+  \emph{Interfaces in Computer Science and Operations Research}, pages 1--75.
+  Kluwer Academic Publishers, Hingham, MA, USA, 1996.
+
+\bibitem[Glover et~al.(2003)Glover, Laguna, and Martí]{glover03scatter}
+F.~Glover, M.~Laguna, and R.~Martí.
+\newblock \emph{Advances in Evolutionary Computation: Theory and Applications},
+  chapter Scatter Search, pages 519--537.
+\newblock Springer-Verlag, 2003.
+
+\bibitem[Grassé(1959)]{grasse59ants}
+P.P. Grassé.
+\newblock La reconstruction du nid et les coordina- tions interindividuelles
+  chez bellicositermes natalensis et cubitermes sp. la théorie de la
+  stigmergie.
+\newblock \emph{Insectes Sociaux}, pages 41--81, 1959.
+
+\bibitem[Guerrero et~al.(1998)Guerrero, Garcia-Lopez, Corradi, Jimenez,
+  Fuensalida, Rodriguez-Espinosa, Alonso, Centurion, and
+  Prada]{guerrero98extinct}
+M.A. Guerrero, R.J. Garcia-Lopez, R.L.M. Corradi, A.~Jimenez, J.J. Fuensalida,
+  J.M. Rodriguez-Espinosa, A.~Alonso, M.~Centurion, and F.~Prada.
+\newblock Extinction over the canarian observatories: the limited influence of
+  saharan dust.
+\newblock \emph{New Astronomy Reviews}, 42:\penalty0 529--532, 1998.
+
+\bibitem[Hart et~al.(1998)Hart, Ross, and Nelson]{hart98producing}
+E.~Hart, P.~Ross, and J.~Nelson.
+\newblock Producing robust schedules via an artificial immune system.
+\newblock In \emph{ICEC}, pages 464--469. IEEE, 1998.
+
+\bibitem[Hart et~al.(1999)Hart, Ross, and Nelson]{hart99chicken}
+E.~Hart, P.~Ross, and J.~Nelson.
+\newblock Scheduling chicken catching -- an investigation into the success of a
+  genetic algorithm on a real world scheduling problem.
+\newblock \emph{Annals Of Operations Research}, 92\penalty0 (0):\penalty0
+  363--380, Jan 1999.
+
+\bibitem[Hart and Ross(1999)]{hart99immune}
+Emma Hart and Peter Ross.
+\newblock An immune system approach to scheduling in changing environments.
+\newblock In \emph{GECCO}, pages 1559--1566, 1999.
+
+\bibitem[Hart et~al.(1968)Hart, Nilsson, and Raphael]{hart68formal}
+P.E. Hart, N.J. Nilsson, and B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{Systems Science and Cybernetics, IEEE Transactions on},
+  4\penalty0 (2):\penalty0 100 --107, 1968.
+
+\bibitem[Hax and Meal(1973)]{haxhierarchic73}
+Arnoldo~C. Hax and Harlan~C. Meal.
+\newblock Hierarchical integration of production planning and scheduling.
+\newblock Technical report, 1973.
+
+\bibitem[Hoos(2002)]{hoos02adaptive}
+H.~Hoos.
+\newblock An adaptive noise mechanism for walksat, 2002.
+
+\bibitem[Ishida and Shimbo(1996)]{ishida96improving}
+Toru Ishida and Masashi Shimbo.
+\newblock Improving the learning efficiencies of realtime search.
+\newblock In \emph{{AAAI}/{IAAI}, Vol. 1}, volume~1, pages 305--310, 1996.
+
+\bibitem[Ishida(1990)]{ishida90distributed}
+Y.~Ishida.
+\newblock Fully distributed diagnosis by pdp learning algorithm: towards immune
+  network pdp model.
+\newblock In \emph{Neural Networks, 1990., 1990 IJCNN International Joint
+  Conference on}, pages 777 --782 vol.1, June 1990.
+
+\bibitem[Jerne(1985)]{jerne84generative}
+Niels~K. Jerne.
+\newblock The generative grammar of the immune system.
+\newblock \emph{Bioscience Reports}, 5:\penalty0 439--451, 1985.
+
+\bibitem[Jerne(1974)]{jerne74towards}
+N.K. Jerne.
+\newblock Towards a network theory of the immune system.
+\newblock \emph{Annales d'immunologie}, 125c:\penalty0 373--389, Jan 1974.
+
+\bibitem[Johnston and Miller(1994)]{johnston94spike}
+Mark~D Johnston and Glen~E Miller.
+\newblock Spike: Intelligent scheduling of hubble space telescope observations.
+\newblock In Mark Fox and Monty Zweben, editors, \emph{Intelligent Scheduling},
+  pages 391--422. Morgan-Kaufmann, San Francisco, CA, USA, 1994.
+
+\bibitem[Jones and Rabelo(1998)]{jones98survey}
+A.~Jones and J.~Rabelo.
+\newblock Survey of job shop scheduling techniques, 1998.
+
+\bibitem[Kennedy(1997)]{kennedy97particle}
+J.~Kennedy.
+\newblock The particle swarm: social adaptation of knowledge.
+\newblock In \emph{Evolutionary Computation, 1997., IEEE International
+  Conference on}, pages 303 --308, apr 1997.
+
+\bibitem[Kennedy and Eberhart(1995)]{kennedy95particle}
+James Kennedy and Russell Eberhart.
+\newblock Particle swarm optimization.
+\newblock In \emph{Proc. IEEE International Conference on Neural Networks},
+  pages 1942--1948, 1995.
+
+\bibitem[King(1985)]{lapalma31}
+D~L King.
+\newblock Atmospheric extinction at the roque de los muchachos observatory, la
+  palma.
+\newblock Technical report, Isaac Newton Group, sept 1985.
+
+\bibitem[Kirkpatrick et~al.(1983)Kirkpatrick, Gelatt, and
+  Vecchi]{kirkpatrick83optimization}
+S.~Kirkpatrick, C.~D. Gelatt, and M.~P. Vecchi.
+\newblock Optimization by simulated annealing.
+\newblock \emph{Science}, 220:\penalty0 671--680, 1983.
+
+\bibitem[Kramer and Smith(2003)]{kramer03maxflex}
+Laurence Kramer and Stephen Smith.
+\newblock Maximizing flexibility: A retraction heuristic for oversubscribed
+  scheduling problems.
+\newblock In \emph{Proceedings of the Eighteenth International Joint Conference
+  on Artificial Intelligence}, August 2003.
+\newblock prepublication copy - Copyright International Joint Conference On
+  Artificial Intelligence, Inc.
+
+\bibitem[Kramer and Smith(2004)]{kramer04swapping}
+Laurence Kramer and Stephen Smith.
+\newblock Task swapping for schedule improvement: A broader analysis.
+\newblock In \emph{Proceedings 14th International Conference on Automated
+  Planning and Scheduling}, June 2004.
+
+\bibitem[Krisciunas and Schaefer(1991)]{krisciunas91brightness}
+K.~Krisciunas and B.~E. Schaefer.
+\newblock A model of the brightness of moonlight.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  103:\penalty0 1033--1039, 1991.
+
+\bibitem[MacKie-Mason and Wellman(2004)]{mackie04price}
+Osepayshvili Anna Reeves Daniel~M. MacKie-Mason, Jeffrey~K. and Michael~P
+  Wellman.
+\newblock Price prediction strategies for market-based scheduling.
+\newblock In \emph{18th International Conference on Automated Planning and
+  Scheduling}, June 2004.
+
+\bibitem[Marchant(2009)]{marchant09forecast}
+J.M. Marchant.
+\newblock Weather forecast analysis.
+\newblock Published on internal ARI web, 2009.
+
+\bibitem[Marchant et~al.(2008)Marchant, Smith, and Steele]{marchant08calib}
+Jonathan Marchant, Robert~J. Smith, and Iain~A. Steele.
+\newblock Calibration of the boltwood cloud sensor.
+\newblock In \emph{Proceedings of the Society of Photooptical Instrumentation
+  Engineers}, volume 7012, page 70123U. SPIE, June 2008.
+
+\bibitem[Mcallester et~al.(1997)Mcallester, Selman, and
+  Kautz]{mcallester97evidence}
+David Mcallester, Bart Selman, and Henry Kautz.
+\newblock Evidence for invariants in local search.
+\newblock In \emph{In Proceedings of AAAI-97}, pages 321--326, 1997.
+
+\bibitem[Mes et~al.(2007)Mes, van~der Heijden, and van Harten]{mes07comparison}
+Martijn Mes, Matthieu van~der Heijden, and Aart van Harten.
+\newblock Comparison of agent-based scheduling to look-ahead heuristics for
+  real-time transportation problems.
+\newblock \emph{European Journal of Operational Research}, 181\penalty0
+  (1):\penalty0 59 -- 75, 2007.
+
+\bibitem[Minton et~al.(1992)Minton, Johnston, Philips, and
+  Laird]{minton92minconflicts}
+Steve Minton, Mark~D Johnston, Andrew~B Philips, and Philip Laird.
+\newblock Minimizing conflicts: a heuristic repair method for constraint
+  satisfaction and scheduling problems.
+\newblock \emph{Artificial Intelligence}, 58:\penalty0 161--205, 1992.
+
+\bibitem[Miyashita and Hori(1996)]{miyashita96distributed}
+Kazua Miyashita and Masahiro Hori.
+\newblock A {D}istributed {A}rchitecture for {P}lanning and {S}cheduling that
+  {L}earns through {N}egotiation {C}ases.
+\newblock In \emph{IEEE International Conference on Emerging Technologies and
+  Factory Automation}, 1996.
+
+\bibitem[Miyashita and Sycara(1995)]{miyashita95cabins}
+Kazuo Miyashita and Katia~P. Sycara.
+\newblock {CABINS}: {A} {F}ramework of {K}nowledge {A}cquisition and
+  {I}terative {R}evision for {S}chedule {I}mprovement and {R}eactive {R}epair.
+\newblock \emph{Artificial Intelligence}, 76\penalty0 (1-2):\penalty0 377--426,
+  1995.
+
+\bibitem[Mori et~al.(1994)Mori, Tsukiyama, and Fukuda]{mori94immune}
+K.~Mori, M.~Tsukiyama, and T.~Fukuda.
+\newblock Immune algorithm and its application to factory load dispatching
+  planning.
+\newblock In \emph{Japan-USA Symposium on flexible automation}, pages
+  1343--1346, 1994.
+
+\bibitem[{Mottram}(2006)]{mottram06high}
+C.~{Mottram}.
+\newblock {High level interfaces to the Robonet-1.0 Homogeneous Telescope
+  Network}.
+\newblock \emph{Astronomische Nachrichten}, 327:\penalty0 806--+, September
+  2006.
+
+\bibitem[{Mu{\~n}oz-Tu{\~n}{\'o}n} et~al.(1997){Mu{\~n}oz-Tu{\~n}{\'o}n},
+  Vernin, and Varela]{munoz97nighttime}
+C~{Mu{\~n}oz-Tu{\~n}{\'o}n}, J~Vernin, and A.M. Varela.
+\newblock Night-time image quality at roque de los muchachos observatory.
+\newblock \emph{Astronomy and Astrophysics Supplement Series}, pages 183--193,
+  October 1997.
+
+\bibitem[{Mu{\~n}oz-Tu{\~n}{\'o}n} et~al.(1998){Mu{\~n}oz-Tu{\~n}{\'o}n},
+  {Varela}, and {Mahoney}]{munoz98homogeneity}
+C.~{Mu{\~n}oz-Tu{\~n}{\'o}n}, A.~M. {Varela}, and T.~{Mahoney}.
+\newblock {Homogeneity of image quality at the Roque de los Muchachos
+  Observatory}.
+\newblock \emph{New Astronomy Review}, 42:\penalty0 409--416, November 1998.
+
+\bibitem[Murthy et~al.(1997)Murthy, Akkiraju, Rachlin, and Wu]{murthy97agent}
+Seshahayee Murthy, Rama Akkiraju, John Rachlin, and Frederick Wu.
+\newblock Agent-based cooperative scheduling.
+\newblock In \emph{In Proceedings of AAAI Workshop on Constraints and Agents},
+  pages 112--117. AAAI Press, 1997.
+
+\bibitem[Muscettola(1992)]{muscettola92bottleneck}
+Nicola Muscettola.
+\newblock Scheduling by iterative partition of bottleneck conflicts.
+\newblock Technical Report CMU-RI-TR-92-05, Robotics Institute, Carnegie Mellon
+  University, Pittsburgh, PA, February 1992.
+
+\bibitem[{Naylor} et~al.(2006){Naylor}, {Allan}, and {Steele}]{naylor06hetero}
+T.~{Naylor}, A.~{Allan}, and I.~A. {Steele}.
+\newblock {Heterogenous telescope networks: An introduction}.
+\newblock \emph{Astronomische Nachrichten}, 327:\penalty0 741--+, September
+  2006.
+
+\bibitem[Parunak(1997)]{parunak97ant}
+H.~Van~Dyke. Parunak.
+\newblock Go to the ant: Engineering principles from natural multi-agent
+  systems.
+\newblock \emph{Annals of Operations Research}, \penalty0 (75):\penalty0
+  69--101, 1997.
+
+\bibitem[Pernin et~al.(2008)Pernin, Comanor, Menthe, Moore, and
+  Andersen]{pernin08allocation}
+Christopher~G. Pernin, Katherine Comanor, Lance Menthe, Louis~R. Moore, and Tim
+  Andersen.
+\newblock Allocation of forces, fires, and effects using genetic algorithms.
+\newblock Technical report, RAND Corporation, 2008.
+
+\bibitem[Policella et~al.(2003)Policella, Smith, Cesta, and
+  Oddi]{policella03flexible}
+N.~Policella, S.~F. Smith, A.~Cesta, and A.~Oddi.
+\newblock Steps toward computing flexible schedules.
+\newblock In \emph{Proceedings of Online-2003 Workshop CP 2003}, pages 39--53,
+  2003.
+
+\bibitem[Policella(2005)]{policella05thesis}
+Nicola Policella.
+\newblock \emph{Scheduling with uncertainty a proactive approach using partial
+  order schedules}.
+\newblock PhD thesis, Universita degli studi di Roma (La Sapienza), Via Salaria
+  113, I-00198, Roma, Italy, 2005.
+
+\bibitem[Quinlan(1986)]{quinlan86induction}
+J~Ross Quinlan.
+\newblock Induction of decision trees.
+\newblock \emph{Machine Learning}, 1:\penalty0 81--106, 1986.
+
+\bibitem[Rabideau et~al.(1999)Rabideau, Knight, Chien, Fukunaga, and
+  Govindjee]{rabideau99iterative}
+G.~Rabideau, R.~Knight, S.~Chien, A.~Fukunaga, and A.~Govindjee.
+\newblock Iterative repair planning for spacecraft operations in the aspen
+  system, 1999.
+
+\bibitem[Rabideau et~al.(2000)Rabideau, Engelhardt, and
+  Chien]{rabideau00generic}
+Gregg Rabideau, Barbara Engelhardt, and Steve~A. Chien.
+\newblock Using generic preferences to incrementally improve plan quality.
+\newblock In \emph{AIPS}, pages 236--245, 2000.
+
+\bibitem[Riedmiller and Riedmiller(1999)]{riedmiller99neural}
+Simone~C. Riedmiller and Martin~A. Riedmiller.
+\newblock A neural reinforcement learning approach to learn local dispatching
+  policies in production scheduling.
+\newblock In \emph{{IJCAI}}, pages 764--771, 1999.
+
+\bibitem[Russell and Norvig(2003)]{russel03artificial}
+Stuart~J. Russell and Peter Norvig.
+\newblock \emph{Artificial Intelligence: A Modern Approach}.
+\newblock Pearson Education, 2003.
+\newblock ISBN 0137903952.
+
+\bibitem[Sadeh(1991)]{sadeh91lookahead}
+Norman Sadeh.
+\newblock Look ahead techniques for micro-opportunistic job shop scheduling.
+\newblock Technical Report CMU-CS-91-102, Computer Science Department, Carnegie
+  Mellon University, Pittsburgh, PA, March 1991.
+
+\bibitem[Sadeh et~al.(1994)Sadeh, Sycara, and Xiong]{sadeh94backtracking}
+Norman Sadeh, Katia Sycara, and Yalin Xiong.
+\newblock Backtracking techniques for the job shop scheduling constraint
+  satisfaction problem.
+\newblock Technical Report CMU-RI-TR-94-31, Robotics Institute, Carnegie Mellon
+  University, Pittsburgh, PA, October 1994.
+
+\bibitem[Sanmartí et~al.(1996)Sanmartí, Huercio, Espuña, and
+  Puigjaner]{sanmarti96combined}
+E.~Sanmartí, A.~Huercio, A.~Espuña, and L.~Puigjaner.
+\newblock A combined scheduling/reactive scheduling strategy to minimize the
+  effect of process operations uncertainty in batch plants.
+\newblock \emph{Computers and Chemical Engineering}, 20\penalty0 (2):\penalty0
+  1263 -- 1268, 1996.
+
+\bibitem[Sarazin and Roddier(1990)]{sarazin90eso}
+M.~Sarazin and F.~Roddier.
+\newblock The {ESO} differential image motion monitor.
+\newblock \emph{Astronomy and Astrphysics}, 227:\penalty0 294--300, 1990.
+
+\bibitem[{Saunders} et~al.(2006){Saunders}, {Naylor}, and
+  {Allan}]{saunders06optimal}
+E.~S. {Saunders}, T.~{Naylor}, and A.~{Allan}.
+\newblock {Optimal placement of a limited number of observations for period
+  searches}.
+\newblock \emph{Astronomy and Astrophysics}, 455:\penalty0 757--763, August
+  2006.
+
+\bibitem[{Saunders} et~al.(2008){Saunders}, {Naylor}, and
+  {Allan}]{saunders08autonomous}
+E.~S. {Saunders}, T.~{Naylor}, and A.~{Allan}.
+\newblock {An autonomous adaptive scheduling agent for period searching}.
+\newblock \emph{Astronomische Nachrichten}, 329:\penalty0 321--+, March 2008.
+
+\bibitem[Shaw et~al.(1990)Shaw, Park, and Raman]{shaw90intelligent}
+Michael~J Shaw, Sang~Chan Park, and Narayan Raman.
+\newblock Intelligent scheduling with machine learning capabilities: The
+  induction of scheduling knowledge.
+\newblock Technical Report CMU-RI-TR-90-25, Robotics Institute, Carnegie Mellon
+  University, Pittsburgh, PA, nov 1990.
+
+\bibitem[{Smith} et~al.(2010){Smith}, {Clay}, {Fraser}, {Marchant}, {Moss}, and
+  {Steele}]{smith10switching}
+R.~J. {Smith}, N.~R. {Clay}, S.~N. {Fraser}, J.~M. {Marchant}, C.~M. {Moss},
+  and I.~A. {Steele}.
+\newblock {Switching the Liverpool Telescope from a full-service operating
+  model to self-service}.
+\newblock In \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series}, volume 7737 of \emph{Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series}, 2010.
+
+\bibitem[Smith(1995)]{smith95reactive}
+Stephen Smith.
+\newblock Reactive scheduling systems.
+\newblock In D.E. Brown and W.T. Scherer, editors, \emph{Intelligent Scheduling
+  Systems}. Kluwer Press, 1995.
+
+\bibitem[Smith and Cheng(1993)]{smith93slack}
+Stephen Smith and C.~Cheng.
+\newblock Slack-based heuristics for constraint satisfaction scheduling.
+\newblock In \emph{Proceedings 11th National Conference on Artificial
+  Intelligence}, July 1993.
+
+\bibitem[Smith et~al.(1996)Smith, Lassila, and Becker]{smith96mixed}
+Stephen Smith, O.~Lassila, and Marcel Becker.
+\newblock Configurable, mixed-initiative systems for planning and scheduling.
+\newblock In A.~Tate, editor, \emph{Advanced Planning Technology}. AAAI Press,
+  May 1996.
+\newblock ISBN 0-929280-98-9.
+
+\bibitem[Smith et~al.(2004)Smith, Becker, and Kramer]{smith04continuous}
+Stephen Smith, Marcel Becker, and Laurence Kramer.
+\newblock Continuous management of airlift and tanker resources: A
+  constraint-based approach.
+\newblock \emph{Mathematical and Computer Modeling -- Special Issue on Defense
+  Transportation: Algorithms, Models and Applications for the 21st Centry},
+  39\penalty0 (6-8):\penalty0 581--598, 2004.
+
+\bibitem[Smith and Lassila(1994)]{smith94toward}
+Stephen~F. Smith and Ora Lassila.
+\newblock Toward the development of flexible mixed-initiative scheduling tools.
+\newblock In \emph{ARPA-Rome Laboratory Planning Initiative Workshop}, 1994.
+
+\bibitem[Sorensen(2002)]{sorensen02cat}
+P.~Sorensen.
+\newblock Ing meteorological and seeing archive.
+\newblock web, 2002.
+\newblock URL \url{http://catserver.ing.iac.es/weather/archive/index.php}.
+
+\bibitem[Sozou(1998)]{sozou98hyperbolic}
+P.D. Sozou.
+\newblock On hyperbolic discounting and uncertain hazard rates.
+\newblock In \emph{Proceedings of the Royal Society B Biological Sciences},
+  volume 265, pages 2015--2020, 1998.
+
+\bibitem[{Steele}(2004)]{steele04liverpool}
+I.~A. {Steele}.
+\newblock {The Liverpool telescope}.
+\newblock \emph{Astronomische Nachrichten}, 325:\penalty0 519--521, October
+  2004.
+
+\bibitem[Steele and Carter(1997)]{steele97control}
+Iain~A Steele and David Carter.
+\newblock Control software and scheduling of the liverpool robotic telescope.
+\newblock In Hilton Lewis, editor, \emph{Proceedings of SPIE}, volume 3112 of
+  \emph{Telescope Control Systems II}, pages 222--233, sep 1997.
+
+\bibitem[Sycara et~al.(1995)Sycara, Zheng, and Miyashita]{sycara96case}
+Katia Sycara, Dajun Zheng, and Kazuo Miyashita.
+\newblock Using case-based reasoning to acquire user scheduling preferences
+  that change over time.
+\newblock In \emph{Proc. of the Eleventh IEEE Conference on Artificial
+  Intelligence for Application}. IEEE, 1995.
+
+\bibitem[Taillard et~al.(1998)Taillard, Gambardella, Gendreau, and
+  Potvin]{taillard98adaptive}
+E.~D. Taillard, L.~Gambardella, M.~Gendreau, and J.~Potvin.
+\newblock Adaptive memory programming: A unified view of meta-heuristics.
+\newblock Technical report, Istituto Dalle Molle Di Studi Sull Intelligenza
+  Artificiale, 1998.
+
+\bibitem[Timmis et~al.(2004)Timmis, Knight, Castro, and Hart]{timmis04overview}
+J~Timmis, T~Knight, L~N~De Castro, and E~Hart.
+\newblock An overview of artificial immune systems.
+\newblock In R~Paton, H~Bolouri, M~Holcombe, J~H Parish, and R~Tateson,
+  editors, \emph{"Computation in Cells and Tissues: Perspectives and Tools for
+  Thought"}, Natural Computation Series, pages 51--86. Springer, November 2004.
+\newblock ISBN 3540003584.
+
+\bibitem[{Tsapras} et~al.(2009){Tsapras}, {Street}, {Horne}, {Snodgrass},
+  {Dominik}, {Allan}, {Steele}, {Bramich}, {Saunders}, {Rattenbury}, {Mottram},
+  {Fraser}, {Clay}, {Burgdorf}, {Bode}, {Lister}, {Hawkins}, {Beaulieu},
+  {Fouqu{\'e}}, {Albrow}, {Menzies}, {Cassan}, and
+  {Dominis-Prester}]{tsapras09robonet}
+Y.~{Tsapras}, R.~{Street}, K.~{Horne}, C.~{Snodgrass}, M.~{Dominik},
+  A.~{Allan}, I.~{Steele}, D.~M. {Bramich}, E.~S. {Saunders}, N.~{Rattenbury},
+  C.~{Mottram}, S.~{Fraser}, N.~{Clay}, M.~{Burgdorf}, M.~{Bode}, T.~A.
+  {Lister}, E.~{Hawkins}, J.~P. {Beaulieu}, P.~{Fouqu{\'e}}, M.~{Albrow},
+  J.~{Menzies}, A.~{Cassan}, and D.~{Dominis-Prester}.
+\newblock {RoboNet-II: Follow-up observations of microlensing events with a
+  robotic network of telescopes}.
+\newblock \emph{Astronomische Nachrichten}, 330, January 2009.
+
+\bibitem[{Varela} et~al.(2007){Varela}, {Bertolin}, {Mu{\~n}oz-Tu{\~n}{\'o}n},
+  {Fuensalida}, and {Ortolani}]{varela07sat}
+A.~M. {Varela}, C.~{Bertolin}, C.~{Mu{\~n}oz-Tu{\~n}{\'o}n}, J.~J.
+  {Fuensalida}, and S.~{Ortolani}.
+\newblock {In situ calibration using satellite data results}.
+\newblock In \emph{Revista Mexicana de Astronomia y Astrofisica Conference
+  Series}, volume~31 of \emph{Revista Mexicana de Astronomia y Astrofisica,
+  vol. 27}, pages 106--112, October 2007.
+
+\bibitem[{Vernin} and {Mu{\~n}oz-Tu{\~n}{\'o}n}(1998)]{vernin98temporal}
+J.~{Vernin} and C.~{Mu{\~n}oz-Tu{\~n}{\'o}n}.
+\newblock {The temporal behaviour of seeing}.
+\newblock \emph{New Astronomy Review}, 42:\penalty0 451--454, November 1998.
+
+\bibitem[Vernin and Munoz-Tunon(1992)]{vernin92optical}
+J.~Vernin and C.~Munoz-Tunon.
+\newblock Optical seeing at la palma observatory.
+\newblock \emph{Astronomy and Astrophysics}, 257:\penalty0 811--816, 1992.
+
+\bibitem[Yokoo and Ishida(1999)]{yokoo99search}
+Makuto Yokoo and Toru Ishida.
+\newblock Sesrch algorithms for agents.
+\newblock In Gerhard Weiss, editor, \emph{Multiagent Systems: A Modern Approach
+  to Distributed Artificial Intelligence}, pages 166--199. The MIT Press,
+  Cambridge, MA, USA, 1999.
+
+\bibitem[Zhang and Dietterich(1995)]{zhang95reinforcement}
+W.~Zhang and T.~G. Dietterich.
+\newblock A reinforcement learning approach to job-shop scheduling.
+\newblock In \emph{Proceedings of the International Joint Conference on
+  Artificial Intellience}, 1995.
+
+\bibitem[Zweben et~al.(1994)Zweben, Daun, Davis, and Deale]{zweben94scheduling}
+Monty Zweben, Brian Daun, Eugene Davis, and Michael Deale.
+\newblock Scheduling and rescheduling with iterative repair.
+\newblock In Mark Fox and Monty Zweben, editors, \emph{Intelligent Scheduling},
+  pages 241--255. Morgan-Kaufmann, San Francisco, CA, USA, 1994.
+\newblock ISBN 1-55860-260-7.
+
+\end{thebibliography}

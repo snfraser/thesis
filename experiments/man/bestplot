@@ -1,0 +1,42 @@
+#!/bin/csh
+
+set avg = `cat best_prof_avg.dat | grep "#Time-Average:" | awk '{printf "%3.2f", $2}'`
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot  << EOF
+
+set output "best_ensemble.eps"
+set term postscript enhanced color
+
+set xdata time
+set timefmt "%Y-%m-%d %H:%M"
+set format x "%d-%b"
+
+set title "Ensemble plot showing variation of Q_{SU} metric with time for selection model {/Symbol z}_{BEST}"
+set xlabel "Date"
+set ylabel "Q_{SU}"
+
+set label "Average: $avg" at graph 0.8,0.1
+
+plot "best_prof_1.dat" using 2:5 with lines notitle, \
+ "best_prof_2.dat" using  2:5 with lines notitle, \
+ "best_prof_3.dat" using  2:5 with lines notitle, \
+ "best_prof_4.dat" using 2:5 with lines notitle, \
+ "best_prof_5.dat" using 2:5 with lines notitle, \
+ "best_prof_6.dat" using 2:5 with lines notitle, \
+ "best_prof_7.dat" using 2:5 with lines notitle, \
+ "best_prof_8.dat" using 2:5 with lines notitle, \
+ "best_prof_9.dat" using 2:5 with lines notitle, \
+ "best_prof_10.dat" using 2:5 with lines notitle, \
+ "best_prof_11.dat" using 2:5 with lines notitle, \
+ "best_prof_12.dat" using 2:5 with lines notitle, \
+ "best_prof_13.dat" using  2:5 with lines notitle, \
+ "best_prof_14.dat" using  2:5 with lines notitle, \
+ "best_prof_15.dat" using 2:5 with lines notitle, \
+ "best_prof_16.dat" using 2:5 with lines notitle, \
+ "best_prof_17.dat" using 2:5 with lines notitle, \
+ "best_prof_18.dat" using 2:5 with lines notitle, \
+ "best_prof_19.dat" using 2:5 with lines notitle, \
+ "best_prof_20.dat" using 2:5 with lines notitle
+
+EOF

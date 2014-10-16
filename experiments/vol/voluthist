@@ -1,0 +1,17 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+
+set style data histogram
+set boxwidth 1.0 absolute
+set style fill solid 1.00 border -1 
+set xrange [-1:24]
+set title "Distribution of number of received updates by UT hour of day"
+set xlabel "UT hour of day"
+set ylabel "Number of updates" 
+unset key
+
+set term postscript eps enhanced color
+set output "vol_ut.eps"
+plot "vol_ut.dat" using 1:2 wi boxes
+EOF

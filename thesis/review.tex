@@ -1,0 +1,439 @@
+% ----------------------------------------------------------------------------------
+% REVIEW OF LITERATURE
+% ----------------------------------------------------------------------------------
+%\chapter{Review of current research}
+\section{Review of current research}
+Survey and critical assessment. Relation to own work.
+
+Various topics in scheduling literature:-
+
+Online versus offline. Constructive/partial ordered versus iterative,repair based. Flexible schedules.  Search in scheduling. Integrated S+P. Techniques - CSP, agent-based/distributed, evolutionary/bio-inspired/ais, economics/markets, rlt.
+
+
+
+
+ At any point a usable if non-optimal schedule can be extracted by removing unassigned tasks so the technique is applicable in dynamic environments - i.e. reactive repair. NOT TRUE unless we have consistent schedule at that point.
+
+
+Whichever technique is employed the solution will involve a search over the potentially extremely large space ${D_1 \times D_2 \times \cdots \times D_n}$.  The terrain of this search space can prove be very rugged - \cite{beck97texturebased} have suggested the use of texture based metrics to characterize the structure (short examples)- (and see ref therein to original paper by M. Fox). 
+
+% backtracking for CSPs.
+%
+\subsection{Constructive techniques}
+The constructive approach to generating schedules starts from an empty schedule and progressivly selects tasks to assign to time slots, gradually building up a schedule - effectively a path through the search space. As the search progresses deadend points may be reached when a task becomes unassignable - the search must then backtrack, unwinding pervious assignments and attempting to reassign tasks soas to avoid the deadend. An uninformed search can be very inefficient - if we have $n$ tasks to assign and the domain of each task is of size $d$ then the problem typically is of complexity $O(d^n)$, performance of the search can be improved by using domain knowledge (heuristics) via some of the following techniques:-
+
+\begin{description}
+\item[Variable ordering heuristics]
+determine the order in which variables are selected for assginment - in scheduling this corresponds to the order tasks are selected for time-slot assignment- e.g. select the task for assignment that leaves the most options left for remaining tasks. The minimum remaining value (MRV) heuristic always selects the variable with the fewest legal assigments to place next - this causes the search to fail fast and allows rapid pruning of the search tree. \cite{sadeh91lookahead} describes a number of variable ordering heuristics used in the MicroBOSS scheduler. These are split into \emph{fixed variable order heuristics} where the order is predetermined at start of search and \emph{dynamic variable order heuristics} where the order is revised each cycle. The \emph{MinimumWidth} heuristic selects the variable with the fewest arcs i.e. constraint associations with other variables. Their \emph{operation resource reliance} (ORR) variable order heuristic selects the task which relies most on the most contended resource or time period The \emph{minconflicts} heuristic \cite{minton92minconflicts} - at each point the heuristic selects a variable that is in conflict and adjusts its value until it is no longer in conflict. Also \emph{maxflex} (myers) and \emph{mincontention} maybe in IR section?) 
+
+\item[Value order heuristics]
+determine how the value is chosen to assign to a selected variable. \cite{sadeh91lookahead} describes a \emph{filtered survivable schedules} (FSS) heuristic which assigns to an operation the time-slot which is likely to be compatible with the largest number of survivable schedules = chance of surviving competition with other operations for possession of a resource (time). (Note:simplify the detailed decription in section 6 of the article - concentrate on cliques (clumpings) where graph has tightest constraints = texture heuristics also \cite{beck97texturebased} ). (Note: A couple more examples).They also describe a mechanism to allow the scheduler to switch to a simpler (cheaper) value order heuristics when contention drops below a threshold.
+
+\item[Constraint propagation]
+A more general improvement can be made using constraint propagation techniques - here the implications of a constraint on a variable are tested against the constraints on other connected variables. e.g. for arc-consistency there must be a consistent assignment of variables to $X$ for every valid assigment of connected variable $Y$, if not we must delete values from one or other domain. The effects are then propagated to neighboring arcs. The name stems from the way new constraints are inferred and added to the constraints set. $k$-consistency takes this further by insisting that for every $k-1$ assigned variables a consistent value can be assigned to any $k^{th}$ variable. Conflict analysis though costly (typically $O(e^n)$) \cite{muscORpoliORsadeh} can reduce backtracking by pruning the search tree. There is a trade-off in the time taken to perform the consistency checking and the reduction in problem size generated. In \cite{johnston94spike} the use of node ($k=1$), arc ($k=2$)and path ($k=3$) consistency is used to prune the search space for scheduling observations with the Hubble Space Telescope (HST). An example of arc-consistency between binary-constrained variables is given where two observations $A$ and $B$ with a precedence constraint $B$ \emph{after} $A$ by at least $\Delta t$ with each observation having unit duration (for simplicity) and restricted to the interval $[t_A,t_B]$ then the sub-interval $[t_A,t_A+ \Delta t+1]$ is excluded from the domain for $B$ and the subinterval $[t_B-\Delta t-1,t_B]$ is excluded from the domain for $A$. The trade-off in time spent consistency checking against problem reduction is handled in SPIKE by enforcing a strict time-limit for this procedure.
+
+\item[Deadend recovery heuristics] 
+The occurance of deadends resulting in the need to perform backtracking indicates that the chosen variable and value ordering heuristics and consistency enforcing technique are insufficent to cope with the problem in hand, a consequence of re-application of these same heuristics on backtracking is that the same deadends may be encountered repeatedly - a thrashing effect similar to that which occurs in disc access. Recovery heuristics are designed to allow for more intelligent choice on how to backtrack. \cite{sadeh94backtracking} describes several general techniques for improving backtracking search using the \emph{partial conflict set} of the deadend (i.e. the set of activities which have blocked progress of the search at that point and which may have been involved in previous deadends):- \begin{inparaenum} \item \emph{Dynamic Consistency Enforcement} (DCE) keeps a history of backtracking events to identify resource critical subproblems and unwinds assignments until a consistent state is reached, \item Learning Order from Failure (LOFF) technique attempts to adjust the variable ordering heuristic on encountering a deadend by unwinding to a consistent state then overriding the default VOH to assign the activities in the partial conflict set before those which would otherwise have been chosen, \item \emph{Incomplete Backjumping Heuristic} (IBH) uses texture based measures \cite{beck97texturebased} to identify assignments which are estimated to lead to more global solutions then when a deadend is detected unwinds to this critical assignment and tries alternatives - e.g. use second best assignment rather than best. \end{inparaenum}
+
+\end{description}
+
+A disadvantage of the constructive approach is its \emph{offline} nature - during execution any break casues the whole schedule from that point onwards to have to be regenerated.
+
+
+
+
+%
+% Iterative Repair techniques
+%
+\subsection{Iterative repair}
+Repair based techniques have been a major area in scheduling research over the last xxx years. 
+
+Excellent definition from dejavu scheduler website http://www.dbai.tuwien.ac.at/ proj/DejaVu/document/intro.htm
+\begin{quote}
+An iterative improvement method is a search method which starts with an initial solution and tries to find better solutions by "local" modifications. The initial schedule can be constructed randomly, by some constructive method, or by a heuristic method. It can also be created by a human or another computer process. To modify given schedules, repair operations are used to transform a schedule into a new and similar schedule. A scheduling operation can be, for example, the exchange of two adjacent jobs, the move of an operation from one resource to another having the same capabilities. If several operations are applicable, a procedure must choose the operation to be applied. This selection can be made randomly or with some look-ahead, allowing to perform the operation leading to the best "neighbor". To determine whether an improvement can be achieved by a operation, the comparison of schedules by an evaluation function must be possible. The most efficient look-ahead is achieved when the schedule evaluation can be determined locally.
+A simple hill-climbing algorithm would accept only schedules which evaluate better. Unfortunately, scheduling problems usually have many solutions that differ in their quality, and good solutions are not direct neighbors. Therefore, a search method based on local improvements can be easily trapped in a local optimum. An important feature of all iterative improvement methods is therefore the capability to escape from local optima. However, with this ability, it becomes more likely to search in cycles and some kind of control to avoid repetitions is needed. 
+\end{quote}
+
+
+ Typically operations include \emph{retraction heuristics} used to remove conflicting or oversubscribed tasks or resources and a \emph{repair} or \emph{replacement heuristics} are used to re-insert task(s) at appropriate places. 
+
+\begin{description}
+\item[Retraction heuristics] Describe
+\item[Repair heiristics] Describe e.g.VarOH and ValuOH
+\end{description}
+
+Repair may occur as part of a search process to find an optimal schedule from a preliminary first guess, or may be used in a reactive context to fix an already executing schedule disrupted by unexpected changes to the environment or goals or used opportunistically to take advantage of such changes to increase the global value - e.g. if a task finishes earlier than expected this could provide an opportunity to bring another task forward.
+
+\subsection{Search techniques}
+Before embarking on a review of scheduling methodologies we will briefly examine some of the available search techniques which have been applied to scheduling. 
+
+NOTE: Describe what we are searching for - distinguish constructive and repair based - these involve different searches though similar techniques can be employed for both.
+
+Constructive - a path search/route-finding/graph problem.
+Repair - searching for a high point on a landscape.
+
+A number of search techniques have been investigated in this field, ranging from mathematical optimization/ constraint satisfaction methods such as Linear and Integer Programming (LP, IP) (REFS eg. H-OPT), local search techniques (Greedy search/hill climbing)(REF), local search with noise (simulated annealing (REF), adaptive noise (REF)) problem-specific (and generic) heuristic methods (MTS, RBDS)(REF), AMP (REF) techniques such as (TABU (REF), scatter search (REF) , A*(REF), LRTA*(REF)), HBSS(REF), SWO(REF), WHISTLING(REF). 
+
+Disinguish local and systematic search (local - neighbourhood, memoryless or small/ systematic - memory, global optimizing) also some notes about representation for constructive and repair based scheduling methods.
+
+A search (or walk) can be characterized by the following basic algorithm: We are moving around in the state space from the current state (schedule assignment) to another selecting a new \emph{successor} state in the \emph{neighbourhood} of the currrent state. The neighbourhood to move to and the successor selection are left to domain-specific or generic heuristics.
+
+
+\begin{enumerate}  
+\item Select initial point $\mathbf{x}$ in the state space (i.e. generate a complete or partial schedule).
+\item While time left or goodness criterion not met.
+\begin{enumerate}
+ \item \emph{select\_successor\_state} (i.e. move to new point $\mathbf{x}'$).
+ \item Evaluate objective $F(\mathbf{x}')$ for that point.
+ \item If $F(\mathbf{x}') > F(\mathbf{x}_{best})$ then $\mathbf{x}_{best} \rightarrow \mathbf{x}'$
+\end{enumerate}
+\item Goto 1.
+\end{enumerate}
+
+
+
+note:
+A schedule generated by any offline technique will generally be impossible to follow in dynamic environments for any length of time, and it will have to be re-generated frequently at some cost in time and computing resources.
+
+\begin{description}
+\item[Local search]
+Moves around current neighbourhood. The various types of local search are characterized by the mechanism for selecting the $move$ operation.
+
+Greedy search also known as hill-climbing and gradient descent is a classic technique. The move operation steps one unit in the direction of highest upward change in objective function - i.e. we move 'up the hill'. The search then proceeds up the local steepest gradient to the peak. This search can become trapped at local maxima, there is no escape to allow the search to explore other parts of the space.
+
+Paper on DTS in ZandF book.
+
+\item[Search with noise]
+In an attempt to escape local maxima a number of techniques have been developed to allow a degree of random movement around the search space. HBSS and fukunaga for ASPEN?
+
+
+\item[Simulated annealing]
+(REFS) for this in scheduling context? use decreasing temperature $T$ as search proceeds - probability of random move to low scoring point is $e^{-\frac{\Delta E}{kT}}$. Zweben (anytime rescheduling paper ref? and SPIKE)
+
+\item[Adaptive noise]
+As opposed to fixed noise!
+This technique is described in paper by \cite{hoos02adaptive}, 
+
+\item[Moving search]
+in \cite{yokoo99search} - (MAS/DAI Weiss) here the goals change as we proceed with the search i.e. we are trying to catch a moving target, predator-prey models etc .
+Includes MTS and LRTA*. (paper by \cite{ishida96improving} has refs to originals by Korf et al) (Drummond and Bresina RFS paper)
+
+Note: - this is probably more appropriate to DDS later)
+
+\item[AMP]
+Adaptive Memory Programming \cite{taillard98adaptive} was first coined as a general term for a class of optimization techniques which use some form of memory to retain knowledge about poor parts of the search space which have been visited recently.
+
+In TABU search \cite{glover99tabu}, as the space around a solution is searched the memory keeps track of bad directions/paths and avoids entering these 'taboo' areas. there is stuff in \cite{xxx} (one of the later nasa papers) about TABU plus SWO and HOPT for spacecraft ops - combined method using IP and heuristics.
+
+In scatter search new \cite{xxx} solutions are generated by evolving solutions in a process similar to that used in Gentic Algorithms (GAs) in that parts of 'fit' solutions are combined to yield new solutions which may be expected to retain some of the 'fitness' of the parents. etc
+
+\end{description}
+
+REfs here to examples of CSP solutions for S+P. Minton - minconflicts heuristic(this can also be in next section!), AMC barrelmaster, SPIKE and HSTS, constraint posting frameworks.
+ 
+\subsection{Case studies}
+
+%\subsection{SPIKE}
+Description of SPIKE \cite{johnston94spike}. Initial selection heuristic - \emph{minconflicts}, constraint propagation, repair heuristic(s) etc.
+- in the case of SPIKE a conflicting activity is moved to a point where it producues the smallest number of conflicts with other activities. List of quality metrics for good schedule - number of observations, total observing time, summed degree of preference for scheduled observations.
+
+%\subsection{Partially Ordered Schedules (POS)}
+\cite{muscettola92bottleneck} describes a system (Conflict Partition scheduling or CPS) for solving scheduling problems by identifying regions of the search space where bottleneck conflicts occur and posting constraints to move the search away from these regions where solutions are unlikely to be found. A bottleneck is defined as a neighbourhood in the search space where the time assignment strategy generates a maximum of inconsistency. These are detected by running a number of stochastic simulations to generate resource allocations with time flexibility. The bottlenecks are identified as those points where the most resource contention occurs and additional sequencing constraints are posted to reduce the contention. They employ two measures of contention - \emph{token demand} $\Delta(\tau,t_i)$ measures how much a token or task $\tau$ relies on a time slot $t_i$ by counting the number of simulations in which $\tau$ was asssigned to $t_i$, \emph{resource contention} $X(\rho,t_j)$ measures how many tokens are competing for a resource $\rho$ at time $t_j$ by counting the number of simulations in which $\rho$ is requested during $t_j$. Simulation uses various variable and value ordering heuristics - FTD, BTD, RVS - DETAILS. Conflict resolution involves - (see their FIG-1 on p5 for algorithm). brief description (esp CPS) - (may not use this list just salient points).
+\begin{description}
+\item[Capacity analysis]
+\item[termination test]
+\item[Bottleneck identification]
+\item[Conflict identification]
+\item[Conflict partition]
+\item[Constraint propagation]
+\item[Consistency test]
+\end{description}
+
+They test against Microboss \cite{sadeh91lookahead} and minconflicts iterative repair \cite{minton92minconflicts}and claim it is better (see the conclusions).
+
+
+%\subsection{MicroBOSS}
+The MicroBOSS scheduler is described in \cite{sadeh91lookahead} - uses lookahead technique (describe) to work out probabilistic demand profile (Section 3 of article) - contention peaks. 
+
+%\subsection{Gerry}
+\cite{zweben94scheduling} describe the GERRY system for scheduling space shuttle ground operations. They define 3 types of constraint:- \begin{inparaenum}[(\itshape a\upshape )] \item temporal constraints represent precedneces between activities, \item resource constraints represent usage of resources and \item state constraints represent particular environmental state variable assignments required by some activities - certain activities, denoted as \emph{achievers} are able to set these variables \end{inparaenum}. A weighted penalty function is used to measure the cost of constraint violation. Their repair procedure considers each type of constraint seperately and handles repair of $N$ of each type per cycle before moving onto the next cycle. In order to avoid trapping at local optima in the search space they employ simulated annealing to determine acceptance of a newly generated schedule. At each iteration the cost of the current schedule $s$ is compared to the best so far $s^*$ and is accepted with a probability $P(s,s^*) = \exp{-\frac{|cost(s)-cost(s^*)|}{T}}$ where $T$ is the \emph{annealing temperature} which is cooled during the search. To resolve resource constraints tasks are selected for repair using 3 heuristic criteria \begin{inparaenum}[(\itshape i\upshape )] \item \emph{fitness} - move the task whose resource requirements match the amount of over-allocation most closely - the logic here is that a task which has a small resource requirement is less likely to have much effect, one which has a very large requirement will cause problems wherever it gets moved to, \item \emph{dependency} - move the task which has the fewest temporal dependants - a task with a large number of dependencies will likely cause additional violations when it is moved and disrupt existing assignments, \item \emph{distance} - move the task which needs the smallest move to resolve the conflict - a large move is likely to perturb the overall schedule more. \end{inparaenum}. The results of these metrics are scored and a task selected for the move. State constraints are repaired using a selection of 5 methods in priority order which involve moving the affected task and/or adding \emph{achiever} tasks into the schedule before the affected task to set the variable appropriately. The GERRY scheduler was found to be very effective in the chosen domain and was incorporated into the NASA Ground Processing Scheduling System (GPSS) an interactive tool for scheduling repair and refurbishment of the space shuttles between missions. 
+
+
+%\subsection{OPIS}
+\cite{smith95reactive} describes the OPortunistic Intelligent Scheduler (OPIS) system. This introduces multi-perspective scheduling in which a number of complimentary schedule repair techniques are employed under the supervision of a Top Level Manager (TLM) and working through a common blackboard representation of the current solution and constraints. External events (changes to requirements, feedback from execution) are fed into the blackboard via model update agents. Conflict classes are defined relative to a number of conflict metrics including:- conflict duration, conflict size, resource idle time, upstream slack, projected lateness. A number of agents analyse the conflicts which are then matched to fuzzy behavioural profiles. Schedule repair agents are then selected to apply an appropriate repair heuristic suited to the character of the conflicts. e.g. for a problem with HIGH value of \emph{conflict duration} and LOW value of \emph{variance in projected lateness} coupled with HIGH value of \emph{idle time} the \emph{order-scheduling} heuristic is chosen which revises the sequencing of contiguous operations. In the trade-off between opportunistic improvement and non-disruption to current baseline OPIS is biased towards the later though this is a function of the anaiysis and repair heuristics chosen -- see later under OZONE and DITOPS and AMC papers. (Performance notes...) 
+
+(Note: useful architecture - comaprison to DM concept).
+
+Work on DITOPS \cite{smith96mixed} an air transport scheduler led to the extension of OPIS into a pluggable object oriented framework OZONE (Object Oriented OPIS = $O^3$). This has since been used to implement a number of scheduling systems. .
+
+%\subsection{AMC BarrelMaster} 
+For scheduling inflight refueling and transport missions the AMC BarrelMaster scheduler \cite{smith04continuous} was developed using OZONE. In its normal mode of operation the scheduler has to assign times to new missions into an already built schedule. The search strategy \texttt{AssignMission} is based on a triple of:-
+\begin{description}
+\item[$Gen_{Resources}$] selects candidate resources (aircraft, crew).
+\item[$Gen_{Intervals}$] selects candidate intervals for a mission
+\item[$Eval_{Criterion}$] ranks alternatives.
+\end{description}
+
+The mission requirements generally lead to heavy over-subscription of resources so various relaxation regimes can be considered:- over-allocation of 'reserved' resources, allowable delays, mission combinations, priority pre-emption (bumping). These are handled by selection of different pluggable combinations of these procedures. e.g. $Eval_{criterion}$ has implementations $Eval_{MinTardiness}$ $Eval_{MinFlyingTime}$ and $Eval_{MinOverAllocation}$, similarly there are several versions of $Gen_{Resources}$ and $Gen_{Intervals}$. A procedure \texttt{CombineMissions} allows pairs of missions to be combined to attempt a reduction in resource usage, this can be applied recursively to maximize the reduction in overall flying time required. The primary goal of the AMC Allocator is to assign the most high priority missions, often lower priority missions will be left out even though some assigned high priority missions with greater flexibility are included - an incremental optimization procedure \texttt{MissionSwap} can be applied to try and insert unassigned low priority missions into the schedule by retracting existing commitments and reassigning to free up slots. 
+
+\cite{kramer03maxflex} describe 3 heuristics which can be used to select the tasks for retraction:- \begin{inparaenum}[(\itshape a\upshape)] \item $MaxFlex$ - measures the ratio of required time to available time summed over all resources required by a mission and is an indicator of the flexibility of the mission, \item $MinConflicts$ (\cite{minton92minconflicts}) - measures the number of resource conflicts over a mission's execution interval, \item $MinContention$ - defined as $\frac {\sum_{C \in Conflicts_i} dur_C}{\sum_{r \in R_i ReqInt_{r,i}}}$ where $dur_C$ is the duration of conflict $C$ and $ReqInt_i$ is the required executon interval for mission $i$ measures the proportion of a mission's required interval that is in conflict. \end{inparaenum}. In \cite{kramer04swapping} they extend this technique to minimize disruption to the existing schedule and to speed up the process by search tree pruning. (task pruning - interval pruning - depth bounded search / biased stochastic retraction - VBSS = ACO  - defer to that section or see.Sect. XXX?)...
+
+
+%\subsection{DITOPS}
+DITOPS (Smith and Sycara) based on OZONE.. other paper also under integration of S+P.
+
+in situations of detected constraint conflict an analysis procedure computes a set of metrics, some of which estimate the severity of the problem and some of which characterize the looseness or tightness of time and capacity constraints in the local 'neighbourhood' of the schedule that contains the conflict.
+
+
+%\subsection{ASPEN/CASPER}
+\cite{rabideau99iterative} describes work by NASA JPL on the ASPEN scheduling framework. This is a constraint based search/optimization system intended for spacecraft operations scheduling. During the constraint satisfaction cycle activities are slotted into the schedule and conflicts detected. The system then classifies these conflicts into a large set depending on the type of constraint broken or the type of resource bottleneck. A prioritized sequence of repair heuristics is then selected in turn to attempt a repair which moves closer to satisfycing. (describe algorithm here? or leave to optimizing para).
+
+ ASPEN allows the specification of a number of search heuristics to be slotted in at decision points in the algorithm - some generic ones are described \begin{inparaenum}[(\itshape i\upshape)] \item conflict sorting heuristic (a variable order heuristic)- prefers to repair conflicts which require adding new activities, \item repair selection heuristic - prefers to move an activity then adding activities then deleting activities, \item interval selection heuristic for activities being created or moved (a value order heuristic)- prefers intervals which do not create new conflicts then intervals which minimize new conflicts. \end{inparaenum}.
+
+\cite{rabideau00generic} moves on to describe an extension to ASPEN to allow interleaved repair and optimization using \emph{experts} - these are software components implementing heuristic operations \emph{an expert is a link between changes in the plan and the change in quality}. 
+
+A number of classes of user preferences are defined, some acting on a local level, others globally. These specify a mapping from local variables to scoring metrics - an example given is of a preference on the start time of one activity relative to the preceding one centred on a \emph{preferred} time gap and decreasing monotonically either side within cutoff limits - basically means \emph{I would like a gap of $t^*$ but will be happy with any gap from $t_{low}$ to $t_{high}$} . 
+
+Improvement experts include:- \begin{inparaenum}[(\itshape i\upshape)] \item \emph{local activity variable expert} - considers variables which currently contribute low values to the score - the preferences allow this expert to decide which way the variable has to be adjusted to increase the score (e.g. for the gap preference above, the direction is towards the \emph{preferred} time gap entailing moving one of the activities backward or the other forward), \item \emph{activity/goal count expert} - aims to increase or decrease the number of activities of a given type - the only tactic for this expert is to add or remove activities, \item \emph{resource/state variable expert} - tries to improve the preference scores for resource variables - this can involve moving activities to increase/decrease resource usage (e.g. battery minimum level) or adding and removing activities which increase/decrease the resource level, \item \emph{resource/state change count expert} - is tasked with improving the score for numbers of state or resource changes, \item \emph{state duration expert} - can move, add or delete activities which maintain or cause a particular preferred state. \end{inparaenum}.
+
+In the optimization phase a monotonic increasing assumption is made - i.e. only make (local) changes which will improve globally. A varibale order heuristic selects either the lowest scoring preference or the one with the highest potential gain - $weight_{pref}*(1 - score_{pref})$.
+
+In order to improve overall performance an adaptive noise mechanism following \cite{hoos02adaptive} has been implemented for ASPEN \cite{fukunaga04robust} - this was added to the \emph{repair selection heuristic} above - basically if improvement rate stagnates do some random stuff then after improvement back off but faster $\theta and p$ parameters... XXXresultsXXX and EO-1 application.
+
+The CASPER system \cite{chien99iterative, chien00aspen} was designed as a \emph{soft, realtime} version of ASPEN to act as a framework for dynamic replanning - the concepts of continuous planning, execution and replanning and incremental plan extension. Plan must be continuously modified in light of changing operating context. It advocates a hierarchic system of planning - at higher levels more reasoned plans over long time scales, at lower levels short time scales, more reactive (NOTE: compare Brookes subsumptive architecture).
+
+CASPER's represents the 'world' at a given planning horizon as (current goal set, plan, current exec state, model of predicted states). Updates to any of (goal set, current exec state, horizon (i.e. just time advancing)) causes a replanning iteration - changes are posted, effects propagated - including conflict identification, plan repaired and new working plan results (copy of their FIG7).
+
+\begin{enumerate}
+\item Initialize Plan, Goal-set, State.
+\item Update G to reflect new goals and remove spurious.
+\item Update S to current execution state.
+\item Compute conflicts.
+\item Apply conflict resolution to generate new Plan.
+\item Release for execution.
+\item goto 1.
+\end{enumerate}
+
+\cite{chien98integrated}, Benefits -(responsiveness to sudden changes in environment, predictive modelling errors reduced due to continuous updating, fault protection moved from exec layers working on very short time scales, reduced distinction between PSE due to layering??). Currently the system can only replan at activity boundaries - unable to model effects of interrupted activities. Extension to include (plugin) goal achievement modules (GAMs) - experts at solving specific types of conflict - e.g. spacecraft attitude conflicts - XXXlook for newer paper on these- context DS-4XXX
+
+
+XXXDetails of some NASA application areasXXX.
+
+%
+% Contingent methods + constraint posting
+%
+\subsection{Contingency and flexibility methods}
+
+What can go wrong - new tasks arrive, resources fail (e.g. instruments offline),
+
+Motivation - localize changes, make them small, continuity of \emph{global plan}, reactive repair must be fast. 
+
+Approaches - contingency - build multiple futures, execution branches to cope with what might happen. 
+
+Different approaches \cite{policella03flexible} classifies these as:-
+
+\begin{description}
+\item[Robust solution] create a robust schedule with built in flexibility (time slop).
+\item[Partially defined schedules] Define partial order of activities.
+\item[Rescheduling] as already discussed.
+\item[Dynamic] Despatch scheduling.
+\end{description}
+
+Examples (Muscettola+Smith /HSTS, Sadeh/MICROBOSS), (Bresina et al/JIC), SPIKE others.
+
+\cite{davenport01slack} compare 3 pro-active techniques for building extra time into a schedule to cope with uncertain duration. \emph{Temporal protection} adds a slack time into each activity duration prior to the search, \emph{time slack window} uses reasoning during the search to attach minimum slack into each activity, \emph{focused time window slack} (FTWS) assigns slack based on the distance along the planning horizon. Normal distributions  are used to model the likelihood (MTBF) $N(\mu_{tbf}, \sigma_{tbf})$ and length (downtime) $N(\mu_{dt}, \sigma_{dt})$ of breakdowns:-
+\begin{eqnarray}
+slack_A(t) & >= & \sum_{n=1}^M P(N(\mu(n),\sigma(n)) <= t)  \mu_{dt} \\
+\mu(n) & = & (n \mu_{tbf}) + ((n-1) \mu_{dt}) \\
+\sigma(n) & = & \sqrt{((n \sigma_{tbf}^2) + ((n-1) \sigma_{dt}^2)}
+\end{eqnarray}
+where $\mu(n)$ is the mean value of the probability of $n$ breakdowns of the executor and $\sigma(n)$ is its standard deviation. When tested on simulated problems with varying degrees of uncertainty (breakdowns) all methods help improve tardiness with increasing degrees of uncertainty. They do not however give account of the tradeoff due to uneccessary slack time introduced by the technique relative to the gains of continuity and reduced need for rescheduling.
+
+
+Two different approaches are compared by \cite{policella03flexible} (WHAT CONTEXT) and described in more detail \cite{policella05thesis} 
+They define 3 measures of robustness - \begin{inparaenum}[(\itshape a\upshape )]\item reactiveness - speed of response, \item stability - degree of change induced by reaction - ripple effect, \item solution quality - preservation (or enhancement) of performance relative to baseline schedule.\end{inparaenum}. Two metrics are defined for evaluating schedule quality:-
+$fldt = \sum_{i=1} \sum_{j \neq i} \frac { |d(e_i,s_j) - d(s_j, e_i)|}{ H \times N \times (N-1)}$
+where $d(x,y)$ is the distance between $x$ and $y$ and $e_i$ is the finish time for activity $i$ and $s_i$ is its start time. This metric is designed to evaluate the fluidity of the schedule i.e. its ability to absorb time variations. Small values of $fldt$ imply that effects will be localized rather than ripple through the schedule. The second metric:-
+
+$dsrp = \frac{1}{n}\sum_{i=1}^{n} P_{dis}(a_i) \frac{slack_i}{num_{changes}(a_i, \Delta a_i)}$
+where $slack_i$ is the slack available to activity $i$ and $num_{changes}(x,y)$ is the number of activities moved from their start times when activity $x$ is delayed by $y$ with $P_{dis}(a_i)$ estimated as $\frac {duration_i}{makespan}$ discribes disruptibility of the schedule and they claim it measures \emph{the price to pay for the flexibility of the schedule}
+
+The first technique \emph{resource envelope based} employs a 2 step process. 
+In the first step, from an initial partially ordered schedule with constraints they compute the resource-envelope (a time varying measure of resource requirements), using this they then detect conflicts (where more activities require a resource than its capacity allows), a selection heuristic is used to rank and then select a pair of competing activities, a sequencing heuristic then specifies (posts) new precedence constraints to remove this conflict. The resulting modified schedule with new constraints is fed back into the first step until a solution is found.
+The second technique \emph{earliest start time} starts with a pre-selected fixed-time schedule, then selecting activities based on ranked order of start times and using a cheaper resource analysis posts new precedence constraints which can be used to determine the bounds for eachactivity to prodcuce a flexible schedule. They find that the second approach perfoms best against all quality measures and is fastest.  
+
+In \cite{muscettola92bottleneck} Conflict Partition Scheduling (CPS) in context of HSTS - partitioning of bottlenecks 
+uses constraint posting and stochastic simulation to locate areas of search space where solutions are unlikely to be found. MOVEBACK
+
+In \cite{sadeh91lookahead} the /MICROBOSS scheduler - lookahead techniques, aggregate demand profile, ORR and FSS (already mentioned) - ONLY IN INTRO
+
+\cite{bresina94jic} take a different approach (JIC) to a scheduling problem involving selection of observations for the XXX telescope in which the main source of uncertainty relates to the lengths of observations (action duration uncertainty). Uncertainty is due to star-centring which depends on sky conditions, wind, pointing etc. Uncertainty grows with time. Online scheduling is slow (whole night's observations to allocate to enablement intervals). 
+
+
+They run multiple simulations over the night looking for the most likely break points then look for alternative branches to execute... details also \cite{drummond94jic}.
+
+\begin{enumerate}
+\item Estimate temporal uncertainty at each activity point.
+\item Find most probably breakpoint.
+\item Create branch (do X or nodo X).
+\item Reschedule subproblem (doall before X, nodo X)
+\item Integrate with prior schedule.
+\item repeat goto 1 while time left.
+\end{enumerate}
+
+Hard to explain without diagram..worth reproducing their FIG 1 and adding some notes.
+
+
+ Problem is to create a multiply contingent schedule from a fixed schedule in a reasonable time soas to increase robustness. Large search space if any action can break - need to reduce number of branch points to manageable size. 
+
+ Improved for Mars rover \cite{bresina99increased} additional resource uncertainty not just time, expected utility to select branch not just p(fail), allow setup steps prior to branch point.
+
+and note use of HBSS \cite{bresina96hbss}.
+ 
+%
+% Integrated Planning and scheduling
+%
+\subsection{Integrated Planning and scheduling}
+Discuss attempts to integrate the 2 - including dynamic planning - CPEF 
+Refs - (Myers, Smith, ) \cite{chien98integrated}
+
+\cite{myers01integrating} 
+
+
+
+
+% Reactive scheduling.
+\subsection{Reactive scheduling}
+Discuss examples or RS and DS .
+
+Reactive scheduling deals with the repair of executing schedules which have become inconsistant or broken due to changes in the environment. If the goals (objectives) are changed dynamicaly, an executing schedule may break or become sub-optimal, reactive scheduling deals with this situation also. A subclass of reactive scheduling is dynamic scheduling (see \ref{sect:dynamic}), where the decision of what to schedule next is made at that point in time - there is no look-ahead though the history of the execution to date may be available.
+
+\cite{jones98survey} describes 2 classes of reactive system:-
+\begin{itemize}
+\item reactive repair - the system waits for an event to occur before attempting to recover the system.
+\item in pro-active adjustment the system monitors continuously, predicting the future evolution and attempting to plan ahead for contingencies while the plan is executing.
+\end{itemize}
+
+% Dynamic despatch scheduling.
+\subsection{Dynamic Despatch scheduling}
+\label{sect:dynamic}
+Standard DS/QueueT algorithms (Karaman A, survey paper?)  Priority rules = (EDD, SPT, MinSlack, etc)
+
+Uses of DS (LT original papers).
+
+Paper by (Shaw and Raman) about use of machine learning to induce despatching rules (CBR).
+
+DESCRIBE SEU cycle, pools, priority rules, queues and other general stuff- esp wrt current project.
+
+%
+% Agent based scheduling.
+%
+\subsection{Agent based scheduling}
+Various papers. 
+
+%
+% Evolutionary and biologically inspired techniques applied to scheduling 
+% e.g. swarms, ACO, Wasps.
+%
+\subsection{Evolutionary and biologically inspired techniques}
+e.g. GAs, swarms, Ant Colony Optimization (ACO), Wasps (Whistling algorithm), artificial immune systems (AIS).
+
+Genetic Algorithms (GA) are described by \cite{russel03artificial} as a form of stochastic hill-climbing search with random exploration and exchange of information between parallel search threads. (Examples of use in S+P).
+
+AIS (Hart99 +other, and refd in Kocjan02).
+
+
+%
+% Reinforced Learning techniques applied to scheduling.
+% TD(lambda), Q-learning, MDPs.
+%
+\subsection{Adaptive Learning techniques applied to scheduling}
+Papers by (Riedmuller etc). Discuss briefly TD($\lambda$), Q-learning, MDPs.
+
+Reinforcement learning techniques involve learning policies for state-space problem solving. For each state $s \in S$ the policy $\pi:s \rightarrow a$ determines the action $a \in A$ to perform. While learning, the system receives a reinforcement signal or reward after each action. The goal is to find an optimal policy $\pi^*$ which maximizes the expected cumulative reward over future action. In scheduling, the policy tells us how (what scheduling action to perform) to maximize some measure of schedule quality in the final realized schedule.
+
+Motivated by the myopism of local despatching rules which lead to supboptimal global behaviour, \cite{riedmiller99neural} have studied the use of RL techniques to learn despatching rules which adapt dynamically using feedback from the evolving problem situation. The problem is represented as an MDP where $s(t)$ represents the allocation of tasks to resources at time $t$ and $a(t)$ represents the selection of the next job to allocate. Individual Q-learning agents with local state and action knowledge are associated with each resource. They used an MLP to represent the value function, taking as inputs a number of problem features culled from the problem space (set of unallocated tasks). These include features relating to the current schedule state:- tightness with respect to due dates, estimated tardiness, estimated makespan, average slack, and features dependant on the next job selection such as:- average remaining slack if $job_i$ is selected, relative slack ($job_i/total$). By varying the set of input features selected to match those of standard despatch heuristics (EDD, SPT, LPT, FIFO, MinSlack) they were able to train the network to produce despatch policies which met or exceeded the performance of these heuristics on problems to which the specific heuristics were best suited. By combining sets of input features they were also able to outperform all of these despatch heuristics on a variety of problems. In effect the network was able to learn better policies by combining the standard heuristics depending on the problem features. When applied to untrained problems the network was able to successfully generalize and improved significantly on each of the standard despatch policies.
+
+Though possible to engineer domain-specific heuristics by hand to exploit regularities and features of a problem space, this can be time consuming and expensive and is naturally non-general. This was the motivation for \cite{zhang95reinforcement} who have studied the use of RL techniques to learn heuristics. Using a $TD(\lambda)$ based technique in which the value function is represented by the weights in a feed-forward network, the reward at each learning step $t$ is computed as the summed relative utilization index (RUI) for each resource at that time step (latex doesnt like this eqn so left out for now).
+
+
+\begin{equation}
+RUI_i(t) = 
+\begin{cases}
+1& \text{$U_i(t) < c_i(t)$} \\
+U_i(t)/c_i(t)& \text{$U_i(t) >= c_i(t)$}
+\end{cases}
+\end{equation}
+%% ONE DAY THIS EQN WILL WORK AND ALL WILL BE WELL
+
+
+Their system models an iterative repair technique. The states represent the constructed schedule at a point in a sequence of repairs to obtain an optimal schedule and the actions are selected from a set of repair operations. They use a number of features extracted from the partial schedule at each learning step as inputs to the NN and this is used to estimate the value function. In tests against an iterative repair technique empolying stochastic search via SA \cite{zweben94scheduling} the system was able to learn a repair policy after training which beat the IR technique consistently for speed though the IR technique was able to produce better schedules given sufficient time.
+
+
+In dynamic systems \cite{shaw90intelligent} hypothesise that the rules used to make scheduling decisions should change with time as the problem characteristics evolve. They proposed a system which distinguishes between and ranks problem characteristics by relative importance, then performs adaptive scheduling by opportunistically selecting appropriate heuristics. 
+
+The system called Pattern Directed Scheduling (PDS) works in 2 stages. In the first step (learning stage) a series of training scenarios are simulated and used to study the effects of applying various despatching rules. A critic module (the expert) analyses the performance of these rules on the problem scenarios and may generate new training examples to refine the matching of patterns to rules. The system chosen for induction was based on Iterative Dichotomizer 3 ID3 \cite{quinlan86induction}, in this system a tree of rules is built up by splitting the domains of the problem attributes (summary explanation in Hopgood KBS for E and S). 
+
+An effect of this system is that it ranks the attributes in terms of an entropy - \emph{how much does attribute $j$ contribute to the knowledge used to make a given decision ?}. This has the advantage of allowing us to see which attributes are important and which are irrelevant or decision-neutral but does have the disadvantage of considering each attribute in isolation and is unable to detect interdependancies between attributes. A typical example being where a decision should be made based on the similarity of 2 attributes rather than their individual values. Shaw et al used a total of 9 problem attributes and found that 2 of these were irrelevant. 
+
+They found that when applying the learnt rules to real problems it was important to reduce the \emph{nervousness} of the system. As the characteristics changed it was neccessary introduce a smoothing component to avoid switching rules too quickly by waiting until the selection count of a new rule had reached a threshold value. They tested the system against a number of standard despatching rules with a collection of problem instances and concluded that there was an overall improvement of around 11.5\% in mean tardiness compared to the best of the single rules applied to any of the problem sets. The improvement was atrributed to the adaptive selection of rules and the ability to use feedback to refine the heuristic selection.
+
+
+Case based reasoning (CBR) is a learning technique in which rules are induced by matching problem situations against a set of examples (the cases). It has several advantages:- CBR is particularly useful at extracting rules from noisy data, it operates incrementally building up its knowledge base while working (there is no large expenditure of effort at the start of the process or any need to check consistency between rules as in a rule-based learning), contextual information may be retained in the cases to help human assessors to understand the induced rules.
+
+Due to their interactions and conflicts, it is often difficult to determine numerically or in terms of hard-and-fast rules, the relative ranking and trade-offs between users' schedule optimization preferences. The CABINS system \cite{miyashita95cabins} uses CBR to capture these preferences. CABINS provides a framework for acquiring preferences then uses the case base to improve schedules and provide a reactive repair mechanism in response to unforseen events. 
+
+The system operates in 2 stages:-
+\begin{enumerate}
+\item In the first stage,a feasible but sub-optimal schedule is generated using a constructive technique. 
+\item In the second stage the schedule is improved by selecting repair actions (iterative repair). The quality of the schedule before and after each repair are compared using a number of local (pertaining to the current \emph{focal} activity) and global (referring to the overall schedule) criteria (e.g. tardiness, WIP inventory, waiting time...). Repair operations are interleaved with consistency enforcment - as a repair on the currently selected \emph{focal} activity is made it is likely that constraints may be broken requiring other activities (conflict set) to be rescheduled. 
+
+CABINS has 3 operating modes:-
+\begin{itemize}
+\item In \emph{knowledge acquisition} mode the user selects the repair actions to perform and these decisions are stored along with information to characterize the current problem situation (a case). If sufficient training examples are provided, the resulting case base should contain a distribution of examples covering a diverse set of problem situations.
+
+\item In \emph{decision support} mode, the system selects repair actions by matching the current problem to the repair actions in the case base and an interactive user has the option to veto/override providing additional training.
+
+\item In \emph{automatic} mode, the system makes all repair decisions using the case base without user interaction.
+\end{itemize}
+\end{enumerate}
+
+Selection of repair actions is performed by matching the problem profile against the stored cases using a $k$-nearest neighbour matching algorithm:-
+\begin{eqnarray}
+distance_i = \sum_j (salience^i_j (\frac {CaseFeature^i_j - ProblemFeature_j}{E_{dev_j}}))^2 \\
+similarity_i = \exp^{-distance_i}
+\end{eqnarray}
+where $salience^i_j$ represents the user's evaluation of the importance of case feature $j$ of case $i$, $CaseFeature^i_j$ is the value of feature $j$ of case $i$, $ProblemFeature_j$ is the value of feature $j$ in the current problem and 
+$E_{dev_j}$ is the standard deviation of feature $j$ for all cases. $distance_i$ is the dissimilarity between the current problem and the $i^{th}$ case and $similarity_i$ is the similarity between the current problem and the $i^{th}$ case.
+
+The repair process operates as follows:-
+\begin{enumerate}
+\item A focal activity is selected and a start time predicted using each of the available tactics.
+\item The conflict set is worked out by projecting the (ripple) effects of the repair onto neighbouring activities.
+\item Consistency enforcement technique works on the conflict set using the Activity Resource Reliance (ARR) variable ordering heuristic which selects the most critical activity (most likely to be involved in a capacity conflict over the repair horizon) and a greedy value ordering heuristic which selects a time assignment for the selected activity according to a bias function which represents the time-varing utility perceived for the activity start time deduced from the case base.
+\item The activity utility functions are updated - they are biased to start times calculated as part of step (3) to be used in the next iteration.
+\item CBR is used to evaluate the quality of the new schedule.
+\end{enumerate}
+They performed a series of comparisons against other methods evaluated against teh following criteria: \begin{inparaenum}[(\itshape a\upshape )] \item attendance to scheduling objectives, \item amount of disruption, \item efficiency (speed) - especially in respect of its use for reactive repair \end{inparaenum}.
+
+Compared with SA based IR scheduler. Found that ~1000 cases was optimum - marginal improvment above 1000 was not worth the effort. They concluded that CABINS was good at capturing preferences and optimization trade-offs that are difficult to model, improved schedule quality irrespectively of how the initial (seed) schedule was generated and produced high quality schedules faster than simliar IR technique so was suitable for reactive scheduling.
+
+
+NOTE (need to read that paper again as the repair/CBS intervleaving technique does not seem quite right.
+
+\cite{sycara96case} extended the CABINs framework to consider time-varying user preferences. Their extension allowed the system to learn new cases from its own evaluations of schedule improvment while running. They employed a \emph{rolling horizon} model in which the matching algorithm gives more weight to recent cases than to older cases.
+
+Some techniques involving learning despatch rules/priority weights GEN-H \cite{morris97automatic}. 
+
+
+%
+% Economics and market based techniques applied to scheduling.
+%
+\subsection{Economics and market based techniques}
+Various papers.
+
+%
+% Telescope specific scheduling
+%
+\subsection{Telescope domain}
+Examples - SPIKE (already done), APA, ...

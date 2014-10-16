@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Case studies</TITLE>
+<META NAME="description" CONTENT="Case studies">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html423"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html419"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html413"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html421"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html424"
+  HREF="node16.html">Contingency and flexibility methods</A>
+<B> Up:</B> <A NAME="tex2html420"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html414"
+  HREF="node14.html">Search techniques</A>
+ &nbsp; <B>  <A NAME="tex2html422"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00054000000000000000">
+Case studies</A>
+</H2>
+
+<P>
+Description of SPIKE [<A
+ HREF="node99.html#johnston94spike">Johnston and Miller, 1994</A>]. Initial selection heuristic - <I>minconflicts</I>, constraint propagation, repair heuristic(s) etc.
+- in the case of SPIKE a conflicting activity is moved to a point where it producues the smallest number of conflicts with other activities. List of quality metrics for good schedule - number of observations, total observing time, summed degree of preference for scheduled observations.
+
+<P>
+[<A
+ HREF="node99.html#muscettola92bottleneck">Muscettola, 1992</A>] describes a system (Conflict Partition scheduling or CPS) for solving scheduling problems by identifying regions of the search space where bottleneck conflicts occur and posting constraints to move the search away from these regions where solutions are unlikely to be found. A bottleneck is defined as a neighbourhood in the search space where the time assignment strategy generates a maximum of inconsistency. These are detected by running a number of stochastic simulations to generate resource allocations with time flexibility. The bottlenecks are identified as those points where the most resource contention occurs and additional sequencing constraints are posted to reduce the contention. They employ two measures of contention - <I>token demand</I> <!-- MATH
+ $\Delta(\tau,t_i)$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$ \Delta(\tau,t_i)$"> measures how much a token or task <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.png"
+ ALT="$ \tau$"> relies on a time slot <IMG
+ WIDTH="17" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$ t_i$"> by counting the number of simulations in which  was asssigned to <IMG
+ WIDTH="17" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$ t_i$">, <I>resource contention</I> <!-- MATH
+ $X(\rho,t_j)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.png"
+ ALT="$ X(\rho,t_j)$"> measures how many tokens are competing for a resource <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.png"
+ ALT="$ \rho$"> at time <IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="$ t_j$"> by counting the number of simulations in which <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.png"
+ ALT="$ \rho$"> is requested during <IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="$ t_j$">. Simulation uses various variable and value ordering heuristics - FTD, BTD, RVS - DETAILS. Conflict resolution involves - (see their FIG-1 on p5 for algorithm). brief description (esp CPS) - (may not use this list just salient points).
+<DL>
+<DT><STRONG>Capacity analysis</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>termination test</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>Bottleneck identification</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>Conflict identification</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>Conflict partition</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>Constraint propagation</STRONG></DT>
+<DD>
+</DD>
+<DT><STRONG>Consistency test</STRONG></DT>
+<DD>
+</DD>
+</DL>
+
+<P>
+They test against Microboss [<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] and minconflicts iterative repair [<A
+ HREF="node99.html#minton92minconflicts">Minton et&nbsp;al., 1992</A>]and claim it is better (see the conclusions).
+
+<P>
+The MicroBOSS scheduler is described in [<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] - uses lookahead technique (describe) to work out probabilistic demand profile (Section 3 of article) - contention peaks. 
+
+<P>
+[<A
+ HREF="node99.html#zweben94scheduling">Zweben et&nbsp;al., 1994</A>] describe the GERRY system for scheduling space shuttle ground operations. They define 3 types of constraint:- <BR>
+<IMG
+ WIDTH="555" HEIGHT="108" ALIGN="TOP" BORDER="0"
+ SRC="img115.png"
+ ALT="\begin{inparaenum}[(\itshape a\upshape )]\item temporal constraints represent pr...
+...es, denoted as \emph{achievers} are able to set these variables \end{inparaenum}">
+<BR>. A weighted penalty function is used to measure the cost of constraint violation. Their repair procedure considers each type of constraint seperately and handles repair of <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img116.png"
+ ALT="$ N$"> of each type per cycle before moving onto the next cycle. In order to avoid trapping at local optima in the search space they employ simulated annealing to determine acceptance of a newly generated schedule. At each iteration the cost of the current schedule <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img117.png"
+ ALT="$ s$"> is compared to the best so far <IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.png"
+ ALT="$ s^*$"> and is accepted with a probability <!-- MATH
+ $P(s,s^*) = \exp{-\frac{|cost(s)-cost(s^*)|}{T}}$
+ -->
+<IMG
+ WIDTH="248" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img119.png"
+ ALT="$ P(s,s^*) = \exp{-\frac{\vert cost(s)-cost(s^*)\vert}{T}}$"> where <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img107.png"
+ ALT="$ T$"> is the <I>annealing temperature</I> which is cooled during the search. To resolve resource constraints tasks are selected for repair using 3 heuristic criteria <BR>
+<IMG
+ WIDTH="557" HEIGHT="227" ALIGN="TOP" BORDER="0"
+ SRC="img120.png"
+ ALT="\begin{inparaenum}[(\itshape i\upshape )]\item \emph{fitness} - move the task wh...
+... - a large move is likely to perturb the overall schedule more. \end{inparaenum}">
+<BR>. The results of these metrics are scored and a task selected for the move. State constraints are repaired using a selection of 5 methods in priority order which involve moving the affected task and/or adding <I>achiever</I> tasks into the schedule before the affected task to set the variable appropriately. The GERRY scheduler was found to be very effective in the chosen domain and was incorporated into the NASA Ground Processing Scheduling System (GPSS) an interactive tool for scheduling repair and refurbishment of the space shuttles between missions. 
+
+<P>
+[<A
+ HREF="node99.html#smith95reactive">Smith, 1995</A>] describes the OPortunistic Intelligent Scheduler (OPIS) system. This introduces multi-perspective scheduling in which a number of complimentary schedule repair techniques are employed under the supervision of a Top Level Manager (TLM) and working through a common blackboard representation of the current solution and constraints. External events (changes to requirements, feedback from execution) are fed into the blackboard via model update agents. Conflict classes are defined relative to a number of conflict metrics including:- conflict duration, conflict size, resource idle time, upstream slack, projected lateness. A number of agents analyse the conflicts which are then matched to fuzzy behavioural profiles. Schedule repair agents are then selected to apply an appropriate repair heuristic suited to the character of the conflicts. e.g. for a problem with HIGH value of <I>conflict duration</I> and LOW value of <I>variance in projected lateness</I> coupled with HIGH value of <I>idle time</I> the <I>order-scheduling</I> heuristic is chosen which revises the sequencing of contiguous operations. In the trade-off between opportunistic improvement and non-disruption to current baseline OPIS is biased towards the later though this is a function of the anaiysis and repair heuristics chosen - see later under OZONE and DITOPS and AMC papers. (Performance notes...) 
+
+<P>
+(Note: useful architecture - comaprison to DM concept).
+
+<P>
+Work on DITOPS [<A
+ HREF="node99.html#smith96mixed">Smith et&nbsp;al., 1996</A>] an air transport scheduler led to the extension of OPIS into a pluggable object oriented framework OZONE (Object Oriented OPIS = ). This has since been used to implement a number of scheduling systems. .
+
+<P>
+For scheduling inflight refueling and transport missions the AMC BarrelMaster scheduler [<A
+ HREF="node99.html#smith04continuous">Smith et&nbsp;al., 2004</A>] was developed using OZONE. In its normal mode of operation the scheduler has to assign times to new missions into an already built schedule. The search strategy <TT>AssignMission</TT> is based on a triple of:-
+<DL>
+<DT><STRONG><!-- MATH
+ $Gen_{Resources}$
+ -->
+</STRONG></DT>
+<DD>selects candidate resources (aircraft, crew).
+</DD>
+<DT><STRONG><!-- MATH
+ $Gen_{Intervals}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ Gen_{Intervals}$"></STRONG></DT>
+<DD>selects candidate intervals for a mission
+</DD>
+<DT><STRONG><!-- MATH
+ $Eval_{Criterion}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.png"
+ ALT="$ Eval_{Criterion}$"></STRONG></DT>
+<DD>ranks alternatives.
+</DD>
+</DL>
+
+<P>
+The mission requirements generally lead to heavy over-subscription of resources so various relaxation regimes can be considered:- over-allocation of 'reserved' resources, allowable delays, mission combinations, priority pre-emption (bumping). These are handled by selection of different pluggable combinations of these procedures. e.g. <!-- MATH
+ $Eval_{criterion}$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$ Eval_{criterion}$"> has implementations <!-- MATH
+ $Eval_{MinTardiness}$
+ -->
+<IMG
+ WIDTH="135" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.png"
+ ALT="$ Eval_{MinTardiness}$"> <!-- MATH
+ $Eval_{MinFlyingTime}$
+ -->
+ and <!-- MATH
+ $Eval_{MinOverAllocation}$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.png"
+ ALT="$ Eval_{MinOverAllocation}$">, similarly there are several versions of <!-- MATH
+ $Gen_{Resources}$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="$ Gen_{Resources}$"> and <!-- MATH
+ $Gen_{Intervals}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ Gen_{Intervals}$">. A procedure <TT>CombineMissions</TT> allows pairs of missions to be combined to attempt a reduction in resource usage, this can be applied recursively to maximize the reduction in overall flying time required. The primary goal of the AMC Allocator is to assign the most high priority missions, often lower priority missions will be left out even though some assigned high priority missions with greater flexibility are included - an incremental optimization procedure <TT>MissionSwap</TT> can be applied to try and insert unassigned low priority missions into the schedule by retracting existing commitments and reassigning to free up slots. 
+
+<P>
+[<A
+ HREF="node99.html#kramer03maxflex">Kramer and Smith, 2003</A>] describe 3 heuristics which can be used to select the tasks for retraction:- <BR>
+<IMG
+ WIDTH="560" HEIGHT="188" ALIGN="TOP" BORDER="0"
+ SRC="img129.png"
+ ALT="\begin{inparaenum}[(\itshape a\upshape )]\item $MaxFlex$\ - measures the ratio o...
+...roportion of a mission's required interval that is in conflict. \end{inparaenum}">
+<BR>. In [<A
+ HREF="node99.html#kramer04swapping">Kramer and Smith, 2004</A>] they extend this technique to minimize disruption to the existing schedule and to speed up the process by search tree pruning. (task pruning - interval pruning - depth bounded search / biased stochastic retraction - VBSS = ACO  - defer to that section or see.Sect. XXX?)...
+
+<P>
+DITOPS (Smith and Sycara) based on OZONE.. other paper also under integration of S+P.
+
+<P>
+in situations of detected constraint conflict an analysis procedure computes a set of metrics, some of which estimate the severity of the problem and some of which characterize the looseness or tightness of time and capacity constraints in the local 'neighbourhood' of the schedule that contains the conflict.
+
+<P>
+[<A
+ HREF="node99.html#rabideau99iterative">Rabideau et&nbsp;al., 1999</A>] describes work by NASA JPL on the ASPEN scheduling framework. This is a constraint based search/optimization system intended for spacecraft operations scheduling. During the constraint satisfaction cycle activities are slotted into the schedule and conflicts detected. The system then classifies these conflicts into a large set depending on the type of constraint broken or the type of resource bottleneck. A prioritized sequence of repair heuristics is then selected in turn to attempt a repair which moves closer to satisfycing. (describe algorithm here? or leave to optimizing para).
+
+<P>
+ASPEN allows the specification of a number of search heuristics to be slotted in at decision points in the algorithm - some generic ones are described <BR>
+<IMG
+ WIDTH="555" HEIGHT="154" ALIGN="TOP" BORDER="0"
+ SRC="img130.png"
+ ALT="\begin{inparaenum}[(\itshape i\upshape )]\item conflict sorting heuristic (a var...
+...eate new conflicts then intervals which minimize new conflicts. \end{inparaenum}">
+<BR>.
+
+<P>
+[<A
+ HREF="node99.html#rabideau00generic">Rabideau et&nbsp;al., 2000</A>] moves on to describe an extension to ASPEN to allow interleaved repair and optimization using <I>experts</I> - these are software components implementing heuristic operations <I>an expert is a link between changes in the plan and the change in quality</I>. 
+
+<P>
+A number of classes of user preferences are defined, some acting on a local level, others globally. These specify a mapping from local variables to scoring metrics - an example given is of a preference on the start time of one activity relative to the preceding one centred on a <I>preferred</I> time gap and decreasing monotonically either side within cutoff limits - basically means <I>I would like a gap of <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img131.png"
+ ALT="$ t^*$"> but will be happy with any gap from <IMG
+ WIDTH="33" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.png"
+ ALT="$ t_{low}$"> to <IMG
+ WIDTH="39" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.png"
+ ALT="$ t_{high}$"></I> . 
+
+<P>
+Improvement experts include:- <BR>
+<IMG
+ WIDTH="557" HEIGHT="342" ALIGN="TOP" BORDER="0"
+ SRC="img134.png"
+ ALT="\begin{inparaenum}[(\itshape i\upshape )]\item \emph{local activity variable exp...
+...ctivities which maintain or cause a particular preferred state. \end{inparaenum}">
+<BR>.
+
+<P>
+In the optimization phase a monotonic increasing assumption is made - i.e. only make (local) changes which will improve globally. A varibale order heuristic selects either the lowest scoring preference or the one with the highest potential gain - <!-- MATH
+ $weight_{pref}*(1 - score_{pref})$
+ -->
+.
+
+<P>
+In order to improve overall performance an adaptive noise mechanism following [<A
+ HREF="node99.html#hoos02adaptive">Hoos, 2002</A>] has been implemented for ASPEN [<A
+ HREF="node99.html#fukunaga04robust">Fukunaga et&nbsp;al., 2004</A>] - this was added to the <I>repair selection heuristic</I> above - basically if improvement rate stagnates do some random stuff then after improvement back off but faster <!-- MATH
+ $\theta and p$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ \theta and p$"> parameters... XXXresultsXXX and EO-1 application.
+
+<P>
+The CASPER system [<A
+ HREF="node99.html#chien99iterative">Chien et&nbsp;al., 1999</A>,<A
+ HREF="node99.html#chien00aspen">Chien et&nbsp;al., 2000</A>] was designed as a <I>soft, realtime</I> version of ASPEN to act as a framework for dynamic replanning - the concepts of continuous planning, execution and replanning and incremental plan extension. Plan must be continuously modified in light of changing operating context. It advocates a hierarchic system of planning - at higher levels more reasoned plans over long time scales, at lower levels short time scales, more reactive (NOTE: compare Brookes subsumptive architecture).
+
+<P>
+CASPER's represents the 'world' at a given planning horizon as (current goal set, plan, current exec state, model of predicted states). Updates to any of (goal set, current exec state, horizon (i.e. just time advancing)) causes a replanning iteration - changes are posted, effects propagated - including conflict identification, plan repaired and new working plan results (copy of their FIG7).
+
+<P>
+
+<OL>
+<LI>Initialize Plan, Goal-set, State.
+</LI>
+<LI>Update G to reflect new goals and remove spurious.
+</LI>
+<LI>Update S to current execution state.
+</LI>
+<LI>Compute conflicts.
+</LI>
+<LI>Apply conflict resolution to generate new Plan.
+</LI>
+<LI>Release for execution.
+</LI>
+<LI>goto 1.
+</LI>
+</OL>
+
+<P>
+[<A
+ HREF="node99.html#chien98integrated">Chien, 1998</A>], Benefits -(responsiveness to sudden changes in environment, predictive modelling errors reduced due to continuous updating, fault protection moved from exec layers working on very short time scales, reduced distinction between PSE due to layering??). Currently the system can only replan at activity boundaries - unable to model effects of interrupted activities. Extension to include (plugin) goal achievement modules (GAMs) - experts at solving specific types of conflict - e.g. spacecraft attitude conflicts - XXXlook for newer paper on these- context DS-4XXX
+
+<P>
+XXXDetails of some NASA application areasXXX.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html423"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html419"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html413"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html421"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html424"
+  HREF="node16.html">Contingency and flexibility methods</A>
+<B> Up:</B> <A NAME="tex2html420"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html414"
+  HREF="node14.html">Search techniques</A>
+ &nbsp; <B>  <A NAME="tex2html422"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

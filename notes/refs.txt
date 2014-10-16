@@ -1,0 +1,4 @@
+http://citeseer.ist.psu.edu/beck97texturebased.html
+
+this deals with texture based heuristics - there is a bit about microboss explaining how it actually works !
+

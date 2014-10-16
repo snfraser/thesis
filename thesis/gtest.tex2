@@ -1,0 +1,29 @@
+\clearpage
+
+\begin{figure}[htbp]
+  \centering
+  \subfigure[subcaption 1]{
+    \label{labelname 1}
+    \includegraphics[scale=0.25]{figures/group_linking.eps} 
+  }
+  \subfigure[subcaption 2]{
+    \label{labelname 2}
+    \includegraphics[scale=0.25]{figures/overview_architecture.eps} 
+  }
+  \subfigure[subcaption 3]{
+    \label{labelname 3}
+    \includegraphics[scale=0.25]{figures/phase2_architecture.eps} 
+  }
+  \subfigure[subcaption 4]{
+    \label{labelname 4}
+    \includegraphics[scale=0.25]{figures/p2db.eps} 
+  }
+
+  \subfigure[Comparison of contention ratios under different environment models]{
+    \label{labelname 5}
+    \includegraphics[scale=0.25, angle=-90]{figures/cont_1.eps} 
+  }
+ 
+  \caption{Comparison of effect of {\tt Environment model} $E$ (using $E_{FX}$, $E_{FP}$, $E_{RA}$) and {\tt Weather model} $W$ (using $W_{good}$, $W_{3h2/5h1}$, $W_{12h2/24h12}$) on priority metric $Q_{PX}$ for varying mean observation exposure length $e$. Fixed models:- Scoring model $S={w_t=0.6, w_{RN}=0.2, w_{LM}=0.1}$, Selection heuristic $H=BEST(C)$.}
+  \label{common label}
+\end{figure}

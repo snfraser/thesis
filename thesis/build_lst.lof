@@ -1,0 +1,26 @@
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Environmental scenario (7 day snapshot).}}{7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Environmental scenario - comparison between runs of $E_{1800}$}}{8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Environmental scenario - relative distribution of stable period lengths.}}{9}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Environmental scenario - cumulative distribution of stable period lengths.}}{10}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Environmental scenario 2007-11-15 (72 hour snapshot).}}{11}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Comparison of average contention measure and number of groups executed per night for generated phase2 models and ODB snapshots.}}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Variation of average contention $\mathaccentV {bar}016{C_c}$ for generated phase2 models.}}}{13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Variation of number of executed groups for generated phase2 models.}}}{13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Variation of average contention $\mathaccentV {bar}016{C_c}$ for ODB snapshots.}}}{13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Variation of number of executed groups for ODB snapshots.}}}{13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Variation of $Q_{SU}$ with $C_C$ for variable phase2 generator models.}}{14}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Variation of $Q_{XT}$ with $C_C$ for variable phase2 generator models.}}{14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{Best}$.}}{15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{FR}$.}}{15}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Ensemble plot showing variation of $Q_{SU}$ with time for selection model $\zeta _{RS}$.}}{16}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{Best}$.}}{16}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{FR}$.}}{17}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Variation of $Q_{SU}$ with $\tau _E$ for selection model $\zeta _{RS}$.}}{17}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{18}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{18}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{19}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{19}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{20}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{20}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{21}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Effect of selection model on variation of $Q_{SU}$ with $\tau _E$.}}{21}

@@ -1,0 +1,11 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+
+/usr/java/jdk1.5.0_21/bin/java VdvSim > & vdv.dat
+
+cat vdv.dat | grep "H0.5" | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > vdv05.dat
+cat vdv.dat | grep "H1"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > vdv1.dat
+cat vdv.dat | grep "H2"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > vdv2.dat
+cat vdv.dat | grep "H4"   | awk '{print $2, $3/10, ($3-$4)/10, ($3+$4)/10}' > vdv4.dat

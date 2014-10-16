@@ -1,0 +1,12 @@
+Comparison of effect of ModelVariable [and OtherModelVariable] on DependantVariable for variable IndependantVariable. [Fixed models: {F1, F2, F3, etc)]. [Remarks].
+
+Comparison of effect of Environment Model (E) and Execution Timing Model (S) on Priority Weighting Metric (QP) for variable Exposure Length (e).
+Fixed models: Timing model T=t1, Scoring model SM=sm1, etc. Remarks: The graphs are what might be expected.
+
+we are plotting: 
+ x-axis: e
+ y-axis: QP
+
+there are several curves with different specific values of: E and S (say E1,E2, S1,S2 etc)
+we might also specify these in the details: Environment Model (E=e1, e2,e3) and so on.
+

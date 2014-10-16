@@ -1,0 +1,19 @@
+#/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "p2_gen_qsu.eps"
+set term postscript enhanced color
+
+set title "Variation of score-based utility (Q_{SU}) with contention"
+set xlabel "C_c"
+set ylabel "Q_{SU}"
+set key right bottom
+
+plot "p_l.dat" using 2:3 pt 5 ti "P_S", \
+     "p_s.dat" using 2:3 pt 5 ti "P_L", \
+     "p_m.dat" using 2:3 pt 5 ti "P_M", \
+     "p_h.dat" using 2:3 pt 5 ti "P_H"
+
+EOF

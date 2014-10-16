@@ -1,0 +1,25 @@
+#!/bin/csh
+
+#
+# Reads the test results back for analysis
+
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+java $POL $ASTRO HumanSchedulerTestAnalysis \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+	--root LT_Phase2_001 \
+	--log-level 1 \
+	--start "2007-11-13 12:00" \
+	--map map1.map \
+	--schedule testdat1.dat
+

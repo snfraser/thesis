@@ -1,0 +1,48 @@
+#!/bin/csh
+
+# Plot distribution of humidity
+
+set in = $1 
+set ot = $2
+#set xx = `cat $in | grep "XL" | awk '{print $2}'`
+#set otf = `echo $xx | awk '{printf "%4.2f",  ($1/1582518)}'`
+
+#set xs = `cat $in | grep "XS" | awk '{print $2}'`
+#set ots = `echo $xs | awk '{printf "%4.2f",  ($1/1582518)}'`
+
+set av =  `cat $in | grep "AV" | awk '{printf "%4.2f", $2}'`
+
+cat $in | awk '{sum+=$2;print $1,(sum/1582518)}' > $ot
+
+#gnuplot -persist << EOF
+
+set tit = "Wind speed [ms^{-1}]"
+set ltit = "wind speed"
+
+gnuplot << EOF
+set output "wind.eps"
+set terminal postscript enhanced color
+set xlabel "${tit}"
+set ylabel "Relative distribution"
+set y2label"Cumulative distribution"
+set title "Distribution of ${ltit} at site"
+unset key
+set xrange [0:30]
+set yrange[0:0.08]
+set y2range [0:1]
+
+set label 1 "Avg  = $av " at graph 0.8,0.6
+
+set arrow from 12,0.0 to 12,0.08 lt 3 nohead 
+set label 3 "Clear" at 12,0.05
+
+set arrow from 15,0.0 to 15,0.08 lt 3 nohead 
+set label 4 "Alert" at 15,0.06
+
+plot "${in}" using 1:(\$2/1582518) axis x1y1 with boxes fill solid 0.7,\
+ "${ot}" using 1:2 axis x1y2 with line  
+EOF
+
+
+
+

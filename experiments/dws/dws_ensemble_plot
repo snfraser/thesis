@@ -1,0 +1,25 @@
+#!/bin/csh
+
+# Plot 2 ensemble data files
+
+set file1 = ${1}
+set file2 = ${2}
+
+set e1 = `cat ${file1}.dat | grep ENV | cut -d" " -f2`
+set e2 = `cat ${file2}.dat | grep ENV | cut -d" " -f2`
+set n1 = `cat ${file1}.dat | grep NIGHT | awk '{print $2,$3,$4}'`
+
+#gnuplot -persist <<EOF
+gnuplot << EOF
+set output "${file1}_ensemble.eps" 
+set terminal postscript enhanced color
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set xlabel "Time [UT]"
+set ylabel "Contention C_C"
+set yrange [0:70]
+set title "Contention Profile C_C ensemble for night of $n1 "
+plot "${file1}.dat" using 1:3 with point pt 5 ti "E_{$e1}", \
+     "${file2}.dat" using 1:3 with point pt 5 ti "E_{$e2}"
+EOF
+echo Output to ${file1}_ensemble.eps

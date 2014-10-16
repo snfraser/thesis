@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Efficiency measure - </TITLE>
+<META NAME="description" CONTENT="Efficiency measure - ">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node38.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html702"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html698"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html692"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html700"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html703"
+  HREF="node38.html">More about contention to</A>
+<B> Up:</B> <A NAME="tex2html699"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html693"
+  HREF="node36.html">Discussion on metrics/quality/reward</A>
+ &nbsp; <B>  <A NAME="tex2html701"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00073500000000000000">
+Efficiency measure - <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$ E$"></A>
+</H3>
+Given a utility measure <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$ F(g,t)$"> which describes the value of performing group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at time <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$">, the potential utility metric is the sum of the individual values of <IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.png"
+ ALT="$ F(g,t^*)$"> for each group execution window on the night <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img266.png"
+ ALT="$ {n}$"> containing <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> at the time <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img131.png"
+ ALT="$ t^*$"> which maximizes  <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$ F(g,t)$"> for that group. In other words it is the total utility which could be achieved that night if all feasible groups were executed at their optimum time. In reality it may not actually be possible to achieve this as several groups could be optimal at the same time or overlapping times. Also if the total execution time potential for the night exceeds the available night-time hours it ill not be possible even without overlaps. The metric can of course be scaled by a factor <!-- MATH
+ $\tau({n})/\sum_{g \in G{(n)}}{X(g)}$
+ -->
+<IMG
+ WIDTH="164" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.png"
+ ALT="$ \tau({n})/\sum_{g \in G{(n)}}{X(g)}$">. The perrormance metric then becomes <!-- MATH
+ $E_{{S}}/E_{potential}$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ E_{{S}}/E_{potential}$"> where <!-- MATH
+ $E_{{S}} = \sum_{g \in {S}(g)}{F(g,t^*)}$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.png"
+ ALT="$ E_{{S}} = \sum_{g \in {S}(g)}{F(g,t^*)} $">. 
+
+<P>
+<BR><HR>
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

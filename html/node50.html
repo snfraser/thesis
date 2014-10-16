@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Conclusions/prediction</TITLE>
+<META NAME="description" CONTENT="Conclusions/prediction">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node51.html">
+<LINK REL="previous" HREF="node49.html">
+<LINK REL="up" HREF="node47.html">
+<LINK REL="next" HREF="node51.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html880"
+  HREF="node51.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html876"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html870"
+  HREF="node49.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html878"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html881"
+  HREF="node51.html">Observer reports</A>
+<B> Up:</B> <A NAME="tex2html877"
+  HREF="node47.html">Weather</A>
+<B> Previous:</B> <A NAME="tex2html871"
+  HREF="node49.html">Analysis of results</A>
+ &nbsp; <B>  <A NAME="tex2html879"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00085300000000000000">
+Conclusions/prediction</A>
+</H3>
+Several models for simple prediction have been tested to determine which if any provide good results.
+
+<P>
+Without additional information the best we can do is to use the long-term climatological prediction. Based on the data plotted in Fig. <A HREF="#fig:good_bad_period_time">5.5.3</A> showing the lengths of periods of continuous <I>good</I> and <I>bad</I> weather it was found that approximately  80.35% of all time constitutes <I>good</I> weather and the remainder (19.65%) is <I>bad</I> weather.
+
+<P>
+The first model (M1) is based on the assumption that the weather will continue in its current state for a period roughly equal to the length of time it has already been in that state continuously, thereafter the probability of maintaining this state decreases, assumed exponentially with a decay length some multiple of the current stability period. As an example, assume the weather has been <I>good</I> for about 3 hours. We then assume it will continue to remain <I>good</I> for about another 3 hours with the probability decaying as <!-- MATH
+ $exp{-t/3m}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.png"
+ ALT="$ exp{-t/3m}$"> - the 3 being the amount of time already in this state, <IMG
+ WIDTH="90" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img313.png"
+ ALT="$ m$"> being a scale factor yet to be determined. Fig. <A HREF="#fig:good_bad_hum_dist">5.5.3</A> shows the variation of lengths of consecutive periods of good and bad weather based on humidity threshold (80% trigger) and clearing stability time of 30 minutes. We see that shorter periods are most common with the average length of <I>good</I> periods being 31.5 hours and bad periods being 7.7 hours. Cumulative plots are shown in Fig. <A HREF="#fig:good_bad_cumhum_dist">5.5.3</A>. The overall fraction of time classified as <I>good</I> resulted in 80.35% of all time with <I>bad</I> weather making up the remainder.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:good_bad_hum_dist"></A><A NAME="2123"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 20:</STRONG>
+Cumulative probability of lengths of good/bad weather runs.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="23" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="\includegraphics[scale=0.4, angle=-90]{figures/ecs/good_bad_hum_bin.eps}">
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:good_bad_cumhum_dist"></A><A NAME="2130"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 21:</STRONG>
+Cumulative probability of lengths of good/bad weather runs.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+A set of simulations were run using the extracted period data (Fig. <A HREF="#fig:good_bad_period_time">5.5.3</A>) to determine the effectiveness of this prediction mechanism. Every 15 minutes through the available period a determination is made of the current weather state and how long ( <I>good</I>) or (<IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="$ \tau_B$"> <I>bad</I>) it has been in that state. A prediction is made at a number steps into the future (192 steps of 15 minutes constituting upto 48 hours look-ahead) using the rule specified in Eqn.<A HREF="#eqn:prediction_decay">14</A>. At each step the prediction is compared to the actual weather state at the time and counted as either a hit (correct prediction) or miss (incorrect prediction). The final percentages shown in Fig. <A HREF="#fig:gbc_prediction">5.5.3</A> against look-ahead time for a number of decay scale factors <IMG
+ WIDTH="90" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img313.png"
+ ALT="$ m$">. The baseline of 80.35% represents the worst we should be able to acheive on average based on long-term climatological prediction - basically if we always just guess that the weather will be good this will work 80.35% of the time. Fig. <A HREF="#fig:gbc_m_crossover">5.5.3</A> shows the crossover point - the length of look-ahead where the prediction becomes worse than long-term climatological prediction as a function of the decay scale factor <IMG
+ WIDTH="90" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img313.png"
+ ALT="$ m$">. This is seen to converge towards a value of 30-31 hours which is close to the average length of <I>good</I> weather period.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eqn:prediction_decay"></A><!-- MATH
+ \begin{equation}
+P_{good}(\Delta T) =
+\begin{cases} 
+\Delta T < \tau_G : & 1   \\
+\Delta T > \tau_G, \tau_G < T_G : & e^{\frac{\Delta T-\tau_G}{m \tau_G}} \\
+\Delta T > tau_G , \tau_G > T_G : & e^{\frac{\Delta T-T_G}{m \tau_G-T_G}}
+\end{cases}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$\displaystyle P_{good}(\Delta T) = \begin{cases}\Delta T &lt; \tau_G : &amp; 1 \\ \Del...
+... T &gt; tau_G , \tau_G &gt; T_G : &amp; e^{\frac{\Delta T-T_G}{m \tau_G-T_G}} \end{cases}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(14)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:good_bad_period_time"></A><A NAME="2154"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 22:</STRONG>
+Time variation of lengths of good/bad periods based on humidity level.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="397" HEIGHT="113" ALIGN="BOTTOM" BORDER="0"
+ SRC="img319.png"
+ ALT="\includegraphics[scale=0.4, angle=-90]{figures/ecs/gbc_period.eps}">
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:gbc_prediction"></A><A NAME="2161"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 23:</STRONG>
+Effect of time scaling-factor (m) on variation of prediction accuracy of time decay prediction model against look-ahead time. All plots show a decay with time. As the scale factor is increased the cross-over point for the prediction against climatological baseline prediction of 80.03% approaches a maximum of around 31 hours. </CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:gbc_m_crossover"></A><A NAME="2168"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 24:</STRONG>
+Variation of cross-over point for look-ahead weather prediction using time decay model with scale factor. The crossover point is seen on converge on a value around 30-31 hours which corresponds closely to the average length of good weather periods (31.5 hours).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html880"
+  HREF="node51.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html876"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html870"
+  HREF="node49.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html878"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html881"
+  HREF="node51.html">Observer reports</A>
+<B> Up:</B> <A NAME="tex2html877"
+  HREF="node47.html">Weather</A>
+<B> Previous:</B> <A NAME="tex2html871"
+  HREF="node49.html">Analysis of results</A>
+ &nbsp; <B>  <A NAME="tex2html879"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

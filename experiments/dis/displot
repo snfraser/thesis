@@ -1,0 +1,28 @@
+#!/bin/csh
+
+echo "Extracting..."
+cat disb.dat | grep "H 0.5" | awk '{print $5, $7, 3*$8}' > dis05.dat
+cat disb.dat | grep "H 1.0" | awk '{print $5, $7, 3*$8}' > dis1.dat
+cat disb.dat | grep "H 2.0" | awk '{print $5, $7, 3*$8}' > dis2.dat
+cat disb.dat | grep "H 3.0" | awk '{print $5, $7, 3*$8}' > dis3.dat
+cat disb.dat | grep "H 4.0" | awk '{print $5, $7, 3*$8}' > dis4.dat
+cat disb.dat | grep "H 6.0" | awk '{print $5, $7, 3*$8}' > dis6.dat
+
+/usr/bin/gnuplot -persist << EOF
+
+set output "disruption.eps"
+set term postscript eps enhanced color
+set title "Variation of reward Q_{SU} with number of disruptive events"
+set xlabel "Number of events (total time = 1 hour)"
+set ylabel "Reward Q_{SU}"
+set key right top
+
+plot "dis05.dat" using 1:2:3 wi yerrorli ti "Q 0.5h", \
+      "dis1.dat" using 1:2:3 wi yerrorli ti "Q 1h", \
+      "dis2.dat" using 1:2:3 wi yerrorli ti "Q 2h", \
+      "dis3.dat" using 1:2:3 wi yerrorli ti "Q 3h", \
+      "dis4.dat" using 1:2:3 wi yerrorli ti "Q 4h", \
+      "dis6.dat" using 1:2:3 wi yerrorli ti "Q 6h", \
+      118.4 wi li ti "BDS"
+
+EOF

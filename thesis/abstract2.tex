@@ -1,0 +1,37 @@
+\begin{abstract}
+Astronomical telescopes operate in a dynamic and uncertain operational environment. Time is often oversubscribed with programs competing for available slots and the best observing conditions. In order to achieve a high scientific return a scheduler must be able to create a globally optimal observing schedule. 
+
+%In dynamic environments any offline or static schedule will become rapidly out-of-date, thus iterative repair based or dynamic despatch scheduling is the preferred option being able to respond quickly to such changes. Dynamic despatch suffers from myopism. Long term global aims are usurped in favor of local optimization, namely what is best to do right now. 
+
+%I show that by incorporating a predictive element into a scheduler by using look-ahead planning to generate medium term objectives to be followed and short term environmental prediction to attempt to keep local decisions close to the projected plan. 
+
+Using data collected from external and embedded instrumentation I investigate and characterize the scheduler's operating environment and investigate techniques for short term prediction. I investigate metrics for characterizing the value of schedules both locally (at the decision point) and over longer horizons. Using this information an extensible software architecture is designed incorporating a simulation framework to allow a variety of schedulers to be implemented.
+
+ Experiments are performed using the scheduler component architecture and simulation framework to determine the effects on schedule quality of environmental stability, disruptive events and reliability of prediction under a range of load conditions. 
+
+%metrics 
+No clear caldidate as absolute quality metric. Any metric chosen as a selection metric dominates the quality metrics.
+
+
+%stab reliable 0.7/0.8
+Experiments performed to determine the effect of chosing the look-ahead horizon based on the have shown that when determining the length of look-ahead horizon, if we either over or under-estimate the duration of stable conditions we obtain poorer results. When the stability length is severely under-estimated a loss of between 5\% and 17\% in quality was found to occur.  The optimum situation appears to be when the horizon is of order the stability length. Where the stability length is over-estimated by a factor 2, a loss of 5\% to 10\% can occur.
+
+
+
+
+
+%stab
+Ultimately these show that where conditions are relatively stable there is an advantage to using longer look-ahead horizons but that where conditions are unstable or disruptive a basic despatch scheduler achieves results as good or better. A look-ahead scheduler with a horizon of 4 hours can give an improvement of upto 26\% over a simple despatch scheduler when seeing remains stable over a period of upto 6 hours.
+
+%load
+When the loading is high, further experiments show that look-ahead schedulers can achieve better quality than despatching. As load (measured by contention) is increased from 1 to 25 (a reasonable range), performance of a despatcher increases by upto 17\% while for a look-ahead scheduler with 4 hour horizon it can increase by upto 23\%. In the experiments the look-ahead scheduler has an advantage of between 10\% and 14\% over the despatcher over this range of loads.
+
+%dis
+Under disruptive conditions (breaks in the normal execution of the schedule) due to weather or mechanical problems, it was found that a large number of small disruptions has a more negative effect on schedule quality than a few long events. The despatcher was unaffected by these disruptions while the look-ahead scheduler under-performed by as much as 11\% relative to the despatcher and upto 22\% relative to its own performance under non-disruptive conditions which were typically 14\% better than the despatcher.
+
+%vol
+When new observations are being added to the pool during schedule execution it was found that a look-ahead scheduler could loose out on the potential gains of adding high quality observations if the lead-time for these observations was small compared to the scheduler's look-ahead horizon. Typically the highest gain occurs where the lead-time is of the order of the look-ahead horizon. The amount of gain also decreases for longer horizons. This loss can be upto 40\% for long (4 hour) horizon and as little as a few percent for a horizon of 30 minutes. For very short lead-time observations, the loss of potential reward can increases for longer horizons. For a 4 hour horizon as much as 80\% of the potential gain can be lost. Under such conditions, the addition of a sequestration mechanism by means of which newly arriving high quality urgent observations can be added into an executing schedule are shown to improve the performance of look-ahead schedulers by upto 8.8\% with a look-ahead horizon of 4 hours but with little effect for shorter horizons.
+
+
+%The scientific objectives and conditions for optimal execution of individual observing programs resides naturally with the program - ways of trading time slots and conditions may be peculiar to a given program, this suggests we look at ways of distributing the decision-making between delegates (agents) representing the value judgements of the observations' owners (PIs). The task of scheduling, distributed between these agents then emerges from their interaction under the control of a supervisor to ensure global aims are retained. 
+\end{abstract}

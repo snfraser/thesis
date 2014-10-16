@@ -1,0 +1,164 @@
+\contentsline {section}{List of Figures}{9}
+\contentsline {section}{List of Tables}{13}
+\contentsline {section}{Glossary}{14}
+\contentsline {section}{List of Symbols}{17}
+\contentsline {part}{I\hspace {1em}Background}{19}
+\contentsline {section}{\numberline {1}Introduction}{20}
+\contentsline {subsection}{\numberline {1.1}Background}{20}
+\contentsline {subsection}{\numberline {1.2}Planning and scheduling}{22}
+\contentsline {subsection}{\numberline {1.3}Motivation}{23}
+\contentsline {subsection}{\numberline {1.4}Plan}{23}
+\contentsline {section}{\numberline {2}Review of current research}{26}
+\contentsline {subsection}{\numberline {2.1}General techniques}{26}
+\contentsline {subsubsection}{\numberline {2.1.1}Constructive techniques}{26}
+\contentsline {subsubsection}{\numberline {2.1.2}Iterative repair}{28}
+\contentsline {subsubsection}{\numberline {2.1.3}Search techniques}{29}
+\contentsline {subsection}{\numberline {2.2}Case studies}{32}
+\contentsline {subsubsection}{\numberline {2.2.1}SPIKE}{32}
+\contentsline {subsubsection}{\numberline {2.2.2}MicroBOSS}{32}
+\contentsline {subsubsection}{\numberline {2.2.3}Conflict Partition Scheduling}{33}
+\contentsline {subsubsection}{\numberline {2.2.4}Gerry}{34}
+\contentsline {subsubsection}{\numberline {2.2.5}OPIS/OZONE}{34}
+\contentsline {subsubsection}{\numberline {2.2.6}ASPEN/CASPER}{36}
+\contentsline {subsection}{\numberline {2.3}Contingency, flexibility and reactive scheduling}{38}
+\contentsline {subsection}{\numberline {2.4}Agent based scheduling}{41}
+\contentsline {subsection}{\numberline {2.5}Evolutionary and biologically inspired techniques}{43}
+\contentsline {subsection}{\numberline {2.6}Adaptive Learning techniques applied to scheduling}{46}
+\contentsline {subsection}{\numberline {2.7}Summary}{50}
+\contentsline {section}{\numberline {3}Investigation of Metrics}{52}
+\contentsline {subsection}{\numberline {3.1}Introduction and rationale}{52}
+\contentsline {subsection}{\numberline {3.2}Problem complexity metrics}{52}
+\contentsline {subsubsection}{\numberline {3.2.1}Contention profile $C_c$}{53}
+\contentsline {subsubsection}{\numberline {3.2.2}Demand profile $C_d$}{53}
+\contentsline {subsubsection}{\numberline {3.2.3}Load $C_l$}{55}
+\contentsline {subsection}{\numberline {3.3}Schedule quality metrics}{56}
+\contentsline {subsection}{\numberline {3.4}Primitive utility measures}{58}
+\contentsline {subsection}{\numberline {3.5}Matching metrics to scheduling and planning horizons}{62}
+\contentsline {subsection}{\numberline {3.6}Conclusions}{62}
+\contentsline {section}{\numberline {4}Characterization of operating environment}{63}
+\contentsline {subsection}{\numberline {4.1}Environment Components}{63}
+\contentsline {subsection}{\numberline {4.2}Technical faults}{64}
+\contentsline {subsubsection}{\numberline {4.2.1}Source of data}{65}
+\contentsline {subsubsection}{\numberline {4.2.2}Analysis}{66}
+\contentsline {subsubsection}{\numberline {4.2.3}Conclusions}{66}
+\contentsline {subsection}{\numberline {4.3}Weather}{69}
+\contentsline {subsubsection}{\numberline {4.3.1}Telescope Weather Monitoring System}{69}
+\contentsline {subsubsection}{\numberline {4.3.2}Analysis of results}{70}
+\contentsline {subsubsection}{\numberline {4.3.3}Prediction experiment}{73}
+\contentsline {subsubsection}{\numberline {4.3.4}Observer reports}{77}
+\contentsline {subsubsection}{\numberline {4.3.5}Analysis}{77}
+\contentsline {subsubsection}{\numberline {4.3.6}Conclusions}{79}
+\contentsline {subsection}{\numberline {4.4}Atmospheric Seeing and Extinction}{81}
+\contentsline {subsubsection}{\numberline {4.4.1}Collected seeing data from archived images}{82}
+\contentsline {subsubsection}{\numberline {4.4.2}Variation of seeing during the night.}{83}
+\contentsline {subsubsection}{\numberline {4.4.3}Monthly variation of seeing.}{85}
+\contentsline {subsubsection}{\numberline {4.4.4}Extinction}{90}
+\contentsline {subsubsection}{\numberline {4.4.5}Sky brightness}{91}
+\contentsline {subsubsection}{\numberline {4.4.6}Conclusions}{92}
+\contentsline {subsection}{\numberline {4.5}Phase 2 population}{92}
+\contentsline {subsection}{\numberline {4.6}Summary and conclusions}{95}
+\contentsline {section}{\numberline {5}Architecture}{98}
+\contentsline {subsection}{\numberline {5.1}Introduction}{98}
+\contentsline {subsection}{\numberline {5.2}Fundamental Components Layer (FCL)}{100}
+\contentsline {subsubsection}{\numberline {5.2.1}Phase2 model}{100}
+\contentsline {subsubsection}{\numberline {5.2.2}History model}{100}
+\contentsline {subsubsection}{\numberline {5.2.3}Accounting model}{100}
+\contentsline {subsection}{\numberline {5.3}Aggregate Components Layer (ACL)}{101}
+\contentsline {subsubsection}{\numberline {5.3.1}Phase 2 Composite Model}{101}
+\contentsline {subsubsection}{\numberline {5.3.2}Account Synopsis Model}{101}
+\contentsline {subsubsection}{\numberline {5.3.3}History Synopsis Model}{101}
+\contentsline {subsection}{\numberline {5.4}Computational Tools Layer (CTL)}{101}
+\contentsline {subsubsection}{\numberline {5.4.1}Execution timing model}{102}
+\contentsline {subsubsection}{\numberline {5.4.2}Execution feasibility model}{102}
+\contentsline {subsubsection}{\numberline {5.4.3}Astrometry}{104}
+\contentsline {subsection}{\numberline {5.5}Prediction Components Layer (PCL)}{104}
+\contentsline {subsubsection}{\numberline {5.5.1}Environmental Prediction Model}{104}
+\contentsline {subsubsection}{\numberline {5.5.2}Weather Prediction Model and Disruptor Model}{105}
+\contentsline {subsubsection}{\numberline {5.5.3}Instrument Synopsis Model}{105}
+\contentsline {subsubsection}{\numberline {5.5.4}Telescope Synopsis Model}{105}
+\contentsline {subsubsection}{\numberline {5.5.5}Time Model}{106}
+\contentsline {subsection}{\numberline {5.6}Simulation Framework Components Layer (SCL)}{106}
+\contentsline {subsubsection}{\numberline {5.6.1}Environmental Scenario Generator}{106}
+\contentsline {subsubsection}{\numberline {5.6.2}Weather Scenario Generator and Disruptor Scenario Generator}{106}
+\contentsline {subsubsection}{\numberline {5.6.3}Time Signal Generator}{107}
+\contentsline {subsubsection}{\numberline {5.6.4}Stochastic Timing Model}{107}
+\contentsline {subsubsection}{\numberline {5.6.5}Instrument Scenario Generator}{107}
+\contentsline {subsubsection}{\numberline {5.6.6}Telescope Scenario Generator}{107}
+\contentsline {subsection}{\numberline {5.7}Scheduling Engine Component Layer (SECL)}{108}
+\contentsline {subsubsection}{\numberline {5.7.1}Scoring Model}{108}
+\contentsline {subsubsection}{\numberline {5.7.2}Selection Model}{110}
+\contentsline {subsubsection}{\numberline {5.7.3}Metric Generator}{110}
+\contentsline {subsubsection}{\numberline {5.7.4}Charge Accounting Model}{111}
+\contentsline {subsection}{\numberline {5.8}Interface Components Layer (ICL)}{111}
+\contentsline {subsubsection}{\numberline {5.8.1}Despatcher}{111}
+\contentsline {subsubsection}{\numberline {5.8.2}Updater}{112}
+\contentsline {subsection}{\numberline {5.9}Executive Components Layer (ECL)}{112}
+\contentsline {subsubsection}{\numberline {5.9.1}Executor}{112}
+\contentsline {subsubsection}{\numberline {5.9.2}Simulation Controller}{112}
+\contentsline {subsection}{\numberline {5.10}Implementation}{113}
+\contentsline {part}{II\hspace {1em}Experiments}{114}
+\contentsline {section}{\numberline {6}Experiments}{115}
+\contentsline {subsection}{\numberline {6.1}Introduction}{115}
+\contentsline {subsection}{\numberline {6.2}Simulator Operation}{117}
+\contentsline {subsection}{\numberline {6.3}Sources of uncertainty}{117}
+\contentsline {subsection}{\numberline {6.4}Scheduler implementations}{119}
+\contentsline {subsubsection}{\numberline {6.4.1}Despatch Scheduler}{119}
+\contentsline {subsubsection}{\numberline {6.4.2}Look Ahead Scheduler}{120}
+\contentsline {subsection}{\numberline {6.5}Notes on notation used in results}{123}
+\contentsline {section}{\numberline {7}Man against machine}{124}
+\contentsline {subsection}{\numberline {7.1}Introduction}{124}
+\contentsline {subsection}{\numberline {7.2}Characterization of problem}{124}
+\contentsline {subsection}{\numberline {7.3}Human scheduling trial (HS1)}{126}
+\contentsline {subsection}{\numberline {7.4}Results of HS1 trial}{127}
+\contentsline {subsection}{\numberline {7.5}Simulation trials}{131}
+\contentsline {subsection}{\numberline {7.6}Summary and conclusions}{131}
+\contentsline {section}{\numberline {8}Investigation of effects of varying scoring weights}{135}
+\contentsline {subsection}{\numberline {8.1}Introduction}{135}
+\contentsline {subsection}{\numberline {8.2}Method}{135}
+\contentsline {subsection}{\numberline {8.3}Results}{138}
+\contentsline {subsection}{\numberline {8.4}Summary and conclusions}{141}
+\contentsline {section}{\numberline {9}Investigation into effects of ODB complexity}{151}
+\contentsline {subsection}{\numberline {9.1}Introduction}{151}
+\contentsline {subsection}{\numberline {9.2}Choice of complexity metric to characterise a Phase 2 model}{151}
+\contentsline {subsection}{\numberline {9.3}Comparison of real and generated Phase 2 models}{151}
+\contentsline {subsection}{\numberline {9.4}Characterisation of generated models}{152}
+\contentsline {subsection}{\numberline {9.5}Comparison of schedulers against variable loading characteristics}{154}
+\contentsline {subsection}{\numberline {9.6}Summary and conclusions}{155}
+\contentsline {section}{\numberline {10}Investigation into effects of environmental stability}{163}
+\contentsline {subsection}{\numberline {10.1}Introduction}{163}
+\contentsline {subsection}{\numberline {10.2}Modelling the environment}{163}
+\contentsline {subsection}{\numberline {10.3}Shakedown experiments}{164}
+\contentsline {subsection}{\numberline {10.4}Detailed experiments}{166}
+\contentsline {subsection}{\numberline {10.5}Comparison of effect of varying look-ahead horizon parameter $H$ for QLAS}{167}
+\contentsline {subsection}{\numberline {10.6}Comparison of effect of changing QLAS sequence count search parameter $N_s$}{168}
+\contentsline {subsection}{\numberline {10.7}Summary and conclusions}{170}
+\contentsline {section}{\numberline {11}Investigation into effects of disruptive events.}{174}
+\contentsline {subsection}{\numberline {11.1}Methodology}{174}
+\contentsline {subsection}{\numberline {11.2}Results}{175}
+\contentsline {subsection}{\numberline {11.3}Summary and conclusions}{175}
+\contentsline {section}{\numberline {12}Investigation into effects ODB volatility}{177}
+\contentsline {subsection}{\numberline {12.1}Embedded instrumentation}{177}
+\contentsline {subsection}{\numberline {12.2}Characterization of events}{178}
+\contentsline {subsection}{\numberline {12.3}Analysis of events}{179}
+\contentsline {subsection}{\numberline {12.4}Simulation}{183}
+\contentsline {subsection}{\numberline {12.5}Investigation into the effect of proximity ($\pi $) on schedule quality}{184}
+\contentsline {subsection}{\numberline {12.6}Results}{185}
+\contentsline {subsection}{\numberline {12.7}Summary and conclusions}{185}
+\contentsline {section}{\numberline {13}Investigation into effect of reliability of stability prediction}{190}
+\contentsline {subsection}{\numberline {13.1}Introduction}{190}
+\contentsline {subsection}{\numberline {13.2}Experimental setup}{190}
+\contentsline {subsection}{\numberline {13.3}Results}{190}
+\contentsline {subsection}{\numberline {13.4}Summary and conclusions}{191}
+\contentsline {section}{\numberline {14}Conclusions}{192}
+\contentsline {subsection}{\numberline {14.1}Metrics}{192}
+\contentsline {subsection}{\numberline {14.2}Characterization of operating environment}{192}
+\contentsline {subsection}{\numberline {14.3}Architecture}{194}
+\contentsline {subsection}{\numberline {14.4}Experiments}{195}
+\contentsline {subsection}{\numberline {14.5}Summary}{197}
+\contentsline {section}{\numberline {15}Further work}{198}
+\contentsline {part}{III\hspace {1em}Appendices}{203}
+\contentsline {section}{\numberline {A}Phase 2 model generator and its configuration}{204}
+\contentsline {subsection}{\numberline {A.1}Notation}{204}
+\contentsline {subsection}{\numberline {A.2}Configuration parameters}{204}
+\contentsline {section}{\numberline {B}Statistics}{207}
+\contentsline {section}{Bibliography}{209}

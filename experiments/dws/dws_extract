@@ -1,0 +1,11 @@
+#!/bin/csh
+
+set file = $1
+set dfile = ${file}.txt
+cat $dfile | grep "\[OA_DAT"   | awk '{print $11,$13,$14,$15,$16}' > ${file}_oa.dat
+cat $dfile | grep "\[PX_DAT"   | awk '{print $11,$13,$14,$15,$16}' > ${file}_px.dat
+cat $dfile | grep "\[TD_DAT"   | awk '{print $11,$13,$14,$15,$16}' > ${file}_td.dat
+cat $dfile | grep "\[X_DAT"    | awk '{print $11,$13,$14,$15,$16}' > ${file}_x.dat
+cat $dfile | grep "\[RN_DAT"   | awk '{print $11,$13,$14,$15,$16}' > ${file}_rn.dat
+cat $dfile | grep "\[PXOA_DAT" | awk '{print $11,$13,$14,$15,$16}' > ${file}_pxoa.dat
+

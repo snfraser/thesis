@@ -1,0 +1,14 @@
+#!/bin/csh
+
+cat dws4_pr_cont.dat | sed -e 's/11-07/11-03/g' > dwsfix4a.dat
+cat dwsfix4a.dat | sed -e 's/11-08/11-04/g' > dwsfix4b.dat
+
+cat dws5_ex_cont.dat | sed -e 's/11-07/11-03/g' > dwsfix5a.dat
+cat dwsfix5a.dat | sed -e 's/11-08/11-04/g' > dwsfix5b.dat
+
+cat dws6_pr_cont.dat | sed -e 's/10-14/09-27/g' > dwsfix6a.dat
+cat dwsfix6a.dat | sed -e 's/10-15/09-28/g' > dwsfix6b.dat
+
+cat dws7_ex_cont.dat | sed -e 's/10-14/09-27/g' > dwsfix7a.dat
+cat dwsfix7a.dat | sed -e 's/10-15/09-28/g' > dwsfix7b.dat
+

@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Long period comparison</TITLE>
+<META NAME="description" CONTENT="Long period comparison">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node89.html">
+<LINK REL="previous" HREF="node83.html">
+<LINK REL="up" HREF="main.html">
+<LINK REL="next" HREF="node89.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1356"
+  HREF="node89.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1352"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1346"
+  HREF="node87.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1354"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1357"
+  HREF="node89.html">Conclusions</A>
+<B> Up:</B> <A NAME="tex2html1353"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1347"
+  HREF="node87.html">Conclusions</A>
+ &nbsp; <B>  <A NAME="tex2html1355"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000140000000000000000"></A>
+<A NAME="sect:lts_study"></A>
+<BR>
+Long period comparison
+</H1>
+Aim is to test a series of ODS with different selection, scoring and biasing then some basic LAS with different placement heuristics over a period of 2 months (2 lunar cycles) to determine tendenciesdies. A common environmental scenarionis kept in place throughout all tests. The following schedulers/components are to be used:-
+
+<P>
+
+<UL>
+<LI>ODS using standard HSMs (name for this ?).
+</LI>
+<LI>Same but with different bias models i.e fixed rank bias, relative score bias.
+</LI>
+<LI>Change to use new HSMs (name for this ?).
+</LI>
+<LI>And with biasing and ranked metric selection (this is the multiple-queued thing).
+</LI>
+<LI>Switch to simple LAS and test placement strategies.
+</LI>
+</UL>
+
+<P>
+Later we will fiddle with these and use different types of E and W prediction models (ie with different accuracy though not real models.) to see what works best under different scenarios - i.e want to test these under varying scenario parameter as independant variable(s).
+
+<P>
+Figure <A HREF="#fig:env_snap_1">11</A> shows a snapshot of the environmental (seeing) scenario used for this study. It consists of some 1800 seeing category changes over the 60 day period (average duration 48 minutes) with individual durations taken from the seeing model described in table <A HREF="#tab:ltc_env_scenario">11</A> and photometric/spectrometric extinction ratio set to 41.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:env_snap_1"></A><A NAME="4048"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 48:</STRONG>
+Long period study. Snapshot of environmental scenario.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+ 
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="4065"></A>
+<TABLE>
+<CAPTION><STRONG>Table 11:</STRONG>
+Details of seeing component of environmental scenario generator model.</CAPTION>
+<TR><TD> <A NAME="tab:ltc_env_scenario"></A> <DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="CENTER" COLSPAN=4>Environmental scenario parameters</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Seeing class</TD>
+<TD></TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="16" HEIGHT="33" ALIGN="BOTTOM" BORDER="0"
+ SRC="img440.png"
+ ALT="$ \sigma$"></TD>
+<TD ALIGN="LEFT">min</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><I>Excellent</I></TD>
+<TD ALIGN="LEFT">0.5</TD>
+<TD ALIGN="LEFT">0.25</TD>
+<TD ALIGN="LEFT">0.05</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><I>Average</I></TD>
+<TD ALIGN="LEFT">1.0</TD>
+<TD ALIGN="LEFT">0.5</TD>
+<TD ALIGN="LEFT">0.05</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><I>Poor</I></TD>
+<TD ALIGN="LEFT">1.0</TD>
+<TD ALIGN="LEFT">0.25</TD>
+<TD ALIGN="LEFT">0.1</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><I>Unusable</I></TD>
+<TD ALIGN="LEFT">0.2</TD>
+<TD ALIGN="LEFT">0.025</TD>
+<TD ALIGN="LEFT">0.05</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+before we start need some idea of what sort of P2M to use - real or generated. A real model suffers from the ODB evolution problem (see <A HREF="#XXX"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>). With a generated P2 model, group activations are spread out over a specified period (say several months) so new groups are appearing in the schedule every day - like the real ODB but in that case they are not entered until required so we dont know about them in advance and cannot take them into account easily.
+
+<P>
+First rset up a few generated P2 models and run some tests - basically use a simple ODS with the planned environmental scenario and see how some easily calculated and visualized PCM looks - the daily average value of the dynamic contention profile <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$ C_DC$"> is chosen as it is easily visualized. These tests are all run from 15-oct-07 to 15-dec-07 and have different levels of contention. Table <A HREF="#tab:ltc_p2models">11</A> shows details of the phase2 models tested.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="4079"></A>
+<TABLE>
+<CAPTION><STRONG>Table 12:</STRONG>
+Phase2 model descriptions - need more info on these than what is in table esp the gen models</CAPTION>
+<TR><TD><A NAME="tab:ltc_p2models"></A> <DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="CENTER" COLSPAN=5>Phase2 models - more detail required</TD>
+</TR>
+<TR><TD ALIGN="LEFT">DBID</TD>
+<TD ALIGN="LEFT">ODB Date</TD>
+<TD ALIGN="LEFT">CPlot</TD>
+<TD ALIGN="LEFT">NPlot</TD>
+<TD ALIGN="LEFT">Description</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img442.png"
+ ALT="$ P_s$"></TD>
+<TD ALIGN="LEFT">22nov07 midpoint</TD>
+<TD ALIGN="LEFT">c1</TD>
+<TD ALIGN="LEFT">p1</TD>
+<TD ALIGN="LEFT">P2Gen small model</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img443.png"
+ ALT="$ P_l$"></TD>
+<TD ALIGN="LEFT">22nov07 midpoint</TD>
+<TD ALIGN="LEFT">c3</TD>
+<TD ALIGN="LEFT">p3</TD>
+<TD ALIGN="LEFT">P2Gen light model</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img444.png"
+ ALT="$ P_m$"></TD>
+<TD ALIGN="LEFT">22nov07 midpoint</TD>
+<TD ALIGN="LEFT">c3</TD>
+<TD ALIGN="LEFT">p3</TD>
+<TD ALIGN="LEFT">P2Gen medium model</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img445.png"
+ ALT="$ P_h$"></TD>
+<TD ALIGN="LEFT">22nov07 midpoint</TD>
+<TD ALIGN="LEFT">c2</TD>
+<TD ALIGN="LEFT">p2</TD>
+<TD ALIGN="LEFT">P2Gen heavy model</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img446.png"
+ ALT="$ O_1$"></TD>
+<TD ALIGN="LEFT">15oct07 snapshot</TD>
+<TD ALIGN="LEFT">c4</TD>
+<TD ALIGN="LEFT">p4</TD>
+<TD ALIGN="LEFT">ODB Day 0 Snapshot</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img447.png"
+ ALT="$ O_2$"></TD>
+<TD ALIGN="LEFT">25sep07 snapshot</TD>
+<TD ALIGN="LEFT">c5</TD>
+<TD ALIGN="LEFT">p5</TD>
+<TD ALIGN="LEFT">ODB -20 day snapshot</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+Results for 4 generated models <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img443.png"
+ ALT="$ P_l$"> - <IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img445.png"
+ ALT="$ P_h$"> are shown in figures <A HREF="#fig:c60_gen_av">49(a)</A> and <A HREF="#fig:c60_gen_ng">49(b)</A>. Similar figures for the ODB snapshots though on a different scale are shown in <A HREF="#fig:c60_odb_av">49(c)</A> and <A HREF="#fig:c60_odb_ng">49(d)</A>.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:c60_gen_av"></A><A NAME="fig:c60_gen_ng"></A><A NAME="fig:c60_odb_av"></A><A NAME="fig:c60_odb_ng"></A><A NAME="4097"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 49:</STRONG>
+Comparison of average contention measure and number of groups executed per night for generated phase2 models and ODB snapshots.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+[Variation of average contention <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$ \bar{C_c}$"> for generated phase2 models.] 
+   <IMG
+ WIDTH="27" HEIGHT="42" ALIGN="BOTTOM" BORDER="0"
+ SRC="img449.png"
+ ALT="\includegraphics[scale=0.25, angle=-90]{figures/c60_gen_cav.eps}">
+  
+ [Variation of number of executed groups for generated phase2 models.] 
+   
+  
+ [Variation of average contention <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$ \bar{C_c}$"> for ODB snapshots.] 
+   
+  
+ [Variation of number of executed groups for ODB snapshots.] 
+   
+  
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1356"
+  HREF="node89.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1352"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1346"
+  HREF="node87.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1354"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1357"
+  HREF="node89.html">Conclusions</A>
+<B> Up:</B> <A NAME="tex2html1353"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1347"
+  HREF="node87.html">Conclusions</A>
+ &nbsp; <B>  <A NAME="tex2html1355"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

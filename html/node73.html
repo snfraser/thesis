@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Simulation framework</TITLE>
+<META NAME="description" CONTENT="Simulation framework">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node80.html">
+<LINK REL="previous" HREF="node57.html">
+<LINK REL="up" HREF="main.html">
+<LINK REL="next" HREF="node74.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1168"
+  HREF="node74.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1164"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1158"
+  HREF="node72.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1166"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1169"
+  HREF="node74.html">Additional simulator components</A>
+<B> Up:</B> <A NAME="tex2html1165"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1159"
+  HREF="node72.html">Heuristic Scoring metrics (HSM)</A>
+ &nbsp; <B>  <A NAME="tex2html1167"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000100000000000000000">
+Simulation framework</A>
+</H1>
+
+<P>
+Here I discuss the additional comonents required to implement a simulation framework with which to test various schedulers. Need to mention simple model used with basic DS and short LAS but additional complexity when scheduler runs in parallel with executor but with realtime running costs.
+
+<P>
+Need a framework to run the scheduler in. Currently looking at running scheduling engine continuously at some predefined rate with additional planning layers running at slower rate - how the Scheduler's run-rate (better name?) is chosen is dependant on the rate at which the ODB changes - if we run every 30 minutes and ODB changes <I>significantly</I> on that timescale we will either miss opportunities or do unnecessary (unprofitable) work - both lead to reduced cumulative reward. Consequently the need for some sort of feedback from the ODB (Phase2Model) may be needed - suggests some sort of <TT>Phase2ModelUpdateListener</TT> interface that the SE can register as. This would most likely just have a simple implementation like a method <TT>phase2ModelUpdated(Phase2Event pe)</TT>. 
+
+<P>
+How do we decide when a <I>significant</I> change has occurred ? -  Suggest each event type has some sort of weighting associated and we just increment a score as the events come in - maybe need to consider if the event's target is involved in the current schedule as part of the assessment. When a threshhold is exceeded this could prompt a rerun of the scheduler. We dont want the scheduler re-running each time an ODB change occurs - this will lead to reduced <I>effective horizon</I> and reduced profit. Opportunity here for some learning - i.e. measure the rate of change of the ODB and set the scheduler run rate dependant on this - <B>adaptive run rate</B> (better acronym please).
+
+<P>
+Because the (simulation) scheduler will be running faster than realtime (i.e. it will execute in realtime but gaps will be speeded up) and the executor (simulator) will also be running (in parallel) in model-time we need some way to synchronize the two - this suggests the need for a discrete event queue to control the model clock (i.e. <TT>DiscreteEventSimulationTimeModel</TT>. This had <B>not</B> previously been considered neccessary as the scheduler was expected to run on request from the Executor. This turns out to be a bit of a bugger to implement - not difficult for a simulated SE and Executor but I am exepecting to use the <I>real</I> SE here. I would expect to have it run using some sort of polling loop i.e. something like:-
+
+<P>
+<BR>
+<IMG
+ WIDTH="29" HEIGHT="37" ALIGN="BOTTOM" BORDER="0"
+ SRC="img376.png"
+ ALT="\begin{algorithm}
+% latex2html id marker 2807\While{true}{
+run scheduler\;
+sleep $\delta$\ t\;
+}
+\caption{Realtime scheduler run cycle}
+\end{algorithm}">
+<BR>
+
+<P>
+To allow the <I>real</I> SE to be used in simulation, in addition to being able to switch the <TT>TimeModel</TT> from <TT>RealTimeModel</TT> to <TT>SimulatedTimeModel</TT> which can be set by the franework, it will be neccessary to privide simulated clock to inject events/triggers into the SE. I envisage something like:-
+
+<P>
+<BR>
+<IMG
+ WIDTH="424" HEIGHT="103" ALIGN="BOTTOM" BORDER="0"
+ SRC="img377.png"
+ ALT="\begin{algorithm}
+% latex2html id marker 2816\While{true}{
+run scheduler\;
+w...
+...{bf E} at $\delta$t\;
+}
+\caption{Simulation scheduler run cycle}
+\end{algorithm}">
+<BR>
+
+<P>
+To implement the line <I>wait on time signal <B>E</B> at <IMG
+ WIDTH="432" HEIGHT="103" ALIGN="BOTTOM" BORDER="0"
+ SRC="img378.png"
+ ALT="$ \delta$">t</I>,  The event/trigger <B>E</B> - some class implementing <TT>EventObject</TT> is something the scheduler would register with an <TT>EventGenerator</TT> using the <TT>registerEvent(Event e, EventHandler h, long deltaTime</TT>. In this case the <TT>EventHandler</TT> is some object the SE would nominate to handle the return event from the <TT>EventGenerator</TT> <IMG
+ WIDTH="432" HEIGHT="103" ALIGN="BOTTOM" BORDER="0"
+ SRC="img378.png"
+ ALT="$ \delta$">T later. The SE would at this point do a wait on the handler. On completion of the wait, the SE continues execution - in effect this is just a round-about way of doing a sleep. Could allow various types of event and SE (or any other type of handler) could act on these appropriately but this is not really neccessary. The simulation framework would also need to make use of the <TT>EventGenerator</TT> to register execution times of groups effectively being submitted to executor. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:simframewrk"></A><A NAME="2834"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 38:</STRONG>
+Architecture of scheduling simulation framework.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="16" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img379.png"
+ ALT="\includegraphics[height=6cm]{figures/sim_framework.eps}">
+   
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Whats going on here ? The sim controller provides all the models for the SE - The EnvModel is likely generated on-the-fly based on current time and some provided function (or e.g. random variation about some mean level or with some trend...). The ExecModel likely uses a random variation
+
+<P>
+Some details about a test of different bias functions.
+Effect of snapshot age on calculations - especially wrt (Problem Quality Metrics) PQMs.
+
+<P>
+What are the effects of various simulation assumptions ? Namely effects like phase2 drift. I will run a series of experments to test the effect of length of lookahead - this can be done using the following method:-
+work out demand profile d(t) for N nights ahead. Run simulation for 1 night and recalculate - now for N-1 nights ahead, keep doing this so on step r we simulate night r and work out d(t) for N-r nights ahead. Variation on this could include the effects of varying the Env model. Basically I just want to know if look ahead calculation of D(t) works - can also compare this to working out D(t) for r using different ODB snapshots.
+
+<P>
+This was the FWDDMD set of results - add graphs here XXX. Notes: ODB snapshot 31oct07, run for 3x days ahead. Using scoring model <IMG
+ WIDTH="352" HEIGHT="272" ALIGN="MIDDLE" BORDER="0"
+ SRC="img380.png"
+ ALT="$ S_{xxx}$"> - need to get from standard SCO model table in scoremodel section
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html1170"
+  HREF="node74.html">Additional simulator components</A>
+<UL>
+<LI><A NAME="tex2html1171"
+  HREF="node75.html">Stochastic Execution Timing Model - <IMG
+ WIDTH="14" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$ \xi $"></A>
+<LI><A NAME="tex2html1172"
+  HREF="node76.html">Environmental Scenario ()</A>
+<LI><A NAME="tex2html1173"
+  HREF="node77.html">Weather scenario (<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \Omega $">)</A>
+<LI><A NAME="tex2html1174"
+  HREF="node78.html">Quality/Complexity metric plugins</A>
+<LI><A NAME="tex2html1175"
+  HREF="node79.html">Time signal generator</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1168"
+  HREF="node74.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1164"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1158"
+  HREF="node72.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1166"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1169"
+  HREF="node74.html">Additional simulator components</A>
+<B> Up:</B> <A NAME="tex2html1165"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1159"
+  HREF="node72.html">Heuristic Scoring metrics (HSM)</A>
+ &nbsp; <B>  <A NAME="tex2html1167"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

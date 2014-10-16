@@ -1,0 +1,55 @@
+#!/bin/csh
+
+#
+# Extract date info from P2 ODB snapshots
+#
+
+#set sna = $1
+
+# ODB snapshot tar file
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+source /occ/bin/osx_setup
+source /occ/bin/x_setup
+setenv CLASSPATH ${CLASSPATH}:/home/snf/Simulation/java/character
+
+set sna = $1
+
+set ODB = "-Djydodb=/occ/oss"
+set AST = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+
+set base = `pwd`
+
+cd /occ/oss
+
+foreach file (/occ/oss/phase2-*)
+
+    set odb = `echo ${file:t}`
+
+    set dd = `echo $file | cut -d"-" -f3`
+
+    set cur = `date -d "${dd}" -u "+%Y-%m-%d" `
+    
+#    echo "Using ODB snapshot: $file "
+#    echo "ODB Date: $dd Cur: $cur " 
+    
+    /bin/rm -f /occ/oss/phase2.tmp
+
+#    cp -f $file /occ/oss/
+   
+    tar xf $odb
+
+    echo "Starting demand test...using date: $cur " >>&! ${base}/dmd.log
+ 
+    set ODB = "-Djydodb=/occ/oss"
+    set AST = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+
+    java $ODB $AST DemandProfileTest \
+        --site LT --lat 28.0 --long -17.0 \
+        --root LT_Phase2_001 --base /occ/oss \
+        --exec ${base}/exec1.cfg \
+        --start $cur \
+        --outfile ${base}/cdprofile_${dd}.dat --log-level 1 >>& ${base}/dmd.log 
+
+end

@@ -1,0 +1,25 @@
+what are the factors that influence the ability to predict future seeing ?
+
+Seeing variation is caused by the travel of light path through turbulent microcells in the atmosphere - it has been shown that for La Palma the majority of this effect occurs in the X layer between x and y km from surface. (e.g. SCIDAR can determine h from a relation - I forget what) 
+The strength/stability of winds in these layers keeps seeing stable, variation occurs when gravity-wave induced disruption on time scales of 10 minutes or so causes seeing to deteriorate quickly. It has been shown (ref) that recovery from such disturbances is much slower (1.2H). The net result is that seeing can change from good to bad very suddenly with a slow recovery. 
+
+In order to predict these effects we need to find some meteorological variable that indicates instability in those layers - since we have only surface (2400m) data available this seems difficult - maybe we can associate such things as:
+
+stability of pressure
+wind direction
+temperature profile
+
+against likeliness of sudden deterioration
+
+I need to find a way to automatically recognize this type of excursion in the available data i.e. to detect times when the overall seeing profile changes according to one or more patterns..
+
+p1. seeing good, goes bad suddenly at some point in night
+p2. seeing remains stable and good
+p3. seeing remains stable but bad
+p4. seeing deteriorates over night steadily
+p5. seeing improves over night steadily
+p6. seeing is totally random
+
+it would be good to see what sort of percentages these give - can this be done by some sort of recognition system - or does it have to be done manually by visual inspection ? what are the measures I could extract to determine/classify  these patterns ?
+
+

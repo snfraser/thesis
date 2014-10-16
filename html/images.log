@@ -1,0 +1,4584 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.9.30)  31 JAN 2008 08:19
+**./images.tex
+(./images.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2001/08/31 v1.1 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 125.
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+)
+\pmbraise@=\dimen106
+) (/usr/share/texmf/tex/latex/misc/marvosym.sty
+Package: marvosym 2000/05/01 v2.0 Martin Vogel's Symbols font definitions
+) (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+) (/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (/usr/share/texmf/tex/latex/misc/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip46
+\plpartopsep=\skip47
+\plitemsep=\skip48
+\plparsep=\skip49
+\pl@lab=\toks20
+) (/home/snf/mphil/thesis/algorithm2e.sty
+Package: algorithm2e 2005/10/04 v3.9 algorithms environments
+\c@AlgoLine=\count99
+(/usr/share/texmf/tex/latex/tools/xspace.sty
+Package: xspace 1997/10/13 v1.06 Space after command names (DPC)
+)
+********************************************************
+Package `algorithm2e' Release 3.9 -- october 04 2005 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
+********************************************************
+\skiptotal=\skip50
+\skiprule=\skip51
+\skiphlne=\skip52
+\skiptext=\skip53
+\skiplength=\skip54
+\algomargin=\skip55
+\skipalgocfslide=\skip56
+\algowidth=\dimen114
+\inoutsize=\dimen115
+\inoutline=\dimen116
+\algocf@inoutbox=\box28
+\algocf@inputbox=\box29
+\AlCapSkip=\skip57
+\AlCapHSkip=\skip58
+\algocf@capbox=\box30
+\c@algocfline=\count100
+\c@algocf=\count101
+\algocf@algoframe=\box31
+\algocf@algobox=\box32
+) (/usr/share/texmf/tex/latex/misc/subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip59
+\subfigcapskip=\skip60
+\subfigcaptopadj=\dimen117
+\subfigbottomskip=\skip61
+\subfigcapmargin=\dimen118
+\subfiglabelskip=\skip62
+\c@subfigure=\count102
+\c@lofdepth=\count103
+\c@subtable=\count104
+\c@lotdepth=\count105
+\subfig@top=\skip63
+\subfig@bottom=\skip64
+) (/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/share/texmf/tex/latex/misc/booktabs.sty
+Package: booktabs 2000/08/16 v1.61 publication quality tables
+\heavyrulewidth=\dimen119
+\lightrulewidth=\dimen120
+\cmidrulewidth=\dimen121
+\belowrulesep=\dimen122
+\belowbottomsep=\dimen123
+\aboverulesep=\dimen124
+\abovetopsep=\dimen125
+\cmidrulesep=\dimen126
+\cmidrulekern=\dimen127
+\defaultaddspace=\dimen128
+\@cmidrulewidth=\dimen129
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen130
+\@belowrulesep=\dimen131
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen132
+) (/usr/share/texmf/tex/latex/misc/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks21
+\float@box=\box33
+\@float@everytoks=\toks22
+\@floatcapt=\box34
+)
+\@float@every@program=\toks23
+\c@program=\count111
+\@float@every@note=\toks24
+\c@note=\count112
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+\sizebox=\box35
+\lthtmlwrite=\write3
+(./images.aux (/home/snf/mphil/thesis/abstract.aux) (/home/snf/mphil/thesis/int
+roduction.aux) (/home/snf/mphil/thesis/review.aux) (/home/snf/mphil/thesis/plan
+.aux) (/home/snf/mphil/thesis/body.aux) (/home/snf/mphil/thesis/metrics_study.a
+ux) (/home/snf/mphil/thesis/prediction_study.aux
+
+LaTeX Warning: Label `fig:humidity_profile_examples' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+) (/home/snf/mphil/thesis/schedcomparch_study.aux) (/home/snf/mphil/thesis/dbch
+aracter_study.aux) (/home/snf/mphil/thesis/case_study.aux
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_rn' multiply defined.
+
+) (/home/snf/mphil/thesis/mam_study.aux) (/home/snf/mphil/thesis/longterm_study
+.aux) (/home/snf/mphil/thesis/conclusions.aux) (/home/snf/mphil/thesis/appendix
+.aux) (/home/snf/mphil/thesis/appendix_p2gen.aux) (/home/snf/mphil/thesis/appen
+dix_qy.aux))
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+(/home/snf/mphil/thesis/main.aux (/home/snf/mphil/thesis/abstract.aux) (/home/s
+nf/mphil/thesis/introduction.aux
+
+LaTeX Warning: Label `fig:object' multiply defined.
+
+
+LaTeX Warning: Label `fig:phase2-architecture' multiply defined.
+
+
+LaTeX Warning: Label `fig:group-linking' multiply defined.
+
+
+LaTeX Warning: Label `fig:overview_architecture' multiply defined.
+
+) (/home/snf/mphil/thesis/review.aux
+
+LaTeX Warning: Label `sect:dynamic' multiply defined.
+
+) (/home/snf/mphil/thesis/plan.aux) (/home/snf/mphil/thesis/body.aux) (/home/sn
+f/mphil/thesis/metrics_study.aux
+
+LaTeX Warning: Label `sect:metrics_study' multiply defined.
+
+
+LaTeX Warning: Label `ss:pcm' multiply defined.
+
+
+LaTeX Warning: Label `fig:baz_plot' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:baz_plot' multiply defined.
+
+) (/home/snf/mphil/thesis/prediction_study.aux
+
+LaTeX Warning: Label `sect:prediction' multiply defined.
+
+
+LaTeX Warning: Label `tab:rcs_weather_rules' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2006' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2006' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2007' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2007' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_tech' multiply defined.
+
+
+LaTeX Warning: Label `fig:tech_loss_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_monthly_tech_stats' multiply defined.
+
+
+LaTeX Warning: Label `fig:gap_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_humidity_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_humidity_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_moisture_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_moisture_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_windspeed_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_windspeed_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_temp_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_temp_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `tab:comp_meteo_trigs' multiply defined.
+
+
+LaTeX Warning: Label `fig:wms_hum_frac_time' multiply defined.
+
+
+LaTeX Warning: Label `eqn:prediction_decay' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_01_29' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_01_29' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_02_20' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_02_20' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_03_26' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_03_26' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_03_28' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_03_28' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_04_15' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_04_15' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_04_16' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_04_16' multiply defined.
+
+
+LaTeX Warning: Label `fig:humidity_profile_examples' multiply defined.
+
+
+LaTeX Warning: Label `fig:humidity_profile_examples' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_hum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_cumhum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_period_time' multiply defined.
+
+
+LaTeX Warning: Label `fig:gbc_prediction' multiply defined.
+
+
+LaTeX Warning: Label `fig:gbc_m_crossover' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_monthly_weather_stats' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_weather' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `tab:seeing_quartiles' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_obs' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2006' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2006' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2007' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2007' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_run_len' multiply defined.
+
+
+LaTeX Warning: Label `fig:monthly_seeing_count' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:ut_av_seeing' multiply defined.
+
+
+LaTeX Warning: Label `fig:ut_bin_count' multiply defined.
+
+
+LaTeX Warning: Label `fig:monthly_seeing' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_all' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jan' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jan' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_feb' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_feb' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_mar' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_apr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_apr' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_may' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_may' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jun' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jun' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_janjun' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jul' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jul' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_aug' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_aug' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_sep' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_sep' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_oct' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_oct' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_nov' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_nov' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_dec' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_dec' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_juldec' multiply defined.
+
+) (/home/snf/mphil/thesis/schedcomparch_study.aux
+
+LaTeX Warning: Label `sect:sched_comp_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:simframewrk' multiply defined.
+
+
+LaTeX Warning: Label `fig:simf_exec_timing_dist' multiply defined.
+
+) (/home/snf/mphil/thesis/dbcharacter_study.aux
+
+LaTeX Warning: Label `sect:db_character_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:cd_av_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cd_av_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:cd_max_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cd_max_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_ngs' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_ngs' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_load' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_load' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_puload' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_puload' multiply defined.
+
+) (/home/snf/mphil/thesis/case_study.aux
+
+LaTeX Warning: Label `sect:cs1_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:cont4_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cont4_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `fig:cont6_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cont6_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `tab:cam_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:cam_param' multiply defined.
+
+
+LaTeX Warning: Label `tab:etm_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:etm_param' multiply defined.
+
+
+LaTeX Warning: Label `tab:sex_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:sex_param' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa_c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa_c' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px_c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px_c' multiply defined.
+
+) (/home/snf/mphil/thesis/mam_study.aux
+
+LaTeX Warning: Label `sect:mam_study' multiply defined.
+
+) (/home/snf/mphil/thesis/longterm_study.aux
+
+LaTeX Warning: Label `sect:lts_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:env_snap_1' multiply defined.
+
+
+LaTeX Warning: Label `tab:ltc_env_scenario' multiply defined.
+
+
+LaTeX Warning: Label `tab:ltc_p2models' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_gen_av' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_gen_av' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_gen_ng' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_gen_ng' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_odb_av' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_odb_av' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_odb_ng' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_odb_ng' multiply defined.
+
+) (/home/snf/mphil/thesis/conclusions.aux) (/home/snf/mphil/thesis/appendix.aux
+
+LaTeX Warning: Label `sect:app_phase2db' multiply defined.
+
+) (/home/snf/mphil/thesis/appendix_p2gen.aux
+
+LaTeX Warning: Label `sect:app_p2gen' multiply defined.
+
+) (/home/snf/mphil/thesis/appendix_qy.aux
+
+LaTeX Warning: Label `sect:app_calcqy' multiply defined.
+
+)
+
+LaTeX Warning: Label `xxx' multiply defined.
+
+
+LaTeX Warning: Label `aussem94dynamical' multiply defined.
+
+
+LaTeX Warning: Label `aussem94fuzzy' multiply defined.
+
+
+LaTeX Warning: Label `aussem02online' multiply defined.
+
+
+LaTeX Warning: Label `beck97texturebased' multiply defined.
+
+
+LaTeX Warning: Label `lapalma115' multiply defined.
+
+
+LaTeX Warning: Label `bresina96hbss' multiply defined.
+
+
+LaTeX Warning: Label `bresina94jic' multiply defined.
+
+
+LaTeX Warning: Label `bresina95expected' multiply defined.
+
+
+LaTeX Warning: Label `bresina99increased' multiply defined.
+
+
+LaTeX Warning: Label `chien98integrated' multiply defined.
+
+
+LaTeX Warning: Label `chien99iterative' multiply defined.
+
+
+LaTeX Warning: Label `chien00aspen' multiply defined.
+
+
+LaTeX Warning: Label `cicirello01random' multiply defined.
+
+
+LaTeX Warning: Label `clayandfraser06tbd' multiply defined.
+
+
+LaTeX Warning: Label `davenport01slack' multiply defined.
+
+
+LaTeX Warning: Label `drummond94jic' multiply defined.
+
+
+LaTeX Warning: Label `fox83thesis' multiply defined.
+
+
+LaTeX Warning: Label `fraser04scheduling' multiply defined.
+
+
+LaTeX Warning: Label `fraser02robotic' multiply defined.
+
+
+LaTeX Warning: Label `fukunaga04robust' multiply defined.
+
+
+LaTeX Warning: Label `glover99tabu' multiply defined.
+
+
+LaTeX Warning: Label `granzer03stella' multiply defined.
+
+
+LaTeX Warning: Label `hoos02adaptive' multiply defined.
+
+
+LaTeX Warning: Label `ishida96improving' multiply defined.
+
+
+LaTeX Warning: Label `johnston94spike' multiply defined.
+
+
+LaTeX Warning: Label `jones98survey' multiply defined.
+
+
+LaTeX Warning: Label `jorgenson91attractor' multiply defined.
+
+
+LaTeX Warning: Label `lapalma31' multiply defined.
+
+
+LaTeX Warning: Label `kramer03maxflex' multiply defined.
+
+
+LaTeX Warning: Label `kramer04swapping' multiply defined.
+
+
+LaTeX Warning: Label `krisciunas97optical' multiply defined.
+
+
+LaTeX Warning: Label `krisciunas91brightness' multiply defined.
+
+
+LaTeX Warning: Label `lorenz63npflow' multiply defined.
+
+
+LaTeX Warning: Label `minton92minconflicts' multiply defined.
+
+
+LaTeX Warning: Label `miyashita96distributed' multiply defined.
+
+
+LaTeX Warning: Label `miyashita95cabins' multiply defined.
+
+
+LaTeX Warning: Label `morris97automatic' multiply defined.
+
+
+LaTeX Warning: Label `munoz98homogeneity' multiply defined.
+
+
+LaTeX Warning: Label `munoz97nighttime' multiply defined.
+
+
+LaTeX Warning: Label `muscettola92bottleneck' multiply defined.
+
+
+LaTeX Warning: Label `myers01integrating' multiply defined.
+
+
+LaTeX Warning: Label `policella05thesis' multiply defined.
+
+
+LaTeX Warning: Label `policella03flexible' multiply defined.
+
+
+LaTeX Warning: Label `quinlan86induction' multiply defined.
+
+
+LaTeX Warning: Label `rabideau00generic' multiply defined.
+
+
+LaTeX Warning: Label `rabideau99iterative' multiply defined.
+
+
+LaTeX Warning: Label `racine96temporal' multiply defined.
+
+
+LaTeX Warning: Label `riedmiller99neural' multiply defined.
+
+
+LaTeX Warning: Label `russel03artificial' multiply defined.
+
+
+LaTeX Warning: Label `sadeh91lookahead' multiply defined.
+
+
+LaTeX Warning: Label `sadeh94backtracking' multiply defined.
+
+
+LaTeX Warning: Label `sarazin97automated' multiply defined.
+
+
+LaTeX Warning: Label `shaw90intelligent' multiply defined.
+
+
+LaTeX Warning: Label `silva04multiobjective' multiply defined.
+
+
+LaTeX Warning: Label `smith95reactive' multiply defined.
+
+
+LaTeX Warning: Label `smith04continuous' multiply defined.
+
+
+LaTeX Warning: Label `smith96mixed' multiply defined.
+
+
+LaTeX Warning: Label `steele97control' multiply defined.
+
+
+LaTeX Warning: Label `sycara96case' multiply defined.
+
+
+LaTeX Warning: Label `taillard98adaptive' multiply defined.
+
+
+LaTeX Warning: Label `vernin98temporal' multiply defined.
+
+
+LaTeX Warning: Label `vonneumann44games' multiply defined.
+
+
+LaTeX Warning: Label `yokoo99search' multiply defined.
+
+
+LaTeX Warning: Label `zhang95reinforcement' multiply defined.
+
+
+LaTeX Warning: Label `zweben94scheduling' multiply defined.
+
+) (/home/snf/mphil/thesis/abstract.aux) (/home/snf/mphil/thesis/introduction.au
+x
+
+LaTeX Warning: Label `fig:object' multiply defined.
+
+
+LaTeX Warning: Label `fig:phase2-architecture' multiply defined.
+
+
+LaTeX Warning: Label `fig:group-linking' multiply defined.
+
+
+LaTeX Warning: Label `fig:overview_architecture' multiply defined.
+
+) (/home/snf/mphil/thesis/review.aux
+
+LaTeX Warning: Label `sect:dynamic' multiply defined.
+
+) (/home/snf/mphil/thesis/plan.aux) (/home/snf/mphil/thesis/body.aux) (/home/sn
+f/mphil/thesis/metrics_study.aux
+
+LaTeX Warning: Label `sect:metrics_study' multiply defined.
+
+
+LaTeX Warning: Label `ss:pcm' multiply defined.
+
+
+LaTeX Warning: Label `fig:baz_plot' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:baz_plot' multiply defined.
+
+) (/home/snf/mphil/thesis/prediction_study.aux
+
+LaTeX Warning: Label `sect:prediction' multiply defined.
+
+
+LaTeX Warning: Label `tab:rcs_weather_rules' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2006' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2006' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_tech2007' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_tech2007' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_tech' multiply defined.
+
+
+LaTeX Warning: Label `fig:tech_loss_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_monthly_tech_stats' multiply defined.
+
+
+LaTeX Warning: Label `fig:gap_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_humidity_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_humidity_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_moisture_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_moisture_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_windspeed_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_windspeed_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_temp_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_temp_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `tab:comp_meteo_trigs' multiply defined.
+
+
+LaTeX Warning: Label `fig:wms_hum_frac_time' multiply defined.
+
+
+LaTeX Warning: Label `eqn:prediction_decay' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_01_29' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_01_29' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_02_20' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_02_20' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_03_26' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_03_26' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_03_28' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_03_28' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_04_15' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_04_15' multiply defined.
+
+
+LaTeX Warning: Label `fig:hum_profile_2007_04_16' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:hum_profile_2007_04_16' multiply defined.
+
+
+LaTeX Warning: Label `fig:humidity_profile_examples' multiply defined.
+
+
+LaTeX Warning: Label `fig:humidity_profile_examples' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_hum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_cumhum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:good_bad_period_time' multiply defined.
+
+
+LaTeX Warning: Label `fig:gbc_prediction' multiply defined.
+
+
+LaTeX Warning: Label `fig:gbc_m_crossover' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_monthly_weather_stats' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_weather' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_weather2005' multiply defined.
+
+
+LaTeX Warning: Label `tab:seeing_quartiles' multiply defined.
+
+
+LaTeX Warning: Label `fig:met_nightly_obs' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2005' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2005' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2006' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2006' multiply defined.
+
+
+LaTeX Warning: Label `fig:nightly_obs2007' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:nightly_obs2007' multiply defined.
+
+
+LaTeX Warning: Label `fig:ecs_run_len' multiply defined.
+
+
+LaTeX Warning: Label `fig:monthly_seeing_count' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_cum_dist' multiply defined.
+
+
+LaTeX Warning: Label `fig:ut_av_seeing' multiply defined.
+
+
+LaTeX Warning: Label `fig:ut_bin_count' multiply defined.
+
+
+LaTeX Warning: Label `fig:monthly_seeing' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_all' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jan' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jan' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_feb' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_feb' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_mar' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_apr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_apr' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_may' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_may' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jun' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jun' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_janjun' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_jul' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_jul' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_aug' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_aug' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_sep' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_sep' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_oct' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_oct' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_nov' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_nov' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_dec' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:see_dist_dec' multiply defined.
+
+
+LaTeX Warning: Label `fig:see_dist_juldec' multiply defined.
+
+) (/home/snf/mphil/thesis/schedcomparch_study.aux
+
+LaTeX Warning: Label `sect:sched_comp_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:simframewrk' multiply defined.
+
+
+LaTeX Warning: Label `fig:simf_exec_timing_dist' multiply defined.
+
+) (/home/snf/mphil/thesis/dbcharacter_study.aux
+
+LaTeX Warning: Label `sect:db_character_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:cd_av_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cd_av_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:cd_max_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cd_max_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_ngs' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_ngs' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_load' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_load' multiply defined.
+
+
+LaTeX Warning: Label `fig:db_cl_puload' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:db_cl_puload' multiply defined.
+
+) (/home/snf/mphil/thesis/case_study.aux
+
+LaTeX Warning: Label `sect:cs1_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:cont4_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cont4_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `fig:cont6_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cont6_ensemble' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa0_pr' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa1_ex' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bsa2_rnd' multiply defined.
+
+
+LaTeX Warning: Label `tab:cam_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:cam_param' multiply defined.
+
+
+LaTeX Warning: Label `tab:etm_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:etm_param' multiply defined.
+
+
+LaTeX Warning: Label `tab:sex_param' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:sex_param' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_foa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_fpx' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_oa' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_oa' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_px' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_px' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_rn' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_rn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1a2_td' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1a2_td' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_oa_c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_oa_c' multiply defined.
+
+
+LaTeX Warning: Label `fig:cs1_dw1_px_c' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:cs1_dw1_px_c' multiply defined.
+
+) (/home/snf/mphil/thesis/mam_study.aux
+
+LaTeX Warning: Label `sect:mam_study' multiply defined.
+
+) (/home/snf/mphil/thesis/longterm_study.aux
+
+LaTeX Warning: Label `sect:lts_study' multiply defined.
+
+
+LaTeX Warning: Label `fig:env_snap_1' multiply defined.
+
+
+LaTeX Warning: Label `tab:ltc_env_scenario' multiply defined.
+
+
+LaTeX Warning: Label `tab:ltc_p2models' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_gen_av' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_gen_av' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_gen_ng' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_gen_ng' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_odb_av' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_odb_av' multiply defined.
+
+
+LaTeX Warning: Label `fig:c60_odb_ng' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:c60_odb_ng' multiply defined.
+
+) (/home/snf/mphil/thesis/conclusions.aux) (/home/snf/mphil/thesis/appendix.aux
+
+LaTeX Warning: Label `sect:app_phase2db' multiply defined.
+
+) (/home/snf/mphil/thesis/appendix_p2gen.aux
+
+LaTeX Warning: Label `sect:app_p2gen' multiply defined.
+
+) (/home/snf/mphil/thesis/appendix_qy.aux
+
+LaTeX Warning: Label `sect:app_calcqy' multiply defined.
+
+)
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=721.41338pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=-14.22636pt
+
+latex2htmlLength evensidemargin=-14.22636pt
+
+l2hSize :tex2html_wrap_inline5330:8.7pt::8.7pt::13.1755pt.
+[1
+
+
+
+]
+l2hSize :tex2html_wrap_inline5334:8.7pt::8.7pt::13.86763pt.
+[2
+
+
+]
+l2hSize :tex2html_wrap_inline5338:8.7pt::8.7pt::12.12593pt.
+[3
+
+
+]
+l2hSize :tex2html_wrap_inline5342:9.5pt::9.5pt::20.71507pt.
+[4
+
+
+]
+l2hSize :tex2html_wrap_inline5346:8.2pt::0.0pt::9.98883pt.
+[5
+
+
+]
+l2hSize :tex2html_wrap_inline6358:8.7pt::8.7pt::40.62077pt.
+[6
+
+
+]
+l2hSize :tex2html_wrap_inline6609:8.2pt::0.0pt::13.3124pt.
+[7
+
+
+]
+l2hSize :tex2html_wrap_inline6615:8.2pt::0.0pt::11.28258pt.
+[8
+
+
+]
+l2hSize :tex2html_wrap_inline6617:8.2pt::0.0pt::9.07355pt.
+[9
+
+
+]
+l2hSize :tex2html_wrap_inline6621:8.2pt::0.0pt::9.79301pt.
+[10
+
+
+]
+l2hSize :tex2html_wrap_inline6625:8.2pt::0.0pt::11.24997pt.
+[11
+
+
+]
+l2hSize :tex2html_wrap_inline6629:8.2pt::0.0pt::9.39577pt.
+[12
+
+
+]
+l2hSize :tex2html_wrap_inline6633:8.2pt::0.0pt::9.85576pt.
+[13
+
+
+]
+l2hSize :tex2html_wrap_inline6637:8.83331pt::8.83331pt::6.62569pt.
+[14
+
+
+]
+l2hSize :tex2html_wrap_inline6641:8.2pt::0.0pt::8.51245pt.
+[15
+
+
+]
+l2hSize :tex2html_wrap_inline6645:8.83331pt::8.83331pt::6.2993pt.
+[16
+
+
+]
+! Undefined control sequence.
+l.339 $ \DOTSB \sum@ \slimits
+                             @ $%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+l2hSize :tex2html_wrap_inline6649:9.50008pt::9.50008pt::33.53178pt.
+[17
+
+
+]
+l2hSize :tex2html_wrap_inline6653:8.2pt::0.0pt::9.07355pt.
+[18
+
+
+]
+l2hSize :tex2html_wrap_inline6843:8.0075pt::0.0pt::5.33759pt.
+[19
+
+
+]
+l2hSize :tex2html_wrap_inline6845:8.7pt::8.7pt::53.38928pt.
+[20
+
+
+]
+l2hSize :tex2html_wrap_inline6849:8.7pt::8.7pt::16.7035pt.
+[21
+
+
+]
+l2hSize :tex2html_wrap_inline6859:8.7pt::8.7pt::15.27461pt.
+[22
+
+
+]
+l2hSize :tex2html_wrap_inline6861:8.7pt::8.7pt::21.89803pt.
+[23
+
+
+]
+l2hSize :tex2html_wrap_inline6867:8.7pt::8.7pt::21.84413pt.
+[24
+
+
+]
+l2hSize :tex2html_wrap_inline6869:8.7pt::8.7pt::21.87718pt.
+[25
+
+
+]
+l2hSize :tex2html_wrap_inline7636:8.7pt::8.7pt::22.91467pt.
+[26
+
+
+]
+l2hSize :tex2html_wrap_inline7644:8.7pt::8.7pt::23.96053pt.
+[27
+
+
+]
+l2hSize :tex2html_wrap_inline7652:8.7pt::8.7pt::22.60358pt.
+[28
+
+
+]
+l2hSize :tex2html_wrap_inline7728:8.25pt::8.25pt::30.23099pt.
+[29
+
+
+]
+l2hSize :tex2html_wrap_inline7730:8.25pt::8.25pt::13.7655pt.
+[30
+
+
+]
+l2hSize :tex2html_wrap_inline7732:8.7pt::8.7pt::24.57843pt.
+[31
+
+
+]
+l2hSize :tex2html_wrap_inline7744:8.7pt::8.7pt::23.44594pt.
+[32
+
+
+]
+l2hSize :tex2html_wrap_inline7780:8.7pt::8.7pt::23.73233pt.
+[33
+
+
+]
+l2hSize :tex2html_wrap_inline7792:8.7pt::8.7pt::24.4437pt.
+[34
+
+
+]
+l2hSize :tex2html_wrap_inline8224:10.31107pt::10.31107pt::13.1755pt.
+[35
+
+
+]
+l2hSize :tex2html_wrap_inline8528:8.7pt::8.7pt::17.20892pt.
+[36
+
+
+]
+Overfull \hbox (45.21085pt too wide) in paragraph at lines 471--472
+\OT1/cmr/m/n/12 times the tele-scope may be \OT1/cmr/m/it/12 taken over \OT1/cm
+r/m/n/12 by an ex-ter-nal agenty [[]]
+ []
+
+l2hSize :inparaenum70:125.0pt::2.33331pt::349.0pt.
+[37
+
+
+]
+l2hSize :tex2html_wrap_inline9754:8.23334pt::0.0pt::9.9764pt.
+[38
+
+
+]
+l2hSize :tex2html_wrap_inline9756:8.23334pt::0.0pt::10.33752pt.
+[39
+
+
+]
+l2hSize :tex2html_wrap_inline9758:8.83331pt::8.83331pt::26.03821pt.
+[40
+
+
+]
+l2hSize :tex2html_wrap_inline9760:8.25pt::8.25pt::9.5806pt.
+[41
+
+
+]
+l2hSize :tex2html_wrap_inline9762:8.25pt::8.25pt::9.5806pt.
+[42
+
+
+]
+l2hSize :tex2html_wrap_inline9766:8.83331pt::8.83331pt::27.04285pt.
+[43
+
+
+]
+l2hSize :tex2html_wrap_inline9772:8.83331pt::8.83331pt::19.06122pt.
+[44
+
+
+]
+l2hSize :tex2html_wrap_inline9774:8.83331pt::8.83331pt::50.31035pt.
+[45
+
+
+]
+l2hSize :tex2html_wrap_inline9776:8.25pt::8.25pt::12.12308pt.
+[46
+
+
+]
+l2hSize :tex2html_wrap_inline9782:8.25pt::8.25pt::31.86092pt.
+[47
+
+
+]
+l2hSize :tex2html_wrap_inline9784:8.25pt::8.25pt::28.84915pt.
+[48
+
+
+]
+l2hSize :tex2html_wrap_inline9786:7.75pt::0.0pt::7.26456pt.
+[49
+
+
+]
+l2hSize :tex2html_wrap_inline9788:8.23334pt::0.0pt::10.65698pt.
+[50
+
+
+]
+l2hSize :tex2html_wrap_inline9790:8.23334pt::0.0pt::11.19862pt.
+[51
+
+
+]
+l2hSize :tex2html_wrap_inline9792:8.23334pt::0.0pt::9.44864pt.
+[52
+
+
+]
+l2hSize :tex2html_wrap_inline9801:7.75pt::0.0pt::9.72632pt.
+[53
+
+
+]
+l2hSize :tex2html_wrap_inline9804:9.5pt::9.5pt::48.65834pt.
+[54
+
+
+]
+l2hSize :tex2html_wrap_inline9806:9.5pt::9.5pt::48.2396pt.
+[55
+
+
+]
+l2hSize :tex2html_wrap_inline9808:9.5pt::9.5pt::46.59373pt.
+[56
+
+
+]
+l2hSize :tex2html_wrap_inline9810:8.23334pt::0.0pt::10.93475pt.
+[57
+
+
+]
+l2hSize :tex2html_wrap_inline9812:8.23334pt::0.0pt::10.78197pt.
+[58
+
+
+]
+l2hSize :tex2html_wrap_inline9816:9.5pt::9.5pt::29.15889pt.
+[59
+
+
+]
+File: figures/placeholder.eps Graphic file (type eps)
+<figures/placeholder.eps>
+l2hSize :tex2html_wrap9817:170.71652pt::0.0pt::349.0pt.
+[60
+
+
+]
+l2hSize :tex2html_wrap_inline9822:9.5pt::9.5pt::29.31pt.
+[61
+
+
+]
+File: figures/phase2_architecture.eps Graphic file (type eps)
+<figures/phase2_architecture.eps>
+l2hSize :tex2html_wrap9824:170.71652pt::0.0pt::349.0pt.
+[62
+
+
+]
+File: figures/group_linking.eps Graphic file (type eps)
+<figures/group_linking.eps>
+l2hSize :tex2html_wrap9828:170.71652pt::0.0pt::349.0pt.
+[63
+
+
+]
+l2hSize :tex2html_wrap_inline9833:8.7pt::8.7pt::34.63393pt.
+[64
+
+
+]
+l2hSize :tex2html_wrap_inline9835:8.7pt::8.7pt::80.34944pt.
+[65
+
+
+]
+l2hSize :tex2html_wrap_inline9837:8.25pt::8.25pt::9.6078pt.
+[66
+
+
+]
+l2hSize :tex2html_wrap_inline9839:8.7pt::8.7pt::10.86821pt.
+[67
+
+
+]
+l2hSize :tex2html_wrap_inline9841:9.5pt::9.5pt::49.47018pt.
+[68
+
+
+]
+l2hSize :tex2html_wrap_inline9845:8.7pt::8.7pt::12.38792pt.
+[69
+
+
+]
+l2hSize :tex2html_wrap_inline9847:9.5pt::9.5pt::24.93697pt.
+[70
+
+
+]
+l2hSize :tex2html_wrap_inline9853:9.5pt::9.5pt::192.24321pt.
+[71
+
+
+]
+l2hSize :tex2html_wrap_inline9855:8.25pt::8.25pt::11.3528pt.
+[72
+
+
+]
+l2hSize :tex2html_wrap_inline9857:8.7pt::8.7pt::16.60352pt.
+[73
+
+
+]
+l2hSize :tex2html_wrap_inline9859:8.7pt::8.7pt::16.95213pt.
+[74
+
+
+]
+l2hSize :tex2html_wrap_inline9861:8.83331pt::8.83331pt::20.80621pt.
+[75
+
+
+]
+l2hSize :tex2html_wrap_inline9863:8.25pt::8.25pt::20.56107pt.
+[76
+
+
+]
+l2hSize :tex2html_wrap_inline9867:8.7pt::8.7pt::38.28381pt.
+[77
+
+
+]
+l2hSize :tex2html_wrap_inline9869:9.5pt::9.5pt::31.66113pt.
+[78
+
+
+]
+File: figures/overview_architecture.eps Graphic file (type eps)
+<figures/overview_architecture.eps>
+l2hSize :tex2html_wrap9870:170.71652pt::0.0pt::349.0pt.
+[79
+
+
+]
+l2hSize :tex2html_wrap_inline9875:8.25pt::8.25pt::26.15765pt.
+[80
+
+
+]
+l2hSize :tex2html_wrap_inline9877:8.25pt::8.25pt::25.47386pt.
+[81
+
+
+]
+l2hSize :tex2html_wrap_inline9879:8.25pt::8.25pt::110.63797pt.
+[82
+
+
+]
+l2hSize :tex2html_wrap_inline9883:8.7pt::8.7pt::103.01218pt.
+[83
+
+
+]
+l2hSize :tex2html_wrap_inline9886:7.75pt::0.0pt::7.60133pt.
+[84
+
+
+]
+l2hSize :tex2html_wrap_inline9888:8.33331pt::0.0pt::6.69302pt.
+[85
+
+
+]
+l2hSize :tex2html_wrap_inline9890:9.5pt::9.5pt::30.7953pt.
+[86
+
+
+]
+l2hSize :tex2html_wrap_inline9898:8.2pt::0.0pt::10.0159pt.
+[87
+
+
+]
+l2hSize :tex2html_wrap_inline9900:8.33331pt::0.0pt::7.10136pt.
+[88
+
+
+]
+l2hSize :tex2html_wrap_inline9902:8.83331pt::8.83331pt::27.64291pt.
+[89
+
+
+]
+l2hSize :tex2html_wrap_inline9904:9.91026pt::0.0pt::15.56906pt.
+[90
+
+
+]
+l2hSize :tex2html_wrap_inline9906:9.5pt::9.5pt::30.13559pt.
+[91
+
+
+]
+l2hSize :tex2html_wrap_inline9908:8.33331pt::0.0pt::28.78166pt.
+[92
+
+
+]
+l2hSize :tex2html_wrap_inline9910:8.33331pt::0.0pt::28.78166pt.
+[93
+
+
+]
+l2hSize :tex2html_wrap_inline9912:8.33331pt::0.0pt::28.78166pt.
+[94
+
+
+]
+l2hSize :tex2html_wrap_inline9916:8.2pt::0.0pt::10.11938pt.
+[95
+
+
+]
+l2hSize :tex2html_wrap_inline9922:8.2pt::0.0pt::14.6221pt.
+[96
+
+
+]
+l2hSize :tex2html_wrap_inline9924:9.5pt::9.5pt::35.03748pt.
+[97
+
+
+]
+l2hSize :tex2html_wrap_inline9926:9.5pt::9.5pt::83.45221pt.
+[98
+
+
+]
+l2hSize :tex2html_wrap_inline9930:9.5pt::9.5pt::84.71909pt.
+[99
+
+
+]
+l2hSize :inparaenum488:168.5pt::2.33331pt::349.0pt.
+[100
+
+
+]
+l2hSize :tex2html_wrap_inline9938:7.75pt::0.0pt::7.71252pt.
+[101
+
+
+]
+l2hSize :tex2html_wrap_inline9940:8.79916pt::0.0pt::10.51808pt.
+[102
+
+
+]
+l2hSize :tex2html_wrap_inline9942:9.5pt::9.5pt::28.895pt.
+[103
+
+
+]
+l2hSize :tex2html_wrap_inline9944:9.5pt::9.5pt::85.28166pt.
+[104
+
+
+]
+l2hSize :tex2html_wrap_inline9946:9.29916pt::9.29916pt::51.38905pt.
+[105
+
+
+]
+l2hSize :tex2html_wrap_inline9954:7.75pt::0.0pt::28.07054pt.
+[106
+
+
+]
+l2hSize :tex2html_wrap_inline9956:8.2pt::0.0pt::9.10619pt.
+[107
+
+
+]
+l2hSize :tex2html_wrap_inline9958:11.79965pt::0.0pt::27.26384pt.
+[108
+
+
+]
+l2hSize :tex2html_wrap_inline9961:9.5pt::9.5pt::38.20891pt.
+[109
+
+
+]
+l2hSize :tex2html_wrap_inline9963:7.75pt::0.0pt::7.03053pt.
+[110
+
+
+]
+l2hSize :tex2html_wrap_inline9965:8.25pt::8.25pt::8.22449pt.
+[111
+
+
+]
+l2hSize :tex2html_wrap_inline9971:9.5pt::9.5pt::40.38716pt.
+[112
+
+
+]
+l2hSize :tex2html_wrap_inline9973:8.25pt::8.25pt::6.64789pt.
+[113
+
+
+]
+l2hSize :tex2html_wrap_inline9975:8.25pt::8.25pt::9.22913pt.
+[114
+
+
+]
+l2hSize :inparaenum543:67.0pt::0.0pt::349.0pt.
+[115
+
+
+]
+l2hSize :tex2html_wrap_inline9988:8.2pt::0.0pt::11.24997pt.
+[116
+
+
+]
+l2hSize :tex2html_wrap_inline9990:7.75pt::0.0pt::6.12221pt.
+[117
+
+
+]
+l2hSize :tex2html_wrap_inline9992:8.07693pt::0.0pt::10.87227pt.
+[118
+
+
+]
+l2hSize :tex2html_wrap_inline9994:12.21997pt::12.21997pt::153.83542pt.
+[119
+
+
+]
+l2hSize :inparaenum549:139.5pt::2.33331pt::349.0pt.
+[120
+
+
+]
+l2hSize :tex2html_wrap_inline9998:9.51027pt::0.0pt::14.6436pt.
+[121
+
+
+]
+l2hSize :tex2html_wrap_inline10003:8.7pt::8.7pt::61.79736pt.
+[122
+
+
+]
+l2hSize :tex2html_wrap_inline10005:8.7pt::8.7pt::58.87044pt.
+[123
+
+
+]
+l2hSize :tex2html_wrap_inline10007:8.83331pt::8.83331pt::63.10123pt.
+[124
+
+
+]
+l2hSize :tex2html_wrap_inline10009:8.83331pt::8.83331pt::60.15935pt.
+[125
+
+
+]
+l2hSize :tex2html_wrap_inline10011:8.83331pt::8.83331pt::82.27997pt.
+[126
+
+
+]
+l2hSize :tex2html_wrap_inline10013:8.83331pt::8.83331pt::89.88322pt.
+[127
+
+
+]
+l2hSize :tex2html_wrap_inline10015:8.83331pt::8.83331pt::101.62596pt.
+[128
+
+
+]
+Overfull \hbox (4.2463pt too wide) in paragraph at lines 1033--1034
+\OT1/cmr/m/n/12 the flex-i-bil-ity of the mis-sion, (\OT1/cmr/m/it/12 b\OT1/cmr
+/m/n/12 ) $\OML/cmm/m/it/12 MinConflicts$ \OT1/cmr/m/n/12 ([[]])
+ []
+
+l2hSize :inparaenum577:115.04666pt::2.33331pt::349.0pt.
+[129
+
+
+]
+l2hSize :inparaenum584:96.0pt::0.0pt::349.0pt.
+[130
+
+
+]
+l2hSize :tex2html_wrap_inline10021:8.07693pt::0.0pt::9.5806pt.
+[131
+
+
+]
+l2hSize :tex2html_wrap_inline10023:8.25pt::8.25pt::18.38579pt.
+[132
+
+
+]
+l2hSize :tex2html_wrap_inline10025:8.25pt::8.25pt::22.3529pt.
+[133
+
+
+]
+l2hSize :inparaenum592:212.0pt::2.33331pt::349.0pt.
+[134
+
+
+]
+l2hSize :tex2html_wrap_inline10027:9.5pt::9.5pt::139.66652pt.
+[135
+
+
+]
+l2hSize :tex2html_wrap_inline10029:8.83331pt::8.83331pt::31.574pt.
+[136
+
+
+]
+l2hSize :tex2html_wrap_inline10036:9.5pt::9.5pt::63.74232pt.
+[137
+
+
+]
+l2hSize :tex2html_wrap_inline10038:9.5pt::9.5pt::55.28667pt.
+[138
+
+
+]
+l2hSize :tex2html_wrap_indisplay10041:9.5pt::9.5pt::47.47055pt.
+[139
+
+
+]
+l2hSize :tex2html_wrap_indisplay10043:8.25pt::8.25pt::18.86511pt.
+[140
+
+
+]
+l2hSize :tex2html_wrap_indisplay10045:22.16672pt::22.16672pt::154.01346pt.
+[141
+
+
+]
+l2hSize :tex2html_wrap_indisplay10047:9.5pt::9.5pt::23.80951pt.
+[142
+
+
+]
+l2hSize :tex2html_wrap_indisplay10049:8.25pt::8.25pt::9.72632pt.
+[143
+
+
+]
+l2hSize :tex2html_wrap_indisplay10051:9.5pt::9.5pt::111.298pt.
+[144
+
+
+]
+l2hSize :tex2html_wrap_indisplay10053:9.5pt::9.5pt::23.84909pt.
+[145
+
+
+]
+l2hSize :tex2html_wrap_indisplay10057:15.10147pt::15.10147pt::127.08548pt.
+[146
+
+
+]
+l2hSize :tex2html_wrap_inline10059:9.5pt::9.5pt::23.80951pt.
+[147
+
+
+]
+l2hSize :tex2html_wrap_inline10063:9.5pt::9.5pt::23.84909pt.
+[148
+
+
+]
+l2hSize :inparaenum633:38.0pt::3.0pt::349.0pt.
+[149
+
+
+]
+l2hSize :tex2html_wrap_inline10065:12.60628pt::12.60628pt::165.42542pt.
+[150
+
+
+]
+l2hSize :tex2html_wrap_inline10067:9.5pt::9.5pt::33.93233pt.
+[151
+
+
+]
+l2hSize :tex2html_wrap_inline10071:8.25pt::8.25pt::6.74718pt.
+[152
+
+
+]
+l2hSize :tex2html_wrap_inline10073:8.25pt::8.25pt::9.42726pt.
+[153
+
+
+]
+l2hSize :tex2html_wrap_inline10075:7.86708pt::0.0pt::4.59593pt.
+[154
+
+
+]
+l2hSize :tex2html_wrap_inline10077:8.25pt::8.25pt::9.51616pt.
+[155
+
+
+]
+l2hSize :tex2html_wrap_inline10079:8.83331pt::8.83331pt::21.77277pt.
+[156
+
+
+]
+l2hSize :tex2html_wrap_inline10081:10.99516pt::10.99516pt::195.21281pt.
+[157
+
+
+]
+l2hSize :tex2html_wrap_inline10083:8.83331pt::8.83331pt::30.61594pt.
+[158
+
+
+]
+l2hSize :tex2html_wrap_inline10087:9.5pt::9.5pt::82.76353pt.
+[159
+
+
+]
+l2hSize :tex2html_wrap_inline10093:9.5pt::9.5pt::38.56003pt.
+[160
+
+
+]
+l2hSize :tex2html_wrap_inline10095:10.99516pt::10.99516pt::41.48479pt.
+[161
+
+
+]
+l2hSize :tex2html_wrap_inline10103:8.33331pt::0.0pt::7.44162pt.
+[162
+
+
+]
+l2hSize :tex2html_wrap_inline10105:8.7pt::8.7pt::28.71371pt.
+[163
+
+
+]
+l2hSize :tex2html_wrap_inline10107:7.75pt::0.0pt::47.98299pt.
+[164
+
+
+]
+l2hSize :tex2html_wrap_inline10109:8.7pt::8.7pt::30.23033pt.
+[165
+
+
+]
+l2hSize :tex2html_wrap_inline10111:8.07693pt::0.0pt::12.43336pt.
+[166
+
+
+]
+l2hSize :tex2html_wrap_inline10113:9.5pt::9.5pt::19.50401pt.
+[167
+
+
+]
+l2hSize :tex2html_wrap_inline10115:7.75pt::0.0pt::4.83054pt.
+[168
+
+
+]
+l2hSize :tex2html_wrap_inline10117:9.5pt::9.5pt::20.13731pt.
+[169
+
+
+]
+l2hSize :tex2html_wrap_inline10119:8.83331pt::8.83331pt::20.16194pt.
+[170
+
+
+]
+l2hSize :tex2html_wrap_inline10121:9.5pt::9.5pt::50.10329pt.
+[171
+
+
+]
+l2hSize :tex2html_wrap_inline10123:9.5pt::9.5pt::35.18121pt.
+[172
+
+
+]
+l2hSize :tex2html_wrap_indisplay10127:21.50017pt::21.50017pt::203.23929pt.
+[173
+
+
+]
+l2hSize :tex2html_wrap_inline10129:8.36708pt::8.36708pt::6.1237pt.
+[174
+
+
+]
+l2hSize :tex2html_wrap_indisplay10134:19.34549pt::19.34549pt::333.49792pt.
+[175
+
+
+]
+l2hSize :tex2html_wrap_indisplay10136:11.01025pt::11.01025pt::132.95056pt.
+[176
+
+
+]
+l2hSize :tex2html_wrap_inline10138:10.1434pt::10.1434pt::47.42331pt.
+[177
+
+
+]
+l2hSize :tex2html_wrap_inline10144:10.1434pt::10.1434pt::74.2524pt.
+[178
+
+
+]
+l2hSize :tex2html_wrap_inline10150:8.83331pt::8.83331pt::92.79428pt.
+[179
+
+
+]
+l2hSize :tex2html_wrap_inline10154:8.7pt::8.7pt::26.15848pt.
+[180
+
+
+]
+l2hSize :tex2html_wrap_inline10158:8.83331pt::8.83331pt::47.55753pt.
+[181
+
+
+]
+l2hSize :tex2html_wrap_inline10160:9.91026pt::0.0pt::13.06363pt.
+[182
+
+
+]
+l2hSize :tex2html_wrap_inline10162:8.83331pt::8.83331pt::57.34448pt.
+[183
+
+
+]
+l2hSize :inparaenum708:38.0pt::2.33331pt::349.0pt.
+[184
+
+
+]
+l2hSize :tex2html_wrap_inline10169:8.25pt::8.25pt::13.7655pt.
+[185
+
+
+]
+l2hSize :tex2html_wrap_inline10171:8.25pt::8.25pt::12.55623pt.
+[186
+
+
+]
+l2hSize :tex2html_wrap_inline10176:8.7pt::8.7pt::14.27875pt.
+[187
+
+
+]
+l2hSize :tex2html_wrap_inline10181:8.7pt::8.7pt::49.32303pt.
+[188
+
+
+]
+l2hSize :tex2html_wrap_inline10188:8.25pt::8.25pt::6.64441pt.
+[189
+
+
+]
+l2hSize :tex2html_wrap_inline10190:9.5pt::9.5pt::26.47826pt.
+[190
+
+
+]
+l2hSize :tex2html_wrap_inline10192:9.5pt::9.5pt::22.73727pt.
+[191
+
+
+]
+l2hSize :tex2html_wrap_inline10196:9.5pt::9.5pt::83.32582pt.
+[192
+
+
+]
+l2hSize :tex2html_wrap_inline10202:9.5pt::9.5pt::34.52357pt.
+[193
+
+
+]
+l2hSize :tex2html_wrap_inline10210:9.5pt::9.5pt::162.40419pt.
+[194
+
+
+]
+l2hSize :tex2html_wrap_inline10212:9.5pt::9.5pt::241.83734pt.
+[195
+
+
+]
+l2hSize :tex2html_wrap_inline10214:9.5pt::9.5pt::25.24422pt.
+[196
+
+
+]
+l2hSize :tex2html_wrap_inline10220:9.5pt::9.5pt::28.40396pt.
+[197
+
+
+]
+l2hSize :tex2html_wrap_inline10222:9.5pt::9.5pt::24.63177pt.
+[198
+
+
+]
+l2hSize :tex2html_wrap_inline10232:14.71834pt::14.71834pt::145.72678pt.
+[199
+
+
+]
+l2hSize :tex2html_wrap_inline10234:9.5pt::9.5pt::20.0297pt.
+[200
+
+
+]
+l2hSize :tex2html_wrap_inline10239:8.7pt::8.7pt::17.04729pt.
+[201
+
+
+]
+l2hSize :tex2html_wrap_inline10241:8.7pt::8.7pt::15.80746pt.
+[202
+
+
+]
+l2hSize :tex2html_wrap_inline10243:8.7pt::8.7pt::16.4047pt.
+[203
+
+
+]
+l2hSize :tex2html_wrap_inline10248:8.25pt::8.25pt::15.61525pt.
+[204
+
+
+]
+l2hSize :tex2html_wrap_inline10250:8.25pt::8.25pt::15.61525pt.
+[205
+
+
+]
+l2hSize :tex2html_wrap_inline10257:9.50008pt::9.50008pt::63.72615pt.
+[206
+
+
+]
+l2hSize :tex2html_wrap_inline10260:8.7pt::8.7pt::17.99223pt.
+[207
+
+
+]
+l2hSize :tex2html_wrap_inline10262:8.7pt::8.7pt::24.67787pt.
+[208
+
+
+]
+l2hSize :tex2html_wrap_inline10264:8.25pt::8.25pt::30.5896pt.
+[209
+
+
+]
+l2hSize :tex2html_wrap_inline10266:8.25pt::8.25pt::18.71216pt.
+[210
+
+
+]
+l2hSize :tex2html_wrap_inline10270:8.7pt::8.7pt::23.56593pt.
+[211
+
+
+]
+l2hSize :tex2html_wrap_inline10272:9.5pt::9.5pt::20.89006pt.
+[212
+
+
+]
+l2hSize :tex2html_wrap_inline10274:7.75pt::0.0pt::6.75551pt.
+[213
+
+
+]
+l2hSize :tex2html_wrap_inline10280:8.0075pt::0.0pt::17.08746pt.
+[214
+
+
+]
+l2hSize :tex2html_wrap_inline10282:10.01027pt::10.01027pt::69.2984pt.
+[215
+
+
+]
+l2hSize :tex2html_wrap_inline10284:8.25pt::8.25pt::15.12233pt.
+[216
+
+
+]
+l2hSize :tex2html_wrap_inline10286:8.25pt::8.25pt::61.37292pt.
+[217
+
+
+]
+l2hSize :tex2html_wrap_indisplay10292:17.3223pt::17.3223pt::120.44476pt.
+[218
+
+
+]
+l2hSize :tex2html_wrap_inline10294:7.75pt::0.0pt::45.63284pt.
+[219
+
+
+]
+l2hSize :tex2html_wrap_inline10296:7.75pt::0.0pt::6.58052pt.
+[220
+
+
+]
+l2hSize :tex2html_wrap_indisplay10298:17.61809pt::17.61809pt::134.69931pt.
+[221
+
+
+]
+l2hSize :tex2html_wrap_inline10304:8.7pt::8.7pt::28.60905pt.
+[222
+
+
+]
+l2hSize :tex2html_wrap_inline10306:9.5pt::9.5pt::20.65675pt.
+[223
+
+
+]
+l2hSize :tex2html_wrap_inline10308:9.5pt::9.5pt::84.20087pt.
+[224
+
+
+]
+l2hSize :tex2html_wrap_indisplay10314:17.3223pt::17.3223pt::136.70058pt.
+[225
+
+
+]
+l2hSize :tex2html_wrap_inline10316:9.5pt::9.5pt::21.68037pt.
+[226
+
+
+]
+l2hSize :tex2html_wrap_inline10320:9.5pt::9.5pt::35.98509pt.
+[227
+
+
+]
+l2hSize :tex2html_wrap_indisplay10330:17.3223pt::17.3223pt::126.53276pt.
+[228
+
+
+]
+l2hSize :tex2html_wrap_inline10332:9.5pt::9.5pt::38.7912pt.
+[229
+
+
+]
+l2hSize :tex2html_wrap_inline10338:8.7pt::8.7pt::27.19237pt.
+[230
+
+
+]
+l2hSize :tex2html_wrap_inline10340:8.7pt::8.7pt::24.13817pt.
+[231
+
+
+]
+l2hSize :tex2html_wrap_indisplay10342:17.3223pt::17.3223pt::94.67444pt.
+[232
+
+
+]
+l2hSize :tex2html_wrap_inline10344:9.5pt::9.5pt::31.4157pt.
+[233
+
+
+]
+l2hSize :tex2html_wrap_inline10354:9.5pt::9.5pt::33.77606pt.
+[234
+
+
+]
+l2hSize :tex2html_wrap_indisplay10356:17.3223pt::17.3223pt::134.17957pt.
+[235
+
+
+]
+l2hSize :tex2html_wrap_inline10358:9.5pt::9.5pt::46.55023pt.
+[236
+
+
+]
+l2hSize :tex2html_wrap_inline10360:9.5pt::9.5pt::32.24411pt.
+[237
+
+
+]
+l2hSize :tex2html_wrap_inline10368:8.7pt::8.7pt::23.33818pt.
+[238
+
+
+]
+l2hSize :tex2html_wrap_inline10370:8.7pt::8.7pt::21.54507pt.
+[239
+
+
+]
+l2hSize :tex2html_wrap_inline10374:8.7pt::8.7pt::39.99197pt.
+[240
+
+
+]
+l2hSize :tex2html_wrap_inline10376:8.7pt::8.7pt::97.39413pt.
+[241
+
+
+]
+File: figures/baz_plot.eps Graphic file (type eps)
+<figures/baz_plot.eps>
+l2hSize :tex2html_wrap10379:0.0pt::126.47249pt::349.0pt.
+[242
+
+
+]
+l2hSize :tex2html_wrap_indisplay10384:8.83331pt::8.83331pt::381.46423pt.
+
+Overfull \hbox (35.84921pt too wide) in paragraph at lines 1737--1738
+[]|[] 
+ []
+
+[243
+
+
+]
+l2hSize :note1405:74.53331pt::0.0pt::349.0pt.
+[244
+
+
+]
+l2hSize :note1408:30.36662pt::0.0pt::349.0pt.
+[245
+
+
+]
+Underfull \hbox (badness 4954) in paragraph at lines 1756--1756
+[]\OT1/cmr/m/n/12 Useful link to Bresina's the-sis chapt3 has notes on con-
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 1756--1756
+\OT1/cmr/m/n/12 tention and de-mand pro-files - these equate roughly to my
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1756--1756
+\OT1/cmr/m/n/12 ag-gre-gate de-mand pro-files and track-ing met-ric http://ic-
+ []
+
+l2hSize :note1410:60.03331pt::0.0pt::349.0pt.
+[246
+
+
+]
+l2hSize :tex2html_wrap_inline10388:9.5pt::9.5pt::21.65965pt.
+[247
+
+
+]
+l2hSize :tex2html_wrap_inline10392:9.5pt::9.5pt::55.44513pt.
+[248
+
+
+]
+l2hSize :tex2html_wrap_inline10394:8.25pt::8.25pt::9.22913pt.
+[249
+
+
+]
+l2hSize :tex2html_wrap_inline10396:9.50008pt::9.50008pt::25.49808pt.
+[250
+
+
+]
+l2hSize :tex2html_wrap_inline10398:9.5pt::9.5pt::36.58308pt.
+[251
+
+
+]
+l2hSize :tex2html_wrap_inline10400:9.5pt::9.5pt::37.56133pt.
+[252
+
+
+]
+l2hSize :tex2html_wrap_inline10402:9.5pt::9.5pt::24.0507pt.
+[253
+
+
+]
+l2hSize :tex2html_wrap_inline10404:9.5pt::9.5pt::25.40681pt.
+[254
+
+
+]
+l2hSize :tex2html_wrap_inline10406:9.5pt::9.5pt::54.74493pt.
+[255
+
+
+]
+l2hSize :tex2html_wrap_indisplay10408:18.68639pt::18.68639pt::308.64418pt.
+[256
+
+
+]
+l2hSize :tex2html_wrap_inline10410:8.25pt::8.25pt::11.67354pt.
+[257
+
+
+]
+l2hSize :tex2html_wrap_inline10412:10.41026pt::10.41026pt::14.5914pt.
+[258
+
+
+]
+l2hSize :tex2html_wrap_inline10414:8.25pt::8.25pt::14.4081pt.
+[259
+
+
+]
+l2hSize :tex2html_wrap_inline10416:9.5pt::9.5pt::32.02252pt.
+[260
+
+
+]
+l2hSize :tex2html_wrap_inline10418:8.25pt::8.25pt::13.42986pt.
+[261
+
+
+]
+l2hSize :tex2html_wrap_inline10420:9.5pt::9.5pt::31.04428pt.
+[262
+
+
+]
+l2hSize :tex2html_wrap_inline10422:8.25pt::8.25pt::10.08884pt.
+[263
+
+
+]
+l2hSize :tex2html_wrap_inline10427:9.5pt::9.5pt::34.52817pt.
+[264
+
+
+]
+l2hSize :tex2html_wrap_inline10433:9.5pt::9.5pt::39.27823pt.
+[265
+
+
+]
+l2hSize :tex2html_wrap_inline10435:7.75pt::0.0pt::7.60133pt.
+[266
+
+
+]
+l2hSize :tex2html_wrap_inline10443:9.50008pt::9.50008pt::100.50629pt.
+[267
+
+
+]
+l2hSize :tex2html_wrap_inline10445:9.5pt::9.5pt::64.14236pt.
+[268
+
+
+]
+l2hSize :tex2html_wrap_inline10447:9.50008pt::9.50008pt::111.6235pt.
+[269
+
+
+]
+l2hSize :tex2html_wrap_inline10450:12.21997pt::12.21997pt::98.68115pt.
+[270
+
+
+]
+l2hSize :tex2html_wrap_inline10452:9.5pt::9.5pt::201.03741pt.
+[271
+
+
+]
+l2hSize :tex2html_wrap_inline10454:8.25pt::8.25pt::9.27365pt.
+[272
+
+
+]
+l2hSize :tex2html_wrap_inline10456:9.5pt::9.5pt::95.80446pt.
+[273
+
+
+]
+l2hSize :tex2html_wrap_inline10458:8.83331pt::8.83331pt::29.89671pt.
+[274
+
+
+]
+l2hSize :tex2html_wrap_inline10460:8.83331pt::8.83331pt::105.21693pt.
+[275
+
+
+]
+l2hSize :note1450:828.53331pt::0.0pt::349.0pt.
+[276
+
+
+]
+Overfull \vbox (107.11993pt too high) has occurred while \output is active []
+
+[277]
+File: figures/ecs/met_nightly_stats_tech2005.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_tech2005.eps>
+l2hSize :tex2html_wrap10468:0.0pt::202.3529pt::349.0pt.
+[278
+
+
+]
+File: figures/ecs/met_nightly_stats_tech2006.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_tech2006.eps>
+l2hSize :tex2html_wrap10469:0.0pt::202.3529pt::349.0pt.
+[279
+
+
+]
+File: figures/ecs/met_nightly_stats_tech2007.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_tech2007.eps>
+l2hSize :tex2html_wrap10470:0.0pt::202.3529pt::349.0pt.
+[280
+
+
+]
+File: figures/ecs/tech_loss_frac.eps Graphic file (type eps)
+<figures/ecs/tech_loss_frac.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 1982
+ [] 
+ []
+
+l2hSize :tex2html_wrap10477:0.0pt::252.94499pt::349.0pt.
+[281
+
+
+]
+File: figures/ecs/monthly_tech_stats.eps Graphic file (type eps)
+<figures/ecs/monthly_tech_stats.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 1988
+ [] 
+ []
+
+l2hSize :tex2html_wrap10481:0.0pt::252.94499pt::349.0pt.
+[282
+
+
+]
+l2hSize :tex2html_wrap_inline10486:8.25pt::8.25pt::24.80948pt.
+[283
+
+
+]
+l2hSize :tex2html_wrap_inline10488:8.25pt::8.25pt::24.80948pt.
+[284
+
+
+]
+l2hSize :tex2html_wrap_inline10490:8.25pt::8.25pt::24.80948pt.
+[285
+
+
+]
+l2hSize :tex2html_wrap_inline10492:8.25pt::8.25pt::24.80948pt.
+[286
+
+
+]
+l2hSize :tex2html_wrap_inline10494:8.25pt::8.25pt::18.93454pt.
+[287
+
+
+]
+l2hSize :tex2html_wrap_inline10496:8.25pt::8.25pt::28.07333pt.
+[288
+
+
+]
+l2hSize :tex2html_wrap_inline10498:10.01027pt::10.01027pt::51.9831pt.
+[289
+
+
+]
+l2hSize :tex2html_wrap_inline10500:10.01027pt::10.01027pt::51.9831pt.
+[290
+
+
+]
+l2hSize :tex2html_wrap_inline10502:10.01027pt::10.01027pt::51.9831pt.
+[291
+
+
+]
+l2hSize :tex2html_wrap_inline10504:8.5075pt::8.5075pt::32.8234pt.
+[292
+
+
+]
+l2hSize :tex2html_wrap_inline10506:8.5075pt::8.5075pt::32.8234pt.
+[293
+
+
+]
+l2hSize :tex2html_wrap_inline10508:8.5075pt::8.5075pt::38.69833pt.
+[294
+
+
+]
+File: figures/ecs/gap_dist.eps Graphic file (type eps)
+<figures/ecs/gap_dist.eps>
+l2hSize :tex2html_wrap10545:0.0pt::202.3529pt::349.0pt.
+[295
+
+
+]
+File: figures/ecs/hum.dat.eps Graphic file (type eps)
+<figures/ecs/hum.dat.eps>
+l2hSize :tex2html_wrap10550:0.0pt::202.3529pt::349.0pt.
+[296
+
+
+]
+File: figures/ecs/hum_cum.dat.eps Graphic file (type eps)
+<figures/ecs/hum_cum.dat.eps>
+l2hSize :tex2html_wrap10554:0.0pt::202.3529pt::349.0pt.
+[297
+
+
+]
+File: figures/ecs/moist.dat.eps Graphic file (type eps)
+<figures/ecs/moist.dat.eps>
+l2hSize :tex2html_wrap10558:0.0pt::202.3529pt::349.0pt.
+[298
+
+
+]
+File: figures/ecs/moist_cum.dat.eps Graphic file (type eps)
+<figures/ecs/moist_cum.dat.eps>
+l2hSize :tex2html_wrap10562:0.0pt::202.3529pt::349.0pt.
+[299
+
+
+]
+File: figures/ecs/ws_25.dat.eps Graphic file (type eps)
+<figures/ecs/ws_25.dat.eps>
+l2hSize :tex2html_wrap10566:0.0pt::202.3529pt::349.0pt.
+[300
+
+
+]
+File: figures/ecs/ws_25_cum.dat.eps Graphic file (type eps)
+<figures/ecs/ws_25_cum.dat.eps>
+l2hSize :tex2html_wrap10570:0.0pt::202.3529pt::349.0pt.
+[301
+
+
+]
+File: figures/ecs/temp_1525.dat.eps Graphic file (type eps)
+<figures/ecs/temp_1525.dat.eps>
+l2hSize :tex2html_wrap10574:0.0pt::202.3529pt::349.0pt.
+[302
+
+
+]
+File: figures/ecs/temp_1525_cum.dat.eps Graphic file (type eps)
+<figures/ecs/temp_1525_cum.dat.eps>
+l2hSize :tex2html_wrap10578:0.0pt::202.3529pt::349.0pt.
+[303
+
+
+]
+File: figures/ecs/hum_frac_time.eps Graphic file (type eps)
+<figures/ecs/hum_frac_time.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2124
+ [] 
+ []
+
+l2hSize :tex2html_wrap10601:0.0pt::252.94499pt::349.0pt.
+[304
+
+
+]
+File: figures/ecs/hum_1_2007_01_29.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_01_29.eps>
+l2hSize :tex2html_wrap10602:0.0pt::126.47249pt::349.0pt.
+[305
+
+
+]
+File: figures/ecs/hum_1_2007_02_20.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_02_20.eps>
+l2hSize :tex2html_wrap10603:0.0pt::126.47249pt::349.0pt.
+[306
+
+
+]
+File: figures/ecs/hum_1_2007_03_26.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_03_26.eps>
+l2hSize :tex2html_wrap10604:0.0pt::126.47249pt::349.0pt.
+[307
+
+
+]
+File: figures/ecs/hum_1_2007_03_28.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_03_28.eps>
+l2hSize :tex2html_wrap10605:0.0pt::126.47249pt::349.0pt.
+[308
+
+
+]
+File: figures/ecs/hum_1_2007_04_15.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_04_15.eps>
+l2hSize :tex2html_wrap10606:0.0pt::126.47249pt::349.0pt.
+[309
+
+
+]
+File: figures/ecs/hum_1_2007_04_16.eps Graphic file (type eps)
+<figures/ecs/hum_1_2007_04_16.eps>
+l2hSize :tex2html_wrap10607:0.0pt::126.47249pt::349.0pt.
+[310
+
+
+]
+l2hSize :tex2html_wrap_inline10616:7.75pt::0.0pt::27.31293pt.
+[311
+
+
+]
+l2hSize :tex2html_wrap_inline10618:8.25pt::8.25pt::26.79555pt.
+[312
+
+
+]
+l2hSize :tex2html_wrap_inline10621:9.5pt::9.5pt::54.21143pt.
+[313
+
+
+]
+l2hSize :tex2html_wrap_inline10623:7.75pt::0.0pt::10.86519pt.
+[314
+
+
+]
+File: figures/ecs/good_bad_hum_bin.eps Graphic file (type eps)
+<figures/ecs/good_bad_hum_bin.eps>
+l2hSize :tex2html_wrap10627:0.0pt::202.3529pt::349.0pt.
+[315
+
+
+]
+File: figures/ecs/good_bad_cumhum_bin.eps Graphic file (type eps)
+<figures/ecs/good_bad_cumhum_bin.eps>
+l2hSize :tex2html_wrap10631:0.0pt::202.3529pt::349.0pt.
+[316
+
+
+]
+l2hSize :tex2html_wrap_inline10633:8.25pt::8.25pt::12.81366pt.
+[317
+
+
+]
+l2hSize :tex2html_wrap_inline10635:8.25pt::8.25pt::12.99588pt.
+[318
+
+
+]
+l2hSize :tex2html_wrap_indisplay10641:32.5557pt::32.5557pt::245.69452pt.
+[319
+
+
+]
+File: figures/ecs/gbc_period.eps Graphic file (type eps)
+<figures/ecs/gbc_period.eps>
+l2hSize :tex2html_wrap10645:0.0pt::202.3529pt::349.0pt.
+[320
+
+
+]
+File: figures/ecs/gbc_predict.eps Graphic file (type eps)
+<figures/ecs/gbc_predict.eps>
+l2hSize :tex2html_wrap10649:0.0pt::202.3529pt::349.0pt.
+[321
+
+
+]
+File: figures/ecs/m_crossover.eps Graphic file (type eps)
+<figures/ecs/m_crossover.eps>
+l2hSize :tex2html_wrap10653:0.0pt::202.3529pt::349.0pt.
+[322
+
+
+]
+l2hSize :tex2html_wrap_inline10656:8.7pt::8.7pt::20.07922pt.
+[323
+
+
+]
+File: figures/ecs/monthly_weather_stats.eps Graphic file (type eps)
+<figures/ecs/monthly_weather_stats.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2246
+ [] 
+ []
+
+l2hSize :tex2html_wrap10660:0.0pt::252.94499pt::349.0pt.
+[324
+
+
+]
+File: figures/ecs/met_nightly_stats_weather2005.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_weather2005.eps>
+l2hSize :tex2html_wrap10661:0.0pt::202.3529pt::349.0pt.
+[325
+
+
+]
+File: figures/ecs/met_nightly_stats_weather2006.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_weather2006.eps>
+l2hSize :tex2html_wrap10662:0.0pt::202.3529pt::349.0pt.
+[326
+
+
+]
+File: figures/ecs/met_nightly_stats_weather2007.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_weather2007.eps>
+l2hSize :tex2html_wrap10663:0.0pt::202.3529pt::349.0pt.
+[327
+
+
+]
+File: figures/ecs/met_nightly_stats_obs2005.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_obs2005.eps>
+l2hSize :tex2html_wrap10667:0.0pt::202.3529pt::349.0pt.
+[328
+
+
+]
+File: figures/ecs/met_nightly_stats_obs2006.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_obs2006.eps>
+l2hSize :tex2html_wrap10668:0.0pt::202.3529pt::349.0pt.
+[329
+
+
+]
+File: figures/ecs/met_nightly_stats_obs2007.eps Graphic file (type eps)
+<figures/ecs/met_nightly_stats_obs2007.eps>
+l2hSize :tex2html_wrap10669:0.0pt::202.3529pt::349.0pt.
+[330
+
+
+]
+File: figures/ecs/run_len_thresh.eps Graphic file (type eps)
+<figures/ecs/run_len_thresh.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2289
+ [] 
+ []
+
+l2hSize :tex2html_wrap10679:0.0pt::252.94499pt::349.0pt.
+[331
+
+
+]
+File: figures/ecs/corr_monthly_bins.eps Graphic file (type eps)
+<figures/ecs/corr_monthly_bins.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2298
+ [] 
+ []
+
+l2hSize :tex2html_wrap10686:0.0pt::252.94499pt::349.0pt.
+[332
+
+
+]
+File: figures/ecs/seeing_dist.eps Graphic file (type eps)
+<figures/ecs/seeing_dist.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2304
+ [] 
+ []
+
+l2hSize :tex2html_wrap10690:0.0pt::252.94499pt::349.0pt.
+[333
+
+
+]
+File: figures/ecs/cum_seeing_dist.eps Graphic file (type eps)
+<figures/ecs/cum_seeing_dist.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2310
+ [] 
+ []
+
+l2hSize :tex2html_wrap10694:0.0pt::252.94499pt::349.0pt.
+[334
+
+
+]
+File: figures/ecs/corr_see_ut.eps Graphic file (type eps)
+<figures/ecs/corr_see_ut.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2316
+ [] 
+ []
+
+l2hSize :tex2html_wrap10728:0.0pt::252.94499pt::349.0pt.
+[335
+
+
+]
+File: figures/ecs/ut_bin_counts.eps Graphic file (type eps)
+<figures/ecs/ut_bin_counts.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2322
+ [] 
+ []
+
+l2hSize :tex2html_wrap10732:0.0pt::252.94499pt::349.0pt.
+[336
+
+
+]
+File: figures/ecs/corr_see_monthly.eps Graphic file (type eps)
+<figures/ecs/corr_see_monthly.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2328
+ [] 
+ []
+
+l2hSize :tex2html_wrap10736:0.0pt::252.94499pt::349.0pt.
+[337
+
+
+]
+File: figures/ecs/corr_see_dist_all.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_all.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2334
+ [] 
+ []
+
+l2hSize :tex2html_wrap10740:0.0pt::252.94499pt::349.0pt.
+[338
+
+
+]
+File: figures/ecs/corr_see_dist_jan.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_jan.eps>
+l2hSize :tex2html_wrap10741:0.0pt::126.47249pt::349.0pt.
+[339
+
+
+]
+File: figures/ecs/corr_see_dist_feb.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_feb.eps>
+l2hSize :tex2html_wrap10742:0.0pt::126.47249pt::349.0pt.
+[340
+
+
+]
+File: figures/ecs/corr_see_dist_mar.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_mar.eps>
+l2hSize :tex2html_wrap10743:0.0pt::126.47249pt::349.0pt.
+[341
+
+
+]
+File: figures/ecs/corr_see_dist_apr.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_apr.eps>
+l2hSize :tex2html_wrap10744:0.0pt::126.47249pt::349.0pt.
+[342
+
+
+]
+File: figures/ecs/corr_see_dist_may.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_may.eps>
+l2hSize :tex2html_wrap10745:0.0pt::126.47249pt::349.0pt.
+[343
+
+
+]
+File: figures/ecs/corr_see_dist_jun.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_jun.eps>
+l2hSize :tex2html_wrap10746:0.0pt::126.47249pt::349.0pt.
+[344
+
+
+]
+File: figures/ecs/corr_see_dist_jul.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_jul.eps>
+l2hSize :tex2html_wrap10750:0.0pt::126.47249pt::349.0pt.
+[345
+
+
+]
+File: figures/ecs/corr_see_dist_aug.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_aug.eps>
+l2hSize :tex2html_wrap10751:0.0pt::126.47249pt::349.0pt.
+[346
+
+
+]
+File: figures/ecs/corr_see_dist_sep.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_sep.eps>
+l2hSize :tex2html_wrap10752:0.0pt::126.47249pt::349.0pt.
+[347
+
+
+]
+File: figures/ecs/corr_see_dist_oct.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_oct.eps>
+l2hSize :tex2html_wrap10753:0.0pt::126.47249pt::349.0pt.
+[348
+
+
+]
+File: figures/ecs/corr_see_dist_nov.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_nov.eps>
+l2hSize :tex2html_wrap10754:0.0pt::126.47249pt::349.0pt.
+[349
+
+
+]
+File: figures/ecs/corr_see_dist_dec.eps Graphic file (type eps)
+<figures/ecs/corr_see_dist_dec.eps>
+l2hSize :tex2html_wrap10755:0.0pt::126.47249pt::349.0pt.
+[350
+
+
+]
+l2hSize :tex2html_wrap_inline10775:8.7pt::8.7pt::20.62392pt.
+[351
+
+
+]
+l2hSize :tex2html_wrap_inline10777:8.7pt::8.7pt::20.86003pt.
+[352
+
+
+]
+l2hSize :tex2html_wrap_inline10779:8.7pt::8.7pt::21.12993pt.
+[353
+
+
+]
+l2hSize :tex2html_wrap_inline10781:8.7pt::8.7pt::20.7517pt.
+[354
+
+
+]
+l2hSize :tex2html_wrap_inline10783:8.7pt::8.7pt::20.16742pt.
+[355
+
+
+]
+l2hSize :tex2html_wrap_inline10785:8.7pt::8.7pt::53.1188pt.
+[356
+
+
+]
+l2hSize :tex2html_wrap_inline10787:8.7pt::8.7pt::30.59677pt.
+[357
+
+
+]
+l2hSize :tex2html_wrap_inline10789:8.7pt::8.7pt::36.94438pt.
+[358
+
+
+]
+l2hSize :tex2html_wrap_inline10820:8.2pt::0.0pt::13.20828pt.
+[359
+
+
+]
+l2hSize :tex2html_wrap_inline10822:7.75pt::0.0pt::11.83752pt.
+[360
+
+
+]
+l2hSize :tex2html_wrap_inline10824:9.5pt::9.5pt::22.44508pt.
+[361
+
+
+]
+l2hSize :tex2html_wrap_inline10827:8.83331pt::8.83331pt::11.77736pt.
+[362
+
+
+]
+l2hSize :tex2html_wrap_inline10829:8.83331pt::8.83331pt::18.35979pt.
+[363
+
+
+]
+l2hSize :tex2html_wrap_inline10833:8.83331pt::8.83331pt::27.6234pt.
+[364
+
+
+]
+l2hSize :tex2html_wrap_inline10839:8.83331pt::8.83331pt::15.88576pt.
+[365
+
+
+]
+l2hSize :tex2html_wrap_inline10841:8.83331pt::8.83331pt::15.50243pt.
+[366
+
+
+]
+l2hSize :tex2html_wrap_inline10843:8.83331pt::8.83331pt::23.69972pt.
+[367
+
+
+]
+l2hSize :tex2html_wrap_inline10845:8.83331pt::8.83331pt::18.69598pt.
+[368
+
+
+]
+l2hSize :tex2html_wrap_inline10847:8.83331pt::8.83331pt::23.23401pt.
+[369
+
+
+]
+l2hSize :tex2html_wrap_inline10849:8.83331pt::8.83331pt::19.93718pt.
+[370
+
+
+]
+l2hSize :tex2html_wrap_inline10851:8.83331pt::8.83331pt::27.77203pt.
+[371
+
+
+]
+l2hSize :tex2html_wrap_inline10853:8.83331pt::8.83331pt::11.15791pt.
+[372
+
+
+]
+l2hSize :tex2html_wrap_inline10855:8.83331pt::8.83331pt::11.39403pt.
+[373
+
+
+]
+l2hSize :tex2html_wrap_inline10857:8.83331pt::8.83331pt::23.14508pt.
+[374
+
+
+]
+l2hSize :tex2html_wrap_inline10859:8.83331pt::8.83331pt::20.20432pt.
+[375
+
+
+]
+l2hSize :tex2html_wrap_inline10861:8.83331pt::8.83331pt::14.43712pt.
+[376
+
+
+]
+Underfull \hbox (badness 10000) detected at line 2592
+[][]
+ []
+
+l2hSize :algorithm2807:72.83322pt::0.0pt::349.0pt.
+[377
+
+
+]
+Underfull \hbox (badness 10000) detected at line 2606
+[][]
+ []
+
+l2hSize :algorithm2816:72.83322pt::0.0pt::349.0pt.
+[378
+
+
+]
+l2hSize :tex2html_wrap_inline10864:8.33331pt::0.0pt::6.2416pt.
+[379
+
+
+]
+File: figures/sim_framework.eps Graphic file (type eps)
+<figures/sim_framework.eps>
+l2hSize :tex2html_wrap10867:170.71652pt::0.0pt::349.0pt.
+[380
+
+
+]
+l2hSize :tex2html_wrap_inline10872:8.7pt::8.7pt::22.66818pt.
+[381
+
+
+]
+File: figures/simf_exec_plot.eps Graphic file (type eps)
+<figures/simf_exec_plot.eps>
+l2hSize :tex2html_wrap10880:0.0pt::119.502pt::349.0pt.
+[382
+
+
+]
+l2hSize :tex2html_wrap_inline10883:9.50008pt::9.50008pt::13.25423pt.
+[383
+
+
+]
+l2hSize :tex2html_wrap_inline10893:8.7pt::8.7pt::25.86343pt.
+[384
+
+
+]
+l2hSize :tex2html_wrap_inline10895:8.7pt::8.7pt::26.02734pt.
+[385
+
+
+]
+l2hSize :tex2html_wrap_inline10897:8.7pt::8.7pt::38.06956pt.
+[386
+
+
+]
+l2hSize :tex2html_wrap_inline10899:8.7pt::8.7pt::25.67128pt.
+[387
+
+
+]
+l2hSize :tex2html_wrap_inline10901:8.7pt::8.7pt::25.83519pt.
+[388
+
+
+]
+l2hSize :tex2html_wrap_inline10903:8.7pt::8.7pt::37.87741pt.
+[389
+
+
+]
+l2hSize :tex2html_wrap_inline10905:8.7pt::8.7pt::24.63657pt.
+[390
+
+
+]
+l2hSize :tex2html_wrap_inline10907:8.7pt::8.7pt::24.80048pt.
+[391
+
+
+]
+l2hSize :tex2html_wrap_inline10909:8.7pt::8.7pt::36.8427pt.
+[392
+
+
+]
+File: figures/cdtrend.eps Graphic file (type eps)
+<figures/cdtrend.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2705
+ [] 
+ []
+
+l2hSize :tex2html_wrap11004:0.0pt::252.94499pt::349.0pt.
+[393
+
+
+]
+File: figures/cdmax.eps Graphic file (type eps)
+<figures/cdmax.eps>
+Overfull \hbox (12.34999pt too wide) detected at line 2711
+ [] 
+ []
+
+l2hSize :tex2html_wrap11007:0.0pt::252.94499pt::349.0pt.
+[394
+
+
+]
+File: figures/cl_ngs.eps Graphic file (type eps)
+<figures/cl_ngs.eps>
+l2hSize :tex2html_wrap11011:0.0pt::126.47249pt::349.0pt.
+[395
+
+
+]
+File: figures/cl_load.eps Graphic file (type eps)
+<figures/cl_load.eps>
+l2hSize :tex2html_wrap11016:0.0pt::126.47249pt::349.0pt.
+[396
+
+
+]
+File: figures/cl_puload.eps Graphic file (type eps)
+<figures/cl_puload.eps>
+l2hSize :tex2html_wrap11021:0.0pt::126.47249pt::349.0pt.
+[397
+
+
+]
+l2hSize :tex2html_wrap_inline11032:8.7pt::8.7pt::16.96524pt.
+[398
+
+
+]
+l2hSize :tex2html_wrap_inline11046:8.7pt::8.7pt::39.99197pt.
+[399
+
+
+]
+l2hSize :tex2html_wrap_inline11048:8.7pt::8.7pt::18.00891pt.
+[400
+
+
+]
+File: figures/cont4_ensemble.eps Graphic file (type eps)
+<figures/cont4_ensemble.eps>
+l2hSize :tex2html_wrap11094:0.0pt::126.47249pt::349.0pt.
+[401
+
+
+]
+File: figures/cont6_ensemble.eps Graphic file (type eps)
+<figures/cont6_ensemble.eps>
+l2hSize :tex2html_wrap11097:0.0pt::126.47249pt::349.0pt.
+[402
+
+
+]
+File: figures/bsa_pr_cont.eps Graphic file (type eps)
+<figures/bsa_pr_cont.eps>
+l2hSize :tex2html_wrap11105:0.0pt::126.47249pt::349.0pt.
+[403
+
+
+]
+File: figures/bsa_ex_cont.eps Graphic file (type eps)
+<figures/bsa_ex_cont.eps>
+l2hSize :tex2html_wrap11110:0.0pt::126.47249pt::349.0pt.
+[404
+
+
+]
+File: figures/bsa_rnd1_cont.eps Graphic file (type eps)
+<figures/bsa_rnd1_cont.eps>
+l2hSize :tex2html_wrap11115:0.0pt::126.47249pt::349.0pt.
+[405
+
+
+]
+File: figures/bsa_rnd2_cont.eps Graphic file (type eps)
+<figures/bsa_rnd2_cont.eps>
+l2hSize :tex2html_wrap11120:0.0pt::126.47249pt::349.0pt.
+[406
+
+
+]
+File: figures/bsa_combine_cont.eps Graphic file (type eps)
+<figures/bsa_combine_cont.eps>
+l2hSize :tex2html_wrap11123:0.0pt::126.47249pt::349.0pt.
+[407
+
+
+]
+File: figures/bsb_pr_cont.eps Graphic file (type eps)
+<figures/bsb_pr_cont.eps>
+l2hSize :tex2html_wrap11131:0.0pt::126.47249pt::349.0pt.
+[408
+
+
+]
+File: figures/bsb_ex_cont.eps Graphic file (type eps)
+<figures/bsb_ex_cont.eps>
+l2hSize :tex2html_wrap11136:0.0pt::126.47249pt::349.0pt.
+[409
+
+
+]
+File: figures/bsb_rnd1_cont.eps Graphic file (type eps)
+<figures/bsb_rnd1_cont.eps>
+l2hSize :tex2html_wrap11141:0.0pt::126.47249pt::349.0pt.
+[410
+
+
+]
+File: figures/bsb_rnd2_cont.eps Graphic file (type eps)
+<figures/bsb_rnd2_cont.eps>
+l2hSize :tex2html_wrap11146:0.0pt::126.47249pt::349.0pt.
+[411
+
+
+]
+File: figures/bsb_combine_cont.eps Graphic file (type eps)
+<figures/bsb_combine_cont.eps>
+l2hSize :tex2html_wrap11149:0.0pt::126.47249pt::349.0pt.
+[412
+
+
+]
+l2hSize :tex2html_wrap_inline11154:8.69998pt::8.69998pt::33.5837pt.
+[413
+
+
+]
+l2hSize :tex2html_wrap_inline11156:8.69998pt::8.69998pt::40.4787pt.
+[414
+
+
+]
+l2hSize :tex2html_wrap_inline11158:8.19998pt::0.0pt::7.6059pt.
+[415
+
+
+]
+l2hSize :tex2html_wrap_inline11160:8.19998pt::0.0pt::8.75415pt.
+[416
+
+
+]
+l2hSize :tex2html_wrap_inline11164:8.83331pt::8.83331pt::6.62569pt.
+[417
+
+
+]
+l2hSize :landscape3371:521.18712pt::0.0pt::721.41338pt.
+[418
+
+
+
+
+]
+l2hSize :tex2html_wrap_inline11166:8.83331pt::8.83331pt::35.96425pt.
+[419
+
+
+]
+l2hSize :tex2html_wrap_inline11174:8.7pt::8.7pt::18.00891pt.
+[420
+
+
+]
+File: figures/cs1_dw1_px.eps Graphic file (type eps)
+<figures/cs1_dw1_px.eps>
+l2hSize :tex2html_wrap11427:0.0pt::126.47249pt::349.0pt.
+[421
+
+
+]
+File: figures/cs1_dw1_oa.eps Graphic file (type eps)
+<figures/cs1_dw1_oa.eps>
+l2hSize :tex2html_wrap11434:0.0pt::126.47249pt::349.0pt.
+[422
+
+
+]
+File: figures/cs1_dw1_foa.eps Graphic file (type eps)
+<figures/cs1_dw1_foa.eps>
+l2hSize :tex2html_wrap11441:0.0pt::126.47249pt::349.0pt.
+[423
+
+
+]
+File: figures/cs1_dw1_fpx.eps Graphic file (type eps)
+<figures/cs1_dw1_fpx.eps>
+l2hSize :tex2html_wrap11448:0.0pt::126.47249pt::349.0pt.
+[424
+
+
+]
+File: figures/cs1_dw1_td.eps Graphic file (type eps)
+<figures/cs1_dw1_td.eps>
+l2hSize :tex2html_wrap11455:0.0pt::126.47249pt::349.0pt.
+[425
+
+
+]
+File: figures/cs1_dw1_rn.eps Graphic file (type eps)
+<figures/cs1_dw1_rn.eps>
+l2hSize :tex2html_wrap11462:0.0pt::126.47249pt::349.0pt.
+[426
+
+
+]
+File: figures/cs1_dw2_px.eps Graphic file (type eps)
+<figures/cs1_dw2_px.eps>
+l2hSize :tex2html_wrap11476:0.0pt::126.47249pt::349.0pt.
+[427
+
+
+]
+File: figures/cs1_dw2_oa.eps Graphic file (type eps)
+<figures/cs1_dw2_oa.eps>
+l2hSize :tex2html_wrap11483:0.0pt::126.47249pt::349.0pt.
+[428
+
+
+]
+File: figures/cs1_dw2_foa.eps Graphic file (type eps)
+<figures/cs1_dw2_foa.eps>
+l2hSize :tex2html_wrap11490:0.0pt::126.47249pt::349.0pt.
+[429
+
+
+]
+File: figures/cs1_dw2_fpx.eps Graphic file (type eps)
+<figures/cs1_dw2_fpx.eps>
+l2hSize :tex2html_wrap11497:0.0pt::126.47249pt::349.0pt.
+[430
+
+
+]
+File: figures/cs1_dw2_td.eps Graphic file (type eps)
+<figures/cs1_dw2_td.eps>
+l2hSize :tex2html_wrap11504:0.0pt::126.47249pt::349.0pt.
+[431
+
+
+]
+File: figures/cs1_dw2_rn.eps Graphic file (type eps)
+<figures/cs1_dw2_rn.eps>
+l2hSize :tex2html_wrap11511:0.0pt::126.47249pt::349.0pt.
+[432
+
+
+]
+File: figures/cs1_dw1a2_oa.eps Graphic file (type eps)
+<figures/cs1_dw1a2_oa.eps>
+l2hSize :tex2html_wrap11527:0.0pt::126.47249pt::349.0pt.
+[433
+
+
+]
+File: figures/cs1_dw1a2_px.eps Graphic file (type eps)
+<figures/cs1_dw1a2_px.eps>
+l2hSize :tex2html_wrap11536:0.0pt::126.47249pt::349.0pt.
+[434
+
+
+]
+File: figures/cs1_dw1a2_rn.eps Graphic file (type eps)
+<figures/cs1_dw1a2_rn.eps>
+l2hSize :tex2html_wrap11545:0.0pt::126.47249pt::349.0pt.
+[435
+
+
+]
+File: figures/cs1_dw1a2_td.eps Graphic file (type eps)
+<figures/cs1_dw1a2_td.eps>
+l2hSize :tex2html_wrap11554:0.0pt::126.47249pt::349.0pt.
+[436
+
+
+]
+File: figures/cs1_dw1_oa_c.eps Graphic file (type eps)
+<figures/cs1_dw1_oa_c.eps>
+l2hSize :tex2html_wrap11561:0.0pt::126.47249pt::349.0pt.
+[437
+
+
+]
+File: figures/cs1_dw1_px_c.eps Graphic file (type eps)
+<figures/cs1_dw1_px_c.eps>
+l2hSize :tex2html_wrap11568:0.0pt::126.47249pt::349.0pt.
+[438
+
+
+]
+File: figures/env_snapshot_2007-11-15_72.eps Graphic file (type eps)
+<figures/env_snapshot_2007-11-15_72.eps>
+l2hSize :tex2html_wrap11581:0.0pt::126.47249pt::349.0pt.
+[439
+
+
+]
+l2hSize :tex2html_wrap_inline11583:8.25pt::8.25pt::7.6569pt.
+[440
+
+
+]
+l2hSize :tex2html_wrap_inline11585:7.75pt::0.0pt::7.69649pt.
+[441
+
+
+]
+l2hSize :tex2html_wrap_inline11621:8.7pt::8.7pt::25.97174pt.
+[442
+
+
+]
+l2hSize :tex2html_wrap_inline11623:8.7pt::8.7pt::12.59169pt.
+[443
+
+
+]
+l2hSize :tex2html_wrap_inline11625:8.7pt::8.7pt::11.29305pt.
+[444
+
+
+]
+l2hSize :tex2html_wrap_inline11627:8.7pt::8.7pt::16.1797pt.
+[445
+
+
+]
+l2hSize :tex2html_wrap_inline11629:8.7pt::8.7pt::13.5593pt.
+[446
+
+
+]
+l2hSize :tex2html_wrap_inline11631:8.7pt::8.7pt::14.31721pt.
+[447
+
+
+]
+l2hSize :tex2html_wrap_inline11633:8.7pt::8.7pt::14.31721pt.
+[448
+
+
+]
+l2hSize :tex2html_wrap_inline11682:10.31107pt::10.31107pt::13.1755pt.
+[449
+
+
+]
+File: figures/c60_gen_cav.eps Graphic file (type eps)
+<figures/c60_gen_cav.eps>
+l2hSize :tex2html_wrap11683:0.0pt::126.47249pt::349.0pt.
+[450
+
+
+]
+File: figures/c60_gen_ng.eps Graphic file (type eps)
+<figures/c60_gen_ng.eps>
+l2hSize :tex2html_wrap11684:0.0pt::126.47249pt::349.0pt.
+[451
+
+
+]
+File: figures/c60_odb_cav.eps Graphic file (type eps)
+<figures/c60_odb_cav.eps>
+l2hSize :tex2html_wrap11687:0.0pt::126.47249pt::349.0pt.
+[452
+
+
+]
+File: figures/c60_odb_ng.eps Graphic file (type eps)
+<figures/c60_odb_ng.eps>
+l2hSize :tex2html_wrap11688:0.0pt::126.47249pt::349.0pt.
+[453
+
+
+]
+l2hSize :tex2html_wrap_inline11705:8.2pt::0.0pt::8.5819pt.
+[454
+
+
+]
+l2hSize :tex2html_wrap_inline11709:8.7pt::8.7pt::24.57146pt.
+[455
+
+
+]
+l2hSize :tex2html_wrap_inline11713:8.7pt::8.7pt::24.32562pt.
+[456
+
+
+]
+l2hSize :tex2html_wrap_inline11717:8.7pt::8.7pt::17.06601pt.
+[457
+
+
+]
+l2hSize :tex2html_wrap_inline11719:9.5pt::9.5pt::54.11519pt.
+[458
+
+
+]
+l2hSize :tex2html_wrap_inline11721:9.5pt::9.5pt::53.21658pt.
+[459
+
+
+]
+l2hSize :tex2html_wrap_inline11723:8.7pt::8.7pt::17.1199pt.
+[460
+
+
+]
+l2hSize :tex2html_wrap_inline11725:9.5pt::9.5pt::44.01991pt.
+[461
+
+
+]
+l2hSize :tex2html_wrap_inline11727:8.7pt::8.7pt::17.18213pt.
+[462
+
+
+]
+l2hSize :tex2html_wrap_inline11729:9.5pt::9.5pt::44.08214pt.
+[463
+
+
+]
+l2hSize :tex2html_wrap_inline11731:8.25pt::8.25pt::23.03902pt.
+[464
+
+
+]
+l2hSize :tex2html_wrap_inline11733:8.25pt::8.25pt::23.49834pt.
+[465
+
+
+]
+l2hSize :tex2html_wrap_inline11735:8.25pt::8.25pt::17.83476pt.
+[466
+
+
+]
+l2hSize :tex2html_wrap_inline11741:8.83331pt::8.83331pt::17.57138pt.
+[467
+
+
+]
+l2hSize :tex2html_wrap_inline11743:9.5pt::9.5pt::60.39064pt.
+[468
+
+
+]
+l2hSize :tex2html_wrap_inline11745:8.25pt::8.25pt::18.84914pt.
+[469
+
+
+]
+l2hSize :tex2html_wrap_inline11749:8.25pt::8.25pt::18.45816pt.
+[470
+
+
+]
+l2hSize :tex2html_wrap_inline11753:9.5pt::9.5pt::57.515pt.
+[471
+
+
+]
+l2hSize :tex2html_wrap_inline11755:8.83331pt::8.83331pt::12.94672pt.
+[472
+
+
+]
+l2hSize :tex2html_wrap_inline11757:9.5pt::9.5pt::51.14131pt.
+[473
+
+
+]
+l2hSize :tex2html_wrap_inline11759:8.25pt::8.25pt::14.22447pt.
+[474
+
+
+]
+l2hSize :tex2html_wrap_inline11763:8.25pt::8.25pt::13.8335pt.
+[475
+
+
+]
+l2hSize :tex2html_wrap_inline11769:9.5pt::9.5pt::53.3727pt.
+[476
+
+
+]
+l2hSize :tex2html_wrap_inline11771:8.25pt::8.25pt::15.27364pt.
+[477
+
+
+]
+l2hSize :tex2html_wrap_inline11775:8.25pt::8.25pt::14.88266pt.
+[478
+
+
+]
+l2hSize :tex2html_wrap_inline11779:8.7pt::8.7pt::15.65396pt.
+[479
+
+
+]
+l2hSize :tex2html_wrap_inline11781:9.5pt::9.5pt::44.91512pt.
+[480
+
+
+]
+l2hSize :tex2html_wrap_inline11783:9.5pt::9.5pt::72.8535pt.
+[481
+
+
+]
+l2hSize :tex2html_wrap_inline11785:9.5pt::9.5pt::70.96101pt.
+[482
+
+
+]
+l2hSize :tex2html_wrap_inline11787:8.7pt::8.7pt::12.91115pt.
+[483
+
+
+]
+l2hSize :tex2html_wrap_inline11789:8.7pt::8.7pt::12.91115pt.
+[484
+
+
+]
+l2hSize :tex2html_wrap_inline11791:8.7pt::8.7pt::12.91115pt.
+[485
+
+
+]
+l2hSize :tex2html_wrap_inline11793:8.7pt::8.7pt::14.60583pt.
+[486
+
+
+]
+l2hSize :tex2html_wrap_inline11795:8.7pt::8.7pt::14.60583pt.
+[487
+
+
+]
+l2hSize :tex2html_wrap_inline11797:8.7pt::8.7pt::14.60583pt.
+[488
+
+
+]
+l2hSize :tex2html_wrap_inline11799:8.7pt::8.7pt::14.60583pt.
+[489
+
+
+]
+l2hSize :tex2html_wrap_inline11801:8.7pt::8.7pt::14.60583pt.
+[490
+
+
+]
+l2hSize :tex2html_wrap_inline11803:8.7pt::8.7pt::30.23628pt.
+[491
+
+
+]
+l2hSize :tex2html_wrap_inline11805:8.7pt::8.7pt::29.3113pt.
+[492
+
+
+]
+l2hSize :tex2html_wrap_inline11807:8.83331pt::8.83331pt::27.31432pt.
+[493
+
+
+]
+l2hSize :tex2html_wrap_inline11809:8.83331pt::8.83331pt::37.15178pt.
+[494
+
+
+]
+l2hSize :tex2html_wrap_inline11811:8.83331pt::8.83331pt::25.73727pt.
+[495
+
+
+]
+l2hSize :tex2html_wrap_inline11813:9.29916pt::9.29916pt::70.02309pt.
+[496
+
+
+]
+l2hSize :tex2html_wrap_inline11815:8.83331pt::8.83331pt::17.67189pt.
+[497
+
+
+]
+l2hSize :tex2html_wrap_inline11817:9.29916pt::9.29916pt::105.9533pt.
+[498
+
+
+]
+l2hSize :tex2html_wrap_inline11819:8.83331pt::8.83331pt::18.34178pt.
+[499
+
+
+]
+l2hSize :tex2html_wrap_inline11821:9.29916pt::9.29916pt::70.02309pt.
+[500
+
+
+]
+l2hSize :tex2html_wrap_inline11826:9.5pt::9.5pt::31.44969pt.
+[501
+
+
+]
+l2hSize :tex2html_wrap_inline11834:9.5pt::9.5pt::35.95248pt.
+[502
+
+
+] (./images.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3643 strings out of 95847
+ 50363 string characters out of 1193874
+ 125581 words of memory out of 1000001
+ 6343 multiletter control sequences out of 10000+50000
+ 10114 words of font info for 36 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 25i,13n,24p,1198b,492s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on images.dvi (502 pages, 143124 bytes).

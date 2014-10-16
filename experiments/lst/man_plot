@@ -1,0 +1,14 @@
+#!/bin/csh
+
+set bdav = `cat man_bds_su.dat | awk '{sum+=$2}END{print (sum/NR)}'`
+echo "Baseline $bdav "
+
+gnuplot << EOF
+set output "horiz_env_su.eps"
+set term postscript enhanced color
+set title "Comparison of effect of look-ahead horizon H on Q_{SU}"
+set xlabel "Environment model stability parameter {/Symbol D} E [hours]"
+set ylabel "{/Symbol S} Q_{SU}
+set key top left
+set xrange [0:6]
+plot "man_bds_su.dat" using 1:2 with linespoint ps 2 ti "BDS", "man_qs1_su.dat" using 1:2 with linespoint ps 2 ti "QLAS H=0.5h", "man_qs2_su.dat" using 1:2 with linespoint ps 2 ti "QLAS H=1.0h", "man_qs3_su.dat" using 1:2 with linespoint ps 2 ti "QLAS H=2.0h", ${bdav} ti "BDS Average"

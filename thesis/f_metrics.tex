@@ -1,0 +1,315 @@
+\section{Investigation of Metrics}
+\label{sect:metrics}
+
+\subsection{Introduction and rationale}
+Metrics are quantitive standards for measuring performance, quality or some aspect of a service or process we wish to monitor. In this section I discuss two distinct classes of metric which will be used in the thesis. 
+
+Problem complexity metrics (PCM\glossary{name={PCM},description={Problem Complexity Metric, $C$ metrics are used to measure the complexity of a given scheduling problem in terms of Phase 2 structure}}) measure the difficulty of a scheduling problem and provide an independant variable against which to assess the performance of schedulers. It might be found for example that a particular scheduler which performs well on a \emph{easy} problems is out-performed by an alternative scheduler when faced with \emph{difficult} problems. 
+
+Schedule quality metrics (SQM\glossary{name={SQM},description={Schedule Quality Metric, $Q$ metrics provide a measure of scheduler performance}}) measure the actual performance of schedulers on such problems. In other words they tell us how well or efficiently a particular scheduler performs.
+
+A third set of metrics which will not be discussed in this section are those metrics actually used by the schedulers to perform scoring, selection, retraction and other heuristic procedures in the determination of schedules. These will be discussed in the relevant scheduler descriptions (Sect.~\ref{ss:scoring_model}).
+
+\subsection{Problem complexity metrics}
+\label{ss:pcm}
+These metrics are used to describe the complexity of the scheduling problem at any given time. In addition to their use for assessing the performance of schedulers under test, it is likely that an advanced scheduler could itself make use of these metrics by looking ahead to see where hotspots (difficult scheduling periods) are likely to occur and thus take these into account in its decision making.
+ The basic job of the scheduler is to select and sequence sets of observations from the ODB, consequently, this is where the focus of the investigation begins. The content of the observing database or pool (ODB) at any time defines the set of observations that are available for scheduling at that time. This pool evolves due to the arrival of new observing requests, modification of existing request (e.g. in light of observing results) and removal of spent requests. These modifications which may be made by observers themselves via a Phase 2 tool or automatically by external user agents, occur in principle continuously. The complexity manifests itself through changes in the amount and severity of competition between observing requests for particular times and, over the course of a night, in the overall loading. The following metrics are proposed.
+
+
+\subsubsection{Contention profile $C_c$}
+\notation{name={$C_C$},description={Contention profile},sort={C}} This is the time evolving profile of the number of observation groups which could potentially be scheduled according to their explicit timing constraints. Additional refinements include convolving with the probability of the time actually being available based on likely weather and technical downtime forecasts. The average contention over the course of a night gives an estimate of how overloaded the schedule could potentially be. This static contention profile is a crude measure as it does not take into account the fact that some of the groups which figure in the contention profile later in the night may have already been selected by then and thus need not be considered. 
+
+It is found that in general (and explicity Fig.~\ref{fig:contention_plot}) if we plot both the predicted contention $C_C$ and the actual contention $C_A$ \notation{name={$C_A$},description={Actual contention as measured during one or more runs of the scheduler},sort={C}}against time on a given night we typically find that the actual contention follows the prediction at the start of the night. As the night evolves, $C_A$ decreases in step fashion as groups are executed and taken out of the pool. At intervals $C_A$ rises up again as different subsets of groups become available though never generally attaining its predicted level. 
+
+A possible mechanism to take this into account would be to introduce a weighted probability of execution on those groups figuring later in the night to reduce the the effect of any early executions. A simple exponential decay might be used with $P_{avail}=1$ at the start of group's execution window and decay factor based on the group's likely execution. How this might be worked out is alas unclear. More importantly this would likely depend on the contention statistics we are actually trying to work out. Effects of disruptions early in the night will also change the contention later as groups which \emph{ought} to have been executed may still be in contention later. 
+
+The dynamic contention profile $C_{dc}$ is perhaps a more realistic measure and is calculated by performing a forward simulation through the night and extracting actual contention in the process. This is of course somewhat dependant on the scheduler used but can be a valuable tool for assessing the degree of competition between groups.
+
+\begin{figure}[htbp]  
+  \begin{center}
+    \includegraphics[scale=0.8, angle=0]{figures/contention_2011-05-17.eps}
+  \end{center}
+  \caption[ Comparison of predicted and actual contention on a typical night.]
+   {Comparison of predicted ($C_C$) and actual contention ($C_A$) on a typical night. $C_A$ follows $C_C$ at the start of night and tracks any upward trends asnew groups become observable but over the course of the night $C_A$ slowly drops off. As runs of observations occur, $C_A$ is seen to follow a descending staircase pattern as the pool of observations is depleted. It should also be noted that $C_C$ assumes \emph{ideal} conditions whilst on the night these may vary.}
+  \label{fig:contention_plot}
+\end{figure}
+
+
+\subsubsection{Demand profile $C_d$}
+\label{sect:demand_profile}
+\notation{name={$C_D$},description={Demand profile},sort={C}} A given group will potentially have multiple observing windows when it should be attempted. During any given window the group can be considered to have a demand $C_D$ on the time within that window. E.g. if the group $g$ has an (estimated) execution time $X(g)$ \notation{name={$X(g)$},description={Execution time of a group},sort={X}}and its window of opportunity is $\phi(g)$ \footnote[1]{this is the window during which it may legally start, it may run on over the end of the window as this is taken account of in determining whether the group could be executed.} then the group's demand over that window is $C_D=X/(X+\phi)$. If we add up the demand contributions of all the groups which are enabled at any given time we should have a measure of how much demand is placed on that instant. If this aggregate demand exceeds unity then it is likely that some of the groups will not be observed i.e. the requirement for time is greater than the time available. 
+
+There are several refinements that can be made on this estimate. The numerator can be worked out fairly easily. It can usually be considered constant and known. The denominator is more of a problem. Firstly working out the window of opportunity from the group's time constraint window is straightforward, however this window may extend from just a few minutes upto several days or even weeks. In the latter case the group's target(s) may rise and set several times and the various implicit timing constraints may be broken on several occasions. The lunar distance constraint will impose a varying overlap with the target visibility windows. Any solar elevation constraint will vary the length of available night depending on the time of year. If we consider each of the calculable constraints then we can work out the actual amount of time (within the window) that the group can actually be observed. This gives us a revised (increased) estimate for the group's individual demand for those times within the new sub-windows. 
+
+Going on another stage we might consider those constraints which cannot be worked out in advance. A group may have a minimum seeing constraint,\footnote[2]{minimum seeing in terms of quality and hence largest allowable FWHM.} however, we cannot tell what the seeing will be like at any future time though we may be able to estimate the likelihood of attaining the group's minimum level. Likewise we can obtain estimates of extinction (perhaps including seasonal variation). We should in addition consider the probability that the selected time is even available for observing. Weather and technical downtime mean that a certain fraction of time is lost. A crude climatological estimate might just give the average probability of bad weather (averaged over long periods), we shall later see (Sect.~\ref{ss:weather_anal}) that this is around 20\%. We might also have more accurate seasonal-adjusted climatological information. If we could predict for some time ahead based on current and recently collected weather data then we should have an even better demand estimate. 
+
+Formally, let $X(g)$ represent the \emph{estimated} execution time of a group $g$ and $U(g,t)$ the remaining useful time left for that group at time $t$, then the partial demand of $g$ at time $t$ is defined as:-
+
+%\begin{equation}
+%d(g,t) = X(g)/(X(g) + U(g,t)) 
+%\end{equation}
+%%\begin{equation}
+%U(g,t) = \tau(w^*_i) \cap [t,\infty] \cap N(t) \cap M(g) \cap V(g))
+%\end{equation}
+
+\begin{align}
+\label{eq:demand}
+  d(g,t) &= \frac{X(g)}{X(g) + U(g,t)} \\
+  U(g,t) &= W^*(g,t) \cap N(t) \cap M(g) \cap V(g)
+\end{align}
+
+
+where $W^*(g,t)$ is the set of remaining sub-windows (running forward from t) for the current execution of the group, $V(g)$ is the set of visibility windows for $g$'s targets from $t$ onwards, $M(g)$ is the set of windows satisfying $g$'s observing constraints, $N(t)$ the set of nights from $t$ onwards.
+
+Calculation of demand is a computationally costly exercise. In general it proves convenient to restrict the look-ahead to the current night giving a slightly higher estimate than would otherwise be made.
+
+As an example, for a \emph{typical} flexible group with a duration of say 1 month we need to derive the feasibility at say 5 minute intervals over this period, some 8640 calculations. By preprocessing, e.g. by pre-calculating the target visibility and night periods we can reduce this by upto a factor of around 10 to some 800 calculations. A single feasibility calculation takes around 5ms on the deployed system so for the example group we need around 4s to calculate this metric. For a simulation where we are calculating the metric for upto 500 groups over a night we would require 2000s per simulation run.
+
+%Some stuff on seeing/extinction stats. More on weather/technical downtime.
+
+%If a group $g$ is to execute at some future time $t$ we need to know that the weather will be good at that time and that it will remain good for at least $X(g)$. From the weather stats:- 
+
+%\begin{equation}
+%P_{exec}=P_{good}(t) \dot \int_{t=X(g)}^{t=\infty}{\rho(t)dt}
+%\end{equation}
+
+%where $\rho(t)$ represents the distribution of lengths of continuous \emph{good} weather runs.
+
+\subsubsection{Load $C_l$}
+\label{sect:metric_load}
+\notation{name={$C_L$},description={Schedule load},sort={C}} Load is a fairly simple metric which describes the ratio of executable time in a given observing night to the length of the night (or astronomical night). Simple load is calculated using the sum of execution times for each executable window of each group that can be executed during the night. It includes all windows of all groups whether they \emph{must} be executed that night or not. An urgency weighted load $C_{ul}$ \notation{name={$C_{UL}$},description={Urgency weighted load},sort={C}} can also be calculated which weights each execution time by the reciprocal of the number of remaining nights in which the window could be observed. Critical load $C_{cl}$ \notation{name={$C_{CL}$},description={Critical load},sort={C}}is a pruned version of the normal load where only groups which {\bf must} be executed that particular night are included. Priority weighted load $C_{pl}$ is calculated by taking into account all of a group's windows which should be executed on a given observing night then weighting by the priority of the group whose window it is.
+
+%TODO Include cc,ca cd profiles for a single night from collected data. these are refd from 2nd section/para??
+
+\subsection{Schedule quality metrics}
+\label{sect:sqms}
+%These are the metrics used to compare the results of using different schedulers or scheduling policies on a given scheduling problem. These are needed to determine which scheduler performs best. Needless to say this is the most difficult problem for several reasons.
+One aspect of the planning and scheduling process is \emph{to maximize the profitability of the enterprise} \citep{miyashita96distributed}. The enterprise is the telescope or the group which runs it. Profit refers here to some accumulated reward the \emph{owners} expect to get from providing the facility. This could be money, in terms of grants recieved for the continued provision and expansion of the service or could refer to some general sort of kudos within the scientific community resulting from the perception of the current and potential users that it is a novel and useful facility.
+
+%\begin{itemize}
+%\item The metric used in the selection heuristic cannot be used for the simple reason that these may be what distinguishes one scheduler from another - clearly if we use a metric $m_1$ for scheduler \emph{S\_1} and metric $m_2$ for scheduler \emph{S\_2} then measuring the performance of both schedulers using $m_1$ would naturally find that \emph{S\_1} was the better scheduler. Likewise using $m_2$ to compare the results would reveal \emph{S\_2} as the better scheduler. We therefore need a more generic metric which is ideally {\bf NOT} involved in the selection process.
+%\item What was that other one ?
+%\end{itemize}
+
+%This turns out to be particularly difficult. In the common scheduling literature there are many generic metrics used, however these all suffer from the problem that they are tuned for the generic job-shop scheduling problem in which a number of identical jobs with specified due dates have to be processed. Typical metrics include:-
+
+%\begin{itemize}
+%\item Slack - the amount of time where no job is in progress.
+%\item Tardiness - total lateness for jobs executed.
+%\item Throughput - total no of jobs through the system.
+%\item other
+%\end{itemize}
+
+%Can we use any of these ? The problem is that the OGs generally have a due dates which cannot be exceded - if they are late the data is of less or no use. We are not neccessarily bothered about throughput so much as the quality of the results. 
+
+%we might be able to use some of this however with suitable weighting e.g. a late high priority job is worse than a late low priority job (but by how much?). 
+
+%We can seperate out various forms of utility measure (NOTE these are discussed elsewhere but not in correct place)
+
+%User based (needs simple Phase2 specification or QOS metrics)
+%Enterprise based - includes scientific priorities, distribution of time between proposals
+
+The utility or reward can be looked at from 2 (sometimes conflicting) points of view. We need to be able to measure a quantifiable reward resulting from performing the most scientifically useful or \emph{in-vogue} research whilst at the same time meeting the various users' preferences. %We need some way for the scheduler to select observations which will generate the highest cumulative reward and on a consistent basis, i.e. we need metrics to classify groups of potentially schedulable groups over time. 
+
+
+%It does not want to sit about doing nothing just so it can wait for a high value observation with a small window of opportunity %(graph showing a schedule snippet with 2 low value but long groups and little idle time and 2 high value (scientific priority) but short groups with a heap of idle time) if we consider the figure the low value groups give a low sum score $\sum V_i$ for the night if we just add their individual utilities whereas the high value groups give a high sum score. On the other hand if we do an integral (int V(t)) we get a better score for the low value groups. 
+
+. %These can arise for several reasons:-
+%There may be an idle gap between groups due to the specific enablement windows, during the execution of a group we can distinguish useful and wasted time - useful time is basically exposing (and to some extend readout which we cannot avoid), wasted time includes slewing, selection and configuraton of instruments, acquisition by autoguider, settling time, and the scheduling time itself. 
+\begin{itemize}
+\item \emph{Enterprise utility} $V_e(g,t)$ \notation{name={$V_e(g,t)$},description={Enterprise utility for executing group $g$ at time $t$},sort={V}} represents the reward to the telescope or facility. Ideally the enterprise wants to do (scientifically) valuable work and as much of it as possible. Some of the factors which might influence the enterprise view include:-
+\begin{itemize}
+\item Proposals have already been vetted and prioritized on the basis of scientific importance by the allocation committees so this provides a useful measure.
+\item The enterprise does not want to waste high quality time making observations which could be performed in poorer conditions so a measure of matching conditions to minimum requirements.
+\item The enterprise may be more inclined to reach particular stages of completion for certain (high valued) projects over other lower valued projects.
+\item Conversely there may be a requirement to share out general observing time (and time under various conditions) between projects or sponsoring TAGs in previously negotiated proportions.
+\item We may want to factor in any periods of idle time caused by waiting for specific groups to become enabled as a penalty/cost term.
+\end{itemize}
+
+\item \emph{User utility}  $V_u(g,t)$ \notation{name={$V_u(g,t)$},description={User preference utility for executing group $g$ at time $t$},sort={V}} represents the reward to the individual users in respect of their own preference metrics. From a user's point of view, the ideal schedule is probably one in which all of that particular user's feasible observations would be done at their optimum times irrespective of any other user's requirements. Of course we cannot always work out these optimal times. We can work out when the target will be best placed, e.g. at its highest elevation in the current window whilst bearing in mind that the window may extend over several nights, but we cannot say what the conditions will be like at that time. The telescope may be out of action due to weather or the seeing could be very poor. 
+
+The individual users will have some preferences on when and under what conditions their observations are performed. They are able to specify the minimum conditions and the timing intervals and various constraints on their observations but these preferences are not ordered in any way - e.g. one user might prefer that their observations are done at low airmass and be less concerned with regularity whilst another user may be less concerned with airmass but more so with regularity. The simple constraints do not allow these preferences to be taken into account, instead a generic preference weighting is applied by the scoring and selection models so that all observations are treated as if the users had the same preference weighting. 
+
+The user's preferences metric could include factors such as how close to centre of time window, how good the airmass, how well conditions are/will be matched. Each group could have a set of user-specified weights for these as they would have their own preferences as to which are more important and the relative importance of particular attribute values. Factors which we might include in $V_u(g,t)$ include:-
+\begin{itemize}
+\item airmass 
+\item sky brightness
+\item seeing matching
+\item window position
+\item data profile tracking
+\end{itemize}
+
+\end{itemize}
+
+
+%We can also work out the utility $u_i(t)$ for a group over the night, this will have some maximum value $u^*_i(t)$ in any given night - this is the optimum time to do the group so we could work out $u_i(t)/u^*_i(t)$ so the utilities are normalized - do we need to do that?
+
+With these points in mind, a first attempt at an overall utility measure for a night might look something like Eq.~\ref{eq:utility}.
+\begin{equation}
+\label{eq:utility}
+V_{night} = \sum_j ((w_{u}U_j(t_j) + w_{e}E_j(t_j))*x_j) 
+\end{equation} 
+where $w_{u}$ is the weighting for user's preference satisfaction, $U_j$ is the value the user assigns to the performing of his observation of group $j$ at the selected time $t_j$, $w_{e}$ is the weighting for enterprise value, $E_j$ is the value of scientific priority and other enterprise measures assigned to the group $j$ and $x_j$ is the execution time or duration of the $j^{th}$ group.
+
+This metric adds in the contribution from enterprise and user-preference matching but if all users are free to specify their own weightings this might be thought to cause problems with comparison. E.g. If user $A$ assigns preferences so his observations are always good i.e. he has no preference and user $B$ chooses his preferences so his observations are best at $t_B$, user $A$ will get a better score contribution most of the time. However it should be noted that we are not suggesting use of this measure as a selection metric to select $A$ over $B$ but to merely as a measure of the quality of the schedule for the night.
+
+
+%\subsubsection{Potential utility measure} Work out the best utility that can be achieved during the night (PU) (i.e. assume we can do all the groups that could be done and do them at the best possible times) - this is after all the ultimate aim of the scheduler ! Work out the actual utility scored by the scheduler that night - the Efficiency (E) is then the ratio. May need to scale - after all if oversubscribed we could never do it all anyway try load scaling 1/L (load defined as aggregate (average) demand) or maybe better as \emph{sum of execution times of all groups that can and {\bf should} be executed tonight}. Could also try rank-scaling top(n) such that $\sum{x_i} < \tau(n)$ - I cant quite recall what I meant by that at the moment.
+
+
+\subsection{Primitive utility measures}
+\label{sect:prim_metrics}
+Needless to say, choosing the relevant enterprise and user metrics and deciding how these should be weighted is no easy matter and depends on too many factors to come up with a definitive answer which would be of use in the ensuing experiments. Consequently we are forced to find some simpler/more primitive metrics to use. In each of the following metrics the group contribution is weighted by the execution time ($X_g$) of the group and is scaled by the length of the night.
+
+\begin{itemize}
+\item The \emph{height} metric $Q_H$ measures the difference between the optimum time for performing a group based on its height to transit height ratio during the night and its actual selected time of execution. By adding these offsets for all selected groups we get a measure of badness. Ideally all groups would be executed at their highest point (in the current feasibility window) so this measure should be close to zero. 
+
+\item The \emph{optimal height} metric $Q_{OH}$ \notation{name={$Q_{OH}$},description={Optimal height quality metric},sort={Q}} measures how close to the \emph{optimum} height the group is observed in its execution window. 
+
+The optimum height is basically the highest elevation attained by the group during the feasible observation window - in a given window this may be at the end (rising target), start (setting target) or somewhere in the middle of the observing window (transiting target). 
+
+There is however a non-linear relationship between elevation and airmass such that for targets which do not rise particularly high the difference in image quality between worst and best case elevation may be high over a relatively small elevation difference whereas for high rising targets the difference in airmass and hence image quality between best and worst case elevations will be small for the same elevation difference .
+
+Consequently it may be better to measure the ratio of execution-time airmass $a_{actual}$ to best achievable airmass $a_{opt}$ as an Optimal Airmass metric $Q_{OA}$.\notation{name={$Q_{OA}$},description={Optimal airmass quality metric},sort={Q}} 
+
+Additionally, the \emph{benefit} (image quality advantage) of one airmass over another may itself be non-linear and this is what we should really be measuring. $Q_{BA}$ \notation{name={$Q_{BA}$},description={Airmass benefit quality metric},sort={Q}} measures the ratio of some decreasing benefit function $b(a)$ of airmass $a$ at optimal airmass and actual execution-time airmass. A simple option for $b(a)$ would be to use the known \citep{sarazin90eso} correction of image FWHM or seeing $s$ for airmass relative to \emph{ideal} seeing at elevation $90^\circ$, $s(a)=s_{90}a^{0.6}$ with $s_{90}$ indicating the image FWHM at $z=0,a=1$ and assuming image quality is judged purely (and linearly) on FWHM. It should be noted that this correction depends also on observation wavelength $\lambda$. 
+
+\begin{equation}
+Q_{OA} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)\frac{a_{opt}}{a_{actual}}}
+\end{equation}
+where $a = \sec{z}$ is the airmass of group's target at zenith distance $z$.
+
+\begin{equation}
+Q_{BA} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)\frac{b(a_{actual})}{b(a_{opt})}}
+\end{equation}
+where $b(a)$ represents the benefit (image quality advantage) for airmass $a$.
+
+\item The \emph{monitor window} metric $Q_{MW}$ \notation{name={$Q_{MW}$},description={Monitor Window quality metric},sort={Q}} measures the difference between the optimum time (relative to the centre of a monitoring window) for performing a group based on the known monitor window and its actual selected execution time. By adding these up we get a measure of badness in terms of offsets from the optimal time. Ideally all groups would be executed at the centre of the monitor window. There are some implications in respect of non-monitor groups. How do we select the centre of the window ? What if the window centre is not actually feasible, how is this taken into account ? In practice these difficulties led to this metric not being used for the experiments but it might be used in future if these problems could be satisfactorily sorted out.
+
+\item The \emph{priority} metric $Q_{PX}$ \notation{name={$Q_{PX}$},description={Execution Priority quality metric},sort={Q}} measures the total priority score achieved i.e  sums up the priorites of the groups selected. As proposals have already been vetted and prioritized by the allocation committees, this provides a useful source of information. % The final value can be normalized by dividing by the length of night (or astro-night) or perhaps better by using the priority weighted load $C_{pl}$ (Sect.~\ref{sect:metric_load}) as this also gives an indication of the degree of \emph{missed opportunity}.
+\begin{equation}
+Q_{PX} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)p(g)}
+\end{equation}
+where $p(g)$ is the priority value for group $g$ and $X(g,t)$ is the estimated execution time for group $g$ at execution instant $t$. In early simulations the priority of a group is a set attribute of the group. In later simulations after a change in the Phase 2 system, it is calculated based on a combination of:- \begin{inparaenum}[(\itshape i \upshape)] \item priority of the group's proposal assigned by the TAG, \item timing category and \item urgency flag \end{inparaenum}.
+
+\item The \emph{target demand} metric $Q_{TD}$ \notation{name={$Q_{TD}$},description={Target Demand quality metric},sort={Q}} measures how \emph{urgent} the selected groups are with reference to the night's demand profile $C_d$.
+\begin{equation}
+Q_{TD} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)f_D(g,t)}
+\end{equation}
+where $f_D(g,t)$ represents the value of the demand (Eq.~\ref{eq:demand}) for group $g$ at execution instant $t$. 
+
+%\item Night windows count metric $Q_{NW}$ is an attempt to guage the number of nights in which a group could have been selected - it is effectively a count of the number of subwindows in which a group could be executed - a high value indicates that the scheduler is picking groups which dont have to be selected on that night, conversely a low value indicate a scheduler which is picking groups for which execution on the night is more critical. 
+
+\item The \emph{execution time} metric $Q_{XT}$ \notation{name={$Q_{XT}$},description={Execution Time quality metric},sort={Q}} is a measure of the amount of the night during which groups are actively being observed. A low value is effectively an indication of \emph{slack time}.
+\begin{equation}
+Q_{XT} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)}
+\end{equation}
+
+\item The \emph{remaining nights} metric $Q_{RN}$ \notation{name={$Q_{RN}$},description={Remaining Nights quality metric},sort={Q}} counts a decreasing function (for convenience 1/n) of the \emph{number of nights remaining} $n$ for any groups in the observability window $\Phi(g,t)$ at the time of selection/execution. It effectively measures how \emph{urgent} the window was in terms of the number of future chances of executing 
+the group other than tonight. e.g. If a group could be executed tonight or on 3 future nights this yields a value for RN of 4 and thus 1/4 as its urgency.
+\begin{equation}
+Q_{RN} = \frac{1}{L_N}\sum_{g \in S}{\frac{X(g,t)}{R(g,t,\Phi(g,t))}}
+\end{equation}
+where $R(g,t,\phi)$ counts the number of remaining nights for a feasiblity window $\phi(g,t)$ of group $g$ at execution instant $t$ - i.e. it counts the number of feasible future sub-intervals of $\Phi$ with maximum of 1 per night.
+
+\item The \emph{project completion} $Q_{PC}$ \notation{name={$Q_{PC}$},description={Project Completion quality metric},sort={Q}}has been suggested as a metric for comparing scheduling policies or schedules generated by different schedulers. I suggest that this is not always a good metric. A project which relies on gathering data over an extended period and for which the length of data gathering, periodicity of gathering are more important would not be well served by completing the program in the fastest time. For such programs we should be more concerned with producing data at a rate which tracks the expected production rate of data. 
+
+There are some problems associated with this metric.
+\begin{itemize}
+\item In addition we would like to generate the best quality of data or at least data of a quality which meets or exceeds the programs stated requirements - e.g. we select an observation to be done in seeing which is as good or better than required, at low airmass and any other factors which could contribute to its quality. 
+
+\item When considering flexibly timed groups it should be noted that these receive all of their data in a single chunk. It is therefore not feasible to \emph{track} these.
+
+\item Finally, we do not always have enough information available early in a semester. Some users put all of their groups in at the start, some feed them in over the semester so we cannot in general know how complete projects are at any time.
+\end{itemize}
+
+%Note: Global optimization is what we want but local optimizer may be sub-optimal e.g. of Despatch compared to (short) lookahead. Example when groups have finite and variable enablement intervals EI (use proper symbol). Should we be trying to optimize in terms of when is the best time I can do this group rather than what is the best group to do now. \emph{Description of an example with g1 long EI g2 with short EI but v.hi score. g1 selected but wipes g2's EI. Could have picked g3 with short exec then g2 - overall score is higher and still do g1 later with good score - include a diagram showing the score profiles for the groups}.
+
+\item The \emph{condition matching} metrics $Q_{SM}$ (seeing matching) and $Q_{LM}$ (lunar condition matching) \notation{name={$Q_{SM}$},description={Seeing condition matching quality metric},sort={Q}} \notation{name={$Q_{LM}$},description={Lunar condition matching quality metric},sort={Q}} assign a measure to how close the actual conditions are to those requested in a group's observing constraints as being the minimum acceptable. These metrics are designed to prevent groups with \emph{low quality} requirements using up time which might be classified as \emph{high quality}. 
+
+\item The \emph{yield tracking} metric $Q_{YT}$ \notation{name={$Q_{YT}$},description={Yield Tracking quality metric},sort={Q}}measures the yield of a group of observations. Put simply, this is the ratio of the quantity of data taken (observations) at a given time relative to the quantity that would have been taken upto that time given that the group was observed at each occasion when it could technically been observed. Calculation of this metric presents some difficulties. 
+In the case of groups with \emph{minimum interval} timing constraints it is not possible to give an actual figure for the potential number of observations made as the constraint does not specifiy a maximum interval. For practical purposes this is taken to be twice the value of the minimum interval. In the case of groups with \emph{flexible} timing constraints, the potential yield is calculated as a fraction of the time between activation and expiry even though there can only be one occasion when the observations are ever made. 
+
+\item The \emph{resource usage} metrics $Q_{Ax}$ for various resources $x$ against target values. These would probably be long term metrics, valid over periods of the order of a semester or year. An implicit metric currently in use by the operations team is the TAG assigned Minimum Use Fraction (MUF) \glossary{name={MUF},description={Minimum Use Fraction - a TAG assigned target for program completion},sort={M}}.
+
+\item The \emph{score utility} metric $Q_{SU}$ \notation{name={$Q_{SU}$},description={Score Utility quality metric},sort={Q}}is a metric generated using a weighted sum of the set of metrics used by the scheduler to derive the scores it uses to select groups for scheduling. 
+
+\end{itemize}
+
+
+
+%\begin{figure}[h]
+%\subfigure[Comparison of models for determining airmass image quality advantage ($b(z)$)]{
+%    \label{fig:baz_plot}
+%    \includegraphics[scale=0.25, angle=-90]{figures/baz_plot.eps}
+%  } 
+%\caption{Various metric models}
+%\end{figure}
+
+\subsection{Matching metrics to scheduling and planning horizons}
+\label{sect:matchmetrics}
+As can be seen the various $Q$ metrics already discussed cover very different time-scales. It is perhaps appropriate then to see how these might be applied in reality to different scales of planning and scheduling. Table.~\ref{tab:planning_metrics} is an attempt to match the various $Q$ metrics to the different planning or scheduling horizons discussed in Sect.~\ref{sect:pandstimescales}
+
+\begin{table}[htbp]
+ \begin{center}
+  \begin{tabular} {|l|l|p{7cm}|}
+    \hline
+    Planning Level &  Period              &      Metrics\\
+    \hline
+    Strategic      &  1 semester or more  & YT (yield track), PC (program completion).\\
+    \hline
+    Tactical       &  1 week - 1 month    & PC (program completion), Ax (resource sharing).\\
+    \hline
+    Mission        &  1 night             & TD (target demand), RN (remaining nights).\\
+    \hline
+    Scheduling     &  1 horizon           & OH (optimal height), P (group priority), LM (lunar match), SM (seeing match).\\
+    \hline
+  \end{tabular}
+  \label{tab:planning_metrics}
+  \caption[Assignment of $Q$ metrics to hierarchic planning levels.]{Possible assignement of $Q$ metrics to appropriate layers of the planning and scheduling hierarchy. As the horizon increases up the hierarchy, the metrics used are likely to be calculated over longer periods of time with possibly large night to night variation. At the scheduling end of the hierarchy, metrics are calculated on a per-group execution basis.}
+ \end{center}
+\end{table}
+
+\subsection{Conclusions}
+I have discussed two main types of metric. Quality (or Q) metrics measure the results of scheduling. A realistic $Q$ metric would include both user and enterprise requirements, however for simplicity and because there is currently no way within the Phase 2 system to include user requirements a set of primitive measures have been defined. Complexity (or C) metrics measure the difficulty or \emph{density} of a scheduling problem and are an attempt to capture the highly complex multi-dimensional structure of the Phase 2 information in a few simple parameters. The measures suggested are relatively easy to compute and give a flavour of the problem.
+
+
+%\subsection{Discussion}
+%Discussion of some points not covered already. Open questions. MOVE THESE TO C/FW OR ELSEWHERE
+
+%\begin{itemize}
+
+%\item It had originally been intended to use these to minimise the sum of differences between the actual and optimal execution times - a good schedule then would be one in which the metric gave a low or best case zero result. A problem with this is that it is possible to achieve such a score by simply ommitting to perform observations - this is reminiscent of the train performance metrics used to measure the efficiency of privatized railway companies. If a train is running very late - simply cancelling the train removes it from the lateness statistics adding to the misery of the waiting passengers - its little comfort that the next train is on time if they have had to wait an hour for it !. Consequently these metrics must be scaled to give a high score when the measured variable is at maximum, lower measures when the time is poorly met and zero (or even negative) scores when the observation is not attempted. A schedule which simply avoids potential observations would then score badly. 
+
+%\item The best schedule for a given night is the one where every {\bf critical} group is executed at its best time (ie when its overall utility is highest) and where the remaining groups (if any) are selected ``appropriately''. To determine what this actually is requires to test every feasible combination of critical group (and others) to see what could be achieved. This may then need to be done for different environmental assumptions for the night ahead. The remaining (non-critical) groups should probably be selected to miximize profit over a period (rather than for that specific night). All this makes no assumption about additional groups added via ODB mutation.
+
+
+%\item Need to look at longer term aims (i.e. those that would be introduced by a tactical/strategic planner) - these include things like- fairness between users/TAGs, distribution of environmental conditions, darkness, regularity of data product etc. It may not be neccessary however to worry about these from the scheduler's pov as it is by neccessity working on a shorter timescale - these higher order entities can force appropriate changes in the scheduler's behaviour by altering the control parameters (and metrics) used by the scheduler to satisfy their longer term aims.  
+ 
+
+%\item User preference on when to be done should be taken into account - rather than do X now just because it has highest score in a global sense, do Y because its best time to be done is now, whereas as X would prefer to be done later when its score is higher - (Granzer includes time profiles in \cite{granzer03stella})
+
+%\item Useful link to Bresina's thesis chapt3 has notes on contention and demand profiles - these equate roughly to my aggregate demand profiles and tracking metric http://ic-www.arc.nasa.gov/ic/projects/xfr/sampling/thesis/index.html.
+
+%\item Given a utility measure $F(g,t)$ which describes the value of performing group $g$ at time $t$, the potential utility metric is the sum of the individual values of $F(g,t^*)$ for each group execution window on the night ${n}$ containing $t$ at the time $t^*$ which maximizes  $F(g,t)$ for that group. In other words it is the total utility which could be achieved that night if all feasible groups were executed at their optimum time. In reality it may not actually be possible to achieve this as several groups could be optimal at the same time or overlapping times. Also if the total execution time potential for the night exceeds the available night-time hours it ill not be possible even without overlaps. The metric can of course be scaled by a factor $\tau({n})/\sum_{g \in G{(n)}}{X(g)}$. The performance metric then becomes $E_{{S}}/E_{potential}$  where $E_{{S}} = \sum_{g \in {S}(g)}{F(g,t^*)} $. 
+
+
+%\subsubsection{More about contention to squeeze into discussion above}
+%There is a need to measure the contention for time among the groups enabled on a nightly basis, it would be useful to be able to do this on a fine granularity - e.g. minute by minute. First we must decide what we mean by contention. My definition is the degree of demand by all enabled groups for a given slice of time - put simply, if a group needs 10 minutes to execute and there is a 30 minute window of opportunity in which it can start, then its demand for the whole of this window is 10/30. If there are other groups which also have some demand for all or part of the window then they will contribute appropriate amounts to the total demand for the window to those fractions of the window during which they are enabled, the total (aggregate) demand at a given time then is the sum of all the partial demands from each group whose enablement interval includes that time. Put more formally:
+
+%$T(t) = \sum_{g : w \cap t} { \frac{t_x(g)}{w_e(g)} }$ 
+
+%TODO this needs writing properly 
+%TODO also need some formal definitions for w/W/tx etc and where they are got from.
+
+%How then do we calculate this ? The numerator is the easiest - define the components of this along with any uncertainty terms and consideration of parallelism - this is obtained from the ExecModel. First we must decide what we mean by enablement window. Each group has by reason of its TimingConstraint a set of one or more windows in which it is intended to observe (execute) the group (also called a visit in some systems - need a distinct word), in the case of a Flex group this is a single window [ts,te]. For a periodic monitoring group there will be a series of windows $w_i = [ts+i*p-w/2, ts+i*p+w/2]$ such that the last window stops around $t_e$. As a first approximation then the denominator can just be considered to be the size of any window which includes t - (Note no group should by definition of the various timing constraint classes have more than one window corresponding to any given time). Because we have an optical telescope and observe only at night, we can restrict the actual time available to a group for the execution of its observing window to the intersection of the window with the night which includes t. So $t_avail = W \cap N(t)$, thus incresasing the contention contribution. A number of additional approximations will continue to pare this denominator down so we can expect the first approximation to be significantly low. We should note some points here. I have so far assumed implicitly that the group's window of opportunity W is less than the duration of a single night, this will often not be the case, i.e. many group windows extend over serveral days (and nights) and in some case, especially long activation flexible groups may run for weeks or months, so the actual $t_avail$ in these cases should really be represented by W intersect {N} where N is the set of all the future nights for which the group is available. We cannot stop here, just because it is night does not mean we can make the observation, the target will not neccessarily be visible, either above the geographical horizon or any operational horizon of the telescope, so we can further reduce the available time by considering only the part of the night(s) where the target(s) are visible $t_avail = W \cap N \cap V$. Each group has associated with it a number of observing constraints - some of these represent implicit additional time constraints, namely those which can be calculated in advance. An example would be the lunar distance constraint - the observations in the group cannot be made if the moon is less than some given distance from the observation's target. If we add these into the mix we get an extra reduction in the available time for the group to execute - bearing in mind that these calculations must be performed for all future nights which intersect the group's window containing t. We have done all that is possible with the certain knowledge of the observing environment, there remain however a number of uncertainties - we have not considered either those observing constraints which refer to environmental conditions which cannot be predicted in advance with any certainty, e.g. the group's available window will most likely be reduced further if the seeing is worse than the maximum specified in the seeing constraint, similar things may be said concerning other unpredictable elements. (which). We can further reduce the available window if we can predict when the telescope will be unable to observe due to poor weather, mechanical or technical faults, engineering and other downtime. If we can at least obtain some statistical values for these, which may contain seasonal or other variations (e.g. weather downtime, or seeing distribution dependant on time of year) or we can predict sky and weather conditions for the night ahead with some accuracy (this will help for short period monitors) then we can get produce weighted contention profiles.
+
+%\item The scheduler is basically answering the question - \emph{What is the best thing I can do now from those things available ?} rather than the possibly more useful from the users' pov \emph{When are the best times these available observation could be done ?}. If we can allow the user's own preference weighting to be taken into account then we will have a more user-centred view of the schedule. How can we do this? There are several options.
+
+%\item We can always consider the scheduling process to be a competition between users (groups of observations) for particular time slots. After the scheduling process is completed by whatever means it represents the best allocation of times to groups. In reality we do not expect to be able to extract a full schedule to cover say a whole night due to the dynamically changing environment, however we do still want to get the best observations at each time slot whether by selecting individual groups at the time (despatching) or selections of groups over a horizon during which the conditions (and goals) are predicted to remain reasonably stable. 
+
+%An obvious direction to follow is the auction path. We could allow the users, in reality some per-proposal delegate (agent) acting on the user's behalf to bid for time available slots as they became available. One would image the SE deciding the current time horizon based on environmental stability predictions, perhaps predicting goal evolution (P2DB evolution) on the basis of past behaviour and using knowledge of RCS future commitments (e.g. RTI or calibration time), then advertising the time slot(s) available to interested delegates. The delegates would examine their groups' requirements and decide whether to bid for any slots. More advanced (and $O^n$ more difficult) - combinatorial auctions.
+
+%\item  Scheduler using PCMs as feedback. This would introduce a feedback effect which would make the whole exercise rather more difficult as the degree of feedback ought first to be determined and taken into account in making any assessment of complexity.
+
+%\end{itemize}

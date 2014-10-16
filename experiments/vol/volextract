@@ -1,0 +1,8 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+
+java ngat.sms.test.ExtractVolatilityLogs --base /home/eng/volatility/$1 --lat 28.0  --long -17.0 --ireg-host ltsim1  >& vol.datb
+

@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Telescope Weather Monitoring System</TITLE>
+<META NAME="description" CONTENT="Telescope Weather Monitoring System">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="node47.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html856"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html852"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html846"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html854"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html857"
+  HREF="node49.html">Analysis of results</A>
+<B> Up:</B> <A NAME="tex2html853"
+  HREF="node47.html">Weather</A>
+<B> Previous:</B> <A NAME="tex2html847"
+  HREF="node47.html">Weather</A>
+ &nbsp; <B>  <A NAME="tex2html855"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00085100000000000000">
+Telescope Weather Monitoring System</A>
+</H3>
+ The Weather Monitoring System (WMS) provides feeds of various meteorological data from a weather station on site located XXXm from the telescope enclosure. (some basic info about the thing like who built it etc). Data is provided to the RCS at a cadence of around 5 seconds. The RCS filters this data and uses a set of rules (Table. <A HREF="#tab:rcs_weather_rules">1</A>) to decide if the weather should be classified as <I>good</I> in which case (all things being otherwise okay) observing may proceed, or <I>bad</I> in which case observing may not proceed or if already underway should be stopped and the telescope and enclosure made safe.
+
+<P>
+Weather shutdowns based on WMS data are triggered by any of the following sources:-
+
+<UL>
+<LI>High humidity can lead to condensation on cold surfaces (mirror, electricals) and is an indicator of cloud and potential precipitation.
+</LI>
+<LI>Rain causes wetting of all equipment, this has to be avoided especially on sensitive optical, electrical and hydraulic systems.
+</LI>
+<LI>Moisture fraction is indicated by a digital sensor and indicates that rain or condensation is occuring or has recently occurred but not yet cleared sufficiently.
+</LI>
+<LI>Cold temperatures lead to ice which can cause the enclosure portals to stick and thus put considerable strain on the motors and electrical supply if an attempt was made to open these.
+</LI>
+<LI>Wind gusts  can cause damage to telescope structure and attached instruments. Moderate wind can also lead to poor tracking performance due to <I>wind shake</I>.
+</LI>
+</UL>
+
+<P>
+Table <A HREF="#tab:rcs_weather_rules">1</A>) summarizes the rules currently (January 2008) in force for weather clear and alert triggers. A weather variable crossing its <I>alert</I> level signals bad weather. In order to clear (signal good weather) the variable must pass the primary <I>clear</I> level and remain below the secondary level for at least the time specified by the stability parameter. All variables must be in the <I>clear</I> state for overall <B>Good</B> weather. Any variable in its <I>alert</I> state indicates <B>bad</B> weather. Currently all rules have a 30 minute clearing stability time but this can be changed.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="2346"></A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+Definitions of alert and clear threshold levels for triggering good/bad weather conditions. A variable crossing its alert level signals bad weather. In order to clear (signal good weather) the variable must pass the primary clear level and remain below secondary level for at least the time specified by stability parameter. All variables must be in the <I>clear</I> state for overall <B>Good</B> weather. Any variable in its <I>alert</I> state indicates <B>bad</B> weather.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=5>Weather variable triggering conditions</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Variable</TD>
+<TD ALIGN="LEFT">Alert threshold</TD>
+<TD ALIGN="LEFT">Primary clear level</TD>
+<TD ALIGN="LEFT">Secondary clear level</TD>
+<TD ALIGN="LEFT">Stability</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Humidity</TD>
+<TD ALIGN="LEFT">%</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img283.png"
+ ALT="$ &lt; 70$">%</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img284.png"
+ ALT="$ &lt; 75$">%</TD>
+<TD ALIGN="LEFT">30 min</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Moisture</TD>
+<TD ALIGN="LEFT">%</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.png"
+ ALT="$ &lt; 9$">%</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$ &lt; 9.5$">%</TD>
+<TD ALIGN="LEFT">30 min</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Wind speed</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $> 15ms^{-1}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$ &gt; 15ms^{-1}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $< 12ms^{-1}$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ &lt; 12ms^{-1}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $< 14ms^{-1}$
+ -->
+</TD>
+<TD ALIGN="LEFT">30 min</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Temperature</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $< 0.0^{\circ}$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="$ &lt; 0.0^{\circ}$"></TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $> 0.1^{\circ}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.png"
+ ALT="$ &gt; 0.1^{\circ}$">C</TD>
+<TD ALIGN="LEFT"><!-- MATH
+ $> 0.05^{\circ}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.png"
+ ALT="$ &gt; 0.05^{\circ}$">C</TD>
+<TD ALIGN="LEFT">30 min</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<A NAME="tab:rcs_weather_rules"></A></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+The data collected consists of 1582518 samples taken at around 30 seconds cadence over a period of 30 months between 2005 and 2007. The inter-sample gap distribution (Fig. <A HREF="#fig:gap_dist">5.5.1</A>) shows relatively few gaps. 364 gaps exceed 5 minutes of which 58 also exceed 60 minutes. The longest gap of 4.2 days occurred on XXX due to a power outage.  
+
+<DIV ALIGN="CENTER"><A NAME="fig:gap_dist"></A><A NAME="1996"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 9:</STRONG>
+Distribution of intersample gaps. The vast majority of the 1582518 samples occur with gaps of 30 seconds. A small number 292 excede 5 minutes, a further 14 excede 30 minutes and 58 excede 60 minutes. The largest gap of 4.2 days occurred during xxx as a result of a site power outage.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="67" HEIGHT="36" ALIGN="BOTTOM" BORDER="0"
+ SRC="img294.png"
+ ALT="\includegraphics[scale=0.4, angle=-90]{figures/ecs/gap_dist.eps}">
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html856"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html852"
+  HREF="node47.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html846"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html854"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html857"
+  HREF="node49.html">Analysis of results</A>
+<B> Up:</B> <A NAME="tex2html853"
+  HREF="node47.html">Weather</A>
+<B> Previous:</B> <A NAME="tex2html847"
+  HREF="node47.html">Weather</A>
+ &nbsp; <B>  <A NAME="tex2html855"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

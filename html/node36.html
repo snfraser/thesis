@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Discussion on metrics/quality/reward</TITLE>
+<META NAME="description" CONTENT="Discussion on metrics/quality/reward">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node37.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html690"
+  HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html686"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html680"
+  HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html688"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html691"
+  HREF="node37.html">Efficiency measure -</A>
+<B> Up:</B> <A NAME="tex2html687"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html681"
+  HREF="node35.html">Project completion</A>
+ &nbsp; <B>  <A NAME="tex2html689"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00073400000000000000">
+Discussion on metrics/quality/reward</A>
+</H3>.
+I need a way to compare the results of various schedules i.e. the result of scheduling over say a night using a given algorithm or set of parameters or despatching rule(s)/policy. What I am after is a way of measuring the cumulative reward for the night. This is not the same as a look-ahead situation where I am trying to decide what to do - this is a posterior measurment of how good a particular schedule has been.
+
+<P>
+We shall define  as the <IMG
+ WIDTH="24" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img182.png"
+ ALT="$ i^{th}$"> schedule. It contains a sequence <!-- MATH
+ $G(S_i) = {g_j}$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.png"
+ ALT="$ G(S_i) = {g_j}$"> of groups, which are executed at times <IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img249.png"
+ ALT="$ {t_j}$">.
+
+<P>
+There are 2 sorts of utility/reward being considered.
+
+<P>
+
+<OL>
+<LI>Enterprise utility.
+The first represents the utility to the telescope, Ideally it wants to do (scientifically) valuable work and as much of it as possible. It does not want to sit about doing nothing just so it can wait for a high value observation with a small window of opportunity (graph showing a schedule snippet with 2 low value but long groups and little idle time and 2 high value (scientific priority) but short groups with a heap of idle time) if we consider the figure the low value groups give a low sum score <IMG
+ WIDTH="44" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.png"
+ ALT="$ \sum V_i$"> for the night if we just add their individual utilities whereas the high value groups give a high sum score. On the other hand if we do an integral (int V(t)) we get a better score for the low value groups. 
+
+<P>
+We may want to factor in idle time as a contribution to cumulative reward i.e. as a penalty/cost term. This can arise for several reasons:-
+There may be an idle gap between groups due to the specific enablement windows, during the execution of a group we can distinguish useful and wasted time - useful time is basically exposing (and to some extend readout which we cannot avoid), wasted time includes slewing, selection and configuraton of instruments, acquisition by autoguider, settling time, and the scheduling time itself. 
+
+<P>
+Factors we might include in <IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ V_e(g,t)$"> include:-
+
+<UL>
+<LI>some measure of the scientific priority assigned to the group's proposal.
+</LI>
+<LI>a contribution from condition matching - we dont want to waste quality time doing groups which can be executed in poorer conditions.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>User utility.
+The second approach is via a set of user-preference metrics. In the ideal schedule all the user's doable observations would be done at their optimum times. Of course we cant always work these out - we can work out when the target will be best placed e.g. at its highest elevation in the current window (bear in mind the window may extend over several nights) but we cannot say what the conditions will be like at that time - i.e. the scope may be out of action due to weather or the seeing could be horrendous. The user's preferences metric could include factors like - how close to centre of time window, how good the airmass, how well conditions are/will be matched. Each group could have a set of user-specified weights for these as they would have their own preferences as to which are more important and the relative importance of particular attribute values. One user might prefer his observations to be done at low airmass rather than worrying too much about timeliness, another might want his timing adhered to rigidly and not care so much about the airmass - the group's observing constraints define limits for these attributes.
+
+<P>
+Factors we might include in <IMG
+ WIDTH="63" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img252.png"
+ ALT="$ V_u(g,t)$"> include:-
+
+<UL>
+<LI>airmass preference
+</LI>
+<LI>sky brightness
+</LI>
+<LI>seeing matching
+</LI>
+<LI>window position
+</LI>
+<LI>data profile tracking
+</LI>
+</UL>
+
+<P>
+</LI>
+</OL>
+
+<P>
+We can also work out the utility <IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img253.png"
+ ALT="$ u_i(t)$"> for a group over the night, this will have some maximum value <IMG
+ WIDTH="44" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$ u^*_i(t)$"> in any given night - this is the optimum time to do the group so we could work out <!-- MATH
+ $u_i(t)/u^*_i(t)$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img255.png"
+ ALT="$ u_i(t)/u^*_i(t)$"> so the utilities are normalized - do we need to do that?
+
+<P>
+Maybe we want something like.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+V(S_i) = \mathop{\sum}_{g_j \in G(S_i)} ((w_{u}*V_{u}(g_j,t_j) + w_{e}*V_{e}(g_j,t_j))*\tau_j - c_j u_j)
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="495" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img256.png"
+ ALT="$\displaystyle V(S_i) = \mathop{\sum}_{g_j \in G(S_i)} ((w_{u}*V_{u}(g_j,t_j) + w_{e}*V_{e}(g_j,t_j))*\tau_j - c_j u_j)$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(13)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ u_j$"> is the amount of useless/unproductive time in the  group execution, <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.png"
+ ALT="$ w_{u}$"> is the weighting for user-pref satisfaction, <!-- MATH
+ $V_{u}(g_j)$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img260.png"
+ ALT="$ V_{u}(g_j)$"> is the value the user assigns to the performing of his observation at the selected time, <IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img261.png"
+ ALT="$ w_{e}$"> is the weighting for enterprise value, <!-- MATH
+ $V_{e}(g_j)$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.png"
+ ALT="$ V_{e}(g_j)$"> is the value of scientific priority assigned to the chosen observations, <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.png"
+ ALT="$ \tau_j$"> is the useful time part of the group's execution - (we are integrating, or are we ?)
+
+<P>
+This metric adds in the contribution from enterprise and user-preference matching but since all users are free to specify their own weightings does this cause any problems with comparison? e.g. If user-A assigns preferences so his observations are always good i.e. he has no preference and user-B chooses his preferences so his observations are best at t_B, user-A will get a better score contribution most of the time - this may not matter - we are not using this to select A over B just to measure the selection score over the night?
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html690"
+  HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html686"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html680"
+  HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html688"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html691"
+  HREF="node37.html">Efficiency measure -</A>
+<B> Up:</B> <A NAME="tex2html687"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html681"
+  HREF="node35.html">Project completion</A>
+ &nbsp; <B>  <A NAME="tex2html689"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

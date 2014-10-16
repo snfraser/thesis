@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Adaptive Learning techniques applied to scheduling</TITLE>
+<META NAME="description" CONTENT="Adaptive Learning techniques applied to scheduling">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node11.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html507"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html503"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html497"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html505"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html508"
+  HREF="node23.html">Economics and market based</A>
+<B> Up:</B> <A NAME="tex2html504"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html498"
+  HREF="node21.html">Evolutionary and biologically inspired</A>
+ &nbsp; <B>  <A NAME="tex2html506"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000511000000000000000">
+Adaptive Learning techniques applied to scheduling</A>
+</H2>
+Papers by (Riedmuller etc). Discuss briefly TD(<IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img162.png"
+ ALT="$ \lambda$">), Q-learning, MDPs.
+
+<P>
+Reinforcement learning techniques involve learning policies for state-space problem solving. For each state <IMG
+ WIDTH="49" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.png"
+ ALT="$ s \in S$"> the policy <!-- MATH
+ $\pi:s \rightarrow a$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img164.png"
+ ALT="$ \pi:s \rightarrow a$"> determines the action <IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$ a \in A$"> to perform. While learning, the system receives a reinforcement signal or reward after each action. The goal is to find an optimal policy <IMG
+ WIDTH="23" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img166.png"
+ ALT="$ \pi^*$"> which maximizes the expected cumulative reward over future action. In scheduling, the policy tells us how (what scheduling action to perform) to maximize some measure of schedule quality in the final realized schedule.
+
+<P>
+Motivated by the myopism of local despatching rules which lead to supboptimal global behaviour, [<A
+ HREF="node99.html#riedmiller99neural">Riedmiller and Riedmiller, 1999</A>] have studied the use of RL techniques to learn despatching rules which adapt dynamically using feedback from the evolving problem situation. The problem is represented as an MDP where <IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img167.png"
+ ALT="$ s(t)$"> represents the allocation of tasks to resources at time <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> and <IMG
+ WIDTH="36" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.png"
+ ALT="$ a(t)$"> represents the selection of the next job to allocate. Individual Q-learning agents with local state and action knowledge are associated with each resource. They used an MLP to represent the value function, taking as inputs a number of problem features culled from the problem space (set of unallocated tasks). These include features relating to the current schedule state:- tightness with respect to due dates, estimated tardiness, estimated makespan, average slack, and features dependant on the next job selection such as:- average remaining slack if <IMG
+ WIDTH="36" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$ job_i$"> is selected, relative slack (<!-- MATH
+ $job_i/total$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.png"
+ ALT="$ job_i/total$">). By varying the set of input features selected to match those of standard despatch heuristics (EDD, SPT, LPT, FIFO, MinSlack) they were able to train the network to produce despatch policies which met or exceeded the performance of these heuristics on problems to which the specific heuristics were best suited. By combining sets of input features they were also able to outperform all of these despatch heuristics on a variety of problems. In effect the network was able to learn better policies by combining the standard heuristics depending on the problem features. When applied to untrained problems the network was able to successfully generalize and improved significantly on each of the standard despatch policies.
+
+<P>
+Though possible to engineer domain-specific heuristics by hand to exploit regularities and features of a problem space, this can be time consuming and expensive and is naturally non-general. This was the motivation for [<A
+ HREF="node99.html#zhang95reinforcement">Zhang and Dietterich, 1995</A>] who have studied the use of RL techniques to learn heuristics. Using a <!-- MATH
+ $TD(\lambda)$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.png"
+ ALT="$ TD(\lambda)$"> based technique in which the value function is represented by the weights in a feed-forward network, the reward at each learning step <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> is computed as the summed relative utilization index (RUI) for each resource at that time step (latex doesnt like this eqn so left out for now).
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+RUI_i(t) =
+\begin{cases}
+1& \text{$U_i(t) < c_i(t)$} \\
+U_i(t)/c_i(t)& \text{$U_i(t) >= c_i(t)$}
+\end{cases}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="327" HEIGHT="76" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.png"
+ ALT="$\displaystyle RUI_i(t) = \begin{cases}1&amp; \text{$U_i(t) &lt; c_i(t)$} \\ U_i(t)/c_i(t)&amp; \text{$U_i(t) &gt;= c_i(t)$} \end{cases}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Their system models an iterative repair technique. The states represent the constructed schedule at a point in a sequence of repairs to obtain an optimal schedule and the actions are selected from a set of repair operations. They use a number of features extracted from the partial schedule at each learning step as inputs to the NN and this is used to estimate the value function. In tests against an iterative repair technique empolying stochastic search via SA [<A
+ HREF="node99.html#zweben94scheduling">Zweben et&nbsp;al., 1994</A>] the system was able to learn a repair policy after training which beat the IR technique consistently for speed though the IR technique was able to produce better schedules given sufficient time.
+
+<P>
+In dynamic systems [<A
+ HREF="node99.html#shaw90intelligent">Shaw et&nbsp;al., 1990</A>] hypothesise that the rules used to make scheduling decisions should change with time as the problem characteristics evolve. They proposed a system which distinguishes between and ranks problem characteristics by relative importance, then performs adaptive scheduling by opportunistically selecting appropriate heuristics. 
+
+<P>
+The system called Pattern Directed Scheduling (PDS) works in 2 stages. In the first step (learning stage) a series of training scenarios are simulated and used to study the effects of applying various despatching rules. A critic module (the expert) analyses the performance of these rules on the problem scenarios and may generate new training examples to refine the matching of patterns to rules. The system chosen for induction was based on Iterative Dichotomizer 3 ID3 [<A
+ HREF="node99.html#quinlan86induction">Quinlan, 1986</A>], in this system a tree of rules is built up by splitting the domains of the problem attributes (summary explanation in Hopgood KBS for E and S). 
+
+<P>
+An effect of this system is that it ranks the attributes in terms of an entropy - <I>how much does attribute <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ j$"> contribute to the knowledge used to make a given decision ?</I>. This has the advantage of allowing us to see which attributes are important and which are irrelevant or decision-neutral but does have the disadvantage of considering each attribute in isolation and is unable to detect interdependancies between attributes. A typical example being where a decision should be made based on the similarity of 2 attributes rather than their individual values. Shaw et al used a total of 9 problem attributes and found that 2 of these were irrelevant. 
+
+<P>
+They found that when applying the learnt rules to real problems it was important to reduce the <I>nervousness</I> of the system. As the characteristics changed it was neccessary introduce a smoothing component to avoid switching rules too quickly by waiting until the selection count of a new rule had reached a threshold value. They tested the system against a number of standard despatching rules with a collection of problem instances and concluded that there was an overall improvement of around 11.5% in mean tardiness compared to the best of the single rules applied to any of the problem sets. The improvement was atrributed to the adaptive selection of rules and the ability to use feedback to refine the heuristic selection.
+
+<P>
+Case based reasoning (CBR) is a learning technique in which rules are induced by matching problem situations against a set of examples (the cases). It has several advantages:- CBR is particularly useful at extracting rules from noisy data, it operates incrementally building up its knowledge base while working (there is no large expenditure of effort at the start of the process or any need to check consistency between rules as in a rule-based learning), contextual information may be retained in the cases to help human assessors to understand the induced rules.
+
+<P>
+Due to their interactions and conflicts, it is often difficult to determine numerically or in terms of hard-and-fast rules, the relative ranking and trade-offs between users' schedule optimization preferences. The CABINS system [<A
+ HREF="node99.html#miyashita95cabins">Miyashita and Sycara, 1995</A>] uses CBR to capture these preferences. CABINS provides a framework for acquiring preferences then uses the case base to improve schedules and provide a reactive repair mechanism in response to unforseen events. 
+
+<P>
+The system operates in 2 stages:-
+
+<OL>
+<LI>In the first stage,a feasible but sub-optimal schedule is generated using a constructive technique. 
+</LI>
+<LI>In the second stage the schedule is improved by selecting repair actions (iterative repair). The quality of the schedule before and after each repair are compared using a number of local (pertaining to the current <I>focal</I> activity) and global (referring to the overall schedule) criteria (e.g. tardiness, WIP inventory, waiting time...). Repair operations are interleaved with consistency enforcment - as a repair on the currently selected <I>focal</I> activity is made it is likely that constraints may be broken requiring other activities (conflict set) to be rescheduled. 
+
+<P>
+CABINS has 3 operating modes:-
+
+<UL>
+<LI>In <I>knowledge acquisition</I> mode the user selects the repair actions to perform and these decisions are stored along with information to characterize the current problem situation (a case). If sufficient training examples are provided, the resulting case base should contain a distribution of examples covering a diverse set of problem situations.
+
+<P>
+</LI>
+<LI>In <I>decision support</I> mode, the system selects repair actions by matching the current problem to the repair actions in the case base and an interactive user has the option to veto/override providing additional training.
+
+<P>
+</LI>
+<LI>In <I>automatic</I> mode, the system makes all repair decisions using the case base without user interaction.
+</LI>
+</UL>
+</LI>
+</OL>
+
+<P>
+Selection of repair actions is performed by matching the problem profile against the stored cases using a <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.png"
+ ALT="$ k$">-nearest neighbour matching algorithm:-
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray}
+distance_i = \sum_j (salience^i_j (\frac {CaseFeature^i_j - ProblemFeature_j}{E_{dev_j}}))^2 \\
+similarity_i = \exp^{-distance_i}
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="215" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img176.png"
+ ALT="$\displaystyle similarity_i = \exp^{-distance_i}$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+where <!-- MATH
+ $salience^i_j$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.png"
+ ALT="$ salience^i_j$"> represents the user's evaluation of the importance of case feature <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ j$"> of case <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">, <!-- MATH
+ $CaseFeature^i_j$
+ -->
+<IMG
+ WIDTH="122" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$ CaseFeature^i_j$"> is the value of feature <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ j$"> of case <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">, <!-- MATH
+ $ProblemFeature_j$
+ -->
+<IMG
+ WIDTH="151" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.png"
+ ALT="$ ProblemFeature_j$"> is the value of feature <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ j$"> in the current problem and 
+<IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.png"
+ ALT="$ E_{dev_j}$"> is the standard deviation of feature <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ j$"> for all cases. <!-- MATH
+ $distance_i$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.png"
+ ALT="$ distance_i$"> is the dissimilarity between the current problem and the <IMG
+ WIDTH="24" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img182.png"
+ ALT="$ i^{th}$"> case and <!-- MATH
+ $similarity_i$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="$ similarity_i$"> is the similarity between the current problem and the  case.
+
+<P>
+The repair process operates as follows:-
+
+<OL>
+<LI>A focal activity is selected and a start time predicted using each of the available tactics.
+</LI>
+<LI>The conflict set is worked out by projecting the (ripple) effects of the repair onto neighbouring activities.
+</LI>
+<LI>Consistency enforcement technique works on the conflict set using the Activity Resource Reliance (ARR) variable ordering heuristic which selects the most critical activity (most likely to be involved in a capacity conflict over the repair horizon) and a greedy value ordering heuristic which selects a time assignment for the selected activity according to a bias function which represents the time-varing utility perceived for the activity start time deduced from the case base.
+</LI>
+<LI>The activity utility functions are updated - they are biased to start times calculated as part of step (3) to be used in the next iteration.
+</LI>
+<LI>CBR is used to evaluate the quality of the new schedule.
+</LI>
+</OL>
+They performed a series of comparisons against other methods evaluated against teh following criteria: <BR>
+<IMG
+ WIDTH="555" HEIGHT="65" ALIGN="TOP" BORDER="0"
+ SRC="img184.png"
+ ALT="\begin{inparaenum}[(\itshape a\upshape )]\item attendance to scheduling objectiv...
+... (speed) - especially in respect of its use for reactive repair \end{inparaenum}">
+<BR>.
+
+<P>
+Compared with SA based IR scheduler. Found that&nbsp;1000 cases was optimum - marginal improvment above 1000 was not worth the effort. They concluded that CABINS was good at capturing preferences and optimization trade-offs that are difficult to model, improved schedule quality irrespectively of how the initial (seed) schedule was generated and produced high quality schedules faster than simliar IR technique so was suitable for reactive scheduling.
+
+<P>
+NOTE (need to read that paper again as the repair/CBS intervleaving technique does not seem quite right.
+
+<P>
+[<A
+ HREF="node99.html#sycara96case">Sycara et&nbsp;al., 1995</A>] extended the CABINs framework to consider time-varying user preferences. Their extension allowed the system to learn new cases from its own evaluations of schedule improvment while running. They employed a <I>rolling horizon</I> model in which the matching algorithm gives more weight to recent cases than to older cases.
+
+<P>
+Some techniques involving learning despatch rules/priority weights GEN-H [<A
+ HREF="node99.html#morris97automatic">Morris et&nbsp;al., 1997</A>]. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html507"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html503"
+  HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html497"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html505"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html508"
+  HREF="node23.html">Economics and market based</A>
+<B> Up:</B> <A NAME="tex2html504"
+  HREF="node11.html">Review of current research</A>
+<B> Previous:</B> <A NAME="tex2html498"
+  HREF="node21.html">Evolutionary and biologically inspired</A>
+ &nbsp; <B>  <A NAME="tex2html506"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

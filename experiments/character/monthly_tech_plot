@@ -1,0 +1,19 @@
+#!/bin/csh
+
+# plot weather data per month
+
+#set term postscript enhanced color
+#set output "monthly_tech_stats.eps"
+#set xtics ("Jan" 1, "Feb" 2, "Mar" 3, "Apr" 4, "May" 5, "Jun" 6, "Jul" 7, "Aug" 8, "Sep" 9, "Oct" 10, "Nov" 11, "Dec" 12)
+gnuplot << EOF
+set term postscript enhanced color
+set output "monthly_tech_stats.eps"
+set xdata time
+set timefmt "%m-%Y"
+set title "Monthly technical downtime {/Symbol T}_{tech} (2005-2007)"
+set xlabel "Month"
+set ylabel "Technical loss {/Symbol T}_{tech} [hrs]"
+set format x "%b-%y"
+plot "monthlyTech.dat" using 2:3 with boxes fs solid 0.7 ti "Monthly bins", \
+      36.6 with line lt 3 ti "Monthly Average"
+EOF

@@ -1,0 +1,177 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[dvips]{graphicx}
+\usepackage[dvips]{color}
+\usepackage{amsbsy, marvosym}
+\usepackage{amsmath}
+\usepackage{paralist}
+\usepackage{wasysym}
+%\usepackage{algorithm2e}
+\usepackage{natbib}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{subfigure}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage[cols=3,toc=true]{glossary}
+%\usepackage{glossaries}
+%\usepackage[acronym]{glossaries}
+%\usepackage[toc]{glossaries}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+
+\fancyhf{}
+\lhead{\thechapter}
+\rhead{\thesection}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% this changes the default font !
+\renewcommand{\rmdefault}{ptm}
+
+\pagestyle{plain}
+%\textwidth 16cm
+\textwidth 14.5cm
+\textheight 24cm
+%\oddsidemargin -0.5cm
+\oddsidemargin 2.0cm
+%\evensidemargin -0.5cm
+\evensidemargin 0.5cm
+\topmargin -1cm
+
+% THIS MAKES THE LINESPACING BIGGER
+%\doublespacing
+%\onehalfspacing
+\linespread{1.6}
+
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\numberwithin{algorithm}{section}
+
+\usepackage{float}
+\floatstyle{ruled}
+
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+\newglossarytype[nlg]{notation}{not}{ntn}
+\providecommand{\notationname}{List of Symbols}
+
+\makeglossary
+%\makeglossaries
+\makenotation
+
+\begin{document}
+\pagenumbering{arabic}
+\setlength{\parindent}{5mm}
+\setlength{\parskip}{10pt plus2mm minus2mm}
+\thispagestyle{empty}
+
+% TITLE
+
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page
+%\includegraphics[width=0.15\textwidth]{./logo}\\[1cm]
+
+%\HRule \\[0.4cm]
+\Large{ADAPTIVE OPTIMAL TELESCOPE SCHEDULING}\\[1.5cm]
+% Title
+%\HRule \\[0.4cm]
+
+\vfill
+
+\Large{STEPHEN NICHOLAS FRASER}
+
+\vfill
+
+ A thesis submitted in partial fulfilment of the requirements of 
+            Liverpool John Moores University
+                   for the degree of 
+                Doctor of Philosophy
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+
+\end{titlepage}
+
+
+%\title{Adaptive Optimal Telescope Scheduling
+%Ph.D Thesis}
+%\author{S.N. Fraser}
+%\date{\today}
+%\maketitle
+
+\include{abstract}
+
+\settocbibname{Bibliography}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\printglossary
+\newpage
+\printnotation
+\newpage
+
+\part{Background}
+% INTRODUCTION
+\include{f_introduction}
+
+% LITERATURE REVIEW
+\include{f_review}
+
+% METRICS
+\include{f_metrics}
+
+% ENVIRONMENT/DB/VOL CHARACTER
+\include{f_character}
+
+% ARCHITECTURE
+\include{f_architecture}
+%\include{schedcomparch_study}
+
+\part{Experiments}
+% EXPERIMENTS
+\include{f_experiments}
+% EX MAM
+\include{fx_mam}
+% EX SCORING
+\include{fx_scoring}
+% EX COMPLEXITY
+%\include{fx_complexity}
+% EX COMPLEXITY
+\include{fx_complexity2}
+% EX STABILITY
+\include{fx_stability}
+% EX DISRUPTION
+\include{fx_disruption}
+% EX VOLATILITY
+\include{fx_volatility}
+% EX RELIABILITY
+\include{fx_reliability}
+
+% CONCLUSIONS and FURTHER
+\include{f_conclusions}
+
+% APPENDICES
+\part{Appendices}
+\appendix
+\include{appendix_p2gen}
+\include{appendix_stats}
+\include{appendix_stats_includes}
+
+% BIBLIO
+\bibliography{biblio}
+%\bibliographystyle{apalike}
+\bibliographystyle{plainnat}
+
+\end{document}

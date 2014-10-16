@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Scheduling in context</TITLE>
+<META NAME="description" CONTENT="Scheduling in context">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html304"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html300"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html294"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html302"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html305"
+  HREF="node7.html">Classification of scheduling problems</A>
+<B> Up:</B> <A NAME="tex2html301"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html295"
+  HREF="node5.html">Background</A>
+ &nbsp; <B>  <A NAME="tex2html303"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00042000000000000000">
+Scheduling in context</A>
+</H2>
+Scheduling problem in general defined S+P+E+C - hierarchy, horizons, feedback/cyclic nature of process.
+
+<P>
+The aim of scheduling is to generate a schedule - this indicates what is to be done, when, and with which resource(s).Scheduling cannot however be considered in isolation, it is part of a hierarchy involving concepts such as planning and execution. In a machine environment there will also be a need to consider aspects of low level control and feedback.  
+At some point the distinction between planning, scheduling and execution may become blurred depending on just how we characterize these. In highly dynamic environments planning, scheduling, execution and control may be continuous, interleaved or merged into a single operational <I>entity</I> - better word?.
+
+<P>
+<DL>
+<DT><STRONG>Scheduling</STRONG></DT>
+<DD>involves taking decisions regarding the allocation of available capacity or resources (equipment, personnel, space) to jobs, activities, tasks or customers over time. Scheduling thus results in a time-phased plan, or schedule of activities.
+
+<P>
+</DD>
+<DT><STRONG>Planning</STRONG></DT>
+<DD>involves the determination of the goals and objectives of an enterprise and the selection, through a systematic consideration of alternatives, of the policies, programs and procedures for achieving them. An activity devoted to clearly identifying, defining, and determining courses of action, before their initiation, necessary to achieve predetermined goals and objectives.
+
+<P>
+Planning is typically a long term activity - we define the term planning horizon as the period over which a plan is made or is expected to be of some utility in achieving its set out goals/objectives. Planning takes a global view of the enterprise, it may set targets to be achieved by the enterprise e.g. in the form of objective functions or the specification of constraints and preferences to be considered by lower layers. These goals may be somewhat imprecise or abstract - we are not deciding what to do when so much as what sort of things we want to do and how well we want to achieve them. 
+
+<P>
+We can usefully subdivide planning into several different horizons [<A
+ HREF="node99.html#xxx">A.N.Other, 1999</A>] - these are by no means set in stone and more/fewer horizons may be more suited to specific enterprises. The precision of the objectives becomes more focused and the time span decreases as we move down the hierarchy [<A
+ HREF="node99.html#chien00aspen">Chien et&nbsp;al., 2000</A>]??
+
+<P>
+<DL>
+<DT><STRONG>Strategic</STRONG></DT>
+<DD>horizon involves the creation of plans to cover very long periods of time. Typically this could be over a year or more and could at its most extreme represent the entire lifetime of an enterprise. 
+</DD>
+<DT><STRONG>Tactical</STRONG></DT>
+<DD>horizon plans are designed to cover medium periods e.g. a semester on a telescope,  weekly or monthly production targets in factory.
+</DD>
+<DT><STRONG>Operational</STRONG></DT>
+<DD>horizon plans are short term plans designed to allow an enterprise to function function, typically they cover the standard work-period of the enterprise e.g. a night's observing at a telescope, a shift at a factory.
+</DD>
+</DL>
+
+<P>
+</DD>
+<DT><STRONG>Execution</STRONG></DT>
+<DD>is the carrying out of the tasks assigned by the scheduler or planner by the enterprise - i.e. its normal operating procesdures. Execution may itself involve decomposition of assigned tasks, recovery from error or reaction to unexpected events.
+
+<P>
+</DD>
+</DL>
+
+<P>
+Formally we shall define the scheduling problem with respect to the following structures:-
+
+<P>
+
+<UL>
+<LI>A database, repository, queue or pool of tasks/jobs/activities <!-- MATH
+ $\mathbf{T}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img38.png"
+ ALT="$ \mathbf{T}$"> which are to be performed. This could be a set of observations by a telescope, processes on a computer, components to be manufactured in a factory, surgical operations to be performed in a hospital, blocks of trees to be felled in a forest. The pool of tasks may be static or dynamic, with new tasks inserted and uncompleted tasks removed while the execution is underway.
+
+<P>
+</LI>
+<LI>A set of constraints <!-- MATH
+ $\mathbf{C}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ \mathbf{C}$"> associated with the jobs - these may be <I>unary</I> (limits on a single variable or resource e.g. <IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ task_i$"> must start between <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$ t_1$"> and <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$ t_2$">), <I>binary</I> (linking the values of 2 variables - e.g. predecence <IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ task_i$"> must start before <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$ task_j$"> ) or may involve relationships between several problem variables. They may be further divided into:-
+y<DL>
+<DT><STRONG>hard constraints</STRONG></DT>
+<DD>which must be guaranteed to be satisfied by a valid schedule, e.g. 
+
+<OL>
+<LI><IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ task_i$"> must be completed by latest finish time <IMG
+ WIDTH="34" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$ lft_i$">.
+</LI>
+<LI>only 2 tasks can execute on <IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ machine_y$"> simultaneously.
+</LI>
+<LI>there must be a gap of at least <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$ t_{ij}$"> between execution of <IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ task_i$"> and <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$ task_j$">.
+</LI>
+<LI><IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ team_k$"> cannot work more than <IMG
+ WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$ max_k$"> hours in any day.
+</LI>
+</OL>
+
+<P>
+[<A
+ HREF="node99.html#sadeh91lookahead">Sadeh, 1991</A>] and [<A
+ HREF="node99.html#fox83thesis">Fox, 1983</A>] define the following classes of constraints:-
+
+<UL>
+<LI>precedence constraints - describe
+</LI>
+<LI>resource usage constraints - describe
+</LI>
+<LI>many others - (see Fox paper).
+</LI>
+</UL>
+
+<P>
+</DD>
+<DT><STRONG>soft constraints</STRONG></DT>
+<DD>or preferences which should be satisfied as far as possible but which are capable of relaxation to permit a feasible schedule to be derived. When relaxing constraints it is usual to associate a cost to the degree of relaxation, this  may be folded into the global objective function. The manner in which such relaxation occurs is likely to influence the search heuristics.
+ (a list of examples here)
+
+<UL>
+<LI>A telescope suffers from changes to <I>seeing</I> due to turbulent motion of the atmosphere- some observations may have constraints which state they cannot be executed if the seeing is worse than <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ x$">. 
+</LI>
+<LI>A machine in a factory may have a capacity which is determined by the current power levels or time of day.
+</LI>
+<LI>and another.
+</LI>
+</UL>
+
+<P>
+</DD>
+</DL>
+
+<P>
+</LI>
+<LI>A set of resources <!-- MATH
+ $\mathbf{R}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$ \mathbf{R}$"> to assign to the tasks. e.g. a telescope or one of several observatories for performing the observations, a production line or machine to make the components, a team of lumberjacks to fell the blocks of tree, a surgical team to perform the operations.
+
+<P>
+</LI>
+<LI>A set of goals <!-- MATH
+ $\mathbf{G}$
+ -->
+ which we are trying to achieve by performing these tasks. Goals may be specified in terms such as the standard measures from the CSP literature:- <I>min-slack</I>, <I>max-throughput</I>, <I>min-tardiness</I>, or may be set out as objective functions to be maximized. Either way we need to be able to extract appropriate quality parameters from the schedule. 
+
+<P>
+</LI>
+<LI>The environment <!-- MATH
+ $\mathbf{E}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \mathbf{E}$"> in which the scheduler lives and which can influence the execution of the tasks and can change the goals. (list of examples plus refs- ) 
+
+<P>
+Environmental variables may be:- 
+
+<P>
+
+<UL>
+<LI>static - constant in time (telescope's elevation limit, number of processors).
+</LI>
+<LI>dynamic - changing in time (telescope's current azimuth, current instrument selection, etc).
+
+<P>
+These may further be classified as:-
+
+<UL>
+<LI>deterministic - always known or predictable (e.g. position of the moon which affects sky-brightness and integration times, is always calculable).
+</LI>
+<LI>stochastic - randomly variable - (examples).
+</LI>
+<LI>chaotic - e.g. weather [<A
+ HREF="node99.html#lorenz63npflow">Lorenz, 1963</A>], atmospheric seeing [<A
+ HREF="node99.html#jorgenson91attractor">Jorgenson et&nbsp;al., 1991</A>].
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+Scheduling may be divided into 2 sub-problems - the satisfycing problem consists of finding a schedule which satisfies the hard constraints i.e. all the tasks are assigned to a valid time slot without regard to preferences - we refer to this as a feasible schedule. Such a schedule may contain significant amounts of slack time (when no tasks are being performed) or under-utilization of resources - such schedules are generally inefficient but that may be all that is required - these problems may be represented as constraint satisfaction problems (CSP). The optimization problem consists of finding a schedule which is both feasible and achieves its goals as layed down by the soft-constraints whilst maximizing an objective function (or minimizing a cost function which is equivelent). We will refer to this as an optimal schedule and may be represented as a constraint optimization problem (COP). 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html304"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html300"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html294"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html302"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html305"
+  HREF="node7.html">Classification of scheduling problems</A>
+<B> Up:</B> <A NAME="tex2html301"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html295"
+  HREF="node5.html">Background</A>
+ &nbsp; <B>  <A NAME="tex2html303"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,53 @@
+\subsection{Database characterization metrics}
+
+I need some way to characterize the content of the ODB - dont want large number of metrics, 
+and also dont want metrics which require massive computing/time to calculate 
+- i.e. they should be few and simple.
+
+What sort of things characterize an ODB ?
+
+\begin{itemize}
+\item daily and longer period contention/demand profiles 
+- these are in fact quite hard to derive but not excessively so.
+- can some features be extracted from these profiles 
+ - the whole profile is too much information to use as a variable ?
+ - this will involve studying daily profiles 
+ - i.e. these need generating on new and old collected ODBs 
+ - is this even possible for old ?
+
+\item statistics of groups/observations.
+- average execution time of groups in ODB 
+ - maybe just looking at groups which are active today or this week/month ?
+ - also want to see extremes - i.e. do we have a load of short exec groups
+ and a couple of mega exec groups with high priority !
+ 
+\item target elevations - distribution statistics on sky (alt/az).
+- some of these might need weighting by exec times
+
+\item scientific priorities
+
+\item accounting info
+
+\end{itemize}
+
+My guess is that all this information could be collected and munged together somehow !
+to produce a general ODB character figure - just how, I have no idea.
+
+
+These metrics describe the complexity of the scheduling problem at any given time. The content of the observing database/pool (ODB) at any time defines the set of observations that are available for scheduling at that time. This pool evolves due to the arrival of new observing requests, modification of existing request (e.g. in light of observing results) and removal of spent requests. These modifications which may be made by observers themselves via a phase2 tool or automatically by external user agents occur in principle continuously. The complexity manifests itself through changes in the competition between observing requests for particular times and over the course of a night in the overall load (the ratio of requested time to available time). The following metrics are suggested:
+
+
+\subsubsection{Contention profile}
+This is the time evolving profile of the number of observation groups which could be scheduled according to their explicit timing conatraints. Additional refinements include convolving with the probability of the time actually being available based on likely weather and technical downtime forecasts. The average contention over the course of a night gives an estimate of how overloaded the schedule could potentially be. This is a crude measure as it does not take into account the fact that some of the groups which figure in the contention profile later in the night may have already been selected by then and thus need not be considered. 
+
+\subsubsection{Load profile}
+A given group will potentially have multiple observing windows when it should be attempted. During any given window (t-window) the group can be considerred to have a demand D on the time within that window. E.g. if the group has an (estimated) execution time $t_x$ and its window of opportunity is $w$ then the group's demand over that window is $D=t_x/w$. If we add up the demand contributions of all the groups which are enabled at any given time we should have a measure of how much demand is placed on that instant. If this aggregate demand exceeds unity then it is likely that some of the groups will not be observed i.e. the requirement for time is greater than the time available. There are several refine,emt that can be made on this estimate. Firstly we can work out the numerator failry easily - it can usually be considered constant and known. The denominator is more of a problem. Firstly working out the window of opportunity from the group's time constraint is straightforward, however this window may extend over just a few minutes upto several days or even weeks. In the later case the group's target(s) may rise and set several times and the various implicit timing constraints may be broken on several occasions e.g. the lunar distance constraint will impose a varying overlap with the target visibility windows. If we consider each of the calculable constraints then we can work out the actual amount of time (within the t-window) that the group can actually be observed - this gives us a revised (increased) estimate for the group's individual demand for those times within the new sub-windows. Going on another stage we might like to consider those constraints which cannot be worked out in advance. A ggroup may have a minimum\_seeing constraint - we cannot tell what the seeing will be like at any future time though we may be able to estimate the likeliness of attaining the group's minimum level. Likewise we can obtain estimates of extinction (perhaps including seasonal variation). We should in addition consider the probability that the selecte time is even available for observing - weather and technical downtime mean that a certain fraction of time is lost - if we can estaimate these either seasonally or better still predict for some time ahead based on current and recent data then we shall have a better demand estimate i.e. we are calculating the likely time available rather than the certain time available for the group. 
+
+
+
+
+\subsection{Heuristic Selection metrics}
+
+
+
+\subsection{Schedule quality metrics}

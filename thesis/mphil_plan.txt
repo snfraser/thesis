@@ -1,0 +1,26 @@
+title:
+Adaptive Optimal Scheduling for Robotic Telescope Operations.
+
+aims:
+
+1. To develop a scheduler for selection of observations for robotic telescope operations which generates the most "valuable" schedules.
+
+plan:
+
+1. develop metric(s) for comparing schedules from different schedulers and/or scheduling policies.
+
+2. develop a simulation framework for testing schedulers (as plugin modules).
+
+3. develop 2 different schedulers to test with the simulation framework.
+
+4. collect data to characterize the telescope's operating environment.
+
+5. test a despatch scheduler (S1) using the framework by varying the weighting and bias functions to determine the optimal settings. 
+   -these may be dependant on characteristics of the operating environment and so determination of this dependancy would lead to the ability to automatically adapt the policy.
+
+6. test a look-ahead scheduler (S2) using the framework by varying horizon and bias functions to determine the optimal settings. 
+
+7. compare S1 and S2 on the same datasets to determine whether S2 provides any advantage.
+
+Copy from my own abstract - this summarizes the above quite well and in better style !
+

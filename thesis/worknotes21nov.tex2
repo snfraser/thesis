@@ -1,0 +1,38 @@
+Discussion about the Phase2ModelGenerator and its configuration.
+
+The Phase2Model generator can be used to create ODB snapshots according to various distributiions. It can be called up programatically and configured to create snapshots with varying complexity. The phase2 model is generated with the following parameters:-
+
+\begin{itemize}
+\item {\bf Root} Specifies the root name for this phase2 model. The model is accessed via a Phase2ModelProvider under this name.
+\item {\bf Site\_Name }
+\item {\bf Site\_Latitude }
+\item {\bf Site\_Longitude}
+\item $T$ {\bf Date} specifies the \emph{current} point in the semester.
+\item $\Delta{T_B}$ {\bf Backwards\_Age} represents the time difference from $T$ to the start of the current semester.
+\item $\Delta{T_F}$ {\bf Forward\_Age} represents the time difference from $T$ to the end of the current semester.
+\item $N_P$ {\bf Number\_Proposals} controls the total number of proposals generated. These will have activation times distributed according to $U[\Delta{T_B}, T]$ and expiry dated distributed according to  $U[T, \Delta{T_F}]$.
+\item $N_G$ {\bf Number\_Groups} controls the number of groups per proposal, distributed as $U[1, N_G]$.
+\item $N_O$ {\bf Number\_Obs} controls the number of observations per group, distributed as $U[1, N_O]$.
+\end{itemize}
+
+Groups are geenrated using various timing constraint classes according to the following fractions:-
+\begin{itemize}
+\item $g_{flex}$ {\bf Flex\_Group\_Fraction} The fraction of groups to be generated with Flexible timing constraints.
+\item $g_{mon}$  {\bf Monitor\_Group\_Fraction} The fraction of groups to be generated with monitor timing constraints.
+\item $g_{int}$  {\bf Interval\_Group\_Fraction} The fraction of groups to be generated with minimum interval timing constraints.
+\end{itemize}
+
+Groups are constructed with start and end dates selected from the range $U[\Delta{T_B}, T]$ and $U[T, \Delta{T_F}]$. 
+
+The periods of monitor groups are taken from one of a set of 3 normal distributions $G(\mu_{m_i}, \sigma_{m_i})$ for the various distributions ($i$) are determined by the following variables:-
+
+\begin{itemize}
+\item $\mu_{m_i}$     {\bf Monitor\_Group\_Period\_Mean\_i} is the mean value for monitor period distribution $i$.
+\item $\sigma_{m_i}$  {\bf Monitor\_Group\_Period\_Sigma\_i} is the standard-deviation for monitor period distribution $i$
+\end{itemize}
+The specific distribution is selected with probability determined by $f_{m_i}$ given by variable {\bf Monitor\_Group\_Period\_Frac\_i}.
+
+
+
+
+

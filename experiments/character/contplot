@@ -1,0 +1,27 @@
+#!/bin/csh
+
+# Plot predicted and actual contention for a single night.
+# 
+# Usage:  contplot scorelog_<date> prescan_cd_<date>
+#
+# The 2 files are the ones created on the relevant afternoon preceding the night.
+
+set sf = $1
+set pf = $2
+
+cat $sf | awk '{print $2,$1,$3+$4+$5, $6}' > cont2.dat
+
+set dat = `cat cont2.dat | head -1 | awk '{print $1}'`
+set out = contention_${dat}.eps
+
+/usr/bin/gnuplot -persist << EOF
+set xdata time
+set timefmt "%Y-%m-%d %H:%M:%S"
+set title "Comparison of predicted and actual contention for night: $dat "
+set xlabel "Time"
+set ylabel "Contention"
+set format x "%Hh"
+set term postscript eps enhanced color
+set output "${out}"
+plot "cont2.dat" using 1:3 pt 5 ps 1 ti "Actual", "${pf}" using 1:3 pt 5 ps 1 ti "Prediction"
+EOF

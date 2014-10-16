@@ -1,0 +1,36 @@
+#!/bin/csh
+echo "Latexing #1..."
+/usr/bin/latex final_big
+if ($status != 0) exit 1
+
+echo "Bibtexing..."
+/usr/bin/bibtex final_big
+echo "Bibtex status $status"
+#if ($status != 0) exit 1
+
+echo "Latexing #2..."
+/usr/bin/latex final_big
+if ($status != 0) exit 1
+
+echo "Latexing #3..."
+/usr/bin/latex final_big
+if ($status != 0) exit 1
+
+echo "making glossaries"
+/usr/bin/makeindex -s final_big.ist -t final_big.glg -o final_big.gls final_big.glo
+/usr/bin/makeindex -s final_big.ist -t final_big.nlg -o final_big.ntn final_big.not
+
+echo "Latexing #4..."
+/usr/bin/latex final_big
+if ($status != 0) exit 1
+
+echo "Latexing #5..."
+/usr/bin/latex final_big
+if ($status != 0) exit 1
+
+echo "Dvipsing..."
+/usr/bin/dvips -o final_big.ps final_big.dvi
+
+set wc = `cat f_*.tex fx_*.tex | wc -w`
+
+echo "Completed: Words = $wc "

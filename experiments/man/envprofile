@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set de = $1
+
+set file = e_${de}_prof.dat
+echo "Using $file "
+set out = e_${de}_prof.eps
+echo "Output $out "
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "$out"
+set term postscript enhanced color
+set title "Environment (seeing) profile for Model E_{${de}00}"
+set xlabel "Time [hours]
+set ylabel "Seeing state"
+plot "$file" using (\$1/60):3 with lines notitle
+
+EOF

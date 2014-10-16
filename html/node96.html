@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Phase2 model generator and its configuration</TITLE>
+<META NAME="description" CONTENT="Phase2 model generator and its configuration">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node97.html">
+<LINK REL="previous" HREF="node92.html">
+<LINK REL="up" HREF="main.html">
+<LINK REL="next" HREF="node97.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1453"
+  HREF="node97.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1449"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1443"
+  HREF="node95.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1451"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1454"
+  HREF="node97.html">Calculation of</A>
+<B> Up:</B> <A NAME="tex2html1450"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1444"
+  HREF="node95.html">Observations</A>
+ &nbsp; <B>  <A NAME="tex2html1452"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000190000000000000000"></A>
+<A NAME="sect:app_p2gen"></A>
+<BR>
+Phase2 model generator and its configuration
+</H1>
+
+<P>
+The Phase2Model generator can be used to create ODB snapshots according to various distributiions. It can be called up programatically and configured to create snapshots with varying complexity. The phase2 model is generated with the following parameters:-
+
+<P>
+<DL>
+<DT><STRONG>Root</STRONG></DT>
+<DD>Specifies the root name for this phase2 model. This is the name by which the model is accessed via a Phase2ModelProvider.
+</DD>
+<DT><STRONG>Name</STRONG></DT>
+<DD>The name of the site.
+</DD>
+<DT><STRONG></STRONG></DT>
+<DD>Latitude of the site.
+</DD>
+<DT><STRONG></STRONG></DT>
+<DD>Longitude of the site.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img107.png"
+ ALT="$ T$"></STRONG></DT>
+<DD>specifies the <I>current</I> point in the semester. Typically this time coincides with the start time of a simulation run.
+</DD>
+<DT><STRONG><!-- MATH
+ $\Delta{T_B}$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="16" ALIGN="MIDDLE" BORDER="0"
+ SRC="img454.png"
+ ALT="$ \Delta{T_B}$"></STRONG></DT>
+<DD>represents the time difference from <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img107.png"
+ ALT="$ T$"> to the start of the current semester.
+</DD>
+<DT><STRONG><!-- MATH
+ $\Delta{T_F}$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img455.png"
+ ALT="$ \Delta{T_F}$"></STRONG></DT>
+<DD>represents the time difference from <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img107.png"
+ ALT="$ T$"> to the end of the current semester.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img456.png"
+ ALT="$ N_P$"></STRONG></DT>
+<DD>controls the total number of proposals generated. These will have activation times distributed according to <!-- MATH
+ $U[\Delta{T_B}, T]$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img457.png"
+ ALT="$ U[\Delta{T_B}, T]$"> and expiry dated distributed according to  <!-- MATH
+ $U[T, \Delta{T_F}]$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.png"
+ ALT="$ U[T, \Delta{T_F}]$">.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="88" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img459.png"
+ ALT="$ N_G$"></STRONG></DT>
+<DD>controls the number of groups per proposal, distributed as <IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img460.png"
+ ALT="$ U[1, N_G]$">.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="74" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img461.png"
+ ALT="$ N_O$"></STRONG></DT>
+<DD>controls the number of observations per group, distributed as <IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img462.png"
+ ALT="$ U[1, N_O]$">.
+</DD>
+</DL>
+
+<P>
+Groups are generated using various timing constraint classes according to the following fractions:-
+<DL>
+<DT><STRONG><IMG
+ WIDTH="74" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img463.png"
+ ALT="$ g_{flex}$"></STRONG></DT>
+<DD>Fraction of groups to be generated with Flexible timing constraints.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="40" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img464.png"
+ ALT="$ g_{mon}$"></STRONG></DT>
+<DD>Fraction of groups to be generated with monitor timing constraints.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="41" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img465.png"
+ ALT="$ g_{int}$"></STRONG></DT>
+<DD>Fraction of groups to be generated with minimum interval timing constraints.
+</DD>
+</DL>
+
+<P>
+All groups are constructed with start and expiry dates selected from the range <!-- MATH
+ $U[\Delta{T_B}, T]$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img457.png"
+ ALT="$ U[\Delta{T_B}, T]$"> and <!-- MATH
+ $U[T, \Delta{T_F}]$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.png"
+ ALT="$ U[T, \Delta{T_F}]$"> respectively. 
+
+<P>
+For monitor groups, the periods are selected with probability determined by variable <IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img466.png"
+ ALT="$ f_{m_i}$"> from one of a set of 3 normal distributions <!-- MATH
+ $G(\mu_{m_i}, \sigma_{m_i})$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img467.png"
+ ALT="$ G(\mu_{m_i}, \sigma_{m_i})$"> defined by variables:-
+
+<P>
+<DL>
+<DT><STRONG><IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img468.png"
+ ALT="$ \mu_{m_i}$"></STRONG></DT>
+<DD>mean value for monitor period distribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">.
+</DD>
+<DT><STRONG><!-- MATH
+ $\sigma_{m_i}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img469.png"
+ ALT="$ \sigma_{m_i}$"></STRONG></DT>
+<DD>standard-deviation for monitor period distribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">
+</DD>
+</DL>
+The window fraction is taken from the distribution <!-- MATH
+ $U[0.25, 1.0]$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img470.png"
+ ALT="$ U[0.25, 1.0]$">.
+
+<P>
+For MinimumInterval groups, the minimum window is selected with probability <IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img471.png"
+ ALT="$ f_{i_i}$"> from one of 3 normal distributions <!-- MATH
+ $G(\mu_{i_i}, \sigma_{i_i})$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img472.png"
+ ALT="$ G(\mu_{i_i}, \sigma_{i_i})$"> defined by variables:-
+
+<P>
+<DL>
+<DT><STRONG><IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img473.png"
+ ALT="$ \mu_{i_i}$"></STRONG></DT>
+<DD>mean value for minimum interval length distribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">.
+</DD>
+<DT><STRONG><!-- MATH
+ $\sigma_{i_i}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img474.png"
+ ALT="$ \sigma_{i_i}$"></STRONG></DT>
+<DD>standard-deviation for minimum interval lengthdistribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">
+</DD>
+</DL>
+
+<P>
+Observation exposure times are selected with probability <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.png"
+ ALT="$ e_i$"> from one of 2 exposure length distributions <!-- MATH
+ $E(\mu_{e_i}, \sigma_{e_i})$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img475.png"
+ ALT="$ E(\mu_{e_i}, \sigma_{e_i})$"> defined by variables:-
+<DL>
+<DT><STRONG><IMG
+ WIDTH="89" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img476.png"
+ ALT="$ \mu_{e_i}$"></STRONG></DT>
+<DD>mean value for exposure length distribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">.
+</DD>
+<DT><STRONG><!-- MATH
+ $\sigma_{e_i}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img477.png"
+ ALT="$ \sigma_{e_i}$"></STRONG></DT>
+<DD>standard-deviation for exposure length distribution <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.png"
+ ALT="$ i$">.
+</DD>
+</DL>
+<IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img478.png"
+ ALT="$ N_n$"> exposure-max-count specifies the maximum number of multruns per observation, the number of multruns is taken from <IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img479.png"
+ ALT="$ U[1,N_m]$">. 
+
+<P>
+The budget available to each proposal is taken from <!-- MATH
+ $U[B_{min}, B_{max}]$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img480.png"
+ ALT="$ U[B_{min}, B_{max}]$"> with used fraction distributed as <!-- MATH
+ $U[U_{min}, U_{max}]$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img481.png"
+ ALT="$ U[U_{min}, U_{max}]$">.
+
+<P>
+Proposals have a scientific priority rating taken from the range 0 (HIGH) to 3 (LOW). The allocation is specified accroding to the fractions:-
+<DL>
+<DT><STRONG><IMG
+ WIDTH="117" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img482.png"
+ ALT="$ P_0$"></STRONG></DT>
+<DD>Fraction of proposals with scientific priority 0 (HIGH).
+</DD>
+<DT><STRONG><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img483.png"
+ ALT="$ P_1$"></STRONG></DT>
+<DD>Fraction of proposals with scientific priority 0 (MED).
+</DD>
+<DT><STRONG><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img484.png"
+ ALT="$ P_2$"></STRONG></DT>
+<DD>Fraction of proposals with scientific priority 0 (LOW).
+</DD>
+</DL>
+
+<P>
+Groups have internal priorities selected from the following set.
+<DL>
+<DT><STRONG><IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img485.png"
+ ALT="$ G_1$"></STRONG></DT>
+<DD>Fraction of groups with priority level 1 (normal)
+</DD>
+<DT><STRONG><IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img486.png"
+ ALT="$ G_2$"></STRONG></DT>
+<DD>Fraction of groups with priority level 2 (raised)
+</DD>
+<DT><STRONG><IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img487.png"
+ ALT="$ G_3$"></STRONG></DT>
+<DD>Fraction of groups with priority level 3 (medium)
+</DD>
+<DT><STRONG><IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img488.png"
+ ALT="$ G_4$"></STRONG></DT>
+<DD>Fraction of groups with priority level 4 (high)
+</DD>
+<DT><STRONG><IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img489.png"
+ ALT="$ G_5$"></STRONG></DT>
+<DD>Fraction of groups with priority level 5 (urgent)
+</DD>
+<DT><STRONG><IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img490.png"
+ ALT="$ G_{BGR}$"></STRONG></DT>
+<DD>Fraction of groups with Background priority level
+</DD>
+<DT><STRONG><IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img491.png"
+ ALT="$ G_{STD}$"></STRONG></DT>
+<DD>Fraction of groups which represent photometric standards (nominal priority 3).
+</DD>
+</DL>
+
+<P>
+Various observing constraints are represented by the following parameters:-
+<DL>
+<DT><STRONG><IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img492.png"
+ ALT="$ f_{Dark}$"></STRONG></DT>
+<DD>Fraction of groups which require Dark lunar conditions.
+</DD>
+<DT><STRONG><!-- MATH
+ $f_{Photom}$
+ -->
+<IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img493.png"
+ ALT="$ f_{Photom}$"></STRONG></DT>
+<DD>Fraction of groups which require photometric extinction conditions.
+</DD>
+<DT><STRONG><IMG
+ WIDTH="63" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img494.png"
+ ALT="$ f_{Poor}$"></STRONG></DT>
+<DD>Fraction of groups which require minimum seeing of <I>poor</I> (<!-- MATH
+ $seeing > 1.3^{\prime\prime}$
+ -->
+<IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img495.png"
+ ALT="$ seeing &gt; 1.3^{\prime\prime}$">).
+</DD>
+<DT><STRONG><IMG
+ WIDTH="115" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img496.png"
+ ALT="$ f_{Av}$"></STRONG></DT>
+<DD>Fraction of groups which require minimum seeing of <I>average</I> (<!-- MATH
+ $0.8^{\prime\prime} < seeing < 1.3^{\prime\prime}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img497.png"
+ ALT="$ 0.8^{\prime\prime} &lt; seeing &lt; 1.3^{\prime\prime} $">).
+</DD>
+<DT><STRONG><IMG
+ WIDTH="172" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img498.png"
+ ALT="$ f_{Ex}$"></STRONG></DT>
+<DD>Fraction of groups which require minimum seeing of <I>excellent</I> (<!-- MATH
+ $seeing < 0.8^{\prime\prime}$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img499.png"
+ ALT="$ seeing &lt; 0.8^{\prime\prime}$">).
+</DD>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1453"
+  HREF="node97.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1449"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1443"
+  HREF="node95.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1451"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1454"
+  HREF="node97.html">Calculation of</A>
+<B> Up:</B> <A NAME="tex2html1450"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html1444"
+  HREF="node95.html">Observations</A>
+ &nbsp; <B>  <A NAME="tex2html1452"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

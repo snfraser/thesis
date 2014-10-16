@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Classification of scheduling problems</TITLE>
+<META NAME="description" CONTENT="Classification of scheduling problems">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html316"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html312"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html306"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html314"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html317"
+  HREF="node8.html">Constraint Satisfaction Techniques</A>
+<B> Up:</B> <A NAME="tex2html313"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html307"
+  HREF="node6.html">Scheduling in context</A>
+ &nbsp; <B>  <A NAME="tex2html315"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00043000000000000000">
+Classification of scheduling problems</A>
+</H2>
+Some ideas on classification of scheduling problems:-
+
+<P>
+<DL>
+<DT><STRONG>Integration Depth</STRONG></DT>
+<DD>How much of the hierarchy of planning, scheduling, execution (and control) is involved and is there feedback and from/to which level(s).
+</DD>
+<DT><STRONG>Flexibility</STRONG></DT>
+<DD>Are the results of the scheduling (i.e. the generated schedule to be followed) fixed or does it contain some flexibility. This may be in the form of temporal or resource assignment flexibility (windows in a fixed execution path) or a graph of multiple execution futures - i.e. contingency/redundancy .
+</DD>
+<DT><STRONG>Proactive/reactive</STRONG></DT>
+<DD>Is the scheduling performed online or offline. ()Better name? - proactive at one end, reactive at other end of a scale)
+</DD>
+<DT><STRONG>Method</STRONG></DT>
+<DD>Constructive or repair based, DDS is <I>sort of</I> in between. Distributed techniques may confound this?. 
+</DD>
+<DT><STRONG>Horizon</STRONG></DT>
+<DD>The time period or number of tasks over which the schedule is expected to be followed.
+</DD>
+<DT><STRONG>Completeness</STRONG></DT>
+<DD>The number of tasks from the set of available/assignable tasks to insert into the schedule.
+We can extract the following progression:-
+
+<OL>
+<LI>Despatcher - Scheduler seeks the <I>best</I> single task to perform from the set of assignable tasks at an instant.
+</LI>
+<LI>Short Horizon - Scheduler selects a sequence of tasks from a subset of the assignable set to perform.
+</LI>
+<LI>Complete - Scheduler must assign all assignable tasks.
+</LI>
+</OL>
+</DD>
+</DL>
+
+<P>
+Note: In this scheme DDS is <I>variable depth (typically S with feedback from E), neccessarily fixed, online with horizon <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$ =$"> 1 task, using a repair? based method</I>. 
+
+<P>
+Q:- What advantages/disadvantages do these measures convey - integrate into paras above?
+
+<P>
+Notes:- Completness/horizon - how do we determine the length of the horizon or do we select a subset of tasks from pool to execute over a horizon? Several ways:-
+
+<UL>
+<LI>Use knowledge of the environment dynamics and uncertainty in execution times to choose a <I>hard-coded</I> horizon length.
+</LI>
+<LI>Adaptively select horizon length from measured environment dynamics.
+</LI>
+<LI>Use higher level goal-based planner to select a subset of pool for execution over the next horizon.
+</LI>
+<LI>Combine the last 2.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html316"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html312"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html306"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html314"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html317"
+  HREF="node8.html">Constraint Satisfaction Techniques</A>
+<B> Up:</B> <A NAME="tex2html313"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html307"
+  HREF="node6.html">Scheduling in context</A>
+ &nbsp; <B>  <A NAME="tex2html315"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

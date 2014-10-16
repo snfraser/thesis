@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Plan</TITLE>
+<META NAME="description" CONTENT="Plan">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node26.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="main.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html541"
+  HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html537"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html531"
+  HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html539"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html542"
+  HREF="node26.html">Investigation of Metrics</A>
+<B> Up:</B> <A NAME="tex2html538"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html532"
+  HREF="node24.html">Telescope domain</A>
+ &nbsp; <B>  <A NAME="tex2html540"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00060000000000000000">
+Plan</A>
+</H1>
+In this bit describe what the whole project is about and how things will be done
+-experimental methods 
+
+<OL>
+<LI>Investigate metrics with which to compare the efficiency and quality of generated schedules.
+</LI>
+<LI>Design software instrumentation to embed within the current robotic control system to collect data with which to characterize the operating environment.
+</LI>
+<LI>Using data collected by the embedded software, I will design a simulation framework incorporating knowledge of the operating environment characteristics with which to test any schedulers developed.
+</LI>
+<LI>Develop a despatch scheduler as a baseline with which to test more advanced schedulers, this will be capable of configuration to use different scheduling policies.
+</LI>
+<LI>Tune the baseline scheduler using various controllable parameters, typically objective weighting functions and biad function, to investigate the limits of this scheduling paradigm in the telescope scheduling context.
+</LI>
+<LI>As the basis for the final system, I will develop a look-ahead scheduler incorporating short-term prediction of environmental statistics to allow advanced planning of observations and using feedback of performance to adjust the plan objectives.
+</LI>
+<LI>Investigate variation of scheduling control parameters and horizon length on quality of schedules generated under varying environmental models to determine how to adapt to these - teh quality of schedules generated will be compared to those geenrated by the baseline system working at its maximum efficiency.
+</LI>
+<LI>Knowledge gained from this investigation will be incorporated into a final adaptive, look-ahead scheduler.
+</LI>
+</OL>
+
+<P>
+Some more details on plan...
+
+<OL>
+<LI>Develop metrics. Global quality to compare policies and architecure, local within arch to guide search.
+</LI>
+<LI>Data gathering - statistics of environment, P2DB characterization and rate of change.
+</LI>
+<LI>Develop scheduler.
+</LI>
+<LI>Prediction of environment and other models - test.
+</LI>
+<LI>Forward planning i.e. lookahead and predicted reward of future actions.
+</LI>
+<LI>Compare local despatch to expected future rewards model.  (m/c sims). [<A
+ HREF="node99.html#bresina95expected">Bresina et&nbsp;al., 1995</A>] has excellent discussion on this topic wrt ATIS.
+</LI>
+<LI>Variation of weights and (search) metrics.
+</LI>
+<LI>Compare effects of various stochastic bias fns.
+</LI>
+<LI>Distributed scheduling architecture - take into account user/group preferences (DMs).
+</LI>
+<LI>Global optimization of DSA/DM.
+
+<P>
+</LI>
+</OL>
+
+<P>
+How does this manifest itself wrt actual studies/experiments ?
+
+<OL>
+<LI>Metrics investigation study (Sect. <A HREF="node26.html#sect:metrics_study">4</A>).
+</LI>
+<LI>Database characterization study (Sect. <A HREF="node80.html#sect:db_character_study">8</A>).
+</LI>
+<LI>Data collection and prediction study (Sect. <A HREF="node39.html#sect:prediction">5</A>).
+</LI>
+<LI>Scheduler architecture and simulation framework study (Sect. <A HREF="node57.html#sect:sched_comp_study">6</A>).
+</LI>
+<LI>Case study 1. 1 or 2 night shakedown, effects of <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$ w_p$"> and <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.png"
+ ALT="$ w_t$"> (Sect. <A HREF="node82.html#sect:cs1_study">9</A>).
+</LI>
+<LI>Man against machine study (Sect. <A HREF="node83.html#sect:mam_study">10</A>).
+</LI>
+<LI>Long term case study. Many scoring and selection options, tracers (sect. <A HREF="node88.html#sect:lts_study">11</A>).
+</LI>
+<LI>Advanced architecture and framework enhancements.
+</LI>
+<LI>Long term case study 2. Advanced LAS/BAS extract SQM under varing conditions.
+</LI>
+<LI>Long term case study 3. LAS/BAS adaptation to predicted conditions.
+</LI>
+</OL>
+
+<P>
+Note: Data collection: If running a simulation over an extended period, the DB content would naturally change, need to be able to gather P2DB arrival and modification statistics - i.e. want to know how the DB changes in time not just a snapshot at T - this cant be very detailed just how many groups added/removed - maybe some statistical data could be extracted on a daily basis from P2DB e.g. average exposure length, spread of group lengths - needs more thought - this is a means of characterizing the DB - can then generate simulated datasets in addition to snapshots of real data. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html541"
+  HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html537"
+  HREF="main.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html531"
+  HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html539"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html542"
+  HREF="node26.html">Investigation of Metrics</A>
+<B> Up:</B> <A NAME="tex2html538"
+  HREF="main.html">Adaptive Optimal Telescope Scheduling</A>
+<B> Previous:</B> <A NAME="tex2html532"
+  HREF="node24.html">Telescope domain</A>
+ &nbsp; <B>  <A NAME="tex2html540"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

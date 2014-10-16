@@ -1,0 +1,17 @@
+#/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot << EOF
+
+set output "p2_gen_qxt.eps"
+set term postscript enhanced color
+set title "Variation of fraction of night used (Q_{XT}) with contention"
+set xlabel "C_c"
+set ylabel "Q_{XT}"
+set key right bottom
+
+plot "p_l_xt.dat" using 2:3 pt 5 ti "P_S", \
+     "p_s_xt.dat" using 2:3 pt 5 ti "P_L", \
+     "p_m_xt.dat" using 2:3 pt 5 ti "P_M", \
+     "p_h_xt.dat" using 2:3 pt 5 ti "P_H"
+EOF

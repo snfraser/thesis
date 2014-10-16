@@ -1,0 +1,52 @@
+proposal for agent delegates to handle scheduling task.
+
+Each project (proposal) would have a delegate acting on its behalf.
+
+On receipt of a schedule request the scheduler implementation (i.e. SCHEDImpl) would invoke the AgentSchedulingEngine and call schedule(TimePeriod, ChargingModel) or similar.
+TimePeriod is some delimiter on the time the schedule is being requested for e.g.interval (t1,t2).
+
+ChargingModel is some information from the executor to indicate how time will be charged for or alternately how various metrics will be taken into account in the determination of charging for the time e.g. I will charge a permium for good seeing and give discount for crap seeing or I will charge at the rate x*t for slewing within a group rather than exposing and y for each instrument change or something like that.
+
+The AgentBasedSchedulingEngine (ABSE) for now, then passes this information to each delegate (ProjectDelegate) for consideration.
+
+There are several variations possible here.
+
+1. Round robin - each PD is asked for its bid in turn against the current highest bid which will start at some reserve price. Each PD then has to outbid its rivals for the time period concerned. There may be some issue here with the fact that those PDs far down the list will always start bidding at a relatively high price as the bids can only go upwards. 
+
+2. Request for bids. Each PD is asked for bids (with current bid specified) and they must return a bid (asynchronously) within a specified time period. This gives agents the chance to communicate and cooperate - with learning opportunities, before submitting - there may be the need for some way of agents keeping track of the current bidding situation of other (non-cooperating) agents.
+
+3. Sealed bids - the auctioneer requests bids over a reserve price - only one round and highest bid gets the slot. There can be learning here if the PD keeps track of how his bids are doing under different charging models - can there be cooperation (or sabotage) with this model?
+
+All these models give the Project the chance to determine how important the balance between timeliness (i.e. monitoring regularity) and other factors should be. How this is acheived is by no means obvious.
+
+How do we allocate funds between projects? just allocating in proportion to time is no good - we expect PDs to pay a premium for good slots - however they may decide on what they are. The PD must decide how important each group is within its project and how important things like regularity are relative to airmass, seeing etc and allocate funds internally to pay for these requirements. Suggested factors to use - 
+
+* total time allocation
+* condition-allocation
+* proposal-priority.
+
+Agents may be able to learn behaviour of other agents in bidding rounds to allow them to make predictions about their behaviour in future rounds. 
+
+May want to be able to advertise (anonymously) which slots an agent 'really' wants most so there is some idea of the slot contention profile for the night - agents could use this to decide in advance when they will bid - a 'poor' agent could direct its bids towards slots which have low subscription by avoiding any risk of bidding on slots which go high (there is always a risk when bidding that you will end up paying more than you ideally want for a slot if you enter a competition and happen to win unexpectedly).
+
+Work:
+
+Need to do some basic simulations to see how various bidding strategies work with reference to funding amounts allocated according to the criteria above - i.e. if we allocate funds like:-
+
+ funds = (tot_time_alloc + x*cond_time1 + y*cond_time2) * z_priority 
+
+How well do various agents do - do they use their funds too fast, do they only get their x-groups done, how well do they match their requirments to what they get - is it costly to do so - how well do poor agents do? etc.
+
+The question we are asking here is basically: 
+
+"If the funding policy X is used (rather than X') how well will a given agent do 
+ - how much of their program(s) will be completed .
+we are basically asking if the funding is sufficient to enable an agent to get all that it wants done,
+though really we want to know the 'goodness' of the schedules as we are interested in how well
+the stuff gets done not just if it gets done at all."
+
+* We need a few new metrics to measure things like how much it costs to achieve a given level of matching
+of observing requirements against funding policies.
+
+Will need a (small) set of differently characterized PDAs (in terms of their behaviour (e.g. aggressiveness, tenacity etc) and to try using a variety of funding policies (x,y,z).
+

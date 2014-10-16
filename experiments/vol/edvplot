@@ -1,0 +1,17 @@
+#!/bin/csh
+
+/usr/bin/gnuplot -persist << EOF
+set output "edv.eps"
+set term postscript eps enhanced color
+set title "Variation of increase in reward with proximity for ELAS"
+set xlabel "Proximity [mins]"
+set ylabel "Relative increase in reward"
+set key right bottom
+set xrange[-20:400]
+set yrange [0:1.1]
+plot "edv05.dat" using 1:2:3:4 wi errorli ti "H=0.5", "edv1.dat" using 1:2:3:4 wi errorli ti "H=1.0", "edv2.dat" using 1:2:3:4 wi errorli ti "H=2.0", "edv4.dat" using 1:2:3:4 wi errorli ti "H=4.0"
+
+EOF
+
+#plot "edv05.dat" using 1:2:3:4 wi errorli ti "H=0.5", "edv1.dat" using 1:2:3:4 wi errorli ti "H=1.0", "edv2.dat" using 1:2:3:4 wi errorli ti "H=2.0", "edv4.dat" using 1:2:3:4 wi errorli ti "H=4.0"
+#plot "edv05.dat" using 1:2 ti "H=0.5", "edv1.dat" using 1:2  ti "H=1.0", "edv2.dat" using 1:2  ti "H=2.0", "edv4.dat" using 1:2  ti "H=4.0"

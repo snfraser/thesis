@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Constraint Satisfaction Techniques</TITLE>
+<META NAME="description" CONTENT="Constraint Satisfaction Techniques">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html328"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html324"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html318"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html326"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html329"
+  HREF="node9.html">Problem definition</A>
+<B> Up:</B> <A NAME="tex2html325"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html319"
+  HREF="node7.html">Classification of scheduling problems</A>
+ &nbsp; <B>  <A NAME="tex2html327"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00044000000000000000">
+Constraint Satisfaction Techniques</A>
+</H2>
+
+<P>
+A constraint satisfaction problem (CSP) comprises:- A set <!-- MATH
+ $\mathbf{X} = \{x_i\}$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$ \mathbf{X} = \{x_i\}$"> of variables over a set of domains <!-- MATH
+ $\mathbf{D} = \{d_i\}$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ \mathbf{D} = \{d_i\}$"> these may be continuous or discrete and bounded or unbounded and a set <!-- MATH
+ $\mathbf{C} = \{c_i\}$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \mathbf{C} = \{c_i\}$"> of constraints on and between the variables that restrict the possible value assignments. A solution comprises an assignment of values from <!-- MATH
+ $\mathbf{D}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img57.png"
+ ALT="$ \mathbf{D}$"> to all the variables in <!-- MATH
+ $\mathbf{X}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img58.png"
+ ALT="$ \mathbf{X}$"> subject to <!-- MATH
+ $\mathbf{C}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$ \mathbf{C}$">. Further in an optimization problem the solution should maximize an objective function <!-- MATH
+ $F(\mathbf{X})$
+ -->
+. A CSP may be represented as a directed graph in which the arcs represent constraint relationships between the variables represented as nodes. To represent a scheduling problem as a CSP the variables are identified as the tasks to be assigned time-slots from domains of available times. The objective function is a measure of the quality of the schedule.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:object"></A><A NAME="144"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+Scheduling problem represented as a CSP graph with time-slot assignments (domains) for tasks (vars).</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="384" HEIGHT="271" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="\includegraphics[height=6cm]{figures/placeholder.eps}">
+   
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Solving scheduling as a CSP - 2 techniques have evolved - constructive techniques based on backtracking search from starting from an empty schedule, build up partial schedule by selecting a task and assigning a value from its available domain, check for consistency then onto next task. Keep going till hit deadend - no assignment of variable will allow progress. Then backtrack to last decision (assignment) and change. Uninformed backtracking typically requires <IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ O(n!)$">. In contrast, the repair technique starts with a fully built but typically inconsistent and suboptimal schedule. The technique then involves an iterative cycle of task retraction and re-assignment until all tasks are assigned and all constraints are satisfied. If optimization is required the objective function is measured at each cycle to check for improvment. The objective may also guide the search heuristics.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html328"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html324"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html318"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html326"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html329"
+  HREF="node9.html">Problem definition</A>
+<B> Up:</B> <A NAME="tex2html325"
+  HREF="node4.html">Introduction</A>
+<B> Previous:</B> <A NAME="tex2html319"
+  HREF="node7.html">Classification of scheduling problems</A>
+ &nbsp; <B>  <A NAME="tex2html327"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

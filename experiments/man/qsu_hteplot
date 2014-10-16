@@ -1,0 +1,20 @@
+#!/bin/csh
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot  << EOF
+
+set output "qsu_hte.eps"
+set term postscript enhanced color
+
+set title "Comparison of look-ahead horizon (H) on Q_{SU} fro QLAS"
+set xlabel "Environment stability {/Symbol t}_E"
+set ylabel "Q_{SU}"
+
+plot "qsu_hte_ql30.dat" using 1:2 wi linespoint ti "H = 0.5 h", \
+     "qsu_hte_ql1.dat" using 1:2 wi linespoint ti "H = 1 h", \
+     "qsu_hte_ql2.dat" using 1:2 wi linespoint ti "H = 2 h", \
+     "qsu_hte_ql4.dat" using 1:2 wi linespoint ti "H = 4 h", \
+     69.5 wi lines lt 8 notitle, \
+     79.5 wi lines lt 8 notitle
+
+EOF

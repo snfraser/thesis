@@ -1,0 +1,32 @@
+#!/bin/csh
+
+
+# replace x_degen.dat -> x_deall.dat with errorbars
+
+# note can use $1-$2 etc with Gplot on xterm but does not work with postscript term
+
+cat "best_degen.dat"   | awk '{print $1,$2,$2-$3,$2+$3}' > best_deall.dat
+cat "biasfr_degen.dat" | awk '{print $1,$2,$2-$3,$2+$3}' > biasfr_deall.dat
+cat "biasrs_degen.dat" | awk '{print $1,$2,$2-$3,$2+$3}' > biasrs_deall.dat
+
+
+#/usr/bin/gnuplot -persist << EOF
+/usr/bin/gnuplot  << EOF
+
+set output "all_de.eps"
+set term postscript enhanced color
+
+set title "Variation of average Q_{SU} with environmental stability parameter {/Symbol t}_E"
+set xlabel "Environmental stability {/Symbol t}_E [mins]"
+set ylabel "Q_{SU}"
+
+set label "<- Erratic" at graph 0.05,0.05 tc lt 1
+set label "Stable ->" at graph 0.85,0.05 tc lt 1
+
+set boxwidth 2
+set style fill solid
+
+plot "biasrs_deall.dat" using 1:2:3:4 with yerror pt 6 ti "{/Symbol z}_{RS}", \
+     "biasfr_deall.dat" using 1:2:3:4 with yerror pt 6 ti "{/Symbol z}_{FR}", \
+     "best_deall.dat"   using 1:2:3:4 with yerror pt 6 ti "{/Symbol z}_{B}"
+EOF

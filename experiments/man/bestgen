@@ -1,0 +1,5 @@
+#!/bin/csh
+
+# generate BEST selection ensemble date
+
+java TimeGen --base best_gen.dat --nd 15 --np 60 --output best_prof --start "2008-05-14 00:00" --step 86400000 --sy 5 --h 1 --ceiling 100 --ng 100

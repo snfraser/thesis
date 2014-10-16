@@ -1,0 +1,8 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+
+java ngat.sms.test.CheckVolatilityData /home/eng/volatility/
+

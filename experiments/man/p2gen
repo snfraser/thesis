@@ -1,0 +1,8 @@
+
+java Generator --base p_l_gen.dat --nd 2 --np 30 --sx 0.75 --sy 12 --h 0.1 --ceiling 100 >& p_l.dat
+
+java Generator --base p_s_gen.dat --nd 2 --np 30 --sx 0.35 --sy 10 --h 0.1  --ceiling 100 >& p_s.dat
+
+java Generator --base p_m_gen.dat --nd 2 --np 30 --sx 0.25 --sy 5 --h 0.1 --ceiling 100  >& p_m.dat
+
+java Generator --base p_h_gen.dat --nd 2 --np 30 --sx 0.15 --sy 7 --h 0.1  --ceiling 100 >& p_h.dat

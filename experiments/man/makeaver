@@ -1,0 +1,12 @@
+#!/bin/csh
+
+set a = 0
+while ($a < 100)
+    @ a++
+    echo $a
+    set file = qsa_best_${a}.dat
+    echo $file
+
+    cat $file | awk '{ print $3}' > qsa_av_${a}.dat
+    
+end

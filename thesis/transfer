@@ -1,0 +1,22 @@
+#!/bin/csh
+echo "Latexing #1..."
+/usr/bin/latex transfer
+if ($status != 0) exit 1
+
+echo "Bibtexing..."
+/usr/bin/bibtex transfer
+echo "Bibtex status $status"
+#if ($status != 0) exit 1
+
+echo "Latexing #2..."
+/usr/bin/latex transfer
+if ($status != 0) exit 1
+
+echo "Latexing #3..."
+/usr/bin/latex transfer
+if ($status != 0) exit 1
+
+echo "Dvipsing..."
+/usr/bin/dvips -o transfer.ps transfer.dvi
+
+echo "Done"

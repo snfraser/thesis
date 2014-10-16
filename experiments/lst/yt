@@ -1,0 +1,12 @@
+#!/bin/csh
+
+source /opt/ngat/etc/cshrc
+source /occ/bin/class_setup
+source /occ/bin/osx_setup
+source /occ/bin/x_setup
+
+set AST = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+
+java $AST YieldTest --lat 28.0 --long -17.0 --exec exec1.cfg --loglevel 0 \
+                    --start "2008-01-15 12:00:00" --end "2008-12-15 12:00:00"
+

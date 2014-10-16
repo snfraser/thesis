@@ -1,0 +1,19 @@
+\begin{abstract}
+Astronomical telescopes operate in a dynamic and uncertain operational environment. Time is often oversubscribed with programs competing for available slots and the best observing conditions. In order to achieve a high scientific return a scheduler must be able to create a globally optimal observing schedule. 
+
+Using data collected from external sources and embedded instrumentation I investigate and characterize the scheduler's operating environment. I investigate metrics for characterizing the value of schedules both locally (at the decision point) and over longer horizons. Using this information an extensible software architecture is designed incorporating a simulation framework to allow a variety of schedulers and environmental scenarios to be constructed.
+
+ Experiments are performed using the scheduler component architecture and simulation framework to determine the effects on schedule quality of environmental stability, disruptive events and reliability of prediction under a range of load conditions. 
+
+%metrics 
+Investigations into the effects of choice of selection scoring metric on the final quality of schedules showed that contrary to an initial opinion that it should be feasible to find a single candidate quality metric with which to evaluate schedule quality, there is in fact no clear candidate as an absolute quality metric. The choice of weighting of the selection metrics determines the character of the schedule but only the dominant scoring metric has any real effect while the other metrics simply manifest themselves as noise.
+
+%stab reliable 0.7/0.8
+It was found that where conditions are relatively stable there is an advantage to using longer look-ahead horizons but that where conditions are unstable or disruptive a basic despatch scheduler achieves results as good or better. A look-ahead scheduler with a horizon of 4 hours can give an improvement of upto 23\% over a simple despatch scheduler when seeing remains stable over a period of upto 6 hours.
+
+Experiments performed to determine the effect of chosing a suitable look-ahead horizon based on the perceived stability of environmental conditions have shown that when determining the length of this horizon, if we either over or under-estimate the duration of stable conditions we obtain poorer results. When the stability length is severely under-estimated a loss of between 5\% and 17\% in quality was found to occur.  The optimum situation appears to be when the horizon is of order of or slightly less than the actual stability length. Where the stability length is over-estimated by a factor 2, a loss of 5\% to 10\% can occur.
+
+
+
+
+\end{abstract}

@@ -1,0 +1,1 @@
+plot 65+0.7*log(1.5*x-0.9*sqrt(x)) ti "q1" , 68+0.9*log(1.5*x-0.8*sqrt(x)) ti "q2", 74+1.1*log(x-0.8*sqrt(x)+x*rand(1)) +10*rand(1) wi point ti "q4"

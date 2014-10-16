@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Primitive utility measures</TITLE>
+<META NAME="description" CONTENT="Primitive utility measures">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node35.html">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html666"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html662"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html656"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html664"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html667"
+  HREF="node35.html">Project completion</A>
+<B> Up:</B> <A NAME="tex2html663"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html657"
+  HREF="node33.html">Potential utility measure</A>
+ &nbsp; <B>  <A NAME="tex2html665"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00073200000000000000">
+Primitive utility measures</A>
+</H3>
+There are a number of primitive measures that could be used independantly - in reality the complex tradeoffs between these make a more generic measure more useful however there is likely still some value in using these. These measures are by and large <I>single night</I> measures. 
+
+<P>
+
+<UL>
+<LI>Height metric <IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$ Q_H$"> measures the difference between the optimum time for performing a group based on its height to transit height ratio during the night and its actual selected execution time. By adding these up we get a measure of badness - i.e. ideally all groups would get done at their highest point (in the feasibility window).
+
+<P>
+</LI>
+<LI>Optimal Height metric  measures how close to the <I>optimum</I> height the group is observed in its execution window. 
+
+<P>
+The optimum height is basically the highest elevation attained by the group during the feasible observation window - in a given window this may be at the end (rising target), start (setting target) or somewhere in the middle of the observing window (transiting target). 
+
+<P>
+There is however a non-linear relationship between elevation and airmass such that for targets which do not rise particularly high the difference in image quality between worst and best case elevation may be high over a relatively small elevation difference whereas for high rising targets the difference in airmass and hence image quality between best and worst case elevations will be small for the same elevation difference .
+
+<P>
+Consequently it may be better to measure the ratio of execution-time airmass <!-- MATH
+ $a_{actual}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.png"
+ ALT="$ a_{actual}$"> to best achievable airmass <IMG
+ WIDTH="33" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.png"
+ ALT="$ a_{opt}$"> as an Optimal Airmass metric <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ Q_{OA}$">. 
+
+<P>
+Additionally, the <I>benefit</I> (image quality advantage) of one airmass over another may itself be non-linear and this is what we should really be measuring. <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img211.png"
+ ALT="$ Q_{BA}$"> measures the ratio of some decreasing benefit function <IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$ b(a)$"> of airmass <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img213.png"
+ ALT="$ a$"> at optimal airmass and actual execution-time airmass. A simple option for <IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$ b(a)$"> would be to use the known correction  [] of image FWHM or seeing <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img117.png"
+ ALT="$ s$"> for airmass relative to <I>ideal</I> seeing at elevation , <!-- MATH
+ $s(a)=s_{90}a^{0.6}$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.png"
+ ALT="$ s(a)=s_{90}a^{0.6}$"> with <IMG
+ WIDTH="28" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.png"
+ ALT="$ s_{90}$"> indicating the image FWHM at <IMG
+ WIDTH="101" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.png"
+ ALT="$ z=0,a=1$"> and assuming image quality is judged purely (and linearly) on FWHM. It should be noted that this correction depends also on observation wavelength <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img162.png"
+ ALT="$ \lambda$">. Figure <A HREF="#fig:baz_plot">5(a)</A> shows 2 models for <IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$ b(a)$"> based on the standard FWHM correction.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{OA} = \frac{1}{L(S)}\sum_{g \in S}{\frac{a_{opt}}{a_{actual}}}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="195" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.png"
+ ALT="$\displaystyle Q_{OA} = \frac{1}{L(S)}\sum_{g \in S}{\frac{a_{opt}}{a_{actual}}}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(7)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <!-- MATH
+ $a = \sec{z}$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img219.png"
+ ALT="$ a = \sec{z}$"> is the airmass of group's target at zenith distance <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img220.png"
+ ALT="$ z$">.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{BA} = \frac{1}{L(S)}\sum_{g \in S}{\frac{b(a_{actual})}{b(a_{opt})}}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(8)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$ b(a)$"> represents the benefit (image quality advantage) for airmass <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img213.png"
+ ALT="$ a$">.
+
+<P>
+</LI>
+<LI>Monitor window metric <IMG
+ WIDTH="49" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.png"
+ ALT="$ Q_{MW}$"> measures the difference between the optimum time (wrt the centre of a monitor window) for performing a group based on the known monitor window and its actual selected execution time By adding these up we get a measure of badness - i.e. ideally all groups would get done at the centre of the monitor window. (there are some implications wrt non-monitor groups - how do we select the centre of the window ?. What if the window centre is not actually feasible - how is this taken into account  - do we pick nearest feasible point in window either before or after centre  - can also do something like <IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.png"
+ ALT="$ u(t)$"> = some function which peaks at the window centre and we want the group done at t where <!-- MATH
+ $max_{t \in \textsf{W} \cap \textsf{T}}(U(t))$
+ -->
+<IMG
+ WIDTH="138" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="$ max_{t \in \textsf{W} \cap \textsf{T}}(U(t))$">.   
+
+<P>
+</LI>
+<LI>Priority metric <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ Q_{PX}$"> measures the total priority score achieved i.e just sums up the priorites of the groups selected weighted by the amount of time spent performing the group on the basis that e.g. an hour of high priority is better than 2 lots of 10 minutes preforming low priority groups. The final value can be normalized by dividing by the length of night (or astro-night) or perhaps better by using the priority weighted load <IMG
+ WIDTH="30" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.png"
+ ALT="$ C_{pl}$"> (see section xx) as this also gives an indication of the degree of <I>missed opportunity</I>.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{PX} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)p(g)}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="221" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.png"
+ ALT="$\displaystyle Q_{PX} = \frac{1}{L_N}\sum_{g \in S}{X(g,t)p(g)}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(9)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <IMG
+ WIDTH="38" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.png"
+ ALT="$ p(g)$"> is the priority value for group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> and <IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.png"
+ ALT="$ X(g,t)$"> is the estimated execution time for group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at execution instant <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$">.
+
+<P>
+</LI>
+<LI>Target demand metric <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ Q_{TD}$"> measures how <I>urgent</I> the selected groups are with reference to the night's demand profile <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$ C_d$">.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{TD} = \frac{1}{L(S)}\sum_{g \in S}{f_D(g,t)}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="205" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.png"
+ ALT="$\displaystyle Q_{TD} = \frac{1}{L(S)}\sum_{g \in S}{f_D(g,t)}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="$ f_D(g,t)$"> represents the value of the demand heuristic for group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at execution instant <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$">.
+
+<P>
+</LI>
+<LI>Night windows count metric <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="$ Q_{NW}$"> is an attempt to guage the number of nights in which a group could have been selected - it is effectively a count of the number of subwindows in which a group could be executed - a high value indicates that the scheduler is picking groups which dont have to be selected on that night, conversely a low value indicate a scheduler which is picking groups for which execution on the night is more critical. 
+
+<P>
+</LI>
+<LI>Execution target metric <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.png"
+ ALT="$ Q_{XT}$"> is a measure of the amount of the night during which groups are actively being observed. A low value is effectively an indication of <I>slack time</I>.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{XT} = \sum_{g \in S}{X(g,t)}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="154" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.png"
+ ALT="$\displaystyle Q_{XT} = \sum_{g \in S}{X(g,t)}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(11)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.png"
+ ALT="$ X(g,t$">) is the estimated execution time for group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at execution instant <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$">.
+
+<P>
+</LI>
+<LI>Remaining nights metric <IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ Q_{RN}$"> counts a decreasing function (for convenience 1/n) of the <I>number of nights remaining</I> <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="$ n$"> for any groups in the observability window <IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.png"
+ ALT="$ \Phi(g,t)$"> at the time of selection/execution. It effectively measures how <I>urgent</I> the window was in terms of the number of future chances of executing 
+the group other than tonight. e.g. If a group could be executed tonight or on 3 future nights this yields a value for RN of 4 and thus 1/4 as its urgency.
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+Q_{RN} = \sum_{g \in S}{\frac{1}{R(g,t,\Phi(g,t))}}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="217" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.png"
+ ALT="$\displaystyle Q_{RN} = \sum_{g \in S}{\frac{1}{R(g,t,\Phi(g,t))}}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(12)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <!-- MATH
+ $R(g,t,\phi)$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$ R(g,t,\phi)$"> counts the number of remaining nights for a feasiblity window  of group <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ g$"> at execution instant <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img168.png"
+ ALT="$ t$"> - i.e. it counts the number of feasible sub-intervals of <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="$ \Phi $"> with maximum of 1 per night.
+
+<P>
+</LI>
+<LI>Yield tracking metric <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img238.png"
+ ALT="$ Q_{YT}$"> - details of this v.important.(See Appendix. <A HREF="node97.html#sect:app_calcqy">C</A>).
+
+<P>
+</LI>
+<LI>Resource allocation/usage metrics <IMG
+ WIDTH="38" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img239.png"
+ ALT="$ Q_{Ax}$"> for various resources <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$ x$"> against target values. Long term only valid over period of order semester or year - TAG assigned MUF.
+
+<P>
+</LI>
+<LI>Multiple combined metrics such as <!-- MATH
+ $Q_{OA \cdot PX}$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img240.png"
+ ALT="$ Q_{OA \cdot PX}$"> would allow pairs (or larger tuples) of metrics to be combined as would linear combinations such as <!-- MATH
+ $w_{oa}Q_{OA}+w_{px}Q_{PX}$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img241.png"
+ ALT="$ w_{oa}Q_{OA}+w_{px}Q_{PX}$">.
+
+<P>
+</LI>
+</UL>
+
+<DIV ALIGN="CENTER"><A NAME="fig:baz_plot"></A><A NAME="1397"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+Various metric models</CAPTION>
+<TR><TD>[Comparison of models for determining airmass image quality advantage (<IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$ b(z)$">)]
+    
+  </TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+These metrics require pre-calculation and storage prior to running the scheduler as we want to know the answer to: <I>When is the best time to do this group on this execution for each exec of the group in the night</I> 
+
+<P>
+It had originally been intended to use these to minimise the sum of differences between the actual and optimal execution times - a good schedule then would be one in which the metric gave a low or best case zero result. A problem with this is that it is possible to achieve such a score by simply ommitting to perform observations - this is reminiscent of the train performance metrics used to measure the efficiency of privatized railway companies. If a train is running very late - simply cancelling the train removes it from the lateness statistics adding to the misery of the waiting passengers - its little comfort that the next train is on time if they have had to wait an hour for it !. Consequently these metrics must be scaled to give a high score when the measured variable is at maximum, lower measures when the time is poorly met and zero (or even negative) scores when the observation is not attempted. A schedule which simply avoids potential observations would then score badly. 
+
+<P>
+Note: The best schedule for a given night is the one where every <B>critical</B> group is executed at its best time (ie when its overall utility is highest) and where the remaining groups (if any) are selected ``appropriately''. To determine what this actually is requires to test every feasible combination of critical group (and others) to see what could be achieved. This may then need to be done for different environmental assumptions for the night ahead. The remaining (non-critical) groups should probably be selected to miximize profit over a period (rather than for that specific night). All this makes no assumption about additional groups added via ODB mutation.
+
+<P>
+It will be useful to use ODB character metrics as an independant variable to compare E for various schedulers.
+
+<P>
+<I>Almost any/Every</I> metric used for this can be used as a selection heuristic - so...
+
+<P>
+Need to look at longer term aims (i.e. those that would be introduced by a tactical/strategic planner) - these include things like- fairness between users/TAGs, distribution of environmental conditions, darkness, regularity of data product etc. It may not be neccessary however to worry about these from the scheduler's pov as it is by neccessity working on a shorter timescale - these higher order entities can force appropriate changes in the scheduler's behaviour by altering the control parameters (and metrics) used by the scheduler to satisfy their longer term aims.  
+
+<P>
+NOTE:<!-- MATH
+ \begin{displaymath}
+This lot has also sneaked in some of it belongs in SQM section as end discussion
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="609" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img243.png"
+ ALT="$\displaystyle This lot has also sneaked in some of it belongs in SQM section as end discussion$">
+</DIV><P></P><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html666"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html662"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html656"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html664"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html667"
+  HREF="node35.html">Project completion</A>
+<B> Up:</B> <A NAME="tex2html663"
+  HREF="node32.html">Schedule quality metrics (SQM)</A>
+<B> Previous:</B> <A NAME="tex2html657"
+  HREF="node33.html">Potential utility measure</A>
+ &nbsp; <B>  <A NAME="tex2html665"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Heuristic Scoring metrics (HSM)</TITLE>
+<META NAME="description" CONTENT="Heuristic Scoring metrics (HSM)">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node69.html">
+<LINK REL="up" HREF="node57.html">
+<LINK REL="next" HREF="node73.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1156"
+  HREF="node73.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1152"
+  HREF="node57.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1148"
+  HREF="node71.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1154"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1157"
+  HREF="node73.html">Simulation framework</A>
+<B> Up:</B> <A NAME="tex2html1153"
+  HREF="node57.html">Scheduler Component Architecture (SCA)</A>
+<B> Previous:</B> <A NAME="tex2html1149"
+  HREF="node71.html">Scoring model - ()</A>
+ &nbsp; <B>  <A NAME="tex2html1155"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00095000000000000000">
+Heuristic Scoring metrics (HSM)</A>
+</H2>
+
+<P>
+These are the metrics actually used by the scheduler to rank the list of potential observation group candidates to do next from the pool of available groups. 
+
+<P>
+Some of these metrics are peculiar to despatch shchedulers, others are more generally applicable.
+
+<P>
+
+<UL>
+<LI>Height metric <IMG
+ WIDTH="39" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.png"
+ ALT="$ f_h$"> simply measures the elevation of the group's target at the time of potential observation. Variations on this metric can inlcude taking the mean or peak elevation over the duration of the group. If a group has multiple targets various averages can be used such as taking mean elevation of each target at some point in the execution. More complex averages could take into account the actual times at which each target will be observed. 
+
+<P>
+</LI>
+<LI>Airmass metric <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.png"
+ ALT="$ f_{air}$"> is similar to <IMG
+ WIDTH="39" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.png"
+ ALT="$ f_h$"> except that the airmass is used rather than elevation thus taking into account the nonlinear nature of the relationship between sky-quality and elevation.
+
+<P>
+</LI>
+<LI>Transit metric <IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img363.png"
+ ALT="$ f_{trans}$"> is an attempt to take into account the unfair advantage provided by the two previous metrics <IMG
+ WIDTH="39" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.png"
+ ALT="$ f_h$"> and <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.png"
+ ALT="$ f_{air}$">. These force a bias towards targets whose declination is close to the latitude of the observatory. This metric measures the quality of observing at a given time by taking the current target elevation as a fraction of its <I>best</I> elevation. This is generally taken as its transit elevation which can be calculated easily. For groups which do not transit during the feasibility window and in particular for groups with very short feasibility windows this may still be somewhat unfair as the transit elevation may not be remotely achievable in that window.
+
+<P>
+</LI>
+<LI>Optimal elevation <IMG
+ WIDTH="48" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img364.png"
+ ALT="$ f_{oh}$"> and optimal airmass <IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.png"
+ ALT="$ f_{oa}$"> metrics attempt to redress this problem by taking the ratio of current elevation to <I>best possible</I> elevation (or airmass) in the group's feasibility window. 
+
+<P>
+</LI>
+<LI>Slew metric <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img366.png"
+ ALT="$ f_{slew}$"> attempts to penalize groups for which a long axis slew (including rotator) from the current telescope position is required. This can prove very difficult to calculate as it requires the scheduler to predict the way the executor will choose rotation angles - the recently introduced cardinal pointing (CP) regime on the LT to handle the problem of coolant pipes in the wrap makes this particularly difficult to determine.
+
+<P>
+</LI>
+<LI>Sky condition matching metrics <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img367.png"
+ ALT="$ f_{see}$"> (also <IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.png"
+ ALT="$ f_{phot}$"> and <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.png"
+ ALT="$ f_{sky}$">) is designed to match a group's sky condition requirements to the actual (or predicted) conditions at the time of execution. This is intended to ensure that groups which do not require particularly good conditions do not take an excessive share of good conditions.
+
+<P>
+</LI>
+<LI>Lunar condition matching metric <IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img370.png"
+ ALT="$ f_{moon}$"> is similar to the above but attempts to prevent groups which can use <I>bright</I> time from taking an excessive shar of <I>dark</I> time.
+
+<P>
+</LI>
+<LI>Priority metric  is designed to ensure that groups of higher scientific priority get a better share of time. 
+
+<P>
+</LI>
+<LI>Resource allocation metric <IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img372.png"
+ ALT="$ f_{a}$"> measures the use of various resources by a group or its containing proposal. This is typically the use of time from the proposal's total semester allowance. It can be used either to help distribute time fairly between proposals or to force completion of proposals which have already been started.
+
+<P>
+</LI>
+<LI>Demand metric  uses the group's demand for time as an indication of the urgency of performing the group (see XXX). The idea behind this is to select the groups which have the most critical requirment for a given time period.
+
+<P>
+</LI>
+<LI>Urgency metric <IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img374.png"
+ ALT="$ f_{urg}$"> is similar to the demand metric but measures the number of additional chances (in terms of alternative nights on which the group <I>could</I> be observed if not tonight.
+
+<P>
+</LI>
+<LI>Yield tracking metric <IMG
+ WIDTH="36" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img375.png"
+ ALT="$ f_{yt}$"> tracking deficit in data product yield - needs past and future yield estimates and yield to-date to allow effect of any deficit to be deduced.
+
+<P>
+</LI>
+</UL>
+
+<P>
+For each of these metrics there are various possibilities for weighting.
+
+<P>
+
+<UL>
+<LI>No special weighting.
+</LI>
+<LI>Groups <I>expected</I> execution time is used to weight the metric.
+</LI>
+<LI>The group's total exposure time is used as a weighting factor.
+</LI>
+<LI>Group's priority (or some function of this) is used to scale the metric.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1156"
+  HREF="node73.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1152"
+  HREF="node57.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1148"
+  HREF="node71.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1154"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1157"
+  HREF="node73.html">Simulation framework</A>
+<B> Up:</B> <A NAME="tex2html1153"
+  HREF="node57.html">Scheduler Component Architecture (SCA)</A>
+<B> Previous:</B> <A NAME="tex2html1149"
+  HREF="node71.html">Scoring model - ()</A>
+ &nbsp; <B>  <A NAME="tex2html1155"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Steve Fraser
+2008-01-31
+</ADDRESS>
+</BODY>
+</HTML>

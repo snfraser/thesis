@@ -1,0 +1,7 @@
+This is makeindex, version 2.14 [02-Oct-2002] (kpathsea + Thai support).
+Scanning style file ./final_big.ist..............done (14 attributes redefined, 0 ignored).
+Scanning input file final_big.glo....done (45 entries accepted, 0 rejected).
+Sorting entries....done (244 comparisons).
+Generating output file final_big.gls....done (137 lines written, 0 warnings).
+Output written in final_big.gls.
+Transcript written in final_big.glg.

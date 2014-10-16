@@ -1,0 +1,33 @@
+#!/bin/csh
+source /opt/ngat/etc/cshrc
+
+source /occ/bin/class_setup
+source /occ/bin/x_setup
+source /occ/bin/osx_setup
+
+set ASTRO = "-Dastrometry.impl=ngat.astrometry.TestCalculator"
+#set POL = "-Djava.security.policy=file:///occ/tmp/policy.dat"
+set POL
+
+# setup simulation name
+if (${#argv} < 1) then
+    echo "No bleeding name supplied"
+    exit 1
+endif
+
+set SIM = $1
+set simlog = qst_${SIM}.log
+
+java $POL $ASTRO QuantumSchedulerTest \
+	--site LT \
+        --lat 28.0 --long -17.0 \
+        --exec exec1.cfg \
+        --score score2.cfg \
+	--cost accounting1.cfg \
+	--env env1.cfg \
+        --root Test \
+        --log-level 1 \
+        --start "2008-05-15 18:00:00" \
+        --end   "2008-07-15 08:00:00" \
+	--history 3600 --dtq 60 --nseq 1000 >& $simlog &
+
